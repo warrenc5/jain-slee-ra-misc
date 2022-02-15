@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <url xmlns:mvn="http://maven.apache.org/POM/4.0.0">http://www.mofokom.biz/site/${project.artifactId}/</url>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>mofokom</groupId>
+  <!--
+    <parent>
+        <groupId>com.mofokom</groupId>
+        <artifactId>superpom</artifactId>
+        <version>2.0.0-SNAPSHOT</version>
+    </parent>
+    -->
+  <artifactId>j4mlp</artifactId>
+  <version xmlns:mvn="http://maven.apache.org/POM/4.0.0">3.0.0.0-SNAPSHOT</version>
+  <name>MLP Library</name>
+  <!--Here was build-->
+  <developers>
+    <developer>
+      <id>tz</id>
+      <name>Tomasz Zieleniewski</name>
+      <email>tzieleniewski@gmail.com</email>
+      <url>http://ictbackyard.com</url>
+      <timezone>+2</timezone>
+    </developer>
+  </developers>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>java.net</id>
+      <name>Java.net Maven 2 Repository</name>
+      <url>http://download.java.net/maven/2</url>
+    </pluginRepository>
+  </pluginRepositories>
+  <!--Here was properties-->
+  <distributionManagement xmlns:mvn="http://maven.apache.org/POM/4.0.0">
+    <snapshotRepository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.biz/maven/snapshots-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+    <repository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.biz/maven/releases-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </repository>
+    <site>
+      <id>mofokom</id>
+      <url>scp://${site.url}/${project.artifactId}</url>
+    </site>
+  </distributionManagement>
+</project>

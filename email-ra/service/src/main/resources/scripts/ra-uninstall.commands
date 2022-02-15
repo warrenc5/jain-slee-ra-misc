@@ -1,0 +1,9 @@
+exitOnError false
+
+deactivateraentity Mail\ Resource\ Adaptor\ Entity 
+removeallactivities Mail\ Resource\ Adaptor\ Entity
+waittilraentityisinactive Mail\ Resource\ Adaptor\ Entity 
+unbindralinkname Mail\ Resource\ Adaptor\ Entity\ Link 
+removeraentity Mail\ Resource\ Adaptor\ Entity 
+uninstall file:/home/code/mail/ra/target/mail-ra-1.0-SNAPSHOT-du.jar 
+

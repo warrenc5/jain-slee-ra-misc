@@ -1,0 +1,6 @@
+exitOnError false
+
+deactivateservice name=BASIC\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=BASIC\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=BASIC\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/snmp-client/service/target/snmp-service-1.0-SNAPSHOT-du.jar 

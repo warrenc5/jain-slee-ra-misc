@@ -1,0 +1,40 @@
+          package mofokom.ccn.air.ucip.resource;
+          import mofokom.ccn.*;
+          import mofokom.ccn.air.ucip.om.*;
+          import javax.annotation.Generated;
+          import java.io.IOException;
+          @Generated(value={})
+        public interface UCIPResourceAdaptorInterface {
+          public UCIPObjectFactory getUCIPObjectFactory();
+        public UCIPActivity sendGetAccumulatorsMessage(GetAccumulators getAccumulators) throws java.io.IOException ;
+        public UCIPActivity sendAccumulatorInformationMessage(AccumulatorInformation accumulatorInformation) throws java.io.IOException ;
+        public UCIPActivity sendUpdateBalanceAndDateMessage(UpdateBalanceAndDate updateBalanceAndDate) throws java.io.IOException ;
+        public UCIPActivity sendDedicatedAccountUpdateInformationMessage(DedicatedAccountUpdateInformation dedicatedAccountUpdateInformation) throws java.io.IOException ;
+        public UCIPActivity sendGetBalanceAndDateMessage(GetBalanceAndDate getBalanceAndDate) throws java.io.IOException ;
+        public UCIPActivity sendGetAccountDetailsMessage(GetAccountDetails getAccountDetails) throws java.io.IOException ;
+        public UCIPActivity sendGetAllowedServiceClassesMessage(GetAllowedServiceClasses getAllowedServiceClasses) throws java.io.IOException ;
+        public UCIPActivity sendGetFaFListMessage(GetFaFList getFaFList) throws java.io.IOException ;
+        public UCIPActivity sendGetRefillOptionsMessage(GetRefillOptions getRefillOptions) throws java.io.IOException ;
+        public UCIPActivity sendRefillMessage(Refill refill) throws java.io.IOException ;
+        public UCIPActivity sendRefillInformationMessage(RefillInformation refillInformation) throws java.io.IOException ;
+        public UCIPActivity sendDedicatedAccountRefillInformationMessage(DedicatedAccountRefillInformation dedicatedAccountRefillInformation) throws java.io.IOException ;
+        public UCIPActivity sendUsageAccumulatorInformationMessage(UsageAccumulatorInformation usageAccumulatorInformation) throws java.io.IOException ;
+        public UCIPActivity sendUpdateAccountDetailsMessage(UpdateAccountDetails updateAccountDetails) throws java.io.IOException ;
+        public UCIPActivity sendUpdateFaFListMessage(UpdateFaFList updateFaFList) throws java.io.IOException ;
+        public UCIPActivity sendUpdateServiceClassMessage(UpdateServiceClass updateServiceClass) throws java.io.IOException ;
+        public UCIPActivity sendUpdateCommunityListMessage(UpdateCommunityList updateCommunityList) throws java.io.IOException ;
+        public UCIPActivity sendUpdateSubscriberSegmentationMessage(UpdateSubscriberSegmentation updateSubscriberSegmentation) throws java.io.IOException ;
+        public UCIPActivity sendAccountFlagsMessage(AccountFlags accountFlags) throws java.io.IOException ;
+        public UCIPActivity sendAccumulatorSelectionMessage(AccumulatorSelection accumulatorSelection) throws java.io.IOException ;
+        public UCIPActivity sendChargingRequestInformationMessage(ChargingRequestInformation chargingRequestInformation) throws java.io.IOException ;
+        public UCIPActivity sendChargingResultInformationMessage(ChargingResultInformation chargingResultInformation) throws java.io.IOException ;
+        public UCIPActivity sendChargingResultInformationServiceMessage(ChargingResultInformationService chargingResultInformationService) throws java.io.IOException ;
+        public UCIPActivity sendCommunityIdListMessage(CommunityIdList communityIdList) throws java.io.IOException ;
+        public UCIPActivity sendDedicatedAccountInformationMessage(DedicatedAccountInformation dedicatedAccountInformation) throws java.io.IOException ;
+        public UCIPActivity sendDedicatedAccountSelectionMessage(DedicatedAccountSelection dedicatedAccountSelection) throws java.io.IOException ;
+        public UCIPActivity sendFafInformationMessage(FafInformation fafInformation) throws java.io.IOException ;
+        public UCIPActivity sendFafInformationListMessage(FafInformationList fafInformationList) throws java.io.IOException ;
+        public UCIPActivity sendMessageCapabilityFlagMessage(MessageCapabilityFlag messageCapabilityFlag) throws java.io.IOException ;
+        public UCIPActivity sendRequestedInformationFlagsMessage(RequestedInformationFlags requestedInformationFlags) throws java.io.IOException ;
+        public UCIPActivity sendServiceOfferingsMessage(ServiceOfferings serviceOfferings) throws java.io.IOException ;
+        }

@@ -1,0 +1,20 @@
+exitOnError false
+deactivateservice name=Directory\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=Directory\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=Directory\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/directory-service/target/directory-service-1.0-SNAPSHOT-du.jar 
+
+deactivateraentity Directory\ Resource\ Adaptor\ Entity 
+removeallactivities Directory\ Resource\ Adaptor\ Entity
+waittilraentityisinactive Directory\ Resource\ Adaptor\ Entity 
+unbindralinkname Directory\ Resource\ Adaptor\ Entity\ Link 
+removeraentity Directory\ Resource\ Adaptor\ Entity 
+uninstall file:/home/code/directory-ra/target/directory-ra-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/directory-ra/target/directory-ra-1.0-SNAPSHOT-du.jar 
+createraentity name=Directory\ Resource\ Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT Directory\ Resource\ Adaptor\ Entity ACTIVITY_DIMENSION=10
+bindralinkname Directory\ Resource\ Adaptor\ Entity Directory\ Resource\ Adaptor\ Entity\ Link
+activateraentity Directory\ Resource\ Adaptor\ Entity 
+installlocaldu /code/directory-service/target/directory-service-1.0-SNAPSHOT-du.jar 
+activateservice name=Directory\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

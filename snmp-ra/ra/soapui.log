@@ -1,0 +1,222 @@
+2011-04-27 17:38:40,936 INFO  [DefaultSoapUICore] initialized soapui-settings from [/home/wozza/soapui-settings.xml]
+2011-04-27 17:38:41,672 INFO  [WorkspaceImpl] Loading workspace from [/code/ideal/Ideal-workspace.xml]
+2011-04-27 17:38:41,886 INFO  [WsdlProject] Loaded project from [file:/code/ideal/Ideal-soapui-project.xml]
+2011-04-27 17:38:42,155 INFO  [WsdlProject] Loaded project from [file:/code/qrios/interswitch/InterSwitch-soapui-project.xml]
+2011-04-27 17:38:42,204 INFO  [WsdlProject] Loaded project from [file:/code/ideal/Ideal-Live-soapui-project.xml]
+2011-04-27 17:38:46,385 ERROR [SoapUI] An error occured [Owner failed to convert data], see error log for details
+2011-04-27 17:38:46,387 ERROR [errorlog] java.io.IOException: Owner failed to convert data
+java.io.IOException: Owner failed to convert data
+	at sun.awt.X11.XSelection.validateDataGetter(XSelection.java:486)
+	at sun.awt.X11.XSelection.getData(XSelection.java:350)
+	at sun.awt.X11.XDnDDropTargetProtocol.getData(XDnDDropTargetProtocol.java:841)
+	at sun.awt.X11.XDropTargetContextPeer.getNativeData(XDropTargetContextPeer.java:132)
+	at sun.awt.dnd.SunDropTargetContextPeer.getTransferData(SunDropTargetContextPeer.java:245)
+	at sun.awt.datatransfer.TransferableProxy.getTransferData(TransferableProxy.java:56)
+	at java.awt.dnd.DropTargetContext$TransferableProxy.getTransferData(DropTargetContext.java:359)
+	at com.eviware.soapui.support.dnd.SoapUIDragAndDropHandler$SoapUIDropTargetListener.isDragAcceptable(SoapUIDragAndDropHandler.java:427)
+	at com.eviware.soapui.support.dnd.SoapUIDragAndDropHandler$SoapUIDropTargetListener.dropActionChanged(SoapUIDragAndDropHandler.java:341)
+	at java.awt.dnd.DropTarget.dropActionChanged(DropTarget.java:387)
+	at sun.awt.dnd.SunDropTargetContextPeer.processMotionMessage(SunDropTargetContextPeer.java:454)
+	at sun.awt.X11.XDropTargetContextPeer.processMotionMessage(XDropTargetContextPeer.java:159)
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchMotionEvent(SunDropTargetContextPeer.java:804)
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchEvent(SunDropTargetContextPeer.java:750)
+	at sun.awt.dnd.SunDropTargetEvent.dispatch(SunDropTargetEvent.java:30)
+	at java.awt.Component.dispatchEventImpl(Component.java:4487)
+	at java.awt.Container.dispatchEventImpl(Container.java:2099)
+	at java.awt.Component.dispatchEvent(Component.java:4460)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4577)
+	at java.awt.LightweightDispatcher.processDropTargetEvent(Container.java:4312)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4163)
+	at java.awt.Container.dispatchEventImpl(Container.java:2085)
+	at java.awt.Window.dispatchEventImpl(Window.java:2478)
+	at java.awt.Component.dispatchEvent(Component.java:4460)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:599)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+2011-04-27 17:38:46,647 ERROR [SoapUI] An error occured [Owner failed to convert data], see error log for details
+2011-04-27 17:38:46,648 ERROR [errorlog] java.io.IOException: Owner failed to convert data
+java.io.IOException: Owner failed to convert data
+	at sun.awt.X11.XSelection.validateDataGetter(XSelection.java:486)
+	at sun.awt.X11.XSelection.getData(XSelection.java:350)
+	at sun.awt.X11.XDnDDropTargetProtocol.getData(XDnDDropTargetProtocol.java:841)
+	at sun.awt.X11.XDropTargetContextPeer.getNativeData(XDropTargetContextPeer.java:132)
+	at sun.awt.dnd.SunDropTargetContextPeer.getTransferData(SunDropTargetContextPeer.java:245)
+	at sun.awt.datatransfer.TransferableProxy.getTransferData(TransferableProxy.java:56)
+	at java.awt.dnd.DropTargetContext$TransferableProxy.getTransferData(DropTargetContext.java:359)
+	at com.eviware.soapui.support.dnd.SoapUIDragAndDropHandler$SoapUIDropTargetListener.isDragAcceptable(SoapUIDragAndDropHandler.java:427)
+	at com.eviware.soapui.support.dnd.SoapUIDragAndDropHandler$SoapUIDropTargetListener.dragEnter(SoapUIDragAndDropHandler.java:191)
+	at java.awt.dnd.DropTarget.dragEnter(DropTarget.java:341)
+	at sun.awt.dnd.SunDropTargetContextPeer.processEnterMessage(SunDropTargetContextPeer.java:312)
+	at sun.awt.X11.XDropTargetContextPeer.processEnterMessage(XDropTargetContextPeer.java:146)
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchEnterEvent(SunDropTargetContextPeer.java:779)
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchEvent(SunDropTargetContextPeer.java:747)
+	at sun.awt.dnd.SunDropTargetEvent.dispatch(SunDropTargetEvent.java:30)
+	at java.awt.Component.dispatchEventImpl(Component.java:4487)
+	at java.awt.Container.dispatchEventImpl(Container.java:2099)
+	at java.awt.Component.dispatchEvent(Component.java:4460)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4577)
+	at java.awt.LightweightDispatcher.trackMouseEnterExit(Container.java:4366)
+	at java.awt.LightweightDispatcher.processDropTargetEvent(Container.java:4304)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4163)
+	at java.awt.Container.dispatchEventImpl(Container.java:2085)
+	at java.awt.Window.dispatchEventImpl(Window.java:2478)
+	at java.awt.Component.dispatchEvent(Component.java:4460)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:599)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+2011-04-27 17:38:46,906 ERROR [SoapUI] An error occured [Owner failed to convert data], see error log for details
+2011-04-27 17:38:46,907 ERROR [errorlog] java.io.IOException: Owner failed to convert data
+java.io.IOException: Owner failed to convert data
+	at sun.awt.X11.XSelection.validateDataGetter(XSelection.java:486)
+	at sun.awt.X11.XSelection.getData(XSelection.java:350)
+	at sun.awt.X11.XDnDDropTargetProtocol.getData(XDnDDropTargetProtocol.java:841)
+	at sun.awt.X11.XDropTargetContextPeer.getNativeData(XDropTargetContextPeer.java:132)
+	at sun.awt.dnd.SunDropTargetContextPeer.getTransferData(SunDropTargetContextPeer.java:245)
+	at sun.awt.datatransfer.TransferableProxy.getTransferData(TransferableProxy.java:56)
+	at java.awt.dnd.DropTargetContext$TransferableProxy.getTransferData(DropTargetContext.java:359)
+	at com.eviware.soapui.support.dnd.SoapUIDragAndDropHandler$SoapUIDropTargetListener.isDragAcceptable(SoapUIDragAndDropHandler.java:427)
+	at com.eviware.soapui.support.dnd.SoapUIDragAndDropHandler$SoapUIDropTargetListener.dragOver(SoapUIDragAndDropHandler.java:310)
+	at java.awt.dnd.DropTarget.dragOver(DropTarget.java:365)
+	at sun.awt.dnd.SunDropTargetContextPeer.processMotionMessage(SunDropTargetContextPeer.java:456)
+	at sun.awt.X11.XDropTargetContextPeer.processMotionMessage(XDropTargetContextPeer.java:159)
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchMotionEvent(SunDropTargetContextPeer.java:804)
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchEvent(SunDropTargetContextPeer.java:750)
+	at sun.awt.dnd.SunDropTargetEvent.dispatch(SunDropTargetEvent.java:30)
+	at java.awt.Component.dispatchEventImpl(Component.java:4487)
+	at java.awt.Container.dispatchEventImpl(Container.java:2099)
+	at java.awt.Component.dispatchEvent(Component.java:4460)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4577)
+	at java.awt.LightweightDispatcher.processDropTargetEvent(Container.java:4312)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4163)
+	at java.awt.Container.dispatchEventImpl(Container.java:2085)
+	at java.awt.Window.dispatchEventImpl(Window.java:2478)
+	at java.awt.Component.dispatchEvent(Component.java:4460)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:599)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+2011-05-01 08:54:48,553 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 08:54:49,967 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 2114ms (381 bytes)
+2011-05-01 08:56:49,875 INFO  [WsdlProject] Saved project [Ideal] to [/code/ideal/Ideal-soapui-project.xml - 27413 bytes
+2011-05-01 08:56:49,924 INFO  [WsdlProject] Saved project [InterSwitch] to [/code/qrios/interswitch/InterSwitch-soapui-project.xml - 38089 bytes
+2011-05-01 08:56:49,948 INFO  [WsdlProject] Saved project [Ideal Live] to [/code/ideal/Ideal-Live-soapui-project.xml - 26323 bytes
+2011-05-01 08:56:49,954 INFO  [WorkspaceImpl] Saved workspace to [/code/ideal/Ideal-workspace.xml]
+2011-05-01 08:56:51,712 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 08:56:52,547 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1484ms (381 bytes)
+2011-05-01 09:16:01,464 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 09:16:02,377 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1562ms (189 bytes)
+2011-05-01 09:16:34,879 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 09:16:35,474 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1119ms (189 bytes)
+2011-05-01 09:19:10,576 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 09:19:11,135 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1092ms (189 bytes)
+2011-05-01 09:23:34,836 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 09:23:35,738 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1535ms (189 bytes)
+2011-05-01 11:29:09,908 INFO  [WsdlProject] Saved project [Ideal] to [/code/ideal/Ideal-soapui-project.xml - 27341 bytes
+2011-05-01 11:29:09,917 INFO  [WsdlProject] Saved project [InterSwitch] to [/code/qrios/interswitch/InterSwitch-soapui-project.xml - 38089 bytes
+2011-05-01 11:29:09,922 INFO  [WsdlProject] Saved project [Ideal Live] to [/code/ideal/Ideal-Live-soapui-project.xml - 26323 bytes
+2011-05-01 11:29:09,923 INFO  [WorkspaceImpl] Saved workspace to [/code/ideal/Ideal-workspace.xml]
+2011-05-01 11:29:11,547 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 11:29:12,452 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1534ms (189 bytes)
+2011-05-01 11:33:44,249 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 11:33:45,241 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1615ms (189 bytes)
+2011-05-01 11:56:17,554 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 11:56:18,534 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 2428ms (189 bytes)
+2011-05-01 11:57:23,385 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 11:57:23,968 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 4139ms (189 bytes)
+2011-05-01 11:57:49,205 INFO  [WsdlProject] Saved project [Ideal] to [/code/ideal/Ideal-soapui-project.xml - 28156 bytes
+2011-05-01 11:57:49,209 INFO  [WsdlProject] Saved project [InterSwitch] to [/code/qrios/interswitch/InterSwitch-soapui-project.xml - 38089 bytes
+2011-05-01 11:57:49,220 INFO  [WsdlProject] Saved project [Ideal Live] to [/code/ideal/Ideal-Live-soapui-project.xml - 26323 bytes
+2011-05-01 11:57:49,221 INFO  [WorkspaceImpl] Saved workspace to [/code/ideal/Ideal-workspace.xml]
+2011-05-01 12:05:14,189 INFO  [WsdlProject] Saved project [Ideal] to [/code/ideal/Ideal-soapui-project.xml - 28189 bytes
+2011-05-01 12:05:14,193 INFO  [WsdlProject] Saved project [InterSwitch] to [/code/qrios/interswitch/InterSwitch-soapui-project.xml - 38089 bytes
+2011-05-01 12:05:14,197 INFO  [WsdlProject] Saved project [Ideal Live] to [/code/ideal/Ideal-Live-soapui-project.xml - 26323 bytes
+2011-05-01 12:05:14,198 INFO  [WorkspaceImpl] Saved workspace to [/code/ideal/Ideal-workspace.xml]
+2011-05-01 12:05:33,076 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 12:05:33,995 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1582ms (189 bytes)
+2011-05-01 12:06:05,800 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 12:06:06,365 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1105ms (189 bytes)
+2011-05-01 12:06:31,117 INFO  [WsdlProject] Saved project [Ideal] to [/code/ideal/Ideal-soapui-project.xml - 28189 bytes
+2011-05-01 12:06:31,123 INFO  [WsdlProject] Saved project [InterSwitch] to [/code/qrios/interswitch/InterSwitch-soapui-project.xml - 38089 bytes
+2011-05-01 12:06:31,127 INFO  [WsdlProject] Saved project [Ideal Live] to [/code/ideal/Ideal-Live-soapui-project.xml - 26323 bytes
+2011-05-01 12:06:31,128 INFO  [WorkspaceImpl] Saved workspace to [/code/ideal/Ideal-workspace.xml]
+2011-05-01 12:12:28,854 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 12:12:29,507 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1106ms (189 bytes)
+2011-05-01 12:13:56,734 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 12:13:57,299 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1098ms (189 bytes)
+2011-05-01 17:05:49,242 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 17:05:49,804 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1097ms (189 bytes)
+2011-05-01 17:06:24,363 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 17:06:24,929 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1101ms (189 bytes)
+2011-05-01 17:55:54,497 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 17:55:55,404 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1532ms (189 bytes)
+2011-05-01 17:56:37,168 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 17:56:37,734 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1104ms (189 bytes)
+2011-05-01 18:10:51,757 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 18:10:52,366 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1154ms (189 bytes)
+2011-05-01 18:46:05,125 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 18:46:06,005 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1507ms (189 bytes)
+2011-05-01 19:05:37,369 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 19:05:37,946 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1119ms (189 bytes)
+2011-05-01 19:12:42,736 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 19:12:43,298 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1093ms (189 bytes)
+2011-05-01 19:22:47,539 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 19:22:48,452 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1531ms (381 bytes)
+2011-05-01 19:25:00,570 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 19:25:01,239 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1226ms (189 bytes)
+2011-05-01 19:26:11,049 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 19:26:11,656 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1147ms (189 bytes)
+2011-05-01 19:33:22,220 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 19:33:23,155 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1570ms (189 bytes)
+2011-05-01 19:35:10,565 INFO  [WsdlProject] Saved project [Ideal] to [/code/ideal/Ideal-soapui-project.xml - 28050 bytes
+2011-05-01 19:35:10,570 INFO  [WsdlProject] Saved project [InterSwitch] to [/code/qrios/interswitch/InterSwitch-soapui-project.xml - 38089 bytes
+2011-05-01 19:35:10,576 INFO  [WsdlProject] Saved project [Ideal Live] to [/code/ideal/Ideal-Live-soapui-project.xml - 26323 bytes
+2011-05-01 19:35:10,578 INFO  [WorkspaceImpl] Saved workspace to [/code/ideal/Ideal-workspace.xml]
+2011-05-01 19:39:15,047 INFO  [WsdlRequestCredentialsProvider] 127.0.0.1:8080 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-01 19:39:15,543 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 640ms (189 bytes)
+2011-05-07 00:26:36,992 ERROR [WsdlSubmit] Exception in request: java.lang.Exception: java.net.ConnectException: Connection refused
+2011-05-07 00:26:37,015 ERROR [SoapUI] An error occured [java.net.ConnectException: Connection refused], see error log for details
+2011-05-07 00:26:37,015 ERROR [errorlog] java.lang.Exception: java.net.ConnectException: Connection refused
+java.lang.Exception: java.net.ConnectException: Connection refused
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:158)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:118)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.connect(Socket.java:478)
+	at java.net.Socket.<init>(Socket.java:375)
+	at java.net.Socket.<init>(Socket.java:249)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:80)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(SoapUIMultiThreadedHttpConnectionManager.java:1401)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:153)
+	... 7 more
+2011-05-07 00:26:37,035 INFO  [AbstractHttpRequestDesktopPanel] Error getting response for [SmsWebServiceBinding.SendSms:Request 1]; java.lang.Exception: java.net.ConnectException: Connection refused
+2011-05-07 00:26:41,477 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-07 00:26:42,108 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1113ms (189 bytes)
+2011-05-09 10:40:14,333 INFO  [WsdlRequestCredentialsProvider] 70.38.103.145:80 requires authentication with the realm 'EJBServiceEndpointServlet Realm'
+2011-05-09 10:40:15,310 INFO  [AbstractHttpRequestDesktopPanel] Got response for [SmsWebServiceBinding.SendSms:Request 1] in 1521ms (189 bytes)

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence">
+    <persistence-unit name="openmlp">
+        <provider>org.apache.openmlp.persistence.PersistenceProviderImpl</provider>
+        <class>test.mlp.MyTestEntity</class>
+    <!--
+    <persistence-unit-transaction-type>JTA</persistence-unit-transaction-type>
+    -->
+    
+        <properties>
+            <property name="openmlp.ConnectionUserName" value="sa"/>
+<!--
+<property name="openmlp.ConnectionPassword" value="pass"/>
+-->
+            <property name="openmlp.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
+            <property name="openmlp.DynamicEnhancementAgent"  value="false"/>
+
+            <property name="openmlp.RuntimeUnenhancedClasses" value="supported"/>
+ <!--
+ -javaagent:/home/dev/openmlp/lib/openmlp.jar
+ -->
+            <property name="openmlp.ConnectionURL" value="jdbc:hsqldb:db-hypersonic/testMLPDB"/>
+            <property name="openmlp.ConnectionDriverName" value="org.hsqldb.jdbcDriver"/>
+            <property name="openmlp.ConnectionFactoryProperties"
+    value="PrettyPrint=true, PrettyPrintLineLength=80, PrintParameters=true"/>
+    <!--
+      <property name="javax.persistence.jtaDataSource" value="jdbc/TestJTAXADS"/>
+      -->
+            <property name="openmlp.Log" value="DefaultLevel=INFO, Tool=TRACE"/>
+      <!--<property name="openmlp.QueryCache" value="true(EvictPolicy='timestamp')"/>
+
+      <property name="openmlp.TransactionMode" value="managed"/>
+      -->
+        </properties>
+    </persistence-unit>
+</persistence>

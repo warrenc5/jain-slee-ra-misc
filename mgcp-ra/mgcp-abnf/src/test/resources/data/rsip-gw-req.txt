@@ -1,0 +1,4 @@
+RSIP 1200 aaln/1@rgw-2567.whatever.net MGCP 1.0
+RM: graceful
+RD: 300
+

@@ -1,0 +1,20 @@
+exitOnError false
+deactivateservice name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+removeallsbbs name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/usr/src/maven/repository/mofokom/megaco-service/1.0-SNAPSHOT/megaco-service-1.0-SNAPSHOT-du.jar
+deactivateraentity MegaCo\ Resource\ Adaptor\ Entity
+waittilraentityisinactive  MegaCo\ Resource\ Adaptor\ Entity
+unbindralinkname MegaCo\ Resource\ Adaptor\ Entity\ Link
+removeraentity MegaCo\ Resource\ Adaptor\ Entity
+uninstall file:/usr/src/maven/repository/mofokom/megaco-ra/1.0-SNAPSHOT/megaco-ra-1.0-SNAPSHOT-du.jar
+installlocaldu /home/wozza/.m2/repository/mofokom/megaco-ra/1.0-SNAPSHOT/megaco-ra-1.0-SNAPSHOT-du.jar
+createraentity "name=MegaCo Resource Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT" "MegaCo Resource Adaptor Entity" ACTIVITY_DIMENSION=1000,CLIENT_MAX_CONNECTIONS=1,CLIENT_SOCKET_ADDRESS="sctp://[::1]:8000",CLIENT_TIMEOUT=1000,SYNCHRONOUS=false,LISTEN_BIND_SOCKET_ADDRESS="sctp://[::1]:8000",LISTEN_HOME_SOCKET_ADDRESS="sctp://[::1]",MARSHALL_ACTIVITY=false,MARSHALL_EVENT=false,PROTOCOL_FORMAT="ABNF",SESSION_IDLE_TIME=2000,RECEIVE_BUFFER=2048,WORK_QUEUE=10,AUTHENTICATION_ALGORITHM=MD5,AUTHENTICATION_DATA=SharedSecret
+settracerlevel resourceadaptorentity MegaCo\ Resource\ Adaptor\ Entity MegaCo\ Resource\ Adaptor\ Entity Finest 
+
+activateraentity MegaCo\ Resource\ Adaptor\ Entity
+
+bindralinkname MegaCo\ Resource\ Adaptor\ Entity MegaCo\ Resource\ Adaptor\ Entity\ Link
+
+installlocaldu /home/wozza/.m2/repository/mofokom/megaco-service/1.0-SNAPSHOT/megaco-service-1.0-SNAPSHOT-du.jar
+activateservice name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT

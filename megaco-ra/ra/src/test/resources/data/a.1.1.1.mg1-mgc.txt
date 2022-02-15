@@ -1,0 +1,13 @@
+MEGACO/1 [124.124.124.222] Transaction = 9998
+{
+  Context = -
+  {
+    W-ServiceChange = ROOT
+    {
+      Services
+      {
+      Method = Restart, ServiceChangeAddress = 55555, Profile = ResGW/1
+      }
+    }
+  }
+}

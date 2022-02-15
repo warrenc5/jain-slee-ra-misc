@@ -1,0 +1,10 @@
+exitOnError false
+deactivateservice name=JPA\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=JPA\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=JPA\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT
+settracelevel sbb name=JPA\ SLEE\ Service\ Example\ Root\ SBB,vendor=MOFOKOM,version=1.0-SNAPSHOT Finest 
+settracelevel service name=JPA\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+
+activateservice name=JPA\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+
+

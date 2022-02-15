@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<!DOCTYPE sbb-jar PUBLIC
+"-//Sun Microsystems, Inc.//DTD JAIN SLEE SBB 1.1//EN"
+"USSD://java.sun.com/dtd/slee-sbb-jar_1_1.dtd">
+<sbb-jar>
+    <sbb id="USSDSBB">
+        <description> USSD Service Sbb </description>
+        <sbb-name> USSD Sbb </sbb-name>
+        <sbb-vendor> MOFOKOM </sbb-vendor>
+        <sbb-version> ${pom.version} </sbb-version>
+        <sbb-alias> USSDSBB </sbb-alias>
+        <!--
+        <library-ref>
+            <library-name>USSD Library</library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version>${pom.version}</library-version>
+        </library-ref>
+        -->
+        <sbb-classes>
+            <sbb-abstract-class>
+                <sbb-abstract-class-name> mofokom.service.ussd.USSDSbb </sbb-abstract-class-name>
+            </sbb-abstract-class>
+            <sbb-local-interface>
+                <sbb-local-interface-name>mofokom.service.ussd.local.USSDLocal</sbb-local-interface-name>
+            </sbb-local-interface>
+            <sbb-usage-parameters-interface>
+                <sbb-usage-parameters-interface-name>
+                    mofokom.service.ussd.usage.USSDUsageParameters
+                </sbb-usage-parameters-interface-name>
+            </sbb-usage-parameters-interface>
+        </sbb-classes>
+
+        <event event-direction="Receive" initial-event="True">
+            <event-name>ServiceStarted</event-name>
+            <event-type-ref>
+                <event-type-name>javax.slee.serviceactivity.ServiceStartedEvent</event-type-name>
+                <event-type-vendor>javax.slee</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <event event-direction="Receive" initial-event="True">
+            <event-name>Timer</event-name>
+            <event-type-ref>
+                <event-type-name>javax.slee.facilities.TimerEvent</event-type-name>
+                <event-type-vendor>javax.slee</event-type-vendor>
+                <event-type-version> ${pom.version}</event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>TransportError</event-name>
+            <event-type-ref>
+                <event-type-name>TransportError</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>TimeoutError</event-name>
+            <event-type-ref>
+                <event-type-name>TimeoutError</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="True">
+            <event-name>UssdBegin</event-name>
+            <event-type-ref>
+                <event-type-name>UssdBegin</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>UssdAbort</event-name>
+            <event-type-ref>
+                <event-type-name>UssdAbort</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>UssdContinue</event-name>
+            <event-type-ref>
+                <event-type-name>UssdContinue</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>UssdEnd</event-name>
+            <event-type-ref>
+                <event-type-name>UssdEnd</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+        </event>
+        <!--
+        <event event-direction="Receive" initial-event="False">
+            <event-name>UssdBindResp</event-name>
+            <event-type-ref>
+                <event-type-name>UssdBindResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>UssdUnBindResp</event-name>
+            <event-type-ref>
+                <event-type-name>UssdUnBindResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>UssdShakeResp</event-name>
+            <event-type-ref>
+                <event-type-name>UssdShakeResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+        </event>
+        -->
+        <event event-direction="Receive" initial-event="False">
+            <event-name>UssdChargeIndResp</event-name>
+            <event-type-ref>
+                <event-type-name>UssdChargeIndResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+        </event>
+
+
+        <env-entry>
+            <description/>
+            <env-entry-name>USSD_SBB_RA_INTERFACE_NAME</env-entry-name>
+            <env-entry-type>java.lang.String</env-entry-type>
+            <env-entry-value>slee/resources/ussd/sbbrainterface</env-entry-value>
+        </env-entry>
+        <env-entry>
+            <description/>
+            <env-entry-name>USSD_ACI_FACTORY_NAME</env-entry-name>
+            <env-entry-type>java.lang.String</env-entry-type>
+            <env-entry-value>slee/resources/ussd/activitycontextinterfacefactory </env-entry-value>
+        </env-entry>
+        <resource-adaptor-type-binding>
+            <description/>
+            <resource-adaptor-type-ref>
+                <resource-adaptor-type-name>InfoX Resource Adaptor Type</resource-adaptor-type-name>
+                <resource-adaptor-type-vendor>MOFOKOM</resource-adaptor-type-vendor>
+                <resource-adaptor-type-version>1.1</resource-adaptor-type-version>
+            </resource-adaptor-type-ref>
+            <activity-context-interface-factory-name> slee/resources/ussd/activitycontextinterfacefactory </activity-context-interface-factory-name>
+            <resource-adaptor-entity-binding>
+                <resource-adaptor-object-name> slee/resources/ussd/sbbrainterface</resource-adaptor-object-name>
+                <resource-adaptor-entity-link>InfoX Resource Adaptor Entity Link</resource-adaptor-entity-link>
+            </resource-adaptor-entity-binding>
+        </resource-adaptor-type-binding>
+
+    </sbb>
+</sbb-jar>

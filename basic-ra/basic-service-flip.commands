@@ -1,0 +1,9 @@
+exitOnError false
+deactivateservice name=Basic\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=Basic\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=Basic\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/Basic-client/service/target/Basic-service-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/Basic-client/service/target/Basic-service-1.0-SNAPSHOT-du.jar 
+activateservice name=Basic\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

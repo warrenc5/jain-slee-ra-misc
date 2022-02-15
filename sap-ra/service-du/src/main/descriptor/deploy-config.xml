@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<deploy-config>
+  <!--
+        [
+           (Address:java.lang.String=229.1.1.2),
+   (LocalAddress:java.lang.String=127.0.0.1),
+   (MulticastPort:java.lang.Integer=9875),
+   (BitRateLimit:java.lang.Long=4000),
+   (MaximumDatagramSize:java.lang.Integer=1500),
+   (LoopbackEnabled:java.lang.Boolean=true),
+   (TTL:java.lang.Byte=1),
+   (MinimumTransmitDelay:java.lang.Integer=30),
+  
+        ]
+        -->
+  <ra-entity resource-adaptor-id="ResourceAdaptorID[name=SAP,vendor=${pom.groupId},version=${pom.version}]" entity-name="SAP Entity">
+    <properties file="">
+      <property name="Address" type="java.lang.String" value="229.1.1.2"/>
+      <property name="LocalAddress" type="java.lang.String" value="127.0.0.1"/>
+      <property name="MulticastPort" type="java.lang.Integer" value="9875"/>
+      <property name="BitRateLimit" type="java.lang.Long" value="4000"/>
+      <property name="MaximumDatagramSize" type="java.lang.Integer" value="1500"/>
+      <property name="LoopbackEnabled" type="java.lang.Boolean" value="true"/>
+      <property name="TTL" type="java.lang.Byte" value="1"/>
+      <property name="MinimumTransmitDelay" type="java.lang.Integer" value="30"/>
+    </properties>
+    <ra-link name="SAP Entity Link"/>
+  </ra-entity>
+  <!--
+          JAVA TESTING CODE
+           
+  properties.addProperty(new Property("Address",java.lang.String.class.getName(),229.1.1.2));
+   
+  properties.addProperty(new Property("LocalAddress",java.lang.String.class.getName(),127.0.0.1));
+   
+  properties.addProperty(new Property("MulticastPort",java.lang.Integer.class.getName(),9875));
+   
+  properties.addProperty(new Property("BitRateLimit",java.lang.Long.class.getName(),4000));
+   
+  properties.addProperty(new Property("MaximumDatagramSize",java.lang.Integer.class.getName(),1500));
+   
+  properties.addProperty(new Property("LoopbackEnabled",java.lang.Boolean.class.getName(),true));
+   
+  properties.addProperty(new Property("TTL",java.lang.Byte.class.getName(),1));
+   
+  properties.addProperty(new Property("MinimumTransmitDelay",java.lang.Integer.class.getName(),30));
+  -->
+  <!--
+          OC RAE 
+
+          Address="229.1.1.2",LocalAddress="127.0.0.1",MulticastPort=9875,BitRateLimit=4000,MaximumDatagramSize=1500,LoopbackEnabled=true,TTL=1,MinimumTransmitDelay=30,-->
+</deploy-config>

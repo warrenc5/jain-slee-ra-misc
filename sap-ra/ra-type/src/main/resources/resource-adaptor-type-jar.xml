@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE resource-adaptor-type-jar PUBLIC
+          "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor Type 1.1//EN"
+                  "http://java.sun.com/dtd/slee-resource-adaptor-type-jar_1_1.dtd">
+<resource-adaptor-type-jar>
+
+    <resource-adaptor-type id="SAP">
+        <description> SAP RA Type </description>
+        <resource-adaptor-type-name> SAP </resource-adaptor-type-name>
+        <resource-adaptor-type-vendor> ${pom.groupId} </resource-adaptor-type-vendor>
+        <resource-adaptor-type-version> ${pom.version} </resource-adaptor-type-version>
+        <resource-adaptor-type-classes>
+            <description> </description>
+            <activity-type>
+                <description> Advertisment </description>
+                <activity-type-name> sap.Announcement </activity-type-name>
+            </activity-type>
+            <activity-context-interface-factory-interface>
+                <description> </description>
+                <activity-context-interface-factory-interface-name>
+                                        sap.resource.SAPActivityContextInterfaceFactory
+                </activity-context-interface-factory-interface-name>
+            </activity-context-interface-factory-interface>
+            <resource-adaptor-interface>
+                <description> </description>
+                <resource-adaptor-interface-name>
+                                       sap.Announcer
+                </resource-adaptor-interface-name>
+            </resource-adaptor-interface>
+        </resource-adaptor-type-classes>
+        <event-type-ref>
+            <event-type-name>
+                                sap.event.AnnouncementEvent.ANNOUNCEMENT
+            </event-type-name>
+            <event-type-vendor> ${pom.groupId} </event-type-vendor>
+            <event-type-version> ${pom.version} </event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>
+                                sap.event.AnnouncementEvent.DELETE_ANNOUNCEMENT
+            </event-type-name>
+            <event-type-vendor> ${pom.groupId} </event-type-vendor>
+            <event-type-version> ${pom.version} </event-type-version>
+        </event-type-ref>
+    </resource-adaptor-type>
+</resource-adaptor-type-jar>

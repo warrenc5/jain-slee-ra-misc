@@ -1,0 +1,19 @@
+exitOnError false
+deactivateservice name=MLP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=MLP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=MLP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/omlp/omlp-service/target/omlp-service-1.0-SNAPSHOT-du.jar 
+
+deactivateraentity MLP\ Resource\ Adaptor\ Entity 
+waittilraentityisinactive MLP\ Resource\ Adaptor\ Entity 
+unbindralinkname MLP\ Resource\ Adaptor\ Entity\ Link 
+removeraentity MLP\ Resource\ Adaptor\ Entity 
+uninstall file:/home/code/omlp/omlp-ra/target/omlp-ra-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/omlp/omlp-ra/target/omlp-ra-1.0-SNAPSHOT-du.jar 
+createraentity name=MLP\ Resource\ Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT MLP\ Resource\ Adaptor\ Entity PERSISTENCE_UNIT_NAME=mypu,DATASOURCE_NAME=MyDataSource
+bindralinkname MLP\ Resource\ Adaptor\ Entity MLP\ Resource\ Adaptor\ Entity\ Link
+activateraentity MLP\ Resource\ Adaptor\ Entity 
+installlocaldu /code/omlp/omlp-service/target/omlp-service-1.0-SNAPSHOT-du.jar 
+activateservice name=MLP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

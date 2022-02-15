@@ -1,0 +1,5 @@
+200 1201 OK
+A: a:PCMU, p:10-100, e:on, s:off, v:L;S, m:sendonly;recvonly;sendrecv;inactive;netwloop;netwtest
+A: a:G729, p:30-90, e:on, s:on, v:L;S, m:sendonly;recvonly;sendrecv;inactive;confrnce;netwloop
+
+

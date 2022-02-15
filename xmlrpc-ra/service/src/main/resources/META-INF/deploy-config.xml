@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<deploy-config>
+  <!--
+        [
+           (ACTIVITY_DIMENSION:java.lang.Integer=1000),
+   (AUTHENTICATION:java.lang.Boolean=false),
+   (CHUNKING:java.lang.Boolean=false),
+   (CONNECTION_REQUEST_TIMEOUT:java.lang.Integer=1000),
+   (CONNECTION_TIMEOUT:java.lang.Integer=1000),
+   (DEST_HOST:java.lang.String=localhost),
+   (DEST_PORT:java.lang.Integer=80),
+   (DEST_URL:java.lang.String=/),
+   (ENCODER_BUFFER_SIZE:java.lang.Integer=1000),
+   (ENCODER_STREAMING:java.lang.Boolean=false),
+   (EXECUTOR_MAX_POOL_SIZE:java.lang.Integer=1),
+   (EXECUTOR_CORE_POOL_SIZE:java.lang.Integer=1),
+   (EXECUTOR_POOL_TIMEOUT:java.lang.Long=1000),
+   (LISTEN_PORT:java.lang.Integer=0),
+   (MAX_CONNECTIONS:java.lang.Integer=1),
+   (PENDING_REQUEST_CAPACITY:java.lang.Integer=10),
+   (POOL_CONNECTION_TIMEOUT:java.lang.Integer=1000),
+   (REALM_USER_NAME:java.lang.String=),
+   (REALM_USER_PASSWORD:java.lang.String=),
+   (RESPONSE_TIMEOUT:java.lang.Integer=1000),
+   (SHUTDOWN_TIME:java.lang.Long=1000),
+   (SOCKET_BUFFER_SIZE:java.lang.Integer=2048),
+   (SOCKET_TIMEOUT:java.lang.Integer=1000),
+   (STALE_CONNECTIONS_CHECK:java.lang.Boolean=false),
+   (SYNCHRONOUS:java.lang.Boolean=false),
+   (TCP_NO_DELAY:java.lang.Boolean=false),
+   (USER_AGENT:java.lang.String=),
+   (WORK_QUEUE:java.lang.Integer=10),
+  
+        ]
+        -->
+  <ra-entity resource-adaptor-id="ResourceAdaptorID[name=XmlRpc Resource Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT]" entity-name="XmlRpc Resource Adaptor Entity">
+    <properties file="">
+      <property name="ACTIVITY_DIMENSION" type="java.lang.Integer" value="1000"/>
+      <property name="AUTHENTICATION" type="java.lang.Boolean" value="false"/>
+      <property name="CHUNKING" type="java.lang.Boolean" value="false"/>
+      <property name="CONNECTION_REQUEST_TIMEOUT" type="java.lang.Integer" value="1000"/>
+      <property name="CONNECTION_TIMEOUT" type="java.lang.Integer" value="1000"/>
+      <property name="DEST_HOST" type="java.lang.String" value="localhost"/>
+      <property name="DEST_PORT" type="java.lang.Integer" value="8080"/>
+      <property name="DEST_URL" type="java.lang.String" value="/xmlrpc-www-1.0-SNAPSHOT"/>
+      <property name="ENCODER_BUFFER_SIZE" type="java.lang.Integer" value="1000"/>
+      <property name="ENCODER_STREAMING" type="java.lang.Boolean" value="false"/>
+      <property name="EXECUTOR_MAX_POOL_SIZE" type="java.lang.Integer" value="1"/>
+      <property name="EXECUTOR_CORE_POOL_SIZE" type="java.lang.Integer" value="1"/>
+      <property name="EXECUTOR_POOL_TIMEOUT" type="java.lang.Long" value="1000"/>
+      <property name="LISTEN_PORT" type="java.lang.Integer" value="0"/>
+      <property name="MAX_CONNECTIONS" type="java.lang.Integer" value="1"/>
+      <property name="PENDING_REQUEST_CAPACITY" type="java.lang.Integer" value="10"/>
+      <property name="POOL_CONNECTION_TIMEOUT" type="java.lang.Integer" value="1000"/>
+      <property name="REALM_USER_NAME" type="java.lang.String" value=""/>
+      <property name="REALM_USER_PASSWORD" type="java.lang.String" value=""/>
+      <property name="RESPONSE_TIMEOUT" type="java.lang.Integer" value="1000"/>
+      <property name="SHUTDOWN_TIME" type="java.lang.Long" value="1000"/>
+      <property name="SOCKET_BUFFER_SIZE" type="java.lang.Integer" value="2048"/>
+      <property name="SOCKET_TIMEOUT" type="java.lang.Integer" value="1000"/>
+      <property name="STALE_CONNECTIONS_CHECK" type="java.lang.Boolean" value="false"/>
+      <property name="SYNCHRONOUS" type="java.lang.Boolean" value="false"/>
+      <property name="TCP_NO_DELAY" type="java.lang.Boolean" value="false"/>
+      <property name="USER_AGENT" type="java.lang.String" value=""/>
+      <property name="WORK_QUEUE" type="java.lang.Integer" value="10"/>
+    </properties>
+    <ra-link name="XmlRpc Resource Adaptor Entity Link"/>
+  </ra-entity>
+  <!--
+          JAVA TESTING CODE
+           
+  properties.addProperty(new Property("ACTIVITY_DIMENSION",java.lang.Integer.class.getName(),1000));
+   
+  properties.addProperty(new Property("AUTHENTICATION",java.lang.Boolean.class.getName(),false));
+   
+  properties.addProperty(new Property("CHUNKING",java.lang.Boolean.class.getName(),false));
+   
+  properties.addProperty(new Property("CONNECTION_REQUEST_TIMEOUT",java.lang.Integer.class.getName(),1000));
+   
+  properties.addProperty(new Property("CONNECTION_TIMEOUT",java.lang.Integer.class.getName(),1000));
+   
+  properties.addProperty(new Property("DEST_HOST",java.lang.String.class.getName(),localhost));
+   
+  properties.addProperty(new Property("DEST_PORT",java.lang.Integer.class.getName(),80));
+   
+  properties.addProperty(new Property("DEST_URL",java.lang.String.class.getName(),/));
+   
+  properties.addProperty(new Property("ENCODER_BUFFER_SIZE",java.lang.Integer.class.getName(),1000));
+   
+  properties.addProperty(new Property("ENCODER_STREAMING",java.lang.Boolean.class.getName(),false));
+   
+  properties.addProperty(new Property("EXECUTOR_MAX_POOL_SIZE",java.lang.Integer.class.getName(),1));
+   
+  properties.addProperty(new Property("EXECUTOR_CORE_POOL_SIZE",java.lang.Integer.class.getName(),1));
+   
+  properties.addProperty(new Property("EXECUTOR_POOL_TIMEOUT",java.lang.Long.class.getName(),1000));
+   
+  properties.addProperty(new Property("LISTEN_PORT",java.lang.Integer.class.getName(),0));
+   
+  properties.addProperty(new Property("MAX_CONNECTIONS",java.lang.Integer.class.getName(),1));
+   
+  properties.addProperty(new Property("PENDING_REQUEST_CAPACITY",java.lang.Integer.class.getName(),10));
+   
+  properties.addProperty(new Property("POOL_CONNECTION_TIMEOUT",java.lang.Integer.class.getName(),1000));
+   
+  properties.addProperty(new Property("REALM_USER_NAME",java.lang.String.class.getName(),));
+   
+  properties.addProperty(new Property("REALM_USER_PASSWORD",java.lang.String.class.getName(),));
+   
+  properties.addProperty(new Property("RESPONSE_TIMEOUT",java.lang.Integer.class.getName(),1000));
+   
+  properties.addProperty(new Property("SHUTDOWN_TIME",java.lang.Long.class.getName(),1000));
+   
+  properties.addProperty(new Property("SOCKET_BUFFER_SIZE",java.lang.Integer.class.getName(),2048));
+   
+  properties.addProperty(new Property("SOCKET_TIMEOUT",java.lang.Integer.class.getName(),1000));
+   
+  properties.addProperty(new Property("STALE_CONNECTIONS_CHECK",java.lang.Boolean.class.getName(),false));
+   
+  properties.addProperty(new Property("SYNCHRONOUS",java.lang.Boolean.class.getName(),false));
+   
+  properties.addProperty(new Property("TCP_NO_DELAY",java.lang.Boolean.class.getName(),false));
+   
+  properties.addProperty(new Property("USER_AGENT",java.lang.String.class.getName(),));
+   
+  properties.addProperty(new Property("WORK_QUEUE",java.lang.Integer.class.getName(),10));
+  -->
+  <!--
+          OC RAE 
+exitOnError false
+installlocaldu ~/.m2/repository/mofokom/http-ra/1.0-SNAPSHOT/http-ra-1.0-SNAPSHOT-du.jar
+createraentity "name=XmlRpc Resource Adaptor,vendor=MOFOKOM,version=1.0" "XmlRpc Resource Adaptor Entity" ACTIVITY_DIMENSION=1000,AUTHENTICATION=false,CHUNKING=false,CONNECTION_REQUEST_TIMEOUT=1000,CONNECTION_TIMEOUT=1000,DEST_HOST="localhost",DEST_PORT=80,DEST_URL="/",ENCODER_BUFFER_SIZE=1000,ENCODER_STREAMING=false,EXECUTOR_MAX_POOL_SIZE=1,EXECUTOR_CORE_POOL_SIZE=1,EXECUTOR_POOL_TIMEOUT=1000,LISTEN_PORT=0,MAX_CONNECTIONS=1,PENDING_REQUEST_CAPACITY=10,POOL_CONNECTION_TIMEOUT=1000,REALM_USER_NAME="",REALM_USER_PASSWORD="",RESPONSE_TIMEOUT=1000,SHUTDOWN_TIME=1000,SOCKET_BUFFER_SIZE=2048,SOCKET_TIMEOUT=1000,STALE_CONNECTIONS_CHECK=false,SYNCHRONOUS=false,TCP_NO_DELAY=false,USER_AGENT="",WORK_QUEUE=10,
+bindralinkname "XmlRpc Resource Adaptor Entity" "XmlRpc Resource Adaptor Entity Link"
+activateraentity "XmlRpc Resource Adaptor Entity"
+
+clearalarms resourceadaptorentity entity="XmlRpc Resource Adaptor Entity"
+deactivateraentity "XmlRpc Resource Adaptor Entity"
+removeallactivities "XmlRpc Resource Adaptor Entity"
+waittilraentityisinactive "XmlRpc Resource Adaptor Entity"
+unbindralinkname "XmlRpc Resource Adaptor Entity Link"
+removeraentity "XmlRpc Resource Adaptor Entity"
+uninstall file:~/.m2/repository/mofokom/http-ra/1.0-SNAPSHOT/http-ra-1.0-SNAPSHOT-du.jar
+
+          -->
+</deploy-config>

@@ -1,0 +1,6 @@
+exitOnError false
+
+deactivateservice name=XmlRpc\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+removeallsbbs name=XmlRpc\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=XmlRpc\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/usr/src/maven/repository.mine/mofokom/xmlrpc-service/1.0-SNAPSHOT/xmlrpc-service-1.0-SNAPSHOT-du.jar

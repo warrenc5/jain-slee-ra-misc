@@ -1,0 +1,38 @@
+digitMap = (digitString / LWSP "(" LWSP digitStringList LWSP ")" LWSP);
+
+digitStringList   = digitString *( LWSP "|" LWSP digitString );
+
+digitString       = 1*(digitStringElement);
+
+digitStringElement = digitPosition [DOT];
+
+digitPosition     = digitMapLetter / digitMapRange;
+
+digitMapRange     = ("x" / (LWSP "[" LWSP digitLetter LWSP "]" LWSP));
+
+digitLetter       = *((DIGIT "-" DIGIT ) / digitMapLetter);
+
+digitMapLetter    = DIGIT / %x41-4B / %x61-6B / "L" / "S" / "Z";
+
+DOT                  = %x2E;
+
+LWSP                 = *( WSP / COMMENT / EOL );
+
+EOL                  = (CR [LF] / LF );
+
+WSP                  = SP / HTAB;
+
+SEP                  = ( WSP / EOL / COMMENT) LWSP;
+
+COMMENT              = ";";
+
+SP                   = %x20;
+
+HTAB                 = %x09;
+
+CR                   = %x0D;
+
+LF                   = %x0A;
+ALPHA                = %x41-5A / %x61-7A;
+
+DIGIT                = %x30-39;

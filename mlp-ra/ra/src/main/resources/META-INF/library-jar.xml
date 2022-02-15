@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE library-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Library 1.1//EN" "http://java.sun.com/dtd/slee-library-jar_1_1.dtd">
+
+<library-jar>
+    <library>
+        <library-name>MLP Library</library-name>
+        <library-vendor>MOFOKOM</library-vendor>
+        <library-version> ${pom.version}</library-version>
+         <jar>
+            <description/>
+            <jar-name>event-common-1.0-SNAPSHOT.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+        <jar>
+            <description/>
+            <jar-name>j4mlp-3.0.0.0-SNAPSHOT.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+        <jar>
+            <description/>
+            <jar-name>httpcore-4.2-alpha1.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+        <jar>
+            <description/>
+            <jar-name>httpcore-nio-4.2-alpha1.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+    </library>
+</library-jar>

@@ -1,0 +1,14 @@
+CRCX 1205 aaln/1@rgw-2569.whatever.net MGCP 1.0
+C: A3C47F21456789F0
+L: p:10, a:PCMU
+M: sendrecv
+X: 0123456789AD
+R: L/hd
+S: L/rg
+
+v=0
+o=- 25678 753849 IN IP4 128.96.41.1
+s=-
+c=IN IP4 128.96.41.1
+t=0 0
+m=audio 3456 RTP/AVP 0

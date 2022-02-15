@@ -1,0 +1,27 @@
+MEGACO/1 [123.123.123.4]:55555 Transaction = 50003 { 
+Context = $ { 
+Add = A5555 { 
+Media { 
+Stream = 1 { 
+LocalControl { 
+Mode = SendReceive }  }  }  , 
+Events = 1234 { 
+al/of { strict = state
+ ,  }  }  , 
+Signals { 
+al/ri ,  } 
+ } 
+ }  , 
+Add = $ { 
+Media { 
+Stream = 1 { 
+Local { v=0 c=IN IP4 $ m=audio $ RTP/AVP 4
+   a=ptime:30
+                     }  , Remote { v=0 c=IN IP4 124.124.124.222 m=audio 2222
+   RTP/AVP 4 a=ptime:30
+                     }  , LocalControl { 
+nt/jit = 40 , Mode = SendReceive }  }  } 
+ } 
+ } 
+ } 
+ }

@@ -1,0 +1,29 @@
+package javax.megaco.pkg.ext.{0};---
+---
+import javax.megaco.pkg.MegacoPkg;---
+import javax.megaco.pkg.PkgEventItem;---
+import javax.annotation.Generated;---
+---
+@Generated('{'"warren crossing"'}')---
+public final class {1} extends PkgEventItem '{'---
+	public static final int {2} = {3};---
+	public static final String TOKEN = "{4}";---
+---
+	public {1}() '{'---
+		super();---
+		super.itemId = {2};---
+		super.eventId = {2};---
+        super.packageId = {0}.PACKAGE_INSTANCE;---
+---
+	'}'---
+---
+	public int getEventId() '{'---
+---
+		return super.itemId;---
+	'}'---
+---
+	public int getItemId() '{'---
+		return super.itemId;---
+	'}'---
+---
+}'---

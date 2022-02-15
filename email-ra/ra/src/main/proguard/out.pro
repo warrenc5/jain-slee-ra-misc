@@ -1,0 +1,520 @@
+mofokom.deadlock.Caller -> mofokom.resource.mail.impl.a:
+mofokom.deadlock.Deadlock -> mofokom.resource.mail.impl.b:
+    byte[] sig -> a
+    java.math.BigInteger serialNumber -> a
+    java.security.ProtectionDomain pd -> a
+    java.security.cert.Certificate[] certs -> a
+    byte[] encodedCertSig -> b
+    byte[] key -> c
+    boolean quiet -> a
+    byte[] encodeSig(byte[]) -> a
+    byte[] decodeSig(byte[]) -> b
+    void throwError(java.lang.Exception) -> a
+    void checkCall(int) -> a
+    java.lang.String extractBuildNumber(java.lang.String) -> a
+    java.math.BigInteger extractSerialNumber(java.lang.String) -> a
+mofokom.deadlock.DeadlockMain -> mofokom.resource.mail.impl.c:
+    java.util.concurrent.atomic.AtomicLong throttle -> a
+    long then -> a
+    long maxTps -> b
+    java.lang.String alarmId -> a
+    javax.slee.facilities.AlarmFacility alarm -> a
+    void main$3231c38a() -> b
+    void showSigandSerial() -> c
+    void deactivate() -> d
+    void incrementOrWait() -> a
+mofokom.deadlock.DeadlockMain$1 -> mofokom.resource.mail.impl.c$1:
+    java.lang.Object run() -> run
+mofokom.deadlock.DeadlockMain$2 -> mofokom.resource.mail.impl.c$2:
+    void add(java.security.Permission) -> add
+    boolean implies(java.security.Permission) -> implies
+    java.util.Enumeration elements() -> elements
+mofokom.deadlock.DeadlockMain$3 -> mofokom.resource.mail.impl.c$3:
+    java.lang.String getName() -> getName
+mofokom.resource.common.AbstractResourceAdaptor -> mofokom.resource.mail.impl.d:
+    javax.slee.facilities.EventLookupFacility eventLookup -> eventLookup
+    javax.slee.facilities.AlarmFacility alarmFacility -> alarmFacility
+    java.lang.Integer activityDimension -> activityDimension
+    java.util.Map alarmMap -> alarmMap
+    javax.slee.resource.ResourceAdaptorContext raContext -> raContext
+    mofokom.resource.common.AtomicRollingSequence sequence -> sequence
+    java.util.concurrent.ThreadPoolExecutor executor -> executor
+    java.util.Map activityMap -> activityMap
+    javax.slee.facilities.Tracer tracer -> tracer
+    javax.slee.resource.SleeEndpoint sleeEndpoint -> sleeEndpoint
+    javax.slee.transaction.SleeTransactionManager sleeTransactionManager -> sleeTransactionManager
+    javax.slee.resource.ConfigProperties properties -> properties
+    int count -> count
+    boolean synchronous -> synchronous
+    mofokom.resource.common.EventFilter eventFilter -> eventFilter
+    mofokom.resource.common.ResourceAdaptorEntityLifecycle raState -> raState
+    java.lang.String VENDOR -> VENDOR
+    java.lang.String VERSION -> VERSION
+    int DEFAULT_ACTIVITY_FLAGS -> DEFAULT_ACTIVITY_FLAGS
+    int MARSHAL_ACTIVITY_FLAGS -> MARSHAL_ACTIVITY_FLAGS
+    int DEFAULT_EVENT_FLAGS -> DEFAULT_EVENT_FLAGS
+    boolean marshalEvent -> marshalEvent
+    boolean marshalActivity -> marshalActivity
+    javax.slee.resource.Marshaler marshaler -> marshaler
+    void setResourceAdaptorContext(javax.slee.resource.ResourceAdaptorContext) -> setResourceAdaptorContext
+    mofokom.deadlock.Caller getDefaultUsageParameterSet$70bf7a8f() -> getDefaultUsageParameterSet$70bf7a8f
+    void processTransactionFailure(mofokom.resource.common.AbstractTransaction,mofokom.resource.common.TransactionException) -> processTransactionFailure
+    mofokom.resource.common.AbstractTransaction createActivity(java.lang.Object) -> createActivity
+    void unsetResourceAdaptorContext() -> unsetResourceAdaptorContext
+    void raConfigure(javax.slee.resource.ConfigProperties) -> raConfigure
+    void raUnconfigure() -> raUnconfigure
+    void startNewActivityTransacted(mofokom.resource.common.AbstractTransaction) -> startNewActivityTransacted
+    void requestAsyncCommit(mofokom.resource.common.AbstractTransaction) -> requestAsyncCommit
+    void startNewActivitySuspended(mofokom.resource.common.AbstractTransaction) -> startNewActivitySuspended
+    void raActive() -> raActive
+    void raStopping() -> raStopping
+    void raInactive() -> raInactive
+    void raVerifyConfiguration(javax.slee.resource.ConfigProperties) -> raVerifyConfiguration
+    void raConfigurationUpdate(javax.slee.resource.ConfigProperties) -> raConfigurationUpdate
+    java.lang.Object getResourceAdaptorInterface(java.lang.String) -> getResourceAdaptorInterface
+    javax.slee.resource.Marshaler getMarshaler() -> getMarshaler
+    void serviceActive(javax.slee.resource.ReceivableService) -> serviceActive
+    void serviceStopping(javax.slee.resource.ReceivableService) -> serviceStopping
+    void serviceInactive(javax.slee.resource.ReceivableService) -> serviceInactive
+    void queryLiveness(javax.slee.resource.ActivityHandle) -> queryLiveness
+    java.lang.Object getActivity(javax.slee.resource.ActivityHandle) -> getActivity
+    javax.slee.resource.ActivityHandle getActivityHandle(java.lang.Object) -> getActivityHandle
+    void administrativeRemove(javax.slee.resource.ActivityHandle) -> administrativeRemove
+    void eventProcessingSuccessful(javax.slee.resource.ActivityHandle,javax.slee.resource.FireableEventType,java.lang.Object,javax.slee.Address,javax.slee.resource.ReceivableService,int) -> eventProcessingSuccessful
+    void eventProcessingFailed(javax.slee.resource.ActivityHandle,javax.slee.resource.FireableEventType,java.lang.Object,javax.slee.Address,javax.slee.resource.ReceivableService,int,javax.slee.resource.FailureReason) -> eventProcessingFailed
+    void eventUnreferenced(javax.slee.resource.ActivityHandle,javax.slee.resource.FireableEventType,java.lang.Object,javax.slee.Address,javax.slee.resource.ReceivableService,int) -> eventUnreferenced
+    void activityEnded(javax.slee.resource.ActivityHandle) -> activityEnded
+    void activityUnreferenced(javax.slee.resource.ActivityHandle) -> activityUnreferenced
+    void clearAlarm(java.lang.String) -> clearAlarm
+    void raiseAlarm(java.lang.String,java.lang.String) -> raiseAlarm
+    java.util.Timer getTimer() -> getTimer
+    void endActivity(mofokom.resource.common.AbstractTransaction) -> endActivity
+    void endActivity(mofokom.resource.common.TransactionHandle) -> endActivity
+    void fireEventOnTransaction(mofokom.resource.common.AbstractTransaction,javax.slee.EventTypeID,java.lang.Object) -> fireEventOnTransaction
+    void fireEventOnTransaction(mofokom.resource.common.AbstractTransaction,javax.slee.EventTypeID,java.lang.Object,javax.slee.Address) -> fireEventOnTransaction
+    void fireEventOnTransaction(mofokom.resource.common.AbstractTransaction,javax.slee.resource.FireableEventType,java.lang.Object) -> fireEventOnTransaction
+    void fireEventOnTransaction(mofokom.resource.common.AbstractTransaction,javax.slee.resource.FireableEventType,java.lang.Object,javax.slee.Address) -> fireEventOnTransaction
+    void fireEvent(javax.slee.resource.ActivityHandle,javax.slee.resource.FireableEventType,java.lang.Object,javax.slee.Address) -> fireEvent
+    java.util.Collection getEventTypeSet() -> getEventTypeSet
+    java.util.TimerTask scheduleEndActivity(mofokom.resource.common.AbstractTransaction,java.util.Date) -> scheduleEndActivity
+    void activityTimeout(mofokom.resource.common.AbstractTransaction) -> activityTimeout
+    boolean beginTransaction() -> beginTransaction
+    void commitTransaction() -> commitTransaction
+    void rollbackTransaction() -> rollbackTransaction
+    boolean isEventSupressed(javax.slee.EventTypeID) -> isEventSupressed
+    int getActivityFlags() -> getActivityFlags
+    int getEventFlags() -> getEventFlags
+    void processUncaughtException(java.lang.Object,java.lang.Throwable) -> processUncaughtException
+    mofokom.resource.common.ResourceAdaptorEntityLifecycle getResourceAdaptorEntityLifecycle() -> getResourceAdaptorEntityLifecycle
+    void setTracer(javax.slee.facilities.Tracer) -> setTracer
+    boolean isSynchronousSupported() -> isSynchronousSupported
+    java.util.concurrent.Future call(mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> call
+mofokom.resource.common.AbstractResourceAdaptor$1 -> mofokom.resource.mail.impl.d$1:
+    mofokom.resource.common.AbstractTransaction val$transaction -> a
+    mofokom.resource.common.AbstractResourceAdaptor this$0 -> a
+    void committed() -> committed
+    void rolledBack(javax.transaction.RollbackException) -> rolledBack
+    void heuristicMixed(javax.transaction.HeuristicMixedException) -> heuristicMixed
+    void heuristicRollback(javax.transaction.HeuristicRollbackException) -> heuristicRollback
+    void systemException(javax.transaction.SystemException) -> systemException
+    void undoActivity() -> a
+mofokom.resource.common.AbstractResourceAdaptor$2 -> mofokom.resource.mail.impl.d$2:
+    mofokom.resource.common.AbstractResourceAdaptor this$0 -> a
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+mofokom.resource.common.AbstractResourceAdaptor$3 -> mofokom.resource.mail.impl.d$3:
+    java.lang.ThreadGroup val$tg -> a
+    mofokom.resource.common.AbstractResourceAdaptor this$0 -> a
+    java.lang.Thread newThread(java.lang.Runnable) -> newThread
+mofokom.resource.common.AbstractResourceAdaptor$ScheduledEndActivityTask -> mofokom.resource.mail.impl.d$a:
+    mofokom.resource.common.AbstractTransaction txn -> a
+    mofokom.resource.common.AbstractResourceAdaptor this$0 -> a
+    void run() -> run
+mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall -> mofokom.resource.mail.impl.d$b:
+    java.util.concurrent.Callable call -> a
+    mofokom.resource.common.AbstractResourceAdaptor this$0 -> a
+    java.lang.Object call() -> call
+mofokom.resource.common.AbstractSynchronousTransaction -> mofokom.resource.mail.impl.e:
+    mofokom.resource.common.SimpleFuture sync -> a
+    java.util.concurrent.Future getSynchronousResult() -> a
+    void complete(java.lang.Object) -> b
+    void prepare(java.lang.Object) -> a
+mofokom.resource.common.AbstractTimeoutTask -> mofokom.resource.mail.impl.f:
+    javax.slee.resource.ActivityHandle handle -> a
+    java.lang.Object attachment -> a
+    java.lang.Object getAttachment() -> a
+    void run() -> run
+mofokom.resource.common.AbstractTransaction -> mofokom.resource.mail.impl.g:
+    int ra -> a
+    int seq -> b
+    mofokom.resource.common.TransactionHandle handle -> a
+    java.lang.Object attachment -> a
+    java.util.TimerTask task -> a
+    mofokom.resource.common.TransactionHandle getActivityHandle() -> a
+    void setAttachment(java.lang.Object) -> b
+    java.lang.Object getAttachment() -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    int getSequence() -> a
+    java.util.TimerTask getTask() -> a
+    void setTask(java.util.TimerTask) -> a
+    boolean cancelTask() -> a
+    void prepare(java.lang.Object) -> a
+mofokom.resource.common.AtomicRollingSequence -> mofokom.resource.mail.impl.h:
+    java.util.concurrent.atomic.AtomicInteger seq -> a
+    int getNextSequenceNumber() -> a
+    void reset() -> a
+mofokom.resource.common.DefaultMarshaller -> mofokom.resource.mail.impl.i:
+    java.util.concurrent.SynchronousQueue queue -> a
+    int getEstimatedEventSize(javax.slee.resource.FireableEventType,java.lang.Object) -> getEstimatedEventSize
+    java.nio.ByteBuffer getEventBuffer(javax.slee.resource.FireableEventType,java.lang.Object) -> getEventBuffer
+    void releaseEventBuffer(javax.slee.resource.FireableEventType,java.lang.Object,java.nio.ByteBuffer) -> releaseEventBuffer
+    void marshalEvent(javax.slee.resource.FireableEventType,java.lang.Object,java.io.DataOutput) -> marshalEvent
+    java.lang.Object unmarshalEvent(javax.slee.resource.FireableEventType,java.io.DataInput) -> unmarshalEvent
+    int getEstimatedHandleSize(javax.slee.resource.ActivityHandle) -> getEstimatedHandleSize
+    void marshalHandle(javax.slee.resource.ActivityHandle,java.io.DataOutput) -> marshalHandle
+    javax.slee.resource.ActivityHandle unmarshalHandle(java.io.DataInput) -> unmarshalHandle
+    void marshalSerializable(java.lang.Object,java.io.DataOutput) -> a
+    void marshalSerializable(java.lang.Object,java.nio.ByteBuffer) -> a
+    java.io.Serializable unmarshalSerializable(java.lang.Class,java.io.DataInput) -> a
+    byte[] serialize(java.io.Serializable) -> a
+    java.io.Serializable deserialize(byte[]) -> a
+mofokom.resource.common.DefaultMarshaller$1 -> mofokom.resource.mail.impl.i$1:
+    java.io.DataOutput val$out -> a
+    mofokom.resource.common.DefaultMarshaller this$0 -> a
+    void write(int) -> write
+mofokom.resource.common.DefaultMarshaller$2 -> mofokom.resource.mail.impl.i$2:
+    java.nio.ByteBuffer val$buffy -> a
+    mofokom.resource.common.DefaultMarshaller this$0 -> a
+    void write(int) -> write
+mofokom.resource.common.DefaultMarshaller$3 -> mofokom.resource.mail.impl.i$3:
+    java.io.DataInput val$in -> a
+    int read() -> read
+mofokom.resource.common.EstimatedObjectSize -> mofokom.resource.mail.impl.j:
+mofokom.resource.common.EventFilter -> mofokom.resource.mail.impl.k:
+    java.util.Set eventTypeSet -> a
+    java.util.Set eventTypeMaskSet -> b
+    java.util.Set initialEventTypeMaskSet -> c
+    java.util.Map serviceEventTypeMap -> a
+    void serviceActive(javax.slee.resource.ReceivableService) -> a
+    void serviceStopping(javax.slee.resource.ReceivableService) -> b
+    void serviceInactive(javax.slee.resource.ReceivableService) -> c
+    void calculateEvenTypeSet() -> a
+    boolean isEventSupressed(javax.slee.EventTypeID) -> a
+    java.net.URI[] toURIArray(java.lang.String[]) -> a
+    java.net.URI[] getUdpScheme(java.net.URI[]) -> a
+    java.net.URI[] getTcpScheme(java.net.URI[]) -> b
+    java.net.URI[] getSctpScheme(java.net.URI[]) -> c
+    java.net.SocketAddress[] toSocketAddress(java.net.URI[]) -> a
+    java.net.SocketAddress[] toSocketAddress(java.lang.String[]) -> a
+mofokom.resource.common.ResourceAdaptorEntityLifecycle -> mofokom.resource.mail.impl.l:
+    mofokom.resource.common.ResourceAdaptorEntityLifecycle UNCONFIGURED -> a
+    mofokom.resource.common.ResourceAdaptorEntityLifecycle INACTIVE -> b
+    mofokom.resource.common.ResourceAdaptorEntityLifecycle ACTIVE -> c
+    mofokom.resource.common.ResourceAdaptorEntityLifecycle STOPPING -> d
+    mofokom.resource.common.ResourceAdaptorEntityLifecycle[] $VALUES -> a
+    mofokom.resource.common.ResourceAdaptorEntityLifecycle[] values() -> a
+    mofokom.resource.common.ResourceAdaptorEntityLifecycle valueOf(java.lang.String) -> a
+mofokom.resource.common.SimpleFuture -> mofokom.resource.mail.impl.m:
+    java.lang.Object value -> a
+    java.util.EventListener listener -> a
+    boolean completed -> a
+    boolean cancelled -> b
+    boolean cancel(boolean) -> cancel
+    boolean isCancelled() -> isCancelled
+    boolean isDone() -> isDone
+    void set(java.lang.Object) -> a
+    java.lang.Object get() -> get
+    java.lang.Object get(long,java.util.concurrent.TimeUnit) -> get
+mofokom.resource.common.TimeWindowThrottle -> mofokom.resource.mail.impl.n:
+    java.util.concurrent.atomic.AtomicLong throttle -> a
+    long then -> a
+    long maxTps -> b
+    java.lang.String alarmId -> a
+    javax.slee.facilities.AlarmFacility alarm -> a
+    void incrementOrWait() -> a
+mofokom.resource.common.TracerLoggerDelegate -> mofokom.resource.mail.impl.o:
+    javax.slee.facilities.Tracer delegate -> a
+    void fine(java.lang.String) -> fine
+    void finer(java.lang.String) -> finer
+    void finest(java.lang.String) -> finest
+    java.util.logging.Level getLevel() -> getLevel
+    java.lang.String getName() -> getName
+    void info(java.lang.String) -> info
+    boolean isLoggable(java.util.logging.Level) -> isLoggable
+    void log(java.util.logging.Level,java.lang.String) -> log
+    void log(java.util.logging.Level,java.lang.String,java.lang.Object) -> log
+    void log(java.util.logging.Level,java.lang.String,java.lang.Object[]) -> log
+    void log(java.util.logging.Level,java.lang.String,java.lang.Throwable) -> log
+    void severe(java.lang.String) -> severe
+    void warning(java.lang.String) -> warning
+    java.util.logging.Level levelForTraceLevel(javax.slee.facilities.TraceLevel) -> a
+    javax.slee.facilities.TraceLevel traceLevelForLevel(java.util.logging.Level) -> a
+mofokom.resource.common.TransactionException -> mofokom.resource.mail.impl.p:
+mofokom.resource.common.TransactionHandle -> mofokom.resource.mail.impl.q:
+    java.io.Serializable attachment -> a
+    int id -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    java.io.Serializable getAttachment() -> a
+    void setAttachment(java.io.Serializable) -> a
+    void writeExternal(java.io.ObjectOutput) -> writeExternal
+    void readExternal(java.io.ObjectInput) -> readExternal
+mofokom.resource.common.UsageParameters -> mofokom.resource.mail.impl.r:
+mofokom.resource.common.Utility -> mofokom.resource.mail.impl.s:
+    java.net.URI[] toURIArray(java.lang.String[]) -> a
+    java.net.URI[] getUdpScheme(java.net.URI[]) -> a
+    java.net.URI[] getTcpScheme(java.net.URI[]) -> b
+    java.net.URI[] getSctpScheme(java.net.URI[]) -> c
+    java.net.SocketAddress[] toSocketAddress(java.net.URI[]) -> a
+    java.net.SocketAddress[] toSocketAddress(java.lang.String[]) -> a
+mofokom.resource.mail.impl.AttachmentDataSource -> mofokom.resource.mail.impl.t:
+    java.lang.Object content -> a
+    java.lang.String type -> a
+    java.lang.String name -> b
+    java.lang.String getContentType() -> getContentType
+    java.io.InputStream getInputStream() -> getInputStream
+    java.lang.String getName() -> getName
+    void setName(java.lang.String) -> a
+    java.io.OutputStream getOutputStream() -> getOutputStream
+mofokom.resource.mail.impl.MailActivityImpl -> mofokom.resource.mail.impl.u:
+mofokom.resource.mail.impl.MailResourceAdaptor -> mofokom.resource.mail.impl.MailResourceAdaptor:
+    javax.mail.Transport transport -> transport
+    javax.mail.Session session -> session
+    java.util.Map sessionMap -> sessionMap
+    javax.slee.resource.FireableEventType eventTypeTransportError -> eventTypeTransportError
+    javax.slee.resource.FireableEventType eventTypeConnectionClosedEvent -> eventTypeConnectionClosedEvent
+    javax.slee.resource.FireableEventType eventTypeConnectionDisconnectedEvent -> eventTypeConnectionDisconnectedEvent
+    javax.slee.resource.FireableEventType eventTypeConnectionOpenEvent -> eventTypeConnectionOpenEvent
+    javax.slee.resource.FireableEventType eventTypeConnectionEvent -> eventTypeConnectionEvent
+    javax.slee.resource.FireableEventType eventTypeFolderEvent -> eventTypeFolderEvent
+    javax.slee.resource.FireableEventType eventTypeFolderCreatedEvent -> eventTypeFolderCreatedEvent
+    javax.slee.resource.FireableEventType eventTypeFolderDeletedEvent -> eventTypeFolderDeletedEvent
+    javax.slee.resource.FireableEventType eventTypeFolderRenamedEvent -> eventTypeFolderRenamedEvent
+    javax.slee.resource.FireableEventType eventTypeMessageChangedEvent -> eventTypeMessageChangedEvent
+    javax.slee.resource.FireableEventType eventTypeMessageChangedEnvelopeEvent -> eventTypeMessageChangedEnvelopeEvent
+    javax.slee.resource.FireableEventType eventTypeMessageChangedFlagsEvent -> eventTypeMessageChangedFlagsEvent
+    javax.slee.resource.FireableEventType eventTypeMessageCountEvent -> eventTypeMessageCountEvent
+    javax.slee.resource.FireableEventType eventTypeMessageCountAddedEvent -> eventTypeMessageCountAddedEvent
+    javax.slee.resource.FireableEventType eventTypeMessageCountRemovedEvent -> eventTypeMessageCountRemovedEvent
+    javax.slee.resource.FireableEventType eventTypeStoreEvent -> eventTypeStoreEvent
+    javax.slee.resource.FireableEventType eventTypeStoreAlertEvent -> eventTypeStoreAlertEvent
+    javax.slee.resource.FireableEventType eventTypeStoreNoticeEvent -> eventTypeStoreNoticeEvent
+    javax.slee.resource.FireableEventType eventTypeTransportEvent -> eventTypeTransportEvent
+    javax.slee.resource.FireableEventType eventTypeTransportMessageDeliveredEvent -> eventTypeTransportMessageDeliveredEvent
+    javax.slee.resource.FireableEventType eventTypeTransportMessageNotDeliveredEvent -> eventTypeTransportMessageNotDeliveredEvent
+    javax.slee.resource.FireableEventType eventTypeTransportMessagePartiallyDeliveredEvent -> eventTypeTransportMessagePartiallyDeliveredEvent
+    java.util.Map auxActivityMap -> auxActivityMap
+    java.util.Map auxActivityHandleMap -> auxActivityHandleMap
+    java.util.Map plexorMap -> plexorMap
+    java.util.Properties mailProperties -> mailProperties
+    javax.mail.Store store -> store
+    java.util.Map messageMap -> messageMap
+    long shutdownPeriod -> shutdownPeriod
+    void setResourceAdaptorContext(javax.slee.resource.ResourceAdaptorContext) -> setResourceAdaptorContext
+    void unsetResourceAdaptorContext() -> unsetResourceAdaptorContext
+    void raActive() -> raActive
+    void raStopping() -> raStopping
+    void raInactive() -> raInactive
+    java.lang.Object getActivity(javax.slee.resource.ActivityHandle) -> getActivity
+    javax.slee.resource.ActivityHandle getActivityHandle(java.lang.Object) -> getActivityHandle
+    void endActivity(javax.slee.resource.ActivityHandle) -> endActivity
+    void administrativeRemove(javax.slee.resource.ActivityHandle) -> administrativeRemove
+    void activityEnded(javax.slee.resource.ActivityHandle) -> activityEnded
+    void activityUnreferenced(javax.slee.resource.ActivityHandle) -> activityUnreferenced
+    javax.mail.Session getSession() -> getSession
+    javax.mail.Transport getTransport() -> getTransport
+    javax.mail.Store getStore(java.lang.String) -> getStore
+    javax.mail.Store getStore() -> getStore
+    javax.mail.Transport getTransport(java.lang.String) -> getTransport
+    javax.mail.Folder getFolder(java.lang.String) -> getFolder
+    javax.mail.Folder getDefaultFolder() -> getDefaultFolder
+    javax.mail.internet.MimeMessage createMessage() -> createMessage
+    javax.mail.internet.MimeMessage createMessage(javax.mail.Session) -> createMessage
+    javax.mail.internet.MimeMultipart createMultipart(javax.mail.internet.MimeMessage) -> createMultipart
+    javax.mail.internet.MimeBodyPart addBodyPart(javax.mail.internet.MimeMultipart,java.lang.String) -> addBodyPart
+    javax.mail.internet.MimeBodyPart addBodyPart(javax.mail.internet.MimeMultipart,java.lang.String,java.net.URL) -> addBodyPart
+    javax.mail.internet.MimeBodyPart addBodyPart(javax.mail.internet.MimeMultipart,java.lang.String,java.lang.String,byte[]) -> addBodyPart
+    mofokom.resource.mail.MailActivity send(javax.mail.internet.MimeMessage) -> send
+    mofokom.resource.mail.MailActivity sendMessage(javax.mail.Transport,javax.mail.internet.MimeMessage,javax.mail.Address[]) -> sendMessage
+    void unregisterTransport(javax.mail.Transport) -> unregisterTransport
+    javax.slee.resource.ActivityHandle registerTransport(javax.mail.Transport) -> registerTransport
+    void unregisterStore(javax.mail.Store) -> unregisterStore
+    javax.slee.resource.ActivityHandle registerStore(javax.mail.Store) -> registerStore
+    void unregisterFolder(javax.mail.Folder) -> unregisterFolder
+    javax.slee.resource.ActivityHandle registerFolder(javax.mail.Folder) -> registerFolder
+    void initializeEventTypes() -> initializeEventTypes
+    void setTracer(javax.slee.facilities.Tracer) -> setTracer
+    void copySLEEProperties(javax.slee.resource.ConfigProperties,java.util.Properties) -> copySLEEProperties
+    void connectTransport(javax.mail.Transport) -> connectTransport
+    void connectStore(javax.mail.Store) -> connectStore
+    mofokom.resource.mail.impl.MailActivityImpl createActivity(java.lang.Object) -> createActivity
+    mofokom.resource.common.TransactionHandle createAuxActivity(java.lang.Object) -> createAuxActivity
+    void fireEvent(javax.slee.resource.FireableEventType,javax.mail.event.MailEvent,javax.slee.resource.ActivityHandle) -> fireEvent
+    void fireFailureEvent(javax.slee.resource.ActivityHandle,javax.mail.internet.MimeMessage,java.lang.Exception) -> fireFailureEvent
+    java.util.Collection getEventTypeSet() -> getEventTypeSet
+    java.lang.Object getResourceAdaptorInterface(java.lang.String) -> getResourceAdaptorInterface
+    void processTransactionFailure(mofokom.resource.mail.impl.MailActivityImpl,mofokom.resource.common.TransactionException) -> processTransactionFailure
+    mofokom.resource.common.AbstractTransaction createActivity(java.lang.Object) -> createActivity
+    void processTransactionFailure(mofokom.resource.common.AbstractTransaction,mofokom.resource.common.TransactionException) -> processTransactionFailure
+    void access$201(mofokom.resource.mail.impl.MailResourceAdaptor,javax.slee.resource.ActivityHandle,javax.slee.resource.FireableEventType,java.lang.Object,javax.slee.Address) -> access$201
+    javax.slee.facilities.Tracer access$300(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$300
+    java.util.Map access$400(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$400
+    void access$500(mofokom.resource.mail.impl.MailResourceAdaptor,javax.mail.Transport) -> access$500
+    javax.slee.facilities.Tracer access$600(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$600
+    javax.slee.facilities.Tracer access$700(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$700
+    javax.slee.facilities.Tracer access$800(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$800
+    void access$900(mofokom.resource.mail.impl.MailResourceAdaptor,javax.slee.resource.ActivityHandle,javax.mail.internet.MimeMessage,java.lang.Exception) -> access$900
+    javax.slee.facilities.Tracer access$1000(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$1000
+    javax.slee.facilities.Tracer access$1100(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$1100
+    javax.slee.resource.FireableEventType access$1200(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$1200
+    void access$1400(mofokom.resource.mail.impl.MailResourceAdaptor,javax.slee.resource.FireableEventType,javax.mail.event.MailEvent,javax.slee.resource.ActivityHandle) -> access$1400
+    javax.slee.resource.FireableEventType access$1500(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$1500
+    java.util.concurrent.Future access$1601(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$1601
+    javax.slee.facilities.Tracer access$1700(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$1700
+    javax.slee.facilities.Tracer access$1800(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$1800
+    javax.slee.resource.FireableEventType access$1900(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$1900
+    java.util.concurrent.Future access$2001(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$2001
+    javax.slee.facilities.Tracer access$2100(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$2100
+    javax.slee.facilities.Tracer access$2200(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$2200
+    javax.slee.resource.FireableEventType access$2300(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$2300
+    java.util.concurrent.Future access$2401(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$2401
+    javax.slee.facilities.Tracer access$2500(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$2500
+    javax.slee.facilities.Tracer access$2600(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$2600
+    javax.slee.resource.FireableEventType access$2700(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$2700
+    javax.slee.resource.FireableEventType access$2800(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$2800
+    java.util.concurrent.Future access$2901(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$2901
+    javax.slee.facilities.Tracer access$3000(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$3000
+    javax.slee.facilities.Tracer access$3100(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$3100
+    javax.slee.resource.FireableEventType access$3200(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$3200
+    java.util.concurrent.Future access$3301(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$3301
+    javax.slee.facilities.Tracer access$3400(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$3400
+    javax.slee.facilities.Tracer access$3500(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$3500
+    javax.slee.resource.FireableEventType access$3600(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$3600
+    java.util.concurrent.Future access$3701(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$3701
+    javax.slee.facilities.Tracer access$3800(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$3800
+    javax.slee.facilities.Tracer access$3900(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$3900
+    javax.slee.resource.FireableEventType access$4000(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$4000
+    javax.slee.resource.FireableEventType access$4100(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$4100
+    javax.slee.resource.FireableEventType access$4200(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$4200
+    java.util.concurrent.Future access$4301(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$4301
+    javax.slee.facilities.Tracer access$4400(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$4400
+    javax.slee.facilities.Tracer access$4500(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$4500
+    javax.slee.resource.FireableEventType access$4600(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$4600
+    javax.slee.resource.FireableEventType access$4700(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$4700
+    javax.slee.resource.FireableEventType access$4800(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$4800
+    java.util.concurrent.Future access$4901(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$4901
+    javax.slee.facilities.Tracer access$5000(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$5000
+    javax.slee.facilities.Tracer access$5100(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$5100
+    javax.slee.resource.FireableEventType access$5200(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$5200
+    javax.slee.resource.FireableEventType access$5300(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$5300
+    java.util.concurrent.Future access$5401(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$5401
+    javax.slee.facilities.Tracer access$5500(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$5500
+    javax.slee.facilities.Tracer access$5600(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$5600
+    javax.slee.resource.FireableEventType access$5700(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$5700
+    java.util.concurrent.Future access$5801(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$5801
+    javax.slee.facilities.Tracer access$5900(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$5900
+    javax.slee.facilities.Tracer access$6000(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$6000
+    javax.slee.resource.FireableEventType access$6100(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$6100
+    javax.slee.resource.FireableEventType access$6200(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$6200
+    java.util.concurrent.Future access$6301(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$6301
+    javax.slee.facilities.Tracer access$6400(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$6400
+    javax.slee.facilities.Tracer access$6500(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$6500
+    javax.slee.resource.FireableEventType access$6600(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$6600
+    java.util.concurrent.Future access$6701(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$6701
+    javax.slee.facilities.Tracer access$6800(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$6800
+    javax.slee.facilities.Tracer access$6900(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$6900
+    javax.slee.resource.FireableEventType access$7000(mofokom.resource.mail.impl.MailResourceAdaptor) -> access$7000
+    java.util.concurrent.Future access$7101(mofokom.resource.mail.impl.MailResourceAdaptor,mofokom.resource.common.AbstractResourceAdaptor$TransactionalizedCall) -> access$7101
+mofokom.resource.mail.impl.MailResourceAdaptor$1 -> mofokom.resource.mail.impl.MailResourceAdaptor$1:
+    java.lang.Object val$activity -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor this$0 -> a
+    javax.slee.resource.ActivityHandle call() -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailAuthenticator -> mofokom.resource.mail.impl.MailResourceAdaptor$a:
+    java.util.Properties properties -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor mailAuthenticaton -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor this$0 -> b
+    javax.mail.PasswordAuthentication getPasswordAuthentication() -> getPasswordAuthentication
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus -> mofokom.resource.mail.impl.MailResourceAdaptor$b:
+    javax.slee.resource.ActivityHandle handle -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor this$0 -> a
+    void opened(javax.mail.event.ConnectionEvent) -> opened
+    void disconnected(javax.mail.event.ConnectionEvent) -> disconnected
+    void closed(javax.mail.event.ConnectionEvent) -> closed
+    void folderCreated(javax.mail.event.FolderEvent) -> folderCreated
+    void folderDeleted(javax.mail.event.FolderEvent) -> folderDeleted
+    void folderRenamed(javax.mail.event.FolderEvent) -> folderRenamed
+    void notification(javax.mail.event.StoreEvent) -> notification
+    void messageChanged(javax.mail.event.MessageChangedEvent) -> messageChanged
+    void messagesAdded(javax.mail.event.MessageCountEvent) -> messagesAdded
+    void messagesRemoved(javax.mail.event.MessageCountEvent) -> messagesRemoved
+    void messageDelivered(javax.mail.event.TransportEvent) -> messageDelivered
+    void messageNotDelivered(javax.mail.event.TransportEvent) -> messageNotDelivered
+    void messagePartiallyDelivered(javax.mail.event.TransportEvent) -> messagePartiallyDelivered
+    javax.slee.resource.ActivityHandle access$1300(mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus) -> a
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$1 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$1:
+    javax.mail.event.ConnectionEvent val$event -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$10 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$2:
+    javax.mail.event.MessageCountEvent val$event -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$11 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$3:
+    javax.mail.event.TransportEvent val$event -> a
+    javax.slee.resource.ActivityHandle val$handle -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$12 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$4:
+    javax.mail.event.TransportEvent val$event -> a
+    javax.slee.resource.ActivityHandle val$handle -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$13 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$5:
+    javax.mail.event.TransportEvent val$event -> a
+    javax.slee.resource.ActivityHandle val$handle -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$2 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$6:
+    javax.mail.event.ConnectionEvent val$event -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$3 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$7:
+    javax.mail.event.ConnectionEvent val$event -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$4 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$8:
+    javax.mail.event.FolderEvent val$event -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$5 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$9:
+    javax.mail.event.FolderEvent val$event -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$6 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$10:
+    javax.mail.event.FolderEvent val$event -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$7 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$11:
+    javax.mail.event.StoreEvent val$event -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$8 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$12:
+    javax.mail.event.MessageChangedEvent val$event -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus$9 -> mofokom.resource.mail.impl.MailResourceAdaptor$b$13:
+    javax.mail.event.MessageCountEvent val$event -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor$MailEventListenerPlexus this$1 -> a
+    java.lang.Object call() -> call
+mofokom.resource.mail.impl.MailResourceAdaptor$MailSender -> mofokom.resource.mail.impl.MailResourceAdaptor$c:
+    javax.mail.internet.MimeMessage message -> a
+    javax.mail.Address[] addresses -> a
+    javax.slee.resource.ActivityHandle handle -> a
+    javax.mail.Transport transport -> a
+    mofokom.resource.mail.impl.MailResourceAdaptor this$0 -> a
+    java.lang.Object call() -> call
+    javax.slee.resource.ActivityHandle access$000(mofokom.resource.mail.impl.MailResourceAdaptor$MailSender) -> a
+    javax.mail.Transport access$100(mofokom.resource.mail.impl.MailResourceAdaptor$MailSender) -> a
+mofokom.resource.mail.impl.MailUsageParameters -> mofokom.resource.mail.impl.v:

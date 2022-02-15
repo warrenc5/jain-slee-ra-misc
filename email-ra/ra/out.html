@@ -1,0 +1,914 @@
+<?xml version="1.0"?>
+<br/><table border="1">
+  <tr>
+    <th>Event type name </th>
+    <th>Event type vendor </th>
+    <th>Event type version </th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>TransportError</td>
+    <td>mofokom</td>
+    <td>1.0-SNAPSHOT</td>
+    <td>Fired when there is a error sending a mail message</td>
+  </tr>
+  <tr>
+    <td>ConnectionEvent</td>
+    <td>javax.mail</td>
+    <td>1.0</td>
+    <td>Fired by internal implementation of ConnectionListener for Transports,Stores, and Folders</td>
+  </tr>
+  <tr>
+    <td>FolderEvent</td>
+    <td>javax.mail</td>
+    <td>1.0</td>
+    <td>Fired by internal implementation of FolderListener for Folders</td>
+  </tr>
+  <tr>
+    <td>MessageChangedEvent</td>
+    <td>javax.mail</td>
+    <td>1.0</td>
+    <td>Fired by internal implementation of MessageChangeListener for Folders</td>
+  </tr>
+  <tr>
+    <td>MessageCountEvent</td>
+    <td>javax.mail</td>
+    <td>1.0</td>
+    <td>Fired by internal implementation of MessageCountListener for Folders</td>
+  </tr>
+  <tr>
+    <td>StoreEvent</td>
+    <td>javax.mail</td>
+    <td>1.0</td>
+    <td>Fired by internal implementation of StoreListener for Stores</td>
+  </tr>
+  <tr>
+    <td>TransportEvent</td>
+    <td>javax.mail</td>
+    <td>1.0</td>
+    <td>Fired by internal implementation of TransportListener for Transports</td>
+  </tr>
+</table>
+<?xml version="1.0"?>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  </head>
+  <body>
+    <br/>
+    <table border="1">
+      <tr>
+        <th>Resource Adaptor Name</th>
+        <td>Mail Resource Adaptor</td>
+      </tr>
+      <tr>
+        <th>Resource Adaptor Vendor</th>
+        <td>mofokom</td>
+      </tr>
+      <tr>
+        <th>Resource Adaptor Version</th>
+        <td>1.0-SNAPSHOT</td>
+      </tr>
+      <tr>
+        <th>Class name</th>
+        <td>mofokomresource.mail..impl.MailResourceAdaptor</td>
+      </tr>
+    </table>
+    <br/>
+    <table border="1">
+      <tr>
+        <th>Property name </th>
+        <th>Property type </th>
+        <th>Default </th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>CONNECT_STORE</td>
+        <td>java.lang.Boolean</td>
+        <td>true</td>
+        <td>Connect to the default store when the RA entity activates.</td>
+      </tr>
+      <tr>
+        <td>CONNECT_TRANSPORT</td>
+        <td>java.lang.Boolean</td>
+        <td>true</td>
+        <td>Connect to the default transport when the RA entity activates.</td>
+      </tr>
+      <tr>
+        <td>MAIL_AUTHENTICATION</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td>Use a PasswordAuthenticator to the session.</td>
+      </tr>
+      <tr>
+        <td>MAIL_PASSWORD</td>
+        <td>java.lang.String</td>
+        <td>password</td>
+        <td>The password used by the PasswordAuthenticator.</td>
+      </tr>
+      <tr>
+        <td>ACTIVITY_DIMENSION</td>
+        <td>java.lang.Integer</td>
+        <td>1024</td>
+        <td>Initially dimension the activity map for this many MailMessages.</td>
+      </tr>
+      <tr>
+        <td>WORK_QUEUE</td>
+        <td>java.lang.Integer</td>
+        <td>1</td>
+        <td>The number of work queues used to send emails.</td>
+      </tr>
+      <tr>
+        <td>POOL_SIZE</td>
+        <td>java.lang.Integer</td>
+        <td>2</td>
+        <td>The initial number of pooled threads to use to send emails.</td>
+      </tr>
+      <tr>
+        <td>MAX_POOL_SIZE</td>
+        <td>java.lang.Integer</td>
+        <td>3</td>
+        <td>The maximum number of pooled threads to use to send emails.</td>
+      </tr>
+      <tr>
+        <td>POOL_TIMEOUT</td>
+        <td>java.lang.Long</td>
+        <td>120</td>
+        <td>The duration before a thread will be removed from the pool.</td>
+      </tr>
+      <tr>
+        <td>mail.store.protocol</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The default store protocol is pop3.</td>
+      </tr>
+      <tr>
+        <td>mail.transport.protocol</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The default transport protocol is smtp.</td>
+      </tr>
+      <tr>
+        <td>mail.host</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The default host is localhost.</td>
+      </tr>
+      <tr>
+        <td>mail.user</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The default mail account user name.</td>
+      </tr>
+      <tr>
+        <td>mail.from</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The default from address.</td>
+      </tr>
+      <tr>
+        <td>mail.smtp.user</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>Default user name for SMTP.</td>
+      </tr>
+      <tr>
+        <td>mail.smtp.host</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The SMTP server to connect to.</td>
+      </tr>
+      <tr>
+        <td>mail.smtp.port</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>The SMTP server port to connect to, if the connect() method doesn't
+            explicitly specify one. Defaults to 25.</td>
+      </tr>
+      <tr>
+        <td>mail.smtp.connectiontimeout</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>Socket connection timeout value in milliseconds.
+            Default is infinite timeout.</td>
+      </tr>
+      <tr>
+        <td>mail.smtp.timeout</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>Socket I/O timeout value in milliseconds.  Default is infinite timeout.</td>
+      </tr>
+      <tr>
+        <td>mail.smtp.from</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                Email address to use for SMTP MAIL command.  This sets the envelope
+                return address.  Defaults to msg.getFrom() or
+                InternetAddress.getLocalAddress().  NOTE: mail.smtp.user was previously
+                used for this.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.localhost</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                Local host name used in the SMTP HELO or EHLO command.
+                Defaults to InetAddress.getLocalHost().getHostName().
+                Should not normally need to
+                be set if your JDK and your name service are configured properly.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.localaddress</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                Local address (host name) to bind to when creating the SMTP socket.
+                Defaults to the address picked by the Socket class.
+                Should not normally need to be set, but useful with multi-homed hosts
+                where it's important to pick a particular local address to bind to.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.localport</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>
+                Local port number to bind to when creating the SMTP socket.
+                Defaults to the port number picked by the Socket class.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.ehlo</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>
+                If false, do not attempt to sign on with the EHLO command.  Defaults to
+                true.  Normally failure of the EHLO command will fallback to the HELO
+                command; this property exists only for servers that don't fail EHLO
+                properly or don't implement EHLO properly.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.auth</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>If true, attempt to authenticate the user using the AUTH command.
+            Defaults to false.</td>
+      </tr>
+      <tr>
+        <td>mail.smtp.submitter</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The submitter to use in the AUTH tag in the MAIL FROM command.
+                Typically used by a mail relay to pass along information about the
+                original submitter of the message.
+                See also the setSubmitter
+                method of SMTPMessage.
+                Mail clients typically do not use this.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.dsn.notify</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The NOTIFY option to the RCPT command.  Either NEVER, or some
+            combination of SUCCESS, FAILURE, and DELAY (separated by commas).</td>
+      </tr>
+      <tr>
+        <td>mail.smtp.dsn.ret</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The RET option to the MAIL command.  Either FULL or HDRS.</td>
+      </tr>
+      <tr>
+        <td>mail.smtp.allow8bitmime</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>
+                If set to true, and the server supports the 8BITMIME extension, text
+                parts of messages that use the "quoted-printable" or "base64" encodings
+                are converted to use "8bit" encoding if they follow the RFC2045 rules
+                for 8bit text.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.sendpartial</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>
+                If set to true, and a message has some valid and some invalid
+                addresses, send the message anyway, reporting the partial failure with
+                a SendFailedException.  If set to false (the default), the message is
+                not sent to any of the recipients if there is an invalid recipient
+                address.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.sasl.realm</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The realm to use with DIGEST-MD5 authentication.</td>
+      </tr>
+      <tr>
+        <td>mail.smtp.quitwait</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>
+                If set to true, causes the transport to wait for the response to the
+                QUIT command.  If set to false (the default), the QUIT command is sent
+                and the connection is immediately closed.  (NOTE: The default may change
+                in the next release.)
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.reportsuccess</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>
+                If set to true, causes the transport to include an
+                SMTPAddressSucceededException
+                for each address that is successful.
+                Note also that this will cause a
+                SendFailedException
+                to be thrown from the
+                sendMessage
+                method of
+                SMTPTransport
+                even if all addresses were correct and the message was sent
+                successfully.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.socketFactory.class</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                If set, specifies the name of a class that implements the
+                javax.net.SocketFactory interface.  This class
+                will be used to create SMTP sockets.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.socketFactory.fallback</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>
+                If set to true, failure to create a socket using the specified
+                socket factory class will cause the socket to be created using
+                the java.net.Socket class.
+                Defaults to true.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.socketFactory.port</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>
+                Specifies the port to connect to when using the specified socket
+                factory.
+                If not set, the default port will be used.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.smtp.mailextension</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                Extension java.lang.String to append to the MAIL command.
+                The extension java.lang.String can be used to specify standard SMTP
+                service extensions as well as vendor-specific extensions.
+                Typically the application should use the
+                SMTPTransport
+                method supportsExtension
+                to verify that the server supports the desired service extension.
+                See RFC 1869
+                and other RFCs that define specific extensions.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.pop3.user</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>Default user name for POP3.</td>
+      </tr>
+      <tr>
+        <td>mail.pop3.host</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The POP3 server to connect to.</td>
+      </tr>
+      <tr>
+        <td>mail.pop3.port</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>The POP3 server port to connect to, if the connect() method doesn't
+            explicitly specify one. Defaults to 110.</td>
+      </tr>
+      <tr>
+        <td>mail.pop3.connectiontimeout</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>Socket connection timeout value in milliseconds.
+            Default is infinite timeout.</td>
+      </tr>
+      <tr>
+        <td>mail.pop3.timeout</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>Socket I/O timeout value in milliseconds.  Default is infinite timeout.</td>
+      </tr>
+      <tr>
+        <td>mail.pop3.rsetbeforequit</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>
+                Send a POP3 RSET command when closing the folder, before sending the
+                QUIT command.  Useful with POP3 servers that implicitly mark all
+                messages that are read as "deleted"; this will prevent such messages
+                from being deleted and expunged unless the client requests so.  Default
+                is false.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.pop3.message.class</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                Class name of a subclass of com.sun.mail.pop3.POP3Message.
+                The subclass can be used to handle (for example) non-standard
+                Content-Type headers.  The subclass must have a public constructor
+                of the form MyPOP3Message(Folder f, int msgno)
+                throws MessagingException.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.pop3.localaddress</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                Local address (host name) to bind to when creating the POP3 socket.
+                Defaults to the address picked by the Socket class.
+                Should not normally need to be set, but useful with multi-homed hosts
+                where it's important to pick a particular local address to bind to.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.pop3.localport</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>
+                Local port number to bind to when creating the POP3 socket.
+                Defaults to the port number picked by the Socket class.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.pop3.apop.enable</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>
+                If set to true, use APOP instead of USER/PASS to login to the
+                POP3 server, if the POP3 server supports APOP.  APOP sends a
+                digest of the password rather than the clear text password.
+                Defaults to false.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.pop3.socketFactory.class</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                If set, specifies the name of a class that implements the
+                javax.net.SocketFactory interface.  This class
+                will be used to create POP3 sockets.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.pop3.socketFactory.fallback</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>
+                If set to true, failure to create a socket using the specified
+                socket factory class will cause the socket to be created using
+                the java.net.Socket class.
+                Defaults to true.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.pop3.socketFactory.port</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>
+                Specifies the port to connect to when using the specified socket
+                factory.
+                If not set, the default port will be used.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.imap.user</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>Default user name for IMAP.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.host</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>The IMAP server to connect to.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.port</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>The IMAP server port to connect to, if the connect() method doesn't
+            explicitly specify one. Defaults to 143.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.partialfetch</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>Controls whether the IMAP partial-fetch capability should be used.
+            Defaults to true.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.fetchsize</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>Partial fetch size in bytes. Defaults to 16K.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.connectiontimeout</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>Socket connection timeout value in milliseconds.
+            Default is infinite timeout.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.timeout</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>Socket I/O timeout value in milliseconds.  Default is infinite timeout.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.statuscachetimeout</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>Timeout value in milliseconds for cache of STATUS command response.
+            Default is 1000 (1 second).  Zero disables cache.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.appendbuffersize</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>
+                Maximum size of a message to buffer in memory when appending to an IMAP
+                folder.  If not set, or set to -1, there is no maximum and all messages
+                are buffered.  If set to 0, no messages are buffered.  If set to (e.g.)
+                8192, messages of 8K bytes or less are buffered, larger messages are
+                not buffered.  Buffering saves cpu time at the expense of short term
+                memory usage.  If you commonly append very large messages to IMAP
+                mailboxes you might want to set this to a moderate value (1M or less).
+            </td>
+      </tr>
+      <tr>
+        <td>mail.imap.connectionpoolsize</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>Maximum number of available connections in the connection pool.
+            Default is 1.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.connectionpooltimeout</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>Timeout value in milliseconds for connection pool connections.  Default
+            is 45000 (45 seconds).</td>
+      </tr>
+      <tr>
+        <td>mail.imap.separatestoreconnection</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>Flag to indicate whether to use a dedicated store connection for store
+            commands.  Default is false.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.allowreadonlyselect</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>If false, attempts to open a folder read/write will fail
+                if the SELECT command succeeds but indicates that the folder is READ-ONLY.
+                This sometimes indicates that the folder contents can'tbe changed, but
+                the flags are per-user and can be changed, such as might be the case for
+                public shared folders.  If true, such open attempts will succeed, allowing
+                the flags to be changed.  The getMode method on the
+                Folder object will return Folder.READ_ONLY
+                in this case even though the open method specified
+            Folder.READ_WRITE.  Default is false.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.auth.login.disable</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>If true, prevents use of the non-standard AUTHENTICATE LOGIN
+                command, instead using the plain LOGIN command.
+            Default is false.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.auth.plain.disable</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>If true, prevents use of the AUTHENTICATE PLAIN command.
+            Default is false.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.starttls.enable</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>If true, enables the use of the STARTTLS command (if
+                supported by the server) to switch the connection to a TLS-protected
+                connection before issuing any login commands.  Note that an appropriate
+                trust store must configured so that the client will trust the server's
+                certificate.  This feature only works on J2SE 1.4 and newer systems.
+            Default is false.</td>
+      </tr>
+      <tr>
+        <td>mail.imap.localaddress</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                Local address (host name) to bind to when creating the IMAP socket.
+                Defaults to the address picked by the Socket class.
+                Should not normally need to be set, but useful with multi-homed hosts
+                where it's important to pick a particular local address to bind to.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.imap.localport</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>
+                Local port number to bind to when creating the IMAP socket.
+                Defaults to the port number picked by the Socket class.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.imap.sasl.enable</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>
+                If set to true, attempt to use the javax.security.sasl package to
+                choose an authentication mechanism for login.
+                Defaults to false.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.imap.sasl.mechanisms</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                A space or comma separated list of SASL mechanism names to try
+                to use.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.imap.sasl.authorizationid</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                The authorization ID to use in the SASL authentication.
+                If not set, the authetication ID (user name) is used.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.imap.socketFactory.class</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td>
+                If set, specifies the name of a class that implements the
+                javax.net.SocketFactory interface.  This class
+                will be used to create IMAP sockets.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.imap.socketFactory.fallback</td>
+        <td>java.lang.Boolean</td>
+        <td/>
+        <td>
+                If set to true, failure to create a socket using the specified
+                socket factory class will cause the socket to be created using
+                the java.net.Socket class.
+                Defaults to true.
+            </td>
+      </tr>
+      <tr>
+        <td>mail.imap.socketFactory.port</td>
+        <td>java.lang.Integer</td>
+        <td/>
+        <td>
+                Specifies the port to connect to when using the specified socket
+                factory.
+                If not set, the default port will be used.
+            </td>
+      </tr>
+    </table>
+  </body>
+</html>
+<?xml version="1.0"?>
+<br/><table border="1">
+  <tr>
+    <th>Resource adapter type name</th>
+    <td>Mail Resource Adaptor Type</td>
+  </tr>
+  <tr>
+    <th>Resource adapter type vendor</th>
+    <td>mofokom</td>
+  </tr>
+  <tr>
+    <th>Resource adapter type version</th>
+    <td>1.0-SNAPSHOT</td>
+  </tr>
+</table><br/><table border="1">
+  <tr>
+    <th>Activity Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>mofokomresource.mail..MailActivity</td>
+    <td>MailActivity is an Activity which represents a MailMessage being sent.</td>
+  </tr>
+  <tr>
+    <td>javax.mail.Store</td>
+    <td>Store is an Activity which represents a registered Store</td>
+  </tr>
+  <tr>
+    <td>javax.mail.Folder</td>
+    <td>Folder is an Activity which represents a registered Folder</td>
+  </tr>
+  <tr>
+    <td>javax.mail.Transport</td>
+    <td>Transport is an Activity which represents a registered Transport</td>
+  </tr>
+</table><table border="1">
+  <tr>
+    <th>Activity context interface factory name</th>
+    <td>mofokomresource.mail..MailActivityContextInterfaceFactory </td>
+  </tr>
+  <tr>
+    <th>Resource adaptor interface name</th>
+    <td>mofokomresource.mail..MailSbbInterface</td>
+  </tr>
+</table>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.slee.ActivityContextInterface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailActivityContextInterfaceFactory.html#getActivityContextInterface(javax.mail.Folder)">getActivityContextInterface</A></B>(javax.mail.Folder&nbsp;folder)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.slee.ActivityContextInterface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailActivityContextInterfaceFactory.html#getActivityContextInterface(mofokomresource.mail..MailActivity)">getActivityContextInterface</A></B>(<A HREF="../../../../mofokom/in/mail/resource/MailActivity.html" title="interface in mofokomresource.mail.">MailActivity</A>&nbsp;activity)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.slee.ActivityContextInterface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailActivityContextInterfaceFactory.html#getActivityContextInterface(javax.mail.Store)">getActivityContextInterface</A></B>(javax.mail.Store&nbsp;store)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.slee.ActivityContextInterface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailActivityContextInterfaceFactory.html#getActivityContextInterface(javax.mail.Transport)">getActivityContextInterface</A></B>(javax.mail.Transport&nbsp;transport)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR>
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.internet.MimeBodyPart</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#addBodyPart(javax.mail.internet.MimeMultipart, java.lang.String)">addBodyPart</A></B>(javax.mail.internet.MimeMultipart&nbsp;message,
+            java.lang.String&nbsp;contentType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a mime body part of the given content type to the message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.internet.MimeMessage</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#createMessage()">createMessage</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a message on this entities' session</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.internet.MimeMessage</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#createMessage(javax.mail.Session)">createMessage</A></B>(javax.mail.Session&nbsp;session)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a message on this entities' session</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.internet.MimeMultipart</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#createMultipart(javax.mail.internet.MimeMessage)">createMultipart</A></B>(javax.mail.internet.MimeMessage&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a multipart message</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Folder</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getDefaultFolder()">getDefaultFolder</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opens the defalut folder on the default store and registers it with the SLEE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Folder</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getFolder(java.lang.String)">getFolder</A></B>(java.lang.String&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opens a folder on the default store and registers it with the SLEE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Session</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getSession()">getSession</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a non default session.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Store</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getStore()">getStore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initializes a store from the entity configuration and registers it with the slee.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Store</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getStore(java.lang.String)">getStore</A></B>(java.lang.String&nbsp;protocol)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initializes a Store from the entity configuration and registers it with the SLEE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Transport</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getTransport()">getTransport</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initializes a Transport from the entity configuration and registers it with the SLEE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Transport</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getTransport(java.lang.String)">getTransport</A></B>(java.lang.String&nbsp;protocol)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initializes a Transport from the entity configuration and registers it with the SLEE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../mofokom/in/mail/resource/MailActivity.html" title="interface in mofokomresource.mail.">MailActivity</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#send(javax.mail.internet.MimeMessage)">send</A></B>(javax.mail.internet.MimeMessage&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends a message on the default Transport with calling save changes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../mofokom/in/mail/resource/MailActivity.html" title="interface in mofokomresource.mail.">MailActivity</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#sendMessage(javax.mail.Transport, javax.mail.internet.MimeMessage, javax.mail.Address...)">sendMessage</A></B>(javax.mail.Transport&nbsp;transport,
+            javax.mail.internet.MimeMessage&nbsp;message,
+            javax.mail.Address...&nbsp;addresses)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends a message on the given Transport without calling save changes.</TD>
+</TR>
+</TABLE>
+

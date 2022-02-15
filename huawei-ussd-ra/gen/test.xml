@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<spec>
+
+  <class name="UssdCommand">
+    <doc>BaseCommand
+</doc>
+    <field len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdBind </doc>
+    </field>
+    <field len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>UssdBind is not in use.
+* Set to NULL</doc>
+    </field>
+    <field len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>UssdBind is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+    <field len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>UssdBind is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+  </class>
+
+  <class name="UssdBind">
+    <doc>UssdBind is used for the USSD service application to log in to the USSDC, to go through authentication, and to establish a network connection.
+* Prior to a USSD session, the USSD service application must perform a Bind operation, requesting to log in to the USSDC.
+* During login, the account name and login password of the USSD service application must be provided.
+* Whether the USSD service application passes the authentication, the USSDC sends a response message UssdBindResp to the USSD service application.
+*
+UssBind can be sent only by the USSD service application to the USSDC; UssdBindResp can be sent only by the USSDC to the USSD service application.
+*
+The following table defines the syntax of UssdBind.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdBind </doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>UssdBind is not in use.
+* Set to NULL</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>UssdBind is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>UssdBind is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+    <field len="11" name="AccountName" otype="C-Octet String" ref="4.2.1" type="java.lang.String">
+      <doc>Login account name of the service application.
+* </doc>
+    </field>
+    <field len="9" name="Password" otype="C-Octet String" ref="4.2.2" type="java.lang.String">
+      <doc>Login account password of the service application.
+* </doc>
+    </field>
+    <field len="13" name="SystemType" otype="C-Octet String" ref="4.2.3" type="java.lang.String">
+      <doc>Reserved</doc>
+    </field>
+    <field len="4" name="InterfaceVersion" otype="Integer" ref="4.2.4" type="int">
+      <doc>Interface version.
+* The current version is 0x10</doc>
+    </field>
+  </class>
+
+  <class name="UssdBindResp">
+    <doc>The following table defines of the syntax of UssdBindResp.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdBindResp </doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>Login result (success or error codes)</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>UssdBindResp is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>UssdBindResp is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+    <field len="11" name="AccountName" otype="C-Octet String" ref="4.2.1" type="java.lang.String">
+      <doc>Login account name of the service application.
+* </doc>
+    </field>
+  </class>
+
+  <class name="UssdUnBind">
+    <doc>UssdUnBind is used for the USSD service application to log out from the USSDC.
+*Upon receipt of a UssdUnBind request, the USSDC sends a response message UssdUnBindResp to the USSD service application, indicating the result of the logout operation.
+*
+UssdUnBind is sent by the USSD service application to the USSDC; UssdUnBindResp is sent by the USSDC to the USSD service application.
+*
+The following table defines the syntax of UssdUnBind.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Define the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdUnBind </doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>UssdUnBind is not in use.
+* Set to NULL</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>UssdUnBind is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>UssdUnBind is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+  </class>
+
+  <class name="UssdUnBindResp">
+    <doc>The following table defines the syntax of UssdUnBindResp.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdUnBindResp.
+* </doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>Result of login (success or error codes)</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>UssdUnBindResp is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>UssdUnBindResp is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+  </class>
+
+  <class name="UssdShake">
+    <doc>UssdShake is used for handshaking between the USSD service application and the USSDC.
+* Upon receipt of a UssdShake message from the USSD service application, the USSDC sends a response message UssdShakeResp.
+* The USSD service application periodically (at an interval of a maximum of five seconds) sends a UssdShake message to the USSDC, and checks whether a UssdShakeResp message is received to determine whether the session between the USSD service application and the USSDC is functioning.
+* To determine whether its session with the USSD service application is functioning, the USSDC checks whether it has received a UssShake message.
+*
+The following table defines the syntax of UssdShake.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdShake </doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>UssdShake is not in use.
+* Set to NULL</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>UssdShake is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>UssdShake is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+  </class>
+
+  <class name="UssdShakeResp">
+    <doc>The following table defines the syntax of the USSDShakeResp message.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdShakeResp </doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>UssdShakeResp is not in use.
+* Set to NULL</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>UssdShakeResp is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>UssdShakeResp is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+  </class>
+
+  <class name="UssdBegin">
+    <doc>UssdBegin can be sent either by a mobile station or by the USSD service application to establish a new USSD session with the USSDC.
+*
+The following table defines the syntax of UssdBegin.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdBegin</doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>UssdBegin is not in use.
+* Set to NULL</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>Session control identifier of the sender</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>UssdBegin is not in use.
+* Set to 0xFFFFFFFF</doc>
+    </field>
+    <field len="1" name="UssdVersion" otype="Integer" ref="4.2.5" type="int">
+      <doc>USSD session version</doc>
+    </field>
+    <field len="1" name="UssdOpType" otype="Integer" ref="4.2.6" type="int">
+      <doc>Operation type of a USSD session</doc>
+    </field>
+    <field len="21" name="MsIsdn" otype="C-Octet String" ref="4.2.7" type="java.lang.String">
+      <doc>Number of a mobile station</doc>
+    </field>
+    <field len="4" name="ServiceCode" otype="C-Octet String" ref="4.2.8" type="java.lang.String">
+      <doc>Corresponding service code of the session</doc>
+    </field>
+    <field len="1" name="CodeScheme" otype="Integer" ref="4.2.9" type="int">
+      <doc>Coding scheme of a USSD string</doc>
+    </field>
+    <field len="182" name="UssdString" otype="Octet String" ref="4.2.10" type="java.lang.String" var="true">
+      <doc>A USSD string</doc>
+    </field>
+  </class>
+
+  <class name="UssdContinue">
+    <doc>UssdContinue can be sent either by a mobile station or by the USSD service application to continue a USSD session with the USSDC.
+*
+The following table defines the syntax of UssdContinue.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdContinue</doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>UssdContinue is not in use.
+*  Set to NULL</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>Session control identifier of the sender</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>Session control identifier of the receiver</doc>
+    </field>
+    <field len="1" name="UssdVersion" otype="Integer" ref="4.2.5" type="int">
+      <doc>Consistent with that of UssdBegin</doc>
+    </field>
+    <field len="1" name="UssdOpType" otype="Integer" ref="4.2.6" type="int">
+      <doc>Operation type of USSD session</doc>
+    </field>
+    <field len="21" name="MsIsdn" otype="C-Octet String" ref="4.2.7" type="java.lang.String">
+      <doc>Consistent with that of UssdBegin</doc>
+    </field>
+    <field len="4" name="ServiceCode" otype="C-Octet String" ref="4.2.8" type="java.lang.String">
+      <doc>UssdContinue is not in use.
+*  Set to NULL</doc>
+    </field>
+    <field len="1" name="CodeScheme" otype="Integer" ref="4.2.9" type="int">
+      <doc>Coding scheme of USSD string</doc>
+    </field>
+    <field len="182" name="UssdString" otype="Octet String" ref="4.2.10" type="java.lang.String" var="true">
+      <doc>A USSD string</doc>
+    </field>
+  </class>
+
+  <class name="UssdEnd">
+    <doc>UssdEnd is used to indicate the end of a USSD session.
+* It can be sent by the USSD service application only.
+* UssdEnd indicates that a USSD session ends normally.
+*
+The following table defines the syntax of UssdEnd.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdEnd </doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>UssdEnd is not in use.
+*  Set to NULL</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>Session control identifier of the sender</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>Session control identifier of the receiver</doc>
+    </field>
+    <field len="1" name="UssdVersion" otype="Integer" ref="4.2.5" type="int">
+      <doc>Consistent with that of UssdBegin</doc>
+    </field>
+    <field len="1" name="UssdOpType" otype="Integer" ref="4.2.6" type="int">
+      <doc>Operation type of a USSD session</doc>
+    </field>
+    <field len="21" name="MsIsdn" otype="C-Octet String" ref="4.2.7" type="java.lang.String">
+      <doc>Consistent with that of UssdBegin</doc>
+    </field>
+    <field len="4" name="ServiceCode" otype="C-Octet String" ref="4.2.8" type="java.lang.String">
+      <doc>Consistent with that of UssdBegin</doc>
+    </field>
+    <field len="1" name="CodeScheme" otype="Integer" ref="4.2.9" type="int">
+      <doc>Coding scheme of a USSD string</doc>
+    </field>
+    <field len="182" name="UssdString" otype="Octet String" ref="4.2.10" type="java.lang.String" var="true">
+      <doc>A USSD string</doc>
+    </field>
+  </class>
+
+  <class name="UssdAbort">
+    <doc>UssdAbort can be sent either by a mobile station or by the USSD service application to abort a USSD session with the USSDC.
+* UssdAbort indicates that a USSD session ends abnormally.
+*
+The following table defines the syntax of UssdAbort.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdAbort</doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>Indicate the causes for the abortion of a USSD session, that is, the error codes of USSD.
+* </doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>Session control identifier of the sender</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>Session control identifier of the receiver.
+* Set to 0xFFFFFFFF if no receiver session identifier exists</doc>
+    </field>
+  </class>
+
+  <class name="UssdSwitch">
+    <doc>USSDSwitch is used for switching a USSD session from a USSD service to another.
+* UssdSwitch can be sent only by the USSD service application to the USSDC.
+* After the USSD service application sends UssdSwitch, it should close the local resources of the current session.
+* Upon receipt of UssdSwitch, the USSDC closes the session with the original service, and reestablishes the connection with the USSD service designated by UssdSwitch.
+* The session between the USSDC and the mobile station remains.
+* 
+The following table defines the syntax of UssdSwitch.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdSwitch </doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>UssdSwitch is not in use.
+* Set to NULL</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>Session control identifier of the sender</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>Session control identifier of the receiver</doc>
+    </field>
+    <field len="1" name="SwitchMode" otype="Integer" ref="4.2.11" type="int">
+      <doc>Switch mode</doc>
+    </field>
+    <field len="21" name="MsIsdn" otype="C-Octet String" ref="4.2.7" type="java.lang.String">
+      <doc>Number of mobile station</doc>
+    </field>
+    <field len="4" name="ServiceCode" otype="C-Octet String" ref="4.2.8" type="java.lang.String">
+      <doc>Target service code to switch to</doc>
+    </field>
+    <field len="182" name="UssdString" otype="Octet String" ref="4.2.10" type="java.lang.String" var="true">
+      <doc>A USSD string</doc>
+    </field>
+  </class>
+
+  <class name="UssdChargeInd">
+    <doc>UssdChargeInd is used for the USSD service application to request the USSDC to generate a bill of charge.
+* UssdChargeInd can be sent only by the USSD service application to the USSDC.
+*
+The following table defines the syntax of UssdChargeInd.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdCharegeInd.
+* </doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>UssdChargeInd is not in use.
+* Set to NULL</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>Session control identifier of the sender</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>Session control identifier of the receiver</doc>
+    </field>
+    <field len="4" name="ChargeRatio" otype="Integer" ref="4.2.12" type="int">
+      <doc>Charging ratio (unit: fen)</doc>
+    </field>
+    <field len="4" name="ChargeType" otype="Integer" ref="4.2.13" type="int">
+      <doc>Charging type</doc>
+    </field>
+    <field len="21" name="ChargeSource" otype="C-Octet String" ref="4.2.14" type="java.lang.String">
+      <doc>Charging source ID</doc>
+    </field>
+    <field len="1" name="ChargeLocation" otype="Integer" ref="4.2.15" type="int">
+      <doc>Location of charging</doc>
+    </field>
+  </class>
+
+  <class name="UssdChargeIndResp">
+    <doc>UssdChargeIndResp is used for the USSDC to notify the USSD service application of the results of processing the charging indication message.
+*
+The following table defines the syntax of UssdChargeIndResp.
+*
+</doc>
+    <field header="true" len="4" name="CommandLength" otype="Integer" ref="4.1.1" type="int">
+      <doc>Defines the size of the whole message packet</doc>
+    </field>
+    <field header="true" len="4" name="CommandID" otype="Integer" ref="4.1.2" type="int">
+      <doc>Message identifier of UssdChargeIndResp.
+* </doc>
+    </field>
+    <field header="true" len="4" name="CommandStatus" otype="Integer" ref="4.1.3" type="int">
+      <doc>Error codes of UssdChargeIndResp</doc>
+    </field>
+    <field header="true" len="4" name="SenderCB" otype="Integer" ref="4.1.4" type="int">
+      <doc>Session control identifier of the sender</doc>
+    </field>
+    <field header="true" len="4" name="ReceiverCB" otype="Integer" ref="4.1.5" type="int">
+      <doc>Session control identifier of the receiver</doc>
+    </field>
+  </class>
+
+  <class name="CommandLength">
+    <doc>The CommandLength field indicates the number of bytes of a USSD service application service protocol message.
+* CommandLength comprises two parts: message header and message body, inclusive of the length of the CommandLength field.
+* 
+</doc>
+  </class>
+
+  <class name="CommandID">
+    <doc>The CommandID field indicates the type of a USSD service application protocol message.
+* The following table lists the types of the USSD service application protocol messages and the values of the messages.
+* 
+</doc>
+    <value name="UssdBind" value="0x00000065"/>
+    <value name="UssdUnBind" value="0x00000066"/>
+    <value name="UssdBindResp" value="0x00000067"/>
+    <value name="UssdUnBindResp" value="0x00000068"/>
+    <value name="UssdBegin" value="0x0000006F"/>
+    <value name="UssdContinue" value="0x00000070"/>
+    <value name="UssdEnd" value="0x00000071"/>
+    <value name="UssdAbort" value="0x00000072"/>
+    <value name="UssdSwitch" value="0x00000074"/>
+    <value name="UssdChargeInd" value="0x00000075"/>
+    <value name="UssdChargeIndResp" value="0x00000076"/>
+    <value name="UssdShake" value="0x00000083"/>
+    <value name="UssdShakeResp" value="0x00000084"/>
+  </class>
+
+  <class name="CommandStatus">
+    <doc>The CommandStatus field indicates the status of a successful or faulty USSD service application protocol message.
+* If a message does not use the CommandStatus field, set the field to NULL.
+*
+</doc>
+  </class>
+
+  <class name="SenderCB">
+    <doc>The SenderCB field indicates the session control identifier of the sender.
+* During a USSD session, SenderCB is used for the sender to identify the current session.
+* The receiver returns the original value of this field in a response message to the ReceiverCB field.
+* If a message does not use the field, set the field to 0xFFFFFFFF.
+*
+</doc>
+  </class>
+
+  <class name="ReceiverCB">
+    <doc>The ReceiverCB field indicates the session control identifier of the receiver.
+* During a USSD session, ReceiverCB is used for the receiver to identify the current session.
+* If a message does not use the field, set the field to 0xFFFFFFFF.
+*
+</doc>
+  </class>
+
+  <class name="Message"/>
+
+  <class name="AccountName">
+    <doc>The AccountName field indicates the account name of the USSD service application which is to log in to the USSDC.
+*
+</doc>
+  </class>
+
+  <class name="Password">
+    <doc>The Password field indicates the password the USSD service application uses to log in to the USSDC.
+* This field is used for the USSDC to authenticate the USSD service application.
+*
+</doc>
+  </class>
+
+  <class name="SystemType">
+    <doc>The SystemType field indicates the type of the USSD service application.
+* At present, this field is not ready for use yet.
+*
+</doc>
+  </class>
+
+  <class name="InterfaceVersion">
+    <doc>The InterfaceVersion field indicates the version of the USSD service application protocol.
+* The current version is 0x10.
+*
+</doc>
+  </class>
+
+  <class name="UssdVersion">
+    <doc>The UssdVersion field indicates the version of the USSD session.
+* Currently, there are three versions of USSD session: PHASE I, PHASE II, and PHASE II+.
+* The specification of the PHASE II+ version is being drafted and not ready for use yet.
+* The following table lists the values of the three USSD versions:
+</doc>
+    <value name="PHASE_I" value="0x10"/>
+    <value name="PHASE_II" value="0x20"/>
+    <value name="PHASE_II_PLUS" value="0x25"/>
+  </class>
+
+  <class name="UssdOpType">
+    <doc>The UssdOpType field indicates the operation types of a USSD session.
+* There are four operation types: Request, Notify, Response, and Release.
+* In different types of sessions, the values of this field follow these regulations: 
+1.
+*	UssdBegin corresponds to two operation types: Request and Notify.
+* The operation type of the UssdBegin session initiated by a mobile station can be Request only.
+* The operation type of the UssdBegin session initiated by the service party can be Request or Notify.
+*
+2.
+*	UssdContinue corresponds to three operation types: Request, Notify, and Response.
+* The operation type of the UssdContinue session initiated by a mobile station can be Response only.
+* The operation type of the UssdContinue session initiated by the service party can be Request or Notify.
+*
+3.
+*	UssdEnd corresponds to two types: Request and Release.
+* If the sender of a session is a mobile station, the operation type of UssdEnd can be Response only.
+* If the sender of the session is the service party, the operation type of UssdEnd can be Release only.
+*
+The following table lists the values of the operation types of the UssdOpType field:
+</doc>
+    <value name="Request" value="0x01"/>
+    <value name="Notify" value="0x02"/>
+    <value name="Response" value="0x03"/>
+    <value name="Release" value="0x04"/>
+  </class>
+
+  <class name="MsIsdn">
+    <doc>The MsIsdn field indicates the number of the mobile station in a session.
+*
+</doc>
+  </class>
+
+  <class name="ServiceCode">
+    <doc>The ServiceCode field indicates the service code of a USSD session.
+* This field is not used in UssdBegin sessions initiated by mobile stations, but is used only in UssdBegin sessions initiated by the service party.
+* In UssdSwitch, this field indicates the target service code to switch a session to.
+* For the value range of the service code, refer to the GSM02.
+*90 protocol.
+*
+Note: This field is not used now because this field length is only 4 characters, but the real length of s service code usually exceeds 4 characters.
+*If the session iniated by MS, the service code should be parsed from the field UssdString.
+*
+</doc>
+  </class>
+
+  <class name="CodeScheme">
+    <doc>The CodeScheme field indicates the coding scheme of a USSD string.
+* For the detailed coding scheme, refer to GSM03.
+*38.
+*To a session initiated by the USSD service party, this field indicates what scheme the USSDC uses to code a USSD string.
+* To a session initiated by the USSDC to the USSD service application, this fielsd can be ignored.
+* The USSDC communicates with the USSD service application using plain codes.
+* Common coding schemes include:
+0x0F (seven-digit code), 0x48 (sixteen-digit code), and 0x44 (eight-digit code).
+*
+</doc>
+  </class>
+
+  <class name="UssdString">
+    <doc>The UssdString field indicates an information string of a USSD session.
+* In a USSDBegin session message initiated by a mobile station, the format of UssdString is: Preample+SC+*+SI+#, where the preamble consists of any combination of 1 to 3 digits of * and #, SC is the service code, SI is a service information string, * is a separator, and # is the terminator.
+* In other session messages, UssdString can contain any content.
+* 
+If CodeScheme designates the seven-digit coding scheme, the maximum length of UssdString is 182 characters.
+* If CodeScheme designates the eight-digit coding scheme, the maximum length of UssdString is 160 characters.
+* If CodeScheme designates the sixteen-digit coding scheme, the maximum length of UssdString is 80 characters (160 bytes).
+*
+If the network side initiates the session UssdBegin, the format of UssdString is:@ + service code + @ + specific USSD parameter information.
+* If UssdString is not in the aforementioned format, the service code must be entered in ServiceCode.
+*
+In case of a service switching message UssdSwitch, the format of UssdString is:@ + service code + @ + specific USSD parameter information.
+* If UssdString is not in the aforementioned format, the target service code to switch to must be entered in ServiceCode.
+*
+</doc>
+  </class>
+
+  <class name="SwitchMode">
+    <doc>The SwitchMode field indicates the modes of service switching.
+* It comprises two switching modes:0: global switching and 1: local switching.
+* Global switching means that the service switching is implemented by the USSD central office where the service application resides.
+* Local switching means that the service switching is implemented by the service platform (or the USSDC) directly connecting the service application.
+*
+</doc>
+  </class>
+
+  <class name="ChargeRatio">
+    <doc>The ChargeRatio field indicates the charging ratio of the charging indication.
+* Its unit is fen (0.
+*01 yuan).
+* The value 0 means free of charge.
+* 
+</doc>
+  </class>
+
+  <class name="ChargeType">
+    <doc>The ChargeType field indicates the charging types of the charging indication.
+* Currently, this field includes the following charging types:0: free, 1: per message, 2: per monthly flat rate, and 3: per monthly flat rate for downlink.
+*
+</doc>
+  </class>
+
+  <class name="ChargeSource">
+    <doc>The ChargeSource field indicates the identifier of the charging source.
+* The service party interprets the specific implication of the contents of this field.
+* 
+</doc>
+  </class>
+
+  <class name="ChargeLocation">
+    <doc>The ChargeLocation field indicates the location where bills are generated.
+* There are the following three cases: 1: Both the USSDC and the USSD service platform generate bills.
+* 2: Only the USSDC generates bills.
+* 3: Only the USSD service platform generates bills.
+*
+</doc>
+  </class>
+
+</spec>

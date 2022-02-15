@@ -1,0 +1,20 @@
+exitOnError false
+deactivateservice name=XmlRpc\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=XmlRpc\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=XmlRpc\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/xmlrpc-service/target/xmlrpc-service-1.0-SNAPSHOT-du.jar 
+
+deactivateraentity XmlRpc\ Resource\ Adaptor\ Entity 
+removeallactivities XmlRpc\ Resource\ Adaptor\ Entity
+waittilraentityisinactive XmlRpc\ Resource\ Adaptor\ Entity 
+unbindralinkname XmlRpc\ Resource\ Adaptor\ Entity\ Link 
+removeraentity XmlRpc\ Resource\ Adaptor\ Entity 
+uninstall file:/home/code/xmlrpc-ra/target/xmlrpc-ra-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/xmlrpc-ra/target/xmlrpc-ra-1.0-SNAPSHOT-du.jar 
+createraentity name=XmlRpc\ Resource\ Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT XmlRpc\ Resource\ Adaptor\ Entity ACTIVITY_DIMENSION=10
+bindralinkname XmlRpc\ Resource\ Adaptor\ Entity XmlRpc\ Resource\ Adaptor\ Entity\ Link
+activateraentity XmlRpc\ Resource\ Adaptor\ Entity 
+installlocaldu /code/xmlrpc-service/target/xmlrpc-service-1.0-SNAPSHOT-du.jar 
+activateservice name=XmlRpc\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

@@ -1,0 +1,10 @@
+MEGACO/1 [125.125.125.111]:55555 Transaction = 50005 { 
+Context = 5000 { 
+Notify = A5555 { 
+ObservedEvents = 1234 { 
+19990829T21020200:al/of { init = false } 
+ } 
+
+ } 
+ } 
+ }

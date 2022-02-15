@@ -1,0 +1,9 @@
+exitOnError false
+deactivateservice name=TelNet\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=TelNet\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=TelNet\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/TelNet-client/service/target/TelNet-service-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/TelNet-client/service/target/TelNet-service-1.0-SNAPSHOT-du.jar 
+activateservice name=TelNet\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

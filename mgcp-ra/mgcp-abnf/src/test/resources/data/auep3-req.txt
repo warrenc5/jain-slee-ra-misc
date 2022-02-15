@@ -1,0 +1,3 @@
+AUEP 2002 aaln/1@rgw-2567.whatever.net MGCP 1.0
+F: R,D,S,X,N,I,T,O,ES
+

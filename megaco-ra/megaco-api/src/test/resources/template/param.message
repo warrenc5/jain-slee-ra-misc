@@ -1,0 +1,45 @@
+package javax.megaco.pkg.ext.{0};---
+---
+import javax.megaco.message.DescriptorType;---
+import javax.megaco.pkg.ParamValueType;---
+import javax.megaco.pkg.PkgConsts;---
+import javax.megaco.pkg.PkgItemParam;---
+import javax.annotation.Generated;---
+---
+//{6} ---
+@Generated('{'"warren crossing"'}')---
+public class {1} extends PkgItemParam '{'---
+	public static final int {2} = {3};---
+	public static final String TOKEN = "{7}";---
+---
+	protected int[] paramsItemIds = null;---
+---
+	public {1}() '{'---
+		super();---
+		super.paramId = {2}; //{7}---
+		super.itemValueType = ParamValueType.{4}; //{4}---
+		super.paramsDescriptorIds = new int[] '{}';---
+        super.packageId = {0}.PACKAGE_INSTANCE;--- //{5}
+
+		this.paramsItemIds = new int[] '{}'; ---
+	'}'---
+---
+	public int getParamId() '{'---
+---
+		return super.paramId;---
+	'}'---
+---
+	public int getParamValueType() '{'---
+---
+		return super.itemValueType;---
+	'}'---
+---
+	public int[] getParamsItemIds() '{'---
+		return this.paramsItemIds;---
+	'}'---
+---
+	public int[] getParamsDescriptorIds() '{'---
+		return super.paramsDescriptorIds;---
+	'}'---
+'}'---
+---

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE deployable-unit PUBLIC
+        "-//Sun Microsystems, Inc.//DTD JAIN SLEE Deployable Unit 1.1//EN"
+        "http://java.sun.com/dtd/slee-deployable-unit_1_1.dtd">
+<deployable-unit>
+  <description/>
+  <jar>sap-lib-${pom.version}.jar</jar>
+  <jar>sap-event-${pom.version}.jar</jar>
+  <jar>sap-ra-type-${pom.version}.jar</jar>
+  <jar>sap-ra-${pom.version}.jar</jar>
+  <!--jar>sap-service-${pom.version}.jar</jar>
+  <service-xml>sap-service.xml</service-xml-->
+</deployable-unit>

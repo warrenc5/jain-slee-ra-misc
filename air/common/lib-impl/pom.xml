@@ -1,0 +1,149 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>mofokom</groupId>
+  <artifactId>common-library-impl</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>common-library-impl</name>
+    <parent>
+    <artifactId>air-common</artifactId>
+    <groupId>mofokom</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+ <url>http://www.mofokom.biz/site/air/${artifactId}</url>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.0.2</version>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                   <overview>src/main/java/overview-summary.html</overview>
+                </configuration>
+            </plugin>
+             
+             <!--
+            <plugin>
+                <groupId>com.pyx4me</groupId>
+                <artifactId>proguard-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>proguard</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <options>
+                        <option>-dontpreverify</option>
+                        <option>-target 1.5</option>
+                        <option>-dontshrink</option>
+                        <option>-dontoptimize</option>
+                        <option>-flattenpackagehierarchy mofokom.libimpl</option>
+                        <option>-renamesourcefileattribute LIBIMPL </option>
+                        <option>-keepattributes InnerClasses,SourceFile,ExceptionsLineNumberTable,Deprecated,Signature,*Annotation*,EnclosingMethod</option>
+                        <option>-keep public class * extends javax.slee.resource.ResourceAdaptor { *; }</option>
+                        <option>-keep public interface * extends mofokom.in.ccn.impl.Codeable { *; }</option>
+                        <option>-keep public interface mofokom.in.ccn.impl.Codeable { *; }</option>
+                        <option>-keep public class mofokom.in.ccn.impl.Decoder { *; }</option>
+                        <option>-keep public class mofokom.in.ccn.impl.Encoder { *; }</option>
+                        <option>-printmapping ${basedir}/src/main/proguard/out.pro</option>
+                    </options>
+                    <libs>
+                        <lib>${java.home}/lib/rt.jar</lib>
+                    </libs>
+                </configuration>
+            </plugin>
+            -->
+        </plugins>
+    </build>
+    <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+        <dependency>
+            <groupId>javax.slee</groupId>
+            <artifactId>jainslee-api</artifactId>
+            <version>1.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>common-library</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>xmlrpc-impl</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>xmlrpc-impl</artifactId>
+            <version>${project.version}</version>
+            <classifier>interface</classifier>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>mofokom</groupId>
+            <artifactId>http-lib</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>deadlock</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!--
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>ucip-ra</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>ra-http-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>ra-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+</project>
+
+
+
+

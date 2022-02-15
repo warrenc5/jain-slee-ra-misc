@@ -1,0 +1,7 @@
+exitOnError false
+installlocaldu /home/wozza/.m2/repository/mofokom/jpa-service/1.0-SNAPSHOT/jpa-service-1.0-SNAPSHOT-du.jar
+settracelevel sbb name=JPA\ SLEE\ Service\ Example\ Root\ SBB,vendor=MOFOKOM,version=1.0-SNAPSHOT Finest 
+settracelevel service name=JPA\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+
+activateservice name=JPA\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

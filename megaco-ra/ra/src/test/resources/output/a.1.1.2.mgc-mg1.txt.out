@@ -1,0 +1,10 @@
+MEGACO/1 [123.123.123.4]:55555 Reply = 9998 { 
+Context = - { 
+ServiceChange = ROOT { 
+Services { 
+ServiceChangeAddress = 55555 , Profile = ResGW/1
+ } 
+
+ } 
+ } 
+ }

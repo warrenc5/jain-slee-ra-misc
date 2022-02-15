@@ -1,0 +1,5 @@
+exitOnError false
+installlocaldu /code/snmp-client/ra/target/snmp-ra-1.0-SNAPSHOT-du.jar 
+createraentity name=SNMP\ Resource\ Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT SNMP\ Resource\ Adaptor\ Entity WORK_QUEUE=1,POOL_SIZE=2,MAX_POOL_SIZE=3,POOL_TIMEOUT=120,SNMP_CONTEXT_VERSION=3,HOST="localhost",LISTEN=false,BIND_ADDRESS="0.0.0.0",PORT=161,SOCKET_TYPE="Standard",CONTEXT_ENGINE_ID="010000a1d41e4946",CONTEXT_NAME="public",USERNAME="",USER_AUTH_PASSWORD="",AUTH_PROTOCOL="MD5",PRIV_PROTOCOL="DES",USER_PRIV_PASSWORD="",USE_AUTHENTICATION=false,USE_PRIVACY=false,COMMUNITY="public",MAX_RECV_SIZE=10000,RETRY_INTERVALS="1000,2000,5000",ACTIVITY_DIMENSION=5
+bindralinkname SNMP\ Resource\ Adaptor\ Entity SNMP\ Resource\ Adaptor\ Entity\ Link
+activateraentity SNMP\ Resource\ Adaptor\ Entity 

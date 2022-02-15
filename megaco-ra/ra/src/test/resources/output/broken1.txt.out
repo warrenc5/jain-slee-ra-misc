@@ -1,0 +1,8 @@
+MEGACO/1 [10.0.20.10] Transaction = 10519279 { 
+Context = $ { 
+Add = TP/26 { 
+EventBuffer { 
+AL/FL } 
+ } 
+ } 
+ }

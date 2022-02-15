@@ -1,0 +1,59 @@
+PackageID: g (0x0001)
+        EventID: cause (0x0001)
+        ParameterID: Generalcause (0x0001)
+        ParameterID: Failurecause (0x0002)
+        EventID: sc (0x0002)
+        ParameterID: SigID (0x0001)
+        ParameterID: Meth (0x0002)
+        ParameterID:  SLID (0x0003)
+        PackageID: root (0x0002)
+        PackageID: tonegen (0x0003)
+        SignalID: pt (0x0001)
+        ParameterID: tl (0x0001)
+        ParameterID: ind (0x0002)
+PackageID: tonedet (0x0004)
+        EventID: std, 0x0001
+        ParameterID: tl (0x0001)
+ParameterID: tid (0x0003)
+        EventID: etd, 0x0002
+        ParameterID: tl (0x0001)
+ParameterID: tid (0x0003)
+        EventID: ltd, 0x0003
+        ParameterID: tl (0x0001)
+        ParameterID: dur (0x0002)
+        ParameterID: tid (0x0003)
+        PackageID: dg (0x0005)
+        SignalID: d0 (0x0010)
+PackageID: dd (0x0006)
+        EventID: ce, 0x0004
+        ParameterID: ds (0x0001)
+ParameterID: Meth (0x0003)
+        PackageID: cg, 0x0007
+        SignalID: dt (0x0030)
+PackageID: cd (0x0008)
+        PackageID: al, 0x0009
+        EventID: on (0x0004)
+        ParameterID: strict (0x0001)
+        ParameterID: init (0x0002)
+        EventID: of (0x0005)
+        ParameterID: strict (0x0001)
+ParameterID: init (0x0002)
+        EventID: fl, 0x0006
+        ParameterID: mindur (0x0004)
+ParameterID: maxdur (0x0005)
+        SignalID: ri, 0x0002
+        ParameterID: cad (0x0006)
+        ParameterID: freq (0x0007)
+PackageID: ct (0x000a)
+        EventID: cmp, 0x0005
+        ParameterID: res (0x0008)
+        SignalID: ct (0x0003)
+        SignalID: rsp (0x0004)
+PackageID: nt (0x000b)
+        EventID: netfail, 0x0005
+ParameterID: cs (0x0001)
+        EventID: qualert, 0x0006
+PackageID: rtp (0x000c)
+        EventID: pltrans, 0x0001
+        ParameterID: rtppltype, 0x01
+PackageID: tdmc (0x000d)

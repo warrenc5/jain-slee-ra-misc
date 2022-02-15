@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-adaptor-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor 1.1//EN" "http://java.sun.com/dtd/slee-resource-adaptor-jar_1_1.dtd">
+<resource-adaptor-jar>
+    <resource-adaptor id="mail">
+        <description>Mail Resource Adaptor is a SLEE adaptation of the javax.mail package</description>
+        <resource-adaptor-name>Mail Resource Adaptor </resource-adaptor-name>
+        <resource-adaptor-vendor> MOFOKOM </resource-adaptor-vendor>
+        <resource-adaptor-version> ${pom.version} </resource-adaptor-version>
+        <resource-adaptor-type-ref>
+            <resource-adaptor-type-name>Mail Resource Adaptor Type</resource-adaptor-type-name>
+            <resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor>
+            <resource-adaptor-type-version> ${pom.version} </resource-adaptor-type-version>
+        </resource-adaptor-type-ref>
+        <library-ref>
+            <library-name> Mail Library </library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version> ${pom.version} </library-version>
+        </library-ref>
+        <resource-adaptor-classes>
+            <resource-adaptor-class>
+                <resource-adaptor-class-name>mofokom.resource.mail.impl.MailResourceAdaptor</resource-adaptor-class-name>
+            </resource-adaptor-class>
+        </resource-adaptor-classes>
+        <config-property>
+            <description>Connect to the default store when the RA entity activates.</description>
+            <config-property-name>CONNECT_STORE</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>true</config-property-value>
+        </config-property>
+        <config-property>
+            <description>Connect to the default transport when the RA entity activates.</description>
+            <config-property-name>CONNECT_TRANSPORT</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>true</config-property-value>
+        </config-property>
+        <config-property>
+            <description>Use a PasswordAuthenticator to the session.</description>
+            <config-property-name>MAIL_AUTHENTICATION</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>true</config-property-value>
+        </config-property>
+        <config-property>
+            <description>Initially dimension the activity map for this many MailMessages.</description>
+            <config-property-name>ACTIVITY_DIMENSION</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1024</config-property-value>
+        </config-property>
+        <config-property>
+            <description>The number of work queues used to send emails.</description>
+            <config-property-name>WORK_QUEUE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1</config-property-value>
+        </config-property>
+        <config-property>
+            <description>The initial number of pooled threads to use to send emails.</description>
+            <config-property-name>EXECUTOR_POOL_SIZE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>2</config-property-value>
+        </config-property>
+        <config-property>
+            <description>The maximum number of pooled threads to use to send emails.</description>
+            <config-property-name>EXECUTOR_MAX_POOL_SIZE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>3</config-property-value>
+        </config-property>
+        <config-property>
+            <description>The duration before a thread will be removed from the pool.</description>
+            <config-property-name>EXECUTOR_POOL_TIMEOUT</config-property-name>
+            <config-property-type>java.lang.Long</config-property-type>
+            <config-property-value>120</config-property-value>
+        </config-property>
+        <config-property>
+            <description>The mail configuration properties file</description>
+            <config-property-name>CONFIG_URI</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>resource:/mail.properties</config-property-value>
+        </config-property>
+        <config-property>
+            <description>Wait and send emails when stopping</description>
+            <config-property-name>DRAIN_ON_SHUTDOWN</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>Use transport and store session debugging.</description>
+            <config-property-name>SESSION_DEBUG</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>Delay in millis between stopping the RA entity to ending all the activities, This allows Mail Close Events to be delivered to SBB</description>
+            <config-property-name>SHUTDOWN_PERIOD</config-property-name>
+            <config-property-type>java.lang.Long</config-property-type>
+            <config-property-value>2000</config-property-value>
+        </config-property>
+                
+    </resource-adaptor>
+    <security-permissions>
+        <description/>
+        <security-permission-spec>
+            grant {
+            permission java.lang.RuntimePermission "*" ;
+            permission java.security.AllPermission ;
+            };
+        </security-permission-spec>
+    </security-permissions>
+</resource-adaptor-jar>

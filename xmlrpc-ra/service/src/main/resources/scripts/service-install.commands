@@ -1,0 +1,5 @@
+exitOnError false
+
+installlocaldu ~/.m2/repository/mofokom/xmlrpc-service/1.0-SNAPSHOT/xmlrpc-service-1.0-SNAPSHOT-du.jar
+activateservice "name=XmlRpc Service,vendor=MOFOKOM,version=1.0-SNAPSHOT"
+

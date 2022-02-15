@@ -1,0 +1,15 @@
+MEGACO/1 [123.123.123.4]:55555 Transaction = 9999 {
+       Context = - {
+           Modify = A4444 {
+               Media { Stream = 1 {
+                        LocalControl {
+                            Mode = SendReceive,
+                            tdmc/gain=2,  ; in dB,
+                            tdmc/ec=on
+                        }
+                    }
+               },
+               Events = 2222 {al/of{strict=state}}
+           }
+       } 
+}

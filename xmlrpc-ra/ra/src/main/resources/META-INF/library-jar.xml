@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE library-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Library 1.1//EN" "http://java.sun.com/dtd/slee-library-jar_1_1.dtd">
+
+<library-jar>
+    <library>
+        <description> The XML RPC support library </description>
+        <library-name> XmlRpc Library </library-name>
+        <library-vendor> MOFOKOM </library-vendor>
+        <library-version> ${pom.version} </library-version>
+        <jar>
+            <description/>
+            <jar-name>event-common-${pom.version}.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+        <jar>
+            <description/>
+            <jar-name>xmlrpc-impl-${pom.version}-interface.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+        <jar>
+            <description/>
+            <jar-name>commons-codec-1.5.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+        <jar>
+            <description/>
+            <jar-name>httpcore-4.2-alpha1.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+        <jar>
+            <description/>
+            <jar-name>httpcore-nio-4.2-alpha1.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+    </library>
+    <security-permissions>
+        <description> </description>
+        <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+        </security-permission-spec>
+    </security-permissions>
+</library-jar>

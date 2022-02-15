@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<deploy-config>
+ <!--
+        [
+           (ACTIVITY_DIMENSION:Integer=),
+   (AUTHENTICATION:Boolean=),
+   (CHUNKING:Boolean=),
+   (CONNECTION_POOL_TIMEOUT:Integer=),
+   (CONNECTION_REQUEST_TIMEOUT:Integer=),
+   (CONNECTION_TIMEOUT:Integer=),
+   (DEST_HOST:String=),
+   (DEST_PORT:Integer=),
+   (DEST_URL:String=),
+   (ENCODER_BUFFER_SIZE:Integer=),
+   (ENCODER_STREAMING:Boolean=),
+   (EXECUTOR_MAX_POOL_SIZE:Integer=),
+   (EXECUTOR_CORE_POOL_SIZE:Integer=),
+   (EXECUTOR_POOL_TIMEOUT:Long=),
+   (LISTEN_PORT:Integer=),
+   (MAX_CONNECTIONS:Integer=),
+   (PENDING_REQUEST_CAPACITY:Integer=),
+   (POOL_CONNECTION_TIMEOUT:Integer=),
+   (REALM_USER_NAME:String=),
+   (REALM_USER_PASSWORD:String=),
+   (RESPONSE_TIMEOUT:Integer=),
+   (SHUTDOWN_TIME:Long=),
+   (SOCKET_BUFFER_SIZE:Integer=),
+   (SOCKET_TIMEOUT:Integer=),
+   (STALE_CONNECTIONS_CHECK:Boolean=),
+   (SYNCHRONOUS:Boolean=),
+   (TCP_NO_DELAY:Boolean=),
+   (USER_AGENT:String=),
+   (WORK_QUEUE:Integer=),
+
+        ]
+        -->
+  <ra-entity resource-adaptor-id="ResourceAdaptorID[name=ACIP Resource Adaptor,vendor=MOFOKOM,version=3.1]" entity-name="ACIP Resource Adaptor Entity">
+    <properties file="">
+      <property name="ACTIVITY_DIMENSION" type="java.lang.Integer" value="1000"/>
+      <property name="AUTHENTICATION" type="java.lang.Boolean" value="true"/>
+      <property name="CHUNKING" type="java.lang.Boolean" value="true"/>
+      <property name="CONNECTION_POOL_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="CONNECTION_REQUEST_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="CONNECTION_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="DEST_HOST" type="java.lang.String" value="localhost"/>
+      <property name="DEST_PORT" type="java.lang.Integer" value="8080"/>
+      <property name="DEST_URL" type="java.lang.String" value="/Air"/>
+      <property name="ENCODER_BUFFER_SIZE" type="java.lang.Integer" value="2048"/>
+      <property name="ENCODER_STREAMING" type="java.lang.Boolean" value="false"/>
+      <property name="EXECUTOR_MAX_POOL_SIZE" type="java.lang.Integer" value="10"/>
+      <property name="EXECUTOR_CORE_POOL_SIZE" type="java.lang.Integer" value="5"/>
+      <property name="EXECUTOR_POOL_TIMEOUT" type="java.lang.Long" value="100"/>
+      <property name="LISTEN_PORT" type="java.lang.Integer" value="8081"/>
+      <property name="MAX_CONNECTIONS" type="java.lang.Integer" value="100"/>
+      <property name="PENDING_REQUEST_CAPACITY" type="java.lang.Integer" value="1000"/>
+      <property name="POOL_CONNECTION_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="REALM_USER_NAME" type="java.lang.String" value="admin"/>
+      <property name="REALM_USER_PASSWORD" type="java.lang.String" value="admin"/>
+      <property name="RESPONSE_TIMEOUT" type="java.lang.Integer" value="500"/>
+      <property name="SHUTDOWN_TIME" type="java.lang.Long" value="2500"/>
+      <property name="SOCKET_BUFFER_SIZE" type="java.lang.Integer" value="2048"/>
+      <property name="SOCKET_TIMEOUT" type="java.lang.Integer" value="800"/>
+      <property name="STALE_CONNECTIONS_CHECK" type="java.lang.Boolean" value="true"/>
+      <property name="SYNCHRONOUS" type="java.lang.Boolean" value="false"/>
+      <property name="TCP_NO_DELAY" type="java.lang.Boolean" value="true"/>
+      <property name="USER_AGENT" type="java.lang.String" value="SLEE/1.0"/>
+      <property name="WORK_QUEUE" type="java.lang.Integer" value="1000"/>
+    </properties>
+    <ra-link name="ACIP Resource Adaptor Entity Link"/>
+  </ra-entity>     
+
+  <ra-entity resource-adaptor-id="ResourceAdaptorID[name=UCIP Resource Adaptor,vendor=MOFOKOM,version=3.1]" entity-name="UCIP Resource Adaptor Entity">
+    <properties file="">
+      <property name="ACTIVITY_DIMENSION" type="java.lang.Integer" value="1000"/>
+      <property name="AUTHENTICATION" type="java.lang.Boolean" value="true"/>
+      <property name="CHUNKING" type="java.lang.Boolean" value="true"/>
+      <property name="CONNECTION_POOL_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="CONNECTION_REQUEST_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="CONNECTION_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="DEST_HOST" type="java.lang.String" value="localhost"/>
+      <property name="DEST_PORT" type="java.lang.Integer" value="8080"/>
+      <property name="DEST_URL" type="java.lang.String" value="/Air"/>
+      <property name="ENCODER_BUFFER_SIZE" type="java.lang.Integer" value="2048"/>
+      <property name="ENCODER_STREAMING" type="java.lang.Boolean" value="false"/>
+      <property name="EXECUTOR_MAX_POOL_SIZE" type="java.lang.Integer" value="10"/>
+      <property name="EXECUTOR_CORE_POOL_SIZE" type="java.lang.Integer" value="5"/>
+      <property name="EXECUTOR_POOL_TIMEOUT" type="java.lang.Long" value="100"/>
+      <property name="LISTEN_PORT" type="java.lang.Integer" value="8081"/>
+      <property name="MAX_CONNECTIONS" type="java.lang.Integer" value="100"/>
+      <property name="PENDING_REQUEST_CAPACITY" type="java.lang.Integer" value="1000"/>
+      <property name="POOL_CONNECTION_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="REALM_USER_NAME" type="java.lang.String" value="admin"/>
+      <property name="REALM_USER_PASSWORD" type="java.lang.String" value="admin"/>
+      <property name="RESPONSE_TIMEOUT" type="java.lang.Integer" value="500"/>
+      <property name="SHUTDOWN_TIME" type="java.lang.Long" value="2500"/>
+      <property name="SOCKET_BUFFER_SIZE" type="java.lang.Integer" value="2048"/>
+      <property name="SOCKET_TIMEOUT" type="java.lang.Integer" value="800"/>
+      <property name="STALE_CONNECTIONS_CHECK" type="java.lang.Boolean" value="true"/>
+      <property name="SYNCHRONOUS" type="java.lang.Boolean" value="false"/>
+      <property name="TCP_NO_DELAY" type="java.lang.Boolean" value="true"/>
+      <property name="USER_AGENT" type="java.lang.String" value="SLEE/1.0"/>
+      <property name="WORK_QUEUE" type="java.lang.Integer" value="1000"/>
+    </properties>
+    <ra-link name="UCIP Resource Adaptor Entity Link"/>
+  </ra-entity>
+  
+  <ra-entity resource-adaptor-id="ResourceAdaptorID[name=VSIP Resource Adaptor,vendor=MOFOKOM,version=3.1]" entity-name="VSIP Resource Adaptor Entity">
+    <properties file="">
+      <property name="ACTIVITY_DIMENSION" type="java.lang.Integer" value="1000"/>
+      <property name="AUTHENTICATION" type="java.lang.Boolean" value="true"/>
+      <property name="CHUNKING" type="java.lang.Boolean" value="true"/>
+      <property name="CONNECTION_POOL_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="CONNECTION_REQUEST_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="CONNECTION_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="DEST_HOST" type="java.lang.String" value="localhost"/>
+      <property name="DEST_PORT" type="java.lang.Integer" value="8080"/>
+      <property name="DEST_URL" type="java.lang.String" value="/Air"/>
+      <property name="ENCODER_BUFFER_SIZE" type="java.lang.Integer" value="2048"/>
+      <property name="ENCODER_STREAMING" type="java.lang.Boolean" value="false"/>
+      <property name="EXECUTOR_MAX_POOL_SIZE" type="java.lang.Integer" value="10"/>
+      <property name="EXECUTOR_CORE_POOL_SIZE" type="java.lang.Integer" value="5"/>
+      <property name="EXECUTOR_POOL_TIMEOUT" type="java.lang.Long" value="100"/>
+      <property name="LISTEN_PORT" type="java.lang.Integer" value="8081"/>
+      <property name="MAX_CONNECTIONS" type="java.lang.Integer" value="100"/>
+      <property name="PENDING_REQUEST_CAPACITY" type="java.lang.Integer" value="1000"/>
+      <property name="POOL_CONNECTION_TIMEOUT" type="java.lang.Integer" value="200"/>
+      <property name="REALM_USER_NAME" type="java.lang.String" value="admin"/>
+      <property name="REALM_USER_PASSWORD" type="java.lang.String" value="admin"/>
+      <property name="RESPONSE_TIMEOUT" type="java.lang.Integer" value="500"/>
+      <property name="SHUTDOWN_TIME" type="java.lang.Long" value="2500"/>
+      <property name="SOCKET_BUFFER_SIZE" type="java.lang.Integer" value="2048"/>
+      <property name="SOCKET_TIMEOUT" type="java.lang.Integer" value="800"/>
+      <property name="STALE_CONNECTIONS_CHECK" type="java.lang.Boolean" value="true"/>
+      <property name="SYNCHRONOUS" type="java.lang.Boolean" value="false"/>
+      <property name="TCP_NO_DELAY" type="java.lang.Boolean" value="true"/>
+      <property name="USER_AGENT" type="java.lang.String" value="SLEE/1.0"/>
+      <property name="WORK_QUEUE" type="java.lang.Integer" value="1000"/>
+    </properties>
+    <ra-link name="VSIP Resource Adaptor Entity Link"/>
+  </ra-entity>
+
+  <!--
+          JAVA TESTING CODE
+
+  properties.addProperty(new Property("ACTIVITY_DIMENSION",Integer.class.getName(),));
+
+
+  properties.addProperty(new Property("AUTHENTICATION",Boolean.class.getName(),));
+
+  properties.addProperty(new Property("CHUNKING",Boolean.class.getName(),));
+
+  properties.addProperty(new Property("CONNECTION_POOL_TIMEOUT",Integer.class.getName(),));
+
+  properties.addProperty(new Property("CONNECTION_REQUEST_TIMEOUT",Integer.class.getName(),));
+
+  properties.addProperty(new Property("CONNECTION_TIMEOUT",Integer.class.getName(),));
+
+  properties.addProperty(new Property("DEST_HOST",String.class.getName(),));
+
+  properties.addProperty(new Property("DEST_PORT",Integer.class.getName(),));
+
+  properties.addProperty(new Property("DEST_URL",String.class.getName(),));
+
+  properties.addProperty(new Property("ENCODER_BUFFER_SIZE",Integer.class.getName(),));
+
+  properties.addProperty(new Property("ENCODER_STREAMING",Boolean.class.getName(),));
+
+  properties.addProperty(new Property("EXECUTOR_MAX_POOL_SIZE",Integer.class.getName(),));
+
+  properties.addProperty(new Property("EXECUTOR_CORE_POOL_SIZE",Integer.class.getName(),));
+
+  properties.addProperty(new Property("EXECUTOR_POOL_TIMEOUT",Long.class.getName(),));
+
+  properties.addProperty(new Property("LISTEN_PORT",Integer.class.getName(),));
+
+  properties.addProperty(new Property("MAX_CONNECTIONS",Integer.class.getName(),));
+
+  properties.addProperty(new Property("PENDING_REQUEST_CAPACITY",Integer.class.getName(),));
+
+  properties.addProperty(new Property("POOL_CONNECTION_TIMEOUT",Integer.class.getName(),));
+
+  properties.addProperty(new Property("REALM_USER_NAME",String.class.getName(),));
+
+  properties.addProperty(new Property("REALM_USER_PASSWORD",String.class.getName(),));
+
+  properties.addProperty(new Property("RESPONSE_TIMEOUT",Integer.class.getName(),));
+
+  properties.addProperty(new Property("SHUTDOWN_TIME",Long.class.getName(),));
+
+  properties.addProperty(new Property("SOCKET_BUFFER_SIZE",Integer.class.getName(),));
+
+  properties.addProperty(new Property("SOCKET_TIMEOUT",Integer.class.getName(),));
+
+  properties.addProperty(new Property("STALE_CONNECTIONS_CHECK",Boolean.class.getName(),));
+
+  properties.addProperty(new Property("SYNCHRONOUS",Boolean.class.getName(),));
+
+  properties.addProperty(new Property("TCP_NO_DELAY",Boolean.class.getName(),));
+
+  properties.addProperty(new Property("USER_AGENT",String.class.getName(),));
+
+  properties.addProperty(new Property("WORK_QUEUE",Integer.class.getName(),));
+  -->
+  <!--
+          OC RAE
+
+
+          ACTIVITY_DIMENSION=,AUTHENTICATION=,CHUNKING=,CONNECTION_POOL_TIMEOUT=,CONNECTION_REQUEST_TIMEOUT=,CONNECTION_TIMEOUT=,DEST_HOST=,DEST_PORT=,DEST_URL=,ENCODER_BUFFER_SIZE=,ENCODER_STREAMING=,EXECUTOR_MAX_POOL_SIZE=,EXECUTOR_CORE_POOL_SIZE=,EXECUTOR_POOL_TIMEOUT=,LISTEN_PORT=,MAX_CONNECTIONS=,PENDING_REQUEST_CAPACITY=,POOL_CONNECTION_TIMEOUT=,REALM_USER_NAME=,REALM_USER_PASSWORD=,RESPONSE_TIMEOUT=,SHUTDOWN_TIME=,SOCKET_BUFFER_SIZE=,SOCKET_TIMEOUT=,STALE_CONNECTIONS_CH
+          -->
+</deploy-config>

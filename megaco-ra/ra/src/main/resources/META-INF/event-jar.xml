@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<!DOCTYPE event-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Event 1.1//EN" "http://java.sun.com/dtd/slee-event-jar_1_1.dtd">
+<event-jar>
+    <description>Event Definitions for MegaCo Resource Adaptor Type.
+    </description>
+    <library-ref>
+        <description> MegaCo Library </description>
+        <library-name> MegaCo Library </library-name>
+        <library-vendor> MOFOKOM </library-vendor>
+        <library-version> ${pom.version}</library-version>
+    </library-ref>
+
+    <event-definition>
+        <description>Delivered to each transaction as it is pending by peer.</description>
+        <event-type-name>TransactionPending</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>java.lang.Void</event-class-name>
+    </event-definition>
+
+
+    <event-definition>
+        <description>Delivered to each transaction as it is acknowledged by peer.</description>
+        <event-type-name>TransactionAcknowledge</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>java.lang.Void</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>The base class for all JAIN MEGACO Command Events. This is an abstract class and hence cannot be created as a separate object. This class acts as the base class for the Command and Context request and response classes. </description>
+        <event-type-name>CommandEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.CommandEvent</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description></description>
+        <event-type-name>AddCommandReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>AddCommandResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>MoveCommandReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>MoveCommandResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>ModifyCommandReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>ModifyCommandResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>SrvChangeCommandReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>SrvChangeCommandResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>NotifyCommandReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>NotifyCommandResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>AuditValCommandReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>AuditValCommandResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>AuditCapCommandReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>AuditCapCommandResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>SubtractCommandReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description></description>
+        <event-type-name>SubtractCommandResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>The class extends JAIN MEGACO Command Events. This class is used to represent megaco command response event.Using this class the application can send responses of MEGACO command request received from peer. </description>
+        <event-type-name>CommandResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>The class extends JAIN MEGACO Command Events. This class is used to represent megaco command request event. Using this class the application can send MEGACO command request to peer. </description>
+        <event-type-name>CommandReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.CommandReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>The class extends JAIN MEGACO Command Events. This class is used to represent megaco action request event i.e. when an action comes or is to be sent without a command, but has context parameters. </description>
+        <event-type-name>ContextInfoReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.ContextInfoReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This class is used to represent megaco context information response event. It is used when the application needs to respond to a command or an action request received with context properties only. Through this the application would be able to respond with context properties only. This event would be received by the application when the application is only expecting a context property in the response with no accompanying commands. </description>
+        <event-type-name>ContextInfoResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.message.ContextInfoResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>The base class for all JAIN MEGACO Association Events</description>
+        <event-type-name>AssociationEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.AssociationEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This would cause the stack to configure the association with the parameters specified and initiate the protocol procedures to create an association with the peer. If the application is MGC, then the stack would expect ServiceChange messages from MG. And  if the application if MG, then the stack would send ServiceChange command with the specified ServiceChangeMethod and ServiceChangeReason to MGC. </description>
+        <event-type-name>CreateAssocReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.CreateAssocReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This class is used by the stack when it needs to send back response for the create association request received from the application. </description>
+        <event-type-name>CreateAssocResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.CreateAssocResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This represents the delete association request event. The event causes the stack initiate assoiation teardown procedures with the peer. This would case the stack to send a ServiceChange command with specified ServiceChangeMethod (e.g. Forced or Graceful) and ServiceChangeReason. After completion of the protocol procedure, the association is deleted with the peer and can no more be used for exchaging commands with the peer.</description>
+        <event-type-name>DeleteAssocReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.DeleteAssocReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This class is created by the stack when it needs to send back response for the delete association request received from the application. </description>
+        <event-type-name>DeleteAssocResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.DeleteAssocResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This represents the modify association request event. This is used by the application in requesting the stack to modify the association. </description>
+        <event-type-name>ModifyAssocReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.ModifyAssocReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This class is created by the stack when it needs to send back response for the modify association request received from the application. </description>
+        <event-type-name>ModifyAssocResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.ModifyAssocResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This class represents the association indication class that is sent asynchronously by the stack to indicate the change in state of the association. The service change parameters associated with this class are the parameters which caused the change in the state of the association. If the change in the association state is beacuse of the message received from peer, then service change parameters as same as received in the ServiceChange command. Similarly, if the change in the association state is due to the Graceful timeout, the service change parameters should indicate indicate the parameters when Graceful request was sent i.e., ServiceChange method set to GRACEFUL, ServiceChange delay set to Graceful timeout. </description>
+        <event-type-name>AssociationInd</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.AssociationInd</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This method is used for configuring the association related information. If this API is not invoked by application, stack would assume the default values for the configuration parameters. </description>
+        <event-type-name>AssociationConfigReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.AssociationConfigReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This class is used by the stack when it needs to send back response for the association configuration request received from the application. </description>
+        <event-type-name>AssociationConfigResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.AssociationConfigResp</event-class-name>
+    </event-definition>
+
+
+    <event-definition>
+        <description>This delete transaction request is used for deleting the transaction which have been allocated by the stack on indication from the application. This class can be used to delete a individual transaction or all the transactions. To delete a individual transaction, transaction Id is set to a valid value and to delete all the transactions, transaction Id is set to 0. </description>
+        <event-type-name>DeleteTxnReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.DeleteTxnReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This class is used by the stack when it needs to send back response for the delete transaction request received from the application. </description>
+        <event-type-name>DeleteTxnResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.DeleteTxnResp</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>It represents the Create transaction request event issued by the application to create a new transaction request to be sent to peer. </description>
+        <event-type-name>CreateTxnReq</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.CreateTxnReq</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This class is created by the stack when it needs to send back response for the create transaction request received from the application. </description>
+        <event-type-name>CreateTxnResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.association.CreateTxnResp</event-class-name>
+    </event-definition>
+
+<!--Package Events -->
+    <event-definition>
+        <description>This class defines Flash Hook event of Analog Line Supervision package.</description>
+        <event-type-name>AnalogLineSPkg.AnalogLineSFlashEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.AnalogLineSPkg.AnalogLineSFlashEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Off Hook event of Analog Line Supervision package. </description>
+        <event-type-name>AnalogLineSPkg.AnalogLineSOffEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.AnalogLineSPkg.AnalogLineSOffEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines On Hook event of Analog Line Supervision package.</description>
+        <event-type-name>AnalogLineSPkg.AnalogLineSOnEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.AnalogLineSPkg.AnalogLineSOnEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Completion event of MEGACO Continuity package.</description>
+        <event-type-name>ContinuityPkg.ContComplEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.ContinuityPkg.ContComplEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Busy Tone event of MEGACO Call Progress Tone Detect package.</description>
+        <event-type-name>CPToneDetPkg.CPToneDetBtEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.CPToneDetPkg.CPToneDetBtEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Caller Waiting Tone event of MEGACO Call Progress Tone Detect package.</description>
+        <event-type-name>CPToneDetPkg.CPToneDetCrEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.CPToneDetPkg.CPToneDetCrEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Congestion Tone event of MEGACO Call Progress Tone Detect package.</description>
+        <event-type-name>CPToneDetPkg.CPToneDetCtEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.CPToneDetPkg.CPToneDetCtEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Call Waiting Tone event of MEGACO Call Progress Tone Detect package.</description>
+        <event-type-name>CPToneDetPkg.CPToneDetCwtEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.CPToneDetPkg.CPToneDetCwtEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Dial Tone event of MEGACO Call Progress Tone Detect package. </description>
+        <event-type-name>CPToneDetPkg.CPToneDetDtEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.CPToneDetPkg.CPToneDetDtEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Payphone Recognition Tone event of MEGACO Call Progress Tone Detect package.</description>
+        <event-type-name>CPToneDetPkg.CPToneDetPtEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.CPToneDetPkg.CPToneDetPtEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Ringing Tone event of MEGACO Call Progress Tone Detect package. </description>
+        <event-type-name>CPToneDetPkg.CPToneDetRtEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.CPToneDetPkg.CPToneDetRtEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Special Information Tone event of MEGACO Call Progress Tone Detect package. </description>
+        <event-type-name>CPToneDetPkg.CPToneDetSitEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.CPToneDetPkg.CPToneDetSitEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Warning Tone event of MEGACO Call Progress Tone Detect package. </description>
+        <event-type-name>CPToneDetPkg.CPToneDetWtEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.CPToneDetPkg.CPToneDetWtEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Digitmap Completion event of MEGACO DTMF Detection package. </description>
+        <event-type-name>DTMFDetPkg.DTMFDetCeEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.DTMFDetPkg.DTMFDetCeEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Cause Event of MEGACO Generic package. </description>
+        <event-type-name>GenericPkg.GenCauseEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.GenericPkg.GenCauseEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Signal Completion Event of MEGACO Generic package.</description>
+        <event-type-name>GenericPkg.GenSigComplEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.GenericPkg.GenSigComplEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Network Failure event of MEGACO Network package. </description>
+        <event-type-name>NetworkPkg.NetworkNetfailEvt </event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.NetworkPkg.NetworkNetfailEvt </event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Quality Alert event of MEGACO Network package. </description>
+        <event-type-name>NetworkPkg.NetworkQualertEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.NetworkPkg.NetworkQualertEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Payload Transition event of MEGACO RTP package. </description>
+        <event-type-name>RTPPkg.RTPPltransEvt</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.RTPPkg.RTPPltransEvt</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines End Tone Detect event of MEGACO Tone Detect package.</description>
+        <event-type-name>ToneDetPkg.ToneEtdEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.ToneDetPkg.ToneEtdEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Long Tone Detect event of MEGACO Tone Detect package. </description>
+        <event-type-name>ToneDetPkg.ToneLtdEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.ToneDetPkg.ToneLtdEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>This  class defines Start Tone Detect event of MEGACO Tone Detect package. </description>
+        <event-type-name>ToneDetPkg.ToneStdEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>javax.megaco.pkg.ToneDetPkg.ToneStdEvent</event-class-name>
+    </event-definition>
+
+    <!--
+    <event-definition>
+        <description></description>
+        <event-type-name></event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name></event-class-name>
+    </event-definition>
+
+-->
+</event-jar>

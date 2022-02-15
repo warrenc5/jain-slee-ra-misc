@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>mofokom</groupId>
+  <artifactId>air</artifactId>
+  <packaging>pom</packaging>
+  <version xmlns:mvn="http://maven.apache.org/POM/4.0.0">1.0-SNAPSHOT</version>
+  <name>AIR Modules</name>
+  <url xmlns:mvn="http://maven.apache.org/POM/4.0.0">http://www.mofokom.biz/site/${project.artifactId}/</url>
+  <modules>
+    <module>../common/common-event</module>
+    <module>../common/lib</module>
+    <module>../common/lib-impl</module>
+    <module>../common/ra-lib</module>
+    <module>ucip-ratype</module>
+    <module>ucip-event</module>
+    <module>ucip-ra</module>
+    <module>acip-ratype</module>
+    <module>acip-event</module>
+    <module>acip-ra</module>
+    <module>vsip-ratype</module>
+    <module>vsip-event</module>
+    <module>vsip-ra</module>
+    <module>acip-service</module>
+    <module>ucip-service</module>
+    <module>vsip-service</module>
+    <module>du</module>
+    <!--
+        <module>service-du</module>
+        -->
+  </modules>
+  <distributionManagement xmlns:mvn="http://maven.apache.org/POM/4.0.0">
+    <snapshotRepository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.biz/maven/snapshots-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+    <repository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.biz/maven/releases-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </repository>
+    <site>
+      <id>mofokom</id>
+      <url>scp://${site.url}/${project.artifactId}</url>
+    </site>
+  </distributionManagement>
+  <reporting>
+        
+    </reporting>
+</project>

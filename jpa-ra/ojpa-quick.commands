@@ -1,0 +1,6 @@
+exitOnError false
+deactivateservice name=JPA\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=JPA\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=JPA\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+activateservice name=JPA\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

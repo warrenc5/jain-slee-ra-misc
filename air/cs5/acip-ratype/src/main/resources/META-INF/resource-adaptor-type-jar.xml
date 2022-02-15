@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-adaptor-type-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor Type 1.1//EN" "http://java.sun.com/dtd/slee-resource-adaptor-type-jar_1_1.dtd">
+<resource-adaptor-type-jar>
+  <resource-adaptor-type id="acip"><description>ACIP Resource Adaptor Type </description><resource-adaptor-type-name>ACIP Resource Adaptor Type </resource-adaptor-type-name><resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor><resource-adaptor-type-version>4.1</resource-adaptor-type-version><library-ref><description> AIR Library </description><library-name> AIR Library </library-name><library-vendor> MOFOKOM </library-vendor><library-version> ${pom.version} </library-version></library-ref><resource-adaptor-type-classes><description/><activity-type><description>ACIPActivity </description><activity-type-name>mofokom.ccn.air.acip.resource.ACIPActivity </activity-type-name></activity-type><activity-context-interface-factory-interface><description/><activity-context-interface-factory-interface-name>mofokom.ccn.air.acip.resource.ACIPActivityContextInterfaceFactory
+                </activity-context-interface-factory-interface-name></activity-context-interface-factory-interface><resource-adaptor-interface><description/><resource-adaptor-interface-name>mofokom.ccn.air.acip.resource.ACIPResourceAdaptorInterface
+                </resource-adaptor-interface-name></resource-adaptor-interface></resource-adaptor-type-classes><event-type-ref><event-type-name>xmlrpc.TransportError</event-type-name><event-type-vendor> MOFOKOM </event-type-vendor><event-type-version> ${pom.version} </event-type-version></event-type-ref><event-type-ref><event-type-name>acip.Fault</event-type-name><event-type-vendor> MOFOKOM </event-type-vendor><event-type-version>4.1</event-type-version></event-type-ref>
+        Pre-activated accounts will not be activated due to the request
+        Pre-activated accounts may be activated due to the request
+        Account is not activated
+        Account is activated
+        Reserved for Service expired, as defined by the IDecycle of the account
+        Free of user to define
+        Operator specific language 1
+        Operator specific language 2
+        Operator specific language 3
+        Operator specific language 4
+        Operator specific language 1
+        Operator specific language 2
+        Operator specific language 3
+        Operator specific language 4
+        Account is not barred due to negative balance
+        Account is barred due to negative balance
+        External system
+        Account information and refill
+        Administrative system
+        USSD gateway
+        Interactive voice Response system
+        On-line gateway
+        Service data point
+        Promotion notification code will not be cleared after delivery in Response
+        Promotion notification code will be cleared after delivery in Response
+        Assign new promotion plan
+        Update plan ID and/or start and end dates
+        Delete promotion plan
+        Clear the counter
+        Increase counter by one
+        Immediate barring of refill
+        Successful
+        Ok but supervision period exceeded
+        Ok but service fee period exceeded
+        Other Error
+        Not used
+        Subscriber not found
+        Account barred from refill
+        Temporary blocked
+        Dedicated account not allowed
+        Dedicated account negative
+        Voucher status used by same
+        Voucher status used by different
+        Voucher status unavailable
+        Voucher status expired
+        Voucher status stolen or missing
+        Voucher status damaged
+        Voucher status pending
+        Voucher type not accepted
+        Refill not accepted
+        Service class change not allowed
+        Invalid voucher activation code
+        Invalid refill profile
+        Supervision period too long
+        Service fee period too long
+        Max credit limit exceeded
+        Below minimum balance
+        Account not active
+        Accumulator not available
+        Invalid PIN code
+        Faf number does not exist
+        Faf number not allowed,
+        Service class list empty
+        Accumulator overflow
+        Accumulator underflow
+        Date adjustment error
+        Get balance and date not allowed
+        No PIN code registered
+        Dedicated account not defined
+        Invalid old Service Class
+        Invalid language
+        Subscriber already installed
+        Invalid master subscriber
+        Subscriber already activated
+        Already linked subordinate
+        Already linked as master
+        Invalid old community list
+        Invalid new community list
+        Invalid promotion plan end date
+        Invalid promotion plan id
+        Promotion plan not found
+        Deblocking of expired account
+        Dedicated account max credit limit exceeded
+        Invalid old SC date
+        Invalid new service class
+        Delete subscriber failed
+        Invalid account home region
+        Maximum number of allocated promotion plans already reached
+        Charged FaF not active for service class
+        Operation not allowed from current location
+        Failed to get location information
+        Other Error No Retry
+        Service fee period date has not expired
+        Service fee period date has expired
+        Service fee period date expiration warning not active
+        Service fee period date expiration warning active
+        The service offering is not active
+        The service offering is active
+        Unknown
+        International number
+        National significant number
+        Network specific number
+        Subscriber number
+        Reserved
+        Abbreviated Number
+        Reserved for extension
+        Service fee period date has not expired
+        Service fee period date has expired
+        Supervision period date expiration warning not active
+        Supervision period date expiration warning active
+        Unblocked
+        Temporary blocked
+        As defined in the tariff trees
+        Reserved
+        No ID assigned
+  </resource-adaptor-type>
+</resource-adaptor-type-jar>

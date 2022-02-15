@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>mofokom</groupId>
+  <artifactId>xmlrpc-www</artifactId>
+  <packaging>war</packaging>
+  <version xmlns:mvn="http://maven.apache.org/POM/4.0.0">1.0-SNAPSHOT</version>
+  <name>xmlrpc-www</name>
+  <url xmlns:mvn="http://maven.apache.org/POM/4.0.0">http://www.mofokom.biz/site/${project.artifactId}/</url>
+  <!--Here was parent-->
+  <repositories>
+    <repository>
+      <id>java.net2</id>
+      <name>Repository hosting the jee6 artifacts</name>
+      <url>http://download.java.net/maven/2</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.xmlrpc</groupId>
+      <artifactId>xmlrpc-server</artifactId>
+      <version>3.1.1</version>
+    </dependency>
+    <!--
+        <dependency>
+            <groupId>org.apache.ws.commons</groupId>
+            <artifactId>ws-commons-util</artifactId>
+            <version> ${pom.version}.1</version>
+        </dependency>
+        -->
+    <dependency>
+      <groupId>org.apache.xmlrpc</groupId>
+      <artifactId>xmlrpc-common</artifactId>
+      <version>3.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>xmlrpc-lib</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+  <!--Here was build-->
+  <!--Here was profiles-->
+  <distributionManagement xmlns:mvn="http://maven.apache.org/POM/4.0.0">
+    <snapshotRepository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.biz/maven/snapshots-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+    <repository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.biz/maven/releases-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </repository>
+    <site>
+      <id>mofokom</id>
+      <url>scp://${site.url}/${project.artifactId}</url>
+    </site>
+  </distributionManagement>
+</project>

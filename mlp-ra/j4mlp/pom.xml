@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>mofokom</groupId>
+    <!--
+    <parent>
+        <groupId>com.mofokom</groupId>
+        <artifactId>superpom</artifactId>
+        <version>2.0.0-SNAPSHOT</version>
+    </parent>
+    -->
+
+    <artifactId>j4mlp</artifactId>
+    <version>3.0.0.0-SNAPSHOT</version>
+    <name>MLP Library</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                    <debug>true</debug>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jvnet.jaxb2.maven2</groupId>
+                <artifactId>maven-jaxb2-plugin</artifactId>
+                <configuration>
+                    <verbose>true</verbose>
+                    <extension>true</extension>
+                    <plugins>
+                        <plugin>
+                            <groupId>dk.conspicio</groupId>
+                            <artifactId>xew</artifactId>
+                            <version>1.4</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>mofokom</groupId>
+                            <artifactId>xjc-tostring</artifactId>
+                            <version>1.0-SNAPSHOT</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>mofokom</groupId>
+                            <artifactId>xjc-clone</artifactId>
+                            <version>1.0-SNAPSHOT</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>mofokom</groupId>
+                            <artifactId>xjc-transient</artifactId>
+                            <version>1.0-SNAPSHOT</version>
+                        </plugin>
+                    </plugins>
+                    <args>
+                        <arg>-nv</arg>
+                        <arg>-debug</arg>
+                        <arg>-mark-generated</arg>
+                        <arg>-Xxew</arg>
+                        <arg>-Xclone</arg>
+                        <!--
+                        <arg>-Xii</arg>
+                        -->
+                        <arg>-Xtostring</arg>
+                        <arg>-episode</arg>
+                        <arg>target/generated-sources/main/META-INF/sun-jaxb.episode</arg>
+                    </args>
+                    <generateDirectory>src/main/java</generateDirectory>
+                    <generatePackage>${project.src.package}.element</generatePackage>
+                    <bindingDirectory>src/main/resources/jaxb</bindingDirectory>
+                    <bindingIncludes>
+                        <include>bindings-xjb.xml</include>
+                    </bindingIncludes>
+                    <schemaIncludes>
+                        <include>mlp-3.0.xsd</include>
+                    </schemaIncludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <phase>generate-sources</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <developers>
+        <developer>
+            <id>tz</id>
+            <name>Tomasz Zieleniewski</name>
+            <email>tzieleniewski@gmail.com</email>
+            <url>http://ictbackyard.com</url>
+            <timezone>+2</timezone>
+        </developer>
+    </developers>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>java.net</id>
+            <name>Java.net Maven 2 Repository</name>
+            <url>http://download.java.net/maven/2</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <properties>
+        <project.src.package>com.mofokom.j4mlp</project.src.package>
+    </properties>
+
+</project>

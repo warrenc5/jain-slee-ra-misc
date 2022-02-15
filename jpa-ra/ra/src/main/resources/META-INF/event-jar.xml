@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<!DOCTYPE event-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Event 1.1//EN" "http://java.sun.com/dtd/slee-event-jar_1_1.dtd">
+<event-jar>
+    <description>Event Definitions for JPA Resource Adaptor Type.
+    </description>
+  <library-ref>
+            <description> JPA Library </description>
+            <library-name> JPA Library </library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version> ${pom.version} </library-version>
+        </library-ref>
+    <event-definition>
+        <event-type-name>RemoteCommitEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>mofokom.jpa.event.CommitEvent</event-class-name>
+    </event-definition>
+    
+    <event-definition>
+        <description>
+            Event type when an instance is attached.
+        </description>
+        <event-type-name>AfterAttach</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is cleared.
+        </description>
+        <event-type-name>AfterClear</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is deleted.
+        </description>
+        <event-type-name>AfterDelete</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is deleted, after the record has been deleted from the store.
+        </description>
+        <event-type-name>AfterDeletePerformed</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is detached.
+        </description>
+        <event-type-name>AfterDetach</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is dirtied for the first time.
+        </description>
+        <event-type-name>AfterDirty</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is dirtied for the first time after flush.
+        </description>
+        <event-type-name>AfterDirtyFlushed</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is loaded.
+        </description>
+        <event-type-name>AfterLoad</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is made persistent
+        </description>
+        <event-type-name>AfterPersist</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is made persistent, after the record has been written to the store
+        </description>
+        <event-type-name>AfterPersistPerformed</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instances is refreshed.
+        </description>
+        <event-type-name>AfterRefresh</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is stored.
+        </description>
+        <event-type-name>AfterStore</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is modified, after the change has been sent to the store.
+        </description>
+        <event-type-name>AfterUpdatePerformed</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Convenience array of all event types.
+        </description>
+        <event-type-name>AllEvents</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is attached.
+        </description>
+        <event-type-name>BeforeAttach</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is cleared.
+        </description>
+        <event-type-name>BeforeClear</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is deleted.
+        </description>
+        <event-type-name>BeforeDelete</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is detached.
+        </description>
+        <event-type-name>BeforeDetach</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is dirtied for the first time.
+        </description>
+        <event-type-name>BeforeDirty</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is dirtied for the first time after flush.
+        </description>
+        <event-type-name>BeforeDirtyFlushed</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type before an instance is made persistent
+        </description>
+        <event-type-name>BeforePersist</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is stored.
+        </description>
+        <event-type-name>BeforeStore</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type when an instance is modified.
+        </description>
+        <event-type-name>BeforeUpdate</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.LifecycleEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type signifying that a transaction has just begun.
+        </description>
+        <event-type-name>AfterBegin</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.TransactionEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type signifying that the transaction has committed.
+        </description>
+        <event-type-name>AfterCommit</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.TransactionEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type signifying that the commit has completey ended and the transaction is no longer active.
+        </description>
+        <event-type-name>AfterCommitComplete</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.TransactionEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type signifying that changes have been flushed to the datastore.
+        </description>
+        <event-type-name>AfterFlush</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.TransactionEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type signifying that the transaction was rolled back.
+        </description>
+        <event-type-name>AfterRollback</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.TransactionEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type signifying that the rollback has completey ended and the transaction is no longer active.
+        </description>
+        <event-type-name>AfterRollbackComplete</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.TransactionEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type signifying that all state transitions have been made.
+        </description>
+        <event-type-name>AfterStateTransitions</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.TransactionEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type signifying that the transaction is about to be committed.
+        </description>
+        <event-type-name>BeforeCommit</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.TransactionEvent</event-class-name>
+    </event-definition>
+
+    <event-definition>
+        <description>
+            Event type signifying that changes are about to be flushed to the datastore.
+        </description>
+        <event-type-name>BeforeFlush</event-type-name>
+        <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+        <event-type-version>2.1.0</event-type-version>
+        <event-class-name>org.apache.openjpa.event.TransactionEvent</event-class-name>
+    </event-definition>
+    
+</event-jar>

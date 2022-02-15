@@ -1,0 +1,9 @@
+exitOnError false
+deactivateservice name=Directory\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=Directory\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=Directory\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/Directory-client/service/target/Directory-service-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/Directory-client/service/target/Directory-service-1.0-SNAPSHOT-du.jar 
+activateservice name=Directory\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

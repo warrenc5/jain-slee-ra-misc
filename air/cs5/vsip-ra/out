@@ -1,0 +1,726 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running VSIPResourceAdaptorTest
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=3109365743109935, 
+Dumping usage parameter set
+LatencyTxOK, SampleStatistics[sample count=1,min=202,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=1,min=202,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+LatencyTxOK, SampleStatistics[sample count=1,min=202,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=1,min=202,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=7722649081761640, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=1,min=423,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=2,min=7,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=2,min=7,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=1,min=423,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=2,min=7,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=2,min=7,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=9478720110657822, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=2,min=19,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=3,min=7,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=3,min=7,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=2,min=19,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=3,min=7,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=3,min=7,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=0840499212741179, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=3,min=13,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=4,min=7,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=4,min=7,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=3,min=13,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=4,min=7,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=4,min=7,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=1722840775876683, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=4,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=5,min=7,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=5,min=7,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=4,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=5,min=7,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=5,min=7,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=2407480364744786, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=5,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=6,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=6,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=5,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=6,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=6,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=4788791199252315, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=6,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=7,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=7,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=6,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=7,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=7,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=5054601255376957, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=7,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=8,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=8,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02124, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:50:10 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=5054601255376957, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=7,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=8,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=8,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=8389168818438482, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=8,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=9,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=9,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02124, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:50:10 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=8389168818438482, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=8,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=9,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=9,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=8919551003279797, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=9,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=10,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=10,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=9,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=10,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=10,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=1704598290393706, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=10,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=11,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=11,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=10,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=11,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=11,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=0073227000319198, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=11,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=12,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=12,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02123, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:47:11 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=0073227000319198, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=11,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=12,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=12,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=4926998851626446, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=12,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=13,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=13,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=12,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=13,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=13,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=6790431643768222, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=13,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=14,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=14,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02123, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:47:11 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=6790431643768222, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=13,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=14,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=14,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=6805938998893075, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=14,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=15,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=15,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02124, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:50:10 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=6805938998893075, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=14,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=15,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=15,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=7564172110147083, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=15,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=16,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=16,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02122, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:47:11 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=7564172110147083, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=15,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=16,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=16,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=1095153085604638, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=16,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=17,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=17,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02123, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:47:11 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=1095153085604638, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=16,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=17,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=17,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=1586752582901468, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=17,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=18,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=18,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=17,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=18,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=18,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=2491088417914054, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=18,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=19,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=19,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=18,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=19,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=19,min=2,max=202,mean=0.0]
+Mock Entity localhost 10020--------------------->GetVoucherDetailsImpl:serialNumber=3134256679543050, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=19,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=20,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=20,min=2,max=202,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10020<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=19,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=20,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=20,min=2,max=202,mean=0.0]
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=20,min=9,max=423,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=20,min=2,max=202,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=20,min=2,max=202,mean=0.0]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.507 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] [xml:validate {execution: default}]
+[INFO] Proxy settings: http.proxyHost=lo, http.proxyPort=8081, http.proxyUser=null, http.proxyPassword=null, http.nonProxyHosts=null
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 32 seconds
+[INFO] Finished at: Thu Oct 06 10:54:43 WAT 2011
+[INFO] Final Memory: 21M/167M
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running VSIPResourceAdaptorTest
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=3109365743109935, 
+Dumping usage parameter set
+LatencyTxOK, SampleStatistics[sample count=1,min=154,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=1,min=154,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02126, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:48:44 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=3109365743109935, 
+Dumping usage parameter set
+LatencyTxOK, SampleStatistics[sample count=1,min=154,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=1,min=154,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=7722649081761640, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=1,min=291,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=2,min=15,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=2,min=15,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02127, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:49:09 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=7722649081761640, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=1,min=291,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=2,min=15,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=2,min=15,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=9478720110657822, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=2,min=47,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=3,min=15,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=3,min=15,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02127, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:49:09 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=9478720110657822, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=2,min=47,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=3,min=15,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=3,min=15,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=0840499212741179, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=3,min=35,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=4,min=12,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=4,min=12,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=3,min=35,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=4,min=12,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=4,min=12,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=1722840775876683, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=4,min=12,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=5,min=10,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=5,min=10,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=4,min=12,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=5,min=10,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=5,min=10,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=2407480364744786, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=5,min=12,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=6,min=4,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=6,min=4,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02127, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:49:09 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=2407480364744786, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=5,min=12,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=6,min=4,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=6,min=4,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=4788791199252315, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=6,min=12,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=7,min=3,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=7,min=3,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=6,min=12,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=7,min=3,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=7,min=3,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=5054601255376957, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=7,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=8,min=3,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=8,min=3,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=7,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=8,min=3,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=8,min=3,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=8389168818438482, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=8,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=9,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=9,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=8,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=9,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=9,min=2,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=8919551003279797, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=9,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=10,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=10,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=9,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=10,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=10,min=2,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=1704598290393706, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=10,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=11,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=11,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02126, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:48:44 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=1704598290393706, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=10,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=11,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=11,min=2,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=0073227000319198, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=11,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=12,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=12,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=11,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=12,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=12,min=2,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=4926998851626446, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=12,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=13,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=13,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02127, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:49:09 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=4926998851626446, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=12,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=13,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=13,min=2,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=6790431643768222, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=13,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=14,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=14,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=13,min=11,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=14,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=14,min=2,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=6805938998893075, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=14,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=15,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=15,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=14,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=15,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=15,min=2,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=7564172110147083, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=15,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=16,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=16,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=15,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=16,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=16,min=2,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=1095153085604638, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=16,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=17,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=17,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=16,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=17,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=17,min=2,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=1586752582901468, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=17,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=18,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=18,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02126, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:48:44 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=1586752582901468, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=17,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=18,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=18,min=2,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=2491088417914054, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=18,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=19,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=19,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02127, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:49:09 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=2491088417914054, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=18,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=19,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=19,min=2,max=154,mean=0.0]
+Mock Entity localhost 10021--------------------->GetVoucherDetailsImpl:serialNumber=3134256679543050, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=19,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=20,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=20,min=2,max=154,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10021<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02126, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:48:44 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=3134256679543050, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=19,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=20,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=20,min=2,max=154,mean=0.0]
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=20,min=9,max=291,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=20,min=2,max=154,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=20,min=2,max=154,mean=0.0]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.454 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] [xml:validate {execution: default}]
+[INFO] Proxy settings: http.proxyHost=lo, http.proxyPort=8081, http.proxyUser=null, http.proxyPassword=null, http.nonProxyHosts=null
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 31 seconds
+[INFO] Finished at: Thu Oct 06 10:55:28 WAT 2011
+[INFO] Final Memory: 19M/167M
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running VSIPResourceAdaptorTest
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=3109365743109935, 
+Dumping usage parameter set
+LatencyTxOK, SampleStatistics[sample count=1,min=143,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=1,min=144,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+LatencyTxOK, SampleStatistics[sample count=1,min=143,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=1,min=144,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=7722649081761640, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=1,min=279,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=2,min=35,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=2,min=35,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=1,min=279,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=2,min=35,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=2,min=35,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=9478720110657822, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=2,min=27,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=3,min=11,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=3,min=11,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=2,min=27,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=3,min=11,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=3,min=11,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=0840499212741179, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=3,min=23,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=4,min=11,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=4,min=11,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02124, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:52:12 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=0840499212741179, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=3,min=23,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=4,min=11,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=4,min=11,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=1722840775876683, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=4,min=23,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=5,min=11,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=5,min=11,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02125, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:53:18 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=1722840775876683, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=4,min=23,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=5,min=11,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=5,min=11,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=2407480364744786, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=5,min=23,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=6,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=6,min=3,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=5,min=23,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=6,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=6,min=3,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=4788791199252315, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=6,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=7,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=7,min=3,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02125, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:53:18 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=4788791199252315, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=6,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=7,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=7,min=3,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=5054601255376957, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=7,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=8,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=8,min=3,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=7,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=8,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=8,min=3,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=8389168818438482, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=8,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=9,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=9,min=3,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=8,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=9,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=9,min=3,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=8919551003279797, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=9,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=10,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=10,min=3,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:batchId=20110209_02125, currency=NGN, expiryDate=Tue Feb 09 00:00:00 WAT 2021, operatorId=user, responseCode=0, timestamp=Thu Feb 10 00:53:18 WAT 2011, state=0, value=75000, voucherGroup=S2, serialNumber=8919551003279797, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=9,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=10,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=10,min=3,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=1704598290393706, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=10,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=11,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=11,min=3,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=10,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=11,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=11,min=3,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=0073227000319198, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=11,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=12,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=12,min=3,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=11,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=12,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=12,min=3,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=4926998851626446, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=12,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=13,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=13,min=3,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=12,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=13,min=3,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=13,min=3,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=6790431643768222, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=13,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=14,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=14,min=2,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=13,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=14,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=14,min=2,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=6805938998893075, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=14,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=15,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=15,min=2,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=14,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=15,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=15,min=2,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=7564172110147083, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=15,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=16,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=16,min=2,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=15,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=16,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=16,min=2,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=1095153085604638, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=16,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=17,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=17,min=2,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=16,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=17,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=17,min=2,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=1586752582901468, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=17,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=18,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=18,min=2,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=17,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=18,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=18,min=2,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=2491088417914054, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=18,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=19,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=19,min=2,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=18,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=19,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=19,min=2,max=144,mean=0.0]
+Mock Entity localhost 10022--------------------->GetVoucherDetailsImpl:serialNumber=3134256679543050, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=19,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=20,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=20,min=2,max=144,mean=0.0]
+getFireableEventType [EventTypeID[name=vsip.GetVoucherDetailsResponse,vendor=MOFOKOM,version=3.1]]
+Mock Entity localhost 10022<--------------------------------GetVoucherDetailsResponseImpl:responseCode=10, 
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=19,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=20,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=20,min=2,max=144,mean=0.0]
+Dumping usage parameter set
+GetVoucherDetailsResponseLatencyTxOK, SampleStatistics[sample count=20,min=12,max=279,mean=0.0]
+LatencyTxOK, SampleStatistics[sample count=20,min=2,max=143,mean=0.0]
+GetVoucherDetailsLatencyTxOK, SampleStatistics[sample count=20,min=2,max=144,mean=0.0]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.413 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] [xml:validate {execution: default}]
+[INFO] Proxy settings: http.proxyHost=lo, http.proxyPort=8081, http.proxyUser=null, http.proxyPassword=null, http.nonProxyHosts=null
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 31 seconds
+[INFO] Finished at: Thu Oct 06 10:56:01 WAT 2011
+[INFO] Final Memory: 20M/167M
+[INFO] ------------------------------------------------------------------------

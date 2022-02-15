@@ -1,0 +1,38 @@
+MEGACO/1 [125.125.125.111]:55555 Reply = 50007 {
+  Context = - { 
+  AuditValue = A5556 {
+    Media {
+      TerminationState { ServiceStates = InService,
+        Buffer = OFF },
+                       Stream = 1 {
+                         LocalControl { Mode = SendReceive,
+                           nt/jit=40 },
+                         Local { v=0 o=- 7736844526 7736842807 IN IP4
+                           125.125.125.111 s=- t= 0 0 c=IN IP4 125.125.125.111 m=audio 1111
+                             RTP/AVP  4 a=ptime:30
+                         },
+                         Remote { v=0 o=- 2890844526 2890842807 IN IP4
+                           124.124.124.222 s=- t= 0 0 c=IN IP4 124.124.124.222 m=audio 2222
+                             RTP/AVP  4 a=ptime:30
+                         } } },
+          Events,
+          Signals,
+          DigitMap,
+          Packages {nt-1, rtp-1},
+
+
+
+
+
+          Statistics { 
+            rtp/ps=1200,  
+            nt/os=62300, 
+            rtp/pr=700, 
+            nt/or=45100, 
+            rtp/pl=0.2,  
+            rtp/jit=20,
+            rtp/delay=40
+            } 
+  }
+  } 
+}

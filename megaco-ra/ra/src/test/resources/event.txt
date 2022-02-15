@@ -1,0 +1,1030 @@
+<?xml version="1.0"?>
+
+    Event Definitions for MegaCo Resource Adaptor Type.
+    
+    
+         MegaCo Library 
+         MegaCo Library 
+         MOFOKOM 
+         ${pom.version}
+    
+    <event-type-ref>
+  <event-type-name>CommandEvent</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+    <event-type-ref>
+  <event-type-name>CommandReq</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CommandResp</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>ContextInfoReq</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>ContextInfoResp</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>vent</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CreateAssocReq</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CreateAssocResp</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>DeleteAssocReq</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>DeleteAssocResp</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>ModifyAssocReq</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>ModifyAssocResp</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>AssociationInd</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>AssociationConfigReq</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>AssociationConfigResp</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+
+    <event-type-ref>
+  <event-type-name>DeleteTxnReq</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>DeleteTxnResp</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CreateTxnReq</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CreateTxnResp</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+
+    <event-type-ref>
+  <event-type-name>AnalogLineSPkg.AnalogLineSFlashEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>AnalogLineSPkg.AnalogLineSOffEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>AnalogLineSPkg.AnalogLineSOnEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>ContinuityPkg.ContComplEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CPToneDetPkg.CPToneDetBtEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CPToneDetPkg.CPToneDetCrEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CPToneDetPkg.CPToneDetCtEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CPToneDetPkg.CPToneDetCwtEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CPToneDetPkg.CPToneDetDtEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CPToneDetPkg.CPToneDetPtEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CPToneDetPkg.CPToneDetRtEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CPToneDetPkg.CPToneDetSitEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>CPToneDetPkg.CPToneDetWtEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>DTMFDetPkg.DTMFDetCeEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>GenericPkg.GenCauseEvent</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>GenericPkg.GenSigComplEvent</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>NetworkPkg.NetworkNetfailEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>NetworkPkg.NetworkQualertEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>RTPPkg.RTPPltransEvt</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>ToneDetPkg.ToneEtdEvent</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>ToneDetPkg.ToneLtdEvent</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    <event-type-ref>
+  <event-type-name>ToneDetPkg.ToneStdEvent</event-type-name>
+  <event-type-vendor>MOFOKOM</event-type-vendor>
+  <event-type-version>${pom.version}</event-type-version>
+</event-type-ref>
+
+    
+
+            public void onCommandEvent (javax.megaco.CommandEvent event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CommandEvent" );
+            }
+
+	
+            public void onCommandReq (javax.megaco.message.CommandReq event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CommandReq" );
+            }
+
+	
+            public void onCommandResp (javax.megaco.message.CommandResp event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CommandResp" );
+            }
+
+	
+            public void onContextInfoReq (javax.megaco.message.ContextInfoReq event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event ContextInfoReq" );
+            }
+
+	
+            public void onContextInfoResp (javax.megaco.message.ContextInfoResp event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event ContextInfoResp" );
+            }
+
+	
+            public void onvent (javax.megaco.AssociationEvent event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event vent" );
+            }
+
+	
+            public void onCreateAssocReq (javax.megaco.association.CreateAssocReq event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CreateAssocReq" );
+            }
+
+	
+            public void onCreateAssocResp (javax.megaco.association.CreateAssocResp event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CreateAssocResp" );
+            }
+
+	
+            public void onDeleteAssocReq (javax.megaco.association.DeleteAssocReq event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event DeleteAssocReq" );
+            }
+
+	
+            public void onDeleteAssocResp (javax.megaco.association.DeleteAssocResp event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event DeleteAssocResp" );
+            }
+
+	
+            public void onModifyAssocReq (javax.megaco.association.ModifyAssocReq event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event ModifyAssocReq" );
+            }
+
+	
+            public void onModifyAssocResp (javax.megaco.association.ModifyAssocResp event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event ModifyAssocResp" );
+            }
+
+	
+            public void onAssociationInd (javax.megaco.association.AssociationInd event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event AssociationInd" );
+            }
+
+	
+            public void onAssociationConfigReq (javax.megaco.association.AssociationConfigReq event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event AssociationConfigReq" );
+            }
+
+	
+            public void onAssociationConfigResp (javax.megaco.association.AssociationConfigResp event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event AssociationConfigResp" );
+            }
+
+	
+            public void onDeleteTxnReq (javax.megaco.association.DeleteTxnReq event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event DeleteTxnReq" );
+            }
+
+	
+            public void onDeleteTxnResp (javax.megaco.association.DeleteTxnResp event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event DeleteTxnResp" );
+            }
+
+	
+            public void onCreateTxnReq (javax.megaco.association.CreateTxnReq event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CreateTxnReq" );
+            }
+
+	
+            public void onCreateTxnResp (javax.megaco.association.CreateTxnResp event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CreateTxnResp" );
+            }
+
+	
+            public void onAnalogLineSPkgAnalogLineSFlashEvt (javax.megaco.pkg.AnalogLineSPkg.AnalogLineSFlashEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event AnalogLineSPkg.AnalogLineSFlashEvt" );
+            }
+
+	
+            public void onAnalogLineSPkgAnalogLineSOffEvt (javax.megaco.pkg.AnalogLineSPkg.AnalogLineSOffEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event AnalogLineSPkg.AnalogLineSOffEvt" );
+            }
+
+	
+            public void onAnalogLineSPkgAnalogLineSOnEvt (javax.megaco.pkg.AnalogLineSPkg.AnalogLineSOnEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event AnalogLineSPkg.AnalogLineSOnEvt" );
+            }
+
+	
+            public void onContinuityPkgContComplEvt (javax.megaco.pkg.ContinuityPkg.ContComplEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event ContinuityPkg.ContComplEvt" );
+            }
+
+	
+            public void onCPToneDetPkgCPToneDetBtEvt (javax.megaco.pkg.CPToneDetPkg.CPToneDetBtEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CPToneDetPkg.CPToneDetBtEvt" );
+            }
+
+	
+            public void onCPToneDetPkgCPToneDetCrEvt (javax.megaco.pkg.CPToneDetPkg.CPToneDetCrEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CPToneDetPkg.CPToneDetCrEvt" );
+            }
+
+	
+            public void onCPToneDetPkgCPToneDetCtEvt (javax.megaco.pkg.CPToneDetPkg.CPToneDetCtEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CPToneDetPkg.CPToneDetCtEvt" );
+            }
+
+	
+            public void onCPToneDetPkgCPToneDetCwtEvt (javax.megaco.pkg.CPToneDetPkg.CPToneDetCwtEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CPToneDetPkg.CPToneDetCwtEvt" );
+            }
+
+	
+            public void onCPToneDetPkgCPToneDetDtEvt (javax.megaco.pkg.CPToneDetPkg.CPToneDetDtEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CPToneDetPkg.CPToneDetDtEvt" );
+            }
+
+	
+            public void onCPToneDetPkgCPToneDetPtEvt (javax.megaco.pkg.CPToneDetPkg.CPToneDetPtEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CPToneDetPkg.CPToneDetPtEvt" );
+            }
+
+	
+            public void onCPToneDetPkgCPToneDetRtEvt (javax.megaco.pkg.CPToneDetPkg.CPToneDetRtEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CPToneDetPkg.CPToneDetRtEvt" );
+            }
+
+	
+            public void onCPToneDetPkgCPToneDetSitEvt (javax.megaco.pkg.CPToneDetPkg.CPToneDetSitEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CPToneDetPkg.CPToneDetSitEvt" );
+            }
+
+	
+            public void onCPToneDetPkgCPToneDetWtEvt (javax.megaco.pkg.CPToneDetPkg.CPToneDetWtEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event CPToneDetPkg.CPToneDetWtEvt" );
+            }
+
+	
+            public void onDTMFDetPkgDTMFDetCeEvt (javax.megaco.pkg.DTMFDetPkg.DTMFDetCeEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event DTMFDetPkg.DTMFDetCeEvt" );
+            }
+
+	
+            public void onGenericPkgGenCauseEvent (javax.megaco.pkg.GenericPkg.GenCauseEvent event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event GenericPkg.GenCauseEvent" );
+            }
+
+	
+            public void onGenericPkgGenSigComplEvent (javax.megaco.pkg.GenericPkg.GenSigComplEvent event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event GenericPkg.GenSigComplEvent" );
+            }
+
+	
+            public void onNetworkPkgNetworkNetfailEvt (javax.megaco.pkg.NetworkPkg.NetworkNetfailEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event NetworkPkg.NetworkNetfailEvt" );
+            }
+
+	
+            public void onNetworkPkgNetworkQualertEvt (javax.megaco.pkg.NetworkPkg.NetworkQualertEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event NetworkPkg.NetworkQualertEvt" );
+            }
+
+	
+            public void onRTPPkgRTPPltransEvt (javax.megaco.pkg.RTPPkg.RTPPltransEvt event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event RTPPkg.RTPPltransEvt" );
+            }
+
+	
+            public void onToneDetPkgToneEtdEvent (javax.megaco.pkg.ToneDetPkg.ToneEtdEvent event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event ToneDetPkg.ToneEtdEvent" );
+            }
+
+	
+            public void onToneDetPkgToneLtdEvent (javax.megaco.pkg.ToneDetPkg.ToneLtdEvent event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event ToneDetPkg.ToneLtdEvent" );
+            }
+
+	
+            public void onToneDetPkgToneStdEvent (javax.megaco.pkg.ToneDetPkg.ToneStdEvent event, ActivityContextInterface aci,EventContext context){ 
+              tracer.info("event ToneDetPkg.ToneStdEvent" );
+            }
+
+	<event event-direction="Receive" initial-event="False">
+  <event-name>CommandEvent</event-name>
+  <event-type-ref>
+    <event-type-name>CommandEvent</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CommandReq</event-name>
+  <event-type-ref>
+    <event-type-name>CommandReq</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CommandResp</event-name>
+  <event-type-ref>
+    <event-type-name>CommandResp</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>ContextInfoReq</event-name>
+  <event-type-ref>
+    <event-type-name>ContextInfoReq</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>ContextInfoResp</event-name>
+  <event-type-ref>
+    <event-type-name>ContextInfoResp</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>vent</event-name>
+  <event-type-ref>
+    <event-type-name>vent</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CreateAssocReq</event-name>
+  <event-type-ref>
+    <event-type-name>CreateAssocReq</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CreateAssocResp</event-name>
+  <event-type-ref>
+    <event-type-name>CreateAssocResp</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>DeleteAssocReq</event-name>
+  <event-type-ref>
+    <event-type-name>DeleteAssocReq</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>DeleteAssocResp</event-name>
+  <event-type-ref>
+    <event-type-name>DeleteAssocResp</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>ModifyAssocReq</event-name>
+  <event-type-ref>
+    <event-type-name>ModifyAssocReq</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>ModifyAssocResp</event-name>
+  <event-type-ref>
+    <event-type-name>ModifyAssocResp</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>AssociationInd</event-name>
+  <event-type-ref>
+    <event-type-name>AssociationInd</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>AssociationConfigReq</event-name>
+  <event-type-ref>
+    <event-type-name>AssociationConfigReq</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>AssociationConfigResp</event-name>
+  <event-type-ref>
+    <event-type-name>AssociationConfigResp</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>DeleteTxnReq</event-name>
+  <event-type-ref>
+    <event-type-name>DeleteTxnReq</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>DeleteTxnResp</event-name>
+  <event-type-ref>
+    <event-type-name>DeleteTxnResp</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CreateTxnReq</event-name>
+  <event-type-ref>
+    <event-type-name>CreateTxnReq</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CreateTxnResp</event-name>
+  <event-type-ref>
+    <event-type-name>CreateTxnResp</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>AnalogLineSPkgAnalogLineSFlashEvt</event-name>
+  <event-type-ref>
+    <event-type-name>AnalogLineSPkg.AnalogLineSFlashEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>AnalogLineSPkgAnalogLineSOffEvt</event-name>
+  <event-type-ref>
+    <event-type-name>AnalogLineSPkg.AnalogLineSOffEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>AnalogLineSPkgAnalogLineSOnEvt</event-name>
+  <event-type-ref>
+    <event-type-name>AnalogLineSPkg.AnalogLineSOnEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>ContinuityPkgContComplEvt</event-name>
+  <event-type-ref>
+    <event-type-name>ContinuityPkg.ContComplEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CPToneDetPkgCPToneDetBtEvt</event-name>
+  <event-type-ref>
+    <event-type-name>CPToneDetPkg.CPToneDetBtEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CPToneDetPkgCPToneDetCrEvt</event-name>
+  <event-type-ref>
+    <event-type-name>CPToneDetPkg.CPToneDetCrEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CPToneDetPkgCPToneDetCtEvt</event-name>
+  <event-type-ref>
+    <event-type-name>CPToneDetPkg.CPToneDetCtEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CPToneDetPkgCPToneDetCwtEvt</event-name>
+  <event-type-ref>
+    <event-type-name>CPToneDetPkg.CPToneDetCwtEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CPToneDetPkgCPToneDetDtEvt</event-name>
+  <event-type-ref>
+    <event-type-name>CPToneDetPkg.CPToneDetDtEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CPToneDetPkgCPToneDetPtEvt</event-name>
+  <event-type-ref>
+    <event-type-name>CPToneDetPkg.CPToneDetPtEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CPToneDetPkgCPToneDetRtEvt</event-name>
+  <event-type-ref>
+    <event-type-name>CPToneDetPkg.CPToneDetRtEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CPToneDetPkgCPToneDetSitEvt</event-name>
+  <event-type-ref>
+    <event-type-name>CPToneDetPkg.CPToneDetSitEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>CPToneDetPkgCPToneDetWtEvt</event-name>
+  <event-type-ref>
+    <event-type-name>CPToneDetPkg.CPToneDetWtEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>DTMFDetPkgDTMFDetCeEvt</event-name>
+  <event-type-ref>
+    <event-type-name>DTMFDetPkg.DTMFDetCeEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>GenericPkgGenCauseEvent</event-name>
+  <event-type-ref>
+    <event-type-name>GenericPkg.GenCauseEvent</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>GenericPkgGenSigComplEvent</event-name>
+  <event-type-ref>
+    <event-type-name>GenericPkg.GenSigComplEvent</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>NetworkPkgNetworkNetfailEvt</event-name>
+  <event-type-ref>
+    <event-type-name>NetworkPkg.NetworkNetfailEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>NetworkPkgNetworkQualertEvt</event-name>
+  <event-type-ref>
+    <event-type-name>NetworkPkg.NetworkQualertEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>RTPPkgRTPPltransEvt</event-name>
+  <event-type-ref>
+    <event-type-name>RTPPkg.RTPPltransEvt</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>ToneDetPkgToneEtdEvent</event-name>
+  <event-type-ref>
+    <event-type-name>ToneDetPkg.ToneEtdEvent</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>ToneDetPkgToneLtdEvent</event-name>
+  <event-type-ref>
+    <event-type-name>ToneDetPkg.ToneLtdEvent</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event><event event-direction="Receive" initial-event="False">
+  <event-name>ToneDetPkgToneStdEvent</event-name>
+  <event-type-ref>
+    <event-type-name>ToneDetPkg.ToneStdEvent</event-type-name>
+    <event-type-vendor>MOFOKOM</event-type-vendor>
+    <event-type-version>${pom.version}</event-type-version>
+  </event-type-ref>
+</event>
+    Event Definitions for MegaCo Resource Adaptor Type.
+    
+    
+         MegaCo Library 
+         MegaCo Library 
+         MOFOKOM 
+         ${pom.version}
+    
+     eventTypeCommandEvent = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CommandEvent" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+     eventTypeCommandReq = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CommandReq" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCommandResp = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CommandResp" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeContextInfoReq = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("ContextInfoReq" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeContextInfoResp = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("ContextInfoResp" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypevent = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("vent" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCreateAssocReq = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CreateAssocReq" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCreateAssocResp = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CreateAssocResp" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeDeleteAssocReq = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("DeleteAssocReq" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeDeleteAssocResp = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("DeleteAssocResp" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeModifyAssocReq = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("ModifyAssocReq" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeModifyAssocResp = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("ModifyAssocResp" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeAssociationInd = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("AssociationInd" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeAssociationConfigReq = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("AssociationConfigReq" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeAssociationConfigResp = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("AssociationConfigResp" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+
+     eventTypeDeleteTxnReq = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("DeleteTxnReq" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeDeleteTxnResp = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("DeleteTxnResp" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCreateTxnReq = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CreateTxnReq" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCreateTxnResp = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CreateTxnResp" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+
+     eventTypeAnalogLineSPkgAnalogLineSFlashEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("AnalogLineSPkg.AnalogLineSFlashEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeAnalogLineSPkgAnalogLineSOffEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("AnalogLineSPkg.AnalogLineSOffEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeAnalogLineSPkgAnalogLineSOnEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("AnalogLineSPkg.AnalogLineSOnEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeContinuityPkgContComplEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("ContinuityPkg.ContComplEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCPToneDetPkgCPToneDetBtEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CPToneDetPkg.CPToneDetBtEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCPToneDetPkgCPToneDetCrEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CPToneDetPkg.CPToneDetCrEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCPToneDetPkgCPToneDetCtEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CPToneDetPkg.CPToneDetCtEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCPToneDetPkgCPToneDetCwtEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CPToneDetPkg.CPToneDetCwtEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCPToneDetPkgCPToneDetDtEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CPToneDetPkg.CPToneDetDtEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCPToneDetPkgCPToneDetPtEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CPToneDetPkg.CPToneDetPtEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCPToneDetPkgCPToneDetRtEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CPToneDetPkg.CPToneDetRtEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCPToneDetPkgCPToneDetSitEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CPToneDetPkg.CPToneDetSitEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeCPToneDetPkgCPToneDetWtEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("CPToneDetPkg.CPToneDetWtEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeDTMFDetPkgDTMFDetCeEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("DTMFDetPkg.DTMFDetCeEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeGenericPkgGenCauseEvent = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("GenericPkg.GenCauseEvent" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeGenericPkgGenSigComplEvent = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("GenericPkg.GenSigComplEvent" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeNetworkPkgNetworkNetfailEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("NetworkPkg.NetworkNetfailEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeNetworkPkgNetworkQualertEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("NetworkPkg.NetworkQualertEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeRTPPkgRTPPltransEvt = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("RTPPkg.RTPPltransEvt" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeToneDetPkgToneEtdEvent = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("ToneDetPkg.ToneEtdEvent" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeToneDetPkgToneLtdEvent = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("ToneDetPkg.ToneLtdEvent" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+     eventTypeToneDetPkgToneStdEvent = super.raContext.getEventLookupFacility().getFireableEventType(new EventTypeID("ToneDetPkg.ToneStdEvent" ,super.raContext.getResourceAdaptorTypes()[0].getVendor(), super.raContext.getResourceAdaptorTypes()[0].getVersion())); 
+
+    
+
+    Event Definitions for MegaCo Resource Adaptor Type.
+    
+    
+         MegaCo Library 
+         MegaCo Library 
+         MOFOKOM 
+         ${pom.version}
+    
+     eventTypeCommandEvent.getEventType(), 
+     eventTypeCommandReq.getEventType(), 
+
+     eventTypeCommandResp.getEventType(), 
+
+     eventTypeContextInfoReq.getEventType(), 
+
+     eventTypeContextInfoResp.getEventType(), 
+
+     eventTypevent.getEventType(), 
+
+     eventTypeCreateAssocReq.getEventType(), 
+
+     eventTypeCreateAssocResp.getEventType(), 
+
+     eventTypeDeleteAssocReq.getEventType(), 
+
+     eventTypeDeleteAssocResp.getEventType(), 
+
+     eventTypeModifyAssocReq.getEventType(), 
+
+     eventTypeModifyAssocResp.getEventType(), 
+
+     eventTypeAssociationInd.getEventType(), 
+
+     eventTypeAssociationConfigReq.getEventType(), 
+
+     eventTypeAssociationConfigResp.getEventType(), 
+
+
+     eventTypeDeleteTxnReq.getEventType(), 
+
+     eventTypeDeleteTxnResp.getEventType(), 
+
+     eventTypeCreateTxnReq.getEventType(), 
+
+     eventTypeCreateTxnResp.getEventType(), 
+
+
+     eventTypeAnalogLineSPkgAnalogLineSFlashEvt.getEventType(), 
+
+     eventTypeAnalogLineSPkgAnalogLineSOffEvt.getEventType(), 
+
+     eventTypeAnalogLineSPkgAnalogLineSOnEvt.getEventType(), 
+
+     eventTypeContinuityPkgContComplEvt.getEventType(), 
+
+     eventTypeCPToneDetPkgCPToneDetBtEvt.getEventType(), 
+
+     eventTypeCPToneDetPkgCPToneDetCrEvt.getEventType(), 
+
+     eventTypeCPToneDetPkgCPToneDetCtEvt.getEventType(), 
+
+     eventTypeCPToneDetPkgCPToneDetCwtEvt.getEventType(), 
+
+     eventTypeCPToneDetPkgCPToneDetDtEvt.getEventType(), 
+
+     eventTypeCPToneDetPkgCPToneDetPtEvt.getEventType(), 
+
+     eventTypeCPToneDetPkgCPToneDetRtEvt.getEventType(), 
+
+     eventTypeCPToneDetPkgCPToneDetSitEvt.getEventType(), 
+
+     eventTypeCPToneDetPkgCPToneDetWtEvt.getEventType(), 
+
+     eventTypeDTMFDetPkgDTMFDetCeEvt.getEventType(), 
+
+     eventTypeGenericPkgGenCauseEvent.getEventType(), 
+
+     eventTypeGenericPkgGenSigComplEvent.getEventType(), 
+
+     eventTypeNetworkPkgNetworkNetfailEvt.getEventType(), 
+
+     eventTypeNetworkPkgNetworkQualertEvt.getEventType(), 
+
+     eventTypeRTPPkgRTPPltransEvt.getEventType(), 
+
+     eventTypeToneDetPkgToneEtdEvent.getEventType(), 
+
+     eventTypeToneDetPkgToneLtdEvent.getEventType(), 
+
+     eventTypeToneDetPkgToneStdEvent.getEventType(), 
+
+    
+
+    Event Definitions for MegaCo Resource Adaptor Type.
+    
+    
+         MegaCo Library 
+         MegaCo Library 
+         MOFOKOM 
+         ${pom.version}
+    
+    eventTypeCommandEvent ,
+    eventTypeCommandReq ,
+
+    eventTypeCommandResp ,
+
+    eventTypeContextInfoReq ,
+
+    eventTypeContextInfoResp ,
+
+    eventTypevent ,
+
+    eventTypeCreateAssocReq ,
+
+    eventTypeCreateAssocResp ,
+
+    eventTypeDeleteAssocReq ,
+
+    eventTypeDeleteAssocResp ,
+
+    eventTypeModifyAssocReq ,
+
+    eventTypeModifyAssocResp ,
+
+    eventTypeAssociationInd ,
+
+    eventTypeAssociationConfigReq ,
+
+    eventTypeAssociationConfigResp ,
+
+
+    eventTypeDeleteTxnReq ,
+
+    eventTypeDeleteTxnResp ,
+
+    eventTypeCreateTxnReq ,
+
+    eventTypeCreateTxnResp ,
+
+
+    eventTypeAnalogLineSPkgAnalogLineSFlashEvt ,
+
+    eventTypeAnalogLineSPkgAnalogLineSOffEvt ,
+
+    eventTypeAnalogLineSPkgAnalogLineSOnEvt ,
+
+    eventTypeContinuityPkgContComplEvt ,
+
+    eventTypeCPToneDetPkgCPToneDetBtEvt ,
+
+    eventTypeCPToneDetPkgCPToneDetCrEvt ,
+
+    eventTypeCPToneDetPkgCPToneDetCtEvt ,
+
+    eventTypeCPToneDetPkgCPToneDetCwtEvt ,
+
+    eventTypeCPToneDetPkgCPToneDetDtEvt ,
+
+    eventTypeCPToneDetPkgCPToneDetPtEvt ,
+
+    eventTypeCPToneDetPkgCPToneDetRtEvt ,
+
+    eventTypeCPToneDetPkgCPToneDetSitEvt ,
+
+    eventTypeCPToneDetPkgCPToneDetWtEvt ,
+
+    eventTypeDTMFDetPkgDTMFDetCeEvt ,
+
+    eventTypeGenericPkgGenCauseEvent ,
+
+    eventTypeGenericPkgGenSigComplEvent ,
+
+    eventTypeNetworkPkgNetworkNetfailEvt ,
+
+    eventTypeNetworkPkgNetworkQualertEvt ,
+
+    eventTypeRTPPkgRTPPltransEvt ,
+
+    eventTypeToneDetPkgToneEtdEvent ,
+
+    eventTypeToneDetPkgToneLtdEvent ,
+
+    eventTypeToneDetPkgToneStdEvent ,
+
+    
+

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE resource-adaptor-jar PUBLIC
+"-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor 1.1//EN"
+"http://java.sun.com/dtd/slee-resource-adaptor-jar_1_1.dtd">
+<resource-adaptor-jar>
+    <description> XmlRpc Resource Adaptor </description>
+    <resource-adaptor id="xmlrpc">
+        <description/>
+        <resource-adaptor-name> XmlRpc Resource Adaptor </resource-adaptor-name>
+        <resource-adaptor-vendor> MOFOKOM </resource-adaptor-vendor>
+        <resource-adaptor-version> ${pom.version}</resource-adaptor-version>
+        <resource-adaptor-type-ref>
+            <description> </description>
+            <resource-adaptor-type-name> XmlRpc Resource Adaptor Type </resource-adaptor-type-name>
+            <resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor>
+            <resource-adaptor-type-version> ${pom.version} </resource-adaptor-type-version>
+        </resource-adaptor-type-ref>
+        <library-ref>
+            <description> XmlRpc Library </description>
+            <library-name> XmlRpc Library </library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version> ${pom.version} </library-version>
+        </library-ref>
+        <resource-adaptor-classes>
+            <resource-adaptor-class>
+                <resource-adaptor-class-name>
+                    mofokom.resource.xmlrpc.impl.XmlRpcResourceAdaptor
+                </resource-adaptor-class-name>
+            </resource-adaptor-class>
+            <resource-adaptor-usage-parameters-interface>
+                <description/>
+                <resource-adaptor-usage-parameters-interface-name>mofokom.resource.xmlrpc.impl.XmlRpcResourceAdaptorUsageParameters</resource-adaptor-usage-parameters-interface-name>
+                <usage-parameter name="txOK"/>
+                <usage-parameter name="rxOK"/>
+                <usage-parameter name="txNOK"/>
+                <usage-parameter name="rxNOK"/>
+                <usage-parameter name="latencyTxOK"/>
+                <usage-parameter name="latencyRxOK"/>
+                <usage-parameter name="latencyTxNOK"/>
+                <usage-parameter name="latencyRxNOK"/>
+                <usage-parameter name="connectionsOpened"/>
+                <usage-parameter name="fatalIOExceptions"/>
+                <usage-parameter name="protocolExceptions"/>
+                <usage-parameter name="connectionTimeout"/>
+                <usage-parameter name="connectionClose"/>
+            </resource-adaptor-usage-parameters-interface>
+        </resource-adaptor-classes>
+         <config-property>
+            <config-property-name>ACTIVITY_DIMENSION</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>AUTHENTICATION</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>CHUNKING</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>CONNECTION_REQUEST_TIMEOUT</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>CONNECTION_TIMEOUT</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>DEST_HOST</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>localhost</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>DEST_PORT</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>80</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>DEST_URL</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>/</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>ENCODER_BUFFER_SIZE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>ENCODER_STREAMING</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>EXECUTOR_MAX_POOL_SIZE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>EXECUTOR_CORE_POOL_SIZE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>EXECUTOR_POOL_TIMEOUT</config-property-name>
+            <config-property-type>java.lang.Long</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>LISTEN_PORT</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>0</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>MAX_CONNECTIONS</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>MAX_REQUESTS_PER_CONNECTION</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>0</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>PENDING_REQUEST_CAPACITY</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>10</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>POOL_CONNECTION_TIMEOUT</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>REALM_USER_NAME</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value></config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>REALM_USER_PASSWORD</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value></config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>RESPONSE_TIMEOUT</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>SHUTDOWN_TIME</config-property-name>
+            <config-property-type>java.lang.Long</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>SOCKET_BUFFER_SIZE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>2048</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>SOCKET_TIMEOUT</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>STALE_CONNECTIONS_CHECK</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>SYNCHRONOUS</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>TCP_NO_DELAY</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>USER_AGENT</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value></config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>WORK_QUEUE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>10</config-property-value>
+        </config-property>
+    </resource-adaptor>
+    <security-permissions>
+        <description> </description>
+        <security-permission-spec>
+            grant {
+            permission java.net.SocketPermission "*", "connect,accept,resolve";
+            permission java.security.AllPermission ;
+            };
+        </security-permission-spec>
+    </security-permissions>
+</resource-adaptor-jar>

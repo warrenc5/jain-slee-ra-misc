@@ -1,0 +1,1651 @@
+PkgValueItemExpanded(_pkgPrptyItem);
+public javax.megaco.pkg.PkgPrptyItem pkgPrptyItemExpanded() {
+_pkgPrptyItem = new javax.megaco.pkg.PkgPrptyItem();
+
+if(_itemsValueRelation!=null)
+_pkgPrptyItem.setItemsValueRelation(_itemsValueRelation);
+if(_itemValueList!=null && _itemValueList.size()>0)
+_pkgPrptyItem.setItemValue(_itemValueList.toArray(new java.lang.String[_itemValueList.size()]));
+_pkgPrptyItem.setItemValue(ConstantFactory.intArray(_itemValueList));
+_pkgPrptyItem.setItemValue(_itemValue);
+_pkgPrptyItem.setItemValue(ConstantFactory.doubleArray(_itemValueList));
+if(_associatedPkgId!=null)
+_pkgPrptyItem.setAssociatedPkgId(_associatedPkgId);
+
+_associatedPkgId = null;
+_itemValue = false;
+_itemValueList.clear();
+_itemsValueRelation = null;
+return _pkgPrptyItem;
+}
+public javax.megaco.pkg.ParamValueType paramValueTypeExpanded() {
+_paramValueType = ConstantFactory.ParamValueTypeForValue(_stringValue);
+
+
+return _paramValueType;
+}
+public javax.megaco.pkg.PkgItem pkgItemExpanded() {
+_pkgItem = new javax.megaco.pkg.PkgItem();
+
+if(_associatedPkgId!=null)
+_pkgItem.setAssociatedPkgId(_associatedPkgId);
+
+_associatedPkgId = null;
+return _pkgItem;
+}
+PkgItemExpanded(_pkgEventItem);
+public javax.megaco.pkg.PkgEventItem pkgEventItemExpanded() {
+_pkgEventItem = new javax.megaco.pkg.PkgEventItem();
+
+if(_associatedPkgId!=null)
+_pkgEventItem.setAssociatedPkgId(_associatedPkgId);
+if(_megacoPkgItemParamList!=null && _megacoPkgItemParamList.size()>0)
+_pkgEventItem.setMegacoPkgItemParam(_megacoPkgItemParamList.toArray(new javax.megaco.pkg.PkgItemParam[_megacoPkgItemParamList.size()]));
+
+_associatedPkgId = null;
+_megacoPkgItemParamList.clear();
+return _pkgEventItem;
+}
+public javax.megaco.pkg.PkgItemType pkgItemTypeExpanded() {
+_pkgItemType = ConstantFactory.PkgItemTypeForValue(_stringValue);
+
+
+return _pkgItemType;
+}
+public javax.megaco.pkg.PkgConsts pkgConstsExpanded() {
+_pkgConsts = new javax.megaco.pkg.PkgConsts();
+
+
+return _pkgConsts;
+}
+PkgValueItemExpanded(_pkgStatsItem);
+public javax.megaco.pkg.PkgStatsItem pkgStatsItemExpanded() {
+_pkgStatsItem = new javax.megaco.pkg.PkgStatsItem();
+
+if(_itemsValueRelation!=null)
+_pkgStatsItem.setItemsValueRelation(_itemsValueRelation);
+if(_itemValueList!=null && _itemValueList.size()>0)
+_pkgStatsItem.setItemValue(_itemValueList.toArray(new java.lang.String[_itemValueList.size()]));
+_pkgStatsItem.setItemValue(ConstantFactory.intArray(_itemValueList));
+_pkgStatsItem.setItemValue(_itemValue);
+_pkgStatsItem.setItemValue(ConstantFactory.doubleArray(_itemValueList));
+if(_associatedPkgId!=null)
+_pkgStatsItem.setAssociatedPkgId(_associatedPkgId);
+
+_associatedPkgId = null;
+_itemValue = false;
+_itemValueList.clear();
+_itemsValueRelation = null;
+return _pkgStatsItem;
+}
+PkgValueItemExpanded(_pkgItemParam);
+public javax.megaco.pkg.PkgItemParam pkgItemParamExpanded() {
+_pkgItemParam = new javax.megaco.pkg.PkgItemParam();
+
+if(_paramsValueRelation!=null)
+_pkgItemParam.setParamsValueRelation(_paramsValueRelation);
+if(_itemValueList!=null && _itemValueList.size()>0)
+_pkgItemParam.setItemValue(_itemValueList.toArray(new java.lang.String[_itemValueList.size()]));
+_pkgItemParam.setItemValue(ConstantFactory.intArray(_itemValueList));
+_pkgItemParam.setItemValue(_itemValue);
+_pkgItemParam.setItemValue(ConstantFactory.doubleArray(_itemValueList));
+if(_associatedPkgId!=null)
+_pkgItemParam.setAssociatedPkgId(_associatedPkgId);
+
+_associatedPkgId = null;
+_itemValue = false;
+_itemValueList.clear();
+_paramsValueRelation = null;
+return _pkgItemParam;
+}
+public javax.megaco.pkg.PkgItemStr pkgItemStrExpanded() {
+_pkgItemStr = new javax.megaco.pkg.PkgItemStr();
+
+if(_pkgName!=null)
+_pkgItemStr.setPkgName(_pkgName);
+if(_itemName!=null)
+_pkgItemStr.setItemName(_itemName);
+if(_parameter!=null)
+_pkgItemStr.setParameter(_parameter);
+if(_itemType!=null)
+_pkgItemStr.setItemType(_itemType);
+
+_itemName = null;
+_itemType = null;
+_parameter = null;
+_pkgName = null;
+return _pkgItemStr;
+}
+public javax.megaco.pkg.MegacoPkg megacoPkgExpanded() {
+_megacoPkg = new javax.megaco.pkg.MegacoPkg();
+
+
+return _megacoPkg;
+}
+PkgItemExpanded(_pkgValueItem);
+public javax.megaco.pkg.PkgValueItem pkgValueItemExpanded() {
+_pkgValueItem = new javax.megaco.pkg.PkgValueItem();
+
+if(_itemValueList!=null && _itemValueList.size()>0)
+_pkgValueItem.setItemValue(_itemValueList.toArray(new java.lang.String[_itemValueList.size()]));
+_pkgValueItem.setItemValue(ConstantFactory.intArray(_itemValueList));
+_pkgValueItem.setItemValue(_itemValue);
+_pkgValueItem.setItemValue(ConstantFactory.doubleArray(_itemValueList));
+if(_associatedPkgId!=null)
+_pkgValueItem.setAssociatedPkgId(_associatedPkgId);
+
+_associatedPkgId = null;
+_itemValue = false;
+_itemValueList.clear();
+return _pkgValueItem;
+}
+PkgItemExpanded(_pkgSignalItem);
+public javax.megaco.pkg.PkgSignalItem pkgSignalItemExpanded() {
+_pkgSignalItem = new javax.megaco.pkg.PkgSignalItem();
+
+if(_associatedPkgId!=null)
+_pkgSignalItem.setAssociatedPkgId(_associatedPkgId);
+if(_megacoPkgItemParamList!=null && _megacoPkgItemParamList.size()>0)
+_pkgSignalItem.setMegacoPkgItemParam(_megacoPkgItemParamList.toArray(new javax.megaco.pkg.PkgItemParam[_megacoPkgItemParamList.size()]));
+
+_associatedPkgId = null;
+_megacoPkgItemParamList.clear();
+return _pkgSignalItem;
+}
+public javax.megaco.pkg.ParamRelation paramRelationExpanded() {
+_paramRelation = ConstantFactory.ParamRelationForValue(_stringValue);
+
+
+return _paramRelation;
+}
+DescriptorExpanded(_modemDescriptor);
+public javax.megaco.message.descriptor.ModemDescriptor modemDescriptorExpanded() {
+_modemDescriptor = new javax.megaco.message.descriptor.ModemDescriptor(_modemParamList.toArray(new javax.megaco.message.descriptor.ModemParam[_modemParamList.size()]));
+
+if(_modemParamValueList!=null && _modemParamValueList.size()>0)
+_modemDescriptor.setModemParamValue(_modemParamValueList.toArray(new javax.megaco.message.descriptor.ModemParamValue[_modemParamValueList.size()]));
+
+_modemParamList.clear();
+_modemParamValueList.clear();
+return _modemDescriptor;
+}
+DescriptorExpanded(_mediaDescriptor);
+public javax.megaco.message.descriptor.MediaDescriptor mediaDescriptorExpanded() {
+_mediaDescriptor = new javax.megaco.message.descriptor.MediaDescriptor();
+
+if(_mediaStreamParam!=null)
+_mediaDescriptor.setMediaStreamParam(_mediaStreamParam);
+if(_streamDescriptorList!=null && _streamDescriptorList.size()>0)
+_mediaDescriptor.setStreamDescriptor(_streamDescriptorList.toArray(new javax.megaco.message.descriptor.StreamDescriptor[_streamDescriptorList.size()]));
+if(_termStateDescriptor!=null)
+_mediaDescriptor.setTermStateDescriptor(_termStateDescriptor);
+
+_mediaStreamParam = null;
+_streamDescriptorList.clear();
+_termStateDescriptor = null;
+return _mediaDescriptor;
+}
+public javax.megaco.message.descriptor.StreamMode streamModeExpanded() {
+_streamMode = ConstantFactory.StreamModeForValue(_stringValue);
+
+
+return _streamMode;
+}
+public javax.megaco.message.descriptor.SignalParamType signalParamTypeExpanded() {
+_signalParamType = ConstantFactory.SignalParamTypeForValue(_stringValue);
+
+
+return _signalParamType;
+}
+public javax.megaco.message.descriptor.ServiceState serviceStateExpanded() {
+_serviceState = ConstantFactory.ServiceStateForValue(_stringValue);
+
+
+return _serviceState;
+}
+public javax.megaco.message.descriptor.SDPInfo sDPInfoExpanded() {
+_sDPInfo = new javax.megaco.message.descriptor.SDPInfo();
+
+if(_sessionDescription!=null)
+_sDPInfo.setSessionDescription(_sessionDescription);
+if(_sessionDescStr!=null)
+_sDPInfo.setSessionDescStr(_sessionDescStr);
+
+_sessionDescStr = null;
+_sessionDescription = null;
+return _sDPInfo;
+}
+DescriptorExpanded(_srvChngRespDescriptor);
+public javax.megaco.message.descriptor.SrvChngRespDescriptor srvChngRespDescriptorExpanded() {
+_srvChngRespDescriptor = new javax.megaco.message.descriptor.SrvChngRespDescriptor();
+
+if(_srvChngAddress!=null)
+_srvChngRespDescriptor.setSrvChngAddress(_srvChngAddress);
+if(_handOffMGCId!=null)
+_srvChngRespDescriptor.setHandOffMGCId(_handOffMGCId);
+if(_srvChngProfile!=null)
+_srvChngRespDescriptor.setSrvChngProfile(_srvChngProfile);
+_srvChngRespDescriptor.setProtocolVersion(_protocolVersion);
+if(_dateValue!=null)
+_srvChngRespDescriptor.setDateValue(_dateValue);
+if(_timeValue!=null)
+_srvChngRespDescriptor.setTimeValue(_timeValue);
+if(_srvChngMethod!=null)
+_srvChngRespDescriptor.setSrvChngMethod(_srvChngMethod);
+
+_dateValue = null;
+_handOffMGCId = null;
+_protocolVersion = 0;
+_srvChngAddress = null;
+_srvChngMethod = null;
+_srvChngProfile = null;
+_timeValue = null;
+return _srvChngRespDescriptor;
+}
+public javax.megaco.message.descriptor.TimeStamp timeStampExpanded() {
+_timeStamp = new javax.megaco.message.descriptor.TimeStamp(1,1,1,1,1,1,1);
+
+
+_int = 0;
+return _timeStamp;
+}
+DescriptorExpanded(_termStateDescriptor);
+public javax.megaco.message.descriptor.TermStateDescriptor termStateDescriptorExpanded() {
+_termStateDescriptor = new javax.megaco.message.descriptor.TermStateDescriptor();
+
+if(_serviceState!=null)
+_termStateDescriptor.setServiceState(_serviceState);
+if(_evtBufferControl!=null)
+_termStateDescriptor.setEvtBufferControl(_evtBufferControl);
+if(_megacoPkgPrptyItemList!=null && _megacoPkgPrptyItemList.size()>0)
+_termStateDescriptor.setMegacoPkgPrptyItem(_megacoPkgPrptyItemList.toArray(new javax.megaco.pkg.PkgPrptyItem[_megacoPkgPrptyItemList.size()]));
+if(_megacoPkgItemStrList!=null && _megacoPkgItemStrList.size()>0)
+_termStateDescriptor.setMegacoPkgItemStr(_megacoPkgItemStrList.toArray(new javax.megaco.pkg.PkgItemStr[_megacoPkgItemStrList.size()]));
+
+_evtBufferControl = null;
+_megacoPkgItemStrList.clear();
+_megacoPkgPrptyItemList.clear();
+_serviceState = null;
+return _termStateDescriptor;
+}
+public javax.megaco.message.descriptor.EmbedFirstEventParam embedFirstEventParamExpanded() {
+_embedFirstEventParam = new javax.megaco.message.descriptor.EmbedFirstEventParam(1);
+
+if(_megacoPkgItemStr!=null)
+_embedFirstEventParam.setMegacoPkgItemStr(_megacoPkgItemStr);
+if(_eventParam!=null)
+_embedFirstEventParam.setEventParam(_eventParam);
+if(_megacoPkgEventItem!=null)
+_embedFirstEventParam.setMegacoPkgEventItem(_megacoPkgEventItem);
+
+_eventParam = null;
+_int = 0;
+_megacoPkgEventItem = null;
+_megacoPkgItemStr = null;
+return _embedFirstEventParam;
+}
+DescriptorExpanded(_srvChngDescriptor);
+public javax.megaco.message.descriptor.SrvChngDescriptor srvChngDescriptorExpanded() {
+_srvChngDescriptor = new javax.megaco.message.descriptor.SrvChngDescriptor();
+
+if(_srvChngAddress!=null)
+_srvChngDescriptor.setSrvChngAddress(_srvChngAddress);
+if(_handOffMGCId!=null)
+_srvChngDescriptor.setHandOffMGCId(_handOffMGCId);
+if(_srvChngProfile!=null)
+_srvChngDescriptor.setSrvChngProfile(_srvChngProfile);
+_srvChngDescriptor.setProtocolVersion(_protocolVersion);
+if(_dateValue!=null)
+_srvChngDescriptor.setDateValue(_dateValue);
+if(_timeValue!=null)
+_srvChngDescriptor.setTimeValue(_timeValue);
+if(_srvChngMethod!=null)
+_srvChngDescriptor.setSrvChngMethod(_srvChngMethod);
+if(_svcChngMethodExtension!=null)
+_srvChngDescriptor.setSvcChngMethodExtension(_svcChngMethodExtension);
+if(_srvChngReason!=null)
+_srvChngDescriptor.setSrvChngReason(_srvChngReason);
+_srvChngDescriptor.setSrvChngDelay(_srvChngDelay);
+if(_parameterExtention!=null)
+_srvChngDescriptor.setParameterExtention(_parameterExtention);
+
+_dateValue = null;
+_handOffMGCId = null;
+_parameterExtention = null;
+_protocolVersion = 0;
+_srvChngAddress = null;
+_srvChngDelay = 0;
+_srvChngMethod = null;
+_srvChngProfile = null;
+_srvChngReason = null;
+_svcChngMethodExtension = null;
+_timeValue = null;
+return _srvChngDescriptor;
+}
+DescriptorExpanded(_eventBufferDescriptor);
+public javax.megaco.message.descriptor.EventBufferDescriptor eventBufferDescriptorExpanded() {
+_eventBufferDescriptor = new javax.megaco.message.descriptor.EventBufferDescriptor(_eventBufParamList.toArray(new javax.megaco.message.descriptor.EventBufParam[_eventBufParamList.size()]));
+
+
+_eventBufParamList.clear();
+return _eventBufferDescriptor;
+}
+public javax.megaco.message.descriptor.MuxType muxTypeExpanded() {
+_muxType = ConstantFactory.MuxTypeForValue(_stringValue);
+
+
+return _muxType;
+}
+public javax.megaco.message.descriptor.DigitStringPosition digitStringPositionExpanded() {
+_digitStringPosition = new javax.megaco.message.descriptor.DigitStringPosition();
+
+_digitStringPosition.setDigitStringPosition(ConstantFactory.intArray(_digitStringPositionList));
+
+_digitStringPositionList.clear();
+return _digitStringPosition;
+}
+DescriptorExpanded(_signalDescriptor);
+public javax.megaco.message.descriptor.SignalDescriptor signalDescriptorExpanded() {
+_signalDescriptor = new javax.megaco.message.descriptor.SignalDescriptor();
+
+if(_signalParamList!=null && _signalParamList.size()>0)
+_signalDescriptor.setSignalParam(_signalParamList.toArray(new javax.megaco.message.descriptor.SignalParam[_signalParamList.size()]));
+
+_signalParamList.clear();
+return _signalDescriptor;
+}
+public javax.megaco.message.descriptor.SignalNotifyReason signalNotifyReasonExpanded() {
+_signalNotifyReason = ConstantFactory.SignalNotifyReasonForValue(_stringValue);
+
+
+return _signalNotifyReason;
+}
+public javax.megaco.message.descriptor.ModemParamValue modemParamValueExpanded() {
+_modemParamValue = new javax.megaco.message.descriptor.ModemParamValue();
+
+if(_paramsValueRelation!=null)
+_modemParamValue.setParamsValueRelation(_paramsValueRelation);
+if(_paramName!=null)
+_modemParamValue.setParamName(_paramName);
+if(_paramsValueList!=null && _paramsValueList.size()>0)
+_modemParamValue.setParamsValue(_paramsValueList.toArray(new java.lang.String[_paramsValueList.size()]));
+
+_paramName = null;
+_paramsValueList.clear();
+_paramsValueRelation = null;
+return _modemParamValue;
+}
+DescriptorExpanded(_eventDescriptor);
+public javax.megaco.message.descriptor.EventDescriptor eventDescriptorExpanded() {
+_eventDescriptor = new javax.megaco.message.descriptor.EventDescriptor(1);
+
+if(_requestedEventParamList!=null && _requestedEventParamList.size()>0)
+_eventDescriptor.setRequestedEventParam(_requestedEventParamList.toArray(new javax.megaco.message.descriptor.RequestedEventParam[_requestedEventParamList.size()]));
+
+_int = 0;
+_requestedEventParamList.clear();
+return _eventDescriptor;
+}
+public javax.megaco.message.descriptor.ModemParam modemParamExpanded() {
+_modemParam = new javax.megaco.message.descriptor.ModemParam(_modemType);
+
+
+_modemType = null;
+return _modemParam;
+}
+public javax.megaco.message.descriptor.RequestedEventParam requestedEventParamExpanded() {
+_requestedEventParam = new javax.megaco.message.descriptor.RequestedEventParam(_pkgEventItem);
+
+if(_eventParam!=null)
+_requestedEventParam.setEventParam(_eventParam);
+if(_embedFirstEventParam!=null)
+_requestedEventParam.setEmbedFirstEventParam(_embedFirstEventParam);
+
+_embedFirstEventParam = null;
+_eventParam = null;
+_pkgEventItem = null;
+return _requestedEventParam;
+}
+DescriptorExpanded(_packageDescriptor);
+public javax.megaco.message.descriptor.PackageDescriptor packageDescriptorExpanded() {
+_packageDescriptor = new javax.megaco.message.descriptor.PackageDescriptor();
+
+if(_megacoPkgItemsList!=null && _megacoPkgItemsList.size()>0)
+_packageDescriptor.setMegacoPkgItems(_megacoPkgItemsList.toArray(new javax.megaco.message.descriptor.PackagesItem[_megacoPkgItemsList.size()]));
+if(_megacoPkgItemsStrList!=null && _megacoPkgItemsStrList.size()>0)
+_packageDescriptor.setMegacoPkgItemsStr(_megacoPkgItemsStrList.toArray(new javax.megaco.pkg.PkgItemStr[_megacoPkgItemsStrList.size()]));
+
+_megacoPkgItemsList.clear();
+_megacoPkgItemsStrList.clear();
+return _packageDescriptor;
+}
+public javax.megaco.message.descriptor.PackagesItem packagesItemExpanded() {
+_packagesItem = new javax.megaco.message.descriptor.PackagesItem(_megacoPkg,);
+
+
+_megacoPkg = null;
+_short = null;
+return _packagesItem;
+}
+public javax.megaco.message.descriptor.SignalParam signalParamExpanded() {
+_signalParam = new javax.megaco.message.descriptor.SignalParam(_signalRequest);
+
+
+_signalRequest = null;
+return _signalParam;
+}
+public javax.megaco.message.descriptor.EventBufParam eventBufParamExpanded() {
+_eventBufParam = new javax.megaco.message.descriptor.EventBufParam(_pkgEventItem);
+
+_eventBufParam.setStreamId(_streamId);
+
+_pkgEventItem = null;
+_streamId = 0;
+return _eventBufParam;
+}
+public javax.megaco.message.descriptor.EventBufferCtrl eventBufferCtrlExpanded() {
+_eventBufferCtrl = ConstantFactory.EventBufferCtrlForValue(_stringValue);
+
+
+return _eventBufferCtrl;
+}
+public javax.megaco.message.descriptor.EventParam eventParamExpanded() {
+_eventParam = new javax.megaco.message.descriptor.EventParam();
+
+if(_signalDescriptor!=null)
+_eventParam.setSignalDescriptor(_signalDescriptor);
+if(_digitMapName!=null)
+_eventParam.setDigitMapName(_digitMapName);
+if(_digitMapValue!=null)
+_eventParam.setDigitMapValue(_digitMapValue);
+if(_digitMapValueStr!=null)
+_eventParam.setDigitMapValueStr(_digitMapValueStr);
+_eventParam.setStreamId(_streamId);
+_eventParam.setKeepActive();
+
+_digitMapName = null;
+_digitMapValue = null;
+_digitMapValueStr = null;
+_signalDescriptor = null;
+_streamId = 0;
+return _eventParam;
+}
+DescriptorExpanded(_auditValRespDescriptor);
+public javax.megaco.message.descriptor.AuditValRespDescriptor auditValRespDescriptorExpanded() {
+_auditValRespDescriptor = new javax.megaco.message.descriptor.AuditValRespDescriptor();
+
+if(_descriptorList!=null && _descriptorList.size()>0)
+_auditValRespDescriptor.setDescriptor(_descriptorList.toArray(new javax.megaco.message.Descriptor[_descriptorList.size()]));
+_auditValRespDescriptor.setMuxToken();
+_auditValRespDescriptor.setModemToken();
+_auditValRespDescriptor.setMediaToken();
+_auditValRespDescriptor.setSignalToken();
+_auditValRespDescriptor.setEventBuffToken();
+_auditValRespDescriptor.setStatsToken();
+_auditValRespDescriptor.setEventsToken();
+_auditValRespDescriptor.setObsEventToken();
+_auditValRespDescriptor.setDigitMapToken();
+_auditValRespDescriptor.setPackagesToken();
+
+_descriptorList.clear();
+return _auditValRespDescriptor;
+}
+public javax.megaco.message.descriptor.ModemType modemTypeExpanded() {
+_modemType = ConstantFactory.ModemTypeForValue(_stringValue);
+
+
+return _modemType;
+}
+DescriptorExpanded(_auditValDescriptor);
+public javax.megaco.message.descriptor.AuditValDescriptor auditValDescriptorExpanded() {
+_auditValDescriptor = new javax.megaco.message.descriptor.AuditValDescriptor();
+
+_auditValDescriptor.setMuxToken();
+_auditValDescriptor.setModemToken();
+_auditValDescriptor.setMediaToken();
+_auditValDescriptor.setSignalToken();
+_auditValDescriptor.setEventBuffToken();
+_auditValDescriptor.setStatsToken();
+_auditValDescriptor.setEventsToken();
+_auditValDescriptor.setObsEventToken();
+_auditValDescriptor.setDigitMapToken();
+_auditValDescriptor.setPackagesToken();
+
+return _auditValDescriptor;
+}
+DescriptorExpanded(_muxDescriptor);
+public javax.megaco.message.descriptor.MuxDescriptor muxDescriptorExpanded() {
+_muxDescriptor = new javax.megaco.message.descriptor.MuxDescriptor(_muxType,_terminationList.toArray(new javax.megaco.message.Termination[_terminationList.size()]));
+
+if(_extensionString!=null)
+_muxDescriptor.setExtensionString(_extensionString);
+
+_extensionString = null;
+_muxType = null;
+_terminationList.clear();
+return _muxDescriptor;
+}
+public javax.megaco.message.descriptor.ObservedEvent observedEventExpanded() {
+_observedEvent = new javax.megaco.message.descriptor.ObservedEvent(_pkgEventItem);
+
+_observedEvent.setStreamId(_streamId);
+if(_timeStamp!=null)
+_observedEvent.setTimeStamp(_timeStamp);
+
+_pkgEventItem = null;
+_streamId = 0;
+_timeStamp = null;
+return _observedEvent;
+}
+DescriptorExpanded(_topologyDescriptor);
+public javax.megaco.message.descriptor.TopologyDescriptor topologyDescriptorExpanded() {
+_topologyDescriptor = new javax.megaco.message.descriptor.TopologyDescriptor(_termination,_termination,_topologyDirection);
+
+
+_termination = null;
+_topologyDirection = null;
+return _topologyDescriptor;
+}
+public javax.megaco.message.descriptor.MediaStreamParam mediaStreamParamExpanded() {
+_mediaStreamParam = new javax.megaco.message.descriptor.MediaStreamParam();
+
+if(_lclCtrlDescriptor!=null)
+_mediaStreamParam.setLclCtrlDescriptor(_lclCtrlDescriptor);
+if(_localDescriptor!=null)
+_mediaStreamParam.setLocalDescriptor(_localDescriptor);
+if(_remoteDescriptor!=null)
+_mediaStreamParam.setRemoteDescriptor(_remoteDescriptor);
+
+_lclCtrlDescriptor = null;
+_localDescriptor = null;
+_remoteDescriptor = null;
+return _mediaStreamParam;
+}
+public javax.megaco.message.descriptor.TopologyDirection topologyDirectionExpanded() {
+_topologyDirection = ConstantFactory.TopologyDirectionForValue(_stringValue);
+
+
+return _topologyDirection;
+}
+DescriptorExpanded(_localCtrlDescriptor);
+public javax.megaco.message.descriptor.LocalCtrlDescriptor localCtrlDescriptorExpanded() {
+_localCtrlDescriptor = new javax.megaco.message.descriptor.LocalCtrlDescriptor();
+
+if(_streamMode!=null)
+_localCtrlDescriptor.setStreamMode(_streamMode);
+if(_megacoPkgPrptyItemList!=null && _megacoPkgPrptyItemList.size()>0)
+_localCtrlDescriptor.setMegacoPkgPrptyItem(_megacoPkgPrptyItemList.toArray(new javax.megaco.pkg.PkgPrptyItem[_megacoPkgPrptyItemList.size()]));
+if(_megacoPkgItemStrList!=null && _megacoPkgItemStrList.size()>0)
+_localCtrlDescriptor.setMegacoPkgItemStr(_megacoPkgItemStrList.toArray(new javax.megaco.pkg.PkgItemStr[_megacoPkgItemStrList.size()]));
+_localCtrlDescriptor.setReserveValue(_reserveValue);
+_localCtrlDescriptor.setReserveGroup(_reserveGroup);
+
+_megacoPkgItemStrList.clear();
+_megacoPkgPrptyItemList.clear();
+_reserveGroup = false;
+_reserveValue = false;
+_streamMode = null;
+return _localCtrlDescriptor;
+}
+public javax.megaco.message.descriptor.SignalType signalTypeExpanded() {
+_signalType = ConstantFactory.SignalTypeForValue(_stringValue);
+
+
+return _signalType;
+}
+DescriptorExpanded(_cntxtTermAudDescriptor);
+public javax.megaco.message.descriptor.CntxtTermAudDescriptor cntxtTermAudDescriptorExpanded() {
+_cntxtTermAudDescriptor = new javax.megaco.message.descriptor.CntxtTermAudDescriptor();
+
+if(_errorDescriptor!=null)
+_cntxtTermAudDescriptor.setErrorDescriptor(_errorDescriptor);
+if(_terminationIdList!=null && _terminationIdList.size()>0)
+_cntxtTermAudDescriptor.setTerminationId(_terminationIdList.toArray(new javax.megaco.message.Termination[_terminationIdList.size()]));
+
+_errorDescriptor = null;
+_terminationIdList.clear();
+return _cntxtTermAudDescriptor;
+}
+DescriptorExpanded(_auditCapRespDescriptor);
+public javax.megaco.message.descriptor.AuditCapRespDescriptor auditCapRespDescriptorExpanded() {
+_auditCapRespDescriptor = new javax.megaco.message.descriptor.AuditCapRespDescriptor();
+
+if(_descriptorList!=null && _descriptorList.size()>0)
+_auditCapRespDescriptor.setDescriptor(_descriptorList.toArray(new javax.megaco.message.Descriptor[_descriptorList.size()]));
+_auditCapRespDescriptor.setMuxToken();
+_auditCapRespDescriptor.setModemToken();
+_auditCapRespDescriptor.setMediaToken();
+_auditCapRespDescriptor.setSignalToken();
+_auditCapRespDescriptor.setEventBuffToken();
+_auditCapRespDescriptor.setStatsToken();
+_auditCapRespDescriptor.setEventsToken();
+_auditCapRespDescriptor.setObsEventToken();
+
+_descriptorList.clear();
+return _auditCapRespDescriptor;
+}
+DescriptorExpanded(_obsEventDescriptor);
+public javax.megaco.message.descriptor.ObsEventDescriptor obsEventDescriptorExpanded() {
+_obsEventDescriptor = new javax.megaco.message.descriptor.ObsEventDescriptor(1,_observedEventList.toArray(new javax.megaco.message.descriptor.ObservedEvent[_observedEventList.size()]));
+
+
+_int = 0;
+_observedEventList.clear();
+return _obsEventDescriptor;
+}
+public javax.megaco.message.descriptor.DigitMapString digitMapStringExpanded() {
+_digitMapString = new javax.megaco.message.descriptor.DigitMapString();
+
+if(_digitStringPositionList!=null && _digitStringPositionList.size()>0)
+_digitMapString.setDigitStringPosition(_digitStringPositionList.toArray(new javax.megaco.message.descriptor.DigitStringPosition[_digitStringPositionList.size()]));
+
+_digitStringPositionList.clear();
+return _digitMapString;
+}
+public javax.megaco.message.descriptor.DigitStringPosition digitStringPositionExpanded() {
+_digitStringPosition = new javax.megaco.message.descriptor.DigitStringPosition();
+
+_digitStringPosition.setDigitStringPosition(ConstantFactory.intArray(_digitStringPositionList));
+
+_digitStringPositionList.clear();
+return _digitStringPosition;
+}
+public javax.megaco.message.descriptor.SignalRequest signalRequestExpanded() {
+_signalRequest = new javax.megaco.message.descriptor.SignalRequest(_pkgSignalItem);
+
+_signalRequest.setStreamId(_streamId);
+if(_signalType!=null)
+_signalRequest.setSignalType(_signalType);
+if(_signalNotifyReason!=null)
+_signalRequest.setSignalNotifyReason(_signalNotifyReason);
+_signalRequest.setKeepAlive();
+_signalRequest.setSignalDuration(_signalDuration);
+
+_pkgSignalItem = null;
+_signalDuration = 0;
+_signalNotifyReason = null;
+_signalType = null;
+_streamId = 0;
+return _signalRequest;
+}
+DescriptorExpanded(_errorDescriptor);
+public javax.megaco.message.descriptor.ErrorDescriptor errorDescriptorExpanded() {
+_errorDescriptor = new javax.megaco.message.descriptor.ErrorDescriptor(1);
+
+if(_errorString!=null)
+_errorDescriptor.setErrorString(_errorString);
+
+_errorString = null;
+_int = 0;
+return _errorDescriptor;
+}
+DescriptorExpanded(_auditCapDescriptor);
+public javax.megaco.message.descriptor.AuditCapDescriptor auditCapDescriptorExpanded() {
+_auditCapDescriptor = new javax.megaco.message.descriptor.AuditCapDescriptor();
+
+_auditCapDescriptor.setMuxToken();
+_auditCapDescriptor.setModemToken();
+_auditCapDescriptor.setMediaToken();
+_auditCapDescriptor.setSignalToken();
+_auditCapDescriptor.setEventBuffToken();
+_auditCapDescriptor.setStatsToken();
+_auditCapDescriptor.setEventsToken();
+_auditCapDescriptor.setObsEventToken();
+
+return _auditCapDescriptor;
+}
+DescriptorExpanded(_streamDescriptor);
+public javax.megaco.message.descriptor.StreamDescriptor streamDescriptorExpanded() {
+_streamDescriptor = new javax.megaco.message.descriptor.StreamDescriptor();
+
+_streamDescriptor.setStreamId(_streamId);
+if(_mediaStreamParam!=null)
+_streamDescriptor.setMediaStreamParam(_mediaStreamParam);
+
+_mediaStreamParam = null;
+_streamId = 0;
+return _streamDescriptor;
+}
+public javax.megaco.message.descriptor.DigitMapValue digitMapValueExpanded() {
+_digitMapValue = new javax.megaco.message.descriptor.DigitMapValue();
+
+_digitMapValue.setTimerTValue(_timerTValue);
+_digitMapValue.setTimerSValue(_timerSValue);
+_digitMapValue.setTimerLValue(_timerLValue);
+if(_digitMapStringsList!=null && _digitMapStringsList.size()>0)
+_digitMapValue.setDigitMapStrings(_digitMapStringsList.toArray(new javax.megaco.message.descriptor.DigitMapString[_digitMapStringsList.size()]));
+
+_digitMapStringsList.clear();
+_timerLValue = 0;
+_timerSValue = 0;
+_timerTValue = 0;
+return _digitMapValue;
+}
+DescriptorExpanded(_digitMapDescriptor);
+public javax.megaco.message.descriptor.DigitMapDescriptor digitMapDescriptorExpanded() {
+_digitMapDescriptor = new javax.megaco.message.descriptor.DigitMapDescriptor();
+
+if(_digitMapName!=null)
+_digitMapDescriptor.setDigitMapName(_digitMapName);
+if(_digitMapValue!=null)
+_digitMapDescriptor.setDigitMapValue(_digitMapValue);
+if(_digitMapValueStr!=null)
+_digitMapDescriptor.setDigitMapValueStr(_digitMapValueStr);
+
+_digitMapName = null;
+_digitMapValue = null;
+_digitMapValueStr = null;
+return _digitMapDescriptor;
+}
+DescriptorExpanded(_statsDescriptor);
+public javax.megaco.message.descriptor.StatsDescriptor statsDescriptorExpanded() {
+_statsDescriptor = new javax.megaco.message.descriptor.StatsDescriptor(_pkgStatsItemList.toArray(new javax.megaco.pkg.PkgStatsItem[_pkgStatsItemList.size()]));
+
+
+_pkgStatsItemList.clear();
+return _statsDescriptor;
+}
+public javax.megaco.message.DescriptorType descriptorTypeExpanded() {
+_descriptorType = ConstantFactory.DescriptorTypeForValue(_stringValue);
+
+
+return _descriptorType;
+}
+public javax.megaco.message.CommandType commandTypeExpanded() {
+_commandType = ConstantFactory.CommandTypeForValue(_stringValue);
+
+
+return _commandType;
+}
+public javax.megaco.message.CmdResponseType cmdResponseTypeExpanded() {
+_cmdResponseType = ConstantFactory.CmdResponseTypeForValue(_stringValue);
+
+
+return _cmdResponseType;
+}
+CommandEventExpanded(_commandReq);
+public javax.megaco.message.CommandReq commandReqExpanded() {
+_commandReq = ConstantFactory.CommandReqForValue(_stringValue);
+
+_commandReq.setCommandOptional();
+_commandReq.setReqWithWildcardResp();
+if(_descriptorList!=null && _descriptorList.size()>0)
+_commandReq.setDescriptor(_descriptorList.toArray(new javax.megaco.message.Descriptor[_descriptorList.size()]));
+if(_termination!=null)
+_commandReq.setTermination(_termination);
+_commandReq.setFirstCommandInAction();
+_commandReq.setLastCommandInTxn();
+if(_cntxtInfo!=null)
+_commandReq.setCntxtInfo(_cntxtInfo);
+_commandReq.setExchangeId(_exchangeId);
+
+_cntxtInfo = null;
+_descriptorList.clear();
+_exchangeId = 0;
+_termination = null;
+return _commandReq;
+}
+CommandEventExpanded(_commandResp);
+public javax.megaco.message.CommandResp commandRespExpanded() {
+_commandResp = ConstantFactory.CommandRespForValue(_stringValue);
+
+_commandResp.setLastCommandResp();
+if(_descriptorList!=null && _descriptorList.size()>0)
+_commandResp.setDescriptor(_descriptorList.toArray(new javax.megaco.message.Descriptor[_descriptorList.size()]));
+if(_termination!=null)
+_commandResp.setTermination(_termination);
+_commandResp.setFirstCommandInAction();
+_commandResp.setLastCommandInTxn();
+if(_cntxtInfo!=null)
+_commandResp.setCntxtInfo(_cntxtInfo);
+_commandResp.setExchangeId(_exchangeId);
+
+_cntxtInfo = null;
+_descriptorList.clear();
+_exchangeId = 0;
+_termination = null;
+return _commandResp;
+}
+public javax.megaco.message.Termination terminationExpanded() {
+_termination = new javax.megaco.message.Termination();
+
+if(_termName!=null)
+_termination.setTermName(_termName);
+_termination.setTermName(ConstantFactory.byteArray(_termNameList));
+if(_termType!=null)
+_termination.setTermType(_termType);
+_termination.setTermWildCard(ConstantFactory.byteArray(_termWildCardList));
+
+_termName = null;
+_termNameList.clear();
+_termType = null;
+_termWildCardList.clear();
+return _termination;
+}
+public javax.megaco.message.TermType termTypeExpanded() {
+_termType = ConstantFactory.TermTypeForValue(_stringValue);
+
+
+return _termType;
+}
+public javax.megaco.message.Descriptor descriptorExpanded() {
+_descriptor = new javax.megaco.message.Descriptor();
+
+
+return _descriptor;
+}
+public javax.megaco.message.CmdRequestType cmdRequestTypeExpanded() {
+_cmdRequestType = ConstantFactory.CmdRequestTypeForValue(_stringValue);
+
+
+return _cmdRequestType;
+}
+public javax.megaco.message.ContextInfo contextInfoExpanded() {
+_contextInfo = new javax.megaco.message.ContextInfo(1);
+
+if(_contextParam!=null)
+_contextInfo.setContextParam(_contextParam);
+
+_contextParam = null;
+_int = 0;
+return _contextInfo;
+}
+public javax.megaco.message.ContextParam contextParamExpanded() {
+_contextParam = new javax.megaco.message.ContextParam();
+
+_contextParam.setPriority(_priority);
+_contextParam.setEM(_eM);
+if(_topologyDescriptorList!=null && _topologyDescriptorList.size()>0)
+_contextParam.setTopologyDescriptor(_topologyDescriptorList.toArray(new javax.megaco.message.descriptor.TopologyDescriptor[_topologyDescriptorList.size()]));
+
+_eM = false;
+_priority = 0;
+_topologyDescriptorList.clear();
+return _contextParam;
+}
+EventObjectExpanded(_commandEvent);
+public javax.megaco.CommandEvent commandEventExpanded() {
+_commandEvent = new javax.megaco.CommandEvent("object",1,1,1,false,false);
+
+if(_descriptorList!=null && _descriptorList.size()>0)
+_commandEvent.setDescriptor(_descriptorList.toArray(new javax.megaco.message.Descriptor[_descriptorList.size()]));
+if(_termination!=null)
+_commandEvent.setTermination(_termination);
+_commandEvent.setFirstCommandInAction();
+_commandEvent.setLastCommandInTxn();
+if(_cntxtInfo!=null)
+_commandEvent.setCntxtInfo(_cntxtInfo);
+_commandEvent.setExchangeId(_exchangeId);
+
+_boolean = false;
+_cntxtInfo = null;
+_descriptorList.clear();
+_exchangeId = 0;
+_int = 0;
+_object = null;
+_termination = null;
+return _commandEvent;
+}
+public javax.megaco.association.LocalAddr localAddrExpanded() {
+_localAddr = new javax.megaco.association.LocalAddr();
+
+_localAddr.setPortId(_portId);
+if(_mtp3Addr!=null)
+_localAddr.setMtp3Addr(_mtp3Addr);
+if(_aAL5Addr!=null)
+_localAddr.setAAL5Addr(_aAL5Addr);
+
+_aAL5Addr = null;
+_mtp3Addr = null;
+_portId = 0;
+return _localAddr;
+}
+public javax.megaco.association.RemoteAddr remoteAddrExpanded() {
+_remoteAddr = new javax.megaco.association.RemoteAddr();
+
+_remoteAddr.setPortId(_portId);
+if(_mtp3Addr!=null)
+_remoteAddr.setMtp3Addr(_mtp3Addr);
+if(_aAL5Addr!=null)
+_remoteAddr.setAAL5Addr(_aAL5Addr);
+
+_aAL5Addr = null;
+_mtp3Addr = null;
+_portId = 0;
+return _remoteAddr;
+}
+public javax.megaco.association.SrvChngMethod srvChngMethodExpanded() {
+_srvChngMethod = ConstantFactory.SrvChngMethodForValue(_stringValue);
+
+
+return _srvChngMethod;
+}
+public javax.megaco.association.SrvChngReason srvChngReasonExpanded() {
+_srvChngReason = ConstantFactory.SrvChngReasonForValue(_stringValue);
+
+
+return _srvChngReason;
+}
+public java.util.EventObject eventObjectExpanded() {
+_eventObject = new java.util.EventObject("object");
+
+
+_object = null;
+return _eventObject;
+}
+java.lang.String _aAL5Addr;
+javax.megaco.pkg.MegacoPkg _associatedPkgId;
+javax.megaco.message.descriptor.AuditCapDescriptor _auditCapDescriptor;
+javax.megaco.message.descriptor.AuditCapRespDescriptor _auditCapRespDescriptor;
+javax.megaco.message.descriptor.AuditValDescriptor _auditValDescriptor;
+javax.megaco.message.descriptor.AuditValRespDescriptor _auditValRespDescriptor;
+boolean _boolean;
+javax.megaco.message.CmdRequestType _cmdRequestType;
+javax.megaco.message.CmdResponseType _cmdResponseType;
+javax.megaco.message.ContextInfo _cntxtInfo;
+javax.megaco.message.descriptor.CntxtTermAudDescriptor _cntxtTermAudDescriptor;
+javax.megaco.CommandEvent _commandEvent;
+javax.megaco.message.CommandReq _commandReq;
+javax.megaco.message.CommandResp _commandResp;
+javax.megaco.message.CommandType _commandType;
+javax.megaco.message.ContextInfo _contextInfo;
+javax.megaco.message.ContextParam _contextParam;
+java.lang.String _dateValue;
+javax.megaco.message.Descriptor _descriptor;
+List<javax.megaco.message.Descriptor> _descriptorList;
+javax.megaco.message.DescriptorType _descriptorType;
+javax.megaco.message.descriptor.DigitMapDescriptor _digitMapDescriptor;
+java.lang.String _digitMapName;
+javax.megaco.message.descriptor.DigitMapString _digitMapString;
+List<javax.megaco.message.descriptor.DigitMapString> _digitMapStringsList;
+javax.megaco.message.descriptor.DigitMapValue _digitMapValue;
+java.lang.String _digitMapValueStr;
+javax.megaco.message.descriptor.DigitStringPosition _digitStringPosition;
+List<int> _digitStringPositionList;
+boolean _eM;
+javax.megaco.message.descriptor.EmbedFirstEventParam _embedFirstEventParam;
+javax.megaco.message.descriptor.ErrorDescriptor _errorDescriptor;
+java.lang.String _errorString;
+javax.megaco.message.descriptor.EventBufParam _eventBufParam;
+List<javax.megaco.message.descriptor.EventBufParam> _eventBufParamList;
+javax.megaco.message.descriptor.EventBufferCtrl _eventBufferCtrl;
+javax.megaco.message.descriptor.EventBufferDescriptor _eventBufferDescriptor;
+javax.megaco.message.descriptor.EventDescriptor _eventDescriptor;
+java.util.EventObject _eventObject;
+javax.megaco.message.descriptor.EventParam _eventParam;
+javax.megaco.message.descriptor.EventBufferCtrl _evtBufferControl;
+int _exchangeId;
+java.lang.String _extensionString;
+javax.megaco.association.LocalAddr _handOffMGCId;
+int _int;
+java.lang.String _itemName;
+javax.megaco.pkg.PkgItemType _itemType;
+boolean _itemValue;
+List<java.lang.Double> _itemValueList;
+javax.megaco.pkg.ParamRelation _itemsValueRelation;
+javax.megaco.message.descriptor.LocalCtrlDescriptor _lclCtrlDescriptor;
+javax.megaco.association.LocalAddr _localAddr;
+javax.megaco.message.descriptor.LocalCtrlDescriptor _localCtrlDescriptor;
+javax.megaco.message.descriptor.SDPInfo _localDescriptor;
+javax.megaco.message.descriptor.MediaDescriptor _mediaDescriptor;
+javax.megaco.message.descriptor.MediaStreamParam _mediaStreamParam;
+javax.megaco.pkg.MegacoPkg _megacoPkg;
+javax.megaco.pkg.PkgEventItem _megacoPkgEventItem;
+List<javax.megaco.pkg.PkgItemParam> _megacoPkgItemParamList;
+javax.megaco.pkg.PkgItemStr _megacoPkgItemStr;
+List<javax.megaco.pkg.PkgItemStr> _megacoPkgItemStrList;
+List<javax.megaco.message.descriptor.PackagesItem> _megacoPkgItemsList;
+List<javax.megaco.pkg.PkgItemStr> _megacoPkgItemsStrList;
+List<javax.megaco.pkg.PkgPrptyItem> _megacoPkgPrptyItemList;
+javax.megaco.message.descriptor.ModemDescriptor _modemDescriptor;
+javax.megaco.message.descriptor.ModemParam _modemParam;
+List<javax.megaco.message.descriptor.ModemParam> _modemParamList;
+javax.megaco.message.descriptor.ModemParamValue _modemParamValue;
+List<javax.megaco.message.descriptor.ModemParamValue> _modemParamValueList;
+javax.megaco.message.descriptor.ModemType _modemType;
+java.lang.String _mtp3Addr;
+javax.megaco.message.descriptor.MuxDescriptor _muxDescriptor;
+javax.megaco.message.descriptor.MuxType _muxType;
+java.lang.Object _object;
+javax.megaco.message.descriptor.ObsEventDescriptor _obsEventDescriptor;
+javax.megaco.message.descriptor.ObservedEvent _observedEvent;
+List<javax.megaco.message.descriptor.ObservedEvent> _observedEventList;
+javax.megaco.message.descriptor.PackageDescriptor _packageDescriptor;
+javax.megaco.message.descriptor.PackagesItem _packagesItem;
+java.lang.String _paramName;
+javax.megaco.pkg.ParamRelation _paramRelation;
+javax.megaco.pkg.ParamValueType _paramValueType;
+java.lang.String _parameter;
+java.lang.String _parameterExtention;
+List<java.lang.String> _paramsValueList;
+javax.megaco.pkg.ParamRelation _paramsValueRelation;
+javax.megaco.pkg.PkgConsts _pkgConsts;
+javax.megaco.pkg.PkgEventItem _pkgEventItem;
+javax.megaco.pkg.PkgItem _pkgItem;
+javax.megaco.pkg.PkgItemParam _pkgItemParam;
+javax.megaco.pkg.PkgItemStr _pkgItemStr;
+javax.megaco.pkg.PkgItemType _pkgItemType;
+java.lang.String _pkgName;
+javax.megaco.pkg.PkgPrptyItem _pkgPrptyItem;
+javax.megaco.pkg.PkgSignalItem _pkgSignalItem;
+javax.megaco.pkg.PkgStatsItem _pkgStatsItem;
+List<javax.megaco.pkg.PkgStatsItem> _pkgStatsItemList;
+javax.megaco.pkg.PkgValueItem _pkgValueItem;
+int _portId;
+int _priority;
+int _protocolVersion;
+javax.megaco.association.RemoteAddr _remoteAddr;
+javax.megaco.message.descriptor.SDPInfo _remoteDescriptor;
+javax.megaco.message.descriptor.RequestedEventParam _requestedEventParam;
+List<javax.megaco.message.descriptor.RequestedEventParam> _requestedEventParamList;
+boolean _reserveGroup;
+boolean _reserveValue;
+javax.megaco.message.descriptor.SDPInfo _sDPInfo;
+javax.megaco.message.descriptor.ServiceState _serviceState;
+java.lang.String _sessionDescStr;
+javax.sdp.SessionDescription _sessionDescription;
+short _short;
+javax.megaco.message.descriptor.SignalDescriptor _signalDescriptor;
+int _signalDuration;
+javax.megaco.message.descriptor.SignalNotifyReason _signalNotifyReason;
+javax.megaco.message.descriptor.SignalParam _signalParam;
+List<javax.megaco.message.descriptor.SignalParam> _signalParamList;
+javax.megaco.message.descriptor.SignalParamType _signalParamType;
+javax.megaco.message.descriptor.SignalRequest _signalRequest;
+javax.megaco.message.descriptor.SignalType _signalType;
+javax.megaco.association.LocalAddr _srvChngAddress;
+int _srvChngDelay;
+javax.megaco.message.descriptor.SrvChngDescriptor _srvChngDescriptor;
+javax.megaco.association.SrvChngMethod _srvChngMethod;
+java.lang.String _srvChngProfile;
+javax.megaco.association.SrvChngReason _srvChngReason;
+javax.megaco.message.descriptor.SrvChngRespDescriptor _srvChngRespDescriptor;
+javax.megaco.message.descriptor.StatsDescriptor _statsDescriptor;
+javax.megaco.message.descriptor.StreamDescriptor _streamDescriptor;
+List<javax.megaco.message.descriptor.StreamDescriptor> _streamDescriptorList;
+int _streamId;
+javax.megaco.message.descriptor.StreamMode _streamMode;
+java.lang.String _svcChngMethodExtension;
+java.lang.String _termName;
+List<java.lang.Byte> _termNameList;
+javax.megaco.message.descriptor.TermStateDescriptor _termStateDescriptor;
+javax.megaco.message.TermType _termType;
+List<java.lang.Byte> _termWildCardList;
+javax.megaco.message.Termination _termination;
+List<javax.megaco.message.Termination> _terminationIdList;
+List<javax.megaco.message.Termination> _terminationList;
+javax.megaco.message.descriptor.TimeStamp _timeStamp;
+java.lang.String _timeValue;
+int _timerLValue;
+int _timerSValue;
+int _timerTValue;
+javax.megaco.message.descriptor.TopologyDescriptor _topologyDescriptor;
+List<javax.megaco.message.descriptor.TopologyDescriptor> _topologyDescriptorList;
+javax.megaco.message.descriptor.TopologyDirection _topologyDirection;
+public void reset(){
+_aAL5Addr = null;
+_associatedPkgId = null;
+_auditCapDescriptor = null;
+_auditCapRespDescriptor = null;
+_auditValDescriptor = null;
+_auditValRespDescriptor = null;
+_boolean = false;
+_cmdRequestType = null;
+_cmdResponseType = null;
+_cntxtInfo = null;
+_cntxtTermAudDescriptor = null;
+_commandEvent = null;
+_commandReq = null;
+_commandResp = null;
+_commandType = null;
+_contextInfo = null;
+_contextParam = null;
+_dateValue = null;
+_descriptor = null;
+_descriptorList.clear();
+_descriptorType = null;
+_digitMapDescriptor = null;
+_digitMapName = null;
+_digitMapString = null;
+_digitMapStringsList.clear();
+_digitMapValue = null;
+_digitMapValueStr = null;
+_digitStringPosition = null;
+_digitStringPositionList.clear();
+_eM = false;
+_embedFirstEventParam = null;
+_errorDescriptor = null;
+_errorString = null;
+_eventBufParam = null;
+_eventBufParamList.clear();
+_eventBufferCtrl = null;
+_eventBufferDescriptor = null;
+_eventDescriptor = null;
+_eventObject = null;
+_eventParam = null;
+_evtBufferControl = null;
+_exchangeId = 0;
+_extensionString = null;
+_handOffMGCId = null;
+_int = 0;
+_itemName = null;
+_itemType = null;
+_itemValue = false;
+_itemValueList.clear();
+_itemsValueRelation = null;
+_lclCtrlDescriptor = null;
+_localAddr = null;
+_localCtrlDescriptor = null;
+_localDescriptor = null;
+_mediaDescriptor = null;
+_mediaStreamParam = null;
+_megacoPkg = null;
+_megacoPkgEventItem = null;
+_megacoPkgItemParamList.clear();
+_megacoPkgItemStr = null;
+_megacoPkgItemStrList.clear();
+_megacoPkgItemsList.clear();
+_megacoPkgItemsStrList.clear();
+_megacoPkgPrptyItemList.clear();
+_modemDescriptor = null;
+_modemParam = null;
+_modemParamList.clear();
+_modemParamValue = null;
+_modemParamValueList.clear();
+_modemType = null;
+_mtp3Addr = null;
+_muxDescriptor = null;
+_muxType = null;
+_object = null;
+_obsEventDescriptor = null;
+_observedEvent = null;
+_observedEventList.clear();
+_packageDescriptor = null;
+_packagesItem = null;
+_paramName = null;
+_paramRelation = null;
+_paramValueType = null;
+_parameter = null;
+_parameterExtention = null;
+_paramsValueList.clear();
+_paramsValueRelation = null;
+_pkgConsts = null;
+_pkgEventItem = null;
+_pkgItem = null;
+_pkgItemParam = null;
+_pkgItemStr = null;
+_pkgItemType = null;
+_pkgName = null;
+_pkgPrptyItem = null;
+_pkgSignalItem = null;
+_pkgStatsItem = null;
+_pkgStatsItemList.clear();
+_pkgValueItem = null;
+_portId = 0;
+_priority = 0;
+_protocolVersion = 0;
+_remoteAddr = null;
+_remoteDescriptor = null;
+_requestedEventParam = null;
+_requestedEventParamList.clear();
+_reserveGroup = false;
+_reserveValue = false;
+_sDPInfo = null;
+_serviceState = null;
+_sessionDescStr = null;
+_sessionDescription = null;
+_short = null;
+_signalDescriptor = null;
+_signalDuration = 0;
+_signalNotifyReason = null;
+_signalParam = null;
+_signalParamList.clear();
+_signalParamType = null;
+_signalRequest = null;
+_signalType = null;
+_srvChngAddress = null;
+_srvChngDelay = 0;
+_srvChngDescriptor = null;
+_srvChngMethod = null;
+_srvChngProfile = null;
+_srvChngReason = null;
+_srvChngRespDescriptor = null;
+_statsDescriptor = null;
+_streamDescriptor = null;
+_streamDescriptorList.clear();
+_streamId = 0;
+_streamMode = null;
+_svcChngMethodExtension = null;
+_termName = null;
+_termNameList.clear();
+_termStateDescriptor = null;
+_termType = null;
+_termWildCardList.clear();
+_termination = null;
+_terminationIdList.clear();
+_terminationList.clear();
+_timeStamp = null;
+_timeValue = null;
+_timerLValue = 0;
+_timerSValue = 0;
+_timerTValue = 0;
+_topologyDescriptor = null;
+_topologyDescriptorList.clear();
+_topologyDirection = null;
+}
+public static javax.megaco.pkg.ParamValueType ParamValueTypeForValue(String value) {
+if(Token.STRING.equalsIgnoreCase(value)) return javax.megaco.pkg.ParamValueType.STRING;
+if(Token.INTEGER.equalsIgnoreCase(value)) return javax.megaco.pkg.ParamValueType.INTEGER;
+if(Token.BOOLEAN.equalsIgnoreCase(value)) return javax.megaco.pkg.ParamValueType.BOOLEAN;
+if(Token.DOUBLE.equalsIgnoreCase(value)) return javax.megaco.pkg.ParamValueType.DOUBLE;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.pkg.ParamValueType");
+}
+public static javax.megaco.pkg.PkgItemType PkgItemTypeForValue(String value) {
+if(Token.ALL.equalsIgnoreCase(value)) return javax.megaco.pkg.PkgItemType.ALL;
+if(Token.EVENT.equalsIgnoreCase(value)) return javax.megaco.pkg.PkgItemType.EVENT;
+if(Token.SIGNAL.equalsIgnoreCase(value)) return javax.megaco.pkg.PkgItemType.SIGNAL;
+if(Token.STATISTICS.equalsIgnoreCase(value)) return javax.megaco.pkg.PkgItemType.STATISTICS;
+if(Token.PROPERTY.equalsIgnoreCase(value)) return javax.megaco.pkg.PkgItemType.PROPERTY;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.pkg.PkgItemType");
+}
+public static javax.megaco.pkg.ParamRelation ParamRelationForValue(String value) {
+if(Token.SET.equalsIgnoreCase(value)) return javax.megaco.pkg.ParamRelation.SET;
+if(Token.SUBLIST.equalsIgnoreCase(value)) return javax.megaco.pkg.ParamRelation.SUBLIST;
+if(Token.RANGE.equalsIgnoreCase(value)) return javax.megaco.pkg.ParamRelation.RANGE;
+if(Token.EQUAL.equalsIgnoreCase(value)) return javax.megaco.pkg.ParamRelation.EQUAL;
+if(Token.NOTEQUAL.equalsIgnoreCase(value)) return javax.megaco.pkg.ParamRelation.NOT_EQUAL;
+if(Token.GREATER.equalsIgnoreCase(value)) return javax.megaco.pkg.ParamRelation.GREATER;
+if(Token.LESS.equalsIgnoreCase(value)) return javax.megaco.pkg.ParamRelation.LESS;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.pkg.ParamRelation");
+}
+public static javax.megaco.message.descriptor.StreamMode StreamModeForValue(String value) {
+if(Token.SENDONLY.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.StreamMode.SEND_ONLY;
+if(Token.SENDRECV.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.StreamMode.SEND_RECV;
+if(Token.RECVONLY.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.StreamMode.RECV_ONLY;
+if(Token.INACTIVE.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.StreamMode.INACTIVE;
+if(Token.LOOPBACK.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.StreamMode.LOOPBACK;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.descriptor.StreamMode");
+}
+public static javax.megaco.message.descriptor.SignalParamType SignalParamTypeForValue(String value) {
+if(Token.LIST.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.SignalParamType.LIST;
+if(Token.REQUEST.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.SignalParamType.REQUEST;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.descriptor.SignalParamType");
+}
+public static javax.megaco.message.descriptor.ServiceState ServiceStateForValue(String value) {
+if(Token.OOS.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ServiceState.OOS;
+if(Token.INS.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ServiceState.INS;
+if(Token.TEST.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ServiceState.TEST;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.descriptor.ServiceState");
+}
+public static javax.megaco.message.descriptor.MuxType MuxTypeForValue(String value) {
+if(Token.H221.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.MuxType.H221;
+if(Token.H223.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.MuxType.H223;
+if(Token.H226.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.MuxType.H226;
+if(Token.V76.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.MuxType.V76;
+if(Token.EXT.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.MuxType.EXT;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.descriptor.MuxType");
+}
+public static javax.megaco.message.descriptor.SignalNotifyReason SignalNotifyReasonForValue(String value) {
+if(Token.TIMEOUT.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.SignalNotifyReason.TIMEOUT;
+if(Token.INTEVENT.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.SignalNotifyReason.INT_EVENT;
+if(Token.INTSIGNAL.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.SignalNotifyReason.INT_SIGNAL;
+if(Token.OTHER.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.SignalNotifyReason.OTHER;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.descriptor.SignalNotifyReason");
+}
+public static javax.megaco.message.descriptor.EventBufferCtrl EventBufferCtrlForValue(String value) {
+if(Token.OFF.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.EventBufferCtrl.OFF;
+if(Token.LOCKSTEP.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.EventBufferCtrl.LOCK_STEP;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.descriptor.EventBufferCtrl");
+}
+public static javax.megaco.message.descriptor.ModemType ModemTypeForValue(String value) {
+if(Token.V32BIS.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ModemType.V32BIS;
+if(Token.V22BIS.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ModemType.V22BIS;
+if(Token.V18.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ModemType.V18;
+if(Token.V22.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ModemType.V22;
+if(Token.V32.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ModemType.V32;
+if(Token.V34.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ModemType.V34;
+if(Token.V90.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ModemType.V90;
+if(Token.V91.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ModemType.V91;
+if(Token.SYNCHISDN.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ModemType.SYNCH_ISDN;
+if(Token.EXT.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.ModemType.EXT;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.descriptor.ModemType");
+}
+public static javax.megaco.message.descriptor.TopologyDirection TopologyDirectionForValue(String value) {
+if(Token.BOTHWAY.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.TopologyDirection.BOTHWAY;
+if(Token.ISOLATE.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.TopologyDirection.ISOLATE;
+if(Token.ONEWAY.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.TopologyDirection.ONEWAY;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.descriptor.TopologyDirection");
+}
+public static javax.megaco.message.descriptor.SignalType SignalTypeForValue(String value) {
+if(Token.BRIEF.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.SignalType.BRIEF;
+if(Token.ONOFF.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.SignalType.ON_OFF;
+if(Token.TIMEOUT.equalsIgnoreCase(value)) return javax.megaco.message.descriptor.SignalType.TIMEOUT;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.descriptor.SignalType");
+}
+public static javax.megaco.message.DescriptorType DescriptorTypeForValue(String value) {
+if(Token.EVENT.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.EVENT_DESC;
+if(Token.DIGITMAP.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.DIGIT_MAP_DESC;
+if(Token.SIGNAL.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.SIGNAL_DESC;
+if(Token.MEDIA.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.MEDIA_DESC;
+if(Token.STREAM.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.STREAM_DESC;
+if(Token.LOCALCONTROL.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.LOCAL_CONTROL_DESC;
+if(Token.TERMINATIONSTATE.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.TERMINATION_STATE_DESC;
+if(Token.SERVICECHANGE.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.SERVICE_CHANGE_DESC;
+if(Token.SERVICECHANGE.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.SERVICE_CHANGE_RESP_DESC;
+if(Token.AUDITCAP.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.AUDIT_CAP_DESC;
+if(Token.AUDITVAL.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.AUDIT_VAL_DESC;
+if(Token.AUDITCAPREPLY.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.AUDIT_CAP_REPLY_DESC;
+if(Token.AUDITVALREPLY.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.AUDIT_VAL_REPLY_DESC;
+if(Token.EVENTBUF.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.EVENT_BUF_DESC;
+if(Token.STATISTICS.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.STATISTICS_DESC;
+if(Token.PACKAGE.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.PACKAGE_DESC;
+if(Token.ERROR.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.ERROR_DESC;
+if(Token.MODEM.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.MODEM_DESC;
+if(Token.MUX.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.MUX_DESC;
+if(Token.TOPOLOGY.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.TOPOLOGY_DESC;
+if(Token.CTXTERMAUDIT.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.CTX_TERM_AUDIT_DESC;
+if(Token.OBSERVEDEVENT.equalsIgnoreCase(value)) return javax.megaco.message.DescriptorType.OBSERVED_EVENT_DESC;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.DescriptorType");
+}
+public static javax.megaco.message.CommandType CommandTypeForValue(String value) {
+if(Token.COMMANDREQ.equalsIgnoreCase(value)) return javax.megaco.message.CommandType.COMMAND_REQ;
+if(Token.COMMAND.equalsIgnoreCase(value)) return javax.megaco.message.CommandType.COMMAND_RESP;
+if(Token.ACTIONREQ.equalsIgnoreCase(value)) return javax.megaco.message.CommandType.ACTION_REQ;
+if(Token.ACTION.equalsIgnoreCase(value)) return javax.megaco.message.CommandType.ACTION_RESP;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.CommandType");
+}
+public static javax.megaco.message.CmdResponseType CmdResponseTypeForValue(String value) {
+if(Token.ADD.equalsIgnoreCase(value)) return javax.megaco.message.CmdResponseType.ADD_RESP;
+if(Token.MODIFY.equalsIgnoreCase(value)) return javax.megaco.message.CmdResponseType.MODIFY_RESP;
+if(Token.MOVE.equalsIgnoreCase(value)) return javax.megaco.message.CmdResponseType.MOVE_RESP;
+if(Token.SERVICECHANGE.equalsIgnoreCase(value)) return javax.megaco.message.CmdResponseType.SERVICE_CHANGE_RESP;
+if(Token.NOTIFY.equalsIgnoreCase(value)) return javax.megaco.message.CmdResponseType.NOTIFY_RESP;
+if(Token.AUDITVAL.equalsIgnoreCase(value)) return javax.megaco.message.CmdResponseType.AUDIT_VAL_RESP;
+if(Token.AUDITCAP.equalsIgnoreCase(value)) return javax.megaco.message.CmdResponseType.AUDIT_CAP_RESP;
+if(Token.SUBTRACT.equalsIgnoreCase(value)) return javax.megaco.message.CmdResponseType.SUBTRACT_RESP;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.CmdResponseType");
+}
+public static javax.megaco.message.CommandReq CommandReqForValue(String value) {
+}
+public static javax.megaco.message.CommandResp CommandRespForValue(String value) {
+}
+public static javax.megaco.message.TermType TermTypeForValue(String value) {
+if(Token.NORMAL.equalsIgnoreCase(value)) return javax.megaco.message.TermType.NORMAL;
+if(Token.CHOOSE.equalsIgnoreCase(value)) return javax.megaco.message.TermType.CHOOSE;
+if(Token.ROOT.equalsIgnoreCase(value)) return javax.megaco.message.TermType.ROOT;
+if(Token.WILDCARD.equalsIgnoreCase(value)) return javax.megaco.message.TermType.WILDCARD;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.TermType");
+}
+public static javax.megaco.message.CmdRequestType CmdRequestTypeForValue(String value) {
+if(Token.ADDREQ.equalsIgnoreCase(value)) return javax.megaco.message.CmdRequestType.ADD_REQ;
+if(Token.MODIFYREQ.equalsIgnoreCase(value)) return javax.megaco.message.CmdRequestType.MODIFY_REQ;
+if(Token.MOVEREQ.equalsIgnoreCase(value)) return javax.megaco.message.CmdRequestType.MOVE_REQ;
+if(Token.SERVICECHANGEREQ.equalsIgnoreCase(value)) return javax.megaco.message.CmdRequestType.SERVICE_CHANGE_REQ;
+if(Token.NOTIFYREQ.equalsIgnoreCase(value)) return javax.megaco.message.CmdRequestType.NOTIFY_REQ;
+if(Token.AUDITVALREQ.equalsIgnoreCase(value)) return javax.megaco.message.CmdRequestType.AUDIT_VAL_REQ;
+if(Token.AUDITCAPREQ.equalsIgnoreCase(value)) return javax.megaco.message.CmdRequestType.AUDIT_CAP_REQ;
+if(Token.SUBTRACTREQ.equalsIgnoreCase(value)) return javax.megaco.message.CmdRequestType.SUBTRACT_REQ;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.message.CmdRequestType");
+}
+public static javax.megaco.association.SrvChngMethod SrvChngMethodForValue(String value) {
+if(Token.GRACEFUL.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngMethod.GRACEFUL;
+if(Token.FORCED.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngMethod.FORCED;
+if(Token.RESTART.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngMethod.RESTART;
+if(Token.DISCONNECTED.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngMethod.DISCONNECTED;
+if(Token.HANDOFF.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngMethod.HANDOFF;
+if(Token.FAILOVER.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngMethod.FAILOVER;
+if(Token.EXTENSION.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngMethod.EXTENSION;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.association.SrvChngMethod");
+}
+public static javax.megaco.association.SrvChngReason SrvChngReasonForValue(String value) {
+if(Token.R900.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R900;
+if(Token.R901.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R901;
+if(Token.R902.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R902;
+if(Token.R903.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R903;
+if(Token.R904.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R904;
+if(Token.R905.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R905;
+if(Token.R906.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R906;
+if(Token.R907.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R907;
+if(Token.R908.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R908;
+if(Token.R909.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R909;
+if(Token.R910.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R910;
+if(Token.R911.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R911;
+if(Token.R912.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R912;
+if(Token.R913.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R913;
+if(Token.R914.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R914;
+if(Token.R915.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R915;
+if(Token.R916.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R916;
+if(Token.R917.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R917;
+if(Token.R918.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R918;
+if(Token.R919.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R919;
+if(Token.R920.equalsIgnoreCase(value)) return javax.megaco.association.SrvChngReason.R920;
+throw new IllegalArgumentException("token " + value + " not known for type javax.megaco.association.SrvChngReason");
+}
+public static String valueForParamValueType(int value) {
+switch(value){
+case javax.megaco.pkg.ParamValueType.M_STRING:return ProtocolToken.STRING.getFirstToken();
+case javax.megaco.pkg.ParamValueType.M_INTEGER:return ProtocolToken.INTEGER.getFirstToken();
+case javax.megaco.pkg.ParamValueType.M_BOOLEAN:return ProtocolToken.BOOLEAN.getFirstToken();
+case javax.megaco.pkg.ParamValueType.M_DOUBLE:return ProtocolToken.DOUBLE.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.pkg.ParamValueType");
+  }
+}
+public static String valueForPkgItemType(int value) {
+switch(value){
+case javax.megaco.pkg.PkgItemType.M_ALL:return ProtocolToken.ALL.getFirstToken();
+case javax.megaco.pkg.PkgItemType.M_EVENT:return ProtocolToken.EVENT.getFirstToken();
+case javax.megaco.pkg.PkgItemType.M_SIGNAL:return ProtocolToken.SIGNAL.getFirstToken();
+case javax.megaco.pkg.PkgItemType.M_STATISTICS:return ProtocolToken.STATISTICS.getFirstToken();
+case javax.megaco.pkg.PkgItemType.M_PROPERTY:return ProtocolToken.PROPERTY.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.pkg.PkgItemType");
+  }
+}
+public static String valueForParamRelation(int value) {
+switch(value){
+case javax.megaco.pkg.ParamRelation.M_SET:return ProtocolToken.SET.getFirstToken();
+case javax.megaco.pkg.ParamRelation.M_SUBLIST:return ProtocolToken.SUBLIST.getFirstToken();
+case javax.megaco.pkg.ParamRelation.M_RANGE:return ProtocolToken.RANGE.getFirstToken();
+case javax.megaco.pkg.ParamRelation.M_EQUAL:return ProtocolToken.EQUAL.getFirstToken();
+case javax.megaco.pkg.ParamRelation.M_NOT_EQUAL:return ProtocolToken.NOTEQUAL.getFirstToken();
+case javax.megaco.pkg.ParamRelation.M_GREATER:return ProtocolToken.GREATER.getFirstToken();
+case javax.megaco.pkg.ParamRelation.M_LESS:return ProtocolToken.LESS.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.pkg.ParamRelation");
+  }
+}
+public static String valueForStreamMode(int value) {
+switch(value){
+case javax.megaco.message.descriptor.StreamMode.M_SEND_ONLY:return ProtocolToken.SENDONLY.getFirstToken();
+case javax.megaco.message.descriptor.StreamMode.M_SEND_RECV:return ProtocolToken.SENDRECV.getFirstToken();
+case javax.megaco.message.descriptor.StreamMode.M_RECV_ONLY:return ProtocolToken.RECVONLY.getFirstToken();
+case javax.megaco.message.descriptor.StreamMode.M_INACTIVE:return ProtocolToken.INACTIVE.getFirstToken();
+case javax.megaco.message.descriptor.StreamMode.M_LOOPBACK:return ProtocolToken.LOOPBACK.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.descriptor.StreamMode");
+  }
+}
+public static String valueForSignalParamType(int value) {
+switch(value){
+case javax.megaco.message.descriptor.SignalParamType.M_LIST:return ProtocolToken.LIST.getFirstToken();
+case javax.megaco.message.descriptor.SignalParamType.M_REQUEST:return ProtocolToken.REQUEST.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.descriptor.SignalParamType");
+  }
+}
+public static String valueForServiceState(int value) {
+switch(value){
+case javax.megaco.message.descriptor.ServiceState.M_OOS:return ProtocolToken.OOS.getFirstToken();
+case javax.megaco.message.descriptor.ServiceState.M_INS:return ProtocolToken.INS.getFirstToken();
+case javax.megaco.message.descriptor.ServiceState.M_TEST:return ProtocolToken.TEST.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.descriptor.ServiceState");
+  }
+}
+public static String valueForMuxType(int value) {
+switch(value){
+case javax.megaco.message.descriptor.MuxType.M_H221:return ProtocolToken.H221.getFirstToken();
+case javax.megaco.message.descriptor.MuxType.M_H223:return ProtocolToken.H223.getFirstToken();
+case javax.megaco.message.descriptor.MuxType.M_H226:return ProtocolToken.H226.getFirstToken();
+case javax.megaco.message.descriptor.MuxType.M_V76:return ProtocolToken.V76.getFirstToken();
+case javax.megaco.message.descriptor.MuxType.M_EXT:return ProtocolToken.EXT.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.descriptor.MuxType");
+  }
+}
+public static String valueForSignalNotifyReason(int value) {
+switch(value){
+case javax.megaco.message.descriptor.SignalNotifyReason.M_TIMEOUT:return ProtocolToken.TIMEOUT.getFirstToken();
+case javax.megaco.message.descriptor.SignalNotifyReason.M_INT_EVENT:return ProtocolToken.INTEVENT.getFirstToken();
+case javax.megaco.message.descriptor.SignalNotifyReason.M_INT_SIGNAL:return ProtocolToken.INTSIGNAL.getFirstToken();
+case javax.megaco.message.descriptor.SignalNotifyReason.M_OTHER:return ProtocolToken.OTHER.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.descriptor.SignalNotifyReason");
+  }
+}
+public static String valueForEventBufferCtrl(int value) {
+switch(value){
+case javax.megaco.message.descriptor.EventBufferCtrl.M_OFF:return ProtocolToken.OFF.getFirstToken();
+case javax.megaco.message.descriptor.EventBufferCtrl.M_LOCK_STEP:return ProtocolToken.LOCKSTEP.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.descriptor.EventBufferCtrl");
+  }
+}
+public static String valueForModemType(int value) {
+switch(value){
+case javax.megaco.message.descriptor.ModemType.M_V32BIS:return ProtocolToken.V32BIS.getFirstToken();
+case javax.megaco.message.descriptor.ModemType.M_V22BIS:return ProtocolToken.V22BIS.getFirstToken();
+case javax.megaco.message.descriptor.ModemType.M_V18:return ProtocolToken.V18.getFirstToken();
+case javax.megaco.message.descriptor.ModemType.M_V22:return ProtocolToken.V22.getFirstToken();
+case javax.megaco.message.descriptor.ModemType.M_V32:return ProtocolToken.V32.getFirstToken();
+case javax.megaco.message.descriptor.ModemType.M_V34:return ProtocolToken.V34.getFirstToken();
+case javax.megaco.message.descriptor.ModemType.M_V90:return ProtocolToken.V90.getFirstToken();
+case javax.megaco.message.descriptor.ModemType.M_V91:return ProtocolToken.V91.getFirstToken();
+case javax.megaco.message.descriptor.ModemType.M_SYNCH_ISDN:return ProtocolToken.SYNCHISDN.getFirstToken();
+case javax.megaco.message.descriptor.ModemType.M_EXT:return ProtocolToken.EXT.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.descriptor.ModemType");
+  }
+}
+public static String valueForTopologyDirection(int value) {
+switch(value){
+case javax.megaco.message.descriptor.TopologyDirection.M_BOTHWAY:return ProtocolToken.BOTHWAY.getFirstToken();
+case javax.megaco.message.descriptor.TopologyDirection.M_ISOLATE:return ProtocolToken.ISOLATE.getFirstToken();
+case javax.megaco.message.descriptor.TopologyDirection.M_ONEWAY:return ProtocolToken.ONEWAY.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.descriptor.TopologyDirection");
+  }
+}
+public static String valueForSignalType(int value) {
+switch(value){
+case javax.megaco.message.descriptor.SignalType.M_BRIEF:return ProtocolToken.BRIEF.getFirstToken();
+case javax.megaco.message.descriptor.SignalType.M_ON_OFF:return ProtocolToken.ONOFF.getFirstToken();
+case javax.megaco.message.descriptor.SignalType.M_TIMEOUT:return ProtocolToken.TIMEOUT.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.descriptor.SignalType");
+  }
+}
+public static String valueForDescriptorType(int value) {
+switch(value){
+case javax.megaco.message.DescriptorType.M_EVENT_DESC:return ProtocolToken.EVENT.getFirstToken();
+case javax.megaco.message.DescriptorType.M_DIGIT_MAP_DESC:return ProtocolToken.DIGITMAP.getFirstToken();
+case javax.megaco.message.DescriptorType.M_SIGNAL_DESC:return ProtocolToken.SIGNAL.getFirstToken();
+case javax.megaco.message.DescriptorType.M_MEDIA_DESC:return ProtocolToken.MEDIA.getFirstToken();
+case javax.megaco.message.DescriptorType.M_STREAM_DESC:return ProtocolToken.STREAM.getFirstToken();
+case javax.megaco.message.DescriptorType.M_LOCAL_CONTROL_DESC:return ProtocolToken.LOCALCONTROL.getFirstToken();
+case javax.megaco.message.DescriptorType.M_TERMINATION_STATE_DESC:return ProtocolToken.TERMINATIONSTATE.getFirstToken();
+case javax.megaco.message.DescriptorType.M_SERVICE_CHANGE_DESC:return ProtocolToken.SERVICECHANGE.getFirstToken();
+case javax.megaco.message.DescriptorType.M_SERVICE_CHANGE_RESP_DESC:return ProtocolToken.SERVICECHANGE.getFirstToken();
+case javax.megaco.message.DescriptorType.M_AUDIT_CAP_DESC:return ProtocolToken.AUDITCAP.getFirstToken();
+case javax.megaco.message.DescriptorType.M_AUDIT_VAL_DESC:return ProtocolToken.AUDITVAL.getFirstToken();
+case javax.megaco.message.DescriptorType.M_AUDIT_CAP_REPLY_DESC:return ProtocolToken.AUDITCAPREPLY.getFirstToken();
+case javax.megaco.message.DescriptorType.M_AUDIT_VAL_REPLY_DESC:return ProtocolToken.AUDITVALREPLY.getFirstToken();
+case javax.megaco.message.DescriptorType.M_EVENT_BUF_DESC:return ProtocolToken.EVENTBUF.getFirstToken();
+case javax.megaco.message.DescriptorType.M_STATISTICS_DESC:return ProtocolToken.STATISTICS.getFirstToken();
+case javax.megaco.message.DescriptorType.M_PACKAGE_DESC:return ProtocolToken.PACKAGE.getFirstToken();
+case javax.megaco.message.DescriptorType.M_ERROR_DESC:return ProtocolToken.ERROR.getFirstToken();
+case javax.megaco.message.DescriptorType.M_MODEM_DESC:return ProtocolToken.MODEM.getFirstToken();
+case javax.megaco.message.DescriptorType.M_MUX_DESC:return ProtocolToken.MUX.getFirstToken();
+case javax.megaco.message.DescriptorType.M_TOPOLOGY_DESC:return ProtocolToken.TOPOLOGY.getFirstToken();
+case javax.megaco.message.DescriptorType.M_CTX_TERM_AUDIT_DESC:return ProtocolToken.CTXTERMAUDIT.getFirstToken();
+case javax.megaco.message.DescriptorType.M_OBSERVED_EVENT_DESC:return ProtocolToken.OBSERVEDEVENT.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.DescriptorType");
+  }
+}
+public static String valueForCommandType(int value) {
+switch(value){
+case javax.megaco.message.CommandType.M_COMMAND_REQ:return ProtocolToken.COMMANDREQ.getFirstToken();
+case javax.megaco.message.CommandType.M_COMMAND_RESP:return ProtocolToken.COMMAND.getFirstToken();
+case javax.megaco.message.CommandType.M_ACTION_REQ:return ProtocolToken.ACTIONREQ.getFirstToken();
+case javax.megaco.message.CommandType.M_ACTION_RESP:return ProtocolToken.ACTION.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.CommandType");
+  }
+}
+public static String valueForCmdResponseType(int value) {
+switch(value){
+case javax.megaco.message.CmdResponseType.M_ADD_RESP:return ProtocolToken.ADD.getFirstToken();
+case javax.megaco.message.CmdResponseType.M_MODIFY_RESP:return ProtocolToken.MODIFY.getFirstToken();
+case javax.megaco.message.CmdResponseType.M_MOVE_RESP:return ProtocolToken.MOVE.getFirstToken();
+case javax.megaco.message.CmdResponseType.M_SERVICE_CHANGE_RESP:return ProtocolToken.SERVICECHANGE.getFirstToken();
+case javax.megaco.message.CmdResponseType.M_NOTIFY_RESP:return ProtocolToken.NOTIFY.getFirstToken();
+case javax.megaco.message.CmdResponseType.M_AUDIT_VAL_RESP:return ProtocolToken.AUDITVAL.getFirstToken();
+case javax.megaco.message.CmdResponseType.M_AUDIT_CAP_RESP:return ProtocolToken.AUDITCAP.getFirstToken();
+case javax.megaco.message.CmdResponseType.M_SUBTRACT_RESP:return ProtocolToken.SUBTRACT.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.CmdResponseType");
+  }
+}
+public static String valueForCommandReq(int value) {
+  }
+}
+public static String valueForCommandResp(int value) {
+  }
+}
+public static String valueForTermType(int value) {
+switch(value){
+case javax.megaco.message.TermType.M_NORMAL:return ProtocolToken.NORMAL.getFirstToken();
+case javax.megaco.message.TermType.M_CHOOSE:return ProtocolToken.CHOOSE.getFirstToken();
+case javax.megaco.message.TermType.M_ROOT:return ProtocolToken.ROOT.getFirstToken();
+case javax.megaco.message.TermType.M_WILDCARD:return ProtocolToken.WILDCARD.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.TermType");
+  }
+}
+public static String valueForCmdRequestType(int value) {
+switch(value){
+case javax.megaco.message.CmdRequestType.M_ADD_REQ:return ProtocolToken.ADDREQ.getFirstToken();
+case javax.megaco.message.CmdRequestType.M_MODIFY_REQ:return ProtocolToken.MODIFYREQ.getFirstToken();
+case javax.megaco.message.CmdRequestType.M_MOVE_REQ:return ProtocolToken.MOVEREQ.getFirstToken();
+case javax.megaco.message.CmdRequestType.M_SERVICE_CHANGE_REQ:return ProtocolToken.SERVICECHANGEREQ.getFirstToken();
+case javax.megaco.message.CmdRequestType.M_NOTIFY_REQ:return ProtocolToken.NOTIFYREQ.getFirstToken();
+case javax.megaco.message.CmdRequestType.M_AUDIT_VAL_REQ:return ProtocolToken.AUDITVALREQ.getFirstToken();
+case javax.megaco.message.CmdRequestType.M_AUDIT_CAP_REQ:return ProtocolToken.AUDITCAPREQ.getFirstToken();
+case javax.megaco.message.CmdRequestType.M_SUBTRACT_REQ:return ProtocolToken.SUBTRACTREQ.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.message.CmdRequestType");
+  }
+}
+public static String valueForSrvChngMethod(int value) {
+switch(value){
+case javax.megaco.association.SrvChngMethod.M_GRACEFUL:return ProtocolToken.GRACEFUL.getFirstToken();
+case javax.megaco.association.SrvChngMethod.M_FORCED:return ProtocolToken.FORCED.getFirstToken();
+case javax.megaco.association.SrvChngMethod.M_RESTART:return ProtocolToken.RESTART.getFirstToken();
+case javax.megaco.association.SrvChngMethod.M_DISCONNECTED:return ProtocolToken.DISCONNECTED.getFirstToken();
+case javax.megaco.association.SrvChngMethod.M_HANDOFF:return ProtocolToken.HANDOFF.getFirstToken();
+case javax.megaco.association.SrvChngMethod.M_FAILOVER:return ProtocolToken.FAILOVER.getFirstToken();
+case javax.megaco.association.SrvChngMethod.M_EXTENSION:return ProtocolToken.EXTENSION.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.association.SrvChngMethod");
+  }
+}
+public static String valueForSrvChngReason(int value) {
+switch(value){
+case javax.megaco.association.SrvChngReason.M_R900:return ProtocolToken.R900.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R901:return ProtocolToken.R901.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R902:return ProtocolToken.R902.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R903:return ProtocolToken.R903.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R904:return ProtocolToken.R904.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R905:return ProtocolToken.R905.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R906:return ProtocolToken.R906.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R907:return ProtocolToken.R907.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R908:return ProtocolToken.R908.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R909:return ProtocolToken.R909.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R910:return ProtocolToken.R910.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R911:return ProtocolToken.R911.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R912:return ProtocolToken.R912.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R913:return ProtocolToken.R913.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R914:return ProtocolToken.R914.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R915:return ProtocolToken.R915.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R916:return ProtocolToken.R916.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R917:return ProtocolToken.R917.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R918:return ProtocolToken.R918.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R919:return ProtocolToken.R919.getFirstToken();
+case javax.megaco.association.SrvChngReason.M_R920:return ProtocolToken.R920.getFirstToken();
+default: throw new IllegalArgumentException("token " + value + " not known for value javax.megaco.association.SrvChngReason");
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE oc-resource-adaptor-jar PUBLIC
+    "-//Open Cloud Ltd.//DTD JAIN SLEE Resource Adaptor Extension 1.1//EN"
+    "http://www.opencloud.com/dtd/oc-resource-adaptor-jar_1_1.dtd">
+
+<oc-resource-adaptor-jar>
+    <resource-adaptor id="OCSIP">
+        <replicated-storage lock-strategy="pessimistic">
+            <description>Dialog Activity State</description>
+            <replicated-storage-name>dialogs</replicated-storage-name>
+        </replicated-storage>
+    </resource-adaptor>
+</oc-resource-adaptor-jar>
+

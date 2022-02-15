@@ -1,0 +1,9 @@
+exitOnError false
+deactivateservice name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/MegaCo-client/service/target/MegaCo-service-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/MegaCo-client/service/target/MegaCo-service-1.0-SNAPSHOT-du.jar 
+activateservice name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

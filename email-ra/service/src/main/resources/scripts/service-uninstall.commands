@@ -1,0 +1,6 @@
+exitOnError false
+
+deactivateservice name=Mail\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=Mail\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=Mail\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/mail/service/target/mail-service-1.0-SNAPSHOT-du.jar 

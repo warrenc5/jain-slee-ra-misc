@@ -1,0 +1,11 @@
+exitOnError false
+
+installlocaldu /home/wozza/.m2/repository/mofokom/jpa-ra/1.0-SNAPSHOT/jpa-ra-1.0-SNAPSHOT-du.jar
+createraentity name=JPA\ Resource\ Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT JPA\ Resource\ Adaptor\ Entity USE_MANAGED_TRANSACTIONS=true,ACTIVITY_DIMENSION=1000,PERSISTENCE_UNIT_NAME=mypu,UNMANAGED_DATASOURCE_NAME=MyUnmanagedDataSource,DATASOURCE_NAME=MyDataSource,REMOTE_COMMIT_LISTENER=false
+bindralinkname JPA\ Resource\ Adaptor\ Entity JPA\ Resource\ Adaptor\ Entity\ Link
+settracerlevel resourceadaptorentity name=JPA\ Resource\ AdaptorEntity root Finest
+settracerlevel resourceadaptorentity entity=JPA\ Resource\ Adaptor\ Entity JPAResourceAdaptor Finest
+settracerlevel resourceadaptorentity entity=JPA\ Resource\ Adaptor\ Entity RemoteCommitEventManager Finest
+settracerlevel resourceadaptorentity entity=JPA\ Resource\ Adaptor\ Entity Connection Finest
+activateraentity JPA\ Resource\ Adaptor\ Entity 
+

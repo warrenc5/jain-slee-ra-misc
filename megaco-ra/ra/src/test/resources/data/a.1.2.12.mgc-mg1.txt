@@ -1,0 +1,18 @@
+MEGACO/1 [123.123.123.4]:55555 Transaction = 10003 {
+       Context = $ {
+          Add = A4444,
+          Add = $ {
+              Media {
+                Stream = 1 {
+                     LocalControl {
+                         Mode = ReceiveOnly,
+                         nt/jit=40 ; in ms
+                     },
+                     Local { v=0 c=IN IP4 $ m=audio $ RTP/AVP 4
+   a=ptime:30 v=0 c=IN IP4 $ m=audio $ RTP/AVP 0
+                     }
+                }
+             }
+          }
+       } 
+}

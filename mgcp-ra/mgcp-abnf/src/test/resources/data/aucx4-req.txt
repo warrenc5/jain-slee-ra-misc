@@ -1,0 +1,4 @@
+AUCX 2003 aaln/1@rgw-2567.whatever.net MGCP 1.0
+I: 32F345E2
+F: C,N,L,M,LC,P
+

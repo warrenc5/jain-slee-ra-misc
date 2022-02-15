@@ -1,0 +1,4 @@
+RSIP 1204 *@rgw-2567.whatever.net MGCP 1.0
+RM: restart
+RD: 0
+

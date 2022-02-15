@@ -1,0 +1,8 @@
+MEGACO/1 [123.123.123.4]:55555 Transaction = 50006 {
+      Context = 5000 {
+         Modify = A5555 {
+            Events = 1235 {al/on{strict=state}},
+            Signals { } 
+         }
+      } }
+

@@ -1,0 +1,14 @@
+MDCX 1210 aaln/1@rgw-2567.whatever.net MGCP 1.0
+C: A3C47F21456789F0
+I: FDE234C8
+M: recvonly
+X: 0123456789AE
+R: L/hu
+S: G/rt
+
+v=0
+o=- 4723891 7428910 IN IP4 128.96.63.25
+s=-
+c=IN IP4 128.96.63.25
+t=0 0
+m=audio 3456 RTP/AVP 0

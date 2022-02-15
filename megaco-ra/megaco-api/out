@@ -1,0 +1,726 @@
+this.addMessageEncoder(javax.megaco.pkg.ParamValueType.class, new DefaultMessageEncoder<javax.megaco.pkg.ParamValueType>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.pkg.ParamValueType o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.pkg.PkgItem.class, new DefaultMessageEncoder<javax.megaco.pkg.PkgItem>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.pkg.PkgItem o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setAssociatedPkgId(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.pkg.PkgItemType.class, new DefaultMessageEncoder<javax.megaco.pkg.PkgItemType>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.pkg.PkgItemType o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.pkg.PkgConsts.class, new DefaultMessageEncoder<javax.megaco.pkg.PkgConsts>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.pkg.PkgConsts o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.pkg.PkgItemStr.class, new DefaultMessageEncoder<javax.megaco.pkg.PkgItemStr>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.pkg.PkgItemStr o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setPkgName(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setItemName(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setParameter(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setItemType(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.pkg.ParamRelation.class, new DefaultMessageEncoder<javax.megaco.pkg.ParamRelation>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.pkg.ParamRelation o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.ModemDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.ModemDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.ModemDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setModemParamValue(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.MediaDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.MediaDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.MediaDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMediaStreamParam(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setStreamDescriptor(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTermStateDescriptor(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.StreamMode.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.StreamMode>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.StreamMode o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.SignalParamType.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.SignalParamType>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.SignalParamType o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.ServiceState.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.ServiceState>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.ServiceState o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.SDPInfo.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.SDPInfo>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.SDPInfo o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSessionDescription(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSessionDescStr(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.SrvChngRespDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.SrvChngRespDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.SrvChngRespDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSrvChngAddress(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setHandOffMGCId(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSrvChngProfile(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setProtocolVersion(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDateValue(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTimeValue(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSrvChngMethod(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.TimeStamp.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.TimeStamp>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.TimeStamp o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.TermStateDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.TermStateDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.TermStateDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setServiceState(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setEvtBufferControl(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMegacoPkgPrptyItem(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMegacoPkgItemStr(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.EmbedFirstEventParam.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.EmbedFirstEventParam>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.EmbedFirstEventParam o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMegacoPkgItemStr(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setEventParam(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMegacoPkgEventItem(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.SrvChngDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.SrvChngDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.SrvChngDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSrvChngAddress(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setHandOffMGCId(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSrvChngProfile(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setProtocolVersion(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDateValue(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTimeValue(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSrvChngMethod(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSvcChngMethodExtension(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSrvChngReason(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSrvChngDelay(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setParameterExtention(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.EventBufferDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.EventBufferDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.EventBufferDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.MuxType.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.MuxType>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.MuxType o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.DigitStringPosition.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.DigitStringPosition>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.DigitStringPosition o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDigitStringPosition(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.SignalDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.SignalDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.SignalDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSignalParam(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.SignalNotifyReason.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.SignalNotifyReason>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.SignalNotifyReason o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.ModemParamValue.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.ModemParamValue>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.ModemParamValue o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setParamsValueRelation(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setParamName(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setParamsValue(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.EventDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.EventDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.EventDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setRequestedEventParam(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.ModemParam.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.ModemParam>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.ModemParam o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.RequestedEventParam.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.RequestedEventParam>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.RequestedEventParam o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setEventParam(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setEmbedFirstEventParam(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.PackageDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.PackageDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.PackageDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMegacoPkgItems(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMegacoPkgItemsStr(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.PackagesItem.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.PackagesItem>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.PackagesItem o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.SignalParam.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.SignalParam>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.SignalParam o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.EventBufParam.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.EventBufParam>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.EventBufParam o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setStreamId(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.EventBufferCtrl.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.EventBufferCtrl>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.EventBufferCtrl o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.EventParam.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.EventParam>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.EventParam o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setStreamId(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSignalDescriptor(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDigitMapName(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDigitMapValue(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDigitMapValueStr(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.AuditValRespDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.AuditValRespDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.AuditValRespDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDescriptor(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.ModemType.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.ModemType>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.ModemType o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.AuditValDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.AuditValDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.AuditValDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.MuxDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.MuxDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.MuxDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setExtensionString(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.ObservedEvent.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.ObservedEvent>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.ObservedEvent o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setStreamId(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTimeStamp(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.TopologyDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.TopologyDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.TopologyDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.MediaStreamParam.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.MediaStreamParam>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.MediaStreamParam o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setLclCtrlDescriptor(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setLocalDescriptor(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setRemoteDescriptor(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.TopologyDirection.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.TopologyDirection>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.TopologyDirection o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.LocalCtrlDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.LocalCtrlDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.LocalCtrlDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setStreamMode(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMegacoPkgPrptyItem(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMegacoPkgItemStr(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setReserveValue(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setReserveGroup(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.SignalType.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.SignalType>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.SignalType o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.CntxtTermAudDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.CntxtTermAudDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.CntxtTermAudDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setErrorDescriptor(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTerminationId(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.AuditCapRespDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.AuditCapRespDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.AuditCapRespDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDescriptor(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.ObsEventDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.ObsEventDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.ObsEventDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.DigitMapString.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.DigitMapString>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.DigitMapString o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDigitStringPosition(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.DigitStringPosition.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.DigitStringPosition>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.DigitStringPosition o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDigitStringPosition(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.SignalRequest.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.SignalRequest>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.SignalRequest o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setStreamId(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSignalType(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSignalNotifyReason(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setSignalDuration(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.ErrorDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.ErrorDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.ErrorDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setErrorString(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.AuditCapDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.AuditCapDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.AuditCapDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.StreamDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.StreamDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.StreamDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMediaStreamParam(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setStreamId(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.DigitMapValue.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.DigitMapValue>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.DigitMapValue o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTimerTValue(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTimerSValue(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTimerLValue(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDigitMapStrings(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.DigitMapDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.DigitMapDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.DigitMapDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDigitMapName(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDigitMapValue(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDigitMapValueStr(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.descriptor.StatsDescriptor.class, new DefaultMessageEncoder<javax.megaco.message.descriptor.StatsDescriptor>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.descriptor.StatsDescriptor o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.DescriptorType.class, new DefaultMessageEncoder<javax.megaco.message.DescriptorType>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.DescriptorType o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.CommandType.class, new DefaultMessageEncoder<javax.megaco.message.CommandType>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.CommandType o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.CmdResponseType.class, new DefaultMessageEncoder<javax.megaco.message.CmdResponseType>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.CmdResponseType o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.CommandReq.class, new DefaultMessageEncoder<javax.megaco.message.CommandReq>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.CommandReq o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDescriptor(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTermination(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setCntxtInfo(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setExchangeId(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.CommandResp.class, new DefaultMessageEncoder<javax.megaco.message.CommandResp>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.CommandResp o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setDescriptor(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTermination(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setCntxtInfo(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setExchangeId(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.Termination.class, new DefaultMessageEncoder<javax.megaco.message.Termination>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.Termination o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTermName(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTermName(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTermType(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTermWildCard(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.TermType.class, new DefaultMessageEncoder<javax.megaco.message.TermType>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.TermType o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.CmdRequestType.class, new DefaultMessageEncoder<javax.megaco.message.CmdRequestType>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.CmdRequestType o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.ContextInfo.class, new DefaultMessageEncoder<javax.megaco.message.ContextInfo>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.ContextInfo o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setContextParam(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.message.ContextParam.class, new DefaultMessageEncoder<javax.megaco.message.ContextParam>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.message.ContextParam o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setPriority(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setEM(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setTopologyDescriptor(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.association.LocalAddr.class, new DefaultMessageEncoder<javax.megaco.association.LocalAddr>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.association.LocalAddr o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setPortId(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMtp3Addr(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setAAL5Addr(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.association.RemoteAddr.class, new DefaultMessageEncoder<javax.megaco.association.RemoteAddr>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.association.RemoteAddr o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+MegaCoABNFProtocolEncoder.this.encode(session, o.setPortId(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setMtp3Addr(), out);
+MegaCoABNFProtocolEncoder.this.encode(session, o.setAAL5Addr(), out);
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.association.SrvChngMethod.class, new DefaultMessageEncoder<javax.megaco.association.SrvChngMethod>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.association.SrvChngMethod o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(javax.megaco.association.SrvChngReason.class, new DefaultMessageEncoder<javax.megaco.association.SrvChngReason>() {
+@Override
+ boolean encode(IoSession session,javax.megaco.association.SrvChngReason o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+
+this.addMessageEncoder(java.util.EventObject.class, new DefaultMessageEncoder<java.util.EventObject>() {
+@Override
+ boolean encode(IoSession session,java.util.EventObject o,IoBuffer buffer,ProtocolEncoderOutput out) throws Exception {
+ 
+return false;
+}
+});
+
+

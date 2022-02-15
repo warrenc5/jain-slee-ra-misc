@@ -1,0 +1,749 @@
+<doc>
+<?xml version="1.0"?>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  </head>
+  <body>
+    <br/>
+    <table border="1">
+      <tr>
+        <th>Resource Adaptor Name</th>
+        <td>ACIP Resource Adaptor</td>
+      </tr>
+      <tr>
+        <th>Resource Adaptor Vendor</th>
+        <td>MOFOKOM</td>
+      </tr>
+      <tr>
+        <th>Resource Adaptor Version</th>
+        <td>4.1</td>
+      </tr>
+      <tr>
+        <th>Class name</th>
+        <td>mofokom.ccn.air.acip.resource.impl.ACIPResourceAdaptor</td>
+      </tr>
+    </table>
+    <br/>
+    <table border="1">
+      <tr>
+        <th>Property name </th>
+        <th>Property type </th>
+        <th>Default </th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>ACTIVITY_DIMENSION</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>AUTHENTICATION</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>CHUNKING</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>CONNECTION_REQUEST_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>CONNECTION_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>DEST_HOST</td>
+        <td>java.lang.String</td>
+        <td>localhost</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>DEST_PORT</td>
+        <td>java.lang.Integer</td>
+        <td>81</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>DEST_URL</td>
+        <td>java.lang.String</td>
+        <td>/</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>EXECUTOR_MAX_POOL_SIZE</td>
+        <td>java.lang.Integer</td>
+        <td>1</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>EXECUTOR_CORE_POOL_SIZE</td>
+        <td>java.lang.Integer</td>
+        <td>1</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>EXECUTOR_POOL_TIMEOUT</td>
+        <td>java.lang.Long</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>LISTEN_PORT</td>
+        <td>java.lang.Integer</td>
+        <td>81</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>MAX_CONNECTIONS</td>
+        <td>java.lang.Integer</td>
+        <td>1</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>PENDING_REQUEST_CAPACITY</td>
+        <td>java.lang.Integer</td>
+        <td>10</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>POOL_CONNECTION_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>REALM_USER_NAME</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td/>
+      </tr>
+      <tr>
+        <td>REALM_USER_PASSWORD</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td/>
+      </tr>
+      <tr>
+        <td>RESPONSE_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SHUTDOWN_TIME</td>
+        <td>java.lang.Long</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SOCKET_BUFFER_SIZE</td>
+        <td>java.lang.Integer</td>
+        <td>2048</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SOCKET_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>STALE_CONNECTIONS_CHECK</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>STRICT_MESSAGING</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SYNCHRONOUS</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>TCP_NO_DELAY</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>USER_AGENT</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td/>
+      </tr>
+      <tr>
+        <td>WORK_QUEUE</td>
+        <td>java.lang.Integer</td>
+        <td>10</td>
+        <td/>
+      </tr>
+    </table>
+  </body>
+</html>
+<?xml version="1.0"?>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  </head>
+  <body>
+    <br/>
+    <table border="1">
+      <tr>
+        <th>Resource Adaptor Name</th>
+        <td>UCIP Resource Adaptor</td>
+      </tr>
+      <tr>
+        <th>Resource Adaptor Vendor</th>
+        <td>MOFOKOM</td>
+      </tr>
+      <tr>
+        <th>Resource Adaptor Version</th>
+        <td>4.1</td>
+      </tr>
+      <tr>
+        <th>Class name</th>
+        <td>mofokom.ccn.air.ucip.resource.impl.UCIPResourceAdaptor</td>
+      </tr>
+    </table>
+    <br/>
+    <table border="1">
+      <tr>
+        <th>Property name </th>
+        <th>Property type </th>
+        <th>Default </th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>ACTIVITY_DIMENSION</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>AUTHENTICATION</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>CHUNKING</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>CONNECTION_REQUEST_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>CONNECTION_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>DEST_HOST</td>
+        <td>java.lang.String</td>
+        <td>localhost</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>DEST_PORT</td>
+        <td>java.lang.Integer</td>
+        <td>81</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>DEST_URL</td>
+        <td>java.lang.String</td>
+        <td>/</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>EXECUTOR_MAX_POOL_SIZE</td>
+        <td>java.lang.Integer</td>
+        <td>1</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>EXECUTOR_CORE_POOL_SIZE</td>
+        <td>java.lang.Integer</td>
+        <td>1</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>EXECUTOR_POOL_TIMEOUT</td>
+        <td>java.lang.Long</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>LISTEN_PORT</td>
+        <td>java.lang.Integer</td>
+        <td>81</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>MAX_CONNECTIONS</td>
+        <td>java.lang.Integer</td>
+        <td>1</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>PENDING_REQUEST_CAPACITY</td>
+        <td>java.lang.Integer</td>
+        <td>10</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>POOL_CONNECTION_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>REALM_USER_NAME</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td/>
+      </tr>
+      <tr>
+        <td>REALM_USER_PASSWORD</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td/>
+      </tr>
+      <tr>
+        <td>RESPONSE_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SHUTDOWN_TIME</td>
+        <td>java.lang.Long</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SOCKET_BUFFER_SIZE</td>
+        <td>java.lang.Integer</td>
+        <td>2048</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SOCKET_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>STALE_CONNECTIONS_CHECK</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>STRICT_MESSAGING</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SYNCHRONOUS</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>TCP_NO_DELAY</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>USER_AGENT</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td/>
+      </tr>
+      <tr>
+        <td>WORK_QUEUE</td>
+        <td>java.lang.Integer</td>
+        <td>10</td>
+        <td/>
+      </tr>
+    </table>
+  </body>
+</html>
+<?xml version="1.0"?>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  </head>
+  <body>
+    <br/>
+    <table border="1">
+      <tr>
+        <th>Resource Adaptor Name</th>
+        <td>VSIP Resource Adaptor</td>
+      </tr>
+      <tr>
+        <th>Resource Adaptor Vendor</th>
+        <td>MOFOKOM</td>
+      </tr>
+      <tr>
+        <th>Resource Adaptor Version</th>
+        <td>2.5</td>
+      </tr>
+      <tr>
+        <th>Class name</th>
+        <td>mofokom.ccn.vs.vsip.resource.impl.VSIPResourceAdaptor</td>
+      </tr>
+    </table>
+    <br/>
+    <table border="1">
+      <tr>
+        <th>Property name </th>
+        <th>Property type </th>
+        <th>Default </th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>ACTIVITY_DIMENSION</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>AUTHENTICATION</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>CHUNKING</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>CONNECTION_REQUEST_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>CONNECTION_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>DEST_HOST</td>
+        <td>java.lang.String</td>
+        <td>localhost</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>DEST_PORT</td>
+        <td>java.lang.Integer</td>
+        <td>81</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>DEST_URL</td>
+        <td>java.lang.String</td>
+        <td>/</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>EXECUTOR_MAX_POOL_SIZE</td>
+        <td>java.lang.Integer</td>
+        <td>1</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>EXECUTOR_CORE_POOL_SIZE</td>
+        <td>java.lang.Integer</td>
+        <td>1</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>EXECUTOR_POOL_TIMEOUT</td>
+        <td>java.lang.Long</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>LISTEN_PORT</td>
+        <td>java.lang.Integer</td>
+        <td>81</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>MAX_CONNECTIONS</td>
+        <td>java.lang.Integer</td>
+        <td>1</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>PENDING_REQUEST_CAPACITY</td>
+        <td>java.lang.Integer</td>
+        <td>10</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>POOL_CONNECTION_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>REALM_USER_NAME</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td/>
+      </tr>
+      <tr>
+        <td>REALM_USER_PASSWORD</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td/>
+      </tr>
+      <tr>
+        <td>RESPONSE_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SHUTDOWN_TIME</td>
+        <td>java.lang.Long</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SOCKET_BUFFER_SIZE</td>
+        <td>java.lang.Integer</td>
+        <td>2048</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SOCKET_TIMEOUT</td>
+        <td>java.lang.Integer</td>
+        <td>1000</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>STALE_CONNECTIONS_CHECK</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>STRICT_MESSAGING</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>SYNCHRONOUS</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>TCP_NO_DELAY</td>
+        <td>java.lang.Boolean</td>
+        <td>false</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>USER_AGENT</td>
+        <td>java.lang.String</td>
+        <td/>
+        <td/>
+      </tr>
+      <tr>
+        <td>WORK_QUEUE</td>
+        <td>java.lang.Integer</td>
+        <td>10</td>
+        <td/>
+      </tr>
+    </table>
+  </body>
+</html>
+</doc><doc>
+<?xml version="1.0"?>
+<br/><table border="1">
+  <tr>
+    <th>Resource adapter type name</th>
+    <td>ACIP Resource Adaptor Type</td>
+  </tr>
+  <tr>
+    <th>Resource adapter type vendor</th>
+    <td>MOFOKOM</td>
+  </tr>
+  <tr>
+    <th>Resource adapter type version</th>
+    <td>4.1</td>
+  </tr>
+</table><br/><table border="1">
+  <tr>
+    <th>Activity Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>mofokom.ccn.air.acip.resource.ACIPActivity</td>
+    <td>ACIPActivity</td>
+  </tr>
+</table><table border="1">
+  <tr>
+    <th>Activity context interface factory name</th>
+    <td>mofokom.ccn.air.acip.resource.ACIPActivityContextInterfaceFactory
+                </td>
+  </tr>
+  <tr>
+    <th>Resource adaptor interface name</th>
+    <td>mofokom.ccn.air.acip.resource.ACIPResourceAdaptorInterface
+                </td>
+  </tr>
+</table>
+<?xml version="1.0"?>
+<br/><table border="1">
+  <tr>
+    <th>Resource adapter type name</th>
+    <td>UCIP Resource Adaptor Type</td>
+  </tr>
+  <tr>
+    <th>Resource adapter type vendor</th>
+    <td>MOFOKOM</td>
+  </tr>
+  <tr>
+    <th>Resource adapter type version</th>
+    <td>4.1</td>
+  </tr>
+</table><br/><table border="1">
+  <tr>
+    <th>Activity Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>mofokom.ccn.air.ucip.resource.UCIPActivity</td>
+    <td>UCIPActivity</td>
+  </tr>
+</table><table border="1">
+  <tr>
+    <th>Activity context interface factory name</th>
+    <td>mofokom.ccn.air.ucip.resource.UCIPActivityContextInterfaceFactory
+                </td>
+  </tr>
+  <tr>
+    <th>Resource adaptor interface name</th>
+    <td>mofokom.ccn.air.ucip.resource.UCIPResourceAdaptorInterface
+                </td>
+  </tr>
+</table>
+<?xml version="1.0"?>
+<br/><table border="1">
+  <tr>
+    <th>Resource adapter type name</th>
+    <td>VSIP Resource Adaptor Type</td>
+  </tr>
+  <tr>
+    <th>Resource adapter type vendor</th>
+    <td>MOFOKOM</td>
+  </tr>
+  <tr>
+    <th>Resource adapter type version</th>
+    <td>2.5</td>
+  </tr>
+</table><br/><table border="1">
+  <tr>
+    <th>Activity Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>mofokom.ccn.vs.vsip.resource.VSIPActivity</td>
+    <td>VSIPActivity</td>
+  </tr>
+</table><table border="1">
+  <tr>
+    <th>Activity context interface factory name</th>
+    <td>mofokom.ccn.vs.vsip.resource.VSIPActivityContextInterfaceFactory
+                </td>
+  </tr>
+  <tr>
+    <th>Resource adaptor interface name</th>
+    <td>mofokom.ccn.vs.vsip.resource.VSIPResourceAdaptorInterface
+                </td>
+  </tr>
+</table>
+</doc><doc>
+<?xml version="1.0"?>
+<br/><table border="1">
+  <tr>
+    <th>Event type name </th>
+    <th>Event type vendor </th>
+    <th>Event type version </th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>acip.Fault</td>
+    <td>MOFOKOM</td>
+    <td>4.1</td>
+    <td/>
+  </tr>
+</table>
+<?xml version="1.0"?>
+<br/><table border="1">
+  <tr>
+    <th>Event type name </th>
+    <th>Event type vendor </th>
+    <th>Event type version </th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>ucip.Fault</td>
+    <td>MOFOKOM</td>
+    <td>4.1</td>
+    <td/>
+  </tr>
+</table>
+<?xml version="1.0"?>
+<br/><table border="1">
+  <tr>
+    <th>Event type name </th>
+    <th>Event type vendor </th>
+    <th>Event type version </th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>vsip.Fault</td>
+    <td>MOFOKOM</td>
+    <td>2.5</td>
+    <td/>
+  </tr>
+</table>
+</doc><doc>
+</doc>

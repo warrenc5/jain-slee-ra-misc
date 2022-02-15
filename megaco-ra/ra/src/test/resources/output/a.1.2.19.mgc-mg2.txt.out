@@ -1,0 +1,10 @@
+MEGACO/1 [123.123.123.4]:55555 Transaction = 50007 { 
+Context = - { 
+AuditValue = A5556 { 
+Audit { 
+Signals , Media , Statistics , Events , DigitMap , Packages  } 
+
+ } 
+ } 
+ } 
+ }

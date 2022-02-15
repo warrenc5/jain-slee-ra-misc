@@ -1,0 +1,20 @@
+exitOnError false
+deactivateservice name=MGCP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=MGCP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=MGCP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/mgcp-service/target/mgcp-service-1.0-SNAPSHOT-du.jar 
+
+deactivateraentity MGCP\ Resource\ Adaptor\ Entity 
+removeallactivities MGCP\ Resource\ Adaptor\ Entity
+waittilraentityisinactive MGCP\ Resource\ Adaptor\ Entity 
+unbindralinkname MGCP\ Resource\ Adaptor\ Entity\ Link 
+removeraentity MGCP\ Resource\ Adaptor\ Entity 
+uninstall file:/home/code/mgcp-ra/target/mgcp-ra-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/mgcp-ra/target/mgcp-ra-1.0-SNAPSHOT-du.jar 
+createraentity name=MGCP\ Resource\ Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT MGCP\ Resource\ Adaptor\ Entity ACTIVITY_DIMENSION=10
+bindralinkname MGCP\ Resource\ Adaptor\ Entity MGCP\ Resource\ Adaptor\ Entity\ Link
+activateraentity MGCP\ Resource\ Adaptor\ Entity 
+installlocaldu /code/mgcp-service/target/mgcp-service-1.0-SNAPSHOT-du.jar 
+activateservice name=MGCP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

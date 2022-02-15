@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version xmlns:mvn="http://maven.apache.org/POM/4.0.0">1.0-SNAPSHOT</version>
+  <groupId xmlns:mvn="http://maven.apache.org/POM/4.0.0">mofokom</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>jpa-ra</artifactId>
+  <packaging>jar</packaging>
+  <name>JPA SLEE RA</name>
+  <url xmlns:mvn="http://maven.apache.org/POM/4.0.0">http://www.mofokom.biz/site/${project.artifactId}/</url>
+  <distributionManagement xmlns:mvn="http://maven.apache.org/POM/4.0.0">
+    <snapshotRepository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.biz/maven/snapshots-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+    <repository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.biz/maven/releases-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </repository>
+    <site>
+      <id>mofokom</id>
+      <url>scp://${site.url}/${project.artifactId}</url>
+    </site>
+  </distributionManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.openjpa</groupId>
+      <artifactId>openjpa-all</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.slee</groupId>
+      <artifactId>jainslee-api</artifactId>
+      <version>1.1</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>persistence-api</artifactId>
+      <version> ${pom.version}</version>
+      <type>jar</type>
+    </dependency>
+    <!--
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jpa_2.0_spec</artifactId>
+            <version>1.1</version>
+            <scope>compile</scope>
+        </dependency>
+        -->
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>deadlock</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+</project>

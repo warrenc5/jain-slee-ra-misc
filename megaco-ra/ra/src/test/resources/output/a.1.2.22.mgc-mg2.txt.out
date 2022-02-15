@@ -1,0 +1,16 @@
+MEGACO/1 [123.123.123.4]:55555 Transaction = 50009 { 
+Context = 5000 { 
+Subtract = A5555 { 
+Audit { 
+Statistics  } 
+
+ } 
+ }  , 
+Subtract = A5556 { 
+Audit { 
+Statistics  } 
+
+ } 
+ } 
+ } 
+ }

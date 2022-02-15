@@ -1,0 +1,7 @@
+exitOnError false
+deactivateservice name=JPA\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=JPA\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=JPA\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/usr/src/maven/repository.old/mofokom/jpa-service/1.0-SNAPSHOT/jpa-service-1.0-SNAPSHOT-du.jar
+
+

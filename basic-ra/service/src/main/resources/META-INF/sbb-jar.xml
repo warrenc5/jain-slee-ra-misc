@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE sbb-jar PUBLIC
+"-//Sun Microsystems, Inc.//DTD JAIN SLEE SBB 1.1//EN"
+"basic://java.sun.com/dtd/slee-sbb-jar_1_1.dtd">
+<sbb-jar>
+    <sbb id="BasicSBB">
+        <description> Basic Service Sbb </description>
+        <sbb-name> Basic Sbb </sbb-name>
+        <sbb-vendor> MOFOKOM </sbb-vendor>
+        <sbb-version> ${pom.version} </sbb-version>
+        <sbb-alias> BasicSBB </sbb-alias>
+        <library-ref>
+            <library-name>Basic Library</library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version>${pom.version}</library-version>
+        </library-ref>
+        <sbb-classes>
+            <sbb-abstract-class>
+                <sbb-abstract-class-name> mofokom.service.basic.BasicSbb </sbb-abstract-class-name>
+            </sbb-abstract-class>
+            <sbb-local-interface>
+                <sbb-local-interface-name>mofokom.service.basic.local.BasicLocal</sbb-local-interface-name>
+            </sbb-local-interface>
+            <sbb-usage-parameters-interface>
+                <sbb-usage-parameters-interface-name>
+                    mofokom.service.basic.usage.BasicUsageParameters
+                </sbb-usage-parameters-interface-name>
+            </sbb-usage-parameters-interface>
+        </sbb-classes>
+
+        <event event-direction="Receive" initial-event="True">
+            <event-name>ServiceStarted</event-name>
+            <event-type-ref>
+                <event-type-name>javax.slee.serviceactivity.ServiceStartedEvent</event-type-name>
+                <event-type-vendor>javax.slee</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+          <event event-direction="Receive" initial-event="True">
+            <event-name>Timer</event-name>
+            <event-type-ref>
+                <event-type-name>javax.slee.facilities.TimerEvent</event-type-name>
+                <event-type-vendor>javax.slee</event-type-vendor>
+                <event-type-version> ${pom.version}</event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <env-entry>
+            <description/>
+            <env-entry-name>Basic_SBB_RA_INTERFACE_NAME</env-entry-name>
+            <env-entry-type>java.lang.String</env-entry-type>
+            <env-entry-value>slee/resources/basic/sbbrainterface</env-entry-value>
+        </env-entry><env-entry>
+            <description/>
+            <env-entry-name>Basic_ACI_FACTORY_NAME</env-entry-name>
+            <env-entry-type>java.lang.String</env-entry-type>
+            <env-entry-value>slee/resources/basic/activitycontextinterfacefactory </env-entry-value>
+        </env-entry>
+        <resource-adaptor-type-binding>
+            <description/>
+            <resource-adaptor-type-ref>
+                <resource-adaptor-type-name>Basic Resource Adaptor Type</resource-adaptor-type-name>
+                <resource-adaptor-type-vendor>MOFOKOM</resource-adaptor-type-vendor>
+                <resource-adaptor-type-version> ${pom.version}-SNAPSHOT</resource-adaptor-type-version>
+            </resource-adaptor-type-ref>
+            <activity-context-interface-factory-name> slee/resources/basic/activitycontextinterfacefactory </activity-context-interface-factory-name>
+            <resource-adaptor-entity-binding>
+                <resource-adaptor-object-name> slee/resources/basic/sbbrainterface</resource-adaptor-object-name>
+                <resource-adaptor-entity-link>Basic Resource Adaptor Entity Link</resource-adaptor-entity-link>
+            </resource-adaptor-entity-binding>
+        </resource-adaptor-type-binding>
+
+    </sbb>
+</sbb-jar>

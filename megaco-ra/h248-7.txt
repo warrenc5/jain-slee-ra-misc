@@ -1,0 +1,349 @@
+INTERNATIONAL TELECOMMUNICATION UNION
+
+
+
+
+ITU-T                                      H.248.7
+TELECOMMUNICATION                                (11/2000)
+STANDARDIZATION SECTOR
+OF ITU
+
+
+
+
+SERIES H: AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+Infrastructure of audiovisual services – Communication
+procedures
+
+
+Gateway control protocol: Generic
+announcement package
+
+
+
+
+ITU-T Recommendation H.248.7
+                                          ITU-T H-SERIES RECOMMENDATIONS
+                                     AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+
+
+ CHARACTERISTICS OF VISUAL TELEPHONE SYSTEMS                                       H.100–H.199
+ INFRASTRUCTURE OF AUDIOVISUAL SERVICES
+   General                                                                         H.200–H.219
+   Transmission multiplexing and synchronization                                   H.220–H.229
+   Systems aspects                                                                 H.230–H.239
+   Communication procedures                                                        H.240–H.259
+   Coding of moving video                                                          H.260–H.279
+   Related systems aspects                                                         H.280–H.299
+ SYSTEMS AND TERMINAL EQUIPMENT FOR AUDIOVISUAL SERVICES                           H.300–H.399
+ SUPPLEMENTARY SERVICES FOR MULTIMEDIA                                             H.450–H.499
+ MOBILITY AND COLLABORATION PROCEDURES
+   Overview of Mobility and Collaboration, definitions, protocols and procedures   H.500–H.509
+   Mobility for H-Series multimedia systems and services                           H.510–H.519
+   Mobile multimedia collaboration applications and services                       H.520–H.529
+   Security for mobile multimedia systems and services                             H.530–H.539
+   Security for mobile multimedia collaboration applications and services          H.540–H.549
+   Mobility interworking procedures                                                H.550–H.559
+   Mobile multimedia collaboration inter-working procedures                        H.560–H.569
+
+
+For further details, please refer to the list of ITU-T Recommendations.
+ITU-T Recommendation H.248.7
+
+             Gateway control protocol: Generic announcement package
+
+
+
+
+Summary
+This Recommendation defines a generic announcement package for use with the H.248.1 Gateway
+Control Protocol. The generic announcement package provides a media gateway controller with the
+ability to control announcements in a media gateway. Control is provided by the definition of
+announcement events (for example, "announcement completed") and announcement signals (for
+example, "play a specified announcement"). As defined in ITU-T Rec. H.248.1, a "package" is an
+extension to H.248.1 that supports specific behaviour.
+NOTE – This Recommendation has been renumbered. It was previously known as ITU-T Rec. H.248,
+Annex K.
+
+
+
+
+Source
+ITU-T Recommendation H.248.7 was prepared by ITU-T Study Group 16 (2001-2004) and
+approved under the WTSA Resolution 1 procedure on 17 November 2000.
+
+
+
+
+                                                          ITU-T Rec. H.248.7 (11/2000)       i
+                                               FOREWORD
+The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of
+telecommunications. The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of
+ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations
+on them with a view to standardizing telecommunications on a worldwide basis.
+The World Telecommunication Standardization Assembly (WTSA), which meets every four years,
+establishes the topics for study by the ITU-T study groups which, in turn, produce Recommendations on these
+topics.
+The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.
+In some areas of information technology which fall within ITU-T's purview, the necessary standards are
+prepared on a collaborative basis with ISO and IEC.
+
+
+
+
+                                                  NOTE
+In this Recommendation, the expression "Administration" is used for conciseness to indicate both a
+telecommunication administration and a recognized operating agency.
+
+
+
+
+                                 INTELLECTUAL PROPERTY RIGHTS
+ITU draws attention to the possibility that the practice or implementation of this Recommendation may
+involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence,
+validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others
+outside of the Recommendation development process.
+As of the date of approval of this Recommendation, ITU had not received notice of intellectual property,
+protected by patents, which may be required to implement this Recommendation. However, implementors are
+cautioned that this may not represent the latest information and are therefore strongly urged to consult the
+TSB patent database.
+
+
+
+
+                                                ITU 2002
+All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the
+prior written permission of ITU.
+
+
+
+
+ii        ITU-T Rec. H.248.7 (11/2000)
+                                                            CONTENTS
+                                                                                                                                         Page
+
+1   Scope.............................................................................................................................      1
+
+2   References.....................................................................................................................         1
+
+3   Abbreviations................................................................................................................           1
+
+4   Generic announcement package ...................................................................................                        1
+    4.1     Properties ........................................................................................................             1
+    4.2     Events .............................................................................................................            1
+    4.3     Signals ............................................................................................................            2
+    4.3.1   Fixed: Announcement play.............................................................................                           2
+    4.3.2   Variable: Announcement play........................................................................                             2
+    4.4     Statistics..........................................................................................................            4
+    4.5     Procedures ......................................................................................................               4
+
+
+
+
+                                                                                         ITU-T Rec. H.248.7 (11/2000)                      iii
+ITU-T Recommendation H.248.7
+
+             Gateway control protocol: Generic announcement package
+
+1       Scope
+This Recommendation defines a package that extends the applicability of the H.248.1 Gateway
+Control Protocol Recommendation. Specifically, this Recommendation defines a generic
+announcement package for use with the H.248.1 Gateway Control Protocol. The generic
+announcement package provides a media gateway controller with the ability to control
+announcements in a media gateway. Control is provided by the definition of announcement events
+(for example, "announcement completed") and announcement signals (for example, "play a
+specified announcement"). As defined in ITU-T Rec. H.248.1, a "package" is an extension to
+H.248.1 that supports specific behaviour.
+
+2       References
+The following ITU-T Recommendations and other references contain provisions which, through
+reference in this text, constitute provisions of this Recommendation. At the time of publication, the
+editions indicated were valid. All Recommendations and other references are subject to revision;
+users of this Recommendation are therefore encouraged to investigate the possibility of applying the
+most recent edition of the Recommendations and other references listed below. A list of the
+currently valid ITU-T Recommendations is regularly published.
+−       ITU-T Recommendation H.248.1 (2002), Gateway control protocol.
+
+3       Abbreviations
+This Recommendation uses the following abbreviations:
+OO      On/Off (Signal type defined in ITU-T Rec. H.248.1)
+TO      Timeout (Signal type defined in ITU-T Rec. H.248.1)
+
+4       
+PackageName: Generic announcement package
+PackageID: an (0x001d)
+Extends:    None
+Version:    1
+That package supports announcement functionality at a Media Gateway. This announcement could
+be realised by the Media Gateway as different sorts of messaging. For example: it could be an audio
+announcement, a text message or a composition of text messages.
+
+4.1     Properties
+None.
+
+4.2     Events
+None.
+
+
+
+
+                                                               ITU-T Rec. H.248.7 (11/2000)        1
+4.3     Signals
+4.3.1  
+SignalName:Fixed Announcement play
+SignalID:      apf (0x0001)
+Description: Initiates the play of a fixed announcement
+        description:
+              SignalType:            OO, TO (default)
+              SignalDuration:        Provisioned
+              NotifyCompletion: Provisioned (default false)
+Parameters:
+ParameterName:        Announcement name
+              ParameterID: an (0x0001)
+              Type:           enumeration of announcements
+ParameterName:        Number of cycles
+              ParameterID: noc (0x0002)
+              Type:           integer
+              Values:         any
+              0 is used to represent an announcement that continuously plays or loops (OO).
+        Default: provisioned per announcement in the MG
+ParameterName:        Announcement Variant
+              ParameterID: av (0x0003)
+              Type:           string
+              Indicates a specific announcement variant for instance voice type or language.
+ParameterName:        Announcement Direction
+              ParameterID: di (0x0004)
+              Type:           enum
+              Values:         External    ext (0x01),
+                              Internal    int(0x02),
+                              Both        both(0x03)
+              Default:        ext
+4.3.2   
+SignalName: Variable Announcement play
+SignalID:      apv (0x0002)
+Description: Initiates the play of a variable announcement
+        description:
+              SignalType:            OO, TO (default)
+              SignalDuration:        Provisioned
+              NotifyCompletion: Provisioned (default false)
+
+
+2        ITU-T Rec. H.248.7 (11/2000)
+Parameters:
+ParameterName:       Announcement name
+              ParameterID: an (0x0001)
+              Type:          enumeration of announcements
+       Parameter Number of Cycles – Values: any
+              0 is used to represent an announcement that continuously plays or loops (OO).
+              Default:       provisioned per announcement in the MG
+ParameterName:       Announcement Variant
+              ParameterID: av (0x0003)
+              Type:          string
+              Indicates a specific announcement variant for instance voice type or language.
+ParameterName:       Announcement Direction
+              ParameterID: di (0x0007)
+              Type:          enum
+              Values:        External   ext (0x01),
+                             Internal   int (0x02),
+                             Both       both (0x03)
+              Default:       ext
+ParameterName:               Number of cycles
+              ParameterID: noc (0x0002)
+              Type:          integer
+              Values:        any
+              Default:       1
+ParameterName:       Number
+              ParameterID: num (0x0004)
+              Type:          integer
+              Values:        any
+ParameterName:       Specific parameters interpretation
+              ParameterID: spi (0x0005)
+              Type:          enumeration
+              Values:        any
+ParameterName:       Specific parameters
+              ParameterID: sp (0x0006)
+              Type:          string
+              Values:        any
+              Default is provisioned for every announcement.
+
+
+
+                                                                ITU-T Rec. H.248.7 (11/2000)   3
+4.4     Statistics
+None.
+
+4.5     Procedures
+For each announcement, a default duration and number of cycles is defined in the MG. An MG
+receiving such a signal plays the indicated announcement (indicated by the name parameter) for the
+duration specified by the noc parameter or the signal duration. The one that expires first will stop
+the announcement. If noc parameter and/or duration is not included, the MG uses the corresponding
+announcements defaults.
+If the signal duration is 0, the announcement l is played for the time specified by the noc parameter,
+or when the noc parameter is not included in the signal, the announcement is played by its cycle
+default value.
+To provide additional information when an announcement is to be played, the MGC sends a play
+variable announcement signal to the MG. H.248.1 doesn't guarantee in-sequence processing of
+transactions. To ensure sequential playing of an announcement, a transaction reply for a command
+that affects the announcement signal should be received by the Media Gateway Controller before it
+sends the additional variable announcement data. An MG receiving such a signal plays the indicated
+announcement (indicated by the name parameter) for the duration specified by the noc parameter or
+the signal duration. The one that expires first will stop the announcement. If noc parameter and/or
+duration are not included, the MG uses the corresponding announcement defaults.
+If the signal duration is 0, the announcement l is played for the time specified by the noc parameter,
+or when the noc parameter is not included in the signal, the announcement is played by its cycle
+default value.
+If the "Specific parameters" parameter is included, the MG uses the "Specific parameters
+interpretation" parameter to identify and interpret the particular type of information to be included
+in relation to the announcement. Examples of the types of Specific parameters include a telephone
+number, date, or time.
+The direction parameter can be used to indicate the direction that the announcement is to be sent.
+External (default) indicates that the announcement is sent from the MG to an external point. Internal
+indicates that the announcement is played into the MG to the other terminations. Both indicate
+internal and external behaviour.
+
+
+
+
+4        ITU-T Rec. H.248.7 (11/2000)
+                      SERIES OF ITU-T RECOMMENDATIONS
+
+Series A   Organization of the work of ITU-T
+
+Series B   Means of expression: definitions, symbols, classification
+Series C   General telecommunication statistics
+Series D   General tariff principles
+Series E   Overall network operation, telephone service, service operation and human factors
+Series F   Non-telephone telecommunication services
+
+Series G   Transmission systems and media, digital systems and networks
+
+Series H   Audiovisual and multimedia systems
+Series I   Integrated services digital network
+
+Series J   Cable networks and transmission of television, sound programme and other multimedia signals
+Series K   Protection against interference
+Series L   Construction, installation and protection of cables and other elements of outside plant
+Series M   TMN and network maintenance: international transmission systems, telephone circuits,
+           telegraphy, facsimile and leased circuits
+Series N   Maintenance: international sound programme and television transmission circuits
+Series O   Specifications of measuring equipment
+Series P   Telephone transmission quality, telephone installations, local line networks
+Series Q   Switching and signalling
+Series R   Telegraph transmission
+Series S   Telegraph services terminal equipment
+
+Series T   Terminals for telematic services
+
+Series U   Telegraph switching
+Series V   Data communication over the telephone network
+Series X   Data networks and open system communications
+
+Series Y   Global information infrastructure and Internet protocol aspects
+Series Z   Languages and general software aspects for telecommunication systems
+
+
+
+
+                                                                                    Printed in Switzerland
+                                                                                            Geneva, 2002
+

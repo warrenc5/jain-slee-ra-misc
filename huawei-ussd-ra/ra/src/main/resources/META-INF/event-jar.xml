@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE event-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Event 1.1//EN" "http://java.sun.com/dtd/slee-event-jar_1_1.dtd">
+<event-jar>
+    <description>Event Definitions for InfoX Resource Adaptor Type.
+    </description>
+    <event-definition>
+        <description>Fired when there is a error with the connection.</description>
+        <event-type-name>TransportError</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> 1.1 </event-type-version>
+        <event-class-name>mofokom.in.ussd.event.TransportError</event-class-name>
+    </event-definition>
+    <event-definition>
+        <event-type-name>TimeoutError</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> 1.1 </event-type-version>
+        <event-class-name>mofokom.in.ussd.UssdCommand</event-class-name>
+    </event-definition>
+    <event-definition>
+        <event-type-name>UssdBegin</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> 1.1 </event-type-version>
+        <event-class-name>mofokom.in.ussd.UssdBegin</event-class-name>
+    </event-definition>
+    <event-definition>
+        <event-type-name>UssdAbort</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> 1.1 </event-type-version>
+        <event-class-name>mofokom.in.ussd.UssdAbort</event-class-name>
+    </event-definition>
+    <event-definition>
+        <event-type-name>UssdContinue</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> 1.1 </event-type-version>
+        <event-class-name>mofokom.in.ussd.UssdContinue</event-class-name>
+    </event-definition>
+    <event-definition>
+        <event-type-name>UssdEnd</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> 1.1 </event-type-version>
+        <event-class-name>mofokom.in.ussd.UssdEnd</event-class-name>
+    </event-definition>
+    <event-definition>
+        <event-type-name>UssdBindResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> 1.1 </event-type-version>
+        <event-class-name>mofokom.in.ussd.UssdBindResp</event-class-name>
+    </event-definition>
+    <event-definition>
+        <event-type-name>UssdUnBindResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> 1.1 </event-type-version>
+        <event-class-name>mofokom.in.ussd.UssdUnBindResp</event-class-name>
+    </event-definition>
+    <event-definition>
+        <event-type-name>UssdShakeResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> 1.1 </event-type-version>
+        <event-class-name>mofokom.in.ussd.UssdShakeResp</event-class-name>
+    </event-definition>
+    <event-definition>
+        <event-type-name>UssdChargeIndResp</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> 1.1 </event-type-version>
+        <event-class-name>mofokom.in.ussd.UssdChargeIndResp</event-class-name>
+    </event-definition>
+</event-jar>

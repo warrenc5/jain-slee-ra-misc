@@ -1,0 +1,8 @@
+exitOnError false
+clearalarms resourceadaptorentity "entity=XmlRpc Resource Adaptor Entity"
+deactivateraentity "XmlRpc Resource Adaptor Entity"
+removeallactivities "XmlRpc Resource Adaptor Entity"
+waittilraentityisinactive "XmlRpc Resource Adaptor Entity"
+unbindralinkname "XmlRpc Resource Adaptor Entity Link"
+removeraentity "XmlRpc Resource Adaptor Entity"
+uninstall file:/usr/src/maven/repository.mine/mofokom/xmlrpc-ra/1.0-SNAPSHOT/xmlrpc-ra-1.0-SNAPSHOT-du.jar

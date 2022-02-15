@@ -1,0 +1,1996 @@
+SERIES H: AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+Gateway control protocol: Dynamic Tone
+Gateway control protocol: Dynamic Tone
+Gateway control protocol: Dynamic Tone
+PackageID: dtd, 0x001c
+Version:    1
+Extends:    None
+PropertyID:           tid (0x0001)
+Description:
+Type:                 expanding enumeration
+Possible Values:
+Defined in:           TerminationState.
+Characteristics:       both read and write.
+PropertyID:              tst (0x0002)
+Description:             Tone description string. See procedures ,
+Type:                    String
+Possible Values:         See procedures.
+Defined in:              TerminationState.
+Characteristics:         both read and write:
+To modify or create a new tone:
+To read the list of tones defined:
+To read an already defined tone string:
+DefToneString below is the tone string(tst):
+Series B   Means of expression: definitions, symbols, classification
+Series M   TMN and network maintenance: international transmission systems, telephone circuits,
+Series N   Maintenance: international sound programme and television transmission circuits
+SERIES H: AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+Gateway control protocol: Generic
+Gateway control protocol: Generic announcement package
+4.3.1   Fixed: Announcement play.............................................................................                           2
+4.3.2   Variable: Announcement play........................................................................                             2
+Gateway control protocol: Generic announcement package
+This Recommendation uses the following abbreviations:
+PackageID: an, 0x001d
+Version:    1
+Extends:    None
+be realised by the Media Gateway as different sorts of messaging. For example: it could be an audio
+SignalName:Fixed Announcement play
+SignalID:      apf (0x0001)
+Description: Initiates the play of a fixed announcement
+description:
+SignalType:            OO, TO (default)
+SignalDuration:        Provisioned
+NotifyCompletion: Provisioned (default false)
+Parameters:
+ParameterName:        Announcement name
+ParameterID: an (0x0001)
+Type:           enumeration of announcements
+ParameterName:        Number of cycles
+ParameterID: noc (0x0002)
+Type:           integer
+Values:         any
+Default: provisioned per announcement in the MG
+ParameterName:        Announcement Variant
+ParameterID: av (0x0003)
+Type:           string
+ParameterName:        Announcement Direction
+ParameterID: di (0x0004)
+Type:           enum
+Values:         External    ext (0x01),
+Default:        ext
+SignalName: Variable Announcement play
+SignalID:      apv (0x0002)
+Description: Initiates the play of a variable announcement
+description:
+SignalType:            OO, TO (default)
+SignalDuration:        Provisioned
+NotifyCompletion: Provisioned (default false)
+Parameters:
+ParameterName:       Announcement name
+ParameterID: an (0x0001)
+Type:          enumeration of announcements
+Parameter Number of Cycles – Values: any
+Default:       provisioned per announcement in the MG
+ParameterName:       Announcement Variant
+ParameterID: av (0x0003)
+Type:          string
+ParameterName:       Announcement Direction
+ParameterID: di (0x0007)
+Type:          enum
+Values:        External   ext (0x01),
+Default:       ext
+ParameterName:               Number of cycles
+ParameterID: noc (0x0002)
+Type:          integer
+Values:        any
+Default:       1
+ParameterName:       Number
+ParameterID: num (0x0004)
+Type:          integer
+Values:        any
+ParameterName:       Specific parameters interpretation
+ParameterID: spi (0x0005)
+Type:          enumeration
+Values:        any
+ParameterName:       Specific parameters
+ParameterID: sp (0x0006)
+Type:          string
+Values:        any
+Series B   Means of expression: definitions, symbols, classification
+Series M   TMN and network maintenance: international transmission systems, telephone circuits,
+Series N   Maintenance: international sound programme and television transmission circuits
+SERIES H: AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+Gateway control protocol: Advanced media
+Gateway control protocol: Advanced media server packages
+Recommendation ITU-T H.248.9 provides two sets of packages: syntactic and functional. The
+Additional functionality incorporated by ITU-T H.248.9 (2005) Amendment 1 (2007):
+•        6.4          Set extension of basic syntax: introduction of a new selector for text attributes.
+•        6.5.5.1      Variable type "Phrase": introduction of subtypes.
+•        9.3.1        Signal PlayCollect: enhanced functionality, new parameters.
+This revision introduces a number of new functions. The new functions include:
+not. For example: digits related to a pin code would not be stored.
+TSB patent database at http://www.itu.int/ITU-T/ipr/.
+6.1    Syntactical concepts: audio segments, multimedia segments, variables
+Gateway control protocol: Advanced media server packages
+The announcement specification syntax is described in a series of packages:
+•      Basic syntax package: Provides the syntax by which to refer to provisioned media
+•      Voice variables package: An optional extension to the base syntax, which provides
+•      Set syntax package: An optional extension to the base syntax, which provides an arbitrary
+example, the user could define qualifiers for any or all of the following: language, accent,
+•      Generic text syntax package: An optional extension to the base syntax, which provides a
+The functional packages documented in this Recommendation are as follows:
+•      Advanced audio server (AAS) base package: Provides a signal to play an announcement
+•      AAS base package for TTS enhancement: Provides signals to play TTS and an event to
+•      AAS Digit collection package: Extends the AAS base package by providing a signal and
+•      AAS recording package: Extends the AAS base package by providing a property, signals
+•      AAS automatic speech recognition package: Provides signals to play ASR and events to
+•      AAS Multimedia Play Package: Provides a signal to play a multimedia file and events to
+•       AAS Multimedia Recording Package: Extends the AAS Recording Package to coordinate
+•       Enhanced DTMF Detection Package: This Package allows the MGC to determine whether
+[ITU-T H.248.1]      Recommendation ITU-T H.248.1 (2002), Gateway Control Protocol:
+[IETF RFC 2396]      IETF RFC 2396 (1998), Uniform Resource Identifiers (URI): Generic Syntax.
+[ISO 639-1]          ISO 639-1:2002, Codes for the representation of names of languages – Part 1:
+[ISO 639-2]          ISO 639-2:1998, Codes for the representation of names of languages – Part 2:
+[ISO 3166-1]         ISO 3166-1:1997, Codes for the representation of names of countries and their
+subdivisions – Part 1: Country codes.
+[ISO 3166-2]         ISO 3166-2:1998, Codes for the representation of names of countries and their
+subdivisions – Part 2: Country subdivision code.
+[ISO 4217]           ISO 4217:2001, Codes for the representation of currencies and funds.
+[ISO 8601]           ISO 8601:2000, Data elements and interchange formats – Information
+[ISO 15924]          ISO 15924:2004, Information and documentation – Codes for the
+[ISO/IEC 10646]      ISO/IEC 10646:2003, Information technology – Universal Multiple-Octet
+This Recommendation defines the following terms:
+3.1     audio segment: A separately specifiable unit of audio content. The concept may be
+3.2     segment specification: The set of information, which the controller must provide to invoke
+3.3     voice variable: A unit of audio content which has one of the types and possibly a subtype
+3.4     stand-alone variable: An audio segment whose specification describes a single instance of
+3.5      provisioned segment: An audio segment which can be retrieved using either a simple
+3.6     segment set: A set of alternative forms of expression (e.g., different languages, different
+3.7      selector: A parameter associated with a set, having a predefined range of values which map
+3.8    announcement: The audible result of playout of a sequence of audio or multimedia
+This Recommendation uses the following abbreviations and acronyms:
+6.1     Syntactical concepts: audio segments, multimedia segments, variables and embedded
+The syntax described in this Recommendation has three components: the basic syntax which must
+A URI can be a simple name or it can be a URL. Three URL schemes are allowed: the file: scheme,
+the ftp: scheme, and the http: scheme. The file: scheme is used for audio local to the audio server.
+The ftp: scheme is used for audio remote to the audio server. The http: scheme can be used for
+audio local to the audio server using the http://localhost convention or for audio remote to the audio
+server. All audio references that require parameters encoded in the URL must use the http: scheme.
+NOTE 1 – For playout of more general media over IP transport, the rtsp: scheme should also be considered.
+Reference to local audio (simple name):                  12354
+Reference to local audio (flat file):                    file://welcome
+Reference to local audio:                                file://audio/xyztel/welcome
+Reference to remote audio:                               http://audio/xyztel/welcome
+Reference to local multimedia (simple name):             12354.xxx
+Reference to local multimedia (flat file):               file://welcome.xxx
+Reference to local multimedia:                           file://multimedia/xyztel/welcome.xxx
+Reference to remote multimedia:                          http://multimedia/xyztel/welcome.xxx
+Variables are specified by the following parameters: type, subtype, and value. Variable types
+As described above, the AAS announcement syntax supports two kinds of variables: stand-alone
+In the following example, the sequence to be played speaks the following: "Today's date is
+<weekday> <date>." This sequence is made up of three segments: a simple audio segment, a
+two ways: as a sequence explicitly specified by the MGC, or as a single provisioned audio segment
+http://audio/my-time-date-intro. In the first case, this segment is visible to the MGC. In the second
+case, the MGC only knows about the provisioned segment http://audio/my-sequence, which
+http://audio/my-sequence itself references http://audio/my-time-date-intro is known only at the
+device to which http://audio/my-sequence resolves.
+the following selector types: language, accent, gender, accent, customer, and/or day of the week.
+would result in the following being played in Arabic: "Today's date is October 15th, 2000."
+Package name:        Basic Announcement Syntax
+Package ID:          bannsyx (0x0047)
+Description:         This package exists only to indicate that the MG is capable of processing the
+Version:             1
+Extends:             None.
+specification syntax for purposes of the inner encoding is expressed as follows:
+AnnouncementSpec ::= IA5String
+The details of the string structure are as specified in the remainder of clause 6: they are equally
+announcement specification is as follows:
+comma-separated. However, the VALUE production requires escapes for the following:
+character. This Recommendation supports three URI schemes:
+•       the file: scheme, used for provisioned segments local to the MG;
+•       the ftp: scheme, used for segments on a device remote from the MG;
+•       the http: scheme, used for segments located either locally or remotely to the MG. Segments
+The MGC must use the http: scheme if the provisioned audio segment contains embedded variables.
+It must also use the http: scheme if the segment supports selectors (see clause 6.4). This restriction
+is necessary because the announcement specification syntax uses the http: scheme query part to
+In accordance with [IETF RFC 2396], the following characters must be escaped within all URIs:
+description of the file:, ftp:, and http: schemes. According to this RFC, "/" is reserved for
+separating components of a path hierarchy, ";" is reserved within the ftp: and http: schemes,
+and "?" is reserved in the http: scheme;
+•       characters used as delimiters or for escaping: "<", ">", "#", "%", and <">;
+•       characters subject to unwanted transformations or subject to misinterpretation: "{", "}", "|",
+fileurl = "file://" host path
+; See [IETF RFC 1738] for further details. "file://" is case-sensitive.
+ftpurl = "ftp://" [user [":" password ] "@" ] host [":" port ]
+; See [IETF RFC 1738] for further details. "ftp://" is case-sensitive.
+httpurl = "http://" host [ ":" port ] [ abs_path [ "?" query ]]
+"http://" is case-sensitive.
+part is as follows:
+Package name:          Voice Variable Syntax
+Package ID:            vvsyx (0x0048)
+Description:           This package exists only to indicate that the MG is capable of processing the
+Version:               2
+Extends:               bannsyx version 1.
+the following extension to the syntax of clause 6.2.5.2.1:
+components is introduced by a tag: "t=", "s=", and "v=" respectively. Successive components are
+6.3.6.1     Variable type: Time
+Definition: Speaks a time of day.
+Subtypes: The subtypes associated with the Time variable specify the format in which the time is
+Value: A string of four digits giving a time specified as HHMM (per [ISO 8601]), in twenty-four
+Example: "1700" is spoken as "Five pm" in twelve-hour format or as "Seventeen hundred hours" in
+Text encoding:
+6.3.6.2    Variable type: Weekday
+Definition: Speaks the name of a specified day of the week.
+Subtypes: Not applicable.
+Value: A single digit character, beginning with "1" denoting Sunday and ending with "7" denoting
+Example: "2" is spoken as "Monday".
+Text encoding:
+6.3.6.3    Variable type: Date
+Definition: A date made up of three components: day of month, name of month, and year.
+Subtypes: The subtypes associated with the Date variable specify the order in which the elements of
+Value: The value is a string of eight digits specifying a date in the form YYYYMMDD (per
+Example: The value "20001015" could be spoken as "October Fifteenth Two Thousand" or as
+Text encoding:
+6.3.6.4    Variable type: Month
+Definition: Speaks the name of the specified month.
+Subtypes: Not applicable.
+Value: A two-digit string of digits in MM format with "01" denoting January, "02" denoting
+Example: "10" is spoken as "October".
+Text encoding:
+6.3.6.5    Variable type: Duration
+Definition: A period of time spoken in one or more units of time as appropriate.
+Subtypes: Not applicable.
+Value: An integer giving a number of seconds.
+Example: Value "3661" is spoken as "One hour, one minute, and one second".
+Text encoding:
+6.3.6.6    Variable type: Digits
+Definition: A sequence of digits which are spoken one at a time.
+Subtypes: Not applicable.
+Value: A string of digits of arbitrary length, given in the order they are to be spoken.
+Example: Type Digits, value "61360961" spoken as "six one three six zero nine six one".
+Text encoding:
+6.3.6.7    Variable type: Chars
+Definition: Speaks a specified sequence composed of upper and lower case alphabetic characters
+Subtypes: Not applicable.
+Value: Valid characters in the ASCII character set are a-z, A-Z, 0-9, #, and *. Note that it is
+Text encoding:
+6.3.6.8      Variable type: Money
+Definition: An amount of money of a given currency, spoken in mixed units of that currency as
+Subtypes: The different currency types as specified by [ISO 4217]. A small excerpt from
+[ISO 4217] follows:
+Value: An optionally signed integer giving a quantity of money specified in the smallest units of a
+Example: "110" in U.S. Dollars would be spoken "one dollar and ten cents."
+Text encoding:
+6.3.6.9      Variable type: Integer
+Definition: Speaks an integer.
+Subtypes: Control whether the number is spoken as a cardinal or ordinal value.
+Value: An optionally signed integer. Negative integers are allowed only with the cardinal subtype.
+Example: "100" is spoken as "one hundred" in cardinal form and "one hundredth" in ordinal form.
+Text encoding:
+6.3.6.10     Variable type: Silence
+Definition: A period of silence of a specified duration.
+Subtypes: Not applicable.
+Value: An unsigned integer giving the duration of the period of silence in 100 millisecond units.
+Example: "10" specifies one second of silence.
+Text encoding:
+6.3.6.11     Variable type: Tone
+Definition: Plays an algorithmically generated tone. It is the counterpart of the INAP parameter
+Subtypes: Not applicable.
+Value: Integer >= 0 (for both components of "Tone")
+Text encoding:
+Package name:           Announcement Set Syntax
+Package ID:             setsyx (0x0049)
+Description:            This package exists only to indicate that the MG is capable of processing the
+Version:                3
+Extends:                bannsyx version 1.
+Within an audio segment specification, all selectors must be specified in a single list of the form:
+; Restriction: if seltype = "lang" then selval = Language-Tag,
+language tag in ABNF [b-IETF RFC 4234] is:
+; Single letters: x/X is reserved for private use
+; Note: i is the only singleton
+within the query part of an http: URL. To simplify parsing, selectors must be specified subsequent
+as it appears in clause 6.2.5.2.1 is extended as follows:
+The definition of varSegSpec given in 6.3.6 is extended as follows:
+Package name:       Phrase Variable Syntax
+Package ID:         phrsyx (0x004a)
+Description:           This package exists only to indicate that the MG is capable of processing the
+Version:               2
+Extends:               vvsyx version 1.
+6.5.5.1     Variable type: Phrase
+Definition: Speaks or displays a specified phrase spelled out as a sequence of ASCII or UTF-8
+Subtypes:
+–      spk (spoken text): default value.
+–      dsp (display text): With this subtype "Phrase" has the same syntax attributes, but stands for
+Value:
+Text encoding:
+Play an announcement that consists of a single segment residing on the audio server in a flat file:
+Signals { aasb/play { an = "sid=<file://1947>" } }
+using the http://localhost convention. This is exactly equivalent to the first example:
+Signals { aasb/play { an = "sid=<http://localhost/1947>" } }
+hierarchical file system:
+Signals { aasb/play { an = "sid=<file://audio/current/1947>" } }
+which is external to the audio server:
+Signals { aasb/play { an = "sid=<http://darkstar/welcome>" } }
+presentation):
+Signals { aasb/play { an = "sid=<file://audio/voice/brenda/123>,
+sid=<file://audio/voice/althea/098>,
+sid=<file://audio/voice/delia/086>" } }
+Play an announcement that consists of a recording followed by a direct voice variable:
+an = "sid=<file://gdtrfb>,var=<t=dat,s=mdy,v=19550809>" } }
+... three two one ... five eight nine":
+which they occur in the announcement:
+an = "sid=<http://localhost/113?var=3999&var=20001015>"                    } }
+Play an announcement in English with a Glaswegian accent, assuming that http://localhost/1947
+designates a set and set syntax is supported:
+Signals { aasb/play { an ="sid=<          http://localhost/1947?sel=lang=en-gb-
+values, as well as the "lang" selector type:
+an ="sid=<http://localhost/jackstraw/ann45?sel=lang=da&
+remote machine (line breaks are added for clarity of presentation):
+Signals { aasb/play { an ="sid=<http://localhost/ann1?sel=lang=eng>,
+sid=<http://localhost/audio/myannouncements/ann2>,
+sid=<http://darkstar/audio/ann3?sel=lang=fra>" } }
+Play an announcement with a stand-alone date variable in English:
+Signals { aasb/play { an = "sid=<http://darkstar/audio/ann7?sel=lang=en>,
+Signals { aasdc/playcol { ip = "sid=<file://enterpassword>",
+rp = "sid=<file://tryagain>",
+nd = "sid=<file://nodigits>",
+sa = "sid=<file://goodpassword>",
+fa ="sid=<file://badpassword>",
+Signals { aasrec/playrec { ip = "sid=<file://sayname>",
+ns ="sid=<file://nospeech>",
+volume. Play the announcement three times with two seconds of silence between plays:
+Signals { aasb/play { an = "sid=<file://brenda>",
+the prompt, and resume collection:
+Signals { aasdc/playcol { ip ="sid=<file://enterdigits>",
+Play a file URI three times with two seconds of silence between plays:
+Signals { aastts /playsid { an = "sid=<file://brenda>",
+Play an Initial announcement to the user, then start speech recognition against the given SRGS file:
+Signals { asr /asrid { ip = "sid=<file://info>",
+rgid = "sid="<file://grammar.srgs>" } }.
+on the specific resource: one implementation may assemble audio segments on a "just in time basis",
+Error code #:          600
+Name:                  Illegal syntax within an announcement specification
+Definition:            Some aspect of an announcement specification fails to conform to the required
+Error text in the error descriptor: The offending portion of the specification.
+Comment:               Indicates a possible software error at the MG or MGC.
+Error code #:          601
+Name:                  Variable type not supported
+Definition:            While the syntax of a stand-alone variable segment specification is apparently
+Error text in the error descriptor: The offending segment specification.
+Comment:               The MGC can audit to determine the non-basic variable types supported by the
+Error code #:        602
+Name:                Variable value out of range
+Definition:          The value is syntactically correct but not acceptable. The error applies to both
+Error text in the error descriptor: The offending segment specification.
+Comment:             Indicates possible provisioning error at the MG or MGC.
+Error code #:        603
+Name:                Category not supported
+Definition:          The entity responsible for executing the query part of a provisioned audio
+Error text in the error descriptor: The offending segment specification.
+Comment:             The MGC can audit to determine the non-basic categories supported by the
+Error code #:        604
+Name:                Selector type not supported
+Definition:          The tag following the "sel=" keyword is not provisioned as a selector type on
+Error text in the error descriptor: The offending segment specification.
+Comment:             Indicates a probable provisioning error at the MG or MGC.
+Error code #:        605
+Name:                Selector value not supported
+Definition:          The given value is not one, which is provisioned on the entity responsible for
+Error text in the error descriptor: The offending segment specification.
+Comment:             Indicates a probable provisioning error at the MG or MGC.
+Error code #:        606
+Name:                Unknown segment ID
+Definition:           A segment identified by a provisioned segment reference cannot be located.
+Error text in the error descriptor: The offending segment specification.
+Comment:              Indicates a probable provisioning error at the MG or MGC.
+Error code #:         607
+Name:                 Mismatch between play specification and provisioned data
+Definition:           This error indicates a discrepancy between the contents of the query part of a
+Error text in the error descriptor: The offending segment specification.
+Comment:              Indicates a probable provisioning error at the MG or MGC.
+Error code #:         608
+Name:                 Provisioning error
+Definition:           For example, a provisioned segment identifier actually points to a sequence of
+Error text in the error descriptor: The offending segment specification.
+Comment:              Indicates a probable provisioning error at the MG or MGC.
+Error code #:         609
+Name:                 Invalid offset
+Definition:           The magnitude of the offset in a PlayCollect signal exceeds the actual length of
+Error text in the error descriptor: –
+Comment:              –
+Error code #:         610
+Name:                 No free segment ids
+Definition:           The local space of segment identifiers is exhausted and the RecordingIdentifier
+Error text in the error descriptor: –
+Comment:              –
+Error code #:          611
+Name:                  Temporary segment not found
+Definition:            The MakePersistent signal failed because the target temporary segment was not
+Error text in the error descriptor: URI of the missing segment.
+Comment:               The segment may no longer exist because it timed out, or it may not have been
+Error code #:          612
+Name:                  Segment in use
+Definition:            A request to delete a persistent segment has failed because it is in use by
+Error text in the error descriptor: The URI of the in-use segment.
+Comment:               –
+Package name:          Advanced audio server base package
+Package ID:            aasb (0x0033)
+Description:           The advanced audio server (AAS) base package provides a signal to play an
+Version:               3
+Extends:               None.
+Event name:            Audio operation failure
+Event ID:              audfail (0x0001)
+Description:           Signifies the failure of an advanced audio server operation subsequent to the
+Parameter name:      Return Code
+Parameter ID:        rc (0x0001)
+Description:         A return code indicating why an advanced audio server operation failed.
+Type:                Integer
+Optional:            No
+Possible values:     Failure return codes range from 600-699. Failure codes 600 to 612 report the
+Default:             None.
+Event name:          Playout Completion
+Event ID:            playcom (0x0012)
+Description:         This event is used to gather information regarding the playout of the signal
+Parameter name:       Amount Played
+Parameter ID:         ap (0x0001)
+Description:          Indicates the duration of the playout of the signal at the time the signal
+Type:                 Integer
+Optional:             Yes
+Possible values:      0 upwards (in 10 ms units)
+Default:              None.
+Parameter name:       Offset
+Parameter ID:         off (0x0002)
+Description:          Specifies the time offset into the signal that the signal completed at.
+Type:                 Integer
+Optional:             Yes
+Possible values:      0 upwards (in 10 ms units)
+Default:              None.
+Signal name:          Play
+Signal ID:            play (0x0001)
+Description:          Plays one or more audio segments.
+SignalType:           Defaults to BR (play continues until the specified or default number of
+Duration:             Not applicable to BR signals.
+Parameter name:       Announcement
+Parameter ID:         an (0x0001)
+Description:          An announcement to be played. Consists of one or more audio segments. This
+Type:                 String
+Optional:            No
+Possible values:     A sequence of segment specifications adhering to the syntax described in
+Default:             None.
+Parameter name:      Iterations
+Parameter ID:        it (0x0002)
+Description:         The maximum number of times an announcement is to be played.
+Type:                Integer
+Optional:            Yes
+Possible values:     As described below, playout may end before the specified number of iterations
+Default:             1
+Parameter name:      Interval
+Parameter ID:        iv (0x0003)
+Description:         The interval of silence to be inserted between iterative plays. Specified in units
+Type:                Integer
+Optional:            Yes
+Possible values:     0 upwards.
+Default:             None.
+Parameter name:      Speed
+Parameter ID:        sp (0x0004)
+Description:         The relative playback speed of announcement specifiable as a positive (faster)
+Type:                Integer
+Optional:            Yes
+Possible values:     –99 upwards.
+Default:             0
+Parameter name:         Volume
+Parameter ID:           vl (0x0005)
+Description:            The relative playback volume of announcement specifiable as a positive
+Type:                   Integer
+Optional:               Yes
+Possible values:        Implementation-dependent.
+Default:                0
+Parameter name:         Announcement direction
+Parameter ID:           di (0x0006)
+Description:            The direction parameter can be used to indicate the direction that the
+Type:                   Enumeration
+Optional:               Yes
+Possible values:        "Ext" (0x01): External indicates that the announcement is sent from the MG to
+"Int" (0x02): Internal indicates that the announcement is played into the MG to
+"Both" (0x03): Both indicates internal and external behaviour.
+Default:                Ext
+Parameter name:         Offset
+Parameter ID:           off (0x0009)
+Description:            Specifies the offset into the announcement at which to start playing. A positive
+Type:                   Integer
+Optional:               Yes
+Possible values:        0, positive, or negative. If the offset value is greater than the length of the
+Default:                0
+Parameter name:         Absolute Volume
+Parameter ID:           absvl (0x000a)
+Description:            The absolute playback volume of announcement specified in decibels. The
+Type:                   Integer
+Optional:               Yes
+Possible values:        0 and upwards (in decibels).
+Default:                0 (No absolute volume applied).
+announcement: the Duration and Iterations parameters are both ignored. If the signalType parameter
+Package name:           AAS Digit Collection Package
+Package ID:             aasdc (0x0034)
+Description:           The AAS Digit Collection Package extends the AAS base package by
+Version:               3
+Extends:               aasb (0x0033) version 3
+Event name:            Audio Operation Failure
+Event ID:              audfail (0x0001)
+Description:           This package adds the following codepoints for the return code returned by the
+Audio operation failure event defined in clause 8.2.1:
+Event name:            Play Collect Success
+Event ID:              pcolsucc (0x0002)
+Description:           This event signifies the successful completion of a playcol signal.
+Parameter name:        Digits collected
+Parameter ID:          dc (0x0001)
+Description:       The DTMF digits that were collected during a play collect signal.
+Type:              String
+Optional:          No
+Possible values:   Any sequence of valid DTMF digits 0-9, A-D or a-d, *, or #. A digit may be
+Default:           None.
+Parameter name:    Number of Attempts
+Parameter ID:      na (0x0002)
+Description:       The number of attempts the MG made to collect a valid digit pattern.
+Type:              Integer
+Optional:          No
+Possible values:   1 upwards.
+Default:           None.
+Parameter name:    Amount played
+Parameter ID:      ap (0x0003)
+Description:       The length played of the initial prompt, if that prompt was interrupted (i.e., by
+Type:              Integer
+Optional:          Yes
+Possible values:   0 upwards.
+Default:           None.
+Parameter name:    Control Digits collected
+Parameter ID:      contdc (0x0004)
+Description:       This parameter contains the control digits that were collected during the
+Type:              Sub-list of String
+Optional:          Yes
+Possible values:   Each of String encoded as ControlDigit specified by the following ABNF:
+Default:                 None.
+Signal name:             PlayCollect
+Signal ID:               playcol (0x0002)
+Description:             Plays an announcement or tone (optionally) and collects dtmf digits or voice
+SignalType:              Defaults to TO
+Duration:                Default as provisioned for the termination. Used only as a guard against
+Parameter name:          InitialPrompt
+Parameter ID:            ip (0x0001)
+Description:             The initial announcement prompting the user to enter DTMF digits. The
+Type:                    String
+Optional:                Yes
+Possible values:         Any announcement specification conforming to the syntax described in
+Default:                 None.
+Parameter name:          Reprompt
+Parameter ID:            rp (0x0002)
+Description:             Played after the user has made an error such as entering an invalid digit pattern.
+Type:                    String
+Optional:                Yes
+Possible values:         Any announcement specification conforming to the syntax described in
+Default:                 None.
+Parameter name:    NoDigitsPrompt
+Parameter ID:      nd (0x0003)
+Description:       Played after the user has failed to enter any digits following a prompt. The
+Type:              String
+Optional:          Yes
+Possible values:   Any announcement specification conforming to the syntax described in
+Default:           None.
+Parameter name:    SuccessAnnouncement
+Parameter ID:      sa (0x0004)
+Description:       Played when data collection has succeeded. The success announcement
+Type:              String
+Optional:          Yes
+Possible values:   Any announcement specification conforming to the syntax described in
+Default:           None.
+Parameter name:    FailureAnnouncement
+Parameter ID:      fa (0x0005)
+Description:       Played when all data entry attempts have failed. The failure announcement
+Type:              String
+Optional:          Yes
+Possible values:   Any announcement specification conforming to the syntax described in
+Default:           None.
+Parameter name:    NonInterruptiblePlay
+Parameter ID:      ni (0x0006)
+Description:       Specifies whether or not prompts are interruptible by digit input.
+Type:              Boolean
+Optional:          Yes
+Possible values:      TRUE (prompts are non-interruptible) or FALSE (prompts are interrupted by
+Default:              FALSE.
+Parameter name:       KeepDigits
+Parameter ID:         kdg (0x0007)
+Description:          Specifies handling of digits detected during the playout of a non-interruptible
+Type:                 Boolean
+Optional:             Yes
+Possible values:      TRUE or FALSE. Default is FALSE (digits detected during a non-interruptible
+Default:              FALSE.
+Parameter name:       ClearDigitBuffer
+Parameter ID:         cb (0x0008)
+Description:          If set to TRUE, the MG clears the digit collection buffer before playing any
+Type:                 Boolean
+Optional:             Yes
+Possible values:      TRUE or FALSE.
+Default:              FALSE.
+Parameter name:       MaxAttempts
+Parameter ID:         mxatt (0x0009)
+Description:          The maximum number of attempts the user is given to enter a valid digit
+Type:                 Integer
+Optional:             Yes
+Possible values:      1 upwards.
+Default:              1
+Parameter name:       DigitMap
+Parameter ID:         dm (0x000a)
+Description:          The name of a digit map active on the termination.
+Type:                 String
+Optional:             No
+Possible values:    For text encoding, any string matching the NAME production. The equivalent
+Default:            None.
+Parameter name:     Speed
+Parameter ID:       sp (0x000b)
+Description:        The relative playback speed of each prompt specifiable as a positive (faster) or
+Type:               Integer
+Optional:           Yes
+Possible values:    –99 upwards.
+Default:            0
+Parameter name:     Volume
+Parameter ID:       vl (0x000c)
+Description:        The relative playout volume of each prompt specifiable as a positive (louder)
+Type:               Integer
+Optional:           Yes
+Possible values:    Implementation dependent.
+Default:            0
+Parameter name:     Offset
+Parameter ID:       off (0x000d)
+Description:        Specifies the offset into the initial prompt at which to start playing. A positive
+Type:                 Integer
+Optional:             Yes
+Possible values:      0, positive, or negative. The absolute value cannot exceed the length of the
+Default:              0
+Parameter name:       RestartKey
+Parameter ID:         rsk (0x000e)
+Description:          Defines a key sequence consisting of a command key optionally followed by
+zero or more keys. This key sequence has the following action: discard any
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Reinput Key
+Parameter ID:         rik (0x000f)
+Description:          Defines a key sequence consisting of a command key optionally followed by
+zero or more keys. This key sequence has the following action: discard any
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Return Key
+Parameter ID:         rtk (0x0010)
+Description:       Defines a key sequence consisting of a command key optionally followed by
+zero or more keys. This key sequence has the following action: terminate the
+Type:              String
+Optional:          Yes
+Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:           None.
+Parameter name:    Iterations
+Parameter ID:      it (0x0011)
+Description:       The maximum number of times an announcement is to be played. Identical to
+Type:              Integer
+Optional:          Yes
+Possible values:   See "Play" in aasb.
+Default:           1
+Parameter name:    Interval
+Parameter ID:      iv (0x0012)
+Description:       The interval of silence to be inserted between iterative plays. Specified in units
+Type:              Integer
+Optional:          Yes
+Possible values:   See "Play" in aasb.
+Default:           None.
+Parameter name:    EndInputKey
+Parameter ID:      eik (0x0013)
+Description:          This parameter indicates the digit used to signal the end of input. When the
+Number of Digits the following applies:
+If the end input key is not present, the end of input is indicated:
+If the end input key is present, the end of input is indicated:
+Type:                 Octet string (size (1..2))
+Optional:             Yes
+Possible values:      Implementation dependent
+Default:              None.
+Parameter name:       IncludeEndInputKey
+Parameter ID:         iek (0x0014)
+Description:          By default the 'EndInputKey' is not included in the collected digits returned to
+Type:                 Boolean
+Optional:             Yes
+Possible values:      TRUE or FALSE.
+Default:              FALSE.
+Parameter name:       VoiceInformation
+Parameter ID:         vi (0x0015)
+Description:          Specifies how the ARF accepts voice input. The default value "dtmfonly"
+input and reports both: DTMF digits and spoken digits. The value "dtmfkills"
+Type:              Enumeration
+Optional:          Yes
+Possible values:   – "dtmfonly"            (0),
+Default:           "dtmfonly".
+Parameter name:    VoiceBack
+Parameter ID:      vc (0x0016)
+Description:       Specifies how recognized digits are played back to the user in case of voice
+Type:              Enumeration
+Optional:          Yes
+Possible values:   – "novoiceback"         (0),
+Default:           "novoiceback".
+Parameter name:    InapPromptTimer
+Parameter ID:      ipt (0x0017)
+Description:       The maximum amount of time to play and possibly replay an announcement or
+The following special handling has to be considered:
+Type:                 Integer
+Optional:             Yes
+Possible values:      0 or more tenths of seconds
+Default:              None.
+Parameter name:       Absolute Volume
+Parameter ID:         absvl (0x0018)
+Description:          The absolute playback volume of announcement specified in decibels. The
+Type:                 Integer
+Optional:             Yes
+Possible values:      0 and upwards (in decibels).
+Default:              0 (No absolute volume applied).
+Parameter name:       Skip Interval
+Parameter ID:         skint (0x0019)
+Description:          Indicates how far the MG should skip forward or backwards when forward or
+Type:                 Integer
+Optional:             Yes
+Possible values:      1 or more milliseconds
+Default:              6000 (6 seconds).
+Parameter name:       Fast Foward Key
+Parameter ID:         ffk (0x001a)
+Description:          Indicates which DTMF digits map to a fast forward operation. On detection of
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:    Rewind Key
+Parameter ID:      rwk (0x001b)
+Description:       Indicates which DTMF digits map to a rewind operation. On detection of the
+Type:              String
+Optional:          Yes
+Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:           None.
+Parameter name:    Mask Digits
+Parameter ID:      mkdt (0x001c)
+Description:       Indicates whether the received digits may be stored in a log file by the MG.
+Type:              Boolean
+Optional:          Yes
+Possible values:   "On"      (0x0001):     Yes, DTMF inputs may be captured in MG log files
+"Off"     (0x0002):     No, DTMF inputs may not be captured in MG log files
+Default:           Off.
+Parameter name:    Volume Interval
+Parameter ID:      volint (0x001d)
+Description:       Indicates the percentage increase or decrease in volume when the volume up or
+Type:              Integer
+Optional:          Yes
+Possible values:   Any positive integer.
+Default:           10%
+Parameter name:    Volume Up Key
+Parameter ID:      volup (0x001e)
+Description:       Indicates which DTMF digits map to a volume up operation. On detection of
+Type:              String
+Optional:          Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Volume Down Key
+Parameter ID:         voldwn (0x001f)
+Description:          Indicates which DTMF digits map to a volume down operation. On detection
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Speed Interval
+Parameter ID:         spdint (0x0020)
+Description:          Indicates the percentage increase or decrease in speed when the speed up or
+Type:                 Integer
+Optional:             Yes
+Possible values:      Any positive integer.
+Default:              10%
+Parameter name:       Speed Up Key
+Parameter ID:         spdup (0x0021)
+Description:          Indicates which DTMF digits map to a speed up operation. On detection of the
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:    Speed Down Key
+Parameter ID:      spddwn (0x0022)
+Description:       Indicates which DTMF digits map to a speed down operation. On detection of
+Type:              String
+Optional:          Yes
+Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:           None.
+Parameter name:    Pause Interval
+Parameter ID:      pseint (0x0023)
+Description:       Indicates for how long the playout of a message is paused when a pause key is
+Type:              Integer
+Optional:          Yes
+Possible values:   Any positive integer in milliseconds.
+Default:           10000 (10 seconds).
+Parameter name:    Pause Key
+Parameter ID:      pse (0x0024)
+Description:       Indicates which DTMF digits map to a pause operation. On detection of the
+Type:              String
+Optional:          Yes
+Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:           None.
+Parameter name:    Resume Key
+Parameter ID:      rsm (0x0025)
+Description:          Indicates which DTMF digits map to a resume operation. On detection of the
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Prompt Start Key
+Parameter ID:         pstart (0x0026)
+Description:          Indicates which DTMF digits map to a prompt start key operation. On
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Prompt End Key
+Parameter ID:         pend (0x0027)
+Description:          Indicates which DTMF digits map to a prompt end key operation. On detection
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       External Control Key
+Parameter ID:         extkey (0x0028)
+Description:          Indicates which DTMF digits map to an external key operation. Its function on
+Type:                 String
+Optional:             Yes
+Possible values:        A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:                None.
+An alternative mode of usage is that suggested in the documentation of the offset parameter: the
+The command keys that apply to the prompting phase are:
+The commands keys that apply to the digit collection phase are:
+that for ordinary digit maps, with two exceptions:
+in angle brackets <> to make them stand out. It relies on two logical buffers: a digit collection
+digit collection buffer if:
+3)       Process the appropriate one of the following three cases:
+a) <NonInterruptiblePlay> is TRUE:
+b) <NonInterruptiblePlay> is FALSE and digit collection buffer is non-empty:
+c) <NonInterruptiblePlay> is FALSE and digit collection buffer is empty:
+Package name:           AAS recording package
+Package ID:             aasrec (0x0035)
+Description:            AAS recording package: extends the AAS base package by providing signals
+Version:                3
+Extends:                aasb (0x0033) version 3.
+Property name:          Maximum temporary record life
+Property ID:            maxtrl (0x0003)
+Description:            Determines the maximum life of a temporary recording, in seconds, following
+Type:                   Integer
+Possible values:        1 upwards
+Default:                None
+Defined in:             TerminationState
+Characteristics:        read/write.
+Event name:         Audio operation failure
+Event ID:           audfail (0x0001)
+Description:        This package adds the following codepoints for the return code returned by the
+Event name:         PlayRecord success
+Event ID:           precsucc (0x0002)
+Description:        Signifies the successful completion of a playrec signal.
+Parameter name:     Amount played
+Parameter ID:       ap (0x0001)
+Description:        The length played of the initial prompt, if that prompt was interrupted, in 10 ms
+Type:               Integer
+Optional:           No
+Possible values:    0 upwards.
+Default:            1
+Parameter name:       Number of attempts
+Parameter ID:         na (0x0002)
+Description:          The number of times the user was prompted to make a recording.
+Type:                 Integer
+Optional:             No
+Possible values:      1 upwards.
+Default:              1
+Parameter name:       Recording result
+Parameter ID:         res (0x0003)
+Description:          The particular way in which the recording process terminated successfully.
+Type:                 Enumeration
+Optional:             No
+Possible values:      "normal" (0): a temporary audio segment has been recorded, and end of speech
+"trunc" (1): a temporary audio segment has been recorded, and it was truncated
+"keyend" (2): the Return Key command key sequence was detected. No
+"endinput" (3): the EndInput Key command key sequence was detected. A
+"endinput_norecord" (4): the EndInput Key command key sequence was
+Default:              None.
+Parameter name:       Recording id
+Parameter ID:         ri (0x0004)
+Description:          A URI assigned to the physical segment recorded during a playrec signal. This
+Type:                 String
+Optional:             Yes
+Possible values:      Any physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+identifier is an http://URI, it must not have a query part.
+Default:              None.
+Parameter name:    Record duration
+Parameter ID:      rdur (0x0005)
+Description:       The total length of the recorded audio segment in 10 ms units.
+Type:              Integer
+Optional:          Yes
+Possible values:   0 upwards. If the operation was terminated by the Return Key sequence, rdur
+Default:           None.
+Parameter name:    End Key
+Parameter ID:      ek (0x0006)
+Description:       This parameter indicates the DTMF digit/s (if any) that lead to the completion
+Type:              String
+Optional:          Yes
+Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:           None.
+Parameter name:    Recording Length
+Parameter ID:      reclen (0x0007)
+Description:       This parameter indicates the length in bytes of the recorded content.
+Type:              Integer
+Optional:          Yes
+Possible values:   0 upwards in bytes.
+Default:           None.
+Parameter name:    Control Digits collected
+Parameter ID:      contdc (0x0008)
+Description:       This parameter contains the Control Digits that were collected during the
+Type:              Sub-list of String
+Optional:          Yes
+Possible values:   Each of String encoded as ControlDigit specified by the following ABNF:
+Default:              None.
+Signal name:          PlayRecord
+Signal ID:            playrec (0x0002)
+Description:          Plays a prompting announcement (optionally) and records voice input by the
+Signal type:          Defaults to TO
+Duration:             Defaults to 30000 (5 minutes) or as provisioned for the termination.
+Parameter name:       InitialPrompt
+Parameter ID:         ip (0x0001)
+Description:          The initial announcement prompting the user to speak for the record. May
+Type:                 String
+Optional:             Yes
+Possible values:      Any announcement specification conforming to the syntax described in
+Default:              None.
+Parameter name:       NoSpeechPrompt
+Parameter ID:         ns (0x0002)
+Description:          Played after the user has failed to speak following a prompt. Consists of one or
+Type:                 String
+Optional:             Yes
+Possible values:      Any announcement specification conforming to the syntax described in
+Default:           None.
+Parameter name:    SuccessAnnouncement
+Parameter ID:      sa (0x0003)
+Description:       Played when recording has succeeded. Consists of one or more audio
+Type:              String
+Optional:          Yes
+Possible values:   Any announcement specification conforming to the syntax described in
+Default:           None.
+Parameter name:    FailureAnnouncement
+Parameter ID:      fa (0x0004)
+Description:       Played when all recording attempts have failed. Consists of one or more audio
+Type:              String
+Optional:          Yes
+Possible values:   Any announcement specification conforming to the syntax described in
+Default:           None.
+Parameter name:    MaxAttempts
+Parameter ID:      mxatt (0x0005)
+Description:       The maximum number of prompts the user is given to speak. Prompts resulting
+Type:              Integer
+Optional:          Yes
+Possible values:   1 upwards
+Default:           None.
+Parameter name:    PreSpeechTimer
+Parameter ID:      prt (0x0006)
+Description:       The amount of time to wait for the user to initially speak. Specified in units of
+Type:              Integer
+Optional:          Yes
+Possible values:      0 upwards (0 indicates that the voice activity detection function is turned off,
+Default:              Provisioned.
+Parameter name:       PostSpeechTimer
+Parameter ID:         pst (0x0007)
+Description:          The amount of silence necessary after the end of the last speech segment for
+Type:                 Integer
+Optional:             Yes
+Possible values:      0 upwards (0 indicates that the voice activity detection function is turned off,
+Default:              Provisioned.
+Parameter name:       RecordLengthTimer
+Parameter ID:         rlt (0x0008)
+Description:          The maximum allowable length of the recording, not including pre or post
+Type:                 Integer
+Optional:             No
+Possible values:      0 upwards
+Default:              None.
+Parameter name:       RecordingIdentifier
+Parameter ID:         rid (0x0009)
+Description:          Specifies a URI to be assigned to the physical segment which is to be recorded
+Type:                 String
+Optional:             No
+Possible values:      Either "$" or a physical segment identifier satisfying the syntax of
+clause 6.2.5.2. If the identifier is an http://URL, it must not have a query part.
+Default:              None.
+Parameter name:       Speed
+Parameter ID:         sp (0x000a)
+Description:          The relative playback speed of each prompt specifiable as a positive (faster) or
+Type:                 Integer
+Optional:             Yes
+Possible values:      –99 upwards
+Default:              0
+Parameter name:       Volume
+Parameter ID:         vl (0x000b)
+Description:          The relative playback volume of each prompt specifiable as a positive (louder)
+Type:                 Integer
+Optional:             Yes
+Possible values:      Implementation dependent
+Default:              0
+Parameter name:       Offset
+Parameter ID:         off (0x000c)
+Description:          Specifies the offset into the initial prompt at which to start playing. A positive
+Type:                 Integer
+Optional:             Yes
+Possible values:      0, positive, or negative. The absolute value cannot exceed the length of the
+Default:              0
+Parameter name:       RestartKey
+Parameter ID:         rsk (0x000d)
+Description:          Defines a key sequence consisting of a command key optionally followed by
+zero or more keys. This key sequence has the following action: discard any
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       ReinputKey
+Parameter ID:         rik (0x000e)
+Description:          Defines a key sequence consisting of a command key optionally followed by
+zero or more keys. This key sequence has the following action: discard any
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       ReturnKey
+Parameter ID:         rtk (0x000f)
+Description:          Defines a key sequence consisting of a command key optionally followed by
+zero or more keys. This key sequence has the following action: terminate the
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       EndInputKey
+Parameter ID:         eik (0x0010)
+Description:          Defines a key sequence consisting of a command key optionally followed by
+zero or more keys. This key sequence has the following action: terminate the
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Record direction
+Parameter ID:         rd (0x0011)
+Description:          The record direction indicates the direction that the media is to be received.
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "Ext" (0x01): External indicates that recording is on the media which is
+"Int" (0x02): Internal indicates that recording is on the media received from the
+Default:              External.
+Parameter name:       Absolute Volume
+Parameter ID:         absvl (0x0012)
+Description:          The absolute playback volume of announcement specified in decibels. The
+Type:                 Integer
+Optional:             Yes
+Possible values:      0 and upwards (in decibels).
+Default:              0 (No absolute volume applied).
+Parameter name:       Storage Mode
+Parameter ID:         sm (0x0013)
+Description:          This parameter enables the MGC to indicate whether or not the recording
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "overwrite" (0x0001): Indicates that the recording should overwrite any
+"append" (0x0002):       Indicates that the recording shall be appended to any
+Default:              overwrite (0x0001).
+Parameter name:       Skip Interval
+Parameter ID:         skint (0x0014)
+Description:          Indicates how far the MG should skip forward or backwards when forward or
+Type:                 Integer
+Optional:             Yes
+Possible values:      1 or more milliseconds
+Default:              6000 (6 seconds).
+Parameter name:       Fast Foward Key
+Parameter ID:         ffk (0x0015)
+Description:          Indicates which DTMF digits map to a fast forward operation. On detection of
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Rewind Key
+Parameter ID:         rwk (0x0016)
+Description:          Indicates which DTMF digits map to a rewind operation. On detection of the
+Type:                 String
+Optional:             Yes.
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Volume Interval
+Parameter ID:         volint (0x0017)
+Description:          Indicates the percentage increase or decrease in volume when the volume up or
+Type:                 Integer
+Optional:             Yes
+Possible values:      Any positive integer.
+Default:              10%
+Parameter name:       Volume Up Key
+Parameter ID:         volup (0x0018)
+Description:          Indicates which DTMF digits map to a volume up operation. On detection of
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Volume Down Key
+Parameter ID:         voldwn (0x0019)
+Description:          Indicates which DTMF digits map to a volume down operation. On detection
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Speed Interval
+Parameter ID:         spdint (0x001a)
+Description:          Indicates the percentage increase or decrease in speed when the speed up or
+Type:                 Integer
+Optional:             Yes
+Possible values:      Any positive integer.
+Default:              10%
+Parameter name:       Speed Up Key
+Parameter ID:         spdup (0x001b)
+Description:          Indicates which DTMF digits map to a speed up operation. On detection of the
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Speed Down Key
+Parameter ID:         spddwn (0x001c)
+Description:          Indicates which DTMF digits map to a speed down operation. On detection of
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Pause Interval
+Parameter ID:         pse (0x001d)
+Description:          Indicates for how long the playout of a message is paused when a pause key is
+Type:                 Integer
+Optional:             Yes
+Possible values:      Any positive integer in milliseconds.
+Default:              10000 (10 seconds).
+Parameter name:       Pause Key
+Parameter ID:         pse (0x001e)
+Description:          Indicates which DTMF digits map to a pause operation. On detection of the
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Resume Key
+Parameter ID:         rsm (0x001f)
+Description:          Indicates which DTMF digits map to a resume operation. On detection of the
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Prompt Start Key
+Parameter ID:         pstart (0x0020)
+Description:          Indicates which DTMF digits map to a prompt start key operation. On
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Prompt End Key
+Parameter ID:         pend (0x0021)
+Description:          Indicates which DTMF digits map to a prompt end key operation. On detection
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       External Control Key
+Parameter ID:         extkey (0x0022)
+Description:          Indicates which DTMF digits map to an external key operation. Its function on
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Signal name:          Make persistent
+Signal ID:            makepers (0x0003)
+Description:          Makes the temporary audio segment identified by the given URI into a
+Signal Type:          Defaults to BR
+Duration:             Not applicable for default type.
+Parameter name:       Recording Identifier
+Parameter ID:         rid (0x0001)
+Description:          Identifies the audio segment which is to be made persistent.
+Type:                 String
+Optional:             No
+Possible values:        A physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+identifier is an http://URL, it must not have a query part.
+Default:                None.
+If the MG recognizes a DTMF command key sequence, it takes the appropriate action:
+The commands keys that apply to the prompting phase are:
+The commands keys that apply to the digit collection phase are:
+Package name:       Advanced audio server segment management package
+Package ID:         aassm (0x0036)
+Description:        The Advanced audio server segment management package provides a
+Version:                1
+Extends:                None.
+Property name:          AAS segment control termination name
+Property Id:            ctlnam (0x0001)
+Description:            Name of the AAS Segment Control Termination, if any, supported by the MG.
+Type:                   String  TerminationID 
+Possible values:        As provisioned in the MG. The value MUST NOT contain a wildcard.
+Default:                None
+Defined in:             TerminationState on ROOT.
+Characteristics:        Read only.
+Signal name:            Delete persistent
+Signal ID:              delpers (0x0001)
+Description:            Deletes an identified persistent audio segment.
+SignalType:             BR
+Duration:               Not applicable.
+Parameter name:       Segment Identifier
+Parameter ID:         sid (0x0001)
+Description:          Identifies the audio segment which is to be deleted.
+Type:                 String
+Optional:             No
+Possible values:      A physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+identifier is an http://URI, it must not have a query part.
+Default:              None.
+Signal name:          Override audio
+Signal ID:            override (0x0002)
+Description:          Overlays the specified provisioned audio segment with a different persistent
+SignalType:           BR
+Duration:             Not applicable.
+Parameter name:       Target Segment
+Parameter ID:         tgtsid (0x0001)
+Description:          Identifies the segment which is to be temporarily replaced by a new segment.
+Type:                 String
+Optional:             No
+Possible values:      A physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+identifier is an http://URI, it must not have a query part.
+Default:              None.
+Parameter name:       Overriding Segment
+Parameter ID:         oversid (0x0002)
+Description:          Identifies the segment which is to be played out in place of the target segment.
+Type:                 String
+Optional:             No
+Possible values:      A physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+identifier is an http://URI, it must not have a query part.
+Default:              None.
+Signal name:            RestoreAudio
+Signal ID:              restore (0x0003)
+Description:            Removes a previously imposed overlay segment, so that subsequent references
+SignalType:             BR
+Duration:               Not applicable.
+Parameter name:         Target Segment
+Parameter ID:           tgtsid (0x0001)
+Description:            Identifies the segment from which any overlay is to be removed.
+Type:                   String
+Optional:               No
+Possible values:        A physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+identifier is an http://URI, it must not have a query part.
+Default:                None.
+Package name:           ASR Package
+Package ID:             asr (0x00a6)
+Description:            The ASR package provides a signal to play an ASR and an event to indicate
+Version:                1
+Extends:                None.
+Event Name:             ASR Failure
+Event ID:             asrfail (0x0001)
+Description:          A return code indicating why an ASR operation failed. This package adds the
+event:
+Event name:           ASR Success
+Event ID:             asrsucc (0x0002)
+Description:          This event signifies the successful completion of playout of the ASR signal and
+Parameter name:       ASR Result
+Parameter ID:         asrr (0x0001)
+Description:          An octet string was generated by the ASR signal. The type may be the EMMA
+Type:                 OctectString
+Optional:             No
+Possible values:      An octet text string describing the voice input,
+Default:              None.
+Parameter name:       ASR Result Format Type
+Parameter ID:         asrrft (0x0002)
+Description:         Indicates the ASR result format type.
+Type:                Enumeration
+Optional:            Yes
+Possible values:     EMMA (0x0001): The type of result format is EMMA. EMMA can support
+Other (0x0002): Other format, for further study.
+Default:             EMMA (0x0001).
+Signal name:         ASR Recognition With Grammar Script
+Signal ID:           asrwgs (0x0001)
+Description:         This signal triggers the ASR function with grammar script.
+SignalType:          Brief
+Duration:            N/A.
+Parameter name:      InitialPrompt
+Parameter ID:        ip (0x0001)
+Description:         The initial announcement prompting the user to input voice. May consist of
+Type:                String
+Optional:            Yes
+Possible values:     Any announcement specification conforming to the syntax described in
+Default:             None.
+Parameter name:      Recognition Grammar Script
+Parameter ID:        rgs (0x0002)
+Description:         This parameter indicates the ASR grammar. The content format of the ASR
+Type:                OctetString
+Optional:             No
+Possible values:      The grammar script conforming to the W3C SRGS or other grammar format.
+Default:              None.
+Parameter name:       Recognition Grammar Script Type
+Parameter ID:         rgst (0x0003)
+Description:          The recognition grammar script type indicates the recognition grammar script
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "SRGS" (0x0001): W3C's Speech Recognition Grammar Specification
+"Other" (0x0002): User defined.
+Default:              SRGS (0x0001).
+Parameter name:       Recognition Grammar Script Format
+Parameter ID:         rgsf (0x0004)
+Description:          This parameter indicates the grammar script form, includes ABNF and XML.
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "ABNF" (0x0001): The script uses ABNF form.
+"XML" (0x0002): The script uses XML form.
+Default:              ABNF (0x0001).
+Parameter name:       Recognition Mode
+Parameter ID:         rm (0x0005)
+Description:          Indicates which mode the speech recognizer will adopt.
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "Normal" (0x0001): Normal mode recognition tries to match all of the speech
+"Hotword" (0x0002): Hotword mode is where the recognizer looks for a match
+Default:           Normal (0x0001).
+Parameter name:    End Input Key
+Parameter ID:      eik (0x0006)
+Description:       Indicates to end the speech recognition. See clause 9.3.1.1.19 for further
+Type:              String
+Optional:          Yes
+Possible values:   Implementation dependent.
+Default:           None.
+Parameter name:    Maximum Recognition Time
+Parameter ID:      mrt (0x0007)
+Description:       Defines the maximum time to wait for recognition of speech, specified in units
+Type:              Integer
+Optional:          Yes
+Possible values:   Any integer greater than 0.
+Default:           None
+Parameter name:    Waiting Time for Input
+Parameter ID:      wit (0x0008)
+Description:       Defines the time to wait to detect user input, specified in units of
+Type:              Integer
+Optional:          Yes
+Possible values:   Any integer greater than 0.
+Default:           Provisioned.
+Parameter name:    Recognition Precision
+Parameter ID:      ra (0x0009)
+Description:       Depending on the implementation and capability of the recognizer resource, it
+Type:              Integer
+Optional:             Yes
+Possible values:      0-100
+Default:              Provisioned.
+Parameter name:       Recognition Sensitivity
+Parameter ID:         rs (0x000a)
+Description:          To filter out background noise so that it is not mistaken for speech, the
+Type:                 Integer
+Optional:             Yes
+Possible values:      0-100
+Default:              Provisioned.
+Parameter name:       Record File
+Parameter ID:         rf (0x000b)
+Description:          The location to save the record: when voice-to-text conversion, the inputting
+Type:                 String
+Optional:             Yes
+Possible values:      The record file specification conforming to the syntax described in clause 6.
+Default:              None.
+Parameter name:       PostSpeechTimer
+Parameter ID:         pst (0x000c)
+Description:          The amount of silence necessary after the end of the speech, specified in units
+Type:                 Integer
+Optional:             Yes
+Possible values:      1 upwards.
+Default:              Provisioned.
+Signal name:          ASR recognition with grammar identifier
+Signal ID:            asrid (0x0002)
+Description:          This signal triggers the ASR function with grammar identifier.
+SignalType:           Brief
+Duration:             NA.
+Parameter name:     InitialPrompt
+Parameter ID:       ip (0x0001)
+Description:        The initial announcement prompting the user to input voice. May consist of
+Type:               String
+Optional:           Yes
+Possible values:    Any announcement specification conforming to the syntax described in
+Default:            None.
+Parameter name:     Recognition Grammar Identifier
+Parameter ID:       rgid (0x0002)
+Description:        The parameter indicates the ASR grammar identifier. The identifier conforms
+Type:               String
+Optional:           No
+Possible values:    The grammar identifier conforming to the syntax described in clause 6.
+Default:            None.
+Parameter name:     Recognition Grammar Script Type
+Parameter ID:       rgst (0x0003)
+Description:        The recognition grammar script type indicates the recognition grammar script
+Type:               Enumeration
+Optional:           Yes
+Possible values:    SRGS (0x0001): W3C's Speech Recognition Grammar Specification Version 1
+Other (0x0002): User defined.
+Default:            SRGS (0x0001).
+Parameter name:     Recognition Grammar Script Format
+Parameter ID:       rgsf (0x0004)
+Description:        The recognition grammar script format indicates the grammar script form,
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "ABNF" (0x0001): The script uses ABNF form.
+"XML" (0x0002): The script uses XML form.
+Default:              ABNF (0x0001).
+Parameter name:       Recognition Mode
+Parameter ID:         rm (0x0005)
+Description:          Indicates which mode the speech recognizer will adopt.
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "Normal" (0x0001): Normal mode recognition tries to match all of the speech
+"Hotword" (0x0002): Hotword mode is where the recognizer looks for a match
+Default:              Normal (0x0001).
+Parameter name:       End Input Key
+Parameter ID:         eik (0x0006)
+Description:          Indicates to end the speech recognition. See clause 9.3.1.1.19 for further
+Type:                 String
+Optional:             Yes
+Possible values:      Implementation dependent.
+Default:              None.
+Parameter name:       Maximum Recognition Time
+Parameter ID:         mrt (0x0007)
+Description:          Defines the maximum time to wait for recognition of speech, specified in units
+Type:                 Integer
+Optional:             Yes
+Possible values:      Any integer greater than 0.
+Default:              None.
+Parameter name:       Waiting Time for Input
+Parameter ID:         wit (0x0008)
+Description:       Defines the time to wait to detect user input, specified in units of
+Type:              Integer
+Optional:          Yes
+Possible values:   Any integer greater than 0.
+Default:           Provisioned.
+Parameter name:    Recognition Precision
+Parameter ID:      ra (0x0009)
+Description:       Depending on the implementation and capability of the recognizer resource it
+Type:              Integer
+Optional:          Yes
+Possible values:   0-100
+Default:           Provisioned.
+Parameter name:    Recognition Sensitivity
+Parameter ID:      rs (0x000a)
+Description:       To filter out background noise so that it is not mistaken for speech, the
+Type:              Integer
+Optional:          Yes
+Possible values:   0-100
+Default:           Provisioned.
+Parameter name:    Record File
+Parameter ID:      rf (0x000b)
+Description:       The location to save the record: when voice-to-text conversion, the inputting
+Type:              String
+Optional:          Yes
+Possible values:   The record file specification conforming to the syntax described in clause 6.
+Default:           None.
+Parameter name:         PostSpeechTimer
+Parameter ID:           pst (0x000c)
+Description:            The amount of silence necessary after the end of the speech, specified in units
+Type:                   Integer
+Optional:               Yes
+Possible values:        1 upwards.
+Default:                Provisioned.
+Package name:           Advanced Audio Server base package enhancement
+Package ID:             aastts (0x00a8)
+Description:            The Advanced Audio Server (AAS) package for TTS enhancement provides a
+Version:                2
+Extends:                None.
+Event name:             TTS operation failure
+Event ID:               ttsfail (0x0001)
+Description:            Signifies the failure of a TTS operation subsequent to the return of the response
+Parameter name:         Return Code
+Parameter ID:           rc (0x0001)
+Description:            A return code indicating why an Advanced Audio Server operation failed.
+Type:                   Integer
+Optional:               No
+Possible values:        Failure return codes range from 600-699. Failure codes 600 to 617 report the
+618: SSML text syntax error.
+Default:                None.
+Event name:             Mark Detection
+Event ID:               md (0x0002)
+Description:          This event is enabled to detect the marks that are embedded in a media stream.
+Parameter name:       Mark Value
+Parameter ID:         mv (0x0001)
+Description:          This parameter contains the marker tag value to identify the mark.
+Type:                 String
+Optional:             Yes
+Possible values:      A Unicode TEXT Format CHAR string, for example "here", to indicate a
+Default:              None.
+Parameter name:       Time Value
+Parameter ID:         tv (0x0002)
+Description:          This parameter contains a time value indicating the instant in the media stream
+Type:                 String
+Optional:             Yes
+Possible values:      An NTP timestamp, a 64-bit number in decimal form. See Section 3 of
+Default:              None.
+Signal name:          Play Segment Identifier
+Signal ID:            playsid (0x0001)
+Description:          Plays one or more TTS Segment Identifier(s).
+SignalType:           Defaults to BR (play continues until the specified or default number of
+Duration:             Not applicable to BR signals.
+Parameter name:     Announcement
+Parameter ID:       an (0x0001)
+Description:        Text to be played. Consists of one or more text Segment Identifier(s). The
+Type:               String
+Optional:           No
+Possible values:    One or more segment identifiers adhering to the syntax described in clause 6.
+Default:            None.
+Parameter name:     Segment Type
+Parameter ID:       sgt (0x0002)
+Description:        Indicates the segment type.
+Type:               Enumeration
+Optional:           Yes
+Possible values:    "SSML" (0x0001): The segment type is SSML.
+"Other" (0x0002): Other format, for further study.
+Default:            SSML (0x0001).
+Parameter name:     Iterations
+Parameter ID:       it (0x0003)
+Description:        The maximum number of times an announcement is to be played.
+Type:               Integer
+Optional:           Yes
+Possible values:    As described below, playout may end before the specified number of iterations
+Default:            1
+Parameter name:     Interval
+Parameter ID:       iv (0x0004)
+Description:        The interval of silence to be inserted between iterative plays. Specified in units
+Type:               Integer
+Optional:             Yes
+Possible values:      0 upwards.
+Default:              None.
+Parameter name:       Direction
+Parameter ID:         di (0x0005)
+Description:          The direction parameter can be used to indicate the direction that the TTS is to
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "Ext" (0x01): External indicates that the TTS is sent from the MG to an
+"Int" (0x02): Internal indicates that the TTS is played into the MG to the other
+"Both" (0x03): Both indicates internal and external behaviour.
+Default:              Ext (0x01).
+Signal name:          Play script
+Signal ID:            playscript (0x0002)
+Description:          Play a TTS script.
+SignalType:           Defaults to BR (play continues until the specified or default number of
+Duration:             Not applicable to BR signals.
+Parameter name:       Script
+Parameter ID:         script (0x0001)
+Description:          Script to be played.
+Type:                 Octet string
+Optional:             No
+Possible values:      A SSML script or other format script. The type of script is provided by the
+Default:              None.
+Parameter name:    Script Type
+Parameter ID:      sct (0x0002)
+Description:       The script type to be played.
+Type:              Enumeration
+Optional:          Yes
+Possible values:   "SSML" (0x0001): The type of script is SSML.
+"Other" (0x0002): Other Type (for extension).
+Default:           SSML (0x0001).
+Parameter name:    Iterations
+Parameter ID:      it (0x0003)
+Description:       The maximum number of times a script is to be played.
+Type:              Integer
+Optional:          Yes
+Possible values:   As described below, playout may end before the specified number of iterations
+Default:           1
+Parameter name:    Interval
+Parameter ID:      iv (0x0004)
+Description:       The interval of silence to be inserted between iterative plays. Specified in units
+Type:              Integer
+Optional:          Yes
+Possible values:   0 upwards.
+Default:           None.
+Parameter name:    Direction
+Parameter ID:      di (0x0005)
+Description:       The direction parameter can be used to indicate the direction that the TTS is to
+Type:              Enumeration
+Optional:          Yes
+Possible values:        "Ext" (0x01): External indicates that the TTS is sent from the MG to an
+"Int" (0x02): Internal indicates that the TTS is played into the MG to the other
+"Both" (0x03): Both indicates internal and external behaviour.
+Default:                Ext (0x01).
+the normal way. If the signalType parameter is set to OO, this is the only way to end the TTS: the
+Package name:           Multimedia Play Package
+Package ID:             mpp (0x00a9)
+Description:            Multimedia Play Package indicates that the playout is associated with
+Version:                2
+Extends:                aasb (0x0033) version 3.
+Signal name:            Play
+Signal ID:              play (0x0001)
+Description:            Plays one or more multimedia segments.
+SignalType:             Defaults to BR (play continues until the specified or default number of
+Duration:               Not applicable to BR signals.
+Parameter name:         Announcement
+Parameter ID:           an (0x0001)
+Description:            An announcement to be played. Consists of one or more multimedia
+Type:                   String
+Optional:               No
+Possible values:        A sequence of segment specifications adhering to the syntax described in
+Default:                None.
+Parameter Name:         Iterations
+Parameter ID:           it (0x0002)
+Description:            The maximum number of times a multimedia announcement is to be played.
+Type:                   Integer
+Optional:               Yes
+Possible values:      As described below, playout may end before the specified number of iterations
+Default:              1
+Parameter name:       Interval
+Parameter ID:         iv (0x0003)
+Description:          The interval of silence to be inserted between iterative plays. Specified in units
+Type:                 Integer
+Optional:             Yes
+Possible values:      0 upwards.
+Default:              None.
+Parameter name:       Speed
+Parameter ID:         sp (0x0004)
+Description:          The relative playback speed of multimedia announcement, specifiable as a
+Type:                 Integer
+Optional:             Yes
+Possible values:      –99 upwards.
+Default:              0
+Parameter name:       Volume
+Parameter ID:         vl (0x0005)
+Description:          The relative playback volume of the audio component of a multimedia
+Type:                 Integer
+Optional:             Yes
+Possible values:      Implementation dependent.
+Default:              0
+Parameter name:       Announcement Direction
+Parameter ID:         di (0x0006)
+Description:        The direction parameter can be used to indicate the direction that the
+Type:               Enumeration
+Optional:           Yes
+Possible values:    "Ext" (0x01): External indicates that the multimedia announcement is sent
+"Int" (0x02): Internal indicates that the announcement is played into the MG to
+"Both" (0x03): Both indicates internal and external behaviour.
+Default:            Ext (0x01).
+Parameter name:     Brightness
+Parameter ID:       btn (0x0007)
+Description:        The relative playback brightness of video in multimedia, specifiable as a
+Type:               Integer
+Optional:           Yes
+Possible values:    –99 to 99
+Default:            0
+Parameter name:     Contrast
+Parameter ID:       ctn (0x0008)
+Description:        The relative playback contrast of video in multimedia, specifiable as a positive
+Type:               Integer
+Optional:           Yes
+Possible values:    –99 to 99
+Default:            0
+Parameter name:     Offset
+Parameter ID:       off (0x0009)
+Description:        Specifies the offset into the announcement at which to start playing. A positive
+Type:               Integer
+Optional:               No
+Possible values:        0, positive, or negative. If the offset value is greater than the length of the
+Default:                0
+Parameter name:         Absolute Volume
+Parameter ID:           absvl (0x000a)
+Description:            The absolute playback volume of announcement specified in decibels. The
+Type:                   Integer
+Optional:               Yes
+Possible values:        0 and upwards (in decibels).
+Default:                0 (No absolute volume applied).
+Package name:           Multimedia Recording Package
+Package ID:             mrp (0x00b3)
+Description:            The Multimedia Recording Package indicates that the recording is associated
+Version:                2
+Extends:                aasrec (0x0035) version 3.
+Signal name:         PlayRecord
+Signal ID:           playrec (0x0002)
+Description:         Records a multimedia segment.
+SignalType:          Defaults to TO.
+Duration:            Defaults to 30000 (5 minutes) or as provisioned for the termination.
+Parameter name:      InitialPrompt
+Parameter ID:        ip (0x0001)
+Description:         The initial announcement prompting the user to speak for the record. May
+Type:                String
+Optional:            Yes
+Possible values:     Any announcement specification conforming to the syntax described in
+Default:             None.
+Parameter name:      NoSpeechPrompt
+Parameter ID:        ns (0x0002)
+Description:         Played after the user has failed to speak following a prompt. Consists of one or
+Type:                String
+Optional:            Yes
+Possible values:     Any announcement specification conforming to the syntax described in
+Default:             None.
+Parameter name:      SuccessAnnouncement
+Parameter ID:        sa (0x0003)
+Description:         Played when recording has succeeded. Consists of one or more multimedia
+Type:                String
+Optional:            Yes
+Possible values:      Any announcement specification conforming to the syntax described in
+Default:              None.
+Parameter name:       FailureAnnouncement
+Parameter ID:         fa (0x0004)
+Description:          Played when all recording attempts have failed. Consists of one or more
+Type:                 String
+Optional:             Yes
+Possible values:      Any announcement specification conforming to the syntax described in
+Default:              None.
+Parameter name:       MaxAttempts
+Parameter ID:         mxatt (0x0005)
+Description:          The maximum number of prompts the user is given to speak. Prompts resulting
+Type:                 Integer
+Optional:             Yes
+Possible values:      1 upwards.
+Default:              None.
+Parameter name:       PreSpeechTimer
+Parameter ID:         prt (0x0006)
+Description:          The amount of time to wait for the user to initially speak. Specified in units of
+Type:                 Integer
+Optional:             Yes
+Possible values:      0 upwards (0 indicates the voice activity detection function is turned off, i.e.,
+Default:              Provisioned.
+Parameter name:       PostSpeechTimer
+Parameter ID:         pst (0x0007)
+Description:        The amount of silence necessary after the end of the last speech segment for
+Type:               Integer
+Optional:           Yes
+Possible values:    0 upwards (0 indicates that the voice activity detection function is turned off,
+Default:            Provisioned.
+Parameter name:     RecordLengthTimer
+Parameter ID:       rlt (0x0008)
+Description:        The maximum allowable length of the recording, not including pre- or
+Type:               Integer
+Optional:           No
+Possible values:    0 upwards.
+Default:            None.
+Parameter name:     RecordingIdentifier
+Parameter ID:       rid (0x0009)
+Description:        Specifies a URI to be assigned to the physical segment which is to be recorded
+Type:               String
+Optional:           No
+Possible values:    Either "$" or a physical segment identifier satisfying the syntax of
+clause 6.2.5.2. If the identifier is an http://URL, it must not have a query part.
+Default:            None.
+Parameter name:     Speed
+Parameter ID:       sp (0x000a)
+Description:          The relative playback speed of each prompt, specifiable as a positive (faster) or
+Type:                 Integer
+Optional:             Yes
+Possible values:      –99 upwards.
+Default:              0
+Parameter name:       Volume
+Parameter ID:         vl (0x000b)
+Description:          The relative playback volume of each prompt specifiable as a positive (louder)
+Type:                 Integer
+Optional:             Yes
+Possible values:      Implementation dependent.
+Default:              0
+Parameter name:       Offset
+Parameter ID:         off (0x000c)
+Description:          Specifies the offset into the initial prompt at which to start playing. A positive
+Type:                 Integer
+Optional:             Yes
+Possible values:      0, positive, or negative. The absolute value cannot exceed the length of the
+Default:              0
+Parameter name:       RestartKey
+Parameter ID:         rsk (0x000d)
+Description:          Defines a key sequence consisting of a command key optionally followed by
+zero or more keys. This key sequence has the following action: discard any
+Type:                 String
+Optional:          Yes
+Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:           None.
+Parameter name:    ReinputKey
+Parameter ID:      rik (0x000e)
+Description:       Defines a key sequence consisting of a command key optionally followed by
+zero or more keys. This key sequence has the following action: discard any
+Type:              String
+Optional:          Yes
+Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:           None.
+Parameter name:    ReturnKey
+Parameter ID:      rtk (0x000f)
+Description:       Defines a key sequence consisting of a command key optionally followed by
+zero or more keys. This key sequence has the following action: terminate the
+Type:              String
+Optional:          Yes
+Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:           None.
+Parameter name:    EndInputKey
+Parameter ID:      eik (0x0010)
+Description:       Defines a key sequence consisting of a command key optionally followed by
+zero or more keys. This key sequence has the following action: terminate the
+Type:              String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Record Direction
+Parameter ID:         rd (0x0011)
+Description:          The record direction indicates the direction that the multimedia streams are to
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "Ext" (0x01): External indicates that recording is on the media which is
+"Int" (0x02): Internal indicates that recording is on the media received from the
+Default:              Ext (0x01).
+Parameter name:       Absolute Volume
+Parameter ID:         absvl (0x0012)
+Description:          The absolute playback volume of announcement specified in decibels. The
+Type:                 Integer
+Optional:             Yes
+Possible values:      0 and upwards (in decibels).
+Default:              0 (No absolute volume applied).
+Parameter name:       Storage Mode
+Parameter ID:         sm (0x0013)
+Description:          This parameter enables the MGC to indicate whether or not the recording
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "overwrite" (0x0001): Indicates that the recording should overwrite any
+"append" (0x0002):       Indicates that the recording shall be appended to any
+Default:              overwrite (0x0001).
+Parameter name:       Skip Interval
+Parameter ID:         skint (0x0014)
+Description:          Indicates how far the MG should skip forward or backwards when forward or
+Type:                 Integer
+Optional:             Yes
+Possible values:      1 or more milliseconds
+Default:              6000 (6 seconds).
+Parameter name:       Fast Foward Key
+Parameter ID:         ffk (0x0015)
+Description:          Indicates which DTMF digits maps to a fast forward operation. On detection of
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Rewind Key
+Parameter ID:         rwk (0x0016)
+Description:          Indicates which DTMF digits map to a rewind operation. On detection of the
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Volume Interval
+Parameter ID:         volint (0x0017)
+Description:          Indicates the percentage increase or decrease in volume when the volume up or
+Type:                 Integer
+Optional:             Yes
+Possible values:      Any positive integer.
+Default:              10%
+Parameter name:       Volume Up Key
+Parameter ID:         volup (0x0018)
+Description:          Indicates which DTMF digits map to a volume up operation. On detection of
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Volume Down Key
+Parameter ID:         voldwn (0x0019)
+Description:          Indicates which DTMF digits map to a volume down operation. On detection
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Speed Interval
+Parameter ID:         spdint (0x001a)
+Description:          Indicates the percentage increase or decrease in speed when the Speed Up or
+Type:                 Integer
+Optional:             Yes
+Possible values:      Any positive integer.
+Default:              10%
+Parameter name:       Speed Up Key
+Parameter ID:         spdup (0x001b)
+Description:          Indicates which DTMF digits map to a speed up operation. On detection of the
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Speed Down Key
+Parameter ID:         spddwn (0x001c)
+Description:          Indicates which DTMF digits map to a speed down operation. On detection of
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Pause Interval
+Parameter ID:         pse (0x001d)
+Description:          Indicates for how long playout of a message is paused when a Pause Key is
+Type:                 Integer
+Optional:             Yes
+Possible values:      Any positive integer in milliseconds.
+Default:              10000 (10 seconds).
+Parameter name:       Pause Key
+Parameter ID:         pse (0x001e)
+Description:          Indicates which DTMF digits map to a pause operation. On detection of the
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Resume Key
+Parameter ID:         rsm (0x001f)
+Description:          Indicates which DTMF digits map to a resume operation. On detection of the
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       Prompt End Key
+Parameter ID:         pend (0x0020)
+Description:          Indicates which DTMF digits map to a prompt end key operation. On detection
+Type:                 String
+Optional:             Yes
+Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:              None.
+Parameter name:       External Control Key
+Parameter ID:         extkey (0x0021)
+Description:          Indicates which DTMF digits map to an external key operation. Its function on
+Type:                 String
+Optional:               Yes
+Possible values:        A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+Default:                None.
+Package name:           Enhanced DTMF Detection Package
+Package ID:             edtmf (0x0100)
+Description:            The Enhanced DTMF Detection Package allows a MGC to indicate in which
+Version:                1
+Extends:                dd (0x0006) version 2.
+Event name:             DTMF Digits
+Event ID:               EventIDs are defined with the same names as the SignalIDs defined in the table
+Description:          Generated when the MG detects a digit.
+Parameter name:       Type
+Parameter ID:         type (0x0001)
+Description:          Indicates whether DTMF digits detected during a prompt phase (i.e., control
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "all" (0x0001):          The detected digits are reported at all times;
+"cont" (0x0002):         The detected digits are reported only during the control
+"coll" (0x0003):         The detected digits are reported only during the
+Default:              all.
+Parameter name:       Type
+Parameter ID:         type (0x0001)
+Description:          Indicates whether DTMF digits were detected during a prompt phase
+Type:                 Enumeration
+Optional:             Yes
+Possible values:      "all" (0x0001):          The MG is unable to determine the phase in which the
+"cont" (0x0002):         The digit string was detected during the control phase;
+"coll" (0x0003):         The digit string was detected during the collection
+Default:              all.
+Event name:           DigitMap Completion Event
+Event ID:             ce (0x0004)
+Description:          Generated when a DigitMap completes as described in clause 7.1.14
+Parameter name:       Unsuccessful Match Reporting
+Parameter ID:       umr (0x0001)
+Description:        The MGC may use this parameter to control whether the DigitMap Completion
+Type:               Boolean
+Optional:           Yes
+Possible values:    On        Generate DigitMap Completion Event on unsuccessful match.
+Default:            On.
+Parameter name:     Type
+Parameter ID:       type (0x0002)
+Description:        Indicates whether DTMF digits detected during a prompt phase (i.e., control
+Type:               Enumeration
+Optional:           Yes
+Possible values:    "all" (0x0001):        The detected digits are reported at all times;
+"cont" (0x0002):       The detected digits are reported only during the control
+"coll" (0x0003):       The detected digits are reported only during the
+Default:            all.
+Parameter name:     DigitString
+Parameter ID:       ds (0x0001)
+Description:        The portion of the current dial string as described in clause 7.1.14
+Type:               String of DigitMap symbols (possibly empty) returned as a quotedString
+Optional:           No
+Possible values:    A sequence of the characters "0" through "9", "A" through "F", and the long
+Default:            None.
+Parameter name:     Termination Method
+Parameter ID:       Meth (0x0002)
+Description:            Indicates the reason for the generation of the event. See the procedures
+Type:                   Enumeration
+Optional:               No
+Possible values:        "UM" (0x0001): Unambiguous match;
+"PM" (0x0002): Partial match, completion by timer expiry or unmatched event;
+"FM" (0x0003): Full match, completion by timer expiry or unmatched event.
+Default:                None.
+Parameter name:         Type
+Parameter ID:           type (0x0003)
+Description:            Indicates whether DTMF digits were detected during a prompt phase (i.e.,
+Type:                   Enumeration
+Optional:               Yes
+Possible values:        "all" (0x0001):        the MG is unable to determine the phase in which the
+"cont" (0x0002):       The digit string was detected during the control phase;
+"coll" (0x0003):       The digit string was detected during the collection
+Default:                all.
+[b-IETF RFC 4234]   IETF RFC 4234 (2005), Augmented BNF for Syntax Specifications: ABNF.
+[b-W3C EMMA]        W3C (2009), EMMA: Extensible Multimodal Annotation markup language.
+Series N   Maintenance: international sound programme and television transmission circuits

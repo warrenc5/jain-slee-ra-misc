@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<!DOCTYPE event-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Event 1.1//EN" "http://java.sun.com/dtd/slee-event-jar_1_1.dtd">
+<event-jar>
+    <description>Event Definitions for MLP Resource Adaptor Type.
+    </description>
+    <library-ref>
+        <description> MLP Library </description>
+        <library-name>MLP Library</library-name>
+        <library-vendor>MOFOKOM</library-vendor>
+        <library-version> ${pom.version}</library-version>
+    </library-ref>
+    <event-definition>
+        <event-type-name>Transport Exception</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>mofokom.resource.common.TransportException</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            5.2.3.7           Standard Location Reporting Service
+When a mobile subscriber wants an LCS client to receive the MS location a standard location report is generated. The LCS
+Client that the location report should be sent to SHALL be specified by the MS or defined within the Location Server.
+The service consists of the following message:
+-   Standard Location Report
+        </description>
+        <event-type-name>Standard Location Report</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.Slrep</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            Standard Location Immediate Service. This is a standard query service with support for a large set of
+            parameters. This service is used when a (single) location response is
+            required immediately (within a set time) or the request may be served by
+            several asynchronous location responses (until a predefined timeout limit
+            is reached).
+            This service consists of the following messages:
+               - Standard Location Immediate Request
+               - Standard Location Immediate Answer
+               - Standard Location Immediate Report
+        </description>
+        <event-type-name>Standard Location Immediate Request</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.Slir</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            Standard Location Immediate Service. This is a standard query service with support for a large set of
+            parameters. This service is used when a (single) location response is
+            required immediately (within a set time) or the request may be served by
+            several asynchronous location responses (until a predefined timeout limit
+            is reached).
+            This service consists of the following messages:
+               - Standard Location Immediate Request
+               - Standard Location Immediate Answer
+               - Standard Location Immediate Report
+        </description>
+        <event-type-name>Standard Location Immediate Report</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.Slirep</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            Standard Location Immediate Service. This is a standard query service with support for a large set of
+            parameters. This service is used when a (single) location response is
+            required immediately (within a set time) or the request may be served by
+            several asynchronous location responses (until a predefined timeout limit
+            is reached).
+            This service consists of the following messages:
+               - Standard Location Immediate Request
+               - Standard Location Immediate Answer
+               - Standard Location Immediate Report
+        </description>
+        <event-type-name>Standard Location Immediate Answer</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.Slia</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            Emergency Location Immediate Service This is a service used especially for querying of the location of a mobile
+             subscriber that has initiated an emergency call. The response to this
+             service is required immediately (within a set time).
+             This service consists of the following messages:
+                    - Emergency Location Immediate Request
+                    - Emergency Location Immediate Answer
+        </description>
+        <event-type-name>Emergency Location Immediate Request</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.EmeLir</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            Emergency Location Immediate Service This is a service used especially for querying of the location of a mobile
+             subscriber that has initiated an emergency call. The response to this
+             service is required immediately (within a set time).
+             This service consists of the following messages:
+                    - Emergency Location Immediate Request
+                    - Emergency Location Immediate Answer
+        </description>
+        <event-type-name>Emergency Location Immediate Answer</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.EmeLia</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            Emergency Location Reporting Service This is a service that is used when the wireless network automatically
+             initiates the positioning at an emergency call. The position and related
+             data is then sent to the emergency application from the location server.
+             Which LCS application and its address are defined in the location server.
+             This service consists of the following message:
+                     - Emergency Location Report
+        </description>
+        <event-type-name>Emergency Location Report</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.Emerep</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            Triggered Location Reporting Service This is a service used when the mobile subscriber's location should be
+             reported at a specific time interval or on the occurrence of a specific
+             event.
+             This service consists of the following messages:
+                    - Triggered Location Reporting Request
+                    - Triggered Location Reporting Answer
+                    - Triggered Location Report
+                    - Triggered Location Reporting Stop Request
+                    - Triggered Location Reporting Stop Answer
+        </description>
+        <event-type-name>Triggered Location Reporting Request</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.Tlrr</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            Triggered Location Reporting Service This is a service used when the mobile subscriber's location should be
+             reported at a specific time interval or on the occurrence of a specific
+             event.
+             This service consists of the following messages:
+                    - Triggered Location Reporting Request
+                    - Triggered Location Reporting Answer
+                    - Triggered Location Report
+                    - Triggered Location Reporting Stop Request
+                    - Triggered Location Reporting Stop Answer
+        </description>
+        <event-type-name>Triggered Location Reporting Answer</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.Tlra</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            Triggered Location Reporting Service This is a service used when the mobile subscriber's location should be
+             reported at a specific time interval or on the occurrence of a specific
+             event.
+             This service consists of the following messages:
+                    - Triggered Location Reporting Request
+                    - Triggered Location Reporting Answer
+                    - Triggered Location Report
+                    - Triggered Location Reporting Stop Request
+                    - Triggered Location Reporting Stop Answer
+
+        </description>
+        <event-type-name>Triggered Location Reporting Report</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.Tlrep</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            Triggered Location Reporting Service This is a service used when the mobile subscriber's location should be
+             reported at a specific time interval or on the occurrence of a specific
+             event.
+             This service consists of the following messages:
+                    - Triggered Location Reporting Request
+                    - Triggered Location Reporting Answer
+                    - Triggered Location Report
+                    - Triggered Location Reporting Stop Request
+                    - Triggered Location Reporting Stop Answer
+
+        </description>
+        <event-type-name>Triggered Location Reporting Stop Request</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.Tlrsr</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>
+            Triggered Location Reporting Service This is a service used when the mobile subscriber's location should be
+             reported at a specific time interval or on the occurrence of a specific
+             event.
+             This service consists of the following messages:
+                    - Triggered Location Reporting Request
+                    - Triggered Location Reporting Answer
+                    - Triggered Location Report
+                    - Triggered Location Reporting Stop Request
+                    - Triggered Location Reporting Stop Answer
+
+        </description>
+        <event-type-name>Triggered Location Reporting Stop Answer</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>com.mofokom.j4mlp.element.Tlrsa</event-class-name>
+    </event-definition>
+</event-jar>

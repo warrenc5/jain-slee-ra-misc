@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><url xmlns:mvn="http://maven.apache.org/POM/4.0.0">http://www.mofokom.eu/site/${project.artifactId}/</url><modelVersion>4.0.0</modelVersion><artifactId>jain-megaco-ri</artifactId><groupId>jain</groupId><packaging>jar</packaging><name>${pom.artifactId}</name>
+    <version xmlns:mvn="http://maven.apache.org/POM/4.0.0">1.0.1</version>
+    
+	
+    <dependencies>
+        
+        
+    </dependencies>
+<distributionManagement xmlns:mvn="http://maven.apache.org/POM/4.0.0"><snapshotRepository><id>mofokom-public</id><name>mofokom-public</name><url>http://www.mofokom.eu/maven/snapshots-public</url><uniqueVersion>false</uniqueVersion></snapshotRepository><repository><id>mofokom-public</id><name>mofokom-public</name><url>http://www.mofokom.eu/maven/releases-public</url><uniqueVersion>false</uniqueVersion></repository><site><id>mofokom</id><url>scp://${site.url}/${project.artifactId}</url></site></distributionManagement></project>

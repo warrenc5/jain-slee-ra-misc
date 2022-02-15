@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy-config>
+   
+        <ra-entity resource-adaptor-id="ResourceAdaptorID[name=ACIP Resource Adaptor,vendor=MOFOKOM,version=3.1]" entity-name="ACIP Resource Adaptor Entity">
+                <properties file="">
+                        <property name="DEST_URL" type="java.lang.String" value="/Air/"/>
+                        <property name="DEST_PORT" type="java.lang.Integer" value="8080"/>
+                        <property name="DEST_HOST" type="java.lang.String" value="localhost"/>
+                        <property name="REALM_USER_NAME" type="java.lang.String" value="user"/>
+                        <property name="REALM_USER_PASSWORD" type="java.lang.String" value="user"/>
+                        <property name="ACTIVITY_DIMENSION" type="java.lang.Integer" value="10000"/>
+                        <property name="SOCKET_BUFFER" type="java.lang.Integer" value="2048"/>
+                        <property name="SOCKET_TIMEOUT" type="java.lang.Integer" value="2500"/>
+                        <property name="TCP_NO_DELAY" type="java.lang.Boolean" value="true"/>
+                        <property name="MAX_CONNECTIONS" type="java.lang.Integer" value="1"/>
+                        <property name="STALE_CONNECTIONS_CHECK" type="java.lang.Boolean" value="true"/>
+                        <property name="CONNECTION_TIMEOUT" type="java.lang.Integer" value="1000"/>
+                        <property name="USER_AGENT" type="java.lang.String" value="SLEE/3.1/1.0"/>
+                        <property name="SHUTDOWN_TIME" type="java.lang.Long" value="5000"/>
+                        <property name="ENCODER_BUFFER_SIZE" type="java.lang.Integer" value="5000"/>
+                        <property name="ENCODER_STREAMING" type="java.lang.Boolean" value="false"/>
+                </properties>
+                <ra-link name="ACIP Resource Adaptor Entity Link" />
+        </ra-entity>
+
+        <ra-entity resource-adaptor-id="ResourceAdaptorID[name=UCIP Resource Adaptor,vendor=MOFOKOM,version=3.1]" entity-name="UCIP Resource Adaptor Entity">
+                <properties file="">
+                        <property name="DEST_URL" type="java.lang.String" value="/Air/"/>
+                        <property name="DEST_PORT" type="java.lang.Integer" value="8080"/>
+                        <property name="DEST_HOST" type="java.lang.String" value="localhost"/>
+                        <property name="REALM_USER_NAME" type="java.lang.String" value="user"/>
+                        <property name="REALM_USER_PASSWORD" type="java.lang.String" value="user"/>
+                        <property name="ACTIVITY_DIMENSION" type="java.lang.Integer" value="10000"/>
+                        <property name="SOCKET_BUFFER" type="java.lang.Integer" value="2048"/>
+                        <property name="SOCKET_TIMEOUT" type="java.lang.Integer" value="2500"/>
+                        <property name="TCP_NO_DELAY" type="java.lang.Boolean" value="true"/>
+                        <property name="MAX_CONNECTIONS" type="java.lang.Integer" value="1"/>
+                        <property name="STALE_CONNECTIONS_CHECK" type="java.lang.Boolean" value="true"/>
+                        <property name="CONNECTION_TIMEOUT" type="java.lang.Integer" value="1000"/>
+                        <property name="USER_AGENT" type="java.lang.String" value="SLEE/3.1/1.0"/>
+                        <property name="SHUTDOWN_TIME" type="java.lang.Long" value="5000"/>
+                        <property name="ENCODER_BUFFER_SIZE" type="java.lang.Integer" value="5000"/>
+                        <property name="ENCODER_STREAMING" type="java.lang.Boolean" value="false"/>
+                </properties>
+                <ra-link name="UCIP Resource Adaptor Entity Link" />
+        </ra-entity>
+
+        <ra-entity resource-adaptor-id="ResourceAdaptorID[name=VSIP Resource Adaptor,vendor=MOFOKOM,version=3.1]" entity-name="VSIP Resource Adaptor Entity">
+                <properties file="">
+                        <property name="DEST_URL" type="java.lang.String" value="/Air/"/>
+                        <property name="DEST_PORT" type="java.lang.Integer" value="8080"/>
+                        <property name="DEST_HOST" type="java.lang.String" value="localhost"/>
+                        <property name="REALM_USER_NAME" type="java.lang.String" value="user"/>
+                        <property name="REALM_USER_PASSWORD" type="java.lang.String" value="user"/>
+                        <property name="ACTIVITY_DIMENSION" type="java.lang.Integer" value="10000"/>
+                        <property name="SOCKET_BUFFER" type="java.lang.Integer" value="2048"/>
+                        <property name="SOCKET_TIMEOUT" type="java.lang.Integer" value="2500"/>
+                        <property name="TCP_NO_DELAY" type="java.lang.Boolean" value="true"/>
+                        <property name="MAX_CONNECTIONS" type="java.lang.Integer" value="1"/>
+                        <property name="STALE_CONNECTIONS_CHECK" type="java.lang.Boolean" value="true"/>
+                        <property name="CONNECTION_TIMEOUT" type="java.lang.Integer" value="1000"/>
+                        <property name="USER_AGENT" type="java.lang.String" value="SLEE/3.1/1.0"/>
+                        <property name="SHUTDOWN_TIME" type="java.lang.Long" value="5000"/>
+                        <property name="ENCODER_BUFFER_SIZE" type="java.lang.Integer" value="5000"/>
+                        <property name="ENCODER_STREAMING" type="java.lang.Boolean" value="false"/>
+                </properties>
+                <ra-link name="VSIP Resource Adaptor Entity Link" />
+        </ra-entity>
+
+</deploy-config>

@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-adaptor-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor 1.1//EN" "http://java.sun.com/dtd/slee-resource-adaptor-jar_1_1.dtd">
+<resource-adaptor-jar>
+    <resource-adaptor id="ucip">
+        <description>MegaCo Resource Adaptor </description>
+        <resource-adaptor-name>MegaCo Resource Adaptor </resource-adaptor-name>
+        <resource-adaptor-vendor> MOFOKOM </resource-adaptor-vendor>
+        <resource-adaptor-version> ${pom.version} </resource-adaptor-version>
+        <resource-adaptor-type-ref>
+            <resource-adaptor-type-name>MegaCo Resource Adaptor Type</resource-adaptor-type-name>
+            <resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor>
+            <resource-adaptor-type-version> ${pom.version} </resource-adaptor-type-version>
+        </resource-adaptor-type-ref>
+        <library-ref>
+            <description> MegaCo Library </description>
+            <library-name> MegaCo Library </library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version> ${pom.version} </library-version>
+        </library-ref>
+        <resource-adaptor-classes>
+            <resource-adaptor-class>
+                <resource-adaptor-class-name>mofokom.megaco.resource.impl.MegaCoResourceAdaptor</resource-adaptor-class-name>
+            </resource-adaptor-class>
+        </resource-adaptor-classes>
+        <config-property>
+            <config-property-name>AUTHENTICATION_DATA</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value></config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>AUTHENTICATION_ALGORITHM</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>SHA1</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>ACTIVITY_DIMENSION</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>CLIENT_MAX_CONNECTIONS</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>CLIENT_SOCKET_ADDRESS</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>tcp://localhost:8000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>CLIENT_TIMEOUT</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>EXECUTOR_MAX_POOL_SIZE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>10</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>EXECUTOR_QUEUE_SIZE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>5</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>EXECUTOR_POOL_TIMEOUT</config-property-name>
+            <config-property-type>java.lang.Long</config-property-type>
+            <config-property-value>1000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>ENABLE_TELNET_NEGOTIATION</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>LISTEN_BIND_SOCKET_ADDRESS</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>tcp://localhost:8000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>LISTEN_HOME_SOCKET_ADDRESS</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>tcp://localhost</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>MARSHALL_ACTIVITY</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>MARSHALL_EVENT</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>PROTOCOL_FORMAT</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>ABNF</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>SESSION_IDLE_TIME</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>2000</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>RECEIVE_BUFFER</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>2048</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>SYNCHRONOUS</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+        <config-property>
+            <config-property-name>WORK_QUEUE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>10</config-property-value>
+        </config-property>
+
+
+    </resource-adaptor>
+    <security-permissions>
+        <description/>
+        <security-permission-spec>
+            grant {
+            permission java.lang.RuntimePermission "*" ;
+            permission java.security.AllPermission ;
+            };
+        </security-permission-spec>
+    </security-permissions>
+</resource-adaptor-jar>

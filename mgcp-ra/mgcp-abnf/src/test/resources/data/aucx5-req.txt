@@ -1,0 +1,4 @@
+AUCX 1203 aaln/2@rgw-2567.whatever.net MGCP 1.0
+I: FDE234C8
+F: RC,LC
+

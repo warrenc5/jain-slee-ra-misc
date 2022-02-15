@@ -1,0 +1,15 @@
+exitOnError false
+
+deactivateservice name=UCIP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+removeallsbbs name=UCIP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT     
+waittilserviceisinactive name=UCIP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+#uninstall file:/home/code/ccn/slee/service-du/target/service-du-1.0-SNAPSHOT.jar
+uninstall file:/home/code/ccn/slee/ucip-service/target/ucip-service-1.0-SNAPSHOT-du.jar
+      
+clearalarms resourceadaptorentity entity=UCIP\ Resource\ Adaptor
+deactivateraentity UCIP\ Resource\ Adaptor\ Entity
+removeallactivities UCIP\ Resource\ Adaptor\ Entity
+waittilraentityisinactive UCIP\ Resource\ Adaptor\ Entity
+unbindralinkname UCIP\ Resource\ Adaptor\ Entity\ Link
+removeraentity UCIP\ Resource\ Adaptor\ Entity
+uninstall file:/home/code/ccn/slee/du/target/air-du-1.0-SNAPSHOT.jar

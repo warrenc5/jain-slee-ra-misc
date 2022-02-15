@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-adaptor-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor 1.1//EN" "http://java.sun.com/dtd/slee-resource-adaptor-jar_1_1.dtd">
+<resource-adaptor-jar>
+    <resource-adaptor id="snmp-ra">
+        <description>SNMP Resource Adaptor </description>
+        <resource-adaptor-name>SNMP Resource Adaptor </resource-adaptor-name>
+        <resource-adaptor-vendor> MOFOKOM </resource-adaptor-vendor>
+        <resource-adaptor-version> ${pom.version} </resource-adaptor-version>
+        <resource-adaptor-type-ref>
+            <resource-adaptor-type-name>SNMP Resource Adaptor Type</resource-adaptor-type-name>
+            <resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor>
+            <resource-adaptor-type-version> ${pom.version} </resource-adaptor-type-version>
+        </resource-adaptor-type-ref>
+        <library-ref>
+            <description> SNMP Library </description>
+            <library-name> SNMP Library </library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version> ${pom.version} </library-version>
+        </library-ref>
+        <resource-adaptor-classes>
+            <resource-adaptor-class>
+                <resource-adaptor-class-name>mofokom.in.snmp.resource.impl.SNMPResourceAdaptor</resource-adaptor-class-name>
+            </resource-adaptor-class>
+            <resource-adaptor-usage-parameters-interface>
+                <resource-adaptor-usage-parameters-interface-name>mofokom.in.snmp.resource.impl.SNMPUsageParameters</resource-adaptor-usage-parameters-interface-name>
+            </resource-adaptor-usage-parameters-interface>
+        </resource-adaptor-classes>
+        <config-property>
+            <description>The number of work queues used to send Pdu.</description>
+            <config-property-name>WORK_QUEUE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1</config-property-value>
+        </config-property>
+        <config-property>
+            <description>The initial number of pooled threads to use to send Pdu.</description>
+            <config-property-name>POOL_SIZE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>2</config-property-value>
+        </config-property>
+        <config-property>
+            <description>The maximum number of pooled threads to use to send Pdu.</description>
+            <config-property-name>MAX_POOL_SIZE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>3</config-property-value>
+        </config-property>
+        <config-property>
+            <description>The duration in seconds before a thread will be removed from the pool.</description>
+            <config-property-name>POOL_TIMEOUT</config-property-name>
+            <config-property-type>java.lang.Long</config-property-type>
+            <config-property-value>120</config-property-value>
+        </config-property>
+        <config-property>
+            <description>The SNMP version the context will support 1,2 or 3.</description>
+            <config-property-name>SNMP_CONTEXT_VERSION</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>3</config-property-value>
+        </config-property>
+        <config-property>
+            <description>The SNMP manager host to connect to.</description>
+            <config-property-name>HOST</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>localhost</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>Set up a socket to accept SNMP connections</description>
+            <config-property-name>LISTEN</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+
+        <config-property>
+
+            <description>The local side binding interface.</description>
+            <config-property-name>BIND_ADDRESS</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>0.0.0.0</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>The UDP/TCP port to connect to or listen on.</description>
+            <config-property-name>PORT</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>162</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>Standard or TCP.</description>
+            <config-property-name>SOCKET_TYPE</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>Standard</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>The Engine ID.</description>
+            <config-property-name>CONTEXT_ENGINE_ID</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value></config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>The Name of the context.</description>
+            <config-property-name>CONTEXT_NAME</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value></config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>The Authentication Username.</description>
+            <config-property-name>USERNAME</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value></config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>The Authentication Password.</description>
+            <config-property-name>USER_AUTH_PASSWORD</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value></config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>The Authentication Mechanism MD5/SHA1.</description>
+            <config-property-name>AUTH_PROTOCOL</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>MD5</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>The Encryption Protocol DES/AES.</description>
+            <config-property-name>PRIV_PROTOCOL</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>DES</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>The privacy password.</description>
+            <config-property-name>USER_PRIV_PASSWORD</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value></config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>Use authentication on the context.</description>
+            <config-property-name>USE_AUTHENTICATION</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description>The privace on the context.</description>
+            <config-property-name>USE_PRIVACY</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>false</config-property-value>
+        </config-property>
+    <!--- SNMP v1 && SNMP v2 -->
+        <config-property>
+            <description>The v1 or v2 SNMP community.</description>
+            <config-property-name>COMMUNITY</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>public</config-property-value>
+        </config-property>
+        <!--
+        <config-property>
+            <config-property-name>INTERVAL</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>10000</config-property-value>
+        </config-property>
+        -->
+        <config-property>
+            <description>Receive buffer size.</description>
+            <config-property-name>MAX_RECV_SIZE</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>10000</config-property-value>
+        </config-property>
+         <config-property>
+            <description>Resend failed PDUs at these intervals. In milliseconds. </description>
+            <config-property-name>RETRY_INTERVALS</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>1000,2000,5000</config-property-value>
+        </config-property>
+        <config-property>
+            <description>Initialize the RA entity with an activity map size. </description>
+            <config-property-name>ACTIVITY_DIMENSION</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>5000</config-property-value>
+        </config-property>
+    </resource-adaptor>
+    <security-permissions>
+        <description/>
+        <security-permission-spec>
+        grant {
+                permission java.security.AllPermission ;
+                permission java.lang.RuntimePermission "*" ;
+                permission java.net.SocketPermission "*", "*";
+        };
+        </security-permission-spec>
+    </security-permissions>
+</resource-adaptor-jar>

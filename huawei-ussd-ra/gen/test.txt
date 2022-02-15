@@ -1,0 +1,854 @@
+0.0 UssdCommand
+BaseCommand
+Table 2 Syntax of UssdCommand
+BODY
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdBind 
+4.1.2
+
+CommandStatus
+4
+Integer
+UssdBind is not in use. Set to NULL.
+4.1.3
+
+SenderCB
+4
+Integer
+UssdBind is not in use. Set to 0xFFFFFFFF.
+4.1.4
+
+ReceiverCB
+4
+Integer
+UssdBind is not in use. Set to 0xFFFFFFFF.
+4.1.5
+2.1   UssdBind
+UssdBind is used for the USSD service application to log in to the USSDC, to go through authentication, and to establish a network connection. Prior to a USSD session, the USSD service application must perform a Bind operation, requesting to log in to the USSDC. During login, the account name and login password of the USSD service application must be provided. Whether the USSD service application passes the authentication, the USSDC sends a response message UssdBindResp to the USSD service application.
+UssBind can be sent only by the USSD service application to the USSDC; UssdBindResp can be sent only by the USSDC to the USSD service application.
+2.1.1   Syntax of UssdBind
+The following table defines the syntax of UssdBind.
+Table 2 Syntax of UssdBind
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdBind 
+4.1.2
+
+CommandStatus
+4
+Integer
+UssdBind is not in use. Set to NULL.
+4.1.3
+
+SenderCB
+4
+Integer
+UssdBind is not in use. Set to 0xFFFFFFFF.
+4.1.4
+
+ReceiverCB
+4
+Integer
+UssdBind is not in use. Set to 0xFFFFFFFF.
+4.1.5
+
+BODY
+AccountName
+11
+C-Octet String
+Login account name of the service application. .
+4.2.1
+
+Password
+9
+C-Octet String
+Login account password of the service application. .
+4.2.2
+
+SystemType
+13
+C-Octet String
+Reserved
+4.2.3
+
+InterfaceVersion
+4
+Integer
+Interface version. The current version is 0x10.
+4.2.4
+
+2.1.2   UssdBindResp
+2.1.2   Syntax of UssdBindResp
+The following table defines of the syntax of UssdBindResp.
+Table 3 Syntax of UssdBindResp
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdBindResp 
+4.1.2
+
+CommandStatus
+4
+Integer
+Login result (success or error codes).
+4.1.3
+
+SenderCB
+4
+Integer
+UssdBindResp is not in use. Set to 0xFFFFFFFF.
+4.1.4
+
+ReceiverCB
+4
+Integer
+UssdBindResp is not in use. Set to 0xFFFFFFFF.
+4.1.5
+
+BODY
+AccountName
+11
+C-Octet String
+Login account name of the service application. .
+4.2.1
+
+2.2   UssdUnBind
+UssdUnBind is used for the USSD service application to log out from the USSDC.Upon receipt of a UssdUnBind request, the USSDC sends a response message UssdUnBindResp to the USSD service application, indicating the result of the logout operation.
+UssdUnBind is sent by the USSD service application to the USSDC; UssdUnBindResp is sent by the USSDC to the USSD service application.
+2.2.1   Syntax of UssdUnBind
+The following table defines the syntax of UssdUnBind.
+Table 4 Syntax of UssdUnBind
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Define the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdUnBind 
+4.1.2
+
+CommandStatus
+4
+Integer
+UssdUnBind is not in use. Set to NULL.
+4.1.3
+
+SenderCB
+4
+Integer
+UssdUnBind is not in use. Set to 0xFFFFFFFF.
+4.1.4
+
+ReceiverCB
+4
+Integer
+UssdUnBind is not in use. Set to 0xFFFFFFFF.
+4.1.5
+
+2.2.2   Syntax of UssdUnBindResp
+The following table defines the syntax of UssdUnBindResp.
+Table 5 Syntax of UssdUnBindResp
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdUnBindResp. 
+4.1.2
+
+CommandStatus
+4
+Integer
+Result of login (success or error codes).
+4.1.3
+
+SenderCB
+4
+Integer
+UssdUnBindResp is not in use. Set to 0xFFFFFFFF.
+4.1.4
+
+ReceiverCB
+4
+Integer
+UssdUnBindResp is not in use. Set to 0xFFFFFFFF.
+4.1.5
+2.3   UssdShake
+UssdShake is used for handshaking between the USSD service application and the USSDC. Upon receipt of a UssdShake message from the USSD service application, the USSDC sends a response message UssdShakeResp. The USSD service application periodically (at an interval of a maximum of five seconds) sends a UssdShake message to the USSDC, and checks whether a UssdShakeResp message is received to determine whether the session between the USSD service application and the USSDC is functioning. To determine whether its session with the USSD service application is functioning, the USSDC checks whether it has received a UssShake message.
+2.3.1   Syntax of UssdShake
+The following table defines the syntax of UssdShake.
+Table 6 Syntax of UssdShake
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdShake 
+4.1.2
+
+CommandStatus
+4
+Integer
+UssdShake is not in use. Set to NULL.
+4.1.3
+
+SenderCB
+4
+Integer
+UssdShake is not in use. Set to 0xFFFFFFFF.
+4.1.4
+
+ReceiverCB
+4
+Integer
+UssdShake is not in use. Set to 0xFFFFFFFF.
+4.1.5
+2.3.2   Syntax of UssdShakeResp
+The following table defines the syntax of the USSDShakeResp message.
+Table 7 Syntax of UssdShakeResp
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdShakeResp 
+4.1.2
+
+CommandStatus
+4
+Integer
+UssdShakeResp is not in use. Set to NULL.
+4.1.3
+
+SenderCB
+4
+Integer
+UssdShakeResp is not in use. Set to 0xFFFFFFFF.
+4.1.4
+
+ReceiverCB
+4
+Integer
+UssdShakeResp is not in use. Set to 0xFFFFFFFF.
+4.1.5
+2.4   UssdBegin
+UssdBegin can be sent either by a mobile station or by the USSD service application to establish a new USSD session with the USSDC.
+2.4.1   Syntax of UssdBegin
+The following table defines the syntax of UssdBegin.
+Table 8 Syntax of UssdBegin
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdBegin.
+4.1.2
+
+CommandStatus
+4
+Integer
+UssdBegin is not in use. Set to NULL.
+4.1.3
+
+SenderCB
+4
+Integer
+Session control identifier of the sender.
+4.1.4
+
+ReceiverCB
+4
+Integer
+UssdBegin is not in use. Set to 0xFFFFFFFF.
+4.1.5
+BODY
+UssdVersion
+1
+Integer
+USSD session version
+4.2.5
+
+UssdOpType
+1
+Integer
+Operation type of a USSD session.
+4.2.6
+
+MsIsdn
+21
+C-Octet String
+Number of a mobile station.
+4.2.7
+
+ServiceCode
+4
+C-Octet String
+Corresponding service code of the session
+4.2.8
+
+CodeScheme
+1
+Integer
+Coding scheme of a USSD string.
+4.2.9
+
+UssdString
+Var. max 182
+Octet String
+A USSD string
+4.2.10
+2.5   UssdContinue
+UssdContinue can be sent either by a mobile station or by the USSD service application to continue a USSD session with the USSDC.
+2.5.1   Syntax of UssdContinue
+The following table defines the syntax of UssdContinue.
+Table 9 Syntax of UssdContinue
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdContinue.
+4.1.2
+
+CommandStatus
+4
+Integer
+UssdContinue is not in use.  Set to NULL.
+4.1.3
+
+SenderCB
+4
+Integer
+Session control identifier of the sender.
+4.1.4
+
+ReceiverCB
+4
+Integer
+Session control identifier of the receiver.
+4.1.5
+BODY
+UssdVersion
+1
+Integer
+Consistent with that of UssdBegin.
+4.2.5
+
+UssdOpType
+1
+Integer
+Operation type of USSD session
+4.2.6
+
+MsIsdn
+21
+C-Octet String
+Consistent with that of UssdBegin.
+4.2.7
+
+ServiceCode
+4
+C-Octet String
+UssdContinue is not in use.  Set to NULL.
+4.2.8
+
+CodeScheme
+1
+Integer
+Coding scheme of USSD string.
+4.2.9
+
+UssdString
+Var. max 182
+Octet String
+A USSD string
+4.2.10
+2.6   UssdEnd
+UssdEnd is used to indicate the end of a USSD session. It can be sent by the USSD service application only. UssdEnd indicates that a USSD session ends normally.
+2.6.1   Syntax of UssdEnd
+The following table defines the syntax of UssdEnd.
+Table 10 Syntax of UssdEnd
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdEnd 
+4.1.2
+
+CommandStatus
+4
+Integer
+UssdEnd is not in use.  Set to NULL.
+4.1.3
+
+SenderCB
+4
+Integer
+Session control identifier of the sender.
+4.1.4
+
+ReceiverCB
+4
+Integer
+Session control identifier of the receiver.
+4.1.5
+BODY
+UssdVersion
+1
+Integer
+Consistent with that of UssdBegin.
+4.2.5
+
+UssdOpType
+1
+Integer
+Operation type of a USSD session
+4.2.6
+
+MsIsdn
+21
+C-Octet String
+Consistent with that of UssdBegin.
+4.2.7
+
+ServiceCode
+4
+C-Octet String
+Consistent with that of UssdBegin.
+4.2.8
+
+CodeScheme
+1
+Integer
+Coding scheme of a USSD string.
+4.2.9
+
+UssdString
+Var. max 182
+Octet String
+A USSD string
+4.2.10
+2.7   UssdAbort
+UssdAbort can be sent either by a mobile station or by the USSD service application to abort a USSD session with the USSDC. UssdAbort indicates that a USSD session ends abnormally.
+2.7.1   Syntax of UssdAbort
+The following table defines the syntax of UssdAbort.
+Table 11 Syntax of UssdAbort
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdAbort.
+4.1.2
+
+CommandStatus
+4
+Integer
+Indicate the causes for the abortion of a USSD session, that is, the error codes of USSD. 
+4.1.3
+
+SenderCB
+4
+Integer
+Session control identifier of the sender.
+4.1.4
+
+ReceiverCB
+4
+Integer
+Session control identifier of the receiver. Set to 0xFFFFFFFF if no receiver session identifier exists.
+4.1.5
+2.8   UssdSwitch
+USSDSwitch is used for switching a USSD session from a USSD service to another. UssdSwitch can be sent only by the USSD service application to the USSDC. After the USSD service application sends UssdSwitch, it should close the local resources of the current session. Upon receipt of UssdSwitch, the USSDC closes the session with the original service, and reestablishes the connection with the USSD service designated by UssdSwitch. The session between the USSDC and the mobile station remains. 
+2.8.1   Syntax of UssdSwitch
+The following table defines the syntax of UssdSwitch.
+Table 12 Syntax of UssdSwitch
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdSwitch 
+4.1.2
+
+CommandStatus
+4
+Integer
+UssdSwitch is not in use. Set to NULL.
+4.1.3
+
+SenderCB
+4
+Integer
+Session control identifier of the sender.
+4.1.4
+
+ReceiverCB
+4
+Integer
+Session control identifier of the receiver.
+4.1.5
+BODY
+SwitchMode
+1
+Integer
+Switch mode
+4.2.11
+
+MsIsdn
+21
+C-Octet String
+Number of mobile station.
+4.2.7
+
+ServiceCode
+4
+C-Octet String
+Target service code to switch to
+4.2.8
+
+UssdString
+Var. max 182
+Octet String
+A USSD string
+4.2.10
+2.9   UssdChargeInd
+UssdChargeInd is used for the USSD service application to request the USSDC to generate a bill of charge. UssdChargeInd can be sent only by the USSD service application to the USSDC.
+2.9.1   Syntax of UssdChargeInd
+The following table defines the syntax of UssdChargeInd.
+Table 13 Syntax of UssdChargeInd
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdCharegeInd. 
+4.1.2
+
+CommandStatus
+4
+Integer
+UssdChargeInd is not in use. Set to NULL.
+4.1.3
+
+SenderCB
+4
+Integer
+Session control identifier of the sender.
+4.1.4
+
+ReceiverCB
+4
+Integer
+Session control identifier of the receiver.
+4.1.5
+BODY
+ChargeRatio
+4
+Integer
+Charging ratio (unit: fen)
+4.2.12
+
+ChargeType
+4
+Integer
+Charging type
+4.2.13
+
+ChargeSource
+21
+C-Octet String
+Charging source ID
+4.2.14
+
+ChargeLocation
+1
+Integer
+Location of charging.
+4.2.15
+2.10   UssdChargeIndResp
+UssdChargeIndResp is used for the USSDC to notify the USSD service application of the results of processing the charging indication message.
+2.10.1   Syntax of UssdChargeIndResp
+The following table defines the syntax of UssdChargeIndResp.
+Table 14 Syntax of UssdChargeIndResp
+
+Field Name
+Size (Byte)
+Type
+Description
+Refer to
+HEADER
+CommandLength
+4
+Integer
+Defines the size of the whole message packet.
+4.1.1
+
+CommandID
+4
+Integer
+Message identifier of UssdChargeIndResp. 
+4.1.2
+
+CommandStatus
+4
+Integer
+Error codes of UssdChargeIndResp
+4.1.3
+
+SenderCB
+4
+Integer
+Session control identifier of the sender.
+4.1.4
+
+ReceiverCB
+4
+Integer
+Session control identifier of the receiver.
+4.1.5
+3.1.1   CommandLength
+The CommandLength field indicates the number of bytes of a USSD service application service protocol message. CommandLength comprises two parts: message header and message body, inclusive of the length of the CommandLength field. 
+3.1.2   CommandID
+The CommandID field indicates the type of a USSD service application protocol message. The following table lists the types of the USSD service application protocol messages and the values of the messages. 
+Table 15 Types of the USSD Service Application Protocol Messages
+CommandID
+Value
+UssdBind
+0x00000065
+UssdUnBind
+0x00000066
+UssdBindResp
+0x00000067
+UssdUnBindResp
+0x00000068
+UssdBegin
+0x0000006F
+UssdContinue
+0x00000070
+UssdEnd
+0x00000071
+UssdAbort
+0x00000072
+UssdSwitch
+0x00000074
+UssdChargeInd
+0x00000075
+UssdChargeIndResp
+0x00000076
+UssdShake
+0x00000083
+UssdShakeResp
+0x00000084
+3.1.3   CommandStatus
+The CommandStatus field indicates the status of a successful or faulty USSD service application protocol message. If a message does not use the CommandStatus field, set the field to NULL.
+3.1.4   SenderCB
+The SenderCB field indicates the session control identifier of the sender. During a USSD session, SenderCB is used for the sender to identify the current session. The receiver returns the original value of this field in a response message to the ReceiverCB field. If a message does not use the field, set the field to 0xFFFFFFFF.
+3.1.5   ReceiverCB
+The ReceiverCB field indicates the session control identifier of the receiver. During a USSD session, ReceiverCB is used for the receiver to identify the current session. If a message does not use the field, set the field to 0xFFFFFFFF.
+3.2   Message body parameters
+3.2.1   AccountName
+The AccountName field indicates the account name of the USSD service application which is to log in to the USSDC.
+3.2.2   Password
+The Password field indicates the password the USSD service application uses to log in to the USSDC. This field is used for the USSDC to authenticate the USSD service application.
+3.2.3   SystemType
+The SystemType field indicates the type of the USSD service application. At present, this field is not ready for use yet.
+3.2.4   InterfaceVersion
+The InterfaceVersion field indicates the version of the USSD service application protocol. The current version is 0x10.
+3.2.5   UssdVersion
+The UssdVersion field indicates the version of the USSD session. Currently, there are three versions of USSD session: PHASE I, PHASE II, and PHASE II+. The specification of the PHASE II+ version is being drafted and not ready for use yet. The following table lists the values of the three USSD versions:
+Table 16 USSD session version
+UssdVersion
+Value
+PHASE I
+0x10
+PHASE II
+0x20
+PHASE II+
+0x25
+3.2.6   UssdOpType
+The UssdOpType field indicates the operation types of a USSD session. There are four operation types: Request, Notify, Response, and Release. In different types of sessions, the values of this field follow these regulations: 
+1.	UssdBegin corresponds to two operation types: Request and Notify. The operation type of the UssdBegin session initiated by a mobile station can be Request only. The operation type of the UssdBegin session initiated by the service party can be Request or Notify.
+2.	UssdContinue corresponds to three operation types: Request, Notify, and Response. The operation type of the UssdContinue session initiated by a mobile station can be Response only. The operation type of the UssdContinue session initiated by the service party can be Request or Notify.
+3.	UssdEnd corresponds to two types: Request and Release. If the sender of a session is a mobile station, the operation type of UssdEnd can be Response only. If the sender of the session is the service party, the operation type of UssdEnd can be Release only.
+The following table lists the values of the operation types of the UssdOpType field:
+Table 17 Operation types of a USSD session
+UssdOpType
+Value
+Request
+0x01
+Notify
+0x02
+Response
+0x03
+Release
+0x04
+3.2.7   MsIsdn
+The MsIsdn field indicates the number of the mobile station in a session.
+3.2.8   ServiceCode
+The ServiceCode field indicates the service code of a USSD session. This field is not used in UssdBegin sessions initiated by mobile stations, but is used only in UssdBegin sessions initiated by the service party. In UssdSwitch, this field indicates the target service code to switch a session to. For the value range of the service code, refer to the GSM02.90 protocol.
+Note: This field is not used now because this field length is only 4 characters, but the real length of s service code usually exceeds 4 characters.If the session iniated by MS, the service code should be parsed from the field UssdString.
+3.2.9   CodeScheme
+The CodeScheme field indicates the coding scheme of a USSD string. For the detailed coding scheme, refer to GSM03.38.To a session initiated by the USSD service party, this field indicates what scheme the USSDC uses to code a USSD string. To a session initiated by the USSDC to the USSD service application, this fielsd can be ignored. The USSDC communicates with the USSD service application using plain codes. Common coding schemes include:
+0x0F (seven-digit code), 0x48 (sixteen-digit code), and 0x44 (eight-digit code).
+3.2.10   UssdString
+The UssdString field indicates an information string of a USSD session. In a USSDBegin session message initiated by a mobile station, the format of UssdString is: Preample+SC+*+SI+#, where the preamble consists of any combination of 1 to 3 digits of * and #, SC is the service code, SI is a service information string, * is a separator, and # is the terminator. In other session messages, UssdString can contain any content. 
+If CodeScheme designates the seven-digit coding scheme, the maximum length of UssdString is 182 characters. If CodeScheme designates the eight-digit coding scheme, the maximum length of UssdString is 160 characters. If CodeScheme designates the sixteen-digit coding scheme, the maximum length of UssdString is 80 characters (160 bytes).
+If the network side initiates the session UssdBegin, the format of UssdString is:@ + service code + @ + specific USSD parameter information. If UssdString is not in the aforementioned format, the service code must be entered in ServiceCode.
+In case of a service switching message UssdSwitch, the format of UssdString is:@ + service code + @ + specific USSD parameter information. If UssdString is not in the aforementioned format, the target service code to switch to must be entered in ServiceCode.
+3.2.11   SwitchMode
+The SwitchMode field indicates the modes of service switching. It comprises two switching modes:0: global switching and 1: local switching. Global switching means that the service switching is implemented by the USSD central office where the service application resides. Local switching means that the service switching is implemented by the service platform (or the USSDC) directly connecting the service application.
+3.2.12   ChargeRatio
+The ChargeRatio field indicates the charging ratio of the charging indication. Its unit is fen (0.01 yuan). The value 0 means free of charge. 
+3.2.13   ChargeType
+The ChargeType field indicates the charging types of the charging indication. Currently, this field includes the following charging types:0: free, 1: per message, 2: per monthly flat rate, and 3: per monthly flat rate for downlink.
+3.2.14   ChargeSource
+The ChargeSource field indicates the identifier of the charging source. The service party interprets the specific implication of the contents of this field. 
+3.2.15   ChargeLocation
+The ChargeLocation field indicates the location where bills are generated. There are the following three cases: 1: Both the USSDC and the USSD service platform generate bills. 2: Only the USSDC generates bills. 3: Only the USSD service platform generates bills.
+--

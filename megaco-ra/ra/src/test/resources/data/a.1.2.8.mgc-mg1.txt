@@ -1,0 +1,11 @@
+MEGACO/1 [123.123.123.4]:55555 Transaction = 10001 {
+       Context = - {
+           Modify = A4444 {
+               Events = 2223 {
+                   al/on{strict=state}, dd/ce {DigitMap=Dialplan0}
+               },
+               Signals {cg/dt},
+               DigitMap= Dialplan0{ T:1, S:5, (0| 00|[1-7]xxx|8xxxxxxx|Fxxxxxxx|Exx|91xxxxxxxxxx|9011x.)}
+           }
+       } 
+}

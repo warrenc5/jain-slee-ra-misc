@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-adaptor-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor 1.1//EN" "http://java.sun.com/dtd/slee-resource-adaptor-jar_1_1.dtd">
+<resource-adaptor-jar>
+  <resource-adaptor id="vsip">
+    <description>VSIP Resource Adaptor </description>
+    <resource-adaptor-name>VSIP Resource Adaptor </resource-adaptor-name>
+    <resource-adaptor-vendor> MOFOKOM </resource-adaptor-vendor>
+    <resource-adaptor-version>2.5</resource-adaptor-version>
+    <resource-adaptor-type-ref>
+      <resource-adaptor-type-name>VSIP Resource Adaptor Type</resource-adaptor-type-name>
+      <resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor>
+      <resource-adaptor-type-version>2.5</resource-adaptor-type-version>
+    </resource-adaptor-type-ref>
+    <library-ref>
+      <description> AIR Library </description>
+      <library-name> AIR Library </library-name>
+      <library-vendor> MOFOKOM </library-vendor>
+      <library-version> ${pom.version} </library-version>
+    </library-ref>
+    <library-ref>
+      <description> HTTP Library </description>
+      <library-name> HTTP Library </library-name>
+      <library-vendor> MOFOKOM </library-vendor>
+      <library-version> ${pom.version} </library-version>
+    </library-ref>
+    <resource-adaptor-classes>
+      <resource-adaptor-class>
+        <resource-adaptor-class-name>mofokom.ccn.vs.vsip.resource.impl.VSIPResourceAdaptor</resource-adaptor-class-name>
+      </resource-adaptor-class>
+      <resource-adaptor-usage-parameters-interface><description/><resource-adaptor-usage-parameters-interface-name>mofokom.ccn.vs.vsip.resource.VSIPResourceAdaptorUsageParameters</resource-adaptor-usage-parameters-interface-name><usage-parameter name="connectionClose"/><usage-parameter name="connectionsOpened"/><usage-parameter name="connectionTimeout"/><usage-parameter name="fatalIOExceptions"/><usage-parameter name="latencyRxNOK"/><usage-parameter name="latencyRxOK"/><usage-parameter name="latencyTxNOK"/><usage-parameter name="latencyTxOK"/><usage-parameter name="protocolExceptions"/><usage-parameter name="rxNOK"/><usage-parameter name="rxOK"/><usage-parameter name="txNOK"/><usage-parameter name="txOK"/>
+  <usage-parameter name="FaultTxOK"/><usage-parameter name="FaultRxOK"/><usage-parameter name="FaultTxNOK"/><usage-parameter name="FaultRxNOK"/><usage-parameter name="FaultTxOK"/><usage-parameter name="FaultLatencyTxOK"/><usage-parameter name="FaultLatencyRxOK"/><usage-parameter name="FaultLatencyTxNOK"/><usage-parameter name="FaultLatencyTxNOK"/>
+    <usage-parameter name="GetVoucherDetailsTxOK"/><usage-parameter name="GetVoucherDetailsRxOK"/><usage-parameter name="GetVoucherDetailsTxNOK"/><usage-parameter name="GetVoucherDetailsRxNOK"/><usage-parameter name="GetVoucherDetailsTxOK"/><usage-parameter name="GetVoucherDetailsLatencyTxOK"/><usage-parameter name="GetVoucherDetailsLatencyRxOK"/><usage-parameter name="GetVoucherDetailsLatencyTxNOK"/><usage-parameter name="GetVoucherDetailsLatencyTxNOK"/>
+    <usage-parameter name="GetVoucherHistoryTxOK"/><usage-parameter name="GetVoucherHistoryRxOK"/><usage-parameter name="GetVoucherHistoryTxNOK"/><usage-parameter name="GetVoucherHistoryRxNOK"/><usage-parameter name="GetVoucherHistoryTxOK"/><usage-parameter name="GetVoucherHistoryLatencyTxOK"/><usage-parameter name="GetVoucherHistoryLatencyRxOK"/><usage-parameter name="GetVoucherHistoryLatencyTxNOK"/><usage-parameter name="GetVoucherHistoryLatencyTxNOK"/>
+    <usage-parameter name="UpdateVoucherStateTxOK"/><usage-parameter name="UpdateVoucherStateRxOK"/><usage-parameter name="UpdateVoucherStateTxNOK"/><usage-parameter name="UpdateVoucherStateRxNOK"/><usage-parameter name="UpdateVoucherStateTxOK"/><usage-parameter name="UpdateVoucherStateLatencyTxOK"/><usage-parameter name="UpdateVoucherStateLatencyRxOK"/><usage-parameter name="UpdateVoucherStateLatencyTxNOK"/><usage-parameter name="UpdateVoucherStateLatencyTxNOK"/>
+    <usage-parameter name="LoadVoucherCheckTxOK"/><usage-parameter name="LoadVoucherCheckRxOK"/><usage-parameter name="LoadVoucherCheckTxNOK"/><usage-parameter name="LoadVoucherCheckRxNOK"/><usage-parameter name="LoadVoucherCheckTxOK"/><usage-parameter name="LoadVoucherCheckLatencyTxOK"/><usage-parameter name="LoadVoucherCheckLatencyRxOK"/><usage-parameter name="LoadVoucherCheckLatencyTxNOK"/><usage-parameter name="LoadVoucherCheckLatencyTxNOK"/>
+    <usage-parameter name="GenerateVoucherTxOK"/><usage-parameter name="GenerateVoucherRxOK"/><usage-parameter name="GenerateVoucherTxNOK"/><usage-parameter name="GenerateVoucherRxNOK"/><usage-parameter name="GenerateVoucherTxOK"/><usage-parameter name="GenerateVoucherLatencyTxOK"/><usage-parameter name="GenerateVoucherLatencyRxOK"/><usage-parameter name="GenerateVoucherLatencyTxNOK"/><usage-parameter name="GenerateVoucherLatencyTxNOK"/>
+    <usage-parameter name="GetGenerateVoucherTaskInfoTxOK"/><usage-parameter name="GetGenerateVoucherTaskInfoRxOK"/><usage-parameter name="GetGenerateVoucherTaskInfoTxNOK"/><usage-parameter name="GetGenerateVoucherTaskInfoRxNOK"/><usage-parameter name="GetGenerateVoucherTaskInfoTxOK"/><usage-parameter name="GetGenerateVoucherTaskInfoLatencyTxOK"/><usage-parameter name="GetGenerateVoucherTaskInfoLatencyRxOK"/><usage-parameter name="GetGenerateVoucherTaskInfoLatencyTxNOK"/><usage-parameter name="GetGenerateVoucherTaskInfoLatencyTxNOK"/>
+    <usage-parameter name="LoadVoucherBatchFileTxOK"/><usage-parameter name="LoadVoucherBatchFileRxOK"/><usage-parameter name="LoadVoucherBatchFileTxNOK"/><usage-parameter name="LoadVoucherBatchFileRxNOK"/><usage-parameter name="LoadVoucherBatchFileTxOK"/><usage-parameter name="LoadVoucherBatchFileLatencyTxOK"/><usage-parameter name="LoadVoucherBatchFileLatencyRxOK"/><usage-parameter name="LoadVoucherBatchFileLatencyTxNOK"/><usage-parameter name="LoadVoucherBatchFileLatencyTxNOK"/>
+    <usage-parameter name="GetLoadVoucherBatchFileTaskInfoTxOK"/><usage-parameter name="GetLoadVoucherBatchFileTaskInfoRxOK"/><usage-parameter name="GetLoadVoucherBatchFileTaskInfoTxNOK"/><usage-parameter name="GetLoadVoucherBatchFileTaskInfoRxNOK"/><usage-parameter name="GetLoadVoucherBatchFileTaskInfoTxOK"/><usage-parameter name="GetLoadVoucherBatchFileTaskInfoLatencyTxOK"/><usage-parameter name="GetLoadVoucherBatchFileTaskInfoLatencyRxOK"/><usage-parameter name="GetLoadVoucherBatchFileTaskInfoLatencyTxNOK"/><usage-parameter name="GetLoadVoucherBatchFileTaskInfoLatencyTxNOK"/>
+    <usage-parameter name="GetVoucherBatchFilesListTxOK"/><usage-parameter name="GetVoucherBatchFilesListRxOK"/><usage-parameter name="GetVoucherBatchFilesListTxNOK"/><usage-parameter name="GetVoucherBatchFilesListRxNOK"/><usage-parameter name="GetVoucherBatchFilesListTxOK"/><usage-parameter name="GetVoucherBatchFilesListLatencyTxOK"/><usage-parameter name="GetVoucherBatchFilesListLatencyRxOK"/><usage-parameter name="GetVoucherBatchFilesListLatencyTxNOK"/><usage-parameter name="GetVoucherBatchFilesListLatencyTxNOK"/>
+    <usage-parameter name="ChangeVoucherStateTxOK"/><usage-parameter name="ChangeVoucherStateRxOK"/><usage-parameter name="ChangeVoucherStateTxNOK"/><usage-parameter name="ChangeVoucherStateRxNOK"/><usage-parameter name="ChangeVoucherStateTxOK"/><usage-parameter name="ChangeVoucherStateLatencyTxOK"/><usage-parameter name="ChangeVoucherStateLatencyRxOK"/><usage-parameter name="ChangeVoucherStateLatencyTxNOK"/><usage-parameter name="ChangeVoucherStateLatencyTxNOK"/>
+    <usage-parameter name="GetChangeVoucherStateTaskInfoTxOK"/><usage-parameter name="GetChangeVoucherStateTaskInfoRxOK"/><usage-parameter name="GetChangeVoucherStateTaskInfoTxNOK"/><usage-parameter name="GetChangeVoucherStateTaskInfoRxNOK"/><usage-parameter name="GetChangeVoucherStateTaskInfoTxOK"/><usage-parameter name="GetChangeVoucherStateTaskInfoLatencyTxOK"/><usage-parameter name="GetChangeVoucherStateTaskInfoLatencyRxOK"/><usage-parameter name="GetChangeVoucherStateTaskInfoLatencyTxNOK"/><usage-parameter name="GetChangeVoucherStateTaskInfoLatencyTxNOK"/>
+    <usage-parameter name="PurgeVouchersTxOK"/><usage-parameter name="PurgeVouchersRxOK"/><usage-parameter name="PurgeVouchersTxNOK"/><usage-parameter name="PurgeVouchersRxNOK"/><usage-parameter name="PurgeVouchersTxOK"/><usage-parameter name="PurgeVouchersLatencyTxOK"/><usage-parameter name="PurgeVouchersLatencyRxOK"/><usage-parameter name="PurgeVouchersLatencyTxNOK"/><usage-parameter name="PurgeVouchersLatencyTxNOK"/>
+    <usage-parameter name="GetPurgeVouchersTaskInfoTxOK"/><usage-parameter name="GetPurgeVouchersTaskInfoRxOK"/><usage-parameter name="GetPurgeVouchersTaskInfoTxNOK"/><usage-parameter name="GetPurgeVouchersTaskInfoRxNOK"/><usage-parameter name="GetPurgeVouchersTaskInfoTxOK"/><usage-parameter name="GetPurgeVouchersTaskInfoLatencyTxOK"/><usage-parameter name="GetPurgeVouchersTaskInfoLatencyRxOK"/><usage-parameter name="GetPurgeVouchersTaskInfoLatencyTxNOK"/><usage-parameter name="GetPurgeVouchersTaskInfoLatencyTxNOK"/>
+    <usage-parameter name="GenerateVoucherDetailsReportTxOK"/><usage-parameter name="GenerateVoucherDetailsReportRxOK"/><usage-parameter name="GenerateVoucherDetailsReportTxNOK"/><usage-parameter name="GenerateVoucherDetailsReportRxNOK"/><usage-parameter name="GenerateVoucherDetailsReportTxOK"/><usage-parameter name="GenerateVoucherDetailsReportLatencyTxOK"/><usage-parameter name="GenerateVoucherDetailsReportLatencyRxOK"/><usage-parameter name="GenerateVoucherDetailsReportLatencyTxNOK"/><usage-parameter name="GenerateVoucherDetailsReportLatencyTxNOK"/>
+    <usage-parameter name="GetGenerateVoucherDetailsReportTaskInfoTxOK"/><usage-parameter name="GetGenerateVoucherDetailsReportTaskInfoRxOK"/><usage-parameter name="GetGenerateVoucherDetailsReportTaskInfoTxNOK"/><usage-parameter name="GetGenerateVoucherDetailsReportTaskInfoRxNOK"/><usage-parameter name="GetGenerateVoucherDetailsReportTaskInfoTxOK"/><usage-parameter name="GetGenerateVoucherDetailsReportTaskInfoLatencyTxOK"/><usage-parameter name="GetGenerateVoucherDetailsReportTaskInfoLatencyRxOK"/><usage-parameter name="GetGenerateVoucherDetailsReportTaskInfoLatencyTxNOK"/><usage-parameter name="GetGenerateVoucherDetailsReportTaskInfoLatencyTxNOK"/>
+    <usage-parameter name="GenerateVoucherDistributionReportTxOK"/><usage-parameter name="GenerateVoucherDistributionReportRxOK"/><usage-parameter name="GenerateVoucherDistributionReportTxNOK"/><usage-parameter name="GenerateVoucherDistributionReportRxNOK"/><usage-parameter name="GenerateVoucherDistributionReportTxOK"/><usage-parameter name="GenerateVoucherDistributionReportLatencyTxOK"/><usage-parameter name="GenerateVoucherDistributionReportLatencyRxOK"/><usage-parameter name="GenerateVoucherDistributionReportLatencyTxNOK"/><usage-parameter name="GenerateVoucherDistributionReportLatencyTxNOK"/>
+    <usage-parameter name="GetGenerateVoucherDistributionReportTaskInfoTxOK"/><usage-parameter name="GetGenerateVoucherDistributionReportTaskInfoRxOK"/><usage-parameter name="GetGenerateVoucherDistributionReportTaskInfoTxNOK"/><usage-parameter name="GetGenerateVoucherDistributionReportTaskInfoRxNOK"/><usage-parameter name="GetGenerateVoucherDistributionReportTaskInfoTxOK"/><usage-parameter name="GetGenerateVoucherDistributionReportTaskInfoLatencyTxOK"/><usage-parameter name="GetGenerateVoucherDistributionReportTaskInfoLatencyRxOK"/><usage-parameter name="GetGenerateVoucherDistributionReportTaskInfoLatencyTxNOK"/><usage-parameter name="GetGenerateVoucherDistributionReportTaskInfoLatencyTxNOK"/>
+    <usage-parameter name="GenerateVoucherUsageReportTxOK"/><usage-parameter name="GenerateVoucherUsageReportRxOK"/><usage-parameter name="GenerateVoucherUsageReportTxNOK"/><usage-parameter name="GenerateVoucherUsageReportRxNOK"/><usage-parameter name="GenerateVoucherUsageReportTxOK"/><usage-parameter name="GenerateVoucherUsageReportLatencyTxOK"/><usage-parameter name="GenerateVoucherUsageReportLatencyRxOK"/><usage-parameter name="GenerateVoucherUsageReportLatencyTxNOK"/><usage-parameter name="GenerateVoucherUsageReportLatencyTxNOK"/>
+    <usage-parameter name="GetGenerateVoucherUsageReportTaskInfoTxOK"/><usage-parameter name="GetGenerateVoucherUsageReportTaskInfoRxOK"/><usage-parameter name="GetGenerateVoucherUsageReportTaskInfoTxNOK"/><usage-parameter name="GetGenerateVoucherUsageReportTaskInfoRxNOK"/><usage-parameter name="GetGenerateVoucherUsageReportTaskInfoTxOK"/><usage-parameter name="GetGenerateVoucherUsageReportTaskInfoLatencyTxOK"/><usage-parameter name="GetGenerateVoucherUsageReportTaskInfoLatencyRxOK"/><usage-parameter name="GetGenerateVoucherUsageReportTaskInfoLatencyTxNOK"/><usage-parameter name="GetGenerateVoucherUsageReportTaskInfoLatencyTxNOK"/>
+    <usage-parameter name="DeleteTaskTxOK"/><usage-parameter name="DeleteTaskRxOK"/><usage-parameter name="DeleteTaskTxNOK"/><usage-parameter name="DeleteTaskRxNOK"/><usage-parameter name="DeleteTaskTxOK"/><usage-parameter name="DeleteTaskLatencyTxOK"/><usage-parameter name="DeleteTaskLatencyRxOK"/><usage-parameter name="DeleteTaskLatencyTxNOK"/><usage-parameter name="DeleteTaskLatencyTxNOK"/>
+    <usage-parameter name="ReserveVoucherTxOK"/><usage-parameter name="ReserveVoucherRxOK"/><usage-parameter name="ReserveVoucherTxNOK"/><usage-parameter name="ReserveVoucherRxNOK"/><usage-parameter name="ReserveVoucherTxOK"/><usage-parameter name="ReserveVoucherLatencyTxOK"/><usage-parameter name="ReserveVoucherLatencyRxOK"/><usage-parameter name="ReserveVoucherLatencyTxNOK"/><usage-parameter name="ReserveVoucherLatencyTxNOK"/>
+    <usage-parameter name="EndReservationTxOK"/><usage-parameter name="EndReservationRxOK"/><usage-parameter name="EndReservationTxNOK"/><usage-parameter name="EndReservationRxNOK"/><usage-parameter name="EndReservationTxOK"/><usage-parameter name="EndReservationLatencyTxOK"/><usage-parameter name="EndReservationLatencyRxOK"/><usage-parameter name="EndReservationLatencyTxNOK"/><usage-parameter name="EndReservationLatencyTxNOK"/>
+</resource-adaptor-usage-parameters-interface>
+    </resource-adaptor-classes>
+    <config-property>
+      <config-property-name>ACTIVITY_DIMENSION</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>AUTHENTICATION</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>CHUNKING</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>CONNECTION_REQUEST_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>CONNECTION_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>DEST_HOST</config-property-name>
+      <config-property-type>java.lang.String</config-property-type>
+      <config-property-value>localhost</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>DEST_PORT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>81</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>DEST_URL</config-property-name>
+      <config-property-type>java.lang.String</config-property-type>
+      <config-property-value>/</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>EXECUTOR_MAX_POOL_SIZE</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>EXECUTOR_CORE_POOL_SIZE</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>EXECUTOR_POOL_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Long</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>LISTEN_PORT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>81</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>MAX_CONNECTIONS</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>PENDING_REQUEST_CAPACITY</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>10</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>POOL_CONNECTION_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>REALM_USER_NAME</config-property-name>
+      <config-property-type>java.lang.String</config-property-type>
+      <config-property-value/>
+    </config-property>
+    <config-property>
+      <config-property-name>REALM_USER_PASSWORD</config-property-name>
+      <config-property-type>java.lang.String</config-property-type>
+      <config-property-value/>
+    </config-property>
+    <config-property>
+      <config-property-name>RESPONSE_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>SHUTDOWN_TIME</config-property-name>
+      <config-property-type>java.lang.Long</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>SOCKET_BUFFER_SIZE</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>2048</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>SOCKET_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>STALE_CONNECTIONS_CHECK</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>STRICT_MESSAGING</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>SYNCHRONOUS</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>TCP_NO_DELAY</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>USER_AGENT</config-property-name>
+      <config-property-type>java.lang.String</config-property-type>
+      <config-property-value/>
+    </config-property>
+    <config-property>
+      <config-property-name>WORK_QUEUE</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>10</config-property-value>
+    </config-property>
+  </resource-adaptor>
+  <security-permissions>
+    <description/>
+    <security-permission-spec>
+        grant {
+                permission java.lang.RuntimePermission "*" ;
+                permission java.security.AllPermission ;
+        };
+        </security-permission-spec>
+  </security-permissions>
+</resource-adaptor-jar>

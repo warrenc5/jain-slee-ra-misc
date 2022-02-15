@@ -1,0 +1,7 @@
+MEGACO/1 [124.124.124.222]:55555 Transaction = 10002 {
+      Context = - {
+          Notify = A4444 {ObservedEvents =2223 {
+            19990729T22010001:dd/ce{ds="916135551212",Meth=UM}}}
+      } }
+
+

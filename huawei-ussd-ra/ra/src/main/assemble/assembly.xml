@@ -1,0 +1,62 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+    <id>du</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <fileSets>
+        <fileSet>
+            <outputDirectory></outputDirectory>
+            <directory>
+                target
+            </directory>
+            <includes>
+                <include>**/*-event.jar</include>
+                <include>**/*-ra-type.jar</include>
+                <include>**/*-ra.jar</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <outputDirectory></outputDirectory>
+            <directory>
+                target/classes
+            </directory>
+            <includes>
+                <include>META-INF/deployable-unit.xml</include>
+                <include>META-INF/deploy-config.xml</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+
+    <!--
+    <moduleSets>
+        <moduleSet>
+            <includes>
+                <include>pl.touk.mtn.sms:bulk-sms-www</include>
+            </includes>
+            <binaries>
+                <outputDirectory>dist</outputDirectory>
+                <unpack>false</unpack>
+            </binaries>
+        </moduleSet>
+    </moduleSets>
+
+    <dependencySets>
+        <dependencySet>
+            <useTransitiveDependencies>true</useTransitiveDependencies>
+            <outputDirectory>dist</outputDirectory>
+            <useProjectAttachments>true</useProjectAttachments>
+            <scope>compile</scope>
+            <includes>
+                <include>pl.touk.mtn.sms:bulk-sms-www</include>
+            </includes>
+            <excludes>
+                <exclude>pl.touk.mtn:sms</exclude>
+            </excludes>
+        </dependencySet>
+    </dependencySets>
+    -->
+</assembly>

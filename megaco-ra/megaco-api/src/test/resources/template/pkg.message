@@ -1,0 +1,32 @@
+package javax.megaco.pkg.ext.{0};---
+---
+import javax.megaco.pkg.MegacoPkg;---
+import javax.megaco.pkg.PkgConsts;---
+import javax.megaco.pkg.ToneGenPkg.ToneGenPkg;---
+import javax.annotation.Generated;---
+---
+/**---
+ * {3} ---
+ */---
+@Generated('{'"warren crossing"'}')---
+public class {1} extends MegacoPkg '{' ---
+	public static final int PACKAGE_VERSION = {6};---
+---
+    static final MegacoPkg PACKAGE_INSTANCE = new {1}(); ---
+---
+	private static int[] extendedPkgIds = new int[] '{' {4} '}'; ---
+---
+	public int[] getExtendedPkgIds() '{'---
+---
+		return extendedPkgIds;---
+	'}'---
+---
+	public int getPkgId() '{'---
+		return {2} ; ---
+	'}'---
+---
+	public String getPackageName() '{'---
+		return "{5}" ;---
+	'}'---
+}'---
+---

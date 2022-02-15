@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MLP_ID Identity Element Definitions -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="msid">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" default="MSISDN">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="MSISDN"/>
+            <xs:enumeration value="IMSI"/>
+            <xs:enumeration value="IMEI"/>
+            <xs:enumeration value="MIN"/>
+            <xs:enumeration value="MDN"/>
+            <xs:enumeration value="EME_MSID"/>
+            <xs:enumeration value="ASID"/>
+            <xs:enumeration value="OPE_ID"/>
+            <xs:enumeration value="IPV4"/>
+            <xs:enumeration value="IPV6"/>
+            <xs:enumeration value="SESSID"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="enc" default="ASC">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="ASC"/>
+            <xs:enumeration value="CRP"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="msid_range">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="start_msid"/>
+        <xs:element ref="stop_msid"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="msids">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:sequence>
+          <xs:element ref="msid"/>
+          <xs:element minOccurs="0" ref="codeword"/>
+          <xs:element minOccurs="0" ref="session"/>
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element ref="msid_range"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" ref="codeword"/>
+        </xs:sequence>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="codeword" type="xs:string"/>
+  <xs:element name="esrd">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" default="NA">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="NA"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="esrk">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" default="NA">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="NA"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="session">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="APN"/>
+            <xs:enumeration value="DIAL"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="start_msid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="msid"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stop_msid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="msid"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_FUNC Function Element Definitions -->
+  <xs:complexType name="eme_event">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="eme_pos"/>
+      </xs:sequence>
+      <xs:attribute name="eme_trigger" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="EME_ORG"/>
+            <xs:enumeration value="EME_REL"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  <xs:element name="tlrr_event" type="ms_action"/>
+  <xs:complexType name="ms_action">
+      <xs:attribute name="type" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="MS_AVAIL"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  <xs:element name="interval" type="xs:string"/>
+  <xs:element name="loc_type">
+    <xs:complexType>
+      <xs:attribute name="type" default="CURRENT">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="CURRENT"/>
+            <xs:enumeration value="LAST"/>
+            <xs:enumeration value="CURRENT_OR_LAST"/>
+            <xs:enumeration value="INITIAL"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prio">
+    <xs:complexType>
+      <xs:attribute name="type" default="NORMAL">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="NORMAL"/>
+            <xs:enumeration value="HIGH"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pushaddr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="url"/>
+        <xs:element minOccurs="0" ref="id"/>
+        <xs:element minOccurs="0" ref="pwd"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="req_id" type="xs:string"/>
+  <xs:element name="start_time">
+    <xs:complexType mixed="true">
+      <xs:attribute name="utc_off" default="0000"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stop_time">
+    <xs:complexType mixed="true">
+      <xs:attribute name="utc_off" default="0000"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="url" type="xs:string"/>
+  <xs:element name="time_remaining" type="xs:string"/>
+  <!-- MLP_LOC Location Element Definitions -->
+  <xs:element name="pos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="msid"/>
+        <xs:choice>
+          <xs:element ref="pd"/>
+          <xs:element ref="poserr"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="gsm_net_param"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="eme_pos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="msid"/>
+        <xs:choice>
+          <xs:element ref="pd"/>
+          <xs:element ref="poserr"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="esrd"/>
+        <xs:element minOccurs="0" ref="esrk"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="trl_pos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="msid"/>
+        <xs:choice>
+          <xs:element ref="pd"/>
+          <xs:element ref="poserr"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="trl_trigger" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="PERIODIC"/>
+            <xs:enumeration value="MS_AVAIL"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="time"/>
+        <xs:element ref="shape"/>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="alt"/>
+          <xs:element minOccurs="0" ref="alt_acc"/>
+        </xs:sequence>
+        <xs:element minOccurs="0" ref="speed"/>
+        <xs:element minOccurs="0" ref="direction"/>
+        <xs:element minOccurs="0" ref="lev_conf"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poserr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="result"/>
+        <xs:element minOccurs="0" ref="add_info"/>
+        <xs:element ref="time"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="add_info" type="xs:string"/>
+  <xs:element name="result">
+    <xs:complexType mixed="true">
+      <xs:attribute name="resid" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="time">
+    <xs:complexType mixed="true">
+      <xs:attribute name="utc_off" default="0000"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="alt" type="xs:string"/>
+  <xs:element name="alt_acc" type="xs:string"/>
+  <xs:element name="direction" type="xs:string"/>
+  <xs:element name="speed" type="xs:string"/>
+  <xs:element name="lev_conf" type="xs:string"/>
+  <xs:element name="geo_info" type="CoordinateReferenceSystem"/>
+  <xs:complexType name="CoordinateReferenceSystem">
+    <xs:sequence>
+      <xs:element ref="CoordinateReferenceSystem"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CoordinateReferenceSystem" type="Identifier"/>
+  <xs:complexType name="Identifier">
+    <xs:sequence>
+        <xs:element ref="code"/>
+        <xs:element ref="codeSpace"/>
+        <xs:element ref="edition"/>
+      </xs:sequence>
+    </xs:complexType>
+  <xs:element name="code" type="xs:string"/>
+  <xs:element name="codeSpace" type="xs:string"/>
+  <xs:element name="edition" type="xs:string"/>
+  <!-- MLP_SHAPE Shape Element Definitions -->
+  <xs:element name="shape">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="Point"/>
+        <xs:element ref="LineString"/>
+        <xs:element ref="Polygon"/>
+        <xs:element ref="Box"/>
+        <xs:element ref="CircularArea"/>
+        <xs:element ref="CircularArcArea"/>
+        <xs:element ref="EllipticalArea"/>
+        <xs:element ref="GeometryCollection"/>
+        <xs:element ref="MultiLineString"/>
+        <xs:element ref="MultiPoint"/>
+        <xs:element ref="MultiPolygon"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="distanceUnit" type="xs:string"/>
+  <xs:element name="angularUnit" type="xs:string"/>
+  <xs:element name="angle" type="xs:string"/>
+  <xs:element name="coord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="X"/>
+        <xs:element minOccurs="0" ref="Y"/>
+        <xs:element minOccurs="0" ref="Z"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="X" type="xs:string"/>
+  <xs:element name="Y" type="xs:string"/>
+  <xs:element name="Z" type="xs:string"/>
+  <xs:element name="Point">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="coord"/>
+      </xs:sequence>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineString">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="coord"/>
+        <xs:element maxOccurs="unbounded" ref="coord"/>
+      </xs:sequence>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Box">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="coord"/>
+        <xs:element ref="coord"/>
+      </xs:sequence>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="LinearRing">
+      <xs:sequence>
+        <xs:element ref="coord"/>
+        <xs:element ref="coord"/>
+        <xs:element ref="coord"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="coord"/>
+      </xs:sequence>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  <xs:element name="Polygon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="outerBoundaryIs"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="innerBoundaryIs"/>
+      </xs:sequence>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="outerBoundaryIs" type="LinearRing"/>
+  <xs:element name="innerBoundaryIs" type="LinearRing"/>
+  <xs:element name="CircularArcArea">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="coord"/>
+        <xs:element ref="inRadius"/>
+        <xs:element ref="outRadius"/>
+        <xs:element ref="startAngle"/>
+        <xs:element ref="stopAngle"/>
+        <xs:element minOccurs="0" ref="angularUnit"/>
+        <xs:element minOccurs="0" ref="distanceUnit"/>
+      </xs:sequence>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CircularArea">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="coord"/>
+        <xs:element ref="radius"/>
+        <xs:element minOccurs="0" ref="distanceUnit"/>
+      </xs:sequence>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EllipticalArea">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="coord"/>
+        <xs:element ref="angle"/>
+        <xs:element ref="semiMajor"/>
+        <xs:element ref="semiMinor"/>
+        <xs:element ref="angularUnit"/>
+        <xs:element minOccurs="0" ref="distanceUnit"/>
+      </xs:sequence>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inRadius" type="xs:string"/>
+  <xs:element name="outRadius" type="xs:string"/>
+  <xs:element name="radius" type="xs:string"/>
+  <xs:element name="semiMajor" type="xs:string"/>
+  <xs:element name="semiMinor" type="xs:string"/>
+  <xs:element name="startAngle" type="xs:string"/>
+  <xs:element name="stopAngle" type="xs:string"/>
+  <xs:element name="GeometryCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="shape"/>
+      </xs:sequence>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MultiLineString">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="LineString"/>
+      </xs:sequence>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MultiPoint">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Point"/>
+      </xs:sequence>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MultiPolygon">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="Polygon"/>
+        <xs:element ref="Box"/>
+        <xs:element ref="CircularArea"/>
+        <xs:element ref="CircularArcArea"/>
+        <xs:element ref="EllipticalArea"/>
+      </xs:choice>
+      <xs:attribute name="gid" type="xs:ID"/>
+      <xs:attribute name="srsName"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_QOP Quality of Position Element Definitions -->
+  <xs:element name="eqop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="resp_req"/>
+        <xs:element minOccurs="0" ref="resp_timer"/>
+        <xs:choice minOccurs="0">
+          <xs:element ref="ll_acc"/>
+          <xs:element ref="hor_acc"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="alt_acc"/>
+        <xs:element minOccurs="0" ref="max_loc_age"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="qop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0">
+          <xs:element ref="ll_acc"/>
+          <xs:element ref="hor_acc"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="alt_acc"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ll_acc" type="xs:string"/>
+  <xs:element name="hor_acc" type="xs:string"/>
+  <xs:element name="max_loc_age" type="xs:string"/>
+  <xs:element name="resp_req">
+    <xs:complexType>
+      <xs:attribute name="type" default="DELAY_TOL">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="NO_DELAY"/>
+            <xs:enumeration value="LOW_DELAY"/>
+            <xs:enumeration value="DELAY_TOL"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resp_timer" type="xs:string"/>
+  <!-- MLP_GSM_NET Network Parameters Element Definitions -->
+  <xs:element name="gsm_net_param">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="cgi"/>
+        <xs:element minOccurs="0" ref="neid"/>
+        <xs:element minOccurs="0" ref="nmr"/>
+        <xs:element minOccurs="0" ref="ta"/>
+        <xs:element minOccurs="0" ref="lmsi"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cgi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="mcc"/>
+        <xs:element ref="mnc"/>
+        <xs:element ref="lac"/>
+        <xs:element ref="cellid"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="neid">
+    <xs:complexType>
+      <xs:choice>
+          <!--
+        <xs:element ref="vmscid"/>
+        <xs:element ref="vlrid"/>
+        -->
+        <xs:sequence>
+          <xs:element ref="vmscid"/>
+          <xs:element ref="vlrid"/>
+        </xs:sequence>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="vmscid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="cc"/>
+        <xs:element minOccurs="0" ref="ndc"/>
+        <xs:element ref="vmscno"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="vlrid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="cc"/>
+        <xs:element minOccurs="0" ref="ndc"/>
+        <xs:element ref="vlrno"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nmr" type="xs:string"/>
+  <xs:element name="mcc" type="xs:string"/>
+  <xs:element name="mnc" type="xs:string"/>
+  <xs:element name="ndc" type="xs:string"/>
+  <xs:element name="cc" type="xs:string"/>
+  <xs:element name="vmscno" type="xs:string"/>
+  <xs:element name="vlrno" type="xs:string"/>
+  <xs:element name="lac" type="xs:string"/>
+  <xs:element name="cellid" type="xs:string"/>
+  <xs:element name="ta" type="xs:string"/>
+  <xs:element name="lmsi" type="xs:string"/>
+  <!-- MLP_CTXT Context Element Definitions -->
+  <xs:element name="client">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element minOccurs="0" ref="pwd"/>
+        <xs:element minOccurs="0" ref="serviceid"/>
+        <xs:element minOccurs="0" ref="requestmode"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sessionid" type="xs:string"/>
+  <xs:element name="id" type="xs:string"/>
+  <xs:element name="requestor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element minOccurs="0" ref="serviceid"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pwd" type="xs:string"/>
+  <xs:element name="serviceid" type="xs:string"/>
+  <xs:element name="requestmode">
+    <xs:complexType>
+      <xs:attribute name="type" default="PASSIVE">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="ACTIVE"/>
+            <xs:enumeration value="PASSIVE"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subclient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element minOccurs="0" ref="pwd"/>
+        <xs:element minOccurs="0" ref="serviceid"/>
+      </xs:sequence>
+      <xs:attribute name="last_client" default="NO">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="YES"/>
+            <xs:enumeration value="NO"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_SLIR Standard Location Immediate Request -->
+  <xs:element name="slir">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice>
+          <xs:element ref="msids"/>
+          <xs:sequence maxOccurs="unbounded">
+            <xs:element ref="msid"/>
+            <xs:element minOccurs="0" ref="codeword"/>
+            <xs:element ref="gsm_net_param"/>
+          </xs:sequence>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="eqop"/>
+        <xs:element minOccurs="0" ref="geo_info"/>
+        <xs:element minOccurs="0" ref="loc_type"/>
+        <xs:element minOccurs="0" ref="prio"/>
+        <xs:element minOccurs="0" ref="pushaddr"/>
+      </xs:sequence>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="res_type" default="SYNC">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="SYNC"/>
+            <xs:enumeration value="ASYNC"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_SLIA Standard Location Immediate Answer -->
+  <xs:element name="slia">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element maxOccurs="unbounded" ref="pos"/>
+        <xs:element ref="req_id"/>
+        <xs:sequence>
+          <xs:element ref="result"/>
+          <xs:element minOccurs="0" ref="add_info"/>
+        </xs:sequence>
+      </xs:choice>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_SLIREP Standard Location Immediate Report -->
+  <xs:element name="slirep">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="req_id"/>
+        <xs:element maxOccurs="unbounded" ref="pos"/>
+      </xs:sequence>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_EME_LIR Emergency Location Immediate Request -->
+  <xs:element name="eme_lir">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice>
+          <xs:element ref="msids"/>
+          <xs:sequence maxOccurs="unbounded">
+            <xs:element ref="msid"/>
+            <xs:element ref="gsm_net_param"/>
+          </xs:sequence>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="qop"/>
+        <xs:element minOccurs="0" ref="geo_info"/>
+        <xs:element minOccurs="0" ref="loc_type"/>
+      </xs:sequence>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_EME_LIA Emergency Location Immediate Answer -->
+  <xs:element name="eme_lia">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element maxOccurs="unbounded" ref="eme_pos"/>
+        <xs:sequence>
+          <xs:element ref="result"/>
+          <xs:element minOccurs="0" ref="add_info"/>
+        </xs:sequence>
+      </xs:choice>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_SLREP Standard Location Report -->
+  <xs:element name="slrep">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pos"/>
+      </xs:sequence>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_EMEREP Emergency Location Report -->
+  <xs:element name="emerep">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="eme_event">
+          <xs:attribute name="ver" default="3.0.0">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="3.0.0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_TLRR Triggered Location Reporting Request -->
+  <xs:element name="tlrr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="msids"/>
+        <xs:element minOccurs="0" ref="interval"/>
+        <xs:element minOccurs="0" ref="start_time"/>
+        <xs:element minOccurs="0" ref="stop_time"/>
+        <xs:element minOccurs="0" ref="tlrr_event"/>
+        <xs:element minOccurs="0" ref="qop"/>
+        <xs:element minOccurs="0" ref="geo_info"/>
+        <xs:element minOccurs="0" ref="pushaddr"/>
+        <xs:element minOccurs="0" ref="loc_type"/>
+        <xs:element minOccurs="0" ref="prio"/>
+      </xs:sequence>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_TLRA Triggered Location Reporting Answer -->
+  <xs:element name="tlra">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="req_id"/>
+        <xs:sequence>
+          <xs:element ref="result"/>
+          <xs:element minOccurs="0" ref="add_info"/>
+        </xs:sequence>
+      </xs:choice>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_TLREP Triggered Location Report -->
+  <xs:element name="tlrep">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="req_id"/>
+        <xs:element maxOccurs="unbounded" ref="trl_pos"/>
+        <xs:element minOccurs="0" ref="time_remaining"/>
+      </xs:sequence>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_TLRSR Triggered Location Reporting Stop Request -->
+  <xs:element name="tlrsr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="req_id"/>
+      </xs:sequence>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_TLRSA Triggered Location Reporting Stop Answer -->
+  <xs:element name="tlrsa">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="req_id"/>
+        <xs:sequence>
+          <xs:element ref="result"/>
+          <xs:element minOccurs="0" ref="add_info"/>
+        </xs:sequence>
+      </xs:choice>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <!-- MLP_GEM General Error Message -->
+  <xs:element name="gem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="result"/>
+        <xs:element minOccurs="0" ref="add_info"/>
+      </xs:sequence>
+      <xs:attribute name="ver" default="3.0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3.0.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

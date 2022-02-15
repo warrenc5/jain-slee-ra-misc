@@ -1,0 +1,703 @@
+ <event-definition><description>The "adsi" event (ADSI_DISPLAY).</description>
+ <event-type-name>MgcpEvent adsi</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "AllEvents" event.</description>
+ <event-type-name>MgcpEvent AllEvents</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "ann" event (PLAY_AN_ANNOUNCEMENT).</description>
+ <event-type-name>MgcpEvent ann</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "as" event (ANSWER_SUPERVISION).</description>
+ <event-type-name>MgcpEvent as</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "au" event (AUTHORIZATION_SUCCEEDED).</description>
+ <event-type-name>MgcpEvent au</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "aw" event (ANSWER_TONE).</description>
+ <event-type-name>MgcpEvent aw</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "ax" event (AUTHORIZATION_DENIED).</description>
+ <event-type-name>MgcpEvent ax</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "bl" event (BLOCKING).</description>
+ <event-type-name>MgcpEvent bl</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "bz" event (BUSY_TONE).</description>
+ <event-type-name>MgcpEvent bz</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "c01" event (CONTINUITY_TONE).</description>
+ <event-type-name>MgcpEvent c01</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "c02" event (CONTINUITY_TEST).</description>
+ <event-type-name>MgcpEvent c02</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "cbk" event (CALL_BACK_REQUEST).</description>
+ <event-type-name>MgcpEvent cbk</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "cf" event (CONFIRM_TONE).</description>
+ <event-type-name>MgcpEvent cf</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "cg" event (NETWORK_CONGESTION_TONE).</description>
+ <event-type-name>MgcpEvent cg</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "ci" event (CALLER_ID).</description>
+ <event-type-name>MgcpEvent ci</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "cl" event (CARRIER_LOST).</description>
+ <event-type-name>MgcpEvent cl</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dl" event (DIAL_TONE).</description>
+ <event-type-name>MgcpEvent dlThe "dl" event (DIAL_TONE).</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmf0" event (DTMF_0).</description>
+ <event-type-name>MgcpEvent dtmf0</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmf1" event (DTMF_1).</description>
+ <event-type-name>MgcpEvent dtmf1</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmf2" event (DTMF_2).</description>
+ <event-type-name>MgcpEvent dtmf2</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmf3" event (DTMF_3).</description>
+ <event-type-name>MgcpEvent dtmf3</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmf4" event (DTMF_4).</description>
+ <event-type-name>MgcpEvent dtmf4</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmf5" event (DTMF_5).</description>
+ <event-type-name>MgcpEvent dtmf5</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmf6" event (DTMF_6).</description>
+ <event-type-name>MgcpEvent dtmf6</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmf7" event (DTMF_7).</description>
+ <event-type-name>MgcpEvent dtmf7</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmf8" event (DTMF_8).</description>
+ <event-type-name>MgcpEvent dtmf8</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmf9" event (DTMF_9).</description>
+ <event-type-name>MgcpEvent dtmf9</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmfA" event (DTMF_A).</description>
+ <event-type-name>MgcpEvent dtmfA</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmfB" event (DTMF_B).</description>
+ <event-type-name>MgcpEvent dtmfB</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmfC" event (DTMF_C).</description>
+ <event-type-name>MgcpEvent dtmfC</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmfD" event (DTMF_D).</description>
+ <event-type-name>MgcpEvent dtmfD</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmfHash" event (DTMF_HASH).</description>
+ <event-type-name>MgcpEvent dtmfHash</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "dtmfStar" event (DTMF_STAR).</description>
+ <event-type-name>MgcpEvent dtmfStar</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "e" event (ERROR_TONE).</description>
+ <event-type-name>MgcpEvent e</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "ft" event (FAX_TONE_DETECTED).</description>
+ <event-type-name>MgcpEvent ft</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "hd" event (OFF_HOOK_TRANSITION).</description>
+ <event-type-name>MgcpEvent hd</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "hf" event (FLASH_HOOK).</description>
+ <event-type-name>MgcpEvent hf</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "hu" event (ON_HOOK_TRANSITION).</description>
+ <event-type-name>MgcpEvent hu</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "is" event (INCOMING_SEIZURE).</description>
+ <event-type-name>MgcpEvent is</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "it" event (INTERCEPT_TONE).</description>
+ <event-type-name>MgcpEvent it</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "java" event (LOAD_JAVA_SCRIPT).</description>
+ <event-type-name>MgcpEvent java</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "JI" event (JITTER_BUFFER_SIZE_CHANGED).</description>
+ <event-type-name>MgcpEvent JI</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "K0" event (MF_K0_OR_KP).</description>
+ <event-type-name>MgcpEvent K0</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "K1" event (MF_K1).</description>
+ <event-type-name>MgcpEvent K1</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "K2" event (MF_K2).</description>
+ <event-type-name>MgcpEvent K2</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "L" event (LONG_DURATION_INDICATOR).</description>
+ <event-type-name>MgcpEvent L</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "lb" event (LOOPBACK).</description>
+ <event-type-name>MgcpEvent lb</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "ld" event (LONG_DURATION_CONNECTION).</description>
+ <event-type-name>MgcpEvent ld</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mf0" event (MF_0).</description>
+ <event-type-name>MgcpEvent mf0</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mf1" event (MF_1).</description>
+ <event-type-name>MgcpEvent mf1</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mf2" event (MF_2).</description>
+ <event-type-name>MgcpEvent mf2</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mf3" event (MF_3).</description>
+ <event-type-name>MgcpEvent mf3</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mf4" event (MF_4).</description>
+ <event-type-name>MgcpEvent mf4</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mf5" event (MF_5).</description>
+ <event-type-name>MgcpEvent mf5</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mf6" event (MF_6).</description>
+ <event-type-name>MgcpEvent mf6</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mf7" event (MF_7).</description>
+ <event-type-name>MgcpEvent mf7</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mf8" event (MF_8).</description>
+ <event-type-name>MgcpEvent mf8</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mf9" event (MF_9).</description>
+ <event-type-name>MgcpEvent mf9</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mt" event (MODEM_DETECTED).</description>
+ <event-type-name>MgcpEvent mt</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "mwi" event (MESSAGE_WAITING_INDICATOR).</description>
+ <event-type-name>MgcpEvent mwi</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "nbz" event (NETWORK_BUSY_TONE).</description>
+ <event-type-name>MgcpEvent nbz</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "nm" event (NEW_MILLIWATT_TONE).</description>
+ <event-type-name>MgcpEvent nm</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "oc" event (REPORT_ON_COMPLETION).</description>
+ <event-type-name>MgcpEvent oc</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "of" event (REPORT_FAILURE).</description>
+ <event-type-name>MgcpEvent of</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "om" event (OLD_MILLIWATT_TONE).</description>
+ <event-type-name>MgcpEvent om</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "ot" event (OFFHOOK_WARNING_TONE).</description>
+ <event-type-name>MgcpEvent ot</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "p" event (PROMPT_TONE).</description>
+ <event-type-name>MgcpEvent p</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "pa" event (PACKET_ARRIVAL).</description>
+ <event-type-name>MgcpEvent pa</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "pat" event (PATTERN_DETECTED).</description>
+ <event-type-name>MgcpEvent pat</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "perl" event (LOAD_PERL_SCRIPT).</description>
+ <event-type-name>MgcpEvent perl</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "PL" event (PACKET_LOSS_EXCEEDED).</description>
+ <event-type-name>MgcpEvent PL</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "pt" event (PREEMPTION_TONE).</description>
+ <event-type-name>MgcpEvent pt</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "qa" event (QUALITY_ALERT).</description>
+ <event-type-name>MgcpEvent qa</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "r0" event (DISTINCTIVE_RINGING_0).</description>
+ <event-type-name>MgcpEvent r0</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "r1" event (DISTINCTIVE_RINGING_1).</description>
+ <event-type-name>MgcpEvent r1</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "r2" event (DISTINCTIVE_RINGING_2).</description>
+ <event-type-name>MgcpEvent r2</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "r3" event (DISTINCTIVE_RINGING_3).</description>
+ <event-type-name>MgcpEvent r3</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "r4" event (DISTINCTIVE_RINGING_4).</description>
+ <event-type-name>MgcpEvent r4</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "r5" event (DISTINCTIVE_RINGING_5).</description>
+ <event-type-name>MgcpEvent r5</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "r6" event (DISTINCTIVE_RINGING_6).</description>
+ <event-type-name>MgcpEvent r6</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "r7" event (DISTINCTIVE_RINGING_7).</description>
+ <event-type-name>MgcpEvent r7</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "rbk" event (RINGBACK_ON_CONNECTION).</description>
+ <event-type-name>MgcpEvent rbk</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "rg" event (RINGING).</description>
+ <event-type-name>MgcpEvent rg</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "ro" event (REORDER_TONE).</description>
+ <event-type-name>MgcpEvent ro</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "rs" event (RETURN_SEIZURE).</description>
+ <event-type-name>MgcpEvent rs</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "rsp" event (RINGSPLASH).</description>
+ <event-type-name>MgcpEvent rsp</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "rt" event (RINGBACK_TONE).</description>
+ <event-type-name>MgcpEvent rt</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "s" event (DISTINCTIVE_TONE_PATTERN).</description>
+ <event-type-name>MgcpEvent s</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "S0" event (MF_S0_OR_ST).</description>
+ <event-type-name>MgcpEvent S0</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "S1" event (MF_S1).</description>
+ <event-type-name>MgcpEvent S1</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "S2" event (MF_S2).</description>
+ <event-type-name>MgcpEvent S2</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "S3" event (MF_S3).</description>
+ <event-type-name>MgcpEvent S3</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "sdl" event (STUTTER_DIALTONE_HANDSET).</description>
+ <event-type-name>MgcpEvent sdl</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "sit" event (SIT_TONE).</description>
+ <event-type-name>MgcpEvent sit</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "sl" event (STUTTER_DIALTONE).</description>
+ <event-type-name>MgcpEvent sl</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "SR" event (SAMPLING_RATE_CHANGED).</description>
+ <event-type-name>MgcpEvent SR</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "t" event (SIT_TONE_HANDSET).</description>
+ <event-type-name>MgcpEvent t</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "T" event (INTERDIGIT_TIMER).</description>
+ <event-type-name>MgcpEvent T</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "tcl" event (LOAD_TCL_SCRIPT).</description>
+ <event-type-name>MgcpEvent tcl</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "tdd" event (TDD).</description>
+ <event-type-name>MgcpEvent tdd</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "tl" event (TEST_LINE).</description>
+ <event-type-name>MgcpEvent tl</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "UC" event (USED_CODEC_CHANGED).</description>
+ <event-type-name>MgcpEvent UC</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "us" event (UNSEIZE_CIRCUIT).</description>
+ <event-type-name>MgcpEvent us</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "v" event (ALERTING_TONE).</description>
+ <event-type-name>MgcpEvent v</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "vmwi" event (VISUAL_MESSAGE_WAITING_INDICATOR).</description>
+ <event-type-name>MgcpEvent vmwi</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "wk" event (WINK).</description>
+ <event-type-name>MgcpEvent wk</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "wko" event (WINK_OFF).</description>
+ <event-type-name>MgcpEvent wko</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "wt" event (CALL_WAITING_TONE).</description>
+ <event-type-name>MgcpEvent wt</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "wt1" event (CALL_WAITING_TONE_1).</description>
+ <event-type-name>MgcpEvent wt1</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "wt2" event (CALL_WAITING_TONE_2).</description>
+ <event-type-name>MgcpEvent wt2</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "wt3" event (CALL_WAITING_TONE_3).</description>
+ <event-type-name>MgcpEvent wt3</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "wt4" event (CALL_WAITING_TONE_4).</description>
+ <event-type-name>MgcpEvent wt4</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "X" event (MATCH_ANY_DIGIT_WILDCARD).</description>
+ <event-type-name>MgcpEvent X</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "xml" event (LOAD_XML_SCRIPT).</description>
+ <event-type-name>MgcpEvent xml</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "y" event (RECORDER_WARNING_TONE).</description>
+ <event-type-name>MgcpEvent y</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "z" event (CALLING_CARD_SERVICE_TONE).</description>
+ <event-type-name>MgcpEvent z</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+ </event-definition>
+ <event-definition><description>The "zz" event (NO_CIRCUIT).</description>
+ <event-type-name>MgcpEvent zz</event-type-name>
+<event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>jain.protocol.ip.mgcp.pkg.MgcpEvent</event-class-name>
+</event-definition>
+

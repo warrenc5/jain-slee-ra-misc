@@ -1,0 +1,94 @@
+<body>
+    This is the JAIN SLEE Resource Adaptor Type and Event for connection to the Ericsson AIR and VS servers
+<br>
+
+<br>
+To access the AIR and VS servers through the API you must create a JAIN SLEE 1.1 service
+
+Sample Code
+<pre>
+public abstract class MySbb extends Sbb {
+
+    ...
+
+    UCIPMessageProvider  provider = (UCIPMessageProvider)env.lookup("mofokom/resource/ucip/3.1/provider");
+    UCIPActivityContextInterfaceFactory  aciFactory = (UCIPActivityContextInterfaceFactory)env.lookup("mofokom/resource/ucip/3.1/acifactory");
+    UCIPObjectFactory factory = provider.getObjectFactory();
+
+    Refill request = factory.createRefill();
+
+    request.setOriginHostName("originHost");
+    request.setOriginNodeType("something");
+    request.setOriginTransactionID("1234");
+    request.setOriginTimeStamp(Calendar.getInstance());
+    request.setSubscriberNumber("123");
+    request.setRefillProfileID("");
+    request.setMessageCapabilityFlag(of.createMessageCapabilityFlag());
+    request.getMessageCapabilityFlag().setAccountActivationFlag(true);
+    request.setVoucherActivationCode("1234");
+    request.setTransactionCurrency("NIR");
+    request.setTransactionAmount("1000.00");
+
+    UCIPActivity activity = provider.sendRefill(request);
+    ActivityContextInterface aci = aciFactory.asActivityContextInterface(activity);
+
+    aci.attach(context.getSbbLocalObject());
+
+    ...
+
+    public void onFault(Fault fault, ACI aci.. {
+        aci.detach(context.getSbbLocalObject());
+
+        String faultString = fault.getFaultString();
+    }
+
+    public void onRefillResponse(RefillResponse response, ACI aci.. {
+        aci.detach(context.getSbbLocalObject());
+
+        int responseCode = response.getResponseCode();
+    }
+
+    ...
+}
+</pre>
+
+Sample Sbb Deployment Descriptor
+
+<pre>
+
+&lt;sbb-jar&gt; 
+
+...
+
+  &lt;event event-direction="Receive" initial-event="False"&gt;
+    &lt;event-name&gt; RefillResponse &lt;/event-name&gt;
+    &lt;event-type-ref&gt;
+      &lt;event-type-name&gt;ucip.RefillResponse&lt;/event-type-name&gt;
+      &lt;event-type-vendor&gt; MOFOKOM &lt;/event-type-vendor&gt;
+      &lt;event-type-version&gt; 3.1 &lt;/event-type-version&gt;
+    &lt;/event-type-ref&gt;
+  &lt;/event&gt;
+
+  ...
+
+    &lt;resource-adaptor-type-binding&gt;
+          &lt;description&gt;
+          &lt;/description&gt;
+          &lt;resource-adaptor-type-ref&gt;
+              &lt;resource-adaptor-type-name&gt; UCIP Resource Adaptor Type &lt;/resource-adaptor-type-name&gt;
+              &lt;resource-adaptor-type-vendor&gt; MOFOKOM &lt;/resource-adaptor-type-vendor&gt;
+              &lt;resource-adaptor-type-version&gt; 3.1 &lt;/resource-adaptor-type-version&gt;
+          &lt;/resource-adaptor-type-ref&gt;
+
+          &lt;activity-context-interface-factory-name&gt; mofokom/resource/ucip/3.1/acifactory &lt;/activity-context-interface-factory-name&gt;
+          &lt;resource-adaptor-entity-binding&gt;
+              &lt;resource-adaptor-object-name&gt; mofokom/resource/ucip/3.1/provider &lt;/resource-adaptor-object-name&gt;
+              &lt;resource-adaptor-entity-link&gt; UCIPRA &lt;/resource-adaptor-entity-link&gt;
+          &lt;/resource-adaptor-entity-binding&gt;
+      &lt;/resource-adaptor-type-binding&gt;
+
+...
+
+</pre>
+
+</body>

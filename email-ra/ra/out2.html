@@ -1,0 +1,152 @@
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.slee.ActivityContextInterface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailActivityContextInterfaceFactory.html#getActivityContextInterface(javax.mail.Folder)">getActivityContextInterface</A></B>(javax.mail.Folder&nbsp;folder)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.slee.ActivityContextInterface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailActivityContextInterfaceFactory.html#getActivityContextInterface(mofokomresource.mail..MailActivity)">getActivityContextInterface</A></B>(<A HREF="../../../../mofokom/in/mail/resource/MailActivity.html" title="interface in mofokomresource.mail.">MailActivity</A>&nbsp;activity)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.slee.ActivityContextInterface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailActivityContextInterfaceFactory.html#getActivityContextInterface(javax.mail.Store)">getActivityContextInterface</A></B>(javax.mail.Store&nbsp;store)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.slee.ActivityContextInterface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailActivityContextInterfaceFactory.html#getActivityContextInterface(javax.mail.Transport)">getActivityContextInterface</A></B>(javax.mail.Transport&nbsp;transport)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR>
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.internet.MimeBodyPart</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#addBodyPart(javax.mail.internet.MimeMultipart, java.lang.String)">addBodyPart</A></B>(javax.mail.internet.MimeMultipart&nbsp;message,
+            java.lang.String&nbsp;contentType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a mime body part of the given content type to the message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.internet.MimeMessage</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#createMessage()">createMessage</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a message on this entities' session</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.internet.MimeMessage</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#createMessage(javax.mail.Session)">createMessage</A></B>(javax.mail.Session&nbsp;session)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a message on this entities' session</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.internet.MimeMultipart</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#createMultipart(javax.mail.internet.MimeMessage)">createMultipart</A></B>(javax.mail.internet.MimeMessage&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a multipart message</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Folder</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getDefaultFolder()">getDefaultFolder</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opens the defalut folder on the default store and registers it with the SLEE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Folder</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getFolder(java.lang.String)">getFolder</A></B>(java.lang.String&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opens a folder on the default store and registers it with the SLEE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Session</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getSession()">getSession</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a non default session.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Store</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getStore()">getStore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initializes a store from the entity configuration and registers it with the slee.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Store</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getStore(java.lang.String)">getStore</A></B>(java.lang.String&nbsp;protocol)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initializes a Store from the entity configuration and registers it with the SLEE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Transport</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getTransport()">getTransport</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initializes a Transport from the entity configuration and registers it with the SLEE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.mail.Transport</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#getTransport(java.lang.String)">getTransport</A></B>(java.lang.String&nbsp;protocol)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initializes a Transport from the entity configuration and registers it with the SLEE.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../mofokom/in/mail/resource/MailActivity.html" title="interface in mofokomresource.mail.">MailActivity</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#send(javax.mail.internet.MimeMessage)">send</A></B>(javax.mail.internet.MimeMessage&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends a message on the default Transport with calling save changes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../mofokom/in/mail/resource/MailActivity.html" title="interface in mofokomresource.mail.">MailActivity</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../mofokom/in/mail/resource/MailSbbInterface.html#sendMessage(javax.mail.Transport, javax.mail.internet.MimeMessage, javax.mail.Address...)">sendMessage</A></B>(javax.mail.Transport&nbsp;transport,
+            javax.mail.internet.MimeMessage&nbsp;message,
+            javax.mail.Address...&nbsp;addresses)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends a message on the given Transport without calling save changes.</TD>
+</TR>
+</TABLE>
+

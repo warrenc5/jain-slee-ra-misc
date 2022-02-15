@@ -1,0 +1,1 @@
+DLCX 1210 aaln/*@rgw-2567.whatever.net MGCP 1.0

@@ -1,0 +1,9 @@
+exitOnError false
+deactivateservice name=MGCP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=MGCP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=MGCP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/MGCP-client/service/target/MGCP-service-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/MGCP-client/service/target/MGCP-service-1.0-SNAPSHOT-du.jar 
+activateservice name=MGCP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!DOCTYPE event-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Event 1.1//EN" "http://java.sun.com/dtd/slee-event-jar_1_1.dtd">
+<event-jar>
+    <description>Event Definitions for Mail Resource Adaptor Type.</description>
+    <library-ref>
+        <library-name> Mail Library </library-name>
+        <library-vendor> MOFOKOM </library-vendor>
+        <library-version> ${pom.version} </library-version>
+    </library-ref>
+    <event-definition>
+        <description>Fired when there is a error sending a mail message</description>
+        <event-type-name>TransportError</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>mofokom.event.mail.TransportError </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>A connection was closed. Transports,Stores, and Folders</description>
+        <event-type-name>ConnectionClosedEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.ConnectionEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>A connection was disconnected (not currently used). Transports,Stores, and Folders</description>
+        <event-type-name>ConnectionDisconnectedEvent </event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.ConnectionEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>A connection was opened for Transports,Stores, and Folders</description>
+        <event-type-name>ConnectionOpenEvent </event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.ConnectionEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>Fired by internal implementation of ConnectionListener for Transports,Stores, and Folders</description>
+        <event-type-name>ConnectionEvent </event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.ConnectionEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>Fired by internal implementation of FolderListener for Folders</description>
+        <event-type-name>FolderEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.FolderEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>The folder was created.</description>
+        <event-type-name>FolderCreatedEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.FolderEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>The folder was deleted.</description>
+        <event-type-name>FolderDeletedEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.FolderEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>The folder was renamed.</description>
+        <event-type-name>FolderRenamedEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.FolderEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>Fired by internal implementation of MessageChangeListener for Folders</description>
+        <event-type-name>MessageChangedEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.MessageChangedEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description> The message's envelope (headers, but not body) changed.</description>
+        <event-type-name>MessageChangedEnvelopeEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.MessageChangedEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>The message's flags changed.</description>
+        <event-type-name>MessageChangedFlagsEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.MessageChangedEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>Fired by internal implementation of MessageCountListener for Folders</description>
+        <event-type-name>MessageCountEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.MessageCountEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>The messages were added to their folder.</description>
+        <event-type-name>MessageCountAddedEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.MessageCountEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>The messages were removed from their folder.</description>
+        <event-type-name>MessageCountRemovedEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.MessageCountEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>Fired by internal implementation of StoreListener for Stores</description>
+        <event-type-name>StoreEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.StoreEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>Indicates that this message is an ALERT.</description>
+        <event-type-name>StoreAlertEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.StoreEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>Indicates that this message is a NOTICE.</description>
+        <event-type-name>StoreNoticeEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.StoreEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description>Fired by internal implementation of TransportListener for Transports</description>
+        <event-type-name>TransportEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.TransportEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description></description>
+        <event-type-name>TransportMessageDeliveredEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.TransportEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description></description>
+        <event-type-name>TransportMessageNotDeliveredEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.TransportEvent </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description></description>
+        <event-type-name>TransportMessagePartiallyDeliveredEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> javax.mail.event.TransportEvent </event-class-name>
+    </event-definition>
+</event-jar>

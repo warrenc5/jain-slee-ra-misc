@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE library-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Library 1.1//EN" "http://java.sun.com/dtd/slee-library-jar_1_1.dtd">
+<library-jar>
+    <library>
+        <library-name> MegaCo Library </library-name>
+        <library-vendor> MOFOKOM </library-vendor>
+        <library-version>${pom.version} </library-version>
+        <jar>
+            <description/>
+            <jar-name>jain-megaco-ri-1.0.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+        <jar>
+            <description/>
+            <jar-name>mina-core-2.0.4.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+         <jar>
+            <description/>
+            <jar-name>slf4j-jdk14-1.6.1.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+         <jar>
+            <description/>
+            <jar-name>slf4j-api-1.6.1.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+          <jar>
+            <description/>
+            <jar-name>nist-sdp-1.0.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+
+          <jar>
+            <description/>
+            <jar-name>jain-sip-ri-1.2.1.jar</jar-name>
+            <security-permissions>
+                <description> </description>
+                <security-permission-spec>
+                    grant {
+                        permission java.security.AllPermission ;
+                    };
+                </security-permission-spec>
+            </security-permissions>
+        </jar>
+    </library>
+</library-jar>

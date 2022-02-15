@@ -1,0 +1,23 @@
+MEGACO/1 [125.125.125.111]:55555 Reply = 50009 {
+      Context = 5000 {
+        Subtract = A5555 {
+             Statistics {
+                nt/os=45123, 
+                nt/dur=40 
+                }
+          },
+          Subtract = A5556 {
+             Statistics {
+                rtp/ps=1245, 
+                nt/os=62345,
+                rtp/pr=780, 
+                nt/or=45123, 
+                rtp/pl=10, 
+                rtp/jit=27,
+                rtp/delay=48 
+             }
+          }
+      } 
+      }
+
+

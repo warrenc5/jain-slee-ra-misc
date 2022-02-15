@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<deploy-config>
+  <!--
+        [
+           (CONNECT_STORE:java.lang.Boolean=true),
+   (CONNECT_TRANSPORT:java.lang.Boolean=true),
+   (MAIL_AUTHENTICATION:java.lang.Boolean=false),
+   (ACTIVITY_DIMENSION:java.lang.Integer=1024),
+   (WORK_QUEUE:java.lang.Integer=1),
+   (POOL_SIZE:java.lang.Integer=2),
+   (MAX_POOL_SIZE:java.lang.Integer=3),
+   (POOL_TIMEOUT:java.lang.Long=120),
+   (CONFIG_URI:java.lang.String=resource:/mail.properties),
+   (SESSION_DEBUG:java.lang.Boolean=false),
+   (SHUTDOWN_PERIOD:java.lang.Long=2000),
+  
+        ]
+        -->
+  <ra-entity resource-adaptor-id="ResourceAdaptorID[name=Mail Resource Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT]" entity-name="Mail Resource Adaptor Entity">
+    <properties file="">
+      <property name="CONNECT_STORE" type="java.lang.Boolean" value="true"/>
+      <property name="CONNECT_TRANSPORT" type="java.lang.Boolean" value="true"/>
+      <property name="MAIL_AUTHENTICATION" type="java.lang.Boolean" value="true"/>
+      <property name="ACTIVITY_DIMENSION" type="java.lang.Integer" value="1024"/>
+      <property name="WORK_QUEUE" type="java.lang.Integer" value="1"/>
+      <property name="EXECUTOR_CORE_POOL_SIZE" type="java.lang.Integer" value="2"/>
+      <property name="EXECUTOR_MAX_POOL_SIZE" type="java.lang.Integer" value="3"/>
+      <property name="EXECUTOR_POOL_TIMEOUT" type="java.lang.Long" value="120"/>
+      <property name="CONFIG_URI" type="java.lang.String" value="resource:/local.properties"/>
+      <property name="SESSION_DEBUG" type="java.lang.Boolean" value="false"/>
+      <property name="DRAIN_ON_SHUTDOWN" type="java.lang.Boolean" value="false"/>
+      <property name="SHUTDOWN_PERIOD" type="java.lang.Long" value="2000"/>
+    </properties>
+    <ra-link name="Mail Resource Adaptor Entity Link"/>
+  </ra-entity>
+  <!--
+          JAVA TESTING CODE
+           
+  properties.addProperty(new Property("CONNECT_STORE",java.lang.Boolean.class.getName(),true));
+   
+  properties.addProperty(new Property("CONNECT_TRANSPORT",java.lang.Boolean.class.getName(),true));
+   
+  properties.addProperty(new Property("MAIL_AUTHENTICATION",java.lang.Boolean.class.getName(),false));
+   
+  properties.addProperty(new Property("ACTIVITY_DIMENSION",java.lang.Integer.class.getName(),1024));
+   
+  properties.addProperty(new Property("WORK_QUEUE",java.lang.Integer.class.getName(),1));
+   
+  properties.addProperty(new Property("POOL_SIZE",java.lang.Integer.class.getName(),2));
+   
+  properties.addProperty(new Property("MAX_POOL_SIZE",java.lang.Integer.class.getName(),3));
+   
+  properties.addProperty(new Property("POOL_TIMEOUT",java.lang.Long.class.getName(),120));
+   
+  properties.addProperty(new Property("CONFIG_URI",java.lang.String.class.getName(),resource:/mail.properties));
+   
+  properties.addProperty(new Property("SESSION_DEBUG",java.lang.Boolean.class.getName(),false));
+   
+  properties.addProperty(new Property("SHUTDOWN_PERIOD",java.lang.Long.class.getName(),2000));
+  -->
+  <!--
+          OC RAE 
+
+          CONNECT_STORE=true,CONNECT_TRANSPORT=true,MAIL_AUTHENTICATION=false,ACTIVITY_DIMENSION=1024,WORK_QUEUE=1,POOL_SIZE=2,MAX_POOL_SIZE=3,POOL_TIMEOUT=120,CONFIG_URI="resource:/mail.properties",SESSION_DEBUG=false,SHUTDOWN_PERIOD=2000,-->
+</deploy-config>

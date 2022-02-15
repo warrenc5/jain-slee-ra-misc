@@ -1,0 +1,9 @@
+exitOnError false
+deactivateservice name=XmlRpc\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=XmlRpc\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=XmlRpc\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/XmlRpc-client/service/target/XmlRpc-service-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/XmlRpc-client/service/target/XmlRpc-service-1.0-SNAPSHOT-du.jar 
+activateservice name=XmlRpc\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

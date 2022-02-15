@@ -1,0 +1,6 @@
+exitOnError false
+deactivateservice name=MLP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=MLP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=MLP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+activateservice name=MLP\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

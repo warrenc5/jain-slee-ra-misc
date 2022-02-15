@@ -1,0 +1,20 @@
+exitOnError false
+deactivateservice name=TelNet\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=TelNet\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=TelNet\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/telnet-service/target/telnet-service-1.0-SNAPSHOT-du.jar 
+
+deactivateraentity TelNet\ Resource\ Adaptor\ Entity 
+removeallactivities TelNet\ Resource\ Adaptor\ Entity
+waittilraentityisinactive TelNet\ Resource\ Adaptor\ Entity 
+unbindralinkname TelNet\ Resource\ Adaptor\ Entity\ Link 
+removeraentity TelNet\ Resource\ Adaptor\ Entity 
+uninstall file:/home/code/telnet-ra/target/telnet-ra-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/telnet-ra/target/telnet-ra-1.0-SNAPSHOT-du.jar 
+createraentity name=TelNet\ Resource\ Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT TelNet\ Resource\ Adaptor\ Entity ACTIVITY_DIMENSION=10
+bindralinkname TelNet\ Resource\ Adaptor\ Entity TelNet\ Resource\ Adaptor\ Entity\ Link
+activateraentity TelNet\ Resource\ Adaptor\ Entity 
+installlocaldu /code/telnet-service/target/telnet-service-1.0-SNAPSHOT-du.jar 
+activateservice name=TelNet\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

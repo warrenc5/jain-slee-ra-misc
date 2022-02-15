@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-adaptor-type-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor Type 1.1//EN" "http://java.sun.com/dtd/slee-resource-adaptor-type-jar_1_1.dtd">
+<resource-adaptor-type-jar>
+    <resource-adaptor-type id="JPA">
+        <description> JPA Resource Adaptor Type </description>
+        <resource-adaptor-type-name> JPA Resource Adaptor Type </resource-adaptor-type-name>
+        <resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor>
+        <resource-adaptor-type-version> ${pom.version} </resource-adaptor-type-version>
+        <library-ref>
+            <description> JPA Library </description>
+            <library-name> JPA Library </library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version> ${pom.version} </library-version>
+        </library-ref>
+        <resource-adaptor-type-classes>
+            <description/>
+            <activity-type>
+                <description>JPAActivity </description>
+                <activity-type-name> javax.persistence.EntityManagerFactory </activity-type-name>
+            </activity-type>
+            <activity-context-interface-factory-interface>
+                <description/>
+                <activity-context-interface-factory-interface-name>mofokom.jpa.resource.JPAActivityContextInterfaceFactory </activity-context-interface-factory-interface-name>
+            </activity-context-interface-factory-interface>
+            <resource-adaptor-interface>
+                <description/>
+                <resource-adaptor-interface-name>mofokom.jpa.resource.JPASbbInterface</resource-adaptor-interface-name>
+            </resource-adaptor-interface>
+        </resource-adaptor-type-classes>
+
+        <event-type-ref>
+            <event-type-name>RemoteCommitEvent</event-type-name>
+            <event-type-vendor> MOFOKOM </event-type-vendor>
+            <event-type-version> ${pom.version} </event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterAttach</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterClear</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterDelete</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterDeletePerformed</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterDetach</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterDirty</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterDirtyFlushed</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterLoad</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterPersist</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterPersistPerformed</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterRefresh</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterStore</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterUpdatePerformed</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AllEvents</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>BeforeAttach</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>BeforeClear</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>BeforeDelete</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>BeforeDetach</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>BeforeDirty</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>BeforeDirtyFlushed</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>BeforePersist</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>BeforeStore</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>BeforeUpdate</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+
+
+
+
+
+
+
+
+        <event-type-ref>
+            <event-type-name>AfterBegin</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterCommit</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterCommitComplete</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterFlush</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterRollback</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterRollbackComplete</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AfterStateTransitions</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>BeforeCommit</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>BeforeFlush</event-type-name>
+            <event-type-vendor>org.apache.openjpa.event</event-type-vendor>
+            <event-type-version>2.1.0</event-type-version>
+        </event-type-ref>
+    </resource-adaptor-type>
+</resource-adaptor-type-jar>

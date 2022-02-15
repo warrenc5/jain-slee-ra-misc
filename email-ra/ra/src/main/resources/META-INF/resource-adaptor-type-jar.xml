@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-adaptor-type-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor Type 1.1//EN" "http://java.sun.com/dtd/slee-resource-adaptor-type-jar_1_1.dtd">
+<resource-adaptor-type-jar>
+    <resource-adaptor-type id="mail">
+        <description> Mail Resource Adaptor Type is a SLEE adaptation of the javax.mail package</description>
+        <resource-adaptor-type-name> Mail Resource Adaptor Type </resource-adaptor-type-name>
+        <resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor>
+        <resource-adaptor-type-version> ${pom.version} </resource-adaptor-type-version>
+        <library-ref>
+            <library-name> Mail Library </library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version> ${pom.version} </library-version>
+        </library-ref>
+        <resource-adaptor-type-classes>
+            <description/>
+            <activity-type>
+                <description> MailActivity is an Activity which represents a MailMessage being sent.</description>
+                <activity-type-name>mofokom.resource.mail.MailActivity </activity-type-name>
+            </activity-type>
+            <activity-type>
+                <description> Store is an Activity which represents a registered Store </description>
+                <activity-type-name>javax.mail.Store </activity-type-name>
+            </activity-type>
+            <activity-type>
+                <description> Folder is an Activity which represents a registered Folder </description>
+                <activity-type-name>javax.mail.Folder </activity-type-name>
+            </activity-type>
+            <activity-type>
+                <description> Transport is an Activity which represents a registered Transport </description>
+                <activity-type-name>javax.mail.Transport </activity-type-name>
+            </activity-type>
+            <activity-type>
+                <description> Message is an Activity which represents a sending Message</description>
+                <activity-type-name>javax.mail.Message </activity-type-name>
+            </activity-type>
+            <activity-context-interface-factory-interface>
+                <description/>
+                <activity-context-interface-factory-interface-name>mofokom.resource.mail.MailActivityContextInterfaceFactory </activity-context-interface-factory-interface-name>
+            </activity-context-interface-factory-interface>
+            <resource-adaptor-interface>
+                <description/>
+                <resource-adaptor-interface-name>mofokom.resource.mail.MailResourceAdaptorInterface</resource-adaptor-interface-name>
+            </resource-adaptor-interface>
+        </resource-adaptor-type-classes>
+        <event-type-ref>
+            <event-type-name>TransportError</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>ConnectionClosedEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>ConnectionDisconnectedEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>ConnectionOpenEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>ConnectionEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>FolderEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>FolderCreatedEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>FolderDeletedEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>FolderRenamedEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MessageChangedEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MessageChangedEnvelopeEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MessageChangedFlagsEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MessageCountEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MessageCountAddedEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MessageCountRemovedEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>StoreEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>StoreAlertEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>StoreNoticeEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>TransportEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>TransportMessageDeliveredEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>TransportMessageNotDeliveredEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>TransportMessagePartiallyDeliveredEvent</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref> 
+    </resource-adaptor-type>
+</resource-adaptor-type-jar>

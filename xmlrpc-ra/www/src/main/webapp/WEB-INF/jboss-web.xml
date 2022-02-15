@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <jboss-web>
+     <context-root>xmlrpc-www-1.0-SNAPSHOT</context-root>
+     <!--
+     <security-domain>custom-domain</security-domain>
+
+-->
+
+ </jboss-web>

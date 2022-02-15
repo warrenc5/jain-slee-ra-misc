@@ -1,0 +1,19 @@
+exitOnError false
+deactivateservice name=JPA\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=JPA\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=JPA\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/ojpa/ojpa-service/target/ojpa-service-1.0-SNAPSHOT-du.jar 
+
+deactivateraentity JPA\ Resource\ Adaptor\ Entity 
+waittilraentityisinactive JPA\ Resource\ Adaptor\ Entity 
+unbindralinkname JPA\ Resource\ Adaptor\ Entity\ Link 
+removeraentity JPA\ Resource\ Adaptor\ Entity 
+uninstall file:/home/code/ojpa/ojpa-ra/target/ojpa-ra-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/ojpa/ojpa-ra/target/ojpa-ra-1.0-SNAPSHOT-du.jar 
+createraentity name=JPA\ Resource\ Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT JPA\ Resource\ Adaptor\ Entity PERSISTENCE_UNIT_NAME=mypu,DATASOURCE_NAME=MyDataSource
+bindralinkname JPA\ Resource\ Adaptor\ Entity JPA\ Resource\ Adaptor\ Entity\ Link
+activateraentity JPA\ Resource\ Adaptor\ Entity 
+installlocaldu /code/ojpa/ojpa-service/target/ojpa-service-1.0-SNAPSHOT-du.jar 
+activateservice name=JPA\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

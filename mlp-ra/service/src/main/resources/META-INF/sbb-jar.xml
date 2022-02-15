@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<!DOCTYPE sbb-jar PUBLIC
+"-//Sun Microsystems, Inc.//DTD JAIN SLEE SBB 1.1//EN"
+"MLP://java.sun.com/dtd/slee-sbb-jar_1_1.dtd">
+<sbb-jar>
+    <sbb id="MLPSBB">
+        <description> ${project.name} </description>
+        <sbb-name> ${project.name} Root SBB </sbb-name>
+        <sbb-vendor> MOFOKOM </sbb-vendor>
+        <sbb-version> ${pom.version} </sbb-version>
+        <sbb-alias> MLPSBB </sbb-alias>
+        <library-ref>
+            <library-name>MLP Library</library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version> ${pom.version}</library-version>
+        </library-ref>
+        <sbb-classes>
+            <sbb-abstract-class>
+                <sbb-abstract-class-name> mofokom.service.mlp.MLPSbb </sbb-abstract-class-name>
+            </sbb-abstract-class>
+            <sbb-local-interface>
+                <sbb-local-interface-name>mofokom.service.mlp.local.MLPLocal</sbb-local-interface-name>
+            </sbb-local-interface>
+            <sbb-usage-parameters-interface>
+                <sbb-usage-parameters-interface-name>
+                    mofokom.service.mlp.usage.MLPUsageParameters
+                </sbb-usage-parameters-interface-name>
+            </sbb-usage-parameters-interface>
+        </sbb-classes>
+
+        <event event-direction="Receive" initial-event="True">
+            <event-name>ServiceStarted</event-name>
+            <event-type-ref>
+                <event-type-name>javax.slee.serviceactivity.ServiceStartedEvent</event-type-name>
+                <event-type-vendor>javax.slee</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <event event-direction="Receive" initial-event="True">
+            <event-name>Timer</event-name>
+            <event-type-ref>
+                <event-type-name>javax.slee.facilities.TimerEvent</event-type-name>
+                <event-type-vendor>javax.slee</event-type-vendor>
+                <event-type-version> 1.0 </event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>TransportException</event-name>
+            <event-type-ref>
+                <event-type-name>Transport Exception</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>StandardLocationReport</event-name>
+            <event-type-ref>
+                <event-type-name>Standard Location Report</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>StandardLocationImmediateRequest</event-name>
+            <event-type-ref>
+                <event-type-name>Standard Location Immediate Request</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>StandardLocationImmediateReport</event-name>
+            <event-type-ref>
+                <event-type-name>Standard Location Immediate Report</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>StandardLocationImmediateAnswer</event-name>
+            <event-type-ref>
+                <event-type-name>Standard Location Immediate Answer</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>EmergencyLocationImmediateRequest</event-name>
+            <event-type-ref>
+                <event-type-name>Emergency Location Immediate Request</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>EmergencyLocationImmediateAnswer</event-name>
+            <event-type-ref>
+                <event-type-name>Emergency Location Immediate Answer</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>EmergencyLocationReport</event-name>
+            <event-type-ref>
+                <event-type-name>Emergency Location Report</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>TriggeredLocationReportingRequest</event-name>
+            <event-type-ref>
+                <event-type-name>Triggered Location Reporting Request</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>TriggeredLocationReportingAnswer</event-name>
+            <event-type-ref>
+                <event-type-name>Triggered Location Reporting Answer</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>TriggeredLocationReportingReport</event-name>
+            <event-type-ref>
+                <event-type-name>Triggered Location Reporting Report</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>TriggeredLocationReportingStopRequest</event-name>
+            <event-type-ref>
+                <event-type-name>Triggered Location Reporting Stop Request</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>TriggeredLocationReportingStopAnswer</event-name>
+            <event-type-ref>
+                <event-type-name>Triggered Location Reporting Stop Answer</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <env-entry>
+            <description/>
+            <env-entry-name>MLP_SBB_RA_INTERFACE_NAME</env-entry-name>
+            <env-entry-type>java.lang.String</env-entry-type>
+            <env-entry-value>slee/resources/MLP/sbbrainterface</env-entry-value>
+        </env-entry>
+        <env-entry>
+            <description/>
+            <env-entry-name>MLP_ACI_FACTORY_NAME</env-entry-name>
+            <env-entry-type>java.lang.String</env-entry-type>
+            <env-entry-value>slee/resources/MLP/activitycontextinterfacefactory </env-entry-value>
+        </env-entry>
+        <resource-adaptor-type-binding>
+            <description/>
+            <resource-adaptor-type-ref>
+                <resource-adaptor-type-name>MLP Resource Adaptor Type</resource-adaptor-type-name>
+                <resource-adaptor-type-vendor>MOFOKOM</resource-adaptor-type-vendor>
+                <resource-adaptor-type-version> ${pom.version}</resource-adaptor-type-version>
+            </resource-adaptor-type-ref>
+            <activity-context-interface-factory-name> slee/resources/MLP/activitycontextinterfacefactory </activity-context-interface-factory-name>
+            <resource-adaptor-entity-binding>
+                <resource-adaptor-object-name> slee/resources/MLP/sbbrainterface</resource-adaptor-object-name>
+                <resource-adaptor-entity-link>MLP Resource Adaptor Entity Link</resource-adaptor-entity-link>
+            </resource-adaptor-entity-binding>
+        </resource-adaptor-type-binding>
+
+    </sbb>
+</sbb-jar>

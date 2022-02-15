@@ -1,0 +1,52 @@
+<body>
+This is the Resource Adaptor Type for Session Anouncement Protocol.
+<br>
+The implementation follows RFC ???? and supports almost everything except authentication digest. 
+<br>
+The RA Type deployment descriptor looks like this.
+<pre>
+
+&lt;resource-adaptor-type-jar&gt;
+
+        &lt;resource-adaptor-type id="SAP"&gt;
+                &lt;description&gt; SAP RA Type &lt;/description&gt;
+                &lt;resource-adaptor-type-name&gt; SAP &lt;/resource-adaptor-type-name&gt;
+                &lt;resource-adaptor-type-vendor&gt; Warren Crossing &lt;/resource-adaptor-type-vendor&gt;
+                &lt;resource-adaptor-type-version&gt; 1.0.0 &lt;/resource-adaptor-type-version&gt;
+                &lt;resource-adaptor-type-classes&gt;
+                        &lt;description&gt; &lt;/description&gt;
+                        &lt;activity-type&gt;
+                                 &lt;description&gt; Advertisment &lt;/description&gt;
+                                 &lt;activity-type-name&gt; net.pointdefence.sap.Announcement &lt;/activity-type-name&gt;
+                        &lt;/activity-type&gt;
+                        &lt;activity-context-interface-factory-interface&gt;
+                                 &lt;description&gt; &lt;/description&gt;
+                                 &lt;activity-context-interface-factory-interface-name&gt;
+                                         net.pointdefence.sap.resource.SAPActivityContextInterfaceFactory
+                                 &lt;/activity-context-interface-factory-interface-name&gt;
+                        &lt;/activity-context-interface-factory-interface&gt;
+                       &lt;resource-adaptor-interface&gt;
+                               &lt;description&gt; &lt;/description&gt;
+                               &lt;resource-adaptor-interface-name&gt;
+                                       net.pointdefence.sap.Announcer
+                               &lt;/resource-adaptor-interface-name&gt;
+                        &lt;/resource-adaptor-interface&gt;
+                &lt;/resource-adaptor-type-classes&gt;
+                &lt;event-type-ref&gt;
+                        &lt;event-type-name&gt;
+                                net.pointdefence.sap.event.AnnouncementEvent.ANNOUNCEMENT
+                        &lt;/event-type-name&gt;
+                        &lt;event-type-vendor&gt; Warren Crossing &lt;/event-type-vendor&gt;
+                        &lt;event-type-version&gt; 1.0.0 &lt;/event-type-version&gt;
+                &lt;/event-type-ref&gt;
+                &lt;event-type-ref&gt;
+                        &lt;event-type-name&gt;
+                                net.pointdefence.sap.event.AnnouncementEvent.DELETE_ANNOUNCEMENT
+                        &lt;/event-type-name&gt;
+                        &lt;event-type-vendor&gt; Warren Crossing &lt;/event-type-vendor&gt;
+                        &lt;event-type-version&gt; 1.0.0 &lt;/event-type-version&gt;
+                &lt;/event-type-ref&gt;
+        &lt;/resource-adaptor-type&gt;
+&lt;/resource-adaptor-type-jar&gt;
+</pre>
+</body>

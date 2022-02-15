@@ -1,0 +1,304 @@
+INTERNATIONAL TELECOMMUNICATION UNION
+
+
+
+
+ITU-T                                      H.248.6
+TELECOMMUNICATION                                (11/2000)
+STANDARDIZATION SECTOR
+OF ITU
+
+
+
+
+SERIES H: AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+Infrastructure of audiovisual services – Communication
+procedures
+
+
+Gateway control protocol: Dynamic Tone
+Definition package
+
+
+
+
+ITU-T Recommendation H.248.6
+                                          ITU-T H-SERIES RECOMMENDATIONS
+                                     AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+
+
+ CHARACTERISTICS OF VISUAL TELEPHONE SYSTEMS                                      H.100–H.199
+  INFRASTRUCTURE OF AUDIOVISUAL SERVICES
+  General                                                                         H.200–H.219
+  Transmission multiplexing and synchronization                                   H.220–H.229
+  Systems aspects                                                                 H.230–H.239
+  Communication procedures                                                        H.240–H.259
+  Coding of moving video                                                          H.260–H.279
+  Related systems aspects                                                         H.280–H.299
+ SYSTEMS AND TERMINAL EQUIPMENT FOR AUDIOVISUAL SERVICES                          H.300–H.399
+ SUPPLEMENTARY SERVICES FOR MULTIMEDIA                                            H.450–H.499
+ MOBILITY AND COLLABORATION PROCEDURES
+  Overview of Mobility and Collaboration, definitions, protocols and procedures   H.500–H.509
+  Mobility for H-Series multimedia systems and services                           H.510–H.519
+  Mobile multimedia collaboration applications and services                       H.520–H.529
+  Security for mobile multimedia systems and services                             H.530–H.539
+  Security for mobile multimedia collaboration applications and services          H.540–H.549
+  Mobility interworking procedures                                                H.550–H.559
+  Mobile multimedia collaboration inter-working procedures                        H.560–H.569
+
+
+For further details, please refer to the list of ITU-T Recommendations.
+ITU-T Recommendation H.248.6
+
+
+                        Gateway control protocol: Dynamic Tone
+                                  Definition package
+
+
+
+
+Summary
+This Recommendation defines a dynamic tone definition package for use with the H.248.1 Gateway
+Control Protocol. The dynamic tone definition package allows flexible tone specification in a media
+gateway for feedback to audio receivers. A tone can be defined by assigning properties (for example,
+frequency or duration) to an existing tone (i.e., a tone defined in some other package) or a new tone.
+As defined in ITU-T Rec. H.248.1, a "package" is an extension to H.248.1 that supports specific
+behavior.
+NOTE – This Recommendation has been renumbered. It was formerly known as ITU-T H.248
+Annex J.
+
+
+
+
+Source
+Recommendation H.248.6 was prepared by ITU-T Study Group 16 (2001-2004) and approved under
+the WTSA Resolution 1 procedure on 17 November 2000.
+
+
+
+
+                                                               ITU-T Rec. H.248.6 (11/2000)         i
+                                               FOREWORD
+The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of
+telecommunications. The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of
+ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations
+on them with a view to standardizing telecommunications on a worldwide basis.
+The World Telecommunication Standardization Assembly (WTSA), which meets every four years,
+establishes the topics for study by the ITU-T study groups which, in turn, produce Recommendations on these
+topics.
+The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.
+In some areas of information technology which fall within ITU-T's purview, the necessary standards are
+prepared on a collaborative basis with ISO and IEC.
+
+
+
+
+                                                  NOTE
+In this Recommendation, the expression "Administration" is used for conciseness to indicate both a
+telecommunication administration and a recognized operating agency.
+
+
+
+
+                                 INTELLECTUAL PROPERTY RIGHTS
+ITU draws attention to the possibility that the practice or implementation of this Recommendation may
+involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence,
+validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others
+outside of the Recommendation development process.
+As of the date of approval of this Recommendation, ITU had received notice of intellectual property,
+protected by patents, which may be required to implement this Recommendation. However, implementors are
+cautioned that this may not represent the latest information and are therefore strongly urged to consult the
+TSB patent database.
+
+
+
+
+                                                ITU 2002
+All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the
+prior written permission of ITU.
+
+
+
+
+ii        ITU-T Rec. H.248.6 (11/2000)
+                                                            CONTENTS
+                                                                                                                                         Page
+
+1   Scope.............................................................................................................................      1
+
+2   References.....................................................................................................................         1
+
+3   Dynamic Tone Definition package ...............................................................................                         1
+    3.1    Properties ........................................................................................................              1
+    3.2    Events .............................................................................................................             2
+    3.3    Signals ............................................................................................................             2
+    3.4    Statistics..........................................................................................................             2
+    3.5    Procedures ......................................................................................................                2
+    3.5.1  Updating Tone Definition...............................................................................                          2
+    3.5.2  Reading existing tones....................................................................................                       2
+    3.5.3  Tone String (tst) description...........................................................................                         2
+
+
+
+
+                                                                                         ITU-T Rec. H.248.6 (11/2000)                      iii
+ITU-T Recommendation H.248.6
+
+
+                         Gateway control protocol: Dynamic Tone
+                                   Definition package
+
+1       Scope
+This Recommendation defines a package that extends the applicability of the H.248.1 Gateway
+Control Protocol Recommendation. Specifically, ITU-T Rec. H.248.6 defines a dynamic tone
+definition package for use with the H.248.1 Gateway Control Protocol. The dynamic tone definition
+package allows flexible tone specification in a media gateway for feedback to audio receivers. A
+tone can be defined by assigning properties (for example, frequency or duration) to an existing tone
+(i.e. a tone defined in some other package) or a new tone.
+
+2       References
+The following ITU-T Recommendations and other references contain provisions which, through
+reference in this text, constitute provisions of this Recommendation. At the time of publication, the
+editions indicated were valid. All Recommendations and other references are subject to revisions;
+users of this Recommendation are therefore encouraged to investigate the possibility of applying the
+most recent edition of the Recommendations and other references listed below. A list of the currently
+valid ITU-T Recommendations is regularly published.
+–       ITU-T Recommendation H.248.1 (2000), Gateway Control Protocol.
+
+3       
+PackageName: Dynamic Tone Definition package
+PackageID: dtd (0x001c)
+Extends:    None
+Version:    1
+This package defines a mechanism to redefine existing tones and create new tones for playback. The
+existing tones are the ones described in supported packages that extend the tonegen generic package.
+
+3.1     Properties
+PropertyName: Tone ID
+       PropertyID:           tid (0x0001)
+       Description:
+           Indicates the new or existing tone to be modified or who's tone string is to be read.
+       Type:                 expanding enumeration
+       Possible Values:
+           Existing package_id, tone id described in supported packages that extend tonegen or
+           new tones to be added.
+       Defined in:           TerminationState.
+           If the termination is in a context, the changes to the tones apply only to the termination
+           in the context. When the termination leaves the context, the changes are lost. If the
+           termination is in the null context, the changes apply to the termination from then on. If
+           the termination is root, the changes apply to the whole gateway.
+
+
+
+                                                              ITU-T Rec. H.248.6 (11/2000)        1
+          Characteristics:       both read and write.
+PropertyName: Tone String
+        PropertyID:              tst (0x0002)
+        Description:             Tone description string. See procedures ,
+        Type:                    String
+        Possible Values:         See procedures.
+        Defined in:              TerminationState.
+        Characteristics:         both read and write:
+
+3.2       Events
+None
+
+3.3       Signals
+None
+
+3.4       Statistics
+None
+
+3.5       Procedures
+3.5.1     Updating Tone Definition
+To modify or create a new tone:
+1)     Set tid to an existing or new package_id,tone id value.
+2)     Set tst to the new tone description.
+If tst is null, the id is decommissioned and removed. Only newly defined tonids can be removed.
+3.5.2     Reading existing tones
+To read the list of tones defined:
+1)      Read tid.
+To read an already defined tone string:
+1)      Set tid.
+2)      Read tst.
+Some package-defined tones may not have a tone string in the gateway. In that case the tst read will
+have the value "Not Available".
+3.5.3     Tone String (tst) description
+The syntax for the tone definition string is recursive and uses parenthesis as a delimiter of elements.
+DefToneString below is the tone string(tst):
+        DefToneString = "(" DefToneElement ["*" RepeatCount ] ")" [","/"+"/"X" DefToneString]
+NOTE 1 – A separator of ',' indicates that the next definition follows sequentially in time; a separator of '+'
+indicates that the following tone is to be mixed with the previous tone and is simultaneous with it; a separator
+of 'X' indicates that the first tone is modulated by the second tone.
+NOTE 2 – All implementations must support sequential definitions (',' separator). Mixing ('+') and
+modulation ('X') support are optional; however, the implementation must make a best effort and return no
+error in these cases.
+
+
+
+
+2           ITU-T Rec. H.248.6 (11/2000)
+NOTE 3 – Recursion is limited to a maximum of 32 levels. All implementations must support at least 2 levels
+of recursion.
+RepeatCount = %d1-32767 / %d0
+NOTE 4 – repeatcount of 0 indicates infinite repeating.
+DefToneElement = ToneName ["," ToneDuration [ "," ToneAmplitude ]]
+ToneName = (Package id, Tone id) / "#"FreqValue / "&"AnnouncementParameterList
+Package id = 1*VCHAR; Unique package identity string or value
+Tone id = 1*VCHAR; Unique tone identity string or value
+FreqValue = %d0-4000; in Hertz
+AnnouncementParameterList = AnnouncementID ["," SubstitutionString]
+AnnouncementID = 1*VCHAR; Unique identifier for an audio announcement
+SubstitutionString = """1*VCHAR"""; a string to be inserted into an announcement.
+ToneDuration = %d1-32767 / %d0; in milliseconds
+NOTE 5 – ToneDuration of 0 indicates infinite duration or duration defined by the Tone id.
+ToneAmplitude = "-"%d32-1 / %d0; in dBm0
+An example of tone definition follows.
+RingingTone = ((0x0005,0x0031),((#480)+(#620)),250,-24)*0
+
+
+
+
+                                                                  ITU-T Rec. H.248.6 (11/2000)          3
+                      SERIES OF ITU-T RECOMMENDATIONS
+
+Series A   Organization of the work of ITU-T
+
+Series B   Means of expression: definitions, symbols, classification
+Series C   General telecommunication statistics
+Series D   General tariff principles
+Series E   Overall network operation, telephone service, service operation and human factors
+Series F   Non-telephone telecommunication services
+
+Series G   Transmission systems and media, digital systems and networks
+
+Series H   Audiovisual and multimedia systems
+Series I   Integrated services digital network
+
+Series J   Cable networks and transmission of television, sound programme and other multimedia signals
+Series K   Protection against interference
+Series L   Construction, installation and protection of cables and other elements of outside plant
+Series M   TMN and network maintenance: international transmission systems, telephone circuits,
+           telegraphy, facsimile and leased circuits
+Series N   Maintenance: international sound programme and television transmission circuits
+Series O   Specifications of measuring equipment
+Series P   Telephone transmission quality, telephone installations, local line networks
+Series Q   Switching and signalling
+Series R   Telegraph transmission
+Series S   Telegraph services terminal equipment
+
+Series T   Terminals for telematic services
+
+Series U   Telegraph switching
+Series V   Data communication over the telephone network
+Series X   Data networks and open system communications
+
+Series Y   Global information infrastructure and Internet protocol aspects
+Series Z   Languages and general software aspects for telecommunication systems
+
+
+
+
+                                                                                    Printed in Switzerland
+                                                                                            Geneva, 2002
+

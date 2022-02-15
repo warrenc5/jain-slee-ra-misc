@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-adaptor-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor 1.1//EN" "http://java.sun.com/dtd/slee-resource-adaptor-jar_1_1.dtd">
+<resource-adaptor-jar>
+  <resource-adaptor id="acip">
+    <description>ACIP Resource Adaptor </description>
+    <resource-adaptor-name>ACIP Resource Adaptor </resource-adaptor-name>
+    <resource-adaptor-vendor> MOFOKOM </resource-adaptor-vendor>
+    <resource-adaptor-version>4.1</resource-adaptor-version>
+    <resource-adaptor-type-ref>
+      <resource-adaptor-type-name>ACIP Resource Adaptor Type</resource-adaptor-type-name>
+      <resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor>
+      <resource-adaptor-type-version>4.1</resource-adaptor-type-version>
+    </resource-adaptor-type-ref>
+    <library-ref>
+      <description> AIR Library </description>
+      <library-name> AIR Library </library-name>
+      <library-vendor> MOFOKOM </library-vendor>
+      <library-version> ${pom.version} </library-version>
+    </library-ref>
+    <library-ref>
+      <description> HTTP Library </description>
+      <library-name> HTTP Library </library-name>
+      <library-vendor> MOFOKOM </library-vendor>
+      <library-version> ${pom.version} </library-version>
+    </library-ref>
+    <resource-adaptor-classes>
+      <resource-adaptor-class>
+        <resource-adaptor-class-name>mofokom.ccn.air.acip.resource.impl.ACIPResourceAdaptor</resource-adaptor-class-name>
+      </resource-adaptor-class>
+      <resource-adaptor-usage-parameters-interface><description/><resource-adaptor-usage-parameters-interface-name>mofokom.ccn.air.acip.resource.ACIPResourceAdaptorUsageParameters</resource-adaptor-usage-parameters-interface-name><usage-parameter name="connectionClose"/><usage-parameter name="connectionsOpened"/><usage-parameter name="connectionTimeout"/><usage-parameter name="fatalIOExceptions"/><usage-parameter name="latencyRxNOK"/><usage-parameter name="latencyRxOK"/><usage-parameter name="latencyTxNOK"/><usage-parameter name="latencyTxOK"/><usage-parameter name="protocolExceptions"/><usage-parameter name="rxNOK"/><usage-parameter name="rxOK"/><usage-parameter name="txNOK"/><usage-parameter name="txOK"/>
+    <usage-parameter name="FaultTxOK"/><usage-parameter name="FaultRxOK"/><usage-parameter name="FaultTxNOK"/><usage-parameter name="FaultRxNOK"/><usage-parameter name="FaultTxOK"/><usage-parameter name="FaultLatencyTxOK"/><usage-parameter name="FaultLatencyRxOK"/><usage-parameter name="FaultLatencyTxNOK"/><usage-parameter name="FaultLatencyTxNOK"/>
+    <usage-parameter name="UpdateTemporaryBlockedTxOK"/><usage-parameter name="UpdateTemporaryBlockedRxOK"/><usage-parameter name="UpdateTemporaryBlockedTxNOK"/><usage-parameter name="UpdateTemporaryBlockedRxNOK"/><usage-parameter name="UpdateTemporaryBlockedTxOK"/><usage-parameter name="UpdateTemporaryBlockedLatencyTxOK"/><usage-parameter name="UpdateTemporaryBlockedLatencyRxOK"/><usage-parameter name="UpdateTemporaryBlockedLatencyTxNOK"/><usage-parameter name="UpdateTemporaryBlockedLatencyTxNOK"/>
+    <usage-parameter name="UpdateRefillBarringTxOK"/><usage-parameter name="UpdateRefillBarringRxOK"/><usage-parameter name="UpdateRefillBarringTxNOK"/><usage-parameter name="UpdateRefillBarringRxNOK"/><usage-parameter name="UpdateRefillBarringTxOK"/><usage-parameter name="UpdateRefillBarringLatencyTxOK"/><usage-parameter name="UpdateRefillBarringLatencyRxOK"/><usage-parameter name="UpdateRefillBarringLatencyTxNOK"/><usage-parameter name="UpdateRefillBarringLatencyTxNOK"/>
+    <usage-parameter name="UpdatePromotionPlanTxOK"/><usage-parameter name="UpdatePromotionPlanRxOK"/><usage-parameter name="UpdatePromotionPlanTxNOK"/><usage-parameter name="UpdatePromotionPlanRxNOK"/><usage-parameter name="UpdatePromotionPlanTxOK"/><usage-parameter name="UpdatePromotionPlanLatencyTxOK"/><usage-parameter name="UpdatePromotionPlanLatencyRxOK"/><usage-parameter name="UpdatePromotionPlanLatencyTxNOK"/><usage-parameter name="UpdatePromotionPlanLatencyTxNOK"/>
+    <usage-parameter name="GetPromotionPlansTxOK"/><usage-parameter name="GetPromotionPlansRxOK"/><usage-parameter name="GetPromotionPlansTxNOK"/><usage-parameter name="GetPromotionPlansRxNOK"/><usage-parameter name="GetPromotionPlansTxOK"/><usage-parameter name="GetPromotionPlansLatencyTxOK"/><usage-parameter name="GetPromotionPlansLatencyRxOK"/><usage-parameter name="GetPromotionPlansLatencyTxNOK"/><usage-parameter name="GetPromotionPlansLatencyTxNOK"/>
+      <usage-parameter name="PromotionPlanInformationTxOK"/><usage-parameter name="PromotionPlanInformationRxOK"/><usage-parameter name="PromotionPlanInformationTxNOK"/><usage-parameter name="PromotionPlanInformationRxNOK"/><usage-parameter name="PromotionPlanInformationTxOK"/><usage-parameter name="PromotionPlanInformationLatencyTxOK"/><usage-parameter name="PromotionPlanInformationLatencyRxOK"/><usage-parameter name="PromotionPlanInformationLatencyTxNOK"/><usage-parameter name="PromotionPlanInformationLatencyTxNOK"/>
+    <usage-parameter name="UpdateAccumulatorsTxOK"/><usage-parameter name="UpdateAccumulatorsRxOK"/><usage-parameter name="UpdateAccumulatorsTxNOK"/><usage-parameter name="UpdateAccumulatorsRxNOK"/><usage-parameter name="UpdateAccumulatorsTxOK"/><usage-parameter name="UpdateAccumulatorsLatencyTxOK"/><usage-parameter name="UpdateAccumulatorsLatencyRxOK"/><usage-parameter name="UpdateAccumulatorsLatencyTxNOK"/><usage-parameter name="UpdateAccumulatorsLatencyTxNOK"/>
+      <usage-parameter name="AccumulatorInformationTxOK"/><usage-parameter name="AccumulatorInformationRxOK"/><usage-parameter name="AccumulatorInformationTxNOK"/><usage-parameter name="AccumulatorInformationRxNOK"/><usage-parameter name="AccumulatorInformationTxOK"/><usage-parameter name="AccumulatorInformationLatencyTxOK"/><usage-parameter name="AccumulatorInformationLatencyRxOK"/><usage-parameter name="AccumulatorInformationLatencyTxNOK"/><usage-parameter name="AccumulatorInformationLatencyTxNOK"/>
+    <usage-parameter name="InstallSubscriberTxOK"/><usage-parameter name="InstallSubscriberRxOK"/><usage-parameter name="InstallSubscriberTxNOK"/><usage-parameter name="InstallSubscriberRxNOK"/><usage-parameter name="InstallSubscriberTxOK"/><usage-parameter name="InstallSubscriberLatencyTxOK"/><usage-parameter name="InstallSubscriberLatencyRxOK"/><usage-parameter name="InstallSubscriberLatencyTxNOK"/><usage-parameter name="InstallSubscriberLatencyTxNOK"/>
+    <usage-parameter name="DeleteSubscriberTxOK"/><usage-parameter name="DeleteSubscriberRxOK"/><usage-parameter name="DeleteSubscriberTxNOK"/><usage-parameter name="DeleteSubscriberRxNOK"/><usage-parameter name="DeleteSubscriberTxOK"/><usage-parameter name="DeleteSubscriberLatencyTxOK"/><usage-parameter name="DeleteSubscriberLatencyRxOK"/><usage-parameter name="DeleteSubscriberLatencyTxNOK"/><usage-parameter name="DeleteSubscriberLatencyTxNOK"/>
+    <usage-parameter name="LinkSubordinateSubscriberTxOK"/><usage-parameter name="LinkSubordinateSubscriberRxOK"/><usage-parameter name="LinkSubordinateSubscriberTxNOK"/><usage-parameter name="LinkSubordinateSubscriberRxNOK"/><usage-parameter name="LinkSubordinateSubscriberTxOK"/><usage-parameter name="LinkSubordinateSubscriberLatencyTxOK"/><usage-parameter name="LinkSubordinateSubscriberLatencyRxOK"/><usage-parameter name="LinkSubordinateSubscriberLatencyTxNOK"/><usage-parameter name="LinkSubordinateSubscriberLatencyTxNOK"/>
+    <usage-parameter name="UpdatePromotionCountersTxOK"/><usage-parameter name="UpdatePromotionCountersRxOK"/><usage-parameter name="UpdatePromotionCountersTxNOK"/><usage-parameter name="UpdatePromotionCountersRxNOK"/><usage-parameter name="UpdatePromotionCountersTxOK"/><usage-parameter name="UpdatePromotionCountersLatencyTxOK"/><usage-parameter name="UpdatePromotionCountersLatencyRxOK"/><usage-parameter name="UpdatePromotionCountersLatencyTxNOK"/><usage-parameter name="UpdatePromotionCountersLatencyTxNOK"/>
+    <usage-parameter name="GetPromotionCountersTxOK"/><usage-parameter name="GetPromotionCountersRxOK"/><usage-parameter name="GetPromotionCountersTxNOK"/><usage-parameter name="GetPromotionCountersRxNOK"/><usage-parameter name="GetPromotionCountersTxOK"/><usage-parameter name="GetPromotionCountersLatencyTxOK"/><usage-parameter name="GetPromotionCountersLatencyRxOK"/><usage-parameter name="GetPromotionCountersLatencyTxNOK"/><usage-parameter name="GetPromotionCountersLatencyTxNOK"/>
+      <usage-parameter name="AccountFlagsTxOK"/><usage-parameter name="AccountFlagsRxOK"/><usage-parameter name="AccountFlagsTxNOK"/><usage-parameter name="AccountFlagsRxNOK"/><usage-parameter name="AccountFlagsTxOK"/><usage-parameter name="AccountFlagsLatencyTxOK"/><usage-parameter name="AccountFlagsLatencyRxOK"/><usage-parameter name="AccountFlagsLatencyTxNOK"/><usage-parameter name="AccountFlagsLatencyTxNOK"/>
+      <usage-parameter name="CommunityIdListTxOK"/><usage-parameter name="CommunityIdListRxOK"/><usage-parameter name="CommunityIdListTxNOK"/><usage-parameter name="CommunityIdListRxNOK"/><usage-parameter name="CommunityIdListTxOK"/><usage-parameter name="CommunityIdListLatencyTxOK"/><usage-parameter name="CommunityIdListLatencyRxOK"/><usage-parameter name="CommunityIdListLatencyTxNOK"/><usage-parameter name="CommunityIdListLatencyTxNOK"/>
+      <usage-parameter name="CommunityInformationCurrentTxOK"/><usage-parameter name="CommunityInformationCurrentRxOK"/><usage-parameter name="CommunityInformationCurrentTxNOK"/><usage-parameter name="CommunityInformationCurrentRxNOK"/><usage-parameter name="CommunityInformationCurrentTxOK"/><usage-parameter name="CommunityInformationCurrentLatencyTxOK"/><usage-parameter name="CommunityInformationCurrentLatencyRxOK"/><usage-parameter name="CommunityInformationCurrentLatencyTxNOK"/><usage-parameter name="CommunityInformationCurrentLatencyTxNOK"/>
+    <usage-parameter name="CommunityInformationNewTxOK"/><usage-parameter name="CommunityInformationNewRxOK"/><usage-parameter name="CommunityInformationNewTxNOK"/><usage-parameter name="CommunityInformationNewRxNOK"/><usage-parameter name="CommunityInformationNewTxOK"/><usage-parameter name="CommunityInformationNewLatencyTxOK"/><usage-parameter name="CommunityInformationNewLatencyRxOK"/><usage-parameter name="CommunityInformationNewLatencyTxNOK"/><usage-parameter name="CommunityInformationNewLatencyTxNOK"/>
+      <usage-parameter name="DedicatedAccountInformationTxOK"/><usage-parameter name="DedicatedAccountInformationRxOK"/><usage-parameter name="DedicatedAccountInformationTxNOK"/><usage-parameter name="DedicatedAccountInformationRxNOK"/><usage-parameter name="DedicatedAccountInformationTxOK"/><usage-parameter name="DedicatedAccountInformationLatencyTxOK"/><usage-parameter name="DedicatedAccountInformationLatencyRxOK"/><usage-parameter name="DedicatedAccountInformationLatencyTxNOK"/><usage-parameter name="DedicatedAccountInformationLatencyTxNOK"/>
+      <usage-parameter name="ServiceOfferingsTxOK"/><usage-parameter name="ServiceOfferingsRxOK"/><usage-parameter name="ServiceOfferingsTxNOK"/><usage-parameter name="ServiceOfferingsRxNOK"/><usage-parameter name="ServiceOfferingsTxOK"/><usage-parameter name="ServiceOfferingsLatencyTxOK"/><usage-parameter name="ServiceOfferingsLatencyRxOK"/><usage-parameter name="ServiceOfferingsLatencyTxNOK"/><usage-parameter name="ServiceOfferingsLatencyTxNOK"/>
+</resource-adaptor-usage-parameters-interface>
+    </resource-adaptor-classes>
+    <config-property>
+      <config-property-name>ACTIVITY_DIMENSION</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>AUTHENTICATION</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>CHUNKING</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>CONNECTION_REQUEST_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>CONNECTION_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>DEST_HOST</config-property-name>
+      <config-property-type>java.lang.String</config-property-type>
+      <config-property-value>localhost</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>DEST_PORT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>81</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>DEST_URL</config-property-name>
+      <config-property-type>java.lang.String</config-property-type>
+      <config-property-value>/</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>EXECUTOR_MAX_POOL_SIZE</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>EXECUTOR_CORE_POOL_SIZE</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>EXECUTOR_POOL_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Long</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>LISTEN_PORT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>81</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>MAX_CONNECTIONS</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>PENDING_REQUEST_CAPACITY</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>10</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>POOL_CONNECTION_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>REALM_USER_NAME</config-property-name>
+      <config-property-type>java.lang.String</config-property-type>
+      <config-property-value/>
+    </config-property>
+    <config-property>
+      <config-property-name>REALM_USER_PASSWORD</config-property-name>
+      <config-property-type>java.lang.String</config-property-type>
+      <config-property-value/>
+    </config-property>
+    <config-property>
+      <config-property-name>RESPONSE_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>SHUTDOWN_TIME</config-property-name>
+      <config-property-type>java.lang.Long</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>SOCKET_BUFFER_SIZE</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>2048</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>SOCKET_TIMEOUT</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>1000</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>STALE_CONNECTIONS_CHECK</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>STRICT_MESSAGING</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>SYNCHRONOUS</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>TCP_NO_DELAY</config-property-name>
+      <config-property-type>java.lang.Boolean</config-property-type>
+      <config-property-value>false</config-property-value>
+    </config-property>
+    <config-property>
+      <config-property-name>USER_AGENT</config-property-name>
+      <config-property-type>java.lang.String</config-property-type>
+      <config-property-value/>
+    </config-property>
+    <config-property>
+      <config-property-name>WORK_QUEUE</config-property-name>
+      <config-property-type>java.lang.Integer</config-property-type>
+      <config-property-value>10</config-property-value>
+    </config-property>
+  </resource-adaptor>
+  <security-permissions>
+    <description/>
+    <security-permission-spec>
+        grant {
+                permission java.lang.RuntimePermission "*" ;
+                permission java.security.AllPermission ;
+        };
+        </security-permission-spec>
+  </security-permissions>
+</resource-adaptor-jar>

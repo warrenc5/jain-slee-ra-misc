@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project name="Test" resourceRoot="" soapui-version="2.5.1" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ProjectSettings@projectRoot">/code/ra/jaxws-ra/ra</con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="SampleServiceInterfaceServiceSoapBinding" type="wsdl" bindingName="{http://www.mofokom.eu/ns/}SampleServiceInterfaceServiceSoapBinding" soapVersion="1_2" anonymous="optional" definition="file:/tmp/SampleServiceInterface/SampleServiceInterfaceService.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/tmp/SampleServiceInterface/SampleServiceInterfaceService.wsdl"><con:part><con:url>file:/tmp/SampleServiceInterface/SampleServiceInterfaceService_schema1.xsd</con:url><con:content><![CDATA[<xs:schema targetNamespace="http://www.mofokom.eu/ns/" version="1.0" xmlns:tns="http://www.mofokom.eu/ns/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="simplePojo" type="tns:simplePojo"/>
+  <xs:complexType name="simplePojo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="value" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:/tmp/SampleServiceInterface/SampleServiceInterfaceService.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="SampleServiceInterfaceService" targetNamespace="http://www.mofokom.eu/ns/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.mofokom.eu/ns/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://www.mofokom.eu/ns/" schemaLocation="SampleServiceInterfaceService_schema1.xsd"/>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="doSomethingResponse">
+    <wsdl:part name="theAnswer" type="tns:simplePojo"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doSomethingSimpleResponse">
+    <wsdl:part name="theAnswer" type="xsd:anyType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doSomethingSimple"></wsdl:message>
+  <wsdl:message name="doSomething">
+    <wsdl:part name="arg0" type="tns:simplePojo"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="SampleService">
+    <wsdl:operation name="doSomethingSimple">
+      <wsdl:input name="doSomethingSimple" message="tns:doSomethingSimple"></wsdl:input>
+      <wsdl:output name="doSomethingSimpleResponse" message="tns:doSomethingSimpleResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doSomething">
+      <wsdl:input name="doSomething" message="tns:doSomething"></wsdl:input>
+      <wsdl:output name="doSomethingResponse" message="tns:doSomethingResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SampleServiceInterfaceServiceSoapBinding" type="tns:SampleService">
+    <soap12:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="doSomethingSimple">
+      <soap12:operation soapAction="" style="rpc"/>
+      <wsdl:input name="doSomethingSimple">
+        <soap12:body use="literal" namespace="http://www.mofokom.eu/ns/"/>
+      </wsdl:input>
+      <wsdl:output name="doSomethingSimpleResponse">
+        <soap12:body use="literal" namespace="http://www.mofokom.eu/ns/"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doSomething">
+      <soap12:operation soapAction="" style="rpc"/>
+      <wsdl:input name="doSomething">
+        <soap12:body use="literal" namespace="http://www.mofokom.eu/ns/"/>
+      </wsdl:input>
+      <wsdl:output name="doSomethingResponse">
+        <soap12:body use="literal" namespace="http://www.mofokom.eu/ns/"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SampleServiceInterfaceService">
+    <wsdl:port name="SampleServicePort" binding="tns:SampleServiceInterfaceServiceSoapBinding">
+      <soap12:address location="http://localhost:9000/helloWorld"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:9000/helloWorld</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="doSomething" bindingOperationName="doSomething" type="Request-Response" outputName="doSomethingResponse" inputName="doSomething" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:9000/helloWorld</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ns="http://www.mofokom.eu/ns/">
+   <soap:Header/>
+   <soap:Body>
+      <ns:doSomething>
+         <arg0>
+            <!--Optional:-->
+            <value>?</value>
+         </arg0>
+      </ns:doSomething>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mofokom.eu/ns/SampleService/doSomething"/></con:call></con:operation><con:operation isOneWay="false" action="" name="doSomethingSimple" bindingOperationName="doSomethingSimple" type="Request-Response" outputName="doSomethingSimpleResponse" inputName="doSomethingSimple" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:9000/helloWorld</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ns="http://www.mofokom.eu/ns/">
+   <soap:Header/>
+   <soap:Body>
+      <ns:doSomethingSimple/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mofokom.eu/ns/SampleService/doSomethingSimple"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/></con:soapui-project>

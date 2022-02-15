@@ -1,0 +1,4 @@
+exitOnError false
+installlocaldu /code/omlp/service/target/mlp-service-1.0-SNAPSHOT-du.jar 
+activateservice name=MLP\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

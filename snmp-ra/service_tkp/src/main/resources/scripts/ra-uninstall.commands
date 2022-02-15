@@ -1,0 +1,9 @@
+exitOnError false
+
+deactivateraentity SNMP\ Resource\ Adaptor\ Entity 
+removeallactivities SNMP\ Resource\ Adaptor\ Entity
+waittilraentityisinactive SNMP\ Resource\ Adaptor\ Entity 
+unbindralinkname SNMP\ Resource\ Adaptor\ Entity\ Link 
+removeraentity SNMP\ Resource\ Adaptor\ Entity 
+uninstall file:/home/code/snmp/ra/target/snmp-ra-1.0-SNAPSHOT-du.jar 
+

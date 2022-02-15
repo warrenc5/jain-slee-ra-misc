@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_21 (Sun Microsystems Inc.)
+
+Name: mofokom/in/snmp/resource/impl/d.class
+SHA1-Digest: e7tES/40Ioz7fV79mOBLgPUi22o=
+
+Name: mofokom/in/snmp/resource/impl/SNMPResourceAdaptor.class
+SHA1-Digest: q6MnG8rrO3PFgnMessZtZ+mauFs=
+
+Name: mofokom/in/snmp/resource/impl/SNMPResourceAdaptor$a.class
+SHA1-Digest: JWMrftT+sKEGLgfPsBKUF0Qtsrc=
+
+Name: mofokom/in/snmp/resource/impl/SNMPResourceAdaptor$a$a.class
+SHA1-Digest: USCYUT+YIsKa0MWxbUH37IS3m5w=
+
+Name: META-INF/resource-adaptor-jar.xml
+SHA1-Digest: 5BDP3C5PR3x0GptWLHr9L3lvmeg=
+
+Name: mofokom/in/snmp/resource/impl/a.class
+SHA1-Digest: R1iZZqccShbINPc72VkGg8yXupg=
+
+Name: mofokom/in/snmp/resource/impl/b.class
+SHA1-Digest: 6QwEJh852pqZdP8wZuhkar+WCAU=
+
+Name: mofokom/in/snmp/resource/impl/c.class
+SHA1-Digest: e66jrorSj6ZYr/CeDSFdkNEsFXc=
+

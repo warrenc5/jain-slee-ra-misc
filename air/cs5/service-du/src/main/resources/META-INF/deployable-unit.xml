@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE deployable-unit PUBLIC
+        "-//Sun Microsystems, Inc.//DTD JAIN SLEE Deployable Unit 1.1//EN"
+        "http://java.sun.com/dtd/slee-deployable-unit_1_1.dtd">
+<deployable-unit>
+  <description/>
+  <jar>acip-service-${pom.version}.jar</jar>
+  <jar>vsip-service-${pom.version}.jar</jar>
+  <jar>ucip-service-${pom.version}.jar</jar>
+  <service-xml>ucip-service.xml</service-xml>
+  <service-xml>acip-service.xml</service-xml>
+  <service-xml>vsip-service.xml</service-xml>
+</deployable-unit>

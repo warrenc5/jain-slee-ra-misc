@@ -1,0 +1,20 @@
+exitOnError false
+deactivateservice name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/megaco-service/target/megaco-service-1.0-SNAPSHOT-du.jar 
+
+deactivateraentity MegaCo\ Resource\ Adaptor\ Entity 
+removeallactivities MegaCo\ Resource\ Adaptor\ Entity
+waittilraentityisinactive MegaCo\ Resource\ Adaptor\ Entity 
+unbindralinkname MegaCo\ Resource\ Adaptor\ Entity\ Link 
+removeraentity MegaCo\ Resource\ Adaptor\ Entity 
+uninstall file:/home/code/megaco-ra/target/megaco-ra-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/megaco-ra/target/megaco-ra-1.0-SNAPSHOT-du.jar 
+createraentity name=MegaCo\ Resource\ Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT MegaCo\ Resource\ Adaptor\ Entity ACTIVITY_DIMENSION=10
+bindralinkname MegaCo\ Resource\ Adaptor\ Entity MegaCo\ Resource\ Adaptor\ Entity\ Link
+activateraentity MegaCo\ Resource\ Adaptor\ Entity 
+installlocaldu /code/megaco-service/target/megaco-service-1.0-SNAPSHOT-du.jar 
+activateservice name=MegaCo\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

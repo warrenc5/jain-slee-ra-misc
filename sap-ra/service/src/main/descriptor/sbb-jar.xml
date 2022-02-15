@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!DOCTYPE sbb-jar PUBLIC
+        "-//Sun Microsystems, Inc.//DTD JAIN SLEE SBB 1.1//EN"
+        "http://java.sun.com/dtd/slee-sbb-jar_1_1.dtd">
+<sbb-jar>
+    <sbb id="SBB">
+        <description> SAP Sbb </description>
+        <sbb-name> SAP Sbb </sbb-name>
+        <sbb-vendor> ${pom.groupId} </sbb-vendor>
+        <sbb-version> ${pom.version} </sbb-version>
+        <sbb-alias> SAPSBB </sbb-alias>
+        <library-ref>
+            <description> JAIN SIP SDP </description>
+            <library-name> JAIN SIP SDP </library-name>
+            <library-vendor> javax.sdp </library-vendor>
+            <library-version> 1.1 </library-version>
+        </library-ref>
+
+        <sbb-classes>
+            <sbb-abstract-class>
+                <sbb-abstract-class-name> mofokom.sap.service.test.SAPTestSbb </sbb-abstract-class-name>
+                <cmp-field>
+                    <description> An integer counter.  </description>
+                    <cmp-field-name> counter </cmp-field-name>
+                </cmp-field>
+            </sbb-abstract-class>
+        </sbb-classes>
+<!--
+  <event-definition>
+    <event-type-name> StartEvent </event-type-name>
+    <event-type-vendor> ${pom.groupId} </event-type-vendor>
+    <event-type-version> ${pom.version}.0 </event-type-version>
+    <event-class-name> java.lang.String </event-class-name>
+  </event-definition>
+  <event event-direction="Fire">
+    <description> </description>
+    <event-name> StartEvent </event-name>
+    <event-type-ref>
+      <event-type-name> StartEvent </event-type-name>
+      <event-type-vendor> ${pom.groupId} </event-type-vendor>
+      <event-type-version> ${pom.version}.0 </event-type-version>
+    </event-type-ref>
+  </event>
+-->
+        <event event-direction="Receive" initial-event="True">
+            <event-name> ServiceStarted </event-name>
+            <event-type-ref>
+                <event-type-name> javax.slee.serviceactivity.ServiceStartedEvent </event-type-name>
+                <event-type-vendor> javax.slee </event-type-vendor>
+                <event-type-version> 1.1 </event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+
+        <event event-direction="Receive" initial-event="True">
+            <event-name> Announcement </event-name>
+            <event-type-ref>
+                <event-type-name> sap.event.AnnouncementEvent.ANNOUNCEMENT </event-type-name>
+                <event-type-vendor> ${pom.groupId} </event-type-vendor>
+                <event-type-version> ${pom.version} </event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name> DeleteAnnouncement </event-name>
+            <event-type-ref>
+                <event-type-name> sap.event.AnnouncementEvent.DELETE_ANNOUNCEMENT </event-type-name>
+                <event-type-vendor> ${pom.groupId} </event-type-vendor>
+                <event-type-version> ${pom.version} </event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <resource-adaptor-type-binding>
+            <description>
+            </description>
+            <resource-adaptor-type-ref>
+                <resource-adaptor-type-name> SAP </resource-adaptor-type-name>
+                <resource-adaptor-type-vendor> ${pom.groupId} </resource-adaptor-type-vendor>
+                <resource-adaptor-type-version> ${pom.version} </resource-adaptor-type-version>
+            </resource-adaptor-type-ref>
+
+            <activity-context-interface-factory-name> slee/resource/sap/1.0.0/activitycontextinterfacefactory </activity-context-interface-factory-name>
+            <resource-adaptor-entity-binding>
+                <resource-adaptor-object-name> slee/resources/sap/1.0.0/sap </resource-adaptor-object-name>
+                <resource-adaptor-entity-link> SAP Entity Link </resource-adaptor-entity-link>
+            </resource-adaptor-entity-binding>
+        </resource-adaptor-type-binding>
+    </sbb>
+</sbb-jar>

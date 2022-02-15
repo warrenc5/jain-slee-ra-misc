@@ -1,0 +1,5 @@
+RQNT 1201 aaln/1@rgw-2567.whatever.net MGCP 1.0
+N: ca@ca1.whatever.net:5678
+X: 0123456789AC
+R: l/hd(N)
+S: l/rg

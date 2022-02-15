@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<!DOCTYPE sbb-jar PUBLIC
+"-//Sun Microsystems, Inc.//DTD JAIN SLEE SBB 1.1//EN"
+"megaco://java.sun.com/dtd/slee-sbb-jar_1_1.dtd">
+<sbb-jar>
+    <sbb id="MegaCoSBB">
+        <description> MegaCo Service Sbb </description>
+        <sbb-name> MegaCo Sbb </sbb-name>
+        <sbb-vendor> MOFOKOM </sbb-vendor>
+        <sbb-version> ${pom.version} </sbb-version>
+        <sbb-alias> MegaCoSBB </sbb-alias>
+        <library-ref>
+            <library-name>MegaCo Library</library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version>${pom.version}</library-version>
+        </library-ref>
+        <sbb-classes>
+            <sbb-abstract-class>
+                <sbb-abstract-class-name> mofokom.service.megaco.MegaCoSbb </sbb-abstract-class-name>
+                <cmp-field>
+                    <cmp-field-name>association</cmp-field-name>
+                </cmp-field>
+                <cmp-field>
+                    <cmp-field-name>userId</cmp-field-name>
+                </cmp-field>
+                <cmp-field>
+                    <cmp-field-name>transaction</cmp-field-name>
+                </cmp-field>
+            </sbb-abstract-class>
+            <sbb-local-interface>
+                <sbb-local-interface-name>mofokom.service.megaco.local.MegaCoLocal</sbb-local-interface-name>
+            </sbb-local-interface>
+
+            <sbb-usage-parameters-interface>
+                <sbb-usage-parameters-interface-name>
+                    mofokom.service.megaco.usage.MegaCoUsageParameters
+                </sbb-usage-parameters-interface-name>
+            </sbb-usage-parameters-interface>
+        </sbb-classes>
+        <event event-direction="Receive" initial-event="True">
+            <event-name>ServiceStarted</event-name>
+            <event-type-ref>
+                <event-type-name>javax.slee.serviceactivity.ServiceStartedEvent</event-type-name>
+                <event-type-vendor>javax.slee</event-type-vendor>
+                <event-type-version>1.1</event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <event event-direction="Receive" initial-event="True">
+            <event-name>ActivityEnd</event-name>
+            <event-type-ref>
+                <event-type-name>javax.slee.ActivityEndEvent</event-type-name>
+                <event-type-vendor>javax.slee</event-type-vendor>
+                <event-type-version>1.0</event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>Timer</event-name>
+            <event-type-ref>
+                <event-type-name>javax.slee.facilities.TimerEvent</event-type-name>
+                <event-type-vendor>javax.slee</event-type-vendor>
+                <event-type-version>1.0</event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>TransactionAcknowledge</event-name>
+            <event-type-ref>
+                <event-type-name>TransactionAcknowledge</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CommandEvent</event-name>
+            <event-type-ref>
+                <event-type-name>CommandEvent</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CommandReq</event-name>
+            <event-type-ref>
+                <event-type-name>CommandReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CommandResp</event-name>
+            <event-type-ref>
+                <event-type-name>CommandResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AddCommandReq</event-name>
+            <event-type-ref>
+                <event-type-name>AddCommandReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AddCommandResp</event-name>
+            <event-type-ref>
+                <event-type-name>AddCommandResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>MoveCommandReq</event-name>
+            <event-type-ref>
+                <event-type-name>MoveCommandReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>MoveCommandResp</event-name>
+            <event-type-ref>
+                <event-type-name>MoveCommandResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ModifyCommandReq</event-name>
+            <event-type-ref>
+                <event-type-name>ModifyCommandReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ModifyCommandResp</event-name>
+            <event-type-ref>
+                <event-type-name>ModifyCommandResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>SrvChangeCommandReq</event-name>
+            <event-type-ref>
+                <event-type-name>SrvChangeCommandReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>SrvChangeCommandResp</event-name>
+            <event-type-ref>
+                <event-type-name>SrvChangeCommandResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>NotifyCommandReq</event-name>
+            <event-type-ref>
+                <event-type-name>NotifyCommandReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>NotifyCommandResp</event-name>
+            <event-type-ref>
+                <event-type-name>NotifyCommandResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AuditValCommandReq</event-name>
+            <event-type-ref>
+                <event-type-name>AuditValCommandReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AuditValCommandResp</event-name>
+            <event-type-ref>
+                <event-type-name>AuditValCommandResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AuditCapCommandReq</event-name>
+            <event-type-ref>
+                <event-type-name>AuditCapCommandReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AuditCapCommandResp</event-name>
+            <event-type-ref>
+                <event-type-name>AuditCapCommandResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>SubtractCommandReq</event-name>
+            <event-type-ref>
+                <event-type-name>SubtractCommandReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>SubtractCommandResp</event-name>
+            <event-type-ref>
+                <event-type-name>SubtractCommandResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ContextInfoReq</event-name>
+            <event-type-ref>
+                <event-type-name>ContextInfoReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ContextInfoResp</event-name>
+            <event-type-ref>
+                <event-type-name>ContextInfoResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AssociationEvent</event-name>
+            <event-type-ref>
+                <event-type-name>AssociationEvent</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CreateAssocReq</event-name>
+            <event-type-ref>
+                <event-type-name>CreateAssocReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CreateAssocResp</event-name>
+            <event-type-ref>
+                <event-type-name>CreateAssocResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>DeleteAssocReq</event-name>
+            <event-type-ref>
+                <event-type-name>DeleteAssocReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>DeleteAssocResp</event-name>
+            <event-type-ref>
+                <event-type-name>DeleteAssocResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ModifyAssocReq</event-name>
+            <event-type-ref>
+                <event-type-name>ModifyAssocReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ModifyAssocResp</event-name>
+            <event-type-ref>
+                <event-type-name>ModifyAssocResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AssociationInd</event-name>
+            <event-type-ref>
+                <event-type-name>AssociationInd</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AssociationConfigReq</event-name>
+            <event-type-ref>
+                <event-type-name>AssociationConfigReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AssociationConfigResp</event-name>
+            <event-type-ref>
+                <event-type-name>AssociationConfigResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>DeleteTxnReq</event-name>
+            <event-type-ref>
+                <event-type-name>DeleteTxnReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>DeleteTxnResp</event-name>
+            <event-type-ref>
+                <event-type-name>DeleteTxnResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CreateTxnReq</event-name>
+            <event-type-ref>
+                <event-type-name>CreateTxnReq</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CreateTxnResp</event-name>
+            <event-type-ref>
+                <event-type-name>CreateTxnResp</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AnalogLineSPkgAnalogLineSFlashEvt</event-name>
+            <event-type-ref>
+                <event-type-name>AnalogLineSPkg.AnalogLineSFlashEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AnalogLineSPkgAnalogLineSOffEvt</event-name>
+            <event-type-ref>
+                <event-type-name>AnalogLineSPkg.AnalogLineSOffEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>AnalogLineSPkgAnalogLineSOnEvt</event-name>
+            <event-type-ref>
+                <event-type-name>AnalogLineSPkg.AnalogLineSOnEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ContinuityPkgContComplEvt</event-name>
+            <event-type-ref>
+                <event-type-name>ContinuityPkg.ContComplEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CPToneDetPkgCPToneDetBtEvt</event-name>
+            <event-type-ref>
+                <event-type-name>CPToneDetPkg.CPToneDetBtEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CPToneDetPkgCPToneDetCrEvt</event-name>
+            <event-type-ref>
+                <event-type-name>CPToneDetPkg.CPToneDetCrEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CPToneDetPkgCPToneDetCtEvt</event-name>
+            <event-type-ref>
+                <event-type-name>CPToneDetPkg.CPToneDetCtEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CPToneDetPkgCPToneDetCwtEvt</event-name>
+            <event-type-ref>
+                <event-type-name>CPToneDetPkg.CPToneDetCwtEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CPToneDetPkgCPToneDetDtEvt</event-name>
+            <event-type-ref>
+                <event-type-name>CPToneDetPkg.CPToneDetDtEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CPToneDetPkgCPToneDetPtEvt</event-name>
+            <event-type-ref>
+                <event-type-name>CPToneDetPkg.CPToneDetPtEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CPToneDetPkgCPToneDetRtEvt</event-name>
+            <event-type-ref>
+                <event-type-name>CPToneDetPkg.CPToneDetRtEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CPToneDetPkgCPToneDetSitEvt</event-name>
+            <event-type-ref>
+                <event-type-name>CPToneDetPkg.CPToneDetSitEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>CPToneDetPkgCPToneDetWtEvt</event-name>
+            <event-type-ref>
+                <event-type-name>CPToneDetPkg.CPToneDetWtEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>DTMFDetPkgDTMFDetCeEvt</event-name>
+            <event-type-ref>
+                <event-type-name>DTMFDetPkg.DTMFDetCeEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GenericPkgGenCauseEvent</event-name>
+            <event-type-ref>
+                <event-type-name>GenericPkg.GenCauseEvent</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GenericPkgGenSigComplEvent</event-name>
+            <event-type-ref>
+                <event-type-name>GenericPkg.GenSigComplEvent</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>NetworkPkgNetworkNetfailEvt</event-name>
+            <event-type-ref>
+                <event-type-name>NetworkPkg.NetworkNetfailEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>NetworkPkgNetworkQualertEvt</event-name>
+            <event-type-ref>
+                <event-type-name>NetworkPkg.NetworkQualertEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>RTPPkgRTPPltransEvt</event-name>
+            <event-type-ref>
+                <event-type-name>RTPPkg.RTPPltransEvt</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ToneDetPkgToneEtdEvent</event-name>
+            <event-type-ref>
+                <event-type-name>ToneDetPkg.ToneEtdEvent</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ToneDetPkgToneLtdEvent</event-name>
+            <event-type-ref>
+                <event-type-name>ToneDetPkg.ToneLtdEvent</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ToneDetPkgToneStdEvent</event-name>
+            <event-type-ref>
+                <event-type-name>ToneDetPkg.ToneStdEvent</event-type-name>
+                <event-type-vendor>MOFOKOM</event-type-vendor>
+                <event-type-version>${pom.version}</event-type-version>
+            </event-type-ref>
+        </event>
+        <env-entry>
+            <description/>
+            <env-entry-name>MEGACO_SBB_RA_INTERFACE_NAME</env-entry-name>
+            <env-entry-type>java.lang.String</env-entry-type>
+            <env-entry-value>slee/resources/megaco/sbbrainterface</env-entry-value>
+        </env-entry>
+        <env-entry>
+            <description/>
+            <env-entry-name>MEGACO_ACI_FACTORY_NAME</env-entry-name>
+            <env-entry-type>java.lang.String</env-entry-type>
+            <env-entry-value>slee/resources/megaco/activitycontextinterfacefactory </env-entry-value>
+        </env-entry>
+        <resource-adaptor-type-binding>
+            <description/>
+            <resource-adaptor-type-ref>
+                <resource-adaptor-type-name>MegaCo Resource Adaptor Type</resource-adaptor-type-name>
+                <resource-adaptor-type-vendor>MOFOKOM</resource-adaptor-type-vendor>
+                <resource-adaptor-type-version> ${pom.version}</resource-adaptor-type-version>
+            </resource-adaptor-type-ref>
+            <activity-context-interface-factory-name> slee/resources/megaco/activitycontextinterfacefactory </activity-context-interface-factory-name>
+            <resource-adaptor-entity-binding>
+                <resource-adaptor-object-name> slee/resources/megaco/sbbrainterface</resource-adaptor-object-name>
+                <resource-adaptor-entity-link>MegaCo Resource Adaptor Entity Link</resource-adaptor-entity-link>
+            </resource-adaptor-entity-binding>
+        </resource-adaptor-type-binding>
+
+    </sbb>
+</sbb-jar>

@@ -1,0 +1,7 @@
+exitOnError false
+installlocaldu /code/mail/ra/target/mail-ra-1.0-SNAPSHOT-du.jar 
+createraentity name=Mail\ Resource\ Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT Mail\ Resource\ Adaptor\ Entity CONNECT_STORE=true,CONNECT_TRANSPORT=true,MAIL_AUTHENTICATION=true,ACTIVITY_DIMENSION=1024,WORK_QUEUE=1,POOL_SIZE=2,MAX_POOL_SIZE=3,POOL_TIMEOUT=120,CONFIG_URI="resource:/mail.properties"
+
+bindralinkname Mail\ Resource\ Adaptor\ Entity Mail\ Resource\ Adaptor\ Entity\ Link
+settracerlevel resourceadaptorentity entity=Mail\ Resource\ Adaptor\ Entity root Finest
+activateraentity Mail\ Resource\ Adaptor\ Entity 

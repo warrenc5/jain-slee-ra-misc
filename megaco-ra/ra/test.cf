@@ -1,0 +1,15 @@
+transactionResponseAck = ResponseAckToken LBRKT transactionAck *(COMMA transactionAck) RBRKT;
+
+transactionAck =  (transactionID "-" transactionID) / transactionID ;
+
+TransactionID        = UINT32;
+
+UINT32               = 1*10(DIGIT);
+
+DIGIT                = %x30-39;
+
+COMMA                   = ",";
+
+ResponseAckToken      = "Response";
+LBRKT      = "{";
+RBRKT      = "}";

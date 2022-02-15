@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-adaptor-type-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor Type 1.1//EN" "http://java.sun.com/dtd/slee-resource-adaptor-type-jar_1_1.dtd">
+<resource-adaptor-type-jar>
+  <resource-adaptor-type id="vsip"><description>VSIP Resource Adaptor Type </description><resource-adaptor-type-name>VSIP Resource Adaptor Type </resource-adaptor-type-name><resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor><resource-adaptor-type-version>2.5</resource-adaptor-type-version><library-ref><description> AIR Library </description><library-name> AIR Library </library-name><library-vendor> MOFOKOM </library-vendor><library-version> ${pom.version} </library-version></library-ref><resource-adaptor-type-classes><description/><activity-type><description>VSIPActivity </description><activity-type-name>mofokom.ccn.vs.vsip.resource.VSIPActivity </activity-type-name></activity-type><activity-context-interface-factory-interface><description/><activity-context-interface-factory-interface-name>mofokom.ccn.vs.vsip.resource.VSIPActivityContextInterfaceFactory
+                </activity-context-interface-factory-interface-name></activity-context-interface-factory-interface><resource-adaptor-interface><description/><resource-adaptor-interface-name>mofokom.ccn.vs.vsip.resource.VSIPResourceAdaptorInterface
+                </resource-adaptor-interface-name></resource-adaptor-interface></resource-adaptor-type-classes><event-type-ref><event-type-name>xmlrpc.TransportError</event-type-name><event-type-vendor> MOFOKOM </event-type-vendor><event-type-version> ${pom.version} </event-type-version></event-type-ref><event-type-ref><event-type-name>vsip.Fault</event-type-name><event-type-vendor> MOFOKOM </event-type-vendor><event-type-version>2.5</event-type-version></event-type-ref>
+        Commit Transaction
+        Rollback Transaction
+        Commit Transaction
+        Automatic Rollback of Transaction in case of no commit within specified time
+        0001 - 9999
+        01 - 12
+        01 - 31
+        00 - 23
+        00 - 59
+        00 - 59
+        [+/-]0000-2359
+        0001 - 9999
+        01 - 12
+        01 - 31
+        00
+        00
+        00
+        [+/-]0000
+        Illegal request message
+        Mandatory field missing
+        Illegal data type
+        Data out of bounds
+        Unknown operation
+        Internal server error
+        This fault code is reserved for future use
+        Overload rejection
+          0001 - 9999
+          01 - 12
+          01 - 31
+          00 - 23
+          00 - 59
+          00 - 59
+          [+/-]0000-2359
+        available
+        used
+        damaged
+        stolen/missing
+        pending
+        unavailable
+        reserved
+        Voucher is loaded, but still unavailable for usage
+        Voucher is loaded and available for usage
+        Voucher was reserved, but never commited
+        Voucher is used
+        Voucher is marked as damaged
+        Voucher is marked as stolen/missing
+        available
+        used
+        damaged
+        stolen/missing
+        pending
+        unavailable
+        reserved
+        Voucher is loaded, but still unavailable for usage
+        Voucher is loaded and available for usage
+        Voucher was reserved, but never commited
+        Voucher is used
+        Voucher is marked as damaged
+        Voucher is marked as stolen/missing
+        Only failed is written
+        Both failed and successful changes are written
+        Successful
+        Voucher does not exist
+        Voucher already used by other subscriber
+        Voucher missing/stolen
+        Voucher unavailable
+        Voucher already used by same subscriber
+        Voucher reserved by same subscriber
+        Voucher expired
+        This responseCode is reserved for future use
+        Voucher reserved by other subscriber
+        Database error
+        Bad state transition requested
+        Task does not exist
+        Can not delete a running task
+        available
+        used
+        damaged
+        stolen/missing
+        pending
+        unavailable
+        reserved
+        Voucher is loaded, but still unavailable for usage
+        Voucher is loaded and available for usage
+        Voucher was reserved, but never committed
+        Voucher is used
+        Voucher is marked as damaged
+        Voucher is marked as stolen/missing
+        Voucher is used
+        Voucher is marked as damaged
+        Voucher is marked as stolen/missing
+        Voucher expiryDate is older than purge expiryDate
+        The task is scheduled for execution
+        The task have finished executing and was successful
+        The task have finished executing and was unsuccessful
+        The task is currently executing
+        0001-9999
+        01-12
+        01-31
+        00-24
+        00-59
+        00-59
+        [+/-]0000-2359
+  </resource-adaptor-type>
+</resource-adaptor-type-jar>

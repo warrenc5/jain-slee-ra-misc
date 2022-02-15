@@ -1,0 +1,982 @@
+I n t e r n a t i o n a l   T e l e c o m m u n i c a t i o n   U n i o n
+
+
+
+
+ITU-T                                                   H.248.8
+TELECOMMUNICATION                                               (08/2007)
+STANDARDIZATION SECTOR
+OF ITU
+
+
+
+
+SERIES H: AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+Infrastructure of audiovisual services – Communication
+procedures
+
+
+Gateway control protocol: Error code and
+service change reason description
+
+
+
+
+ITU-T Recommendation H.248.8
+                                          ITU-T H-SERIES RECOMMENDATIONS
+                                     AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+
+
+   CHARACTERISTICS OF VISUAL TELEPHONE SYSTEMS                                       H.100–H.199
+   INFRASTRUCTURE OF AUDIOVISUAL SERVICES
+     General                                                                         H.200–H.219
+     Transmission multiplexing and synchronization                                   H.220–H.229
+     Systems aspects                                                                 H.230–H.239
+     Communication procedures                                                        H.240–H.259
+     Coding of moving video                                                          H.260–H.279
+     Related systems aspects                                                         H.280–H.299
+     Systems and terminal equipment for audiovisual services                         H.300–H.349
+     Directory services architecture for audiovisual and multimedia services         H.350–H.359
+     Quality of service architecture for audiovisual and multimedia services         H.360–H.369
+     Supplementary services for multimedia                                           H.450–H.499
+   MOBILITY AND COLLABORATION PROCEDURES
+     Overview of Mobility and Collaboration, definitions, protocols and procedures   H.500–H.509
+     Mobility for H-Series multimedia systems and services                           H.510–H.519
+     Mobile multimedia collaboration applications and services                       H.520–H.529
+     Security for mobile multimedia systems and services                             H.530–H.539
+     Security for mobile multimedia collaboration applications and services          H.540–H.549
+     Mobility interworking procedures                                                H.550–H.559
+     Mobile multimedia collaboration inter-working procedures                        H.560–H.569
+   BROADBAND AND TRIPLE-PLAY MULTIMEDIA SERVICES
+     Broadband multimedia services over VDSL                                         H.610–H.619
+
+
+For further details, please refer to the list of ITU-T Recommendations.
+ITU-T Recommendation H.248.8
+
+    Gateway control protocol: Error code and service change reason description
+
+
+
+
+Summary
+ITU-T Recommendation H.248.8 defines the service change reasons that are used in the core
+H.248.1 protocol. It lists the service change reason code associated with the service change reason
+code name. It provides a definition of when the service change reason is to be used. It also provides
+an indication of what text may be included in the service change extension to allow further
+interpretation of the service change reason. Clause 5 provides these details.
+This revision addresses the following aspects:
+•        Addition of new error codes: 472, 473, 511, 543.
+•        Expansion of Error Codes: 401, 500.
+•        Clarification on the usage of error text.
+NOTE − This Recommendation has been renamed. It was formerly known as Annex L to ITU-T Rec. H.248.
+
+
+
+
+Source
+ITU-T Recommendation H.248.8 was approved on 29 August 2007 by ITU-T Study Group 16
+(2005-2008) under the ITU-T Recommendation A.8 procedure.
+
+
+
+
+                                                              ITU-T Rec. H.248.8 (08/2007)         i
+                                                FOREWORD
+The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of
+telecommunications. The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of
+ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing
+Recommendations on them with a view to standardizing telecommunications on a worldwide basis.
+The World Telecommunication Standardization Assembly (WTSA), which meets every four years,
+establishes the topics for study by the ITU-T study groups which, in turn, produce Recommendations on
+these topics.
+The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.
+In some areas of information technology which fall within ITU-T's purview, the necessary standards are
+prepared on a collaborative basis with ISO and IEC.
+
+
+
+
+                                                    NOTE
+In this Recommendation, the expression "Administration" is used for conciseness to indicate both a
+telecommunication administration and a recognized operating agency.
+Compliance with this Recommendation is voluntary. However, the Recommendation may contain certain
+mandatory provisions (to ensure e.g. interoperability or applicability) and compliance with the
+Recommendation is achieved when all of these mandatory provisions are met. The words "shall" or some
+other obligatory language such as "must" and the negative equivalents are used to express requirements. The
+use of such words does not suggest that compliance with the Recommendation is required of any party.
+
+
+
+
+                                  INTELLECTUAL PROPERTY RIGHTS
+ITU draws attention to the possibility that the practice or implementation of this Recommendation may
+involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence,
+validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others
+outside of the Recommendation development process.
+As of the date of approval of this Recommendation, ITU had not received notice of intellectual property,
+protected by patents, which may be required to implement this Recommendation. However, implementers
+are cautioned that this may not represent the latest information and are therefore strongly urged to consult the
+TSB patent database at http://www.itu.int/ITU-T/ipr/.
+
+
+
+
+                                                 © ITU 2008
+All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the
+prior written permission of ITU.
+
+
+
+
+ii        ITU-T Rec. H.248.8 (08/2007)
+                                                           CONTENTS
+                                                                                                                                         Page
+1   Scope ............................................................................................................................      1
+2   References.....................................................................................................................         1
+3   Definitions ....................................................................................................................        1
+4   Error codes....................................................................................................................         1
+    4.1     Assigning error codes .....................................................................................                     1
+    4.2     Error code descriptions...................................................................................                      2
+5   Service change reasons .................................................................................................               14
+    5.1      Assigning service change reasons ..................................................................                           14
+    5.2      Service change reason description..................................................................                           15
+
+
+
+
+                                                                                         ITU-T Rec. H.248.8 (08/2007)                      iii
+ITU-T Recommendation H.248.8
+
+    Gateway control protocol: Error code and service change reason description
+
+1       Scope
+This Recommendation defines the error codes that are used in the core H.248.1 protocol. It lists the
+error code number associated with the error code name. It then provides a definition of when the
+error code is to be used and if the error code is defined in a package. It also provides an indication
+of what text may be included in the error text descriptor to allow further interpretation of the error
+code. Clause 4.2 provides these details. The normal actions for failed transactions and commands
+apply as specified in clause 8 of [ITU-T H.248.1]. Packages may define error codes not documented
+in this Recommendation. The IANA registry should be consulted for the complete list of error
+codes.
+Error codes marked as "not used" are historical in nature and are for informational purposes only.
+These error codes should not be used.
+This Recommendation also defines the service change reasons that are used in the core H.248.1
+protocol. It lists the service change reason code associated with the service change reason code
+name. It provides a definition of when the service change reason is to be used. It also provides an
+indication of what text may be included in the service change extension to allow further
+interpretation of the service change reason. Clause 5.2 provides these details.
+
+2       References
+The following ITU-T Recommendations and other references contain provisions which, through
+reference in this text, constitute provisions of this Recommendation. At the time of publication, the
+editions indicated were valid. All Recommendations and other references are subject to revision;
+users of this Recommendation are therefore encouraged to investigate the possibility of applying the
+most recent edition of the Recommendations and other references listed below. A list of the
+currently valid ITU-T Recommendations is regularly published. The reference to a document within
+this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.
+[ITU-T H.248.1]       ITU-T Recommendation H.248.1 (2005), Gateway control protocol: Version 3.
+
+3       Definitions
+See [ITU-T H.248.1].
+
+4       Error codes
+
+4.1     Assigning error codes
+The following considerations SHALL be met to register an error code with IANA:
+1)      An error number and a one-line (80 characters maximum) string are registered for each
+        error.
+2)      A complete description of the conditions under which the error is detected shall be included
+        in a publicly available document. The description shall be sufficiently clear to differentiate
+        the error from all other existing error codes.
+3)      The document should be available on a public web server and should have a stable URL.
+
+
+
+                                                               ITU-T Rec. H.248.8 (08/2007)         1
+4)      Error numbers registered by recognized standards bodies shall have 3- or 4-character error
+        numbers.
+5)      Error numbers registered by all other organizations or individuals shall have 4-character
+        error numbers.
+6)      An error number shall not be redefined, nor modified except by the organization or
+        individual that originally defined it, or their successors or assigns.
+Parameters included in the error text shall be coded according to the principles as specified in
+Annex A or B of [ITU-T H.248.1]. If more than one parameter is included they shall be included in
+the order defined in this Recommendation and separated by a comma.
+Error text may be included in the error descriptor, even for those error codes for which no specific
+error text is defined in this Recommendation. If error text is included it should contain the
+information defined in the error specification.
+NOTE − The actions carried out after an error is discovered, which results in the sending of an error code
+described in clause 4.2, are specified in clause 8 of [ITU-T H.248.1].
+
+4.2     Error code descriptions
+4.2.1   Error code #: 400
+Name: Syntax error in message
+Definition: The transaction request(s) has been disregarded due to a syntax error detected at the
+message level. The message does not conform to the productions of messages as per Annex A or
+Annex B of [ITU-T H.248.1] as applicable. Used when, e.g., no transaction can be parsed.
+Error text in the error descriptor: –
+Comment: If the error is detected prior to determining a valid transaction ID, no meaningful action
+can be taken on the receipt of the error message.
+4.2.2   Error code #: 401
+Name: Protocol error
+Definition: The transaction or command request(s) has been disregarded due to a violation of
+Megaco protocol procedures having been detected.
+Error text in the error descriptor: –
+Comment: Use more specific error codes (e.g., 505) if possible.
+4.2.3   Error code #: 402
+Name: Unauthorized
+Definition: The command is not executed due to the originator of a command not being authorized
+to execute that command for the termination(s) affected by it.
+Error text in the error descriptor: A string containing the command name is included in the error
+text in the error descriptor.
+Comment: –
+4.2.4   Error code #: 403
+Name: Syntax error in TransactionRequest
+Definition: The transaction request is disregarded since it failed to match production of a
+TransactionRequest as per Annexes A and B of [ITU-T H.248.1], as applicable. Used when, e.g., it
+is not possible to determine the end of a transaction, or when no action can be parsed.
+
+
+2        ITU-T Rec. H.248.8 (08/2007)
+Reference: Clause 8.2.2 of [ITU-T H.248.1]
+Error text in the error descriptor: –
+Comment: If the error is detected prior to determining a valid transaction ID, no meaningful action
+can be taken on the receipt of the error message.
+4.2.5   Error code #: 406
+Name: Version not supported
+Definition: This indicates a lack of support for the protocol version indicated in the message header
+of the message, or in the ServiceChangeVersion parameter. In the case of the version number being
+indicated in the message header, the message contents are disregarded.
+Reference: Clauses 11.2 or 11.3 of [ITU-T H.248.1]
+Error text in the error descriptor: –
+Comment: –
+4.2.6   Error code #: 410
+Name: Incorrect identifier
+Definition: The transaction request(s) has been disregarded due to a syntax error (illegal length or
+illegal character) having been found in a mId, transactionId, contextId, terminationId, propertyId,
+eventId, signalId, statisticsId, parameterId or requestID.
+Error text in the error descriptor: The concerned ID is included in the error text in the error
+descriptor.
+Comment: If the error is detected prior to determining a valid transaction ID, no meaningful action
+can be taken on the receipt of the error message.
+4.2.7   Error code #: 411
+Name: The transaction refers to an unknown ContextID
+Definition: The ContextID referred to by an action in the transaction request is unknown and the
+action is therefore disregarded.
+Error text in the error descriptor: –
+Comment: –
+4.2.8   Error code #: 412
+Name: No ContextIDs available
+Definition: The MG is unable to create a context in response to an "Add" or "Move" command with
+CHOOSE given as the ContextId because of a shortage of resources within the MG, and the action
+is disregarded.
+Error text in the error descriptor: –
+Comment: –
+4.2.9   Error code #: 413
+Name: Number of transactions in message exceeds maximum
+Definition: The message contains more than the maximum allowed number of transactions. If the
+error descriptor is returned at a message level, the message has not been executed. If the error
+descriptor is returned at a transaction level, the transaction has not been executed.
+Error text in the error descriptor: –
+
+                                                               ITU-T Rec. H.248.8 (08/2007)        3
+Comment: The MGC/MG should resend the message with the number of transactions reduced less
+than or equal to the maximum number.
+4.2.10 Error code #: 421
+Name: Unknown action or illegal combination of actions
+Definition: Not used.
+Error text in the error descriptor: –
+Comment: –
+4.2.11 Error code #: 422
+Name: Syntax error in action
+Definition: The action was disregarded due to the syntax of the action not conforming to the
+production of an actionRequest as per Annex A or B of [ITU-T H.248.1], as applicable. Used when
+it is not possible to determine the end of an action, when, e.g., no command can be parsed.
+Reference: Clause 8.2.2 of [ITU-T H.248.1]
+Error text in the error descriptor: –
+Comment: Examples of errors are spelling errors, missing brackets.
+4.2.12 Error code #: 430
+Name: Unknown TerminationID
+Definition: The TerminationID referred to by the command is unknown and the command is
+therefore disregarded. The termination ID is not found in the MG. This includes the NULL context.
+This is generated when the MG does not know which termination the MGC is trying to address.
+Error text in the error descriptor: The TerminationID is included in the error text in the error
+descriptor.
+Comment: –
+4.2.13 Error code #: 431
+Name: No TerminationID matched a wildcard
+Definition: The command that included one or more wildcards (ALL or CHOOSE)
+TerminationID(s) is disregarded since the receiver of the command could not find an existing
+termination, or create a new termination matching the specified pattern.
+Error text in the error descriptor: –
+Comment: –
+4.2.14 Error code #: 432
+Name: Out of TerminationIDs or no TerminationID available
+Definition: The add command, including the CHOOSE terminationID, is disregarded. The MG was
+unable to provide a TerminationID because it has exhausted the available range of TerminationIDs.
+Error text in the error descriptor: –
+Comment: –
+
+
+
+
+4        ITU-T Rec. H.248.8 (08/2007)
+4.2.15 Error code #: 433
+Name: TerminationID is already in a context
+Definition: A TerminationID specified in an add command already exists within an active context
+and therefore the command is disregarded.
+Error text in the error descriptor: The ContextID is included in the error text in the error
+descriptor.
+Comment: –
+4.2.16 Error code #: 434
+Name: Max number of terminations in a context exceeded
+Definition: The MGC has requested that a termination be added or moved to a context that already
+contains a maximum number of terminations allowed. The command is therefore disregarded.
+Reference: Clauses 6.1 and E.2.1 of [ITU-T H.248.1]
+Error text in the error descriptor: –
+Comment: –
+4.2.17 Error code #: 435
+Name: Termination ID is not in specified context
+Definition: A specific TerminationID specified in a modify, subtract, AuditValue,
+AuditCapabilities or ServiceChange command does not exist in a specified context and therefore
+the command is disregarded. This error occurs when the MGC sends a command with a valid
+TerminationID that is not in the specified contextID. This is used when the MG has a record of the
+termination but it is not where the MGC says it is.
+Error text in the error descriptor: The ContextID where the termination is located is included in
+the error text in the error descriptor.
+Comment: –
+4.2.18 Error code #: 440
+Name: Unsupported or unknown package
+Definition: The package name in a property, parameter, event, signal or statistic identifier is not
+supported by the receiver. The command related to the unknown identifier is disregarded.
+Error text in the error descriptor: The package name is included in the error text in the error
+descriptor.
+Comment: –
+4.2.19 Error code #: 441
+Name: Missing remote or local descriptor
+Definition: The requested command requires that the remote/local descriptor includes necessary or
+adequate information and therefore the action is not carried out.
+Error text in the error descriptor: –
+Comment: The error associated with this code may not be detectable until after the current
+command or subsequent commands result in failure to process the requested behaviour (e.g., the
+bearer setup fails).
+
+
+
+
+                                                             ITU-T Rec. H.248.8 (08/2007)        5
+4.2.20 Error code #: 442
+Name: Syntax error in command
+Definition: A command request has failed to match the syntax of the commandRequest production
+and is therefore disregarded. Used when, e.g., end of a command cannot be determined.
+Reference: Clause 8.2.2 of [ITU-T H.248.1]
+Error text in the error descriptor: –
+Comment: –
+4.2.21 Error code #: 443
+Name: Unsupported or unknown command
+Definition: The requested command is not recognized by the receiver and is therefore disregarded.
+Error text in the error descriptor: A string containing the command name is included in the error
+text in the error descriptor.
+Comment: –
+4.2.22 Error code #: 444
+Name: Unsupported or unknown descriptor
+Definition: The descriptor in a command request or reply is not recognized by the receiver and is
+therefore disregarded.
+Error text in the error descriptor: A string containing the name of the descriptor is included in
+the error text in the error descriptor.
+Comment: –
+4.2.23 Error code #: 445
+Name: Unsupported or unknown property
+Definition: Property name (Annex A of [ITU-T H.248.1]) or ItemID (Annex B of [ITU-T H.248.1])
+of a property parameter within a descriptor is recognized but not supported and the command
+related to the property is not carried out.
+Error text in the error descriptor: The property name (Annex A of [ITU-T H.248.1]) or ItemID
+(Annex B of [ITU-T H.248.1]) is included in the error text in the error descriptor.
+Comment: –
+4.2.24 Error code #: 446
+Name: Unsupported or unknown parameter
+Definition: The parameter in a command request is not recognized by the receiver and the
+command related to the descriptor is not carried out.
+Error text in the error descriptor: The ParameterID is included in the error text in the error
+descriptor.
+Comment: –
+4.2.25 Error code #: 447
+Name: Descriptor not legal in this command
+Definition: The descriptor cannot be used in this command in accordance with the definition in
+Annexes A and B of [ITU-T H.248.1] and the command, including the descriptor, is not carried out.
+
+
+6        ITU-T Rec. H.248.8 (08/2007)
+Error text in the error descriptor: A string containing the name of the descriptor is included in
+the error text in the error descriptor.
+Comment: –
+4.2.26 Error code #: 448
+Name: Descriptor appears twice in a command
+Definition: The descriptor appears twice in the command and the command, including the
+descriptor, is not carried out.
+Error text in the error descriptor: A string containing the name of the descriptor is included in
+the error text in the error descriptor.
+Comment: –
+4.2.27 Error code #: 449
+Name: Unsupported or unknown parameter or property value
+Definition: The value of a property or parameter within a descriptor is not recognized and the
+command, including the property/item, is not carried out.
+Error text in the error descriptor: The parameter or property name followed by the unsupported
+or unknown value is included in the error text in the error descriptor.
+Comment: –
+4.2.28 Error code #: 450
+Name: No such property in this package
+Definition: Property name (Annex A of [ITU-T H.248.1]) or ItemID (Annex B of [ITU-T H.248.1])
+of a property parameter within a descriptor is not recognized and the command, including the
+property/item, is not carried out.
+Error text in the error descriptor: The property name (Annex A of [ITU-T H.248.1]) or ItemID
+(Annex B of [ITU-T H.248.1]) is included in the error text in the error descriptor.
+Comment: –
+4.2.29 Error code #: 451
+Name: No such event in this package
+Definition: The command, including the event name, is not executed because it is not considered to
+be a part of this version of the package.
+Error text in the error descriptor: The event name is included in the error text in the error
+descriptor.
+Comment: –
+4.2.30 Error code #: 452
+Name: No such signal in this package
+Definition: The command, including the signal name, is not executed due to it not being considered
+by the MG to be a part of this version of the package.
+Error text in the error descriptor: The signal name is included in the error text in the error
+descriptor.
+Comment: –
+
+
+
+                                                             ITU-T Rec. H.248.8 (08/2007)       7
+4.2.31 Error code #: 453
+Name: No such statistic in this package
+Definition: The command, including the statistic name, is not executed due to it not being
+considered by the MG to be a part of this version of the package.
+Error text in the error descriptor: The statistic name is included in the error text in the error
+descriptor.
+Comment: –
+4.2.32 Error code #: 454
+Name: No such parameter value in this package
+Definition: The command, including the parameter value, is not executed because it is not
+considered to be a part of this version of the package.
+Error text in the error descriptor: The parameter name is included in the error text in the error
+descriptor.
+Comment: –
+4.2.33 Error code #: 455
+Name: Property illegal in this descriptor
+Definition: The command, including the property, is disregarded since the MG does not consider it
+to be a part of this descriptor.
+Error text in the error descriptor: The property name is included in the error text in the error
+descriptor.
+Comment: –
+4.2.34 Error code #: 456
+Name: Property appears twice in this descriptor
+Definition: The command, including the property, is not executed due to the parameter or property
+appearing twice in this descriptor.
+Error text in the error descriptor: The property name is included in the error text in the error
+descriptor.
+Comment: –
+4.2.35 Error code #: 457
+Name: Missing parameter in signal or event
+Definition: The command was disregarded due to a missing mandatory parameter.
+Error text in the error descriptor: If possible, the missing parameter name is included in the error
+text in the error descriptor.
+Comment: –
+4.2.36 Error code #: 458
+Name: Unexpected event/request ID
+Definition: The command was disregarded because a notification for an event/request ID, that the
+MGC did not request, was received.
+
+
+
+
+8        ITU-T Rec. H.248.8 (08/2007)
+Error text in the error descriptor: The request ID is included in the error text in the error
+descriptor.
+Comment: –
+4.2.37 Error code #: 460
+Name: Unable to set statistic on stream
+Definition: The MG was unable to set the required statistic on a stream. The request has been
+disregarded.
+Error text in the error descriptor: The statistic(s) ID(s).
+Comment: –
+4.2.38 Error code #: 471
+Name: Implied add for multiplex failure
+Definition: A termination listed within a multiplex descriptor could not be added to the current
+context and the "ADD" command is not carried out.
+Error text in the error descriptor: The TerminationID is indicated in the error text in the error
+descriptor.
+Comment: If the termination is already in a different active context, use error code 433.
+4.2.39 Error code #: 472
+Name: Required information missing
+Definition: The required information to perform the function indicated by the
+property/signal/event/statistic sent from the MGC has not been provided to or provisioned on the
+MG. This dependent information may need to be set in one or more properties before the
+function/action can be performed. Therefore, the action is disregarded.
+Error text in the error descriptor: The property name/signal name/event name/statistics name of
+the element sent by the MGC that required dependent information not available at the MG is
+included in the error text in the error descriptor.
+Comment: –
+4.2.40 Error code #: 473
+Name: Conflicting property values
+Definition: The values of two or more properties are incompatible with one another, and indicate an
+impossible or illogical operation. Therefore, the action is disregarded.
+Error text in the error descriptor: The property names of the conflicting properties are included
+in the error text in the error descriptor.
+Comment: –
+4.2.41 Error code #: 500
+Name: Internal software failure in the MG or MGC
+Definition: A command could not be executed due to a software failure within the MG or MGC.
+Error text in the error descriptor: −
+Comment: For hardware failures, see error code 529.
+
+
+
+
+                                                               ITU-T Rec. H.248.8 (08/2007)      9
+4.2.42 Error code #: 501
+Name: Not implemented
+Definition: A property, parameter, signal, event or statistic mentioning the command has not been
+implemented.
+Error text in the error descriptor: –
+Comment: –
+4.2.43 Error code #: 502
+Name: Not ready
+Definition: The command directed to a termination was not executed because of the service state of
+the termination.
+Error text in the error descriptor: The service state is indicated in the error text in the error
+descriptor.
+Comment: –
+4.2.44 Error code #: 503
+Name: Service unavailable
+Definition: Not used.
+Error text in the error descriptor: –
+Comment: –
+4.2.45 Error code #: 504
+Name: Command received from unauthorized entity
+Definition: Not used.
+Error text in the error descriptor: –
+Comment: –
+4.2.46 Error code #: 505
+Name: Transaction request received before a ServiceChange reply has been received
+Definition: Sent by the MG/MGC that has sent a ServiceChange request to an MGC/MG and
+receives a transaction request from that MGC/MG before it has received the corresponding
+ServiceChange reply. The actions included in the transaction request are not carried out.
+Reference: Clause 11.2 of [ITU-T H.248.1]
+Error text in the error descriptor: –
+Comment: –
+4.2.47 Error code #: 506
+Name: Number of TransactionPendings exceeded
+Definition: Indicates that the maximum number of TransactionPendings have been received and
+that the transaction can be assumed to be in error.
+Error text in the error descriptor: –
+Comment: –
+
+
+
+10       ITU-T Rec. H.248.8 (08/2007)
+4.2.48 Error code #: 510
+Name: Insufficient resources
+Definition: The command(s) was rejected due to lack of common resources in the MG.
+Error text in the error descriptor: The error text in the error descriptor includes the name or
+identity of the property, signal or event that represents a resource lacking in the MG.
+Comment: –
+4.2.49 Error code #: 511
+Name: Temporarily busy
+Definition: The command(s) was rejected due to a temporary busy condition in the MGC.
+Error text in the error descriptor: –
+Comment: Upon receiving this error code, the command may be resent as the busy condition may
+have abated.
+4.2.50 Error code #: 512
+Name: Media gateway unequipped to detect requested event
+Definition: The MG is unable to detect the requested event due to lack of resources.
+Error text in the error descriptor: –
+Comment: –
+4.2.51 Error code #: 513
+Name: Media gateway unequipped to generate requested signals
+Definition: The MG is unable to send the requested signal due to lack of resources.
+Error text in the error descriptor: –
+Comment: –
+4.2.52 Error code #: 514
+Name: Media gateway cannot send the specified announcement
+Definition: The MG is unable to send the requested announcement due to lack of resources.
+Error text in the error descriptor: –
+Comment: –
+4.2.53 Error code #: 515
+Name: Unsupported media type
+Definition: The stream included in the command is not supported by the MG, therefore the
+command is disregarded.
+Error text in the error descriptor: The streamID is included in the error text in the error
+descriptor.
+Comment: –
+4.2.54 Error code #: 517
+Name: Unsupported or invalid mode
+
+
+
+
+                                                              ITU-T Rec. H.248.8 (08/2007)   11
+Definition: The stream mode value is not supported for that stream. Therefore, the command
+related to that parameter is not executed.
+Error text in the error descriptor: The streamID and stream mode value is included in the error
+text in the error descriptor.
+Comment: –
+4.2.55 Error code #: 518
+Name: Event buffer full
+Definition: Indicates that the event buffer in the MG is full.
+Error text in the error descriptor: –
+Comment: Sent in a notify command.
+4.2.56 Error code #: 519
+Name: Out of space to store digit map
+Definition: The MG is out of storage space for DigitMap descriptors, or is not capable of using
+DigitMaps.
+Error text in the error descriptor: –
+Comment: The MGC should fall back to single digit collection or unnamed digit maps.
+4.2.57 Error code #: 520
+Name: Digit map undefined in the MG
+Definition: The digit map named in a command is not defined in the MG, and the command is not
+executed.
+Error text in the error descriptor: The DigitMap name is included in the error text in the error
+descriptor.
+Comment: –
+4.2.58 Error code #: 521
+Name: Termination is "Service Changing"
+Definition: Not used.
+Error text in the error descriptor: –
+Comment: –
+4.2.59 Error code #: 522
+Name: Functionality requested in topology triple not supported
+Definition: The MG was unable to apply the topology requested as it does not support the required
+interconnectivity.
+Error text in the error descriptor: The invalid topology triples.
+Comment: –
+4.2.60 Error code #: 526
+Name: Insufficient bandwidth
+Definition: The MG was unable to execute a command because of insufficient bandwidth at the
+network interface or externally to the MG.
+
+
+12       ITU-T Rec. H.248.8 (08/2007)
+Error text in the error descriptor: –
+Comment: –
+4.2.61 Error code #: 529
+Name: Internal hardware failure in MG
+Definition: The command could not be executed due to hardware failure in the MG.
+Error text in the error descriptor: –
+Comment: This error code is to be generated if the failure situation is not already covered by a
+more specific error, such as "514 − MG cannot send specified announcement", or whatever error is
+appropriate.
+4.2.62 Error code #: 530
+Name: Temporary network failure
+Definition: The command could not be executed due to a problem in the surrounding network. The
+problem is considered to be of a short-term duration.
+Error text in the error descriptor: –
+Comment: –
+4.2.63 Error code #: 531
+Name: Permanent network failure
+Definition: The command could not be executed due to a problem in the surrounding network. The
+problem is considered to be of a long-term duration.
+Error text in the error descriptor: –
+Comment: –
+4.2.64 Error code #: 532
+Name: Audited property, statistic, event or signal does not exist
+Definition: The MGC has tried to audit the value of a property or statistic which is currently not
+instantiated, or a signal that is not active, or an event that is not instantiated.
+Error text in the error descriptor: –
+Comment: –
+4.2.65 Error code #: 533
+Name: Response exceeds maximum transport PDU size
+Definition: The MG or MGC is unable to assemble a complete transaction response because the
+number of bytes for the message would exceed the maximum protocol data unit size of the
+underlying transport. The command instance in the response to that would have caused the overflow
+to be treated as if it were in error, and the reminder of the transaction is not executed, even if the
+command was marked "optional".
+This situation will typically arise in conjunction with the use of wildcarding, which causes the
+original command to be expanded into a series of similar command instances.
+If the request contained a wildcarded termination ID, the MGC or MG should send later requests
+with a smaller subset of termination IDs.
+Error text in the error descriptor: –
+
+
+                                                               ITU-T Rec. H.248.8 (08/2007)        13
+Comment: Implementers' note: the detection of PDU overflow must occur at a point where there is
+still room in the PDU for the error descriptor.
+4.2.66 Error code #: 534
+Name: Illegal write or read only property
+Definition: The MGC has tried to write a property whose characteristics are defined as read only.
+The command containing the property is disregarded.
+Error text in the error descriptor: A string containing the package ID and property ID of the
+property trying to be written.
+Comment: −
+4.2.67 Error code #: 542
+Name: Command is not allowed on this termination
+Definition: This error is generated when the MGC has tried to request the processing of a
+command, which is not allowed on the addressed H.248 termination.
+Error text in the error descriptor: –
+Comment: –
+4.2.68 Error code #: 543
+Name: MGC requested event detection timestamp not supported
+Definition: This error code indicates that the MG is unable to provide event detection timestamps
+associated for requested event.
+Error text in the error descriptor: If applicable, the event identifier (i.e., pkgdName).
+Comment: This error shall be generated on request of an event (e.g., through an add, modify or
+move request) not at detection time (e.g., notify request).
+4.2.69 Error code #: 581
+Name: Does not exist
+Definition: Not used.
+Error text in the error descriptor: –
+Comment: –
+
+5       Service change reasons
+
+5.1     Assigning service change reasons
+The following considerations SHALL be met to register service change reason with IANA:
+1)      A one-phrase, 80-character maximum, unique reason code is registered for each reason.
+2)      A complete description of the conditions under which the reason it is used is detected, shall
+        be included in a publicly available document. The description shall be sufficiently clear to
+        differentiate the reason from all other existing reasons.
+3)      The document should be available on a public web server and should have a stable URL.
+Reason text included in the ServiceChangeReason shall be coded according to the principles as
+specified in Annex A or B of [ITU-T H.248.1] with a white space between the reason number and
+the reason text.
+
+
+
+14       ITU-T Rec. H.248.8 (08/2007)
+5.2     Service change reason description
+5.2.1   Reason #: 900
+Name: Service restored
+Definition: It indicates that the entity indicated with the TerminationID is in ServiceState
+"In-Service".
+Reference: –
+Text in the service change extension: –
+Comment: –
+5.2.2   Reason #: 901
+Name: Cold boot
+Definition: This indicates that the entity indicated by the TerminationID is in ServiceState
+"In-Service", and that it has gone through a start or recovery action, and all associated contexts,
+except the null context, have been cleared.
+Reference: –
+Text in the service change extension: –
+Comment: This reason code only applies for TerminationID root.
+5.2.3   Reason #: 902
+Name: Warm boot
+Definition: This indicates that the entity indicated with the TerminationID is in ServiceState
+"In-Service", and that it has gone through a start or recovery action. All transactions in process may
+be lost, but otherwise all states are preserved on the termination.
+Reference: –
+Text in the service change extension: –
+Comment: This reason code only applies for TerminationID root.
+5.2.4   Reason #: 903
+Name: MGC directed change
+Definition: This indicates that the MG is directed by an MGC to use the receiver as MGC.
+Reference: –
+Text in the service change extension: –
+Comment: Clause 11.5 of [ITU-T H.248.1]
+5.2.5   Reason #: 904
+Name: Termination malfunctioning
+Definition: This indicates that the entity indicated with the TerminationID is in ServiceState
+"Out-Of-Service" due to some problem directly related to the termination.
+Reference: –
+Text in the service change extension: –
+Comment: –
+
+
+
+                                                               ITU-T Rec. H.248.8 (08/2007)        15
+5.2.6   Reason #: 905
+Name: Termination taken out of service
+Definition: This indicates that the entity indicated with the TerminationID is in ServiceState
+"Out-Of-Service" due to maintenance action.
+Reference: –
+Text in the service change extension: –
+Comment: –
+5.2.7   Reason #: 906
+Name: Loss of lower layer connectivity (e.g., downstream sync)
+Definition: This indicates that the entity indicated with the TerminationID is in ServiceState
+"Out-Of-Service" due to the termination having experienced loss of lower layer connectivity on the
+incoming stream.
+Reference: –
+Text in the service change extension: –
+Comment: –
+5.2.8   Reason #: 907
+Name: Transmission failure
+Definition: This indicates that the entity indicated with the TerminationID is in ServiceState
+"Out-Of-Service" due to the termination having experienced a transmission failure, e.g., a
+degradation of transmission quality.
+Reference: –
+Text in the service change extension: –
+Comment: –
+5.2.9   Reason #: 908
+Name: MG Impending failure
+Definition: Indicates that the entity indicated with the TerminationID will go to the ServiceState
+"Out-Of-Service" and is unable to handle new traffic.
+Reference: Clause 11.4 of [ITU-T H.248.1]
+Text in the service change extension: –
+Comment: This reason code only applies for TerminationID root.
+5.2.10 Reason #: 909
+Name: MGC impending failure
+Definition: Indicates that the sender will go to the ServiceState "Out-Of-Service" and is unable to
+handle new transactions.
+Reference: Clause 11.5 of [ITU-T H.248.1]
+Text in the service change extension: –
+Comment: –
+
+
+
+
+16       ITU-T Rec. H.248.8 (08/2007)
+5.2.11 Reason #: 910
+Name: Media capability failure
+Definition: This indicates that the entity indicated with the TerminationID has experienced a
+change of its media capability.
+Reference: –
+Text in the service change extension: –
+Comment: –
+5.2.12 Reason #: 911
+Name: Modem capability failure
+Definition: This indicates that the entity indicated with the TerminationID has experienced a
+change in its modem capability.
+Reference: –
+Text in the service change extension: –
+Comment: –
+5.2.13 Reason #: 912
+Name: MUX capability failure
+Definition: This indicates that the entity indicated with the TerminationID has experienced a
+change in its MUX capability.
+Reference: –
+Text in the service change extension: –
+Comment: –
+5.2.14 Reason #: 913
+Name: Signal capability failure
+Definition: This indicates that the entity indicated with the TerminationID has experienced a
+capability change for its signal capability. This includes changes in packages and/or signalIDs.
+Reference: –
+Text in the service change extension: –
+Comment: –
+5.2.15 Reason #: 914
+Name: Event capability failure
+Definition: This indicates that the entity indicated with the TerminationID has experienced a
+capability change for its events capability. This includes changes in packages and/or eventIDs.
+Reference: –
+Text in the service change extension: –
+Comment: –
+Note for codes 911-914; an audit with respect to the:
+•       Current packages;
+•       Current packages and properties (with values);
+
+
+                                                           ITU-T Rec. H.248.8 (08/2007)      17
+•       Event descriptor;
+•       Signal descriptor;
+•       Digit map descriptor,
+may be performed to get more information about the changed condition.
+5.2.16 Reason #: 915
+Name: State loss
+Definition: This indicates that the entity indicated with the TerminationID has experienced loss of
+state and that the ServiceState is out of service.
+Reference: –
+Text in the service change extension: –
+Comment: –
+5.2.17 Reason #: 916
+Name: Packages change
+Definition: This indicates that the packages, or package versions, implemented on the media
+gateway have changed. The MGC should consider performing an AuditValue of the media gateway
+to determine which packages have changed.
+Reference: –
+Text in the service change extension: –
+Comment: –
+5.2.18 Reason #: 917
+Name: Capabilities change
+Definition: This indicates that the capabilities of the media gateway have changed. This is used in
+the case where the package has not changed but the capabilities of properties/parameters have. The
+MGC should consider performing an AuditCapabilities of the media gateway to determine which
+capabilities have changed.
+Reference: –
+Text in the service change extension: –
+Comment: –
+5.2.19 Reason #: 918
+Name: Cancel graceful
+Definition: This indicates that the previously sent ServiceChange with method graceful should be
+cancelled.
+Reference: Clause F.4.1 of [ITU-T H.248.1]
+Text in the service change extension: –
+Comment: –
+5.2.20 Reason #: 919
+Name: Warm failover
+Definition: This indicates that the media gateway has failed over to a secondary. All transactions in
+process may be lost, but otherwise all states are preserved on the MG.
+
+18       ITU-T Rec. H.248.8 (08/2007)
+Reference: –
+Text in the service change extension: –
+Comment: This reason code only applies for TerminationID root.
+5.2.21 Reason #: 920
+Name: Cold failover
+Definition: This indicates that the media gateway has failed over to a secondary and all associated
+contexts, except the null context, have been cleared.
+Reference: –
+Text in the service change extension: –
+Comment: This reason code only applies for TerminationID root.
+
+
+
+
+                                                             ITU-T Rec. H.248.8 (08/2007)       19
+                      SERIES OF ITU-T RECOMMENDATIONS
+
+Series A   Organization of the work of ITU-T
+
+Series D   General tariff principles
+
+Series E   Overall network operation, telephone service, service operation and human factors
+
+Series F   Non-telephone telecommunication services
+
+Series G   Transmission systems and media, digital systems and networks
+
+Series H   Audiovisual and multimedia systems
+
+Series I   Integrated services digital network
+
+Series J   Cable networks and transmission of television, sound programme and other multimedia signals
+
+Series K   Protection against interference
+
+Series L   Construction, installation and protection of cables and other elements of outside plant
+
+Series M   Telecommunication management, including TMN and network maintenance
+
+Series N   Maintenance: international sound programme and television transmission circuits
+
+Series O   Specifications of measuring equipment
+
+Series P   Telephone transmission quality, telephone installations, local line networks
+
+Series Q   Switching and signalling
+
+Series R   Telegraph transmission
+
+Series S   Telegraph services terminal equipment
+
+Series T   Terminals for telematic services
+
+Series U   Telegraph switching
+
+Series V   Data communication over the telephone network
+
+Series X   Data networks, open system communications and security
+
+Series Y   Global information infrastructure, Internet protocol aspects and next-generation networks
+
+Series Z   Languages and general software aspects for telecommunication systems
+
+
+
+
+                                                                                    Printed in Switzerland
+                                                                                            Geneva, 2008
+

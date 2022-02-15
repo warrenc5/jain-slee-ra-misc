@@ -1,0 +1,9 @@
+RQNT 1202 aaln/1@rgw-2567.whatever.net MGCP 1.0
+N: ca@ca1.whatever.net:5678
+X: 0123456789AC
+R: L/hd(A, E(S(L/dl),R(L/oc, L/hu, D/[0-9#*T](D))))
+D: (0T|00T|#xxxxxxx|*xx|91xxxxxxxxxx|9011x.T)
+S:
+Q: process
+T: G/ft
+

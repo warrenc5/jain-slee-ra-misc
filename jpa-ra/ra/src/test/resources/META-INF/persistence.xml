@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence">
+    <persistence-unit name="openjpa">
+        <!--
+        <provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+        -->
+        <class>test.jpa.MyTestEntity</class>
+        <class>test.jpa.Person</class>
+        <class>test.jpa.Car</class>
+    <!--
+    <persistence-unit-transaction-type>JTA</persistence-unit-transaction-type>
+    -->
+    
+        <properties>
+<!--
+            <property name="openjpa.ConnectionUserName" value="sa"/>
+<property name="openjpa.ConnectionPassword" value="pass"/>
+-->
+            <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
+            <property name="openjpa.DynamicEnhancementAgent"  value="false"/>
+
+            <property name="openjpa.RuntimeUnenhancedClasses" value="supported"/>
+ <!--
+ -javaagent:/home/dev/openjpa/lib/openjpa.jar
+ -->
+ <!--
+            <property name="openjpa.ConnectionFactoryProperties"
+    value="PrettyPrint=true, PrettyPrintLineLength=80, PrintParameters=true"/>
+            -->
+    <!--
+      <property name="javax.persistence.jtaDataSource" value="jdbc/TestJTAXADS"/>
+      -->
+            <property name="openjpa.jdbc.SynchronizeMappings" value="refresh"/>
+            <property name="openjpa.Log" value="File=/tmp/jpa.log, SQL=TRACE, Runtime=TRACE, DefaultLevel=TRACE, Tool=TRACE"/>
+            <!--HERE FOR THE TOOL-->
+
+            <property name="openjpa.ConnectionURL" value="jdbc:derby:derbyDB;create=true;databaseName=test"/>
+            <property name="openjpa.ConnectionDriverName" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+      <!--<property name="openjpa.QueryCache" value="true(EvictPolicy='timestamp')"/>
+
+      <property name="openjpa.TransactionMode" value="managed"/>
+      -->
+        </properties>
+    </persistence-unit>
+</persistence>

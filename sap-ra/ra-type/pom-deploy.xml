@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <url xmlns:mvn="http://maven.apache.org/POM/4.0.0">http://www.mofokom.biz/site/${project.artifactId}/</url>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>mofokom</groupId>
+  <artifactId>sap-ra-type</artifactId>
+  <packaging>jar</packaging>
+  <version xmlns:mvn="http://maven.apache.org/POM/4.0.0">1.0-SNAPSHOT</version>
+  <name>sap-ra-type</name>
+  <dependencies>
+    <dependency>
+      <groupId>javax.sdp</groupId>
+      <artifactId>nist-sdp</artifactId>
+      <version>1.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jcp</groupId>
+      <artifactId>jsr240</artifactId>
+      <version>1.1</version>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+  <distributionManagement xmlns:mvn="http://maven.apache.org/POM/4.0.0">
+    <snapshotRepository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.biz/maven/snapshots-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+    <repository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.biz/maven/releases-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </repository>
+    <site>
+      <id>mofokom</id>
+      <url>scp://${site.url}/${project.artifactId}</url>
+    </site>
+  </distributionManagement>
+</project>

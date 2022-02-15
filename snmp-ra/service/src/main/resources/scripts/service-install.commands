@@ -1,0 +1,5 @@
+exitOnError false
+
+installlocaldu /code/snmp/service/target/snmp-service-1.0-SNAPSHOT-du.jar 
+activateservice name=SNMP\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

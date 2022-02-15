@@ -1,0 +1,8 @@
+exitOnError false
+
+deactivateraentity MLP\ Resource\ Adaptor\ Entity 
+waittilraentityisinactive MLP\ Resource\ Adaptor\ Entity 
+unbindralinkname MLP\ Resource\ Adaptor\ Entity\ Link 
+removeraentity MLP\ Resource\ Adaptor\ Entity 
+uninstall file:/home/code/omlp/ra/target/mlp-ra-1.0-SNAPSHOT-du.jar 
+

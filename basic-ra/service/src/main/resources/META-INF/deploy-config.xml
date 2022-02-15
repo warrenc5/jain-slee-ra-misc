@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<deploy-config>
+  <!--
+        [
+           (ACTIVITY_DIMENSION:java.lang.Integer=5),
+  
+        ]
+        -->
+  <ra-entity resource-adaptor-id="ResourceAdaptorID[name=Basic Resource Adaptor,vendor=MOFOKOM,version=${pom.version}]" entity-name="Basic Resource Adaptor Entity">
+    <properties file="">
+      <property name="ACTIVITY_DIMENSION" type="java.lang.Integer" value=""/>
+    </properties>
+    <ra-link name="Basic Resource Adaptor Entity Link"/>
+  </ra-entity>
+  <!--
+          JAVA TESTING CODE
+           
+  properties.addProperty(new Property("ACTIVITY_DIMENSION",java.lang.Integer.class.getName(),5));
+  -->
+  <!--
+          OC RAE 
+
+          ACTIVITY_DIMENSION=5,-->
+</deploy-config>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE event-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Event 1.1//EN" "http://java.sun.com/dtd/slee-event-jar_1_1.dtd">
+<event-jar>
+    <description></description>
+    <library-ref>
+        <description> XmlRpc Library </description>
+        <library-name> XmlRpc Library </library-name>
+        <library-vendor> MOFOKOM </library-vendor>
+        <library-version> ${pom.version} </library-version>
+    </library-ref>
+    <event-definition>
+        <description> Fired as a XML RPC request </description>
+        <event-type-name> XmlRpc MethodCall </event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> xmlrpc.MethodCallInterface </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description> Fired in response to an XML RPC request </description>
+        <event-type-name> XmlRpc MethodResponse </event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> xmlrpc.MethodResponseInterface </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description> Fired in response to indicate application level faliure of an XML RPC request </description>
+        <event-type-name> XmlRpc Fault </event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> xmlrpc.FaultInterface </event-class-name>
+    </event-definition>
+    <event-definition>
+        <description> Fired in response to indicate level faliure of an XML RPC request </description>
+        <event-type-name> XmlRpc TransportException </event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name> mofokom.resource.common.TransportException </event-class-name>
+    </event-definition>
+</event-jar>

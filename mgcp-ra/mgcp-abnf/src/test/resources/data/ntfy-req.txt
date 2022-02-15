@@ -1,0 +1,4 @@
+NTFY 2002 aaln/1@rgw-2567.whatever.net MGCP 1.0
+N: ca@ca1.whatever.net:5678
+X: 0123456789AC
+O: L/hd,D/9,D/1,D/2,D/0,D/1,D/8,D/2,D/9,D/4,D/2,D/6,D/6

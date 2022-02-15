@@ -1,0 +1,746 @@
+<?xml version="1.0"?>
+<!DOCTYPE resource-adaptor-type-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor Type 1.1//EN" "http://java.sun.com/dtd/slee-resource-adaptor-type-jar_1_1.dtd">
+<resource-adaptor-type-jar>
+    <resource-adaptor-type id="mgcp">
+        <description> MGCP Resource Adaptor Type </description>
+        <resource-adaptor-type-name> MGCP Resource Adaptor Type </resource-adaptor-type-name>
+        <resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor>
+        <resource-adaptor-type-version> ${pom.version} </resource-adaptor-type-version>
+        <library-ref>
+            <description> MGCP Library </description>
+            <library-name> MGCP Library </library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version> ${pom.version} </library-version>
+        </library-ref>
+        <resource-adaptor-type-classes>
+            <description/>
+            <activity-type>
+                <description>Generic MGCPActivity</description>
+                <activity-type-name>mofokom.in.mgcp.resource.MGCPActivity </activity-type-name>
+            </activity-type>
+            <activity-type>
+                <description>Specifies the globally unique call identifier for the call of which this connection is a part. </description>
+                <activity-type-name>jain.protocol.ip.mgcp.message.parms.CallIdentifier</activity-type-name>
+            </activity-type>
+            <activity-type>
+                <description>Identifies a connection. </description>
+                <activity-type-name>jain.protocol.ip.mgcp.message.parms.ConnectionIdentifier</activity-type-name>
+            </activity-type>
+            <activity-type>
+                <description>Identifies an endpoint (or a set of endpoints, using a "wildcard" construction) on a Media Gateway. </description>
+                <activity-type-name>jain.protocol.ip.mgcp.message.parms.EndpointIdentifier</activity-type-name>
+            </activity-type>
+            <activity-type>
+                <description>Specifies where notifications should be sent. </description>
+                <activity-type-name>jain.protocol.ip.mgcp.message.parms.NotifiedEntity</activity-type-name>
+            </activity-type>
+            <activity-type>
+                <description>Used to correlate a notification with the request that triggered it.</description>
+                <activity-type-name>jain.protocol.ip.mgcp.message.parms.RequestIdentifier</activity-type-name>
+            </activity-type>
+            <activity-context-interface-factory-interface>
+                <description/>
+                <activity-context-interface-factory-interface-name>mofokom.in.mgcp.resource.MGCPActivityContextInterfaceFactory </activity-context-interface-factory-interface-name>
+            </activity-context-interface-factory-interface>
+            <resource-adaptor-interface>
+                <description/>
+                <resource-adaptor-interface-name>mofokom.in.mgcp.resource.MGCPResourceAdaptorInterface</resource-adaptor-interface-name>
+            </resource-adaptor-interface>
+        </resource-adaptor-type-classes>
+        <event-type-ref>
+            <event-type-name>AuditConnection</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AuditConnectionResponse</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AuditEndpoint</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>AuditEndpointResponse</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>CreateConnection</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>CreateConnectionResponse</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>DeleteConnection</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>DeleteConnectionResponse</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>EndpointConfiguration</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>EndpointConfigurationResponse</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>ModifyConnection</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>ModifyConnectionResponse</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>NotificationRequest</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>NotificationRequestResponse</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>Notify</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>NotifyResponse</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+        <event-type-ref>
+            <event-type-name>RestartInProgress</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>RestartInProgressResponse</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+
+        <event-type-ref>
+            <event-type-name>MgcpEvent adsi</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent AllEvents</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent ann</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent as</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent au</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent aw</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent ax</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent bl</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent bz</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent c01</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent c02</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent cbk</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent cf</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent cg</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent ci</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent cl</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dl</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmf0</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmf1</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmf2</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmf3</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmf4</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmf5</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmf6</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmf7</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmf8</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmf9</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmfA</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmfB</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmfC</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmfD</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmfHash</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent dtmfStar</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent e</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent ft</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent hd</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent hf</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent hu</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent is</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent it</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent java</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent JI</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent K0</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent K1</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent K2</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent L</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent lb</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent ld</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mf0</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mf1</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mf2</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mf3</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mf4</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mf5</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mf6</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mf7</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mf8</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mf9</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mt</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent mwi</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent nbz</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent nm</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent oc</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent of</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent om</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent ot</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent p</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent pa</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent pat</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent perl</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent PL</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent pt</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent qa</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent r0</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent r1</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent r2</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent r3</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent r4</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent r5</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent r6</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent r7</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent rbk</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent rg</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent ro</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent rs</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent rsp</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent rt</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent s</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent S0</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent S1</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent S2</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent S3</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent sdl</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent sit</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent sl</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent SR</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent t</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent T</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent tcl</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent tdd</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent tl</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent UC</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent us</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent v</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent vmwi</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent wk</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent wko</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent wt</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent wt1</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent wt2</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent wt3</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent wt4</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent X</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent xml</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent y</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent z</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+        <event-type-ref>
+            <event-type-name>MgcpEvent zz</event-type-name>
+            <event-type-vendor>MOFOKOM</event-type-vendor>
+            <event-type-version>${pom.version}</event-type-version>
+        </event-type-ref>
+
+
+    </resource-adaptor-type>
+</resource-adaptor-type-jar>

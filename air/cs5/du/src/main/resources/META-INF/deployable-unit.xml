@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE deployable-unit PUBLIC
+        "-//Sun Microsystems, Inc.//DTD JAIN SLEE Deployable Unit 1.1//EN"
+        "http://java.sun.com/dtd/slee-deployable-unit_1_1.dtd">
+<deployable-unit>
+  <description> The AIR and VS DU</description>
+
+  <jar>common-library-${pom.version}.jar</jar>
+  <jar>common-event-${pom.version}.jar</jar>
+  <jar>http-library-${pom.version}.jar</jar>
+
+  <jar>acip-event-${pom.version}.jar</jar>
+  <jar>acip-ratype-${pom.version}.jar</jar>
+  <jar>acip-ra-${pom.version}.jar</jar>
+  <!--
+  <jar>ucip-service-${pom.version}.jar</jar>
+  <service-xml>ucip-service.xml</service-xml>
+  -->
+
+  <jar>ucip-event-${pom.version}.jar</jar>
+  <jar>ucip-ratype-${pom.version}.jar</jar>
+  <jar>ucip-ra-${pom.version}.jar</jar>
+
+  <jar>vsip-event-${pom.version}.jar</jar>
+  <jar>vsip-ratype-${pom.version}.jar</jar>
+  <jar>vsip-ra-${pom.version}.jar</jar>
+
+</deployable-unit>

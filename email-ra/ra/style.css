@@ -1,0 +1,32 @@
+
+table {
+border: solid; 
+border-width: 1px;
+border-spacing: 0px;
+padding: 2px;
+background-color: #FFFFFF;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+td {
+border: 1px solid #999999;
+padding: 0px;
+
+
+}
+
+tr {
+border-spacing: 0;
+border-width: 1;
+border: solid;
+padding: 0;
+}
+
+th {
+text-align: left;
+color: #FFFFFF;
+background-color : #999999;
+font-weight: bold;
+
+}
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+    <persistence-unit name="mypu" transaction-type="JTA">
+        <!--
+        <provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+        <jta-data-source>java:comp/env/MyDataSource</jta-data-source>
+        <non-jta-data-source>java:comp/env/MyUnmanagedDataSource</non-jta-data-source>
+        -->
+        <class>mofokom.entity.MyTestEntity</class>
+        <properties>
+            <!--
+            <property name="openjpa.Id" value="mypu"/>
+            -->
+
+            <property name="openjpa.jdbc.SynchronizeMappings" value="refresh"/>
+            <!--,
+            <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(PrimaryKeys=true,ForeignKeys=true,Sequences=true)"/>
+            add,refresh,deleteTableContents"-->
+
+            <property name="openjpa.Log" value="File=/tmp/jpa.log, SQL=TRACE, Runtime=TRACE, DefaultLevel=TRACE, Tool=TRACE"/>
+
+            <!--
+            <property name="openjpa.jdbc.SchemaFactory" value="dynamic"/>
+            -->
+
+            <!--
+            <property name="openjpa.jdbc.DBDictionary" value="derby"/>
+            -->
+            <property name="openjpa.jdbc.DBDictionary" value="postgres"/>
+
+            <!--CONNECTION DRIVER NAME - THIS IS HERE FOR THE ENHANCEMENT TOOL-->
+            <!--
+            <property name="openjpa.ConnectionDriverName" value="org.postgresql.ds.PGSimpleDataSource"/>
+            <property name="openjpa.ConnectionDriverName" value="org.apache.derby.jdbc.EmbeddedDataSource"/>
+            -->
+            <!-- TO ADD THE ENHANCEMENT AGENT ADD THE FOLLOWING TO JAVA
+                 -javaagent:/openjpa/lib/openjpa-all.jar
+            -->
+            <property name="openjpa.DynamicEnhancementAgent" value="false"/>
+            <!--
+            -->
+            <!--
+            <property name="openjpa.QueryCache" value="true(EvictPolicy='timestamp')"/>
+            -->
+            <!--
+            <property name="openjpa.ConnectionUserName" value="sa"/>
+            <property name="openjpa.ConnectionDatabaseName" value="test"/>
+            <property name="openjpa.ConnectionPassword" value="pass"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:derby:none;create=true;databaseName=test"/>
+            -->
+        </properties>
+    </persistence-unit>
+</persistence>

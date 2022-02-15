@@ -1,0 +1,4 @@
+file service/src/main/resources/scripts/service-uninstall.commands
+file service/src/main/resources/scripts/ra-uninstall.commands
+file service/src/main/resources/scripts/ra-install.commands
+file service/src/main/resources/scripts/service-install.commands

@@ -1,0 +1,7 @@
+exitOnError false
+
+deactivateservice name=Mail\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=Mail\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=Mail\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT
+activateservice name=Mail\ SLEE\ Service\ Example,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

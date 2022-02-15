@@ -1,0 +1,260 @@
+<!-- MLP_ID Identity Element Definitions -->	
+<!ELEMENT	msid	(#PCDATA)>
+<!ATTLIST 	msid	
+	type (MSISDN | IMSI | IMEI | MIN | MDN | EME_MSID | ASID | OPE_ID | IPV4 | IPV6 | SESSID)	"MSISDN"
+	enc (ASC | CRP)	"ASC">
+<!ELEMENT	msid_range	(start_msid, stop_msid)>
+<!ELEMENT	msids	(((msid, codeword?, session?) | (msid_range, codeword*))+)>
+<!ELEMENT	codeword	(#PCDATA)>
+<!ELEMENT	esrd	(#PCDATA)>
+<!ATTLIST	esrd	
+	type (NA)	"NA">
+<!ELEMENT	esrk	(#PCDATA)>
+<!ATTLIST	esrk	
+	type (NA)	"NA">
+<!ELEMENT	session	(#PCDATA)>
+<!ATTLIST	session	
+	type (APN | DIAL)	#REQUIRED>
+<!ELEMENT	start_msid	(msid)>
+<!ELEMENT	stop_msid	(msid)>
+
+<!-- MLP_FUNC Function Element Definitions -->	
+<!ELEMENT 	eme_event	(eme_pos+)>
+<!ATTLIST	eme_event	
+	eme_trigger (EME_ORG | EME_REL)	#REQUIRED>
+<!ELEMENT	tlrr_event	( ms_action)>
+<!ELEMENT	ms_action	EMPTY>
+<!ATTLIST	ms_action	
+	type (MS_AVAIL)	#REQUIRED>
+<!ELEMENT	interval	(#PCDATA)>
+<!ELEMENT	loc_type	EMPTY>
+<!ATTLIST	loc_type	
+	type (CURRENT | LAST |CURRENT_OR_LAST | INITIAL)	"CURRENT">
+<!ELEMENT	prio	EMPTY>
+<!ATTLIST	prio	
+	type (NORMAL | HIGH)	"NORMAL">
+<!ELEMENT	pushaddr	(url, id?, pwd?)>
+<!ELEMENT 	req_id	(#PCDATA)>
+<!ELEMENT	start_time	(#PCDATA)>
+<!ATTLIST	start_time	
+	utc_off CDATA	"0000">
+<!ELEMENT	stop_time	(#PCDATA)>
+<!ATTLIST	stop_time	
+	utc_off CDATA	"0000">
+<!ELEMENT	url	(#PCDATA)>
+<!ELEMENT	time_remaining	(#PCDATA)>
+
+<!-- MLP_LOC Location Element Definitions -->	
+<!ELEMENT	pos	(msid, (pd | poserr), gsm_net_param?)>
+<!ELEMENT	eme_pos	(msid, (pd | poserr), esrd?, esrk?)>
+<!ELEMENT	trl_pos	(msid, (pd | poserr))>
+<!ATTLIST	trl_pos	
+	trl_trigger (PERIODIC | MS_AVAIL)	#REQUIRED>
+<!ELEMENT 	pd	(time, shape, (alt, alt_acc?)?, speed?, direction?, lev_conf?)>
+<!ELEMENT 	poserr	(result, add_info?, time)>
+<!ELEMENT	add_info	(#PCDATA)>
+<!ELEMENT 	result	(#PCDATA)>
+<!ATTLIST 	result 	
+	resid CDATA	#REQUIRED>
+<!ELEMENT	time	(#PCDATA)>
+<!ATTLIST	time	
+	utc_off CDATA	"0000">
+<!ELEMENT 	alt	(#PCDATA)>
+<!ELEMENT 	alt_acc	(#PCDATA)>
+<!ELEMENT	direction	(#PCDATA)>
+<!ELEMENT 	speed	(#PCDATA)>
+<!ELEMENT 	lev_conf	(#PCDATA)>
+<!ELEMENT	geo_info	(CoordinateReferenceSystem)>
+<!ELEMENT	CoordinateReferenceSystem	(Identifier)>
+<!ELEMENT	Identifier	(code, codeSpace, edition)>
+<!ELEMENT	code	(#PCDATA)>
+<!ELEMENT	codeSpace	(#PCDATA)>
+<!ELEMENT	edition	(#PCDATA)>
+
+<!-- MLP_SHAPE Shape Element Definitions -->	
+<!ELEMENT 	shape	(Point | LineString | Polygon | Box | CircularArea | CircularArcArea | EllipticalArea | GeometryCollection | MultiLineString | MultiPoint | MultiPolygon)>
+<!ELEMENT	distanceUnit	(#PCDATA)>
+<!ELEMENT	angularUnit	(#PCDATA)>
+<!ELEMENT	angle	(#PCDATA)>
+<!ELEMENT	coord	(X, Y?, Z?)>
+<!ELEMENT	X	(#PCDATA)>
+<!ELEMENT	Y	(#PCDATA)>
+<!ELEMENT	Z	(#PCDATA)>
+<!ELEMENT	Point	(coord)>
+<!ATTLIST	Point	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+<!ELEMENT	LineString	(coord, coord+)>
+<!ATTLIST	LineString	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+<!ELEMENT	Box	(coord, coord)>
+<!ATTLIST	Box	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+<!ELEMENT	LinearRing	(coord, coord, coord, coord*)>
+<!ATTLIST	LinearRing	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+<!ELEMENT	Polygon	(outerBoundaryIs, innerBoundaryIs*)>
+<!ATTLIST	Polygon	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+<!ELEMENT	outerBoundaryIs	(LinearRing)>
+<!ELEMENT	innerBoundaryIs	(LinearRing)>
+<!ELEMENT	CircularArcArea	(coord, inRadius, outRadius, startAngle, stopAngle, angularUnit?, distanceUnit?)>
+<!ATTLIST	CircularArcArea	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+<!ELEMENT	CircularArea	(coord, radius, distanceUnit?)>
+<!ATTLIST	CircularArea	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+<!ELEMENT	EllipticalArea	(coord, angle, semiMajor, semiMinor, angularUnit, distanceUnit?)>
+<!ATTLIST	EllipticalArea	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+<!ELEMENT	inRadius	(#PCDATA)>
+<!ELEMENT	outRadius	(#PCDATA)>
+<!ELEMENT	radius	(#PCDATA)>
+<!ELEMENT	semiMajor	(#PCDATA)>
+<!ELEMENT	semiMinor	(#PCDATA)>
+<!ELEMENT	startAngle	(#PCDATA)>
+<!ELEMENT	stopAngle	(#PCDATA)>
+<!ELEMENT	GeometryCollection	(shape+)>
+<!ATTLIST	GeometryCollection	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+<!ELEMENT	MultiLineString	(LineString+)>
+<!ATTLIST	MultiLineString	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+<!ELEMENT	MultiPoint	(Point+)>
+<!ATTLIST	MultiPoint	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+<!ELEMENT	MultiPolygon	((Polygon| Box | CircularArea | CircularArcArea | EllipticalArea)+)>
+<!ATTLIST	MultiPolygon	
+	gid ID	#IMPLIED
+	srsName CDATA	#IMPLIED>
+
+<!-- MLP_QOP Quality of Position Element Definitions -->	
+<!ELEMENT	eqop	(resp_req?, resp_timer?, (ll_acc | hor_acc)?, alt_acc?, max_loc_age?)>
+<!ELEMENT	qop	((ll_acc | hor_acc)?, alt_acc?)>
+<!ELEMENT	ll_acc	(#PCDATA)>
+<!ELEMENT	hor_acc	(#PCDATA)>
+<!ELEMENT	max_loc_age	(#PCDATA)>
+<!ELEMENT	resp_req	EMPTY>
+<!ATTLIST 	resp_req	
+	type (NO_DELAY | LOW_DELAY | DELAY_TOL)	"DELAY_TOL">
+<!ELEMENT	resp_timer	(#PCDATA)>
+
+<!-- MLP_GSM_NET Network Parameters Element Definitions -->	
+<!ELEMENT 	gsm_net_param	(cgi?, neid?, nmr?, ta?, lmsi?)>
+<!ELEMENT	cgi	(mcc, mnc, lac, cellid)>
+<!ELEMENT	neid	(vmscid | vlrid | (vmscid, vlrid))>
+<!ELEMENT 	vmscid	(cc?, ndc?, vmscno)>
+<!ELEMENT	vlrid	(cc?, ndc?, vlrno)>
+<!ELEMENT 	nmr	(#PCDATA)>
+<!ELEMENT	mcc	(#PCDATA)>
+<!ELEMENT	mnc	(#PCDATA)>
+<!ELEMENT	ndc	(#PCDATA)>
+<!ELEMENT	cc	(#PCDATA)>
+<!ELEMENT	vmscno	(#PCDATA)>
+<!ELEMENT	vlrno	(#PCDATA)>
+<!ELEMENT	lac	(#PCDATA)>
+<!ELEMENT 	cellid	(#PCDATA)>
+<!ELEMENT 	ta	(#PCDATA)>
+<!ELEMENT	lmsi	(#PCDATA)>
+
+<!-- MLP_CTXT Context Element Definitions -->
+<!ELEMENT 	client	(id, pwd?, serviceid?, requestmode?)>
+<!ELEMENT	sessionid	(#PCDATA)>
+<!ELEMENT	id	(#PCDATA)>
+<!ELEMENT 	requestor	(id, serviceid?)>
+<!ELEMENT	pwd	(#PCDATA)>
+<!ELEMENT 	serviceid	(#PCDATA)>
+<!ELEMENT	requestmode	EMPTY>
+<!ATTLIST	requestmode	
+	type (ACTIVE | PASSIVE)	"PASSIVE">
+<!ELEMENT	subclient	(id, pwd?, serviceid?)>
+<!ATTLIST	subclient	
+	last_client (YES | NO)	"NO">
+
+<!-- MLP_SLIR Standard Location Immediate Request -->
+<!ENTITY	% extension.param	"">
+<!ELEMENT	slir	((msids | (msid, codeword?, gsm_net_param)+), eqop?, geo_info?, loc_type?, prio?, pushaddr? %extension.param;)>
+<!ATTLIST	slir 	
+	ver CDATA	#FIXED "3.0.0"
+	res_type (SYNC | ASYNC)	"SYNC">
+
+<!-- MLP_SLIA Standard Location Immediate Answer -->
+<!ENTITY	% extension.param	"">
+<!ELEMENT 	slia	((pos+ | req_id | (result, add_info?)) %extension.param;)>
+<!ATTLIST 	slia 	
+	ver CDATA	#FIXED "3.0.0">
+
+<!-- MLP_SLIREP Standard Location Immediate Report -->	
+<!ENTITY	% extension.param	"">
+<!ELEMENT 	slirep	(req_id, pos+ %extension.param;)>
+<!ATTLIST 	slirep 	
+	ver CDATA	#FIXED "3.0.0">
+
+<!-- MLP_EME_LIR Emergency Location Immediate Request -->
+<!ENTITY	% extension.param	"">
+<!ELEMENT	eme_lir	((msids | (msid, gsm_net_param)+), qop?, geo_info?, loc_type? %extension.param;)>
+<!ATTLIST	eme_lir 	
+	ver CDATA	#FIXED "3.0.0">
+
+<!-- MLP_EME_LIA Emergency Location Immediate Answer -->
+<!ENTITY	% extension.param	"">
+<!ELEMENT 	eme_lia	((eme_pos+ | (result, add_info?)) %extension.param;)>
+<!ATTLIST 	eme_lia 	
+	ver CDATA	#FIXED "3.0.0">
+
+<!-- MLP_SLREP Standard Location Report -->
+<!ENTITY	% extension.param	"">
+<!ELEMENT 	slrep	(pos+ %extension.param;)>
+<!ATTLIST 	slrep 	
+	ver CDATA	#FIXED "3.0.0">
+		
+<!-- MLP_EMEREP Emergency Location Report -->
+<!ENTITY	% extension.param	"">
+<!ELEMENT 	emerep	(eme_event %extension.param;)>
+<!ATTLIST 	emerep 	
+	ver CDATA	#FIXED "3.0.0">
+
+<!-- MLP_TLRR Triggered Location Reporting Request -->
+<!ENTITY	% extension.param	"">
+<!ELEMENT	tlrr	(msids, interval?, start_time?, stop_time?, tlrr_event?, qop?, geo_info?, pushaddr?, loc_type?, prio? %extension.param;)>
+<!ATTLIST	tlrr
+	ver CDATA	#FIXED "3.0.0">
+
+<!-- MLP_TLRA Triggered Location Reporting Answer -->
+<!ENTITY	% extension.param	"">
+<!ELEMENT 	tlra	((req_id | (result, add_info?)) %extension.param;)>
+<!ATTLIST 	tlra
+	ver CDATA	#FIXED "3.0.0">
+
+<!-- MLP_TLREP Triggered Location Report -->
+<!ENTITY	% extension.param	"">
+<!ELEMENT 	tlrep	(req_id, trl_pos+, time_remaining? %extension.param;)>
+<!ATTLIST 	tlrep
+	ver CDATA	#FIXED "3.0.0">
+
+<!-- MLP_TLRSR Triggered Location Reporting Stop Request -->
+<!ENTITY	% extension.param	"">
+<!ELEMENT	tlrsr	(req_id %extension.param;)>
+<!ATTLIST	tlrsr
+	ver CDATA	#FIXED "3.0.0">
+
+<!-- MLP_TLRSA Triggered Location Reporting Stop Answer -->
+<!ENTITY	% extension.param	"">
+<!ELEMENT	tlrsa	((req_id | (result, add_info?)) %extension.param;)>
+<!ATTLIST	tlrsa
+	ver CDATA	#FIXED "3.0.0">
+
+<!-- MLP_GEM General Error Message -->
+<!ELEMENT	gem	(result, add_info?)>
+<!ATTLIST	gem
+	ver CDATA	#FIXED "3.0.0">

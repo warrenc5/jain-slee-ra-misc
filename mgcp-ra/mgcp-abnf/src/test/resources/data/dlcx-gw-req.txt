@@ -1,0 +1,6 @@
+DLCX 1210 aaln/1@rgw-2567.whatever.net MGCP 1.0
+C: A3C47F21456789F0
+I: FDE234C8
+E: 900 - Hardware error
+P: PS=1245, OS=62345, PR=780, OR=45123, PL=10, JI=27, LA=48
+

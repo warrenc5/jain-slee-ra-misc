@@ -1,0 +1,8 @@
+exitOnError false
+
+deactivateraentity JPA\ Resource\ Adaptor\ Entity 
+waittilraentityisinactive JPA\ Resource\ Adaptor\ Entity 
+unbindralinkname JPA\ Resource\ Adaptor\ Entity\ Link 
+removeraentity JPA\ Resource\ Adaptor\ Entity 
+uninstall file:/usr/src/maven/repository.old/mofokom/jpa-ra/1.0-SNAPSHOT/jpa-ra-1.0-SNAPSHOT-du.jar
+

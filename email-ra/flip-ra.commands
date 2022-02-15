@@ -1,0 +1,3 @@
+deactivateraentity Mail\ Resource\ Adaptor\ Entity 
+waittilraentityisinactive Mail\ Resource\ Adaptor\ Entity 
+activateraentity Mail\ Resource\ Adaptor\ Entity 

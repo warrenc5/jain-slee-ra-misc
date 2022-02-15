@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version xmlns:mvn="http://maven.apache.org/POM/4.0.0">1.0</version>
+  <groupId xmlns:mvn="http://maven.apache.org/POM/4.0.0">mofokom</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>megaco-ra</artifactId>
+  <packaging>jar</packaging>
+  <name>MegaCo SLEE RA</name>
+  <url xmlns:mvn="http://maven.apache.org/POM/4.0.0">http://www.mofokom.eu/site/${project.artifactId}/</url>
+  <distributionManagement xmlns:mvn="http://maven.apache.org/POM/4.0.0">
+    <snapshotRepository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.eu/maven/snapshots-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+    <repository>
+      <id>mofokom-public</id>
+      <name>mofokom-public</name>
+      <url>http://www.mofokom.eu/maven/releases-public</url>
+      <uniqueVersion>false</uniqueVersion>
+    </repository>
+    <site>
+      <id>mofokom</id>
+      <url>scp://${site.url}/${project.artifactId}</url>
+    </site>
+  </distributionManagement>
+  <dependencies>
+    <dependency>
+      <artifactId>mina-core</artifactId>
+      <groupId>org.apache.mina</groupId>
+      <type>jar</type>
+      <version>2.0.4</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.sdp</groupId>
+      <artifactId>nist-sdp</artifactId>
+      <version>1.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <artifactId>jain-sip-ri</artifactId>
+      <groupId>javax.sip</groupId>
+      <type>jar</type>
+      <version>1.2.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>jain</groupId>
+      <artifactId>jain-megaco-ri</artifactId>
+      <version>1.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <artifactId>slf4j-api</artifactId>
+      <groupId>org.slf4j</groupId>
+      <type>jar</type>
+      <version>1.6.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <artifactId>slf4j-jdk14</artifactId>
+      <groupId>org.slf4j</groupId>
+      <type>jar</type>
+      <version>1.6.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.16</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>

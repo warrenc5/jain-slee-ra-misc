@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE resource-adaptor-jar PUBLIC
+        "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor 1.1//EN"
+        "http://java.sun.com/dtd/slee-resource-adaptor-jar_1_1.dtd">
+<resource-adaptor-jar>
+    <description> Session Announcement Protocol, Multicast Session Description Protocol Transceiver. </description>
+    <resource-adaptor id="SAP">
+        <description> Configurable Resource Adaptor </description>
+        <resource-adaptor-name> SAP </resource-adaptor-name>
+        <resource-adaptor-vendor> ${pom.groupId} </resource-adaptor-vendor>
+        <resource-adaptor-version> ${pom.version} </resource-adaptor-version>
+        <resource-adaptor-type-ref>
+            <description> </description>
+            <resource-adaptor-type-name> SAP </resource-adaptor-type-name>
+            <resource-adaptor-type-vendor> ${pom.groupId} </resource-adaptor-type-vendor>
+            <resource-adaptor-type-version> ${pom.version} </resource-adaptor-type-version>
+        </resource-adaptor-type-ref>
+        <library-ref>
+            <description> JAIN SIP SDP </description>
+            <library-name> JAIN SIP SDP </library-name>
+            <library-vendor> javax.sdp </library-vendor>
+            <library-version> 1.1 </library-version>
+        </library-ref>
+        <resource-adaptor-classes>
+            <resource-adaptor-class>
+                <resource-adaptor-class-name>
+            mofokom.sap.resource.SAPResourceAdaptor
+                </resource-adaptor-class-name>
+            </resource-adaptor-class>
+            <resource-adaptor-usage-parameters-interface>
+                <resource-adaptor-usage-parameters-interface-name>
+            mofokom.sap.resource.Usage
+                </resource-adaptor-usage-parameters-interface-name>
+                <usage-parameter name="CumulativeRetransmitSize"/>
+                <usage-parameter name="AverageRetransmitDelay"/>
+                <usage-parameter name="ScheduledAnnouncements"/>
+            </resource-adaptor-usage-parameters-interface>
+
+        </resource-adaptor-classes>
+        <config-property>
+            <description> The multicast address to broadcast and listen.  </description>
+            <config-property-name>Address</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>229.1.1.2</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description> The bind interface. </description>
+            <config-property-name>LocalAddress</config-property-name>
+            <config-property-type>java.lang.String</config-property-type>
+            <config-property-value>127.0.0.1</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description> The standard SAP port</description>
+            <config-property-name>MulticastPort</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>9875</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description> Perform throughput calculations based on this limit.</description>
+            <config-property-name>BitRateLimit</config-property-name>
+            <config-property-type>java.lang.Long</config-property-type>
+            <config-property-value>4000</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description> The MTU of the IP packet </description>
+            <config-property-name>MaximumDatagramSize</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>1500</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description> Also receive announcements we send.</description>
+            <config-property-name>LoopbackEnabled</config-property-name>
+            <config-property-type>java.lang.Boolean</config-property-type>
+            <config-property-value>true</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description> The number of subnets which this packet will passthrough.</description>
+            <config-property-name>TTL</config-property-name>
+            <config-property-type>java.lang.Byte</config-property-type>
+            <config-property-value>1</config-property-value>
+        </config-property>
+
+        <config-property>
+            <description> The time to wait in seconds before repeating an announcement.</description>
+            <config-property-name>MinimumTransmitDelay</config-property-name>
+            <config-property-type>java.lang.Integer</config-property-type>
+            <config-property-value>30</config-property-value>
+        </config-property>
+
+
+<!--
+        <security-permissions>
+            <description> </description>
+            <security-permission-spec>
+        grant {
+          permission java.net.SocketPermission "*", "connect,accept,resolve";
+          permission java.security.AllPermission ;
+        };
+            </security-permission-spec>
+        </security-permissions>
+        -->
+
+    </resource-adaptor>
+</resource-adaptor-jar>

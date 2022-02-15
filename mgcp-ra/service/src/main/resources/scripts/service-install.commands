@@ -1,0 +1,5 @@
+exitOnError false
+
+installlocaldu /code/snmp-client/service/target/snmp-service-1.0-SNAPSHOT-du.jar 
+activateservice name=BASIC\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

@@ -1,0 +1,41 @@
+<jaxb:bindings
+    jaxb:extensionBindingPrefixes="xjc"
+    version="2.0"
+    xmlns="http://java.sun.com/xml/ns/jaxb"
+    xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="jaxb http://java.sun.com/xml/ns/jaxb/bindingschema_2_0.xsd"
+    >
+
+    <!--
+    <xs:import namespace="http://hyperjaxb3.jvnet.org/ejb/schemas/customizations" schemaLocation="file:///smart/example/src/main/resources/xschema/hyperjaxb.xsd" />-->
+    <jaxb:globalBindings generateIsSetMethod="true">
+
+        <javaType name="java.util.Calendar" xmlType="xs:dateTime"
+                  parseMethod="mofokom.xmlrpc.DateConverter.parseDate"
+                  printMethod="mofokom.xmlrpc.DateConverter.printDate"
+                  />
+        <!--
+        <javaType name="java.util.Date" xmlType="xs:date"
+                  parseMethod="javax.xml.bind.DatatypeConverter.parseDate"
+                  printMethod="javax.xml.bind.DatatypeConverter.printDate"
+                  />
+                  -->
+    </jaxb:globalBindings>
+    <jaxb:bindings scd="x-schema::">
+        <jaxb:schemaBindings>
+            <jaxb:package name="xmlrpc"/>
+        </jaxb:schemaBindings>
+        <jaxb:bindings scd="/element::methodResponse/model::choice/element::fault/model::sequence/element::value/model::sequence/element::struct/model::sequence/element::member">
+            <jaxb:class ref="MemberType"/>
+        </jaxb:bindings>
+        <!--
+        <jaxb:bindings scd="/type::ArrayType">
+            <jaxb:serializable/>
+        </jaxb:bindings>
+        -->
+    </jaxb:bindings>
+</jaxb:bindings>

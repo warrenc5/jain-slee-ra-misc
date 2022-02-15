@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<!DOCTYPE sbb-jar PUBLIC
+"-//Sun Microsystems, Inc.//DTD JAIN SLEE SBB 1.1//EN"
+"http://java.sun.com/dtd/slee-sbb-jar_1_1.dtd">
+<sbb-jar>
+    <sbb id="VSIPSBB">
+        <description> VSIP Sbb </description>
+        <sbb-name> VSIP Sbb </sbb-name>
+        <sbb-vendor> MOFOKOM </sbb-vendor>
+        <sbb-version> ${pom.version} </sbb-version>
+        <sbb-alias> VSIPSBB </sbb-alias>
+
+        <library-ref>
+            <description> AIR Library </description>
+            <library-name> AIR Library </library-name>
+            <library-vendor> MOFOKOM </library-vendor>
+            <library-version> 3.1 </library-version>
+        </library-ref>
+
+        <sbb-classes>
+            <sbb-abstract-class>
+                <sbb-abstract-class-name> mofokom.vsip.service.test.VSIPTestSbb </sbb-abstract-class-name>
+                <cmp-field>
+                    <cmp-field-name>then</cmp-field-name>
+                </cmp-field>
+            </sbb-abstract-class>
+            <sbb-usage-parameters-interface>
+                <sbb-usage-parameters-interface-name>mofokom.vsip.service.test.VSIPUsageParameters</sbb-usage-parameters-interface-name>
+            </sbb-usage-parameters-interface>
+        </sbb-classes>
+
+        <event event-direction="Receive" initial-event="True">
+            <event-name> ServiceStarted </event-name>
+            <event-type-ref>
+                <event-type-name> javax.slee.serviceactivity.ServiceStartedEvent </event-type-name>
+                <event-type-vendor> javax.slee </event-type-vendor>
+                <event-type-version> 1.1 </event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <event event-direction="Receive" initial-event="True">
+            <event-name>Timer</event-name>
+            <event-type-ref>
+                <event-type-name>javax.slee.facilities.TimerEvent</event-type-name>
+                <event-type-vendor>javax.slee</event-type-vendor>
+                <event-type-version> ${pom.version}</event-type-version>
+            </event-type-ref>
+            <initial-event-select variable="ActivityContext"/>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>TransportError</event-name>
+            <event-type-ref>
+                <event-type-name>xmlrpc.event.TransportError</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> ${pom.version} </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>Fault</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.Fault</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GetVoucherDetailsResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GetVoucherDetailsResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GetVoucherHistoryResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GetVoucherHistoryResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>UpdateVoucherStateResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.UpdateVoucherStateResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>LoadVoucherCheckResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.LoadVoucherCheckResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GenerateVoucherResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GenerateVoucherResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GetGenerateVoucherTaskInfoResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GetGenerateVoucherTaskInfoResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>LoadVoucherBatchFileResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.LoadVoucherBatchFileResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GetLoadVoucherBatchFileTaskInfoResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GetLoadVoucherBatchFileTaskInfoResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GetVoucherBatchFilesListResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GetVoucherBatchFilesListResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ChangeVoucherStateResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.ChangeVoucherStateResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GetChangeVoucherStateTaskInfoResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GetChangeVoucherStateTaskInfoResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>PurgeVouchersResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.PurgeVouchersResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GetPurgeVouchersTaskInfoResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GetPurgeVouchersTaskInfoResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GenerateVoucherDetailsReportResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GenerateVoucherDetailsReportResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GetGenerateVoucherDetailsReportTaskInfoResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GetGenerateVoucherDetailsReportTaskInfoResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GenerateVoucherDistributionReportResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GenerateVoucherDistributionReportResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GetGenerateVoucherDistributionReportTaskInfoResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GetGenerateVoucherDistributionReportTaskInfoResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GenerateVoucherUsageReportResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GenerateVoucherUsageReportResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>GetGenerateVoucherUsageReportTaskInfoResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.GetGenerateVoucherUsageReportTaskInfoResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>DeleteTaskResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.DeleteTaskResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>ReserveVoucherResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.ReserveVoucherResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+        <event event-direction="Receive" initial-event="False">
+            <event-name>EndReservationResponse</event-name>
+            <event-type-ref>
+                <event-type-name>vsip.EndReservationResponse</event-type-name>
+                <event-type-vendor> MOFOKOM </event-type-vendor>
+                <event-type-version> 3.1 </event-type-version>
+            </event-type-ref>
+        </event>
+
+        <resource-adaptor-type-binding>
+            <description>
+            </description>
+            <resource-adaptor-type-ref>
+                <resource-adaptor-type-name> VSIP Resource Adaptor Type </resource-adaptor-type-name>
+                <resource-adaptor-type-vendor> MOFOKOM </resource-adaptor-type-vendor>
+                <resource-adaptor-type-version> 3.1 </resource-adaptor-type-version>
+            </resource-adaptor-type-ref>
+
+            <activity-context-interface-factory-name> slee/resource/mofokom/vsip/3.1/acifactory </activity-context-interface-factory-name>
+            <resource-adaptor-entity-binding>
+                <resource-adaptor-object-name> slee/resource/mofokom/vsip/3.1/provider </resource-adaptor-object-name>
+                <resource-adaptor-entity-link> VSIP Resource Adaptor Entity Link</resource-adaptor-entity-link>
+            </resource-adaptor-entity-binding>
+        </resource-adaptor-type-binding>
+    </sbb>
+    <security-permissions>
+        <description> </description>
+        <security-permission-spec>
+            grant {
+            permission java.lang.RuntimePermission "*" ;
+            permission java.security.AllPermission ;
+            };
+        </security-permission-spec>
+    </security-permissions>
+</sbb-jar>

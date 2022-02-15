@@ -1,0 +1,20 @@
+exitOnError false
+deactivateservice name=Basic\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+removeallsbbs name=Basic\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+waittilserviceisinactive name=Basic\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT
+uninstall file:/home/code/basic-service/target/basic-service-1.0-SNAPSHOT-du.jar 
+
+deactivateraentity Basic\ Resource\ Adaptor\ Entity 
+removeallactivities Basic\ Resource\ Adaptor\ Entity
+waittilraentityisinactive Basic\ Resource\ Adaptor\ Entity 
+unbindralinkname Basic\ Resource\ Adaptor\ Entity\ Link 
+removeraentity Basic\ Resource\ Adaptor\ Entity 
+uninstall file:/home/code/basic-ra/target/basic-ra-1.0-SNAPSHOT-du.jar 
+
+installlocaldu /code/basic-ra/target/basic-ra-1.0-SNAPSHOT-du.jar 
+createraentity name=Basic\ Resource\ Adaptor,vendor=MOFOKOM,version=1.0-SNAPSHOT Basic\ Resource\ Adaptor\ Entity ACTIVITY_DIMENSION=10
+bindralinkname Basic\ Resource\ Adaptor\ Entity Basic\ Resource\ Adaptor\ Entity\ Link
+activateraentity Basic\ Resource\ Adaptor\ Entity 
+installlocaldu /code/basic-service/target/basic-service-1.0-SNAPSHOT-du.jar 
+activateservice name=Basic\ Service,vendor=MOFOKOM,version=1.0-SNAPSHOT 
+

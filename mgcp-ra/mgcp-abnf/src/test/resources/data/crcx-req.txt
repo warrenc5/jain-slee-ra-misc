@@ -1,0 +1,4 @@
+CRCX 1204 aaln/1@rgw-2567.whatever.net MGCP 1.0
+C: A3C47F21456789F0
+L: p:10, a:PCMU
+M: recvonly

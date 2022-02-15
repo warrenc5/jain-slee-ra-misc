@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE event-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Event 1.1//EN" "http://java.sun.com/dtd/slee-event-jar_1_1.dtd">
+<event-jar>
+    <description>Event Definitions for SNMP Resource Adaptor Type.
+    </description>
+    <library-ref>
+        <description> SNMP Library </description>
+        <library-name> SNMP Library </library-name>
+        <library-vendor> MOFOKOM </library-vendor>
+        <library-version> ${pom.version} </library-version>
+    </library-ref>
+        <event-definition>
+        <description> A Pdu was modified, typically from a response with variable bindings.</description>
+        <event-type-name>UpdateEvent</event-type-name>
+        <event-type-vendor> WESTHAWK </event-type-vendor>
+        <event-type-version> 6.1 </event-type-version>
+        <event-class-name>uk.co.westhawk.snmp.stack.Pdu</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description> A Request Pdu was received on the listening context.</description>
+        <event-type-name>RequestPduEvent</event-type-name>
+        <event-type-vendor> WESTHAWK </event-type-vendor>
+        <event-type-version> 6.1 </event-type-version>
+        <event-class-name>uk.co.westhawk.snmp.event.RequestPduEvent</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description> A Pdu was received on the listening context.</description>
+        <event-type-name>RawPduEvent</event-type-name>
+        <event-type-vendor> WESTHAWK </event-type-vendor>
+        <event-type-version> 6.1 </event-type-version>
+        <event-class-name>uk.co.westhawk.snmp.event.RawPduEvent</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description> A Trap Pdu was received on the listening context.</description>
+        <event-type-name>TrapEvent</event-type-name>
+        <event-type-vendor> WESTHAWK </event-type-vendor>
+        <event-type-version> 6.1 </event-type-version>
+        <event-class-name>uk.co.westhawk.snmp.event.TrapEvent</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description> A Pdu was modified, typically from a response with error status.</description>
+        <event-type-name>UpdateErrorEvent</event-type-name>
+        <event-type-vendor> WESTHAWK </event-type-vendor>
+        <event-type-version> 6.1 </event-type-version>
+        <event-class-name>uk.co.westhawk.snmp.stack.Pdu</event-class-name>
+    </event-definition>
+    <event-definition>
+        <description> A Pdu was not sent, typically from a network exception.</description>
+        <event-type-name>TransportErrorEvent</event-type-name>
+        <event-type-vendor> MOFOKOM </event-type-vendor>
+        <event-type-version> ${pom.version} </event-type-version>
+        <event-class-name>java.lang.Exception</event-class-name>
+    </event-definition>
+</event-jar>

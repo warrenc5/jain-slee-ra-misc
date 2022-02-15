@@ -1,0 +1,2000 @@
+h248-6.txt:SERIES H: AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+h248-6.txt:Gateway control protocol: Dynamic Tone
+h248-6.txt:                        Gateway control protocol: Dynamic Tone
+h248-6.txt:                         Gateway control protocol: Dynamic Tone
+h248-6.txt:PackageName: Dynamic Tone Definition package
+h248-6.txt:PackageID: dtd (0x001c)
+h248-6.txt:Extends:    None
+h248-6.txt:Version:    1
+h248-6.txt:PropertyName: Tone ID
+h248-6.txt:       PropertyID:           tid (0x0001)
+h248-6.txt:       Description:
+h248-6.txt:       Type:                 expanding enumeration
+h248-6.txt:       Possible Values:
+h248-6.txt:       Defined in:           TerminationState.
+h248-6.txt:          Characteristics:       both read and write.
+h248-6.txt:PropertyName: Tone String
+h248-6.txt:        PropertyID:              tst (0x0002)
+h248-6.txt:        Description:             Tone description string. See procedures ,
+h248-6.txt:        Type:                    String
+h248-6.txt:        Possible Values:         See procedures.
+h248-6.txt:        Defined in:              TerminationState.
+h248-6.txt:        Characteristics:         both read and write:
+h248-6.txt:To modify or create a new tone:
+h248-6.txt:To read the list of tones defined:
+h248-6.txt:To read an already defined tone string:
+h248-6.txt:DefToneString below is the tone string(tst):
+h248-6.txt:Series B   Means of expression: definitions, symbols, classification
+h248-6.txt:Series M   TMN and network maintenance: international transmission systems, telephone circuits,
+h248-6.txt:Series N   Maintenance: international sound programme and television transmission circuits
+h248-7.txt:SERIES H: AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+h248-7.txt:Gateway control protocol: Generic
+h248-7.txt:             Gateway control protocol: Generic announcement package
+h248-7.txt:    4.3.1   Fixed: Announcement play.............................................................................                           2
+h248-7.txt:    4.3.2   Variable: Announcement play........................................................................                             2
+h248-7.txt:             Gateway control protocol: Generic announcement package
+h248-7.txt:This Recommendation uses the following abbreviations:
+h248-7.txt:PackageName: Generic announcement package
+h248-7.txt:PackageID: an (0x001d)
+h248-7.txt:Extends:    None
+h248-7.txt:Version:    1
+h248-7.txt:be realised by the Media Gateway as different sorts of messaging. For example: it could be an audio
+h248-7.txt:SignalName:Fixed Announcement play
+h248-7.txt:SignalID:      apf (0x0001)
+h248-7.txt:Description: Initiates the play of a fixed announcement
+h248-7.txt:        description:
+h248-7.txt:              SignalType:            OO, TO (default)
+h248-7.txt:              SignalDuration:        Provisioned
+h248-7.txt:              NotifyCompletion: Provisioned (default false)
+h248-7.txt:Parameters:
+h248-7.txt:ParameterName:        Announcement name
+h248-7.txt:              ParameterID: an (0x0001)
+h248-7.txt:              Type:           enumeration of announcements
+h248-7.txt:ParameterName:        Number of cycles
+h248-7.txt:              ParameterID: noc (0x0002)
+h248-7.txt:              Type:           integer
+h248-7.txt:              Values:         any
+h248-7.txt:        Default: provisioned per announcement in the MG
+h248-7.txt:ParameterName:        Announcement Variant
+h248-7.txt:              ParameterID: av (0x0003)
+h248-7.txt:              Type:           string
+h248-7.txt:ParameterName:        Announcement Direction
+h248-7.txt:              ParameterID: di (0x0004)
+h248-7.txt:              Type:           enum
+h248-7.txt:              Values:         External    ext (0x01),
+h248-7.txt:              Default:        ext
+h248-7.txt:SignalName: Variable Announcement play
+h248-7.txt:SignalID:      apv (0x0002)
+h248-7.txt:Description: Initiates the play of a variable announcement
+h248-7.txt:        description:
+h248-7.txt:              SignalType:            OO, TO (default)
+h248-7.txt:              SignalDuration:        Provisioned
+h248-7.txt:              NotifyCompletion: Provisioned (default false)
+h248-7.txt:Parameters:
+h248-7.txt:ParameterName:       Announcement name
+h248-7.txt:              ParameterID: an (0x0001)
+h248-7.txt:              Type:          enumeration of announcements
+h248-7.txt:       Parameter Number of Cycles – Values: any
+h248-7.txt:              Default:       provisioned per announcement in the MG
+h248-7.txt:ParameterName:       Announcement Variant
+h248-7.txt:              ParameterID: av (0x0003)
+h248-7.txt:              Type:          string
+h248-7.txt:ParameterName:       Announcement Direction
+h248-7.txt:              ParameterID: di (0x0007)
+h248-7.txt:              Type:          enum
+h248-7.txt:              Values:        External   ext (0x01),
+h248-7.txt:              Default:       ext
+h248-7.txt:ParameterName:               Number of cycles
+h248-7.txt:              ParameterID: noc (0x0002)
+h248-7.txt:              Type:          integer
+h248-7.txt:              Values:        any
+h248-7.txt:              Default:       1
+h248-7.txt:ParameterName:       Number
+h248-7.txt:              ParameterID: num (0x0004)
+h248-7.txt:              Type:          integer
+h248-7.txt:              Values:        any
+h248-7.txt:ParameterName:       Specific parameters interpretation
+h248-7.txt:              ParameterID: spi (0x0005)
+h248-7.txt:              Type:          enumeration
+h248-7.txt:              Values:        any
+h248-7.txt:ParameterName:       Specific parameters
+h248-7.txt:              ParameterID: sp (0x0006)
+h248-7.txt:              Type:          string
+h248-7.txt:              Values:        any
+h248-7.txt:Series B   Means of expression: definitions, symbols, classification
+h248-7.txt:Series M   TMN and network maintenance: international transmission systems, telephone circuits,
+h248-7.txt:Series N   Maintenance: international sound programme and television transmission circuits
+h248-9.txt:SERIES H: AUDIOVISUAL AND MULTIMEDIA SYSTEMS
+h248-9.txt:Gateway control protocol: Advanced media
+h248-9.txt:        Gateway control protocol: Advanced media server packages
+h248-9.txt:Recommendation ITU-T H.248.9 provides two sets of packages: syntactic and functional. The
+h248-9.txt:Additional functionality incorporated by ITU-T H.248.9 (2005) Amendment 1 (2007):
+h248-9.txt:•        6.4          Set extension of basic syntax: introduction of a new selector for text attributes.
+h248-9.txt:•        6.5.5.1      Variable type "Phrase": introduction of subtypes.
+h248-9.txt:•        9.3.1        Signal PlayCollect: enhanced functionality, new parameters.
+h248-9.txt:This revision introduces a number of new functions. The new functions include:
+h248-9.txt:        not. For example: digits related to a pin code would not be stored.
+h248-9.txt:TSB patent database at http://www.itu.int/ITU-T/ipr/.
+h248-9.txt:    6.1    Syntactical concepts: audio segments, multimedia segments, variables
+h248-9.txt:            Gateway control protocol: Advanced media server packages
+h248-9.txt:The announcement specification syntax is described in a series of packages:
+h248-9.txt:•      Basic syntax package: Provides the syntax by which to refer to provisioned media
+h248-9.txt:•      Voice variables package: An optional extension to the base syntax, which provides
+h248-9.txt:•      Set syntax package: An optional extension to the base syntax, which provides an arbitrary
+h248-9.txt:       example, the user could define qualifiers for any or all of the following: language, accent,
+h248-9.txt:•      Generic text syntax package: An optional extension to the base syntax, which provides a
+h248-9.txt:The functional packages documented in this Recommendation are as follows:
+h248-9.txt:•      Advanced audio server (AAS) base package: Provides a signal to play an announcement
+h248-9.txt:•      AAS base package for TTS enhancement: Provides signals to play TTS and an event to
+h248-9.txt:•      AAS Digit collection package: Extends the AAS base package by providing a signal and
+h248-9.txt:•      AAS recording package: Extends the AAS base package by providing a property, signals
+h248-9.txt:•      AAS automatic speech recognition package: Provides signals to play ASR and events to
+h248-9.txt:•      AAS Multimedia Play Package: Provides a signal to play a multimedia file and events to
+h248-9.txt:•       AAS Multimedia Recording Package: Extends the AAS Recording Package to coordinate
+h248-9.txt:•       Enhanced DTMF Detection Package: This Package allows the MGC to determine whether
+h248-9.txt:[ITU-T H.248.1]      Recommendation ITU-T H.248.1 (2002), Gateway Control Protocol:
+h248-9.txt:[IETF RFC 2396]      IETF RFC 2396 (1998), Uniform Resource Identifiers (URI): Generic Syntax.
+h248-9.txt:[ISO 639-1]          ISO 639-1:2002, Codes for the representation of names of languages – Part 1:
+h248-9.txt:[ISO 639-2]          ISO 639-2:1998, Codes for the representation of names of languages – Part 2:
+h248-9.txt:[ISO 3166-1]         ISO 3166-1:1997, Codes for the representation of names of countries and their
+h248-9.txt:                     subdivisions – Part 1: Country codes.
+h248-9.txt:[ISO 3166-2]         ISO 3166-2:1998, Codes for the representation of names of countries and their
+h248-9.txt:                     subdivisions – Part 2: Country subdivision code.
+h248-9.txt:[ISO 4217]           ISO 4217:2001, Codes for the representation of currencies and funds.
+h248-9.txt:[ISO 8601]           ISO 8601:2000, Data elements and interchange formats – Information
+h248-9.txt:[ISO 15924]          ISO 15924:2004, Information and documentation – Codes for the
+h248-9.txt:[ISO/IEC 10646]      ISO/IEC 10646:2003, Information technology – Universal Multiple-Octet
+h248-9.txt:This Recommendation defines the following terms:
+h248-9.txt:3.1     audio segment: A separately specifiable unit of audio content. The concept may be
+h248-9.txt:3.2     segment specification: The set of information, which the controller must provide to invoke
+h248-9.txt:3.3     voice variable: A unit of audio content which has one of the types and possibly a subtype
+h248-9.txt:3.4     stand-alone variable: An audio segment whose specification describes a single instance of
+h248-9.txt:3.5      provisioned segment: An audio segment which can be retrieved using either a simple
+h248-9.txt:3.6     segment set: A set of alternative forms of expression (e.g., different languages, different
+h248-9.txt:3.7      selector: A parameter associated with a set, having a predefined range of values which map
+h248-9.txt:3.8    announcement: The audible result of playout of a sequence of audio or multimedia
+h248-9.txt:This Recommendation uses the following abbreviations and acronyms:
+h248-9.txt:6.1     Syntactical concepts: audio segments, multimedia segments, variables and embedded
+h248-9.txt:The syntax described in this Recommendation has three components: the basic syntax which must
+h248-9.txt:A URI can be a simple name or it can be a URL. Three URL schemes are allowed: the file: scheme,
+h248-9.txt:the ftp: scheme, and the http: scheme. The file: scheme is used for audio local to the audio server.
+h248-9.txt:The ftp: scheme is used for audio remote to the audio server. The http: scheme can be used for
+h248-9.txt:audio local to the audio server using the http://localhost convention or for audio remote to the audio
+h248-9.txt:server. All audio references that require parameters encoded in the URL must use the http: scheme.
+h248-9.txt:NOTE 1 – For playout of more general media over IP transport, the rtsp: scheme should also be considered.
+h248-9.txt:Reference to local audio (simple name):                  12354
+h248-9.txt:Reference to local audio (flat file):                    file://welcome
+h248-9.txt:Reference to local audio:                                file://audio/xyztel/welcome
+h248-9.txt:Reference to remote audio:                               http://audio/xyztel/welcome
+h248-9.txt:Reference to local multimedia (simple name):             12354.xxx
+h248-9.txt:Reference to local multimedia (flat file):               file://welcome.xxx
+h248-9.txt:Reference to local multimedia:                           file://multimedia/xyztel/welcome.xxx
+h248-9.txt:Reference to remote multimedia:                          http://multimedia/xyztel/welcome.xxx
+h248-9.txt:Variables are specified by the following parameters: type, subtype, and value. Variable types
+h248-9.txt:As described above, the AAS announcement syntax supports two kinds of variables: stand-alone
+h248-9.txt:In the following example, the sequence to be played speaks the following: "Today's date is
+h248-9.txt:<weekday> <date>." This sequence is made up of three segments: a simple audio segment, a
+h248-9.txt:two ways: as a sequence explicitly specified by the MGC, or as a single provisioned audio segment
+h248-9.txt:http://audio/my-time-date-intro. In the first case, this segment is visible to the MGC. In the second
+h248-9.txt:case, the MGC only knows about the provisioned segment http://audio/my-sequence, which
+h248-9.txt:http://audio/my-sequence itself references http://audio/my-time-date-intro is known only at the
+h248-9.txt:device to which http://audio/my-sequence resolves.
+h248-9.txt:the following selector types: language, accent, gender, accent, customer, and/or day of the week.
+h248-9.txt:would result in the following being played in Arabic: "Today's date is October 15th, 2000."
+h248-9.txt:Package name:        Basic Announcement Syntax
+h248-9.txt:Package ID:          bannsyx (0x0047)
+h248-9.txt:Description:         This package exists only to indicate that the MG is capable of processing the
+h248-9.txt:Version:             1
+h248-9.txt:Extends:             None.
+h248-9.txt:specification syntax for purposes of the inner encoding is expressed as follows:
+h248-9.txt:        AnnouncementSpec ::= IA5String
+h248-9.txt:The details of the string structure are as specified in the remainder of clause 6: they are equally
+h248-9.txt:announcement specification is as follows:
+h248-9.txt:comma-separated. However, the VALUE production requires escapes for the following:
+h248-9.txt:character. This Recommendation supports three URI schemes:
+h248-9.txt:•       the file: scheme, used for provisioned segments local to the MG;
+h248-9.txt:•       the ftp: scheme, used for segments on a device remote from the MG;
+h248-9.txt:•       the http: scheme, used for segments located either locally or remotely to the MG. Segments
+h248-9.txt:The MGC must use the http: scheme if the provisioned audio segment contains embedded variables.
+h248-9.txt:It must also use the http: scheme if the segment supports selectors (see clause 6.4). This restriction
+h248-9.txt:is necessary because the announcement specification syntax uses the http: scheme query part to
+h248-9.txt:In accordance with [IETF RFC 2396], the following characters must be escaped within all URIs:
+h248-9.txt:        description of the file:, ftp:, and http: schemes. According to this RFC, "/" is reserved for
+h248-9.txt:        separating components of a path hierarchy, ";" is reserved within the ftp: and http: schemes,
+h248-9.txt:        and "?" is reserved in the http: scheme;
+h248-9.txt:•       characters used as delimiters or for escaping: "<", ">", "#", "%", and <">;
+h248-9.txt:•       characters subject to unwanted transformations or subject to misinterpretation: "{", "}", "|",
+h248-9.txt:      fileurl = "file://" host path
+h248-9.txt:        ; See [IETF RFC 1738] for further details. "file://" is case-sensitive.
+h248-9.txt:      ftpurl = "ftp://" [user [":" password ] "@" ] host [":" port ]
+h248-9.txt:        ; See [IETF RFC 1738] for further details. "ftp://" is case-sensitive.
+h248-9.txt:        httpurl = "http://" host [ ":" port ] [ abs_path [ "?" query ]]
+h248-9.txt:        "http://" is case-sensitive.
+h248-9.txt:part is as follows:
+h248-9.txt:Package name:          Voice Variable Syntax
+h248-9.txt:Package ID:            vvsyx (0x0048)
+h248-9.txt:Description:           This package exists only to indicate that the MG is capable of processing the
+h248-9.txt:Version:               2
+h248-9.txt:Extends:               bannsyx version 1.
+h248-9.txt:the following extension to the syntax of clause 6.2.5.2.1:
+h248-9.txt:components is introduced by a tag: "t=", "s=", and "v=" respectively. Successive components are
+h248-9.txt:6.3.6.1     Variable type: Time
+h248-9.txt:Definition: Speaks a time of day.
+h248-9.txt:Subtypes: The subtypes associated with the Time variable specify the format in which the time is
+h248-9.txt:Value: A string of four digits giving a time specified as HHMM (per [ISO 8601]), in twenty-four
+h248-9.txt:Example: "1700" is spoken as "Five pm" in twelve-hour format or as "Seventeen hundred hours" in
+h248-9.txt:Text encoding:
+h248-9.txt:6.3.6.2    Variable type: Weekday
+h248-9.txt:Definition: Speaks the name of a specified day of the week.
+h248-9.txt:Subtypes: Not applicable.
+h248-9.txt:Value: A single digit character, beginning with "1" denoting Sunday and ending with "7" denoting
+h248-9.txt:Example: "2" is spoken as "Monday".
+h248-9.txt:Text encoding:
+h248-9.txt:6.3.6.3    Variable type: Date
+h248-9.txt:Definition: A date made up of three components: day of month, name of month, and year.
+h248-9.txt:Subtypes: The subtypes associated with the Date variable specify the order in which the elements of
+h248-9.txt:Value: The value is a string of eight digits specifying a date in the form YYYYMMDD (per
+h248-9.txt:Example: The value "20001015" could be spoken as "October Fifteenth Two Thousand" or as
+h248-9.txt:Text encoding:
+h248-9.txt:6.3.6.4    Variable type: Month
+h248-9.txt:Definition: Speaks the name of the specified month.
+h248-9.txt:Subtypes: Not applicable.
+h248-9.txt:Value: A two-digit string of digits in MM format with "01" denoting January, "02" denoting
+h248-9.txt:Example: "10" is spoken as "October".
+h248-9.txt:Text encoding:
+h248-9.txt:6.3.6.5    Variable type: Duration
+h248-9.txt:Definition: A period of time spoken in one or more units of time as appropriate.
+h248-9.txt:Subtypes: Not applicable.
+h248-9.txt:Value: An integer giving a number of seconds.
+h248-9.txt:Example: Value "3661" is spoken as "One hour, one minute, and one second".
+h248-9.txt:Text encoding:
+h248-9.txt:6.3.6.6    Variable type: Digits
+h248-9.txt:Definition: A sequence of digits which are spoken one at a time.
+h248-9.txt:Subtypes: Not applicable.
+h248-9.txt:Value: A string of digits of arbitrary length, given in the order they are to be spoken.
+h248-9.txt:Example: Type Digits, value "61360961" spoken as "six one three six zero nine six one".
+h248-9.txt:Text encoding:
+h248-9.txt:6.3.6.7    Variable type: Chars
+h248-9.txt:Definition: Speaks a specified sequence composed of upper and lower case alphabetic characters
+h248-9.txt:Subtypes: Not applicable.
+h248-9.txt:Value: Valid characters in the ASCII character set are a-z, A-Z, 0-9, #, and *. Note that it is
+h248-9.txt:Text encoding:
+h248-9.txt:6.3.6.8      Variable type: Money
+h248-9.txt:Definition: An amount of money of a given currency, spoken in mixed units of that currency as
+h248-9.txt:Subtypes: The different currency types as specified by [ISO 4217]. A small excerpt from
+h248-9.txt:[ISO 4217] follows:
+h248-9.txt:Value: An optionally signed integer giving a quantity of money specified in the smallest units of a
+h248-9.txt:Example: "110" in U.S. Dollars would be spoken "one dollar and ten cents."
+h248-9.txt:Text encoding:
+h248-9.txt:6.3.6.9      Variable type: Integer
+h248-9.txt:Definition: Speaks an integer.
+h248-9.txt:Subtypes: Control whether the number is spoken as a cardinal or ordinal value.
+h248-9.txt:Value: An optionally signed integer. Negative integers are allowed only with the cardinal subtype.
+h248-9.txt:Example: "100" is spoken as "one hundred" in cardinal form and "one hundredth" in ordinal form.
+h248-9.txt:Text encoding:
+h248-9.txt:6.3.6.10     Variable type: Silence
+h248-9.txt:Definition: A period of silence of a specified duration.
+h248-9.txt:Subtypes: Not applicable.
+h248-9.txt:Value: An unsigned integer giving the duration of the period of silence in 100 millisecond units.
+h248-9.txt:Example: "10" specifies one second of silence.
+h248-9.txt:Text encoding:
+h248-9.txt:6.3.6.11     Variable type: Tone
+h248-9.txt:Definition: Plays an algorithmically generated tone. It is the counterpart of the INAP parameter
+h248-9.txt:Subtypes: Not applicable.
+h248-9.txt:Value: Integer >= 0 (for both components of "Tone")
+h248-9.txt:Text encoding:
+h248-9.txt:Package name:           Announcement Set Syntax
+h248-9.txt:Package ID:             setsyx (0x0049)
+h248-9.txt:Description:            This package exists only to indicate that the MG is capable of processing the
+h248-9.txt:Version:                3
+h248-9.txt:Extends:                bannsyx version 1.
+h248-9.txt:Within an audio segment specification, all selectors must be specified in a single list of the form:
+h248-9.txt:          ; Restriction: if seltype = "lang" then selval = Language-Tag,
+h248-9.txt:language tag in ABNF [b-IETF RFC 4234] is:
+h248-9.txt:                           ; Single letters: x/X is reserved for private use
+h248-9.txt:                         ; Note: i is the only singleton
+h248-9.txt:within the query part of an http: URL. To simplify parsing, selectors must be specified subsequent
+h248-9.txt:as it appears in clause 6.2.5.2.1 is extended as follows:
+h248-9.txt:The definition of varSegSpec given in 6.3.6 is extended as follows:
+h248-9.txt:Package name:       Phrase Variable Syntax
+h248-9.txt:Package ID:         phrsyx (0x004a)
+h248-9.txt:Description:           This package exists only to indicate that the MG is capable of processing the
+h248-9.txt:Version:               2
+h248-9.txt:Extends:               vvsyx version 1.
+h248-9.txt:6.5.5.1     Variable type: Phrase
+h248-9.txt:Definition: Speaks or displays a specified phrase spelled out as a sequence of ASCII or UTF-8
+h248-9.txt:Subtypes:
+h248-9.txt:–      spk (spoken text): default value.
+h248-9.txt:–      dsp (display text): With this subtype "Phrase" has the same syntax attributes, but stands for
+h248-9.txt:Value:
+h248-9.txt:Text encoding:
+h248-9.txt:Play an announcement that consists of a single segment residing on the audio server in a flat file:
+h248-9.txt:      Signals { aasb/play { an = "sid=<file://1947>" } }
+h248-9.txt:using the http://localhost convention. This is exactly equivalent to the first example:
+h248-9.txt:      Signals { aasb/play { an = "sid=<http://localhost/1947>" } }
+h248-9.txt:hierarchical file system:
+h248-9.txt:      Signals { aasb/play { an = "sid=<file://audio/current/1947>" } }
+h248-9.txt:which is external to the audio server:
+h248-9.txt:      Signals { aasb/play { an = "sid=<http://darkstar/welcome>" } }
+h248-9.txt:presentation):
+h248-9.txt:      Signals { aasb/play { an = "sid=<file://audio/voice/brenda/123>,
+h248-9.txt:                                  sid=<file://audio/voice/althea/098>,
+h248-9.txt:                                  sid=<file://audio/voice/delia/086>" } }
+h248-9.txt:Play an announcement that consists of a recording followed by a direct voice variable:
+h248-9.txt:                    an = "sid=<file://gdtrfb>,var=<t=dat,s=mdy,v=19550809>" } }
+h248-9.txt:... three two one ... five eight nine":
+h248-9.txt:which they occur in the announcement:
+h248-9.txt:             an = "sid=<http://localhost/113?var=3999&var=20001015>"                    } }
+h248-9.txt:Play an announcement in English with a Glaswegian accent, assuming that http://localhost/1947
+h248-9.txt:designates a set and set syntax is supported:
+h248-9.txt:     Signals { aasb/play { an ="sid=<          http://localhost/1947?sel=lang=en-gb-
+h248-9.txt:values, as well as the "lang" selector type:
+h248-9.txt:      an ="sid=<http://localhost/jackstraw/ann45?sel=lang=da&
+h248-9.txt:remote machine (line breaks are added for clarity of presentation):
+h248-9.txt:     Signals { aasb/play { an ="sid=<http://localhost/ann1?sel=lang=eng>,
+h248-9.txt:                              sid=<http://localhost/audio/myannouncements/ann2>,
+h248-9.txt:                              sid=<http://darkstar/audio/ann3?sel=lang=fra>" } }
+h248-9.txt:Play an announcement with a stand-alone date variable in English:
+h248-9.txt:     Signals { aasb/play { an = "sid=<http://darkstar/audio/ann7?sel=lang=en>,
+h248-9.txt:     Signals { aasdc/playcol { ip = "sid=<file://enterpassword>",
+h248-9.txt:                               rp = "sid=<file://tryagain>",
+h248-9.txt:                               nd = "sid=<file://nodigits>",
+h248-9.txt:                               sa = "sid=<file://goodpassword>",
+h248-9.txt:                               fa ="sid=<file://badpassword>",
+h248-9.txt:     Signals { aasrec/playrec { ip = "sid=<file://sayname>",
+h248-9.txt:                                ns ="sid=<file://nospeech>",
+h248-9.txt:volume. Play the announcement three times with two seconds of silence between plays:
+h248-9.txt:     Signals { aasb/play { an = "sid=<file://brenda>",
+h248-9.txt:the prompt, and resume collection:
+h248-9.txt:      Signals { aasdc/playcol { ip ="sid=<file://enterdigits>",
+h248-9.txt:Play a file URI three times with two seconds of silence between plays:
+h248-9.txt:      Signals { aastts /playsid { an = "sid=<file://brenda>",
+h248-9.txt:Play an Initial announcement to the user, then start speech recognition against the given SRGS file:
+h248-9.txt:      Signals { asr /asrid { ip = "sid=<file://info>",
+h248-9.txt:                                rgid = "sid="<file://grammar.srgs>" } }.
+h248-9.txt:on the specific resource: one implementation may assemble audio segments on a "just in time basis",
+h248-9.txt:Error code #:          600
+h248-9.txt:Name:                  Illegal syntax within an announcement specification
+h248-9.txt:Definition:            Some aspect of an announcement specification fails to conform to the required
+h248-9.txt:Error text in the error descriptor: The offending portion of the specification.
+h248-9.txt:Comment:               Indicates a possible software error at the MG or MGC.
+h248-9.txt:Error code #:          601
+h248-9.txt:Name:                  Variable type not supported
+h248-9.txt:Definition:            While the syntax of a stand-alone variable segment specification is apparently
+h248-9.txt:Error text in the error descriptor: The offending segment specification.
+h248-9.txt:Comment:               The MGC can audit to determine the non-basic variable types supported by the
+h248-9.txt:Error code #:        602
+h248-9.txt:Name:                Variable value out of range
+h248-9.txt:Definition:          The value is syntactically correct but not acceptable. The error applies to both
+h248-9.txt:Error text in the error descriptor: The offending segment specification.
+h248-9.txt:Comment:             Indicates possible provisioning error at the MG or MGC.
+h248-9.txt:Error code #:        603
+h248-9.txt:Name:                Category not supported
+h248-9.txt:Definition:          The entity responsible for executing the query part of a provisioned audio
+h248-9.txt:Error text in the error descriptor: The offending segment specification.
+h248-9.txt:Comment:             The MGC can audit to determine the non-basic categories supported by the
+h248-9.txt:Error code #:        604
+h248-9.txt:Name:                Selector type not supported
+h248-9.txt:Definition:          The tag following the "sel=" keyword is not provisioned as a selector type on
+h248-9.txt:Error text in the error descriptor: The offending segment specification.
+h248-9.txt:Comment:             Indicates a probable provisioning error at the MG or MGC.
+h248-9.txt:Error code #:        605
+h248-9.txt:Name:                Selector value not supported
+h248-9.txt:Definition:          The given value is not one, which is provisioned on the entity responsible for
+h248-9.txt:Error text in the error descriptor: The offending segment specification.
+h248-9.txt:Comment:             Indicates a probable provisioning error at the MG or MGC.
+h248-9.txt:Error code #:        606
+h248-9.txt:Name:                Unknown segment ID
+h248-9.txt:Definition:           A segment identified by a provisioned segment reference cannot be located.
+h248-9.txt:Error text in the error descriptor: The offending segment specification.
+h248-9.txt:Comment:              Indicates a probable provisioning error at the MG or MGC.
+h248-9.txt:Error code #:         607
+h248-9.txt:Name:                 Mismatch between play specification and provisioned data
+h248-9.txt:Definition:           This error indicates a discrepancy between the contents of the query part of a
+h248-9.txt:Error text in the error descriptor: The offending segment specification.
+h248-9.txt:Comment:              Indicates a probable provisioning error at the MG or MGC.
+h248-9.txt:Error code #:         608
+h248-9.txt:Name:                 Provisioning error
+h248-9.txt:Definition:           For example, a provisioned segment identifier actually points to a sequence of
+h248-9.txt:Error text in the error descriptor: The offending segment specification.
+h248-9.txt:Comment:              Indicates a probable provisioning error at the MG or MGC.
+h248-9.txt:Error code #:         609
+h248-9.txt:Name:                 Invalid offset
+h248-9.txt:Definition:           The magnitude of the offset in a PlayCollect signal exceeds the actual length of
+h248-9.txt:Error text in the error descriptor: –
+h248-9.txt:Comment:              –
+h248-9.txt:Error code #:         610
+h248-9.txt:Name:                 No free segment ids
+h248-9.txt:Definition:           The local space of segment identifiers is exhausted and the RecordingIdentifier
+h248-9.txt:Error text in the error descriptor: –
+h248-9.txt:Comment:              –
+h248-9.txt:Error code #:          611
+h248-9.txt:Name:                  Temporary segment not found
+h248-9.txt:Definition:            The MakePersistent signal failed because the target temporary segment was not
+h248-9.txt:Error text in the error descriptor: URI of the missing segment.
+h248-9.txt:Comment:               The segment may no longer exist because it timed out, or it may not have been
+h248-9.txt:Error code #:          612
+h248-9.txt:Name:                  Segment in use
+h248-9.txt:Definition:            A request to delete a persistent segment has failed because it is in use by
+h248-9.txt:Error text in the error descriptor: The URI of the in-use segment.
+h248-9.txt:Comment:               –
+h248-9.txt:Package name:          Advanced audio server base package
+h248-9.txt:Package ID:            aasb (0x0033)
+h248-9.txt:Description:           The advanced audio server (AAS) base package provides a signal to play an
+h248-9.txt:Version:               3
+h248-9.txt:Extends:               None.
+h248-9.txt:Event name:            Audio operation failure
+h248-9.txt:Event ID:              audfail (0x0001)
+h248-9.txt:Description:           Signifies the failure of an advanced audio server operation subsequent to the
+h248-9.txt:Parameter name:      Return Code
+h248-9.txt:Parameter ID:        rc (0x0001)
+h248-9.txt:Description:         A return code indicating why an advanced audio server operation failed.
+h248-9.txt:Type:                Integer
+h248-9.txt:Optional:            No
+h248-9.txt:Possible values:     Failure return codes range from 600-699. Failure codes 600 to 612 report the
+h248-9.txt:Default:             None.
+h248-9.txt:Event name:          Playout Completion
+h248-9.txt:Event ID:            playcom (0x0012)
+h248-9.txt:Description:         This event is used to gather information regarding the playout of the signal
+h248-9.txt:Parameter name:       Amount Played
+h248-9.txt:Parameter ID:         ap (0x0001)
+h248-9.txt:Description:          Indicates the duration of the playout of the signal at the time the signal
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0 upwards (in 10 ms units)
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Offset
+h248-9.txt:Parameter ID:         off (0x0002)
+h248-9.txt:Description:          Specifies the time offset into the signal that the signal completed at.
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0 upwards (in 10 ms units)
+h248-9.txt:Default:              None.
+h248-9.txt:Signal name:          Play
+h248-9.txt:Signal ID:            play (0x0001)
+h248-9.txt:Description:          Plays one or more audio segments.
+h248-9.txt:SignalType:           Defaults to BR (play continues until the specified or default number of
+h248-9.txt:Duration:             Not applicable to BR signals.
+h248-9.txt:Parameter name:       Announcement
+h248-9.txt:Parameter ID:         an (0x0001)
+h248-9.txt:Description:          An announcement to be played. Consists of one or more audio segments. This
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:            No
+h248-9.txt:Possible values:     A sequence of segment specifications adhering to the syntax described in
+h248-9.txt:Default:             None.
+h248-9.txt:Parameter name:      Iterations
+h248-9.txt:Parameter ID:        it (0x0002)
+h248-9.txt:Description:         The maximum number of times an announcement is to be played.
+h248-9.txt:Type:                Integer
+h248-9.txt:Optional:            Yes
+h248-9.txt:Possible values:     As described below, playout may end before the specified number of iterations
+h248-9.txt:Default:             1
+h248-9.txt:Parameter name:      Interval
+h248-9.txt:Parameter ID:        iv (0x0003)
+h248-9.txt:Description:         The interval of silence to be inserted between iterative plays. Specified in units
+h248-9.txt:Type:                Integer
+h248-9.txt:Optional:            Yes
+h248-9.txt:Possible values:     0 upwards.
+h248-9.txt:Default:             None.
+h248-9.txt:Parameter name:      Speed
+h248-9.txt:Parameter ID:        sp (0x0004)
+h248-9.txt:Description:         The relative playback speed of announcement specifiable as a positive (faster)
+h248-9.txt:Type:                Integer
+h248-9.txt:Optional:            Yes
+h248-9.txt:Possible values:     –99 upwards.
+h248-9.txt:Default:             0
+h248-9.txt:Parameter name:         Volume
+h248-9.txt:Parameter ID:           vl (0x0005)
+h248-9.txt:Description:            The relative playback volume of announcement specifiable as a positive
+h248-9.txt:Type:                   Integer
+h248-9.txt:Optional:               Yes
+h248-9.txt:Possible values:        Implementation-dependent.
+h248-9.txt:Default:                0
+h248-9.txt:Parameter name:         Announcement direction
+h248-9.txt:Parameter ID:           di (0x0006)
+h248-9.txt:Description:            The direction parameter can be used to indicate the direction that the
+h248-9.txt:Type:                   Enumeration
+h248-9.txt:Optional:               Yes
+h248-9.txt:Possible values:        "Ext" (0x01): External indicates that the announcement is sent from the MG to
+h248-9.txt:                        "Int" (0x02): Internal indicates that the announcement is played into the MG to
+h248-9.txt:                        "Both" (0x03): Both indicates internal and external behaviour.
+h248-9.txt:Default:                Ext
+h248-9.txt:Parameter name:         Offset
+h248-9.txt:Parameter ID:           off (0x0009)
+h248-9.txt:Description:            Specifies the offset into the announcement at which to start playing. A positive
+h248-9.txt:Type:                   Integer
+h248-9.txt:Optional:               Yes
+h248-9.txt:Possible values:        0, positive, or negative. If the offset value is greater than the length of the
+h248-9.txt:Default:                0
+h248-9.txt:Parameter name:         Absolute Volume
+h248-9.txt:Parameter ID:           absvl (0x000a)
+h248-9.txt:Description:            The absolute playback volume of announcement specified in decibels. The
+h248-9.txt:Type:                   Integer
+h248-9.txt:Optional:               Yes
+h248-9.txt:Possible values:        0 and upwards (in decibels).
+h248-9.txt:Default:                0 (No absolute volume applied).
+h248-9.txt:announcement: the Duration and Iterations parameters are both ignored. If the signalType parameter
+h248-9.txt:Package name:           AAS Digit Collection Package
+h248-9.txt:Package ID:             aasdc (0x0034)
+h248-9.txt:Description:           The AAS Digit Collection Package extends the AAS base package by
+h248-9.txt:Version:               3
+h248-9.txt:Extends:               aasb (0x0033) version 3
+h248-9.txt:Event name:            Audio Operation Failure
+h248-9.txt:Event ID:              audfail (0x0001)
+h248-9.txt:Description:           This package adds the following codepoints for the return code returned by the
+h248-9.txt:                       Audio operation failure event defined in clause 8.2.1:
+h248-9.txt:Event name:            Play Collect Success
+h248-9.txt:Event ID:              pcolsucc (0x0002)
+h248-9.txt:Description:           This event signifies the successful completion of a playcol signal.
+h248-9.txt:Parameter name:        Digits collected
+h248-9.txt:Parameter ID:          dc (0x0001)
+h248-9.txt:Description:       The DTMF digits that were collected during a play collect signal.
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          No
+h248-9.txt:Possible values:   Any sequence of valid DTMF digits 0-9, A-D or a-d, *, or #. A digit may be
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    Number of Attempts
+h248-9.txt:Parameter ID:      na (0x0002)
+h248-9.txt:Description:       The number of attempts the MG made to collect a valid digit pattern.
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          No
+h248-9.txt:Possible values:   1 upwards.
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    Amount played
+h248-9.txt:Parameter ID:      ap (0x0003)
+h248-9.txt:Description:       The length played of the initial prompt, if that prompt was interrupted (i.e., by
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   0 upwards.
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    Control Digits collected
+h248-9.txt:Parameter ID:      contdc (0x0004)
+h248-9.txt:Description:       This parameter contains the control digits that were collected during the
+h248-9.txt:Type:              Sub-list of String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Each of String encoded as ControlDigit specified by the following ABNF:
+h248-9.txt:Default:                 None.
+h248-9.txt:Signal name:             PlayCollect
+h248-9.txt:Signal ID:               playcol (0x0002)
+h248-9.txt:Description:             Plays an announcement or tone (optionally) and collects dtmf digits or voice
+h248-9.txt:SignalType:              Defaults to TO
+h248-9.txt:Duration:                Default as provisioned for the termination. Used only as a guard against
+h248-9.txt:Parameter name:          InitialPrompt
+h248-9.txt:Parameter ID:            ip (0x0001)
+h248-9.txt:Description:             The initial announcement prompting the user to enter DTMF digits. The
+h248-9.txt:Type:                    String
+h248-9.txt:Optional:                Yes
+h248-9.txt:Possible values:         Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:                 None.
+h248-9.txt:Parameter name:          Reprompt
+h248-9.txt:Parameter ID:            rp (0x0002)
+h248-9.txt:Description:             Played after the user has made an error such as entering an invalid digit pattern.
+h248-9.txt:Type:                    String
+h248-9.txt:Optional:                Yes
+h248-9.txt:Possible values:         Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:                 None.
+h248-9.txt:Parameter name:    NoDigitsPrompt
+h248-9.txt:Parameter ID:      nd (0x0003)
+h248-9.txt:Description:       Played after the user has failed to enter any digits following a prompt. The
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    SuccessAnnouncement
+h248-9.txt:Parameter ID:      sa (0x0004)
+h248-9.txt:Description:       Played when data collection has succeeded. The success announcement
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    FailureAnnouncement
+h248-9.txt:Parameter ID:      fa (0x0005)
+h248-9.txt:Description:       Played when all data entry attempts have failed. The failure announcement
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    NonInterruptiblePlay
+h248-9.txt:Parameter ID:      ni (0x0006)
+h248-9.txt:Description:       Specifies whether or not prompts are interruptible by digit input.
+h248-9.txt:Type:              Boolean
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:      TRUE (prompts are non-interruptible) or FALSE (prompts are interrupted by
+h248-9.txt:Default:              FALSE.
+h248-9.txt:Parameter name:       KeepDigits
+h248-9.txt:Parameter ID:         kdg (0x0007)
+h248-9.txt:Description:          Specifies handling of digits detected during the playout of a non-interruptible
+h248-9.txt:Type:                 Boolean
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      TRUE or FALSE. Default is FALSE (digits detected during a non-interruptible
+h248-9.txt:Default:              FALSE.
+h248-9.txt:Parameter name:       ClearDigitBuffer
+h248-9.txt:Parameter ID:         cb (0x0008)
+h248-9.txt:Description:          If set to TRUE, the MG clears the digit collection buffer before playing any
+h248-9.txt:Type:                 Boolean
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      TRUE or FALSE.
+h248-9.txt:Default:              FALSE.
+h248-9.txt:Parameter name:       MaxAttempts
+h248-9.txt:Parameter ID:         mxatt (0x0009)
+h248-9.txt:Description:          The maximum number of attempts the user is given to enter a valid digit
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      1 upwards.
+h248-9.txt:Default:              1
+h248-9.txt:Parameter name:       DigitMap
+h248-9.txt:Parameter ID:         dm (0x000a)
+h248-9.txt:Description:          The name of a digit map active on the termination.
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:    For text encoding, any string matching the NAME production. The equivalent
+h248-9.txt:Default:            None.
+h248-9.txt:Parameter name:     Speed
+h248-9.txt:Parameter ID:       sp (0x000b)
+h248-9.txt:Description:        The relative playback speed of each prompt specifiable as a positive (faster) or
+h248-9.txt:Type:               Integer
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    –99 upwards.
+h248-9.txt:Default:            0
+h248-9.txt:Parameter name:     Volume
+h248-9.txt:Parameter ID:       vl (0x000c)
+h248-9.txt:Description:        The relative playout volume of each prompt specifiable as a positive (louder)
+h248-9.txt:Type:               Integer
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    Implementation dependent.
+h248-9.txt:Default:            0
+h248-9.txt:Parameter name:     Offset
+h248-9.txt:Parameter ID:       off (0x000d)
+h248-9.txt:Description:        Specifies the offset into the initial prompt at which to start playing. A positive
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0, positive, or negative. The absolute value cannot exceed the length of the
+h248-9.txt:Default:              0
+h248-9.txt:Parameter name:       RestartKey
+h248-9.txt:Parameter ID:         rsk (0x000e)
+h248-9.txt:Description:          Defines a key sequence consisting of a command key optionally followed by
+h248-9.txt:                      zero or more keys. This key sequence has the following action: discard any
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Reinput Key
+h248-9.txt:Parameter ID:         rik (0x000f)
+h248-9.txt:Description:          Defines a key sequence consisting of a command key optionally followed by
+h248-9.txt:                      zero or more keys. This key sequence has the following action: discard any
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Return Key
+h248-9.txt:Parameter ID:         rtk (0x0010)
+h248-9.txt:Description:       Defines a key sequence consisting of a command key optionally followed by
+h248-9.txt:                   zero or more keys. This key sequence has the following action: terminate the
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    Iterations
+h248-9.txt:Parameter ID:      it (0x0011)
+h248-9.txt:Description:       The maximum number of times an announcement is to be played. Identical to
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   See "Play" in aasb.
+h248-9.txt:Default:           1
+h248-9.txt:Parameter name:    Interval
+h248-9.txt:Parameter ID:      iv (0x0012)
+h248-9.txt:Description:       The interval of silence to be inserted between iterative plays. Specified in units
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   See "Play" in aasb.
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    EndInputKey
+h248-9.txt:Parameter ID:      eik (0x0013)
+h248-9.txt:Description:          This parameter indicates the digit used to signal the end of input. When the
+h248-9.txt:                      Number of Digits the following applies:
+h248-9.txt:                      If the end input key is not present, the end of input is indicated:
+h248-9.txt:                      If the end input key is present, the end of input is indicated:
+h248-9.txt:Type:                 Octet string (size (1..2))
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Implementation dependent
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       IncludeEndInputKey
+h248-9.txt:Parameter ID:         iek (0x0014)
+h248-9.txt:Description:          By default the 'EndInputKey' is not included in the collected digits returned to
+h248-9.txt:Type:                 Boolean
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      TRUE or FALSE.
+h248-9.txt:Default:              FALSE.
+h248-9.txt:Parameter name:       VoiceInformation
+h248-9.txt:Parameter ID:         vi (0x0015)
+h248-9.txt:Description:          Specifies how the ARF accepts voice input. The default value "dtmfonly"
+h248-9.txt:                      input and reports both: DTMF digits and spoken digits. The value "dtmfkills"
+h248-9.txt:Type:              Enumeration
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   – "dtmfonly"            (0),
+h248-9.txt:Default:           "dtmfonly".
+h248-9.txt:Parameter name:    VoiceBack
+h248-9.txt:Parameter ID:      vc (0x0016)
+h248-9.txt:Description:       Specifies how recognized digits are played back to the user in case of voice
+h248-9.txt:Type:              Enumeration
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   – "novoiceback"         (0),
+h248-9.txt:Default:           "novoiceback".
+h248-9.txt:Parameter name:    InapPromptTimer
+h248-9.txt:Parameter ID:      ipt (0x0017)
+h248-9.txt:Description:       The maximum amount of time to play and possibly replay an announcement or
+h248-9.txt:                   The following special handling has to be considered:
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0 or more tenths of seconds
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Absolute Volume
+h248-9.txt:Parameter ID:         absvl (0x0018)
+h248-9.txt:Description:          The absolute playback volume of announcement specified in decibels. The
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0 and upwards (in decibels).
+h248-9.txt:Default:              0 (No absolute volume applied).
+h248-9.txt:Parameter name:       Skip Interval
+h248-9.txt:Parameter ID:         skint (0x0019)
+h248-9.txt:Description:          Indicates how far the MG should skip forward or backwards when forward or
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      1 or more milliseconds
+h248-9.txt:Default:              6000 (6 seconds).
+h248-9.txt:Parameter name:       Fast Foward Key
+h248-9.txt:Parameter ID:         ffk (0x001a)
+h248-9.txt:Description:          Indicates which DTMF digits map to a fast forward operation. On detection of
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:    Rewind Key
+h248-9.txt:Parameter ID:      rwk (0x001b)
+h248-9.txt:Description:       Indicates which DTMF digits map to a rewind operation. On detection of the
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    Mask Digits
+h248-9.txt:Parameter ID:      mkdt (0x001c)
+h248-9.txt:Description:       Indicates whether the received digits may be stored in a log file by the MG.
+h248-9.txt:Type:              Boolean
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   "On"      (0x0001):     Yes, DTMF inputs may be captured in MG log files
+h248-9.txt:                   "Off"     (0x0002):     No, DTMF inputs may not be captured in MG log files
+h248-9.txt:Default:           Off.
+h248-9.txt:Parameter name:    Volume Interval
+h248-9.txt:Parameter ID:      volint (0x001d)
+h248-9.txt:Description:       Indicates the percentage increase or decrease in volume when the volume up or
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Any positive integer.
+h248-9.txt:Default:           10%
+h248-9.txt:Parameter name:    Volume Up Key
+h248-9.txt:Parameter ID:      volup (0x001e)
+h248-9.txt:Description:       Indicates which DTMF digits map to a volume up operation. On detection of
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Volume Down Key
+h248-9.txt:Parameter ID:         voldwn (0x001f)
+h248-9.txt:Description:          Indicates which DTMF digits map to a volume down operation. On detection
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Speed Interval
+h248-9.txt:Parameter ID:         spdint (0x0020)
+h248-9.txt:Description:          Indicates the percentage increase or decrease in speed when the speed up or
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any positive integer.
+h248-9.txt:Default:              10%
+h248-9.txt:Parameter name:       Speed Up Key
+h248-9.txt:Parameter ID:         spdup (0x0021)
+h248-9.txt:Description:          Indicates which DTMF digits map to a speed up operation. On detection of the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:    Speed Down Key
+h248-9.txt:Parameter ID:      spddwn (0x0022)
+h248-9.txt:Description:       Indicates which DTMF digits map to a speed down operation. On detection of
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    Pause Interval
+h248-9.txt:Parameter ID:      pseint (0x0023)
+h248-9.txt:Description:       Indicates for how long the playout of a message is paused when a pause key is
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Any positive integer in milliseconds.
+h248-9.txt:Default:           10000 (10 seconds).
+h248-9.txt:Parameter name:    Pause Key
+h248-9.txt:Parameter ID:      pse (0x0024)
+h248-9.txt:Description:       Indicates which DTMF digits map to a pause operation. On detection of the
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    Resume Key
+h248-9.txt:Parameter ID:      rsm (0x0025)
+h248-9.txt:Description:          Indicates which DTMF digits map to a resume operation. On detection of the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Prompt Start Key
+h248-9.txt:Parameter ID:         pstart (0x0026)
+h248-9.txt:Description:          Indicates which DTMF digits map to a prompt start key operation. On
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Prompt End Key
+h248-9.txt:Parameter ID:         pend (0x0027)
+h248-9.txt:Description:          Indicates which DTMF digits map to a prompt end key operation. On detection
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       External Control Key
+h248-9.txt:Parameter ID:         extkey (0x0028)
+h248-9.txt:Description:          Indicates which DTMF digits map to an external key operation. Its function on
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:        A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:                None.
+h248-9.txt:An alternative mode of usage is that suggested in the documentation of the offset parameter: the
+h248-9.txt:The command keys that apply to the prompting phase are:
+h248-9.txt:The commands keys that apply to the digit collection phase are:
+h248-9.txt:that for ordinary digit maps, with two exceptions:
+h248-9.txt:in angle brackets <> to make them stand out. It relies on two logical buffers: a digit collection
+h248-9.txt:         digit collection buffer if:
+h248-9.txt:3)       Process the appropriate one of the following three cases:
+h248-9.txt:         a) <NonInterruptiblePlay> is TRUE:
+h248-9.txt:         b) <NonInterruptiblePlay> is FALSE and digit collection buffer is non-empty:
+h248-9.txt:         c) <NonInterruptiblePlay> is FALSE and digit collection buffer is empty:
+h248-9.txt:Package name:           AAS recording package
+h248-9.txt:Package ID:             aasrec (0x0035)
+h248-9.txt:Description:            AAS recording package: extends the AAS base package by providing signals
+h248-9.txt:Version:                3
+h248-9.txt:Extends:                aasb (0x0033) version 3.
+h248-9.txt:Property name:          Maximum temporary record life
+h248-9.txt:Property ID:            maxtrl (0x0003)
+h248-9.txt:Description:            Determines the maximum life of a temporary recording, in seconds, following
+h248-9.txt:Type:                   Integer
+h248-9.txt:Possible values:        1 upwards
+h248-9.txt:Default:                None
+h248-9.txt:Defined in:             TerminationState
+h248-9.txt:Characteristics:        read/write.
+h248-9.txt:Event name:         Audio operation failure
+h248-9.txt:Event ID:           audfail (0x0001)
+h248-9.txt:Description:        This package adds the following codepoints for the return code returned by the
+h248-9.txt:Event name:         PlayRecord success
+h248-9.txt:Event ID:           precsucc (0x0002)
+h248-9.txt:Description:        Signifies the successful completion of a playrec signal.
+h248-9.txt:Parameter name:     Amount played
+h248-9.txt:Parameter ID:       ap (0x0001)
+h248-9.txt:Description:        The length played of the initial prompt, if that prompt was interrupted, in 10 ms
+h248-9.txt:Type:               Integer
+h248-9.txt:Optional:           No
+h248-9.txt:Possible values:    0 upwards.
+h248-9.txt:Default:            1
+h248-9.txt:Parameter name:       Number of attempts
+h248-9.txt:Parameter ID:         na (0x0002)
+h248-9.txt:Description:          The number of times the user was prompted to make a recording.
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:      1 upwards.
+h248-9.txt:Default:              1
+h248-9.txt:Parameter name:       Recording result
+h248-9.txt:Parameter ID:         res (0x0003)
+h248-9.txt:Description:          The particular way in which the recording process terminated successfully.
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:      "normal" (0): a temporary audio segment has been recorded, and end of speech
+h248-9.txt:                      "trunc" (1): a temporary audio segment has been recorded, and it was truncated
+h248-9.txt:                      "keyend" (2): the Return Key command key sequence was detected. No
+h248-9.txt:                      "endinput" (3): the EndInput Key command key sequence was detected. A
+h248-9.txt:                      "endinput_norecord" (4): the EndInput Key command key sequence was
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Recording id
+h248-9.txt:Parameter ID:         ri (0x0004)
+h248-9.txt:Description:          A URI assigned to the physical segment recorded during a playrec signal. This
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+h248-9.txt:                      identifier is an http://URI, it must not have a query part.
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:    Record duration
+h248-9.txt:Parameter ID:      rdur (0x0005)
+h248-9.txt:Description:       The total length of the recorded audio segment in 10 ms units.
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   0 upwards. If the operation was terminated by the Return Key sequence, rdur
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    End Key
+h248-9.txt:Parameter ID:      ek (0x0006)
+h248-9.txt:Description:       This parameter indicates the DTMF digit/s (if any) that lead to the completion
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    Recording Length
+h248-9.txt:Parameter ID:      reclen (0x0007)
+h248-9.txt:Description:       This parameter indicates the length in bytes of the recorded content.
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   0 upwards in bytes.
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    Control Digits collected
+h248-9.txt:Parameter ID:      contdc (0x0008)
+h248-9.txt:Description:       This parameter contains the Control Digits that were collected during the
+h248-9.txt:Type:              Sub-list of String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Each of String encoded as ControlDigit specified by the following ABNF:
+h248-9.txt:Default:              None.
+h248-9.txt:Signal name:          PlayRecord
+h248-9.txt:Signal ID:            playrec (0x0002)
+h248-9.txt:Description:          Plays a prompting announcement (optionally) and records voice input by the
+h248-9.txt:Signal type:          Defaults to TO
+h248-9.txt:Duration:             Defaults to 30000 (5 minutes) or as provisioned for the termination.
+h248-9.txt:Parameter name:       InitialPrompt
+h248-9.txt:Parameter ID:         ip (0x0001)
+h248-9.txt:Description:          The initial announcement prompting the user to speak for the record. May
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       NoSpeechPrompt
+h248-9.txt:Parameter ID:         ns (0x0002)
+h248-9.txt:Description:          Played after the user has failed to speak following a prompt. Consists of one or
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    SuccessAnnouncement
+h248-9.txt:Parameter ID:      sa (0x0003)
+h248-9.txt:Description:       Played when recording has succeeded. Consists of one or more audio
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    FailureAnnouncement
+h248-9.txt:Parameter ID:      fa (0x0004)
+h248-9.txt:Description:       Played when all recording attempts have failed. Consists of one or more audio
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    MaxAttempts
+h248-9.txt:Parameter ID:      mxatt (0x0005)
+h248-9.txt:Description:       The maximum number of prompts the user is given to speak. Prompts resulting
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   1 upwards
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    PreSpeechTimer
+h248-9.txt:Parameter ID:      prt (0x0006)
+h248-9.txt:Description:       The amount of time to wait for the user to initially speak. Specified in units of
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:      0 upwards (0 indicates that the voice activity detection function is turned off,
+h248-9.txt:Default:              Provisioned.
+h248-9.txt:Parameter name:       PostSpeechTimer
+h248-9.txt:Parameter ID:         pst (0x0007)
+h248-9.txt:Description:          The amount of silence necessary after the end of the last speech segment for
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0 upwards (0 indicates that the voice activity detection function is turned off,
+h248-9.txt:Default:              Provisioned.
+h248-9.txt:Parameter name:       RecordLengthTimer
+h248-9.txt:Parameter ID:         rlt (0x0008)
+h248-9.txt:Description:          The maximum allowable length of the recording, not including pre or post
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:      0 upwards
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       RecordingIdentifier
+h248-9.txt:Parameter ID:         rid (0x0009)
+h248-9.txt:Description:          Specifies a URI to be assigned to the physical segment which is to be recorded
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:      Either "$" or a physical segment identifier satisfying the syntax of
+h248-9.txt:                      clause 6.2.5.2. If the identifier is an http://URL, it must not have a query part.
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Speed
+h248-9.txt:Parameter ID:         sp (0x000a)
+h248-9.txt:Description:          The relative playback speed of each prompt specifiable as a positive (faster) or
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      –99 upwards
+h248-9.txt:Default:              0
+h248-9.txt:Parameter name:       Volume
+h248-9.txt:Parameter ID:         vl (0x000b)
+h248-9.txt:Description:          The relative playback volume of each prompt specifiable as a positive (louder)
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Implementation dependent
+h248-9.txt:Default:              0
+h248-9.txt:Parameter name:       Offset
+h248-9.txt:Parameter ID:         off (0x000c)
+h248-9.txt:Description:          Specifies the offset into the initial prompt at which to start playing. A positive
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0, positive, or negative. The absolute value cannot exceed the length of the
+h248-9.txt:Default:              0
+h248-9.txt:Parameter name:       RestartKey
+h248-9.txt:Parameter ID:         rsk (0x000d)
+h248-9.txt:Description:          Defines a key sequence consisting of a command key optionally followed by
+h248-9.txt:                      zero or more keys. This key sequence has the following action: discard any
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       ReinputKey
+h248-9.txt:Parameter ID:         rik (0x000e)
+h248-9.txt:Description:          Defines a key sequence consisting of a command key optionally followed by
+h248-9.txt:                      zero or more keys. This key sequence has the following action: discard any
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       ReturnKey
+h248-9.txt:Parameter ID:         rtk (0x000f)
+h248-9.txt:Description:          Defines a key sequence consisting of a command key optionally followed by
+h248-9.txt:                      zero or more keys. This key sequence has the following action: terminate the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       EndInputKey
+h248-9.txt:Parameter ID:         eik (0x0010)
+h248-9.txt:Description:          Defines a key sequence consisting of a command key optionally followed by
+h248-9.txt:                      zero or more keys. This key sequence has the following action: terminate the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Record direction
+h248-9.txt:Parameter ID:         rd (0x0011)
+h248-9.txt:Description:          The record direction indicates the direction that the media is to be received.
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "Ext" (0x01): External indicates that recording is on the media which is
+h248-9.txt:                      "Int" (0x02): Internal indicates that recording is on the media received from the
+h248-9.txt:Default:              External.
+h248-9.txt:Parameter name:       Absolute Volume
+h248-9.txt:Parameter ID:         absvl (0x0012)
+h248-9.txt:Description:          The absolute playback volume of announcement specified in decibels. The
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0 and upwards (in decibels).
+h248-9.txt:Default:              0 (No absolute volume applied).
+h248-9.txt:Parameter name:       Storage Mode
+h248-9.txt:Parameter ID:         sm (0x0013)
+h248-9.txt:Description:          This parameter enables the MGC to indicate whether or not the recording
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "overwrite" (0x0001): Indicates that the recording should overwrite any
+h248-9.txt:                      "append" (0x0002):       Indicates that the recording shall be appended to any
+h248-9.txt:Default:              overwrite (0x0001).
+h248-9.txt:Parameter name:       Skip Interval
+h248-9.txt:Parameter ID:         skint (0x0014)
+h248-9.txt:Description:          Indicates how far the MG should skip forward or backwards when forward or
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      1 or more milliseconds
+h248-9.txt:Default:              6000 (6 seconds).
+h248-9.txt:Parameter name:       Fast Foward Key
+h248-9.txt:Parameter ID:         ffk (0x0015)
+h248-9.txt:Description:          Indicates which DTMF digits map to a fast forward operation. On detection of
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Rewind Key
+h248-9.txt:Parameter ID:         rwk (0x0016)
+h248-9.txt:Description:          Indicates which DTMF digits map to a rewind operation. On detection of the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes.
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Volume Interval
+h248-9.txt:Parameter ID:         volint (0x0017)
+h248-9.txt:Description:          Indicates the percentage increase or decrease in volume when the volume up or
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any positive integer.
+h248-9.txt:Default:              10%
+h248-9.txt:Parameter name:       Volume Up Key
+h248-9.txt:Parameter ID:         volup (0x0018)
+h248-9.txt:Description:          Indicates which DTMF digits map to a volume up operation. On detection of
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Volume Down Key
+h248-9.txt:Parameter ID:         voldwn (0x0019)
+h248-9.txt:Description:          Indicates which DTMF digits map to a volume down operation. On detection
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Speed Interval
+h248-9.txt:Parameter ID:         spdint (0x001a)
+h248-9.txt:Description:          Indicates the percentage increase or decrease in speed when the speed up or
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any positive integer.
+h248-9.txt:Default:              10%
+h248-9.txt:Parameter name:       Speed Up Key
+h248-9.txt:Parameter ID:         spdup (0x001b)
+h248-9.txt:Description:          Indicates which DTMF digits map to a speed up operation. On detection of the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Speed Down Key
+h248-9.txt:Parameter ID:         spddwn (0x001c)
+h248-9.txt:Description:          Indicates which DTMF digits map to a speed down operation. On detection of
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Pause Interval
+h248-9.txt:Parameter ID:         pse (0x001d)
+h248-9.txt:Description:          Indicates for how long the playout of a message is paused when a pause key is
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any positive integer in milliseconds.
+h248-9.txt:Default:              10000 (10 seconds).
+h248-9.txt:Parameter name:       Pause Key
+h248-9.txt:Parameter ID:         pse (0x001e)
+h248-9.txt:Description:          Indicates which DTMF digits map to a pause operation. On detection of the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Resume Key
+h248-9.txt:Parameter ID:         rsm (0x001f)
+h248-9.txt:Description:          Indicates which DTMF digits map to a resume operation. On detection of the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Prompt Start Key
+h248-9.txt:Parameter ID:         pstart (0x0020)
+h248-9.txt:Description:          Indicates which DTMF digits map to a prompt start key operation. On
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Prompt End Key
+h248-9.txt:Parameter ID:         pend (0x0021)
+h248-9.txt:Description:          Indicates which DTMF digits map to a prompt end key operation. On detection
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       External Control Key
+h248-9.txt:Parameter ID:         extkey (0x0022)
+h248-9.txt:Description:          Indicates which DTMF digits map to an external key operation. Its function on
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Signal name:          Make persistent
+h248-9.txt:Signal ID:            makepers (0x0003)
+h248-9.txt:Description:          Makes the temporary audio segment identified by the given URI into a
+h248-9.txt:Signal Type:          Defaults to BR
+h248-9.txt:Duration:             Not applicable for default type.
+h248-9.txt:Parameter name:       Recording Identifier
+h248-9.txt:Parameter ID:         rid (0x0001)
+h248-9.txt:Description:          Identifies the audio segment which is to be made persistent.
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:        A physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+h248-9.txt:                        identifier is an http://URL, it must not have a query part.
+h248-9.txt:Default:                None.
+h248-9.txt:If the MG recognizes a DTMF command key sequence, it takes the appropriate action:
+h248-9.txt:The commands keys that apply to the prompting phase are:
+h248-9.txt:The commands keys that apply to the digit collection phase are:
+h248-9.txt:Package name:       Advanced audio server segment management package
+h248-9.txt:Package ID:         aassm (0x0036)
+h248-9.txt:Description:        The Advanced audio server segment management package provides a
+h248-9.txt:Version:                1
+h248-9.txt:Extends:                None.
+h248-9.txt:Property name:          AAS segment control termination name
+h248-9.txt:Property Id:            ctlnam (0x0001)
+h248-9.txt:Description:            Name of the AAS Segment Control Termination, if any, supported by the MG.
+h248-9.txt:Type:                   integer
+h248-9.txt:Possible values:        As provisioned in the MG. The value MUST NOT contain a wildcard.
+h248-9.txt:Default:                None
+h248-9.txt:Defined in:             TerminationState on ROOT.
+h248-9.txt:Characteristics:        Read only.
+h248-9.txt:Signal name:            Delete persistent
+h248-9.txt:Signal ID:              delpers (0x0001)
+h248-9.txt:Description:            Deletes an identified persistent audio segment.
+h248-9.txt:SignalType:             BR
+h248-9.txt:Duration:               Not applicable.
+h248-9.txt:Parameter name:       Segment Identifier
+h248-9.txt:Parameter ID:         sid (0x0001)
+h248-9.txt:Description:          Identifies the audio segment which is to be deleted.
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:      A physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+h248-9.txt:                      identifier is an http://URI, it must not have a query part.
+h248-9.txt:Default:              None.
+h248-9.txt:Signal name:          Override audio
+h248-9.txt:Signal ID:            override (0x0002)
+h248-9.txt:Description:          Overlays the specified provisioned audio segment with a different persistent
+h248-9.txt:SignalType:           BR
+h248-9.txt:Duration:             Not applicable.
+h248-9.txt:Parameter name:       Target Segment
+h248-9.txt:Parameter ID:         tgtsid (0x0001)
+h248-9.txt:Description:          Identifies the segment which is to be temporarily replaced by a new segment.
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:      A physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+h248-9.txt:                      identifier is an http://URI, it must not have a query part.
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Overriding Segment
+h248-9.txt:Parameter ID:         oversid (0x0002)
+h248-9.txt:Description:          Identifies the segment which is to be played out in place of the target segment.
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:      A physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+h248-9.txt:                      identifier is an http://URI, it must not have a query part.
+h248-9.txt:Default:              None.
+h248-9.txt:Signal name:            RestoreAudio
+h248-9.txt:Signal ID:              restore (0x0003)
+h248-9.txt:Description:            Removes a previously imposed overlay segment, so that subsequent references
+h248-9.txt:SignalType:             BR
+h248-9.txt:Duration:               Not applicable.
+h248-9.txt:Parameter name:         Target Segment
+h248-9.txt:Parameter ID:           tgtsid (0x0001)
+h248-9.txt:Description:            Identifies the segment from which any overlay is to be removed.
+h248-9.txt:Type:                   String
+h248-9.txt:Optional:               No
+h248-9.txt:Possible values:        A physical segment identifier satisfying the syntax of clause 6.2.5.2. If the
+h248-9.txt:                        identifier is an http://URI, it must not have a query part.
+h248-9.txt:Default:                None.
+h248-9.txt:Package name:           ASR Package
+h248-9.txt:Package ID:             asr (0x00a6)
+h248-9.txt:Description:            The ASR package provides a signal to play an ASR and an event to indicate
+h248-9.txt:Version:                1
+h248-9.txt:Extends:                None.
+h248-9.txt:Event Name:             ASR Failure
+h248-9.txt:Event ID:             asrfail (0x0001)
+h248-9.txt:Description:          A return code indicating why an ASR operation failed. This package adds the
+h248-9.txt:                      event:
+h248-9.txt:Event name:           ASR Success
+h248-9.txt:Event ID:             asrsucc (0x0002)
+h248-9.txt:Description:          This event signifies the successful completion of playout of the ASR signal and
+h248-9.txt:Parameter name:       ASR Result
+h248-9.txt:Parameter ID:         asrr (0x0001)
+h248-9.txt:Description:          An octet string was generated by the ASR signal. The type may be the EMMA
+h248-9.txt:Type:                 OctectString
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:      An octet text string describing the voice input,
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       ASR Result Format Type
+h248-9.txt:Parameter ID:         asrrft (0x0002)
+h248-9.txt:Description:         Indicates the ASR result format type.
+h248-9.txt:Type:                Enumeration
+h248-9.txt:Optional:            Yes
+h248-9.txt:Possible values:     EMMA (0x0001): The type of result format is EMMA. EMMA can support
+h248-9.txt:                     Other (0x0002): Other format, for further study.
+h248-9.txt:Default:             EMMA (0x0001).
+h248-9.txt:Signal name:         ASR Recognition With Grammar Script
+h248-9.txt:Signal ID:           asrwgs (0x0001)
+h248-9.txt:Description:         This signal triggers the ASR function with grammar script.
+h248-9.txt:SignalType:          Brief
+h248-9.txt:Duration:            N/A.
+h248-9.txt:Parameter name:      InitialPrompt
+h248-9.txt:Parameter ID:        ip (0x0001)
+h248-9.txt:Description:         The initial announcement prompting the user to input voice. May consist of
+h248-9.txt:Type:                String
+h248-9.txt:Optional:            Yes
+h248-9.txt:Possible values:     Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:             None.
+h248-9.txt:Parameter name:      Recognition Grammar Script
+h248-9.txt:Parameter ID:        rgs (0x0002)
+h248-9.txt:Description:         This parameter indicates the ASR grammar. The content format of the ASR
+h248-9.txt:Type:                OctetString
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:      The grammar script conforming to the W3C SRGS or other grammar format.
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Recognition Grammar Script Type
+h248-9.txt:Parameter ID:         rgst (0x0003)
+h248-9.txt:Description:          The recognition grammar script type indicates the recognition grammar script
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "SRGS" (0x0001): W3C's Speech Recognition Grammar Specification
+h248-9.txt:                      "Other" (0x0002): User defined.
+h248-9.txt:Default:              SRGS (0x0001).
+h248-9.txt:Parameter name:       Recognition Grammar Script Format
+h248-9.txt:Parameter ID:         rgsf (0x0004)
+h248-9.txt:Description:          This parameter indicates the grammar script form, includes ABNF and XML.
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "ABNF" (0x0001): The script uses ABNF form.
+h248-9.txt:                      "XML" (0x0002): The script uses XML form.
+h248-9.txt:Default:              ABNF (0x0001).
+h248-9.txt:Parameter name:       Recognition Mode
+h248-9.txt:Parameter ID:         rm (0x0005)
+h248-9.txt:Description:          Indicates which mode the speech recognizer will adopt.
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "Normal" (0x0001): Normal mode recognition tries to match all of the speech
+h248-9.txt:                      "Hotword" (0x0002): Hotword mode is where the recognizer looks for a match
+h248-9.txt:Default:           Normal (0x0001).
+h248-9.txt:Parameter name:    End Input Key
+h248-9.txt:Parameter ID:      eik (0x0006)
+h248-9.txt:Description:       Indicates to end the speech recognition. See clause 9.3.1.1.19 for further
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Implementation dependent.
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    Maximum Recognition Time
+h248-9.txt:Parameter ID:      mrt (0x0007)
+h248-9.txt:Description:       Defines the maximum time to wait for recognition of speech, specified in units
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Any integer greater than 0.
+h248-9.txt:Default:           None
+h248-9.txt:Parameter name:    Waiting Time for Input
+h248-9.txt:Parameter ID:      wit (0x0008)
+h248-9.txt:Description:       Defines the time to wait to detect user input, specified in units of
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Any integer greater than 0.
+h248-9.txt:Default:           Provisioned.
+h248-9.txt:Parameter name:    Recognition Precision
+h248-9.txt:Parameter ID:      ra (0x0009)
+h248-9.txt:Description:       Depending on the implementation and capability of the recognizer resource, it
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0-100
+h248-9.txt:Default:              Provisioned.
+h248-9.txt:Parameter name:       Recognition Sensitivity
+h248-9.txt:Parameter ID:         rs (0x000a)
+h248-9.txt:Description:          To filter out background noise so that it is not mistaken for speech, the
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0-100
+h248-9.txt:Default:              Provisioned.
+h248-9.txt:Parameter name:       Record File
+h248-9.txt:Parameter ID:         rf (0x000b)
+h248-9.txt:Description:          The location to save the record: when voice-to-text conversion, the inputting
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      The record file specification conforming to the syntax described in clause 6.
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       PostSpeechTimer
+h248-9.txt:Parameter ID:         pst (0x000c)
+h248-9.txt:Description:          The amount of silence necessary after the end of the speech, specified in units
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      1 upwards.
+h248-9.txt:Default:              Provisioned.
+h248-9.txt:Signal name:          ASR recognition with grammar identifier
+h248-9.txt:Signal ID:            asrid (0x0002)
+h248-9.txt:Description:          This signal triggers the ASR function with grammar identifier.
+h248-9.txt:SignalType:           Brief
+h248-9.txt:Duration:             NA.
+h248-9.txt:Parameter name:     InitialPrompt
+h248-9.txt:Parameter ID:       ip (0x0001)
+h248-9.txt:Description:        The initial announcement prompting the user to input voice. May consist of
+h248-9.txt:Type:               String
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:            None.
+h248-9.txt:Parameter name:     Recognition Grammar Identifier
+h248-9.txt:Parameter ID:       rgid (0x0002)
+h248-9.txt:Description:        The parameter indicates the ASR grammar identifier. The identifier conforms
+h248-9.txt:Type:               String
+h248-9.txt:Optional:           No
+h248-9.txt:Possible values:    The grammar identifier conforming to the syntax described in clause 6.
+h248-9.txt:Default:            None.
+h248-9.txt:Parameter name:     Recognition Grammar Script Type
+h248-9.txt:Parameter ID:       rgst (0x0003)
+h248-9.txt:Description:        The recognition grammar script type indicates the recognition grammar script
+h248-9.txt:Type:               Enumeration
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    SRGS (0x0001): W3C's Speech Recognition Grammar Specification Version 1
+h248-9.txt:                    Other (0x0002): User defined.
+h248-9.txt:Default:            SRGS (0x0001).
+h248-9.txt:Parameter name:     Recognition Grammar Script Format
+h248-9.txt:Parameter ID:       rgsf (0x0004)
+h248-9.txt:Description:        The recognition grammar script format indicates the grammar script form,
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "ABNF" (0x0001): The script uses ABNF form.
+h248-9.txt:                      "XML" (0x0002): The script uses XML form.
+h248-9.txt:Default:              ABNF (0x0001).
+h248-9.txt:Parameter name:       Recognition Mode
+h248-9.txt:Parameter ID:         rm (0x0005)
+h248-9.txt:Description:          Indicates which mode the speech recognizer will adopt.
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "Normal" (0x0001): Normal mode recognition tries to match all of the speech
+h248-9.txt:                      "Hotword" (0x0002): Hotword mode is where the recognizer looks for a match
+h248-9.txt:Default:              Normal (0x0001).
+h248-9.txt:Parameter name:       End Input Key
+h248-9.txt:Parameter ID:         eik (0x0006)
+h248-9.txt:Description:          Indicates to end the speech recognition. See clause 9.3.1.1.19 for further
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Implementation dependent.
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Maximum Recognition Time
+h248-9.txt:Parameter ID:         mrt (0x0007)
+h248-9.txt:Description:          Defines the maximum time to wait for recognition of speech, specified in units
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any integer greater than 0.
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Waiting Time for Input
+h248-9.txt:Parameter ID:         wit (0x0008)
+h248-9.txt:Description:       Defines the time to wait to detect user input, specified in units of
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   Any integer greater than 0.
+h248-9.txt:Default:           Provisioned.
+h248-9.txt:Parameter name:    Recognition Precision
+h248-9.txt:Parameter ID:      ra (0x0009)
+h248-9.txt:Description:       Depending on the implementation and capability of the recognizer resource it
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   0-100
+h248-9.txt:Default:           Provisioned.
+h248-9.txt:Parameter name:    Recognition Sensitivity
+h248-9.txt:Parameter ID:      rs (0x000a)
+h248-9.txt:Description:       To filter out background noise so that it is not mistaken for speech, the
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   0-100
+h248-9.txt:Default:           Provisioned.
+h248-9.txt:Parameter name:    Record File
+h248-9.txt:Parameter ID:      rf (0x000b)
+h248-9.txt:Description:       The location to save the record: when voice-to-text conversion, the inputting
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   The record file specification conforming to the syntax described in clause 6.
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:         PostSpeechTimer
+h248-9.txt:Parameter ID:           pst (0x000c)
+h248-9.txt:Description:            The amount of silence necessary after the end of the speech, specified in units
+h248-9.txt:Type:                   Integer
+h248-9.txt:Optional:               Yes
+h248-9.txt:Possible values:        1 upwards.
+h248-9.txt:Default:                Provisioned.
+h248-9.txt:Package name:           Advanced Audio Server base package enhancement
+h248-9.txt:Package ID:             aastts (0x00a8)
+h248-9.txt:Description:            The Advanced Audio Server (AAS) package for TTS enhancement provides a
+h248-9.txt:Version:                2
+h248-9.txt:Extends:                None.
+h248-9.txt:Event name:             TTS operation failure
+h248-9.txt:Event ID:               ttsfail (0x0001)
+h248-9.txt:Description:            Signifies the failure of a TTS operation subsequent to the return of the response
+h248-9.txt:Parameter name:         Return Code
+h248-9.txt:Parameter ID:           rc (0x0001)
+h248-9.txt:Description:            A return code indicating why an Advanced Audio Server operation failed.
+h248-9.txt:Type:                   Integer
+h248-9.txt:Optional:               No
+h248-9.txt:Possible values:        Failure return codes range from 600-699. Failure codes 600 to 617 report the
+h248-9.txt:                        618: SSML text syntax error.
+h248-9.txt:Default:                None.
+h248-9.txt:Event name:             Mark Detection
+h248-9.txt:Event ID:               md (0x0002)
+h248-9.txt:Description:          This event is enabled to detect the marks that are embedded in a media stream.
+h248-9.txt:Parameter name:       Mark Value
+h248-9.txt:Parameter ID:         mv (0x0001)
+h248-9.txt:Description:          This parameter contains the marker tag value to identify the mark.
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A Unicode TEXT Format CHAR string, for example "here", to indicate a
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Time Value
+h248-9.txt:Parameter ID:         tv (0x0002)
+h248-9.txt:Description:          This parameter contains a time value indicating the instant in the media stream
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      An NTP timestamp, a 64-bit number in decimal form. See Section 3 of
+h248-9.txt:Default:              None.
+h248-9.txt:Signal name:          Play Segment Identifier
+h248-9.txt:Signal ID:            playsid (0x0001)
+h248-9.txt:Description:          Plays one or more TTS Segment Identifier(s).
+h248-9.txt:SignalType:           Defaults to BR (play continues until the specified or default number of
+h248-9.txt:Duration:             Not applicable to BR signals.
+h248-9.txt:Parameter name:     Announcement
+h248-9.txt:Parameter ID:       an (0x0001)
+h248-9.txt:Description:        Text to be played. Consists of one or more text Segment Identifier(s). The
+h248-9.txt:Type:               String
+h248-9.txt:Optional:           No
+h248-9.txt:Possible values:    One or more segment identifiers adhering to the syntax described in clause 6.
+h248-9.txt:Default:            None.
+h248-9.txt:Parameter name:     Segment Type
+h248-9.txt:Parameter ID:       sgt (0x0002)
+h248-9.txt:Description:        Indicates the segment type.
+h248-9.txt:Type:               Enumeration
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    "SSML" (0x0001): The segment type is SSML.
+h248-9.txt:                    "Other" (0x0002): Other format, for further study.
+h248-9.txt:Default:            SSML (0x0001).
+h248-9.txt:Parameter name:     Iterations
+h248-9.txt:Parameter ID:       it (0x0003)
+h248-9.txt:Description:        The maximum number of times an announcement is to be played.
+h248-9.txt:Type:               Integer
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    As described below, playout may end before the specified number of iterations
+h248-9.txt:Default:            1
+h248-9.txt:Parameter name:     Interval
+h248-9.txt:Parameter ID:       iv (0x0004)
+h248-9.txt:Description:        The interval of silence to be inserted between iterative plays. Specified in units
+h248-9.txt:Type:               Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0 upwards.
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Direction
+h248-9.txt:Parameter ID:         di (0x0005)
+h248-9.txt:Description:          The direction parameter can be used to indicate the direction that the TTS is to
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "Ext" (0x01): External indicates that the TTS is sent from the MG to an
+h248-9.txt:                      "Int" (0x02): Internal indicates that the TTS is played into the MG to the other
+h248-9.txt:                      "Both" (0x03): Both indicates internal and external behaviour.
+h248-9.txt:Default:              Ext (0x01).
+h248-9.txt:Signal name:          Play script
+h248-9.txt:Signal ID:            playscript (0x0002)
+h248-9.txt:Description:          Play a TTS script.
+h248-9.txt:SignalType:           Defaults to BR (play continues until the specified or default number of
+h248-9.txt:Duration:             Not applicable to BR signals.
+h248-9.txt:Parameter name:       Script
+h248-9.txt:Parameter ID:         script (0x0001)
+h248-9.txt:Description:          Script to be played.
+h248-9.txt:Type:                 Octet string
+h248-9.txt:Optional:             No
+h248-9.txt:Possible values:      A SSML script or other format script. The type of script is provided by the
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:    Script Type
+h248-9.txt:Parameter ID:      sct (0x0002)
+h248-9.txt:Description:       The script type to be played.
+h248-9.txt:Type:              Enumeration
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   "SSML" (0x0001): The type of script is SSML.
+h248-9.txt:                   "Other" (0x0002): Other Type (for extension).
+h248-9.txt:Default:           SSML (0x0001).
+h248-9.txt:Parameter name:    Iterations
+h248-9.txt:Parameter ID:      it (0x0003)
+h248-9.txt:Description:       The maximum number of times a script is to be played.
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   As described below, playout may end before the specified number of iterations
+h248-9.txt:Default:           1
+h248-9.txt:Parameter name:    Interval
+h248-9.txt:Parameter ID:      iv (0x0004)
+h248-9.txt:Description:       The interval of silence to be inserted between iterative plays. Specified in units
+h248-9.txt:Type:              Integer
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   0 upwards.
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    Direction
+h248-9.txt:Parameter ID:      di (0x0005)
+h248-9.txt:Description:       The direction parameter can be used to indicate the direction that the TTS is to
+h248-9.txt:Type:              Enumeration
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:        "Ext" (0x01): External indicates that the TTS is sent from the MG to an
+h248-9.txt:                        "Int" (0x02): Internal indicates that the TTS is played into the MG to the other
+h248-9.txt:                        "Both" (0x03): Both indicates internal and external behaviour.
+h248-9.txt:Default:                Ext (0x01).
+h248-9.txt:the normal way. If the signalType parameter is set to OO, this is the only way to end the TTS: the
+h248-9.txt:Package name:           Multimedia Play Package
+h248-9.txt:Package ID:             mpp (0x00a9)
+h248-9.txt:Description:            Multimedia Play Package indicates that the playout is associated with
+h248-9.txt:Version:                2
+h248-9.txt:Extends:                aasb (0x0033) version 3.
+h248-9.txt:Signal name:            Play
+h248-9.txt:Signal ID:              play (0x0001)
+h248-9.txt:Description:            Plays one or more multimedia segments.
+h248-9.txt:SignalType:             Defaults to BR (play continues until the specified or default number of
+h248-9.txt:Duration:               Not applicable to BR signals.
+h248-9.txt:Parameter name:         Announcement
+h248-9.txt:Parameter ID:           an (0x0001)
+h248-9.txt:Description:            An announcement to be played. Consists of one or more multimedia
+h248-9.txt:Type:                   String
+h248-9.txt:Optional:               No
+h248-9.txt:Possible values:        A sequence of segment specifications adhering to the syntax described in
+h248-9.txt:Default:                None.
+h248-9.txt:Parameter Name:         Iterations
+h248-9.txt:Parameter ID:           it (0x0002)
+h248-9.txt:Description:            The maximum number of times a multimedia announcement is to be played.
+h248-9.txt:Type:                   Integer
+h248-9.txt:Optional:               Yes
+h248-9.txt:Possible values:      As described below, playout may end before the specified number of iterations
+h248-9.txt:Default:              1
+h248-9.txt:Parameter name:       Interval
+h248-9.txt:Parameter ID:         iv (0x0003)
+h248-9.txt:Description:          The interval of silence to be inserted between iterative plays. Specified in units
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0 upwards.
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Speed
+h248-9.txt:Parameter ID:         sp (0x0004)
+h248-9.txt:Description:          The relative playback speed of multimedia announcement, specifiable as a
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      –99 upwards.
+h248-9.txt:Default:              0
+h248-9.txt:Parameter name:       Volume
+h248-9.txt:Parameter ID:         vl (0x0005)
+h248-9.txt:Description:          The relative playback volume of the audio component of a multimedia
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Implementation dependent.
+h248-9.txt:Default:              0
+h248-9.txt:Parameter name:       Announcement Direction
+h248-9.txt:Parameter ID:         di (0x0006)
+h248-9.txt:Description:        The direction parameter can be used to indicate the direction that the
+h248-9.txt:Type:               Enumeration
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    "Ext" (0x01): External indicates that the multimedia announcement is sent
+h248-9.txt:                    "Int" (0x02): Internal indicates that the announcement is played into the MG to
+h248-9.txt:                    "Both" (0x03): Both indicates internal and external behaviour.
+h248-9.txt:Default:            Ext (0x01).
+h248-9.txt:Parameter name:     Brightness
+h248-9.txt:Parameter ID:       btn (0x0007)
+h248-9.txt:Description:        The relative playback brightness of video in multimedia, specifiable as a
+h248-9.txt:Type:               Integer
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    –99 to 99
+h248-9.txt:Default:            0
+h248-9.txt:Parameter name:     Contrast
+h248-9.txt:Parameter ID:       ctn (0x0008)
+h248-9.txt:Description:        The relative playback contrast of video in multimedia, specifiable as a positive
+h248-9.txt:Type:               Integer
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    –99 to 99
+h248-9.txt:Default:            0
+h248-9.txt:Parameter name:     Offset
+h248-9.txt:Parameter ID:       off (0x0009)
+h248-9.txt:Description:        Specifies the offset into the announcement at which to start playing. A positive
+h248-9.txt:Type:               Integer
+h248-9.txt:Optional:               No
+h248-9.txt:Possible values:        0, positive, or negative. If the offset value is greater than the length of the
+h248-9.txt:Default:                0
+h248-9.txt:Parameter name:         Absolute Volume
+h248-9.txt:Parameter ID:           absvl (0x000a)
+h248-9.txt:Description:            The absolute playback volume of announcement specified in decibels. The
+h248-9.txt:Type:                   Integer
+h248-9.txt:Optional:               Yes
+h248-9.txt:Possible values:        0 and upwards (in decibels).
+h248-9.txt:Default:                0 (No absolute volume applied).
+h248-9.txt:Package name:           Multimedia Recording Package
+h248-9.txt:Package ID:             mrp (0x00b3)
+h248-9.txt:Description:            The Multimedia Recording Package indicates that the recording is associated
+h248-9.txt:Version:                2
+h248-9.txt:Extends:                aasrec (0x0035) version 3.
+h248-9.txt:Signal name:         PlayRecord
+h248-9.txt:Signal ID:           playrec (0x0002)
+h248-9.txt:Description:         Records a multimedia segment.
+h248-9.txt:SignalType:          Defaults to TO.
+h248-9.txt:Duration:            Defaults to 30000 (5 minutes) or as provisioned for the termination.
+h248-9.txt:Parameter name:      InitialPrompt
+h248-9.txt:Parameter ID:        ip (0x0001)
+h248-9.txt:Description:         The initial announcement prompting the user to speak for the record. May
+h248-9.txt:Type:                String
+h248-9.txt:Optional:            Yes
+h248-9.txt:Possible values:     Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:             None.
+h248-9.txt:Parameter name:      NoSpeechPrompt
+h248-9.txt:Parameter ID:        ns (0x0002)
+h248-9.txt:Description:         Played after the user has failed to speak following a prompt. Consists of one or
+h248-9.txt:Type:                String
+h248-9.txt:Optional:            Yes
+h248-9.txt:Possible values:     Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:             None.
+h248-9.txt:Parameter name:      SuccessAnnouncement
+h248-9.txt:Parameter ID:        sa (0x0003)
+h248-9.txt:Description:         Played when recording has succeeded. Consists of one or more multimedia
+h248-9.txt:Type:                String
+h248-9.txt:Optional:            Yes
+h248-9.txt:Possible values:      Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       FailureAnnouncement
+h248-9.txt:Parameter ID:         fa (0x0004)
+h248-9.txt:Description:          Played when all recording attempts have failed. Consists of one or more
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any announcement specification conforming to the syntax described in
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       MaxAttempts
+h248-9.txt:Parameter ID:         mxatt (0x0005)
+h248-9.txt:Description:          The maximum number of prompts the user is given to speak. Prompts resulting
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      1 upwards.
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       PreSpeechTimer
+h248-9.txt:Parameter ID:         prt (0x0006)
+h248-9.txt:Description:          The amount of time to wait for the user to initially speak. Specified in units of
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0 upwards (0 indicates the voice activity detection function is turned off, i.e.,
+h248-9.txt:Default:              Provisioned.
+h248-9.txt:Parameter name:       PostSpeechTimer
+h248-9.txt:Parameter ID:         pst (0x0007)
+h248-9.txt:Description:        The amount of silence necessary after the end of the last speech segment for
+h248-9.txt:Type:               Integer
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    0 upwards (0 indicates that the voice activity detection function is turned off,
+h248-9.txt:Default:            Provisioned.
+h248-9.txt:Parameter name:     RecordLengthTimer
+h248-9.txt:Parameter ID:       rlt (0x0008)
+h248-9.txt:Description:        The maximum allowable length of the recording, not including pre- or
+h248-9.txt:Type:               Integer
+h248-9.txt:Optional:           No
+h248-9.txt:Possible values:    0 upwards.
+h248-9.txt:Default:            None.
+h248-9.txt:Parameter name:     RecordingIdentifier
+h248-9.txt:Parameter ID:       rid (0x0009)
+h248-9.txt:Description:        Specifies a URI to be assigned to the physical segment which is to be recorded
+h248-9.txt:Type:               String
+h248-9.txt:Optional:           No
+h248-9.txt:Possible values:    Either "$" or a physical segment identifier satisfying the syntax of
+h248-9.txt:                    clause 6.2.5.2. If the identifier is an http://URL, it must not have a query part.
+h248-9.txt:Default:            None.
+h248-9.txt:Parameter name:     Speed
+h248-9.txt:Parameter ID:       sp (0x000a)
+h248-9.txt:Description:          The relative playback speed of each prompt, specifiable as a positive (faster) or
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      –99 upwards.
+h248-9.txt:Default:              0
+h248-9.txt:Parameter name:       Volume
+h248-9.txt:Parameter ID:         vl (0x000b)
+h248-9.txt:Description:          The relative playback volume of each prompt specifiable as a positive (louder)
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Implementation dependent.
+h248-9.txt:Default:              0
+h248-9.txt:Parameter name:       Offset
+h248-9.txt:Parameter ID:         off (0x000c)
+h248-9.txt:Description:          Specifies the offset into the initial prompt at which to start playing. A positive
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0, positive, or negative. The absolute value cannot exceed the length of the
+h248-9.txt:Default:              0
+h248-9.txt:Parameter name:       RestartKey
+h248-9.txt:Parameter ID:         rsk (0x000d)
+h248-9.txt:Description:          Defines a key sequence consisting of a command key optionally followed by
+h248-9.txt:                      zero or more keys. This key sequence has the following action: discard any
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    ReinputKey
+h248-9.txt:Parameter ID:      rik (0x000e)
+h248-9.txt:Description:       Defines a key sequence consisting of a command key optionally followed by
+h248-9.txt:                   zero or more keys. This key sequence has the following action: discard any
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    ReturnKey
+h248-9.txt:Parameter ID:      rtk (0x000f)
+h248-9.txt:Description:       Defines a key sequence consisting of a command key optionally followed by
+h248-9.txt:                   zero or more keys. This key sequence has the following action: terminate the
+h248-9.txt:Type:              String
+h248-9.txt:Optional:          Yes
+h248-9.txt:Possible values:   A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:           None.
+h248-9.txt:Parameter name:    EndInputKey
+h248-9.txt:Parameter ID:      eik (0x0010)
+h248-9.txt:Description:       Defines a key sequence consisting of a command key optionally followed by
+h248-9.txt:                   zero or more keys. This key sequence has the following action: terminate the
+h248-9.txt:Type:              String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Record Direction
+h248-9.txt:Parameter ID:         rd (0x0011)
+h248-9.txt:Description:          The record direction indicates the direction that the multimedia streams are to
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "Ext" (0x01): External indicates that recording is on the media which is
+h248-9.txt:                      "Int" (0x02): Internal indicates that recording is on the media received from the
+h248-9.txt:Default:              Ext (0x01).
+h248-9.txt:Parameter name:       Absolute Volume
+h248-9.txt:Parameter ID:         absvl (0x0012)
+h248-9.txt:Description:          The absolute playback volume of announcement specified in decibels. The
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      0 and upwards (in decibels).
+h248-9.txt:Default:              0 (No absolute volume applied).
+h248-9.txt:Parameter name:       Storage Mode
+h248-9.txt:Parameter ID:         sm (0x0013)
+h248-9.txt:Description:          This parameter enables the MGC to indicate whether or not the recording
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "overwrite" (0x0001): Indicates that the recording should overwrite any
+h248-9.txt:                      "append" (0x0002):       Indicates that the recording shall be appended to any
+h248-9.txt:Default:              overwrite (0x0001).
+h248-9.txt:Parameter name:       Skip Interval
+h248-9.txt:Parameter ID:         skint (0x0014)
+h248-9.txt:Description:          Indicates how far the MG should skip forward or backwards when forward or
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      1 or more milliseconds
+h248-9.txt:Default:              6000 (6 seconds).
+h248-9.txt:Parameter name:       Fast Foward Key
+h248-9.txt:Parameter ID:         ffk (0x0015)
+h248-9.txt:Description:          Indicates which DTMF digits maps to a fast forward operation. On detection of
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Rewind Key
+h248-9.txt:Parameter ID:         rwk (0x0016)
+h248-9.txt:Description:          Indicates which DTMF digits map to a rewind operation. On detection of the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Volume Interval
+h248-9.txt:Parameter ID:         volint (0x0017)
+h248-9.txt:Description:          Indicates the percentage increase or decrease in volume when the volume up or
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any positive integer.
+h248-9.txt:Default:              10%
+h248-9.txt:Parameter name:       Volume Up Key
+h248-9.txt:Parameter ID:         volup (0x0018)
+h248-9.txt:Description:          Indicates which DTMF digits map to a volume up operation. On detection of
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Volume Down Key
+h248-9.txt:Parameter ID:         voldwn (0x0019)
+h248-9.txt:Description:          Indicates which DTMF digits map to a volume down operation. On detection
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Speed Interval
+h248-9.txt:Parameter ID:         spdint (0x001a)
+h248-9.txt:Description:          Indicates the percentage increase or decrease in speed when the Speed Up or
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any positive integer.
+h248-9.txt:Default:              10%
+h248-9.txt:Parameter name:       Speed Up Key
+h248-9.txt:Parameter ID:         spdup (0x001b)
+h248-9.txt:Description:          Indicates which DTMF digits map to a speed up operation. On detection of the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Speed Down Key
+h248-9.txt:Parameter ID:         spddwn (0x001c)
+h248-9.txt:Description:          Indicates which DTMF digits map to a speed down operation. On detection of
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Pause Interval
+h248-9.txt:Parameter ID:         pse (0x001d)
+h248-9.txt:Description:          Indicates for how long playout of a message is paused when a Pause Key is
+h248-9.txt:Type:                 Integer
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      Any positive integer in milliseconds.
+h248-9.txt:Default:              10000 (10 seconds).
+h248-9.txt:Parameter name:       Pause Key
+h248-9.txt:Parameter ID:         pse (0x001e)
+h248-9.txt:Description:          Indicates which DTMF digits map to a pause operation. On detection of the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Resume Key
+h248-9.txt:Parameter ID:         rsm (0x001f)
+h248-9.txt:Description:          Indicates which DTMF digits map to a resume operation. On detection of the
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       Prompt End Key
+h248-9.txt:Parameter ID:         pend (0x0020)
+h248-9.txt:Description:          Indicates which DTMF digits map to a prompt end key operation. On detection
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:              None.
+h248-9.txt:Parameter name:       External Control Key
+h248-9.txt:Parameter ID:         extkey (0x0021)
+h248-9.txt:Description:          Indicates which DTMF digits map to an external key operation. Its function on
+h248-9.txt:Type:                 String
+h248-9.txt:Optional:               Yes
+h248-9.txt:Possible values:        A sequence of one or more characters from the set 0-9, A-D or a-d, *, and #
+h248-9.txt:Default:                None.
+h248-9.txt:Package name:           Enhanced DTMF Detection Package
+h248-9.txt:Package ID:             edtmf (0x0100)
+h248-9.txt:Description:            The Enhanced DTMF Detection Package allows a MGC to indicate in which
+h248-9.txt:Version:                1
+h248-9.txt:Extends:                dd (0x0006) version 2.
+h248-9.txt:Event name:             DTMF Digits
+h248-9.txt:Event ID:               EventIDs are defined with the same names as the SignalIDs defined in the table
+h248-9.txt:Description:          Generated when the MG detects a digit.
+h248-9.txt:Parameter name:       Type
+h248-9.txt:Parameter ID:         type (0x0001)
+h248-9.txt:Description:          Indicates whether DTMF digits detected during a prompt phase (i.e., control
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "all" (0x0001):          The detected digits are reported at all times;
+h248-9.txt:                      "cont" (0x0002):         The detected digits are reported only during the control
+h248-9.txt:                      "coll" (0x0003):         The detected digits are reported only during the
+h248-9.txt:Default:              all.
+h248-9.txt:Parameter name:       Type
+h248-9.txt:Parameter ID:         type (0x0001)
+h248-9.txt:Description:          Indicates whether DTMF digits were detected during a prompt phase
+h248-9.txt:Type:                 Enumeration
+h248-9.txt:Optional:             Yes
+h248-9.txt:Possible values:      "all" (0x0001):          The MG is unable to determine the phase in which the
+h248-9.txt:                      "cont" (0x0002):         The digit string was detected during the control phase;
+h248-9.txt:                      "coll" (0x0003):         The digit string was detected during the collection
+h248-9.txt:Default:              all.
+h248-9.txt:Event name:           DigitMap Completion Event
+h248-9.txt:Event ID:             ce (0x0004)
+h248-9.txt:Description:          Generated when a DigitMap completes as described in clause 7.1.14
+h248-9.txt:Parameter name:       Unsuccessful Match Reporting
+h248-9.txt:Parameter ID:       umr (0x0001)
+h248-9.txt:Description:        The MGC may use this parameter to control whether the DigitMap Completion
+h248-9.txt:Type:               Boolean
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    On        Generate DigitMap Completion Event on unsuccessful match.
+h248-9.txt:Default:            On.
+h248-9.txt:Parameter name:     Type
+h248-9.txt:Parameter ID:       type (0x0002)
+h248-9.txt:Description:        Indicates whether DTMF digits detected during a prompt phase (i.e., control
+h248-9.txt:Type:               Enumeration
+h248-9.txt:Optional:           Yes
+h248-9.txt:Possible values:    "all" (0x0001):        The detected digits are reported at all times;
+h248-9.txt:                    "cont" (0x0002):       The detected digits are reported only during the control
+h248-9.txt:                    "coll" (0x0003):       The detected digits are reported only during the
+h248-9.txt:Default:            all.
+h248-9.txt:Parameter name:     DigitString
+h248-9.txt:Parameter ID:       ds (0x0001)
+h248-9.txt:Description:        The portion of the current dial string as described in clause 7.1.14
+h248-9.txt:Type:               String of DigitMap symbols (possibly empty) returned as a quotedString
+h248-9.txt:Optional:           No
+h248-9.txt:Possible values:    A sequence of the characters "0" through "9", "A" through "F", and the long
+h248-9.txt:Default:            None.
+h248-9.txt:Parameter name:     Termination Method
+h248-9.txt:Parameter ID:       Meth (0x0002)
+h248-9.txt:Description:            Indicates the reason for the generation of the event. See the procedures
+h248-9.txt:Type:                   Enumeration
+h248-9.txt:Optional:               No
+h248-9.txt:Possible values:        "UM" (0x0001): Unambiguous match;
+h248-9.txt:                        "PM" (0x0002): Partial match, completion by timer expiry or unmatched event;
+h248-9.txt:                        "FM" (0x0003): Full match, completion by timer expiry or unmatched event.
+h248-9.txt:Default:                None.
+h248-9.txt:Parameter name:         Type
+h248-9.txt:Parameter ID:           type (0x0003)
+h248-9.txt:Description:            Indicates whether DTMF digits were detected during a prompt phase (i.e.,
+h248-9.txt:Type:                   Enumeration
+h248-9.txt:Optional:               Yes
+h248-9.txt:Possible values:        "all" (0x0001):        the MG is unable to determine the phase in which the
+h248-9.txt:                        "cont" (0x0002):       The digit string was detected during the control phase;
+h248-9.txt:                        "coll" (0x0003):       The digit string was detected during the collection
+h248-9.txt:Default:                all.
+h248-9.txt:[b-IETF RFC 4234]   IETF RFC 4234 (2005), Augmented BNF for Syntax Specifications: ABNF.
+h248-9.txt:[b-W3C EMMA]        W3C (2009), EMMA: Extensible Multimodal Annotation markup language.
+h248-9.txt:Series N   Maintenance: international sound programme and television transmission circuits
